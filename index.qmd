@@ -14,5 +14,6 @@ format:
 
 What theory means in social science, how empirical regularities become explananda, and why explanation matters.
 
-[Open the Week 1 presentation](week-01/){.btn .btn-primary role="button"}
+[Open slides](week-01/){.btn .btn-primary role="button"}
 
+[Open slides with speaker notes](week-01/with-notes.html){.btn .btn-secondary role="button"}

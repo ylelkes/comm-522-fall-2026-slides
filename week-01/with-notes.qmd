@@ -1,0 +1,824 @@
+---
+title: "Theory, Explananda, and Explanation"
+subtitle: "The theoretical foundation of social science"
+author: "COMM 5220 • Week 1"
+format:
+  revealjs:
+    show-notes: true
+    theme: [default, week1-seminar.scss]
+    slide-number: c/t
+    progress: true
+    controls: true
+    controls-layout: bottom-right
+    controls-tutorial: false
+    transition: fade
+    background-transition: fade
+    center: false
+    width: 1600
+    height: 900
+    margin: 0.08
+    navigation-mode: linear
+    hash: true
+    history: true
+    overview: true
+    chalkboard: true
+    preview-links: auto
+    footer: "COMM 5220 • Week 1"
+    code-overflow: wrap
+lang: en
+---
+
+## Three questions for today {.section-title}
+
+1.  What do social scientists mean by **theory**?
+2.  What, exactly, are they trying to **explain**?
+3.  Why does explanation occupy a **central—but not exclusive—place** in science?
+
+::: notes
+Timing: 1 minute. Establish the through-line. Do not define the terms yet.
+
+Sources: Gabriel Abend, “The Meaning of ‘Theory’”; Daniel Hirschman, “Stylized Facts in the Social Sciences”; Kevin McCain, “Why Explanation Matters in Science.”
+:::
+
+## Which of these is theory?
+
+:::::: claim-stack
+::: claim
+**General proposition**\
+Cross-cutting political discussion increases tolerance across settings.
+:::
+
+::: claim
+**Case explanation**\
+A particular forum held in Scranton, PA increased tolerance because exchanging reasons led participants to recognize opponents as legitimate citizens.
+:::
+
+::: claim
+**Interpretation**\
+The forum temporarily redefined political opponents as citizens entitled to offer reasons.
+:::
+::::::
+
+::: notes
+Timing: 4 minutes. Ask which claim is theory and what intellectual job each performs. Do not resolve the question. Abend’s point is that competent sociologists use “theory” for importantly different things.
+:::
+
+## What phenomenon calls for study?
+
+Give us:
+
+1.  Your name
+2.  Your broad research interest
+3.  One phenomenon that calls for study
+
+::: phenomena
+event · association · incidence · trend · difference · persistence · change
+:::
+
+For our shared example:
+
+-   **Describe:** What would we need to establish about its pattern—its size, timing, distribution, or variation?
+-   **Explain:** What would we need to show about why it occurs?
+
+::: notes
+Timing: 7 minutes. Give students 2 minutes to think, then go round-robin. Record each phenomenon in a few words. Choose one accessible, non-sensitive example to carry through the session. Use the two prompts to introduce the distinction, but accept tentative answers; later slides develop it fully. Clarify if needed that naming a possible cause is a hypothesis, while explaining requires showing that the proposed cause or mechanism accounts for the observed pattern.
+:::
+
+## The course asks three recurring questions {.section-title}
+
+:::::: triad
+::: triad-item
+**Concepts**
+
+What are we studying?
+
+Does the measure fit the concept?
+:::
+
+::: triad-item
+**Causes**
+
+Does the proposed dependence hold?
+
+Is it genuinely causal?
+:::
+
+::: triad-item
+**Cases**
+
+Where should the claim hold?
+
+How far can it travel?
+:::
+::::::
+
+::: notes
+Timing: part of the 15-minute course-map segment. Connect concepts to construct validity, causes to internal validity, and cases to external validity. The readings show why none of these objects or relationships should be taken for granted.
+:::
+
+## Can this study support the headline?
+
+> **Study:** Researchers survey U.S. college students once. Students report their daily hours on social media and complete a depressive-symptoms questionnaire. Heavier users report more symptoms.
+
+::: {.fragment .diagnosis}
+**Headline:** “Social media causes depression.”
+:::
+
+::: {.fragment}
+Evaluate the claim on three grounds: **construct**, **internal**, and **external validity**.
+:::
+
+::: notes
+Timing: 4 minutes. Put students in pairs or small groups. Give them two minutes to identify one concern under each form of validity, then take one answer per category. Keep everyone on this single case; do not ask groups to invent new examples.
+
+Clarify that the observed result is an association between self-reported platform time and questionnaire scores. The headline adds both a causal interpretation and a broad scope that the study itself has not yet earned.
+:::
+
+## Three questions reveal three different gaps
+
+:::::: triad
+::: triad-item
+**Construct**
+
+Do “hours” capture meaningful social-media use?
+
+Do symptom scores equal clinical depression?
+:::
+
+::: triad-item
+**Internal**
+
+Could depression increase social-media use?
+
+Could loneliness or stress cause both?
+:::
+
+::: triad-item
+**External**
+
+Would this hold beyond U.S. college students, these platforms, and this period?
+:::
+::::::
+
+::: {.fragment .key-line}
+Better measurement, causal identification, and broader reach are different achievements.
+:::
+
+::: notes
+Timing: 3–4 minutes. Use this slide to organize and sharpen the answers from the room.
+
+**Construct validity:** Total time treats active conversation, passive scrolling, news, entertainment, support groups, and harassment as the same exposure. The content, mode, intensity, and social meaning of use may matter more than duration. A depressive-symptoms scale can be a valid measure of symptoms without establishing a clinical diagnosis. Improvements might include device logs, content or activity measures, validated multi-item symptom scales, clinical assessment, or convergent measures.
+
+**Internal validity:** A one-time survey does not establish temporal order. Depression might increase withdrawal into social media; loneliness, stress, offline isolation, sleep disruption, family circumstances, or prior mental health could affect both use and symptoms. A longitudinal design, credible natural experiment, randomized intervention, baseline adjustment, or evidence that distinguishes competing pathways could strengthen causal inference. Simply adding controls does not automatically solve the problem.
+
+**External validity:** The relevant scope includes people, platforms, patterns of use, outcomes, settings, and historical periods. College students may differ from adolescents or older adults; platform features and norms differ; and effects may depend on whether use is active, passive, supportive, or hostile. Ask students to name a specific boundary and why it could change the relationship—not merely say that the sample is “unrepresentative.”
+
+Close by stressing that success on one ground does not guarantee success on the others. Excellent measurement cannot turn a cross-sectional association into a causal effect. A strong causal design may still study a narrow treatment or population. Replication across populations cannot repair a measure that does not represent the intended construct.
+:::
+
+## The seminar–lab rhythm
+
+::::: two-column
+::: column
+### Monday seminar
+
+Develop the intellectual logic
+
+-   distinguish claims
+-   examine assumptions
+-   evaluate reasoning
+:::
+
+::: column
+### Wednesday lab
+
+Put the logic to work
+
+-   specify concepts
+-   analyze evidence
+-   design studies
+:::
+:::::
+
+::: notes
+Briefly cover assessment, preparation, participation, communication norms, deadlines, and where current materials live. Discussion check: What makes seminar participation intellectually useful rather than performative?
+:::
+
+## One project, several intellectual achievements
+
+::: project-flow
+**Question** → **Concepts** → **Measurement** → **Description** → **Experiment proposal**
+:::
+
+::: {.fragment .project-caption}
+Defining, measuring, describing, and explaining are connected—but they are not the same achievement.
+:::
+
+::: notes
+Timing: 15 minutes. Sketch the project backward: substantive question, text population and unit, two concepts, explication and operationalization, codebook and reliability, descriptive claim, then a preregisterable experiment proposal. Project Idea Memo due September 9. Ask where description, theory, and explanation appear and what might force revision of an earlier choice.
+:::
+
+## Abend’s problem {.section-title}
+
+> “Theory” is central to what we do—but scholars use the word to name different things.
+
+::: {.fragment .key-line}
+Semantic confusion becomes an intellectual and institutional problem.
+:::
+
+::: notes
+Timing: begin the 20-minute Abend segment. “Theoretical” often does both descriptive and favorable evaluative work, affecting publication, prestige, and what counts as a contribution.
+
+Source: Abend (2008), abstract and pp. 173–177, 191–193.
+:::
+
+## Four different questions
+
+::: question-list
+**Semantic**\
+What does “theory” mean?
+
+**Ontological**\
+What is theory?
+
+**Evaluative**\
+What makes a theory good?
+
+**Teleological**\
+What is theory for?
+:::
+
+::: notes
+Abend directly answers the **semantic** question. His seven meanings provide a descriptive, lexicographic account of what competent sociologists mean by “theory” in different contexts. They are not seven species shown to share one established essence.
+
+He does **not** provide one general answer to the other three questions:
+
+-   **Ontological:** He does not tell us what theory essentially is. Asking for one essence before specifying the intended meaning risks the “Socratic error.” The objects called theory1, theory2, and theory5 may be fundamentally different kinds of things.
+-   **Evaluative:** He does not give one standard of good theory. Appropriate standards depend on the contribution claimed: a theory1 proposition, theory2 explanation, and theory3 interpretation cannot simply be judged by the same criteria.
+-   **Teleological:** He does not assign theory one purpose. The seven meanings perform different jobs, including generalizing, explaining, interpreting, reconstructing texts, orienting inquiry, making normative arguments, and examining philosophical problems.
+
+Abend then introduces another question: **What ought “theory” to mean in sociology?** He calls this the **semantic predicament**. He does not resolve it by choosing one of the seven meanings. Instead, he recommends semantic therapy—authors and reviewers should specify the meaning they intend—and argues that any disciplinary settlement is partly political and should preserve ontological and epistemological pluralism.
+
+Teaching shorthand: **Abend answers what “theory” means in sociological usage; that answer complicates what theory is, what makes it good, and what it is for; he then asks what it ought to mean and who gets to decide.**
+
+Source: Abend (2008), pp. 174–177, 191–196.
+:::
+
+## Seven meanings of “theory”
+
+| Meaning       | Plain-language job                                        |
+|------------------------------------|------------------------------------|
+| **Theory~1~** | General propositions relating variables across cases      |
+| **Theory~2~** | Explanation of a particular social phenomenon             |
+| **Theory~3~** | Interpretation or sense-making                            |
+| **Theory~4~** | Study of canonical theorists and texts                    |
+| **Theory~5~** | Overarching perspective or conceptual framework           |
+| **Theory~6~** | Normative or political account                            |
+| **Theory~7~** | Philosophical or conceptual problem internal to sociology |
+
+::: notes
+Walk through the list quickly. Stress that theory 1 and theory 2 are distinguished primarily by generality and object of explanation—not by the presence of a mechanism. Theory 3 may or may not causally explain its phenomenon.
+
+Use **social media and mental health** as one topic expressed in all seven meanings:
+
+1.  **Theory~1~—a general proposition:** “Passive social-media use increases depressive symptoms when it displaces supportive interaction and encourages unfavorable social comparison.” This proposes a relationship intended to hold across multiple cases under specified conditions. It may name a mechanism, but a theory 1 proposition could also leave that mechanism underspecified.
+2.  **Theory~2~—an explanation of a particular phenomenon:** “Depressive symptoms increased among students at this school after a platform became dominant because public popularity metrics intensified status competition within its unusually cohesive peer network.” The object is this particular outcome in this particular setting. Like theory 1, it may succeed or fail to specify a mechanism; the distinguishing feature is its case-specific explanandum.
+3.  **Theory~3~—interpretation or sense-making:** “Students experience leaving social media as an act of self-care and authenticity, while remaining visible online signifies social belonging.” This helps us understand what participation and withdrawal mean to the actors. It need not claim that either practice causes depression.
+4.  **Theory~4~—reconstruction of theorists and texts:** “What would Durkheim’s account of social integration—or Goffman’s account of self-presentation—imply for understanding digitally mediated distress?” The scholarly contribution primarily interprets and reconstructs a body of theoretical work; social media and mental health provide an application or motivating problem.
+5.  **Theory~5~—an overarching perspective:** A feminist, symbolic-interactionist, or political-economy perspective directs attention to different features of the problem: gendered beauty standards, identity performance and reflected appraisal, or platforms’ commercial incentives. The perspective organizes inquiry without necessarily yielding one discrete, testable proposition.
+6.  **Theory~6~—a normative or political account:** “Platforms ought to be designed to protect users’ autonomy and psychological flourishing; engagement-maximizing features are unjust when their risks fall disproportionately on vulnerable adolescents.” This argues about what ought to be and supplies principles for judgment, not merely an empirical causal claim.
+7.  **Theory~7~—a philosophical or conceptual problem:** “Is depression best treated as an individual attribute, a relational condition, or a socially classified state when we study digital life?” Another example is whether an algorithm, a platform company, or a pattern of use can properly count as a social cause. The contribution examines the conceptual or ontological assumptions built into sociological inquiry.
+
+After each example, ask: **What intellectual job is this statement doing?** Keep students from sorting them by topic or sophistication. All seven can address social media and mental health; what changes is the kind of contribution being made.
+
+Useful contrast: theory 1 and theory 2 are closest to causal explanation in this set, but their difference is scope rather than mechanism. Theory 3 interprets meaning. Theory 4 reconstructs theoretical texts. Theory 5 supplies an orienting lens. Theory 6 evaluates and prescribes. Theory 7 interrogates the conceptual foundations of the inquiry.
+
+Source: Abend (2008), pp. 177–181.
+:::
+
+## One school, different theoretical practices
+
+| Intellectual job | Illustrative Annenberg faculty |
+|---|---|
+| **Generalize** · Theory~1~ | Watts, González-Bailón, Tan, Lydon-Staley, Centola, Falk, Lelkes, Freelon |
+| **Explain or interpret cases** · Theories~2–3~ | Lingel, Ticona, Punathambekar, Yang, Patton, Freelon |
+| **Orient or evaluate inquiry** · Theories~5–6~ | Banet-Weiser, S. Jackson, Pickard, Gutmann |
+| **Interrogate explanation itself** · Theory~7~ | Watts and others asking what models, causes, or evidence can establish |
+
+::: {.fragment .key-line}
+These are characteristic practices, not boxes: one scholar—or one article—may do several.
+:::
+
+::: notes
+Timing: 4 minutes. Use familiar faculty to make Abend’s semantic pluralism concrete. Present the names as illustrations of intellectual jobs, not as authoritative labels or mutually exclusive camps. The unit of classification can be a claim, article, or contribution rather than an entire person.
+
+Begin with four quantitative examples:
+
+-   **Duncan Watts: primarily theory 1, with an important theory 7 strand.** His work develops general models and propositions about networks, collective dynamics, inequality, diffusion, and information consumption. He also asks what social-scientific explanation can accomplish, how explanation differs from prediction, and why plausible commonsense stories are often unreliable. His course *Explaining Explanation* makes the theory 7 connection especially visible.
+-   **Sandra González-Bailón: primarily theory 1, often moving from stylized facts toward explanation.** She identifies large-scale regularities in communication networks—including patterns of information exposure, segregation, diffusion, and mobilization—and develops general claims about how networks and algorithmic systems shape them. A study of Facebook during the 2020 election may also contribute a theory 2 explanation if its explanandum is that particular information environment.
+-   **Andy Tan: primarily theory 1, often joined to theory 2 and a normative purpose.** Persuasion, message-effects, social-determinants, and implementation frameworks support general claims about communication and health behavior. Community-engaged interventions also address outcomes in particular populations and settings. Health equity motivates and evaluates the work, although a normative purpose does not automatically make every empirical claim theory 6.
+-   **David Lydon-Staley: primarily theory 1, focused on dynamics within people over time.** His work develops general claims about moment-to-moment and day-to-day relations among media use, interpersonal communication, emotion, curiosity, and substance use. Intensive longitudinal evidence can explain particular processes, but the larger aim is portable propositions about temporal dynamics.
+
+Then contrast these with faculty whose characteristic contributions more often perform other jobs:
+
+-   **Theories 2 and 3:** Jessa Lingel, Julia Ticona, Aswin Punathambekar, Guobin Yang, Desmond Patton, and Deen Freelon often explain situated formations or make cultural and political phenomena intelligible. Their work can also generate general propositions; the distinction concerns the contribution being made in a particular work.
+-   **Theories 5 and 6:** Sarah Banet-Weiser, Sarah J. Jackson, Victor Pickard, and Amy Gutmann illustrate work oriented by feminist, critical-race, political-economy, or democratic frameworks and, at times, arguments about justice, representation, institutions, or what ought to be.
+-   **Theory 4:** Reconstruction of canonical theorists is present in intellectual and media history but is less central as a primary faculty practice at Annenberg.
+
+Ask: **If two faculty members study the same platform, what different intellectual jobs might their work perform?** Elicit that one might estimate a general relationship, another explain a particular episode, another interpret what the platform means to a community, and another evaluate its institutional design.
+
+Close with the key line: calling one group “theoretical” and another “nontheoretical” would reproduce the semantic confusion Abend diagnoses. The better question is: **What kind of theoretical contribution is this work making?**
+
+Sources: Current Penn Annenberg faculty profiles; classification is an instructional application of Abend’s taxonomy, not the faculty members’ own self-classification.
+:::
+
+
+## Map your interest onto Abend
+
+> I am interested in \_\_\_\_\_\_\_\_.\
+> My research primarily uses **theory\_\*\* because I try to** \_\_\_\_\_\_.\
+> It also uses theory\_**\*\* when I** \_\_\_\_\_\_.\
+> I am less familiar with \*\*theory\_**\*\* because** \_\_\_\_\_\_.
+
+::: notes
+Timing: 3 minutes individual writing. The goal is not to decide which meaning is best or to force every project into one category. It is to identify the intellectual work attempted and the appropriate standards for evaluating it.
+:::
+
+## Build the class theory map
+
+| Topic | Primary meaning | Secondary meaning | Appropriate standard |
+|------------------|------------------|------------------|------------------|
+| Political persuasion | Theory~1~ | Theory~2~ | Scope of the general claim; adequacy of the case explanation |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+::: notes
+Timing: 7 minutes, approximately one minute per student. Record the remaining rows on the board rather than typing into the slide. Treat uncertainty and overlap as evidence for Abend’s argument.
+:::
+
+
+
+## Five-minute break {.break-slide}
+
+### When we return
+
+**PATTERN** → **STYLIZED FACT** → **EXPLANATION**
+
+::: notes
+Timing: five minutes. Leave the theory map visible on the board.
+:::
+
+## What is a stylized fact? {.section-title}
+
+> A **simple empirical regularity in need of explanation**
+
+It may be an:
+
+::: phenomena
+association · incidence rate · trend
+:::
+
+::: {.fragment .key-line}
+It says that a pattern exists—not why it exists.
+:::
+
+::: notes
+Timing: begin the 22-minute Hirschman segment.
+
+Source: Hirschman (2016), pp. 604–608.
+:::
+
+## A stylized fact is a special kind of description
+
+::: description-sequence
+**Observations**\
+Individual exposure and knowledge scores
+
+↓
+
+**Descriptive result**\
+In this sample, heavier social-media news users averaged lower knowledge scores.
+
+↓
+
+**Stylized fact**\
+Social-media news use is negatively associated with political knowledge.
+
+↓
+
+**Explanation**\
+Fragmented presentation and incidental exposure reduce sustained processing and learning.
+:::
+
+::: {.fragment .key-line}
+All stylized facts are descriptions—but not all descriptions are stylized facts.
+:::
+
+::: notes
+The boundary between description and stylized fact is gradual rather than absolute. A stylized fact remains descriptive because it claims that an empirical regularity exists; it does not yet tell us why the regularity exists. But it is a particular kind of description: simplified, abstracted, portable, and presented as something that merits explanation.
+
+**Start with observations.** Individual people have particular exposure measures and knowledge scores. These observations are the empirical materials. They are not themselves a stylized fact because no regularity has yet been extracted from them.
+
+**A descriptive result stays relatively close to a study or dataset.** For example: “In this sample, respondents who reported heavier social-media news use answered an average of 4.2 knowledge questions correctly, compared with 5.1 among other respondents.” This reports what was observed in a particular sample, with a particular measure, at a particular time. It may be important, but it does not necessarily claim a broader or especially revealing pattern.
+
+**A stylized fact abstracts from those details.** “Social-media news use is negatively associated with political knowledge” suppresses the particular sample means, platforms, questions, effect size, period, and exceptions. That simplification is the “stylizing.” The claim extracts a recognizable empirical tendency that can travel across papers, datasets, and public debates.
+
+The move also does more than shorten the sentence. It constructs and stabilizes categories—“social-media news use” and “political knowledge”—and treats them as comparable across people and possibly across studies. It characterizes one relationship as the important pattern in the evidence. It therefore says, implicitly: **This is a meaningful way to characterize the social world, and this pattern deserves explanation.**
+
+**An explanation takes the next step.** It identifies how or why the pattern depends on other things. For example: fragmented presentation and incidental exposure may reduce sustained cognitive processing, which reduces learning. That explanatory account could be correct or incorrect; the stylized fact itself remains agnostic about it.
+
+Use these contrasts:
+
+-   A description may report any observation; a stylized fact identifies a regularity.
+-   A description may remain tied to one dataset or case; a stylized fact abstracts from particulars so the claim can travel.
+-   A description need not claim broad importance; a stylized fact selects a pattern as worthy of scholarly attention.
+-   A description need not create an explanatory puzzle; a stylized fact is explicitly or implicitly “in search of explanation.”
+-   A stylized fact is usually simpler than the evidence supporting it and may omit qualifications, heterogeneity, and exceptions.
+
+This does not mean that ordinary descriptions are free of concepts, interpretation, or value judgments. Hirschman’s point is not that stylized facts uniquely contain interpretation while all other descriptions transparently reproduce reality. Rather, stylized facts make the movement from observation to selected, generalized, explanation-seeking regularity especially visible.
+
+Ask students to compare these statements:
+
+1.  “Forty percent of the posts in this sample mentioned immigration.”
+2.  “Immigration dominates political communication on social media.”
+3.  “Immigration dominates because threat-oriented content receives greater algorithmic amplification.”
+
+The first is a study-specific descriptive result. The second could function as a stylized fact if supported as a broader regularity and presented as an important characterization. The third proposes an explanation. Ask what empirical and conceptual work would be required to move responsibly from one statement to the next.
+
+Teaching shorthand: **A description says what was observed. A stylized fact extracts a simplified regularity and says, “This is the pattern that deserves explanation.” An explanation says why the pattern occurs.**
+
+Source: Hirschman (2016), especially pp. 604–609.
+:::
+
+## Four features of a stylized fact
+
+1.  It presumes or creates an **analytical ontology**.
+2.  Its categories require **operationalization**.
+3.  It usually claims **non-robust dependence**, not causation.
+4.  It selects a regularity as **worthy of attention**.
+
+::: notes
+Define analytical ontology as the kinds of things treated as existing and separable for analysis. Explain that ordinary and technical meanings of categories can diverge. The normative dimension is partly an allocation of scarce scholarly attention.
+
+Source: Hirschman (2016), pp. 606–608.
+:::
+
+## A regularity has to be constructed
+
+::: construction-flow
+**Broad idea**\
+↓\
+**Category definition**\
+↓\
+**Inclusion and exclusion rules**\
+↓\
+**Observable indicator**\
+↓\
+**Empirical pattern**
+:::
+
+::: notes
+The central point is that a regularity is not simply waiting in raw observations with its boundaries and label already attached. Researchers turn heterogeneous observations into a recognizable pattern through a sequence of choices. **Constructed does not mean fabricated.** Evidence constrains which claims are defensible, but it becomes a regularity only after researchers decide what to compare, how to classify observations, which variation to retain or suppress, and how to summarize the result.
+
+Walk through the flow using **cross-cutting exposure and political tolerance**:
+
+1.  **Broad idea:** Ask whether encountering political difference is associated with tolerance.
+2.  **Category definition:** Decide what “cross-cutting exposure” and “tolerance” mean. Is exposure merely seeing an opposing view, or does it require attention, discussion, or sustained engagement? Is tolerance reduced dislike, willingness to listen, recognition of civil liberties, or acceptance of an opponent’s right to participate?
+3.  **Inclusion and exclusion rules:** Decide which encounters count. Does an accidental glimpse count? What about satire, hostile disagreement, a family conversation, or algorithmically generated exposure? Decide whose tolerance and which targets enter the analysis.
+4.  **Observable indicator:** Translate the categories into observations: self-reports, browsing records, network composition, discussion transcripts, feeling thermometers, civil-liberties items, or behavioral choices.
+5.  **Empirical pattern:** Aggregate across observations and summarize the result—for example, “people with more cross-cutting discussion express greater tolerance.” This is a patterned abstraction, not a transcript of individual cases.
+
+Different defensible constructions can reveal different regularities. Incidental exposure may correlate with hostility while sustained deliberation correlates with tolerance. A feeling thermometer may show no change while support for an opponent’s speech rights increases. These findings need not contradict one another: they may concern different exposures, outcomes, or levels of aggregation.
+
+The construction can still be evaluated. Ask whether the categories fit the concept, whether the rules are transparent and consistently applied, whether indicators capture the intended objects, whether reasonable alternative specifications produce a similar pattern, and whether the summary conceals consequential heterogeneity. Construction makes methodological judgment visible; it does not make every characterization equally valid.
+
+Teaching shorthand: **Data constrain the answer, but they do not decide by themselves what the pattern is a pattern of.**
+:::
+
+## Two stylized facts, four choices
+
+|   | Top-income concentration | Social-media news and knowledge |
+|------------------------|------------------------|------------------------|
+| **Ontology** | Income, tax units, top 1% | Exposure, knowledge |
+| **Operationalization** | Define income, unit, data source | Define exposure and indicators |
+| **Dependence** | Change over time—not its cause | Association—not causation |
+| **Selection** | Foregrounds concentration | Foregrounds political knowledge |
+
+::: notes
+If time is tight, teach the inequality column and ask students to construct the communication column. Examining these choices does not make the categories arbitrary or the finding false; it clarifies what the claim covers.
+
+Source: Hirschman (2016), especially pp. 606–608 and 614–616.
+:::
+
+## Stylized facts occupy an unstable middle
+
+::: middle-zones
+**description** ← stylized fact → **theory**
+
+**minimal interpretation** ← stylized fact → **maximal interpretation**
+
+**fact** ← stylized fact → **value**
+:::
+
+::: notes
+Hirschman’s point is not merely that stylized facts contain “a little theory.” They occupy these middle positions because producing one requires moving beyond individual observations while stopping short of a full explanation.
+
+**Between description and theory:** A stylized fact describes an empirical regularity—for example, “the share of income going to the top 1 percent increased.” But that statement is not a transparent transcription of raw data. Researchers must decide that income, tax units, and the top 1 percent are meaningful analytical categories; operationalize them; abstract from individual observations and measurement complications; and summarize the evidence as one recognizable pattern. This is theoretical work. Yet the stylized fact remains agnostic about why the pattern occurred. It is therefore more than a report of data but less than a causal theory or full explanation: a **lightly theorized description**.
+
+**Between minimal and maximal interpretation:** A minimal interpretation stays close to what the evidence records: “The measured income share of the top 1 percent rose during this period.” A maximal interpretation might explain the increase through policy change, elite political power, labor-market restructuring, or another developed causal account. The stylized fact sits between them when it says, in effect, “The most revealing way to characterize recent inequality is growing concentration at the very top.” It interprets what the evidence is *about* and competes with other characterizations—such as racial or gender wage gaps, poverty, or the college wage premium—without yet explaining the selected pattern. This is why Hirschman places stylized facts near Abend’s theory3: they offer a way of making sense of an empirical phenomenon, though they are often presented as merely descriptive.
+
+**Between fact and value:** A stylized fact makes a positive claim: this regularity exists in the world. It simultaneously makes a normative claim: this regularity is important enough to occupy scarce scholarly and political attention and therefore deserves explanation. “Normative” here does not necessarily mean that the researcher morally approves or condemns the pattern. It means that selecting one regularity as the important characterization necessarily directs attention away from other possible summaries. Epistemic values also enter: researchers judge one characterization to be simpler, more revealing, more important, or more useful for inquiry than its competitors.
+
+Use the communication example: “Social-media news users have lower political knowledge” is empirical because it claims an association. It is lightly theorized because “social-media news use” and “political knowledge” must be constructed and operationalized, and the observations must be abstracted into a general pattern. It is interpretive because it presents political knowledge as the consequential way to understand social-media news use rather than, for example, participation, source diversity, trust, or political efficacy. It is normative because it asks the field to treat this relationship as worthy of further attention and explanation. It is not yet an explanation because it does not tell us why the association exists.
+
+Teaching shorthand: **A stylized fact says, “This is the pattern, this is the useful way to characterize it, and this is what deserves explanation”—but not yet, “This is why it happens.”**
+
+Source: Hirschman (2016), pp. 605, 608–609.
+:::
+
+## What happens after a stylized fact?
+
+:::::: three-paths
+::: path
+**Accept it**
+
+Apply or invent an explanation.
+:::
+
+::: path
+**Reject it**
+
+Argue that the regularity is wrong.
+:::
+
+::: path
+**Reframe it**
+
+Argue that it misses what matters.
+:::
+::::::
+
+::: notes
+Source: Hirschman (2016), conclusion, pp. 620–621.
+:::
+
+## Test the shared phenomenon
+
+1.  What would make it a stylized fact?
+2.  What categories and operationalizations does it require?
+3.  Is the claimed regularity descriptive or causal?
+4.  Why this characterization rather than another?
+
+::: notes
+Timing: 12-minute open discussion.
+
+The **shared phenomenon** is the accessible, non-sensitive phenomenon selected from students’ introductions at the beginning of class. Return to the words recorded on the board. The phenomenon is the broad object of curiosity; it is not yet necessarily a stylized fact. The class’s task here is to formulate that phenomenon as a simple empirical regularity that could become an explanandum.
+
+Restate the activity in this order:
+
+1.  How could we formulate the phenomenon as a simple empirical regularity?
+2.  What categories and operationalizations would that formulation require?
+3.  Would the resulting claim be descriptive, or would it improperly imply causation?
+4.  Why select this characterization rather than another?
+
+If no student example is sufficiently clear, use the prepared fallback phenomenon: **social-media news use and political knowledge**.
+
+-   **Stylized-fact formulation:** Social-media news use is negatively associated with political knowledge.
+-   **Categories:** social-media news users, news exposure, political knowledge, the relevant population, and the relevant period.
+-   **Operationalizations:** frequency of or observed exposure to political news on social media, paired with a multi-item factual-knowledge measure.
+-   **Claim type:** a descriptive association—not the causal claim that social-media use reduces knowledge.
+-   **Normative selection:** the formulation foregrounds political knowledge rather than participation, source diversity, trust, political efficacy, or other possible consequences of social-media news use.
+
+Additional prompts: What could fail—the data, measurement, categories, summary, or claim about importance? How can a technically accurate finding become misleading when it travels into public debate? Is Hirschman right to place stylized facts near theory3?
+:::
+
+## Why does explanation matter? {.section-title}
+
+::: argument-chain
+**Explanation** → **understanding** → often better **prediction and control**
+:::
+
+::: {.fragment .key-line}
+McCain treats understanding via explanation as science’s primary epistemic aim.
+:::
+
+::: notes
+Timing: begin the 20-minute McCain segment. Scientific activity is commonly said to aim at prediction, control, and explanation. Explanation is the common thread because successful explanations yield understanding, which can often improve prediction and control. Stress “often,” not invariably.
+
+Source: McCain (2022), chapter 1, pp. 1–4.
+:::
+
+## Three aims, three questions
+
+:::::: triad
+::: triad-item
+**Prediction**
+
+What will happen?
+:::
+
+::: triad-item
+**Control**
+
+How can we change what happens?
+:::
+
+::: triad-item
+**Explanation**
+
+How or why does it happen?
+:::
+::::::
+
+::: notes
+Clarify that control means capacity to intervene in an outcome, not coercive control over people. Apply all three to the shared case.
+:::
+
+## Explanation tracks dependence
+
+::: explanation-template
+**Why X?**\
+Because of **Y**.
+:::
+
+::::: {.two-column .definitions}
+::: column
+### Explanandum
+
+X: the phenomenon to be explained
+:::
+
+::: column
+### Explanans
+
+Y: information about how or why X depends on other things
+:::
+:::::
+
+::: notes
+Dependence may be causal, constitutive, part–whole, or another relevant relation. Ask students to identify X and Y in the forum example.
+
+Source: McCain (2022), chapter 1, pp. 4–5.
+:::
+
+## Understanding is more than knowing a fact
+
+::::: {.two-column .contrast}
+::: column
+### Isolated knowledge
+
+“I know that X occurred.”
+:::
+
+::: column
+### Understanding
+
+“I grasp how X depends on Y and how the facts hang together.”
+:::
+:::::
+
+::: notes
+Understanding is a cognitive achievement, not hedging, parroting an isolated fact, or merely experiencing an “aha” feeling.
+
+Source: McCain (2022), chapter 1, pp. 5–7.
+:::
+
+## McCain distinguishes two objects of understanding
+
+::::: two-column
+::: column
+### Understanding a phenomenon
+
+Grasp a correct explanation of how or why it occurs.
+:::
+
+::: column
+### Understanding a scientific theory
+
+Use it to construct or appreciate explanations or predictions in its domain.
+:::
+:::::
+
+::: notes
+McCain distinguishes understanding **a phenomenon** from understanding **a scientific theory** because they are different cognitive achievements, even though they often support one another.
+
+**Understanding a phenomenon** means grasping a correct explanation of how or why that phenomenon occurs. The phenomenon may be a particular event, a recurring pattern, or a process. Understanding can involve grasping its causes, mechanisms, constitutive relations, governing principles, or relevant counterfactual dependence—how the phenomenon would have changed if something else had been different. Merely knowing that the phenomenon occurred, or knowing a regularity that predicts it, is not yet this kind of understanding.
+
+McCain’s example is variation among Galápagos finches. A student might know that the finches differ in beak form. The student understands the phenomenon when they grasp how natural selection, environmental differences, and variation within populations produced that diversification. The explanation connects the fact to a larger structure of dependence.
+
+**Understanding a scientific theory** means possessing the ability to use that theory to construct, recognize, or appreciate explanations and predictions within its domain. It is not merely being able to repeat the theory’s name or definition. Someone understands evolutionary theory to the degree that they can use it to explain phenomena such as finch variation or generate predictions about where transitional fossils might be found.
+
+The distinction also explains why understanding comes in degrees. An informed layperson may appreciate an explanation after it is presented; an expert may be able to generate a new explanation, compare it with alternatives, identify its limits, and derive further predictions. Both may understand the theory, but not to the same depth.
+
+**How the two relate:** Understanding a theory is often a resource for understanding phenomena. We exercise our understanding of a theory when we use it to build or appreciate an explanation. But the two achievements are not identical. A person can know a theory’s vocabulary without successfully explaining a particular phenomenon. Conversely, understanding one phenomenon does not imply the ability to use the theory across its entire domain.
+
+Apply the distinction to the running communication example:
+
+-   **Understanding the phenomenon:** Grasp why tolerance increased in this deliberative forum—for example, because exchanging reasons led participants to recognize opponents as legitimate citizens.
+-   **Understanding the relevant theory:** Be able to use a broader account of deliberation, recognition, or intergroup contact to construct and evaluate explanations of this and other communication settings, identify when the account should apply, and derive further expectations.
+
+Connect back to Abend. McCain uses “scientific theory” to mean a well-established domain of science containing strongly supported facts, methods, laws, or principles that can be used to explain and predict. This is a particular use of the word within McCain’s philosophical account. It does not settle Abend’s semantic predicament or show that all seven sociological meanings of “theory” are the same kind of object. Ask students: Which of Abend’s meanings seem closest to the work McCain expects a scientific theory to do, and what might be lost by forcing an exact one-to-one mapping?
+
+Teaching shorthand: **Understanding a phenomenon means being able to answer “Why this?” Understanding a theory means being able to use an organized body of knowledge to answer—and sometimes generate—many such questions.**
+
+Source: McCain (2022), chapter 1, pp. 7–9.
+:::
+
+## Prediction and explanation can trade off
+
+An ensemble of **incompatible models** may predict better than any one model.
+
+::: {.fragment .key-line}
+But incompatible accounts cannot jointly supply one coherent explanation of why the outcome occurs.
+:::
+
+::: {.fragment .project-caption}
+“Better model” therefore depends on the scientific aim.
+:::
+
+::: notes
+McCain introduces this trade-off to qualify the simple claim that explanation-generated understanding improves prediction. It often does, but predictive success and explanatory success are not identical achievements and do not always increase together.
+
+**Begin with the difference in questions.** Prediction asks what outcome should be expected, given some information. Explanation asks how or why the outcome depends on other features of the world. A model can discover a stable predictive pattern without representing the dependence relations that produce the outcome. Conversely, a model may correctly identify an important dependence or mechanism while remaining unable to forecast outcomes precisely because the system is complex, measurements are limited, or other influences vary unpredictably.
+
+**McCain’s example is robustness analysis in climate science.** Researchers examine several models that make different—and sometimes mutually incompatible—assumptions about the system being modeled. Instead of treating one model as the uniquely correct representation, they compare or combine the models’ outputs. Agreement across models, or an ensemble constructed from them, can produce predictions more accurate or more robust than the prediction of any single model.
+
+Why might combining models improve prediction? Different models can capture different regularities, compensate for one another’s errors, or reveal conclusions that do not depend on one specific set of modeling assumptions. Predictive aggregation can therefore work even when the models represent the underlying system differently.
+
+**The explanatory problem is incompatibility.** Suppose Model A says an outcome depends on process A, while Model B relies on assumptions inconsistent with process A and attributes the outcome to process B. Their predictions can be averaged, compared, or treated as a range. Their explanations cannot simply be averaged into one coherent answer to “Why did this happen?” If the models disagree about the relevant entities, assumptions, mechanisms, or dependence relations, they cannot all literally describe the same causal structure. The ensemble may tell us what to expect while remaining silent or equivocal about which account makes the outcome intelligible.
+
+This does **not** mean that:
+
+-   accurate prediction never contributes to explanation;
+-   explanatory models are generally poor predictors;
+-   model ensembles provide no scientific knowledge; or
+-   science must always choose explanation instead of prediction.
+
+It means that predictive accuracy alone is insufficient evidence that a model explains. The appropriate model or modeling strategy depends partly on the purpose. A public agency deciding how much coastal infrastructure to build may prioritize a reliable predictive range. A scientist investigating why warming patterns occur may need a model whose assumptions and dependence relations can be interpreted as a coherent account of the system. Both projects are legitimate, but success in one should not be redescribed automatically as success in the other.
+
+**Social-science analogy:** Imagine five machine-learning models that use hundreds of demographic, behavioral, and textual features to predict who will share political misinformation. An ensemble may predict sharing more accurately than any single model. Yet the models may rely on different features and incompatible representations of the relevant process. The ensemble can answer “Who is likely to share?” without answering whether sharing occurs because of identity protection, source cues, emotional arousal, network reinforcement, lack of knowledge, or some other dependence. A high-performing predictor is not thereby a theory2 explanation of the behavior.
+
+Return to the seminar’s running example. A model could predict political tolerance from age, education, media use, ideology, network composition, and hundreds of linguistic features. It might predict accurately without showing that exchanging reasons produces tolerance through civic recognition. Conversely, evidence for that mechanism could yield genuine but incomplete understanding without allowing precise prediction of every participant’s response.
+
+**The deeper issue:** Models are tools designed for purposes. Predictive models can tolerate complexity, opacity, and even incompatibility if those features improve forecasts. Explanatory models require an intelligible and sufficiently coherent representation of the dependence being claimed. Calling one model “better” is therefore incomplete until we specify: better for prediction, intervention, explanation, or some combination?
+
+Discussion prompts:
+
+1.  If an opaque ensemble predicts substantially better, when should social scientists prefer it?
+2.  What additional evidence would be needed to turn a reliable predictor into an explanation?
+3.  Can two incompatible models nevertheless illuminate different parts or levels of the same phenomenon?
+4.  For the student projects in this course, which stages primarily require description, prediction, causal identification, or explanation?
+
+Teaching shorthand: **Prediction rewards getting the outcome right; explanation requires getting the dependence right. Sometimes one model—or one set of models—does one job better than the other.**
+
+Source: McCain (2022), chapter 1, pp. 3–4.
+:::
+
+## Diagnose the claim
+
+1.  Does it tell us what is likely to happen?
+2.  Does it show that an intervention can change what happens?
+3.  Does it identify how or why the outcome depends on something else?
+4.  What evidence would be needed for the other aims?
+
+::: notes
+Timing: 10-minute discussion. Apply the four questions to the shared example. Ask whether all useful explanations in communication research are causal and what a noncausal dependence might look like.
+:::
+
+## The readings form one inquiry sequence
+
+::: inquiry-flow
+**Phenomenon** → **concepts and operationalizations** → **stylized fact** → **explanandum** → **explanans and dependence** → **evidence and revision**
+:::
+
+::: notes
+Timing: begin the 9-minute synthesis. Have students fill the sequence using the shared example. Ask where theories 1, 2, and 3 enter. Can theory organize attention before it explains? What turns a descriptive project into a foundation for an experiment?
+:::
+
+## Three readings, three claims
+
+::: three-claims
+**Abend**\
+“Theory” names different projects.
+
+**Hirschman**\
+Social scientists select and construct regularities as worthy of explanation.
+
+**McCain**\
+Explanation tracks dependence and thereby produces understanding.
+:::
+
+::: notes
+Return to the three claims from the opening. Classify each using Abend. Turn the case explanation into “Why X? Because Y.” Ask what had to be selected and operationalized before X could become an explanandum.
+:::
+
+## Exit: complete three sentences {.section-title}
+
+1.  “Theory does not mean one thing; it can mean …”
+2.  “Social scientists explain …, but first they must …”
+3.  “Explanation is central because …”
+
+::: notes
+Timing: final 2 minutes. Collect responses as a diagnostic for Wednesday.
+:::

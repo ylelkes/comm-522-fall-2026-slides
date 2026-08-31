@@ -74,8 +74,13 @@ Give us:
 event · association · incidence · trend · difference · persistence · change
 :::
 
+For our shared example:
+
+-   **Describe:** What would we need to establish about its pattern—its size, timing, distribution, or variation?
+-   **Explain:** What would we need to show about why it occurs?
+
 ::: notes
-Timing: 7 minutes. Give students 2 minutes to think, then go round-robin. Record each phenomenon in a few words. Choose one accessible, non-sensitive example to carry through the session. Ask what would count as describing it and what would count as explaining it.
+Timing: 7 minutes. Give students 2 minutes to think, then go round-robin. Record each phenomenon in a few words. Choose one accessible, non-sensitive example to carry through the session. Use the two prompts to introduce the distinction, but accept tentative answers; later slides develop it fully. Clarify if needed that naming a possible cause is a hypothesis, while explaining requires showing that the proposed cause or mechanism accounts for the observed pattern.
 :::
 
 ## The course asks three recurring questions {.section-title}
@@ -290,55 +295,44 @@ Useful contrast: theory 1 and theory 2 are closest to causal explanation in this
 Source: Abend (2008), pp. 177–181.
 :::
 
-## Theory~1~ and theory~2~ are distinct
+## One school, different theoretical practices
 
-::::: {.two-column .contrast}
-::: column
-### Theory~1~
-
-**Across cases:**\
-X is related to Y under conditions Z.
-
-> Cross-cutting discussion increases tolerance across settings.
-:::
-
-::: column
-### Theory~2~
-
-**A particular explanandum:**\
-This Y occurred because of X under conditions Z.
-
-> This forum increased tolerance because exchanging reasons produced civic recognition.
-:::
-:::::
-
-::: notes
-Both may propose a causal mechanism, and both may lack one. Under a deductive-nomological account, one or more theories 1 may help explain the particular outcome in a theory 2. Even then, Abend says they remain distinct entities.
-
-Source: Abend (2008), pp. 177–178.
-:::
-
-## Theory~3~ asks a different kind of question
-
-::: big-questions
-What does this phenomenon **mean**?
-
-Why is it **significant**?
-
-How should we **make sense of it**?
-:::
+| Intellectual job | Illustrative Annenberg faculty |
+|---|---|
+| **Generalize** · Theory~1~ | Watts, González-Bailón, Tan, Lydon-Staley, Centola, Falk, Lelkes, Freelon |
+| **Explain or interpret cases** · Theories~2–3~ | Lingel, Ticona, Punathambekar, Yang, Patton, Freelon |
+| **Orient or evaluate inquiry** · Theories~5–6~ | Banet-Weiser, S. Jackson, Pickard, Gutmann |
+| **Interrogate explanation itself** · Theory~7~ | Watts and others asking what models, causes, or evidence can establish |
 
 ::: {.fragment .key-line}
-Interpretation may illuminate a phenomenon without identifying its causes.
+These are characteristic practices, not boxes: one scholar—or one article—may do several.
 :::
 
 ::: notes
-Return to the interpretation of the deliberative forum. Ask what the interpretation reveals that the general proposition and case explanation do not.
+Timing: 4 minutes. Use familiar faculty to make Abend’s semantic pluralism concrete. Present the names as illustrations of intellectual jobs, not as authoritative labels or mutually exclusive camps. The unit of classification can be a claim, article, or contribution rather than an entire person.
 
-Source: Abend (2008), pp. 178–179.
+Begin with four quantitative examples:
+
+-   **Duncan Watts: primarily theory 1, with an important theory 7 strand.** His work develops general models and propositions about networks, collective dynamics, inequality, diffusion, and information consumption. He also asks what social-scientific explanation can accomplish, how explanation differs from prediction, and why plausible commonsense stories are often unreliable. His course *Explaining Explanation* makes the theory 7 connection especially visible.
+-   **Sandra González-Bailón: primarily theory 1, often moving from stylized facts toward explanation.** She identifies large-scale regularities in communication networks—including patterns of information exposure, segregation, diffusion, and mobilization—and develops general claims about how networks and algorithmic systems shape them. A study of Facebook during the 2020 election may also contribute a theory 2 explanation if its explanandum is that particular information environment.
+-   **Andy Tan: primarily theory 1, often joined to theory 2 and a normative purpose.** Persuasion, message-effects, social-determinants, and implementation frameworks support general claims about communication and health behavior. Community-engaged interventions also address outcomes in particular populations and settings. Health equity motivates and evaluates the work, although a normative purpose does not automatically make every empirical claim theory 6.
+-   **David Lydon-Staley: primarily theory 1, focused on dynamics within people over time.** His work develops general claims about moment-to-moment and day-to-day relations among media use, interpersonal communication, emotion, curiosity, and substance use. Intensive longitudinal evidence can explain particular processes, but the larger aim is portable propositions about temporal dynamics.
+
+Then contrast these with faculty whose characteristic contributions more often perform other jobs:
+
+-   **Theories 2 and 3:** Jessa Lingel, Julia Ticona, Aswin Punathambekar, Guobin Yang, Desmond Patton, and Deen Freelon often explain situated formations or make cultural and political phenomena intelligible. Their work can also generate general propositions; the distinction concerns the contribution being made in a particular work.
+-   **Theories 5 and 6:** Sarah Banet-Weiser, Sarah J. Jackson, Victor Pickard, and Amy Gutmann illustrate work oriented by feminist, critical-race, political-economy, or democratic frameworks and, at times, arguments about justice, representation, institutions, or what ought to be.
+-   **Theory 4:** Reconstruction of canonical theorists is present in intellectual and media history but is less central as a primary faculty practice at Annenberg.
+
+Ask: **If two faculty members study the same platform, what different intellectual jobs might their work perform?** Elicit that one might estimate a general relationship, another explain a particular episode, another interpret what the platform means to a community, and another evaluate its institutional design.
+
+Close with the key line: calling one group “theoretical” and another “nontheoretical” would reproduce the semantic confusion Abend diagnoses. The better question is: **What kind of theoretical contribution is this work making?**
+
+Sources: Current Penn Annenberg faculty profiles; classification is an instructional application of Abend’s taxonomy, not the faculty members’ own self-classification.
 :::
 
-## Map your project onto Abend
+
+## Map your interest onto Abend
 
 > I am interested in \_\_\_\_\_\_\_\_.\
 > My research primarily uses **theory\_\*\* because I try to** \_\_\_\_\_\_.\
@@ -362,67 +356,7 @@ Timing: 3 minutes individual writing. The goal is not to decide which meaning is
 Timing: 7 minutes, approximately one minute per student. Record the remaining rows on the board rather than typing into the slide. Treat uncertainty and overlap as evidence for Abend’s argument.
 :::
 
-## “Undertheorized” is not a complete criticism
 
-Translate it into three questions:
-
-1.  Which meaning of theory is the project claiming?
-2.  By what standards should that contribution be evaluated?
-3.  What specific theoretical work is missing?
-
-::: notes
-Timing: 3 minutes. Use the contrast that best fits the students’ projects rather than trying to cover every possibility.
-:::
-
-## The same weakness can appear at different scopes
-
-::::: {.two-column .contrast}
-::: column
-### Theory~1~
-
-Clarify the proposed relationship or mechanism **and the range of cases across which it should hold**.
-:::
-
-::: column
-### Theory~2~
-
-Clarify how the proposed relationship or mechanism **explains this particular outcome**.
-:::
-:::::
-
-::: {.fragment .key-line}
-The difference is scope—not “relationship versus mechanism.”
-:::
-
-::: notes
-Both theory 1 and theory 2 can be undertheorized because the dependence or mechanism is insufficiently developed. Theory 1 states a general proposition; theory 2 explains a particular phenomenon. Do not manufacture different standards where Abend’s distinction does not warrant them.
-:::
-
-## A different category of weakness
-
-For a **theory~3~** project, “undertheorized” might mean that the interpretation:
-
--   does not substantially change how we understand the phenomenon;
--   remains predictable or insufficiently developed; or
--   does not show why it is more illuminating than plausible alternatives.
-
-::: notes
-Ask what a theory 1 researcher might mistakenly demand from a theory 3, 4, or 6 project. Evaluating a project on its own terms does not mean every contribution succeeds; it means using standards appropriate to the intellectual work claimed.
-:::
-
-## A norm
-
-> Do not ask only whether a paper/book “has theory.”
-
-Ask:
-
--   What kind of theoretical contribution does it claim?
--   Does it succeed by appropriate standards?
--   Would another kind of contribution improve it—or change its purpose?
-
-::: notes
-Transition: Abend prevents us from equating theory with explanation. Hirschman turns to a product that sits between description and theory 3: a stylized fact nominated as needing explanation.
-:::
 
 ## Five-minute break {.break-slide}
 
@@ -544,7 +478,21 @@ Source: Hirschman (2016), pp. 606–608.
 :::
 
 ::: notes
-Use cross-cutting exposure and tolerance. Ask what counts as exposure: one opposing post, sustained discussion, hostile disagreement, or deliberate engagement? What counts as tolerance: listening, respecting an opponent, permitting speech, or reduced dislike? Then ask how each could be measured.
+The central point is that a regularity is not simply waiting in raw observations with its boundaries and label already attached. Researchers turn heterogeneous observations into a recognizable pattern through a sequence of choices. **Constructed does not mean fabricated.** Evidence constrains which claims are defensible, but it becomes a regularity only after researchers decide what to compare, how to classify observations, which variation to retain or suppress, and how to summarize the result.
+
+Walk through the flow using **cross-cutting exposure and political tolerance**:
+
+1.  **Broad idea:** Ask whether encountering political difference is associated with tolerance.
+2.  **Category definition:** Decide what “cross-cutting exposure” and “tolerance” mean. Is exposure merely seeing an opposing view, or does it require attention, discussion, or sustained engagement? Is tolerance reduced dislike, willingness to listen, recognition of civil liberties, or acceptance of an opponent’s right to participate?
+3.  **Inclusion and exclusion rules:** Decide which encounters count. Does an accidental glimpse count? What about satire, hostile disagreement, a family conversation, or algorithmically generated exposure? Decide whose tolerance and which targets enter the analysis.
+4.  **Observable indicator:** Translate the categories into observations: self-reports, browsing records, network composition, discussion transcripts, feeling thermometers, civil-liberties items, or behavioral choices.
+5.  **Empirical pattern:** Aggregate across observations and summarize the result—for example, “people with more cross-cutting discussion express greater tolerance.” This is a patterned abstraction, not a transcript of individual cases.
+
+Different defensible constructions can reveal different regularities. Incidental exposure may correlate with hostility while sustained deliberation correlates with tolerance. A feeling thermometer may show no change while support for an opponent’s speech rights increases. These findings need not contradict one another: they may concern different exposures, outcomes, or levels of aggregation.
+
+The construction can still be evaluated. Ask whether the categories fit the concept, whether the rules are transparent and consistently applied, whether indicators capture the intended objects, whether reasonable alternative specifications produce a similar pattern, and whether the summary conceals consequential heterogeneity. Construction makes methodological judgment visible; it does not make every characterization equally valid.
+
+Teaching shorthand: **Data constrain the answer, but they do not decide by themselves what the pattern is a pattern of.**
 :::
 
 ## Two stylized facts, four choices
