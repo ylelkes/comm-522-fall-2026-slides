@@ -82,7 +82,7 @@ Timing: 7 minutes. Give students 2 minutes to think, then go round-robin. Record
 
 :::::: triad
 ::: triad-item
-### Concepts
+**Concepts**
 
 What are we studying?
 
@@ -90,7 +90,7 @@ Does the measure fit the concept?
 :::
 
 ::: triad-item
-### Causes
+**Causes**
 
 Does the proposed dependence hold?
 
@@ -98,7 +98,7 @@ Is it genuinely causal?
 :::
 
 ::: triad-item
-### Cases
+**Cases**
 
 Where should the claim hold?
 
@@ -116,19 +116,19 @@ Timing: part of the 15-minute course-map segment. Connect concepts to construct 
 
 :::::: triad
 ::: triad-item
-### Construct
+**Construct**
 
 Did we study what we say we studied?
 :::
 
 ::: triad-item
-### Internal
+**Internal**
 
 If the claim is causal, did X cause Y rather than an alternative?
 :::
 
 ::: triad-item
-### External
+**External**
 
 For whom, where, and when should the claim hold?
 :::
@@ -566,19 +566,19 @@ Source: Hirschman (2016), pp. 605, 608–609.
 
 :::::: three-paths
 ::: path
-### Accept it
+**Accept it**
 
 Apply or invent an explanation.
 :::
 
 ::: path
-### Reject it
+**Reject it**
 
 Argue that the regularity is wrong.
 :::
 
 ::: path
-### Reframe it
+**Reframe it**
 
 Argue that it misses what matters.
 :::
@@ -638,19 +638,19 @@ Source: McCain (2022), chapter 1, pp. 1–4.
 
 :::::: triad
 ::: triad-item
-### Prediction
+**Prediction**
 
 What will happen?
 :::
 
 ::: triad-item
-### Control
+**Control**
 
 How can we change what happens?
 :::
 
 ::: triad-item
-### Explanation
+**Explanation**
 
 How or why does it happen?
 :::
