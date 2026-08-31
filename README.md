@@ -1,12 +1,25 @@
-# COMM 5220 — Week 1 Slides
+# COMM 5220 — Fall 2026 Slides
 
-Reveal.js slides for the Week 1 seminar on theory, stylized facts, and scientific explanation.
+Quarto and Reveal.js slides organized as a multi-week GitHub Pages site.
+
+## Structure
+
+```text
+slides/
+├── _quarto.yml
+├── index.qmd
+├── week-01/
+│   ├── index.qmd
+│   └── week1-seminar.scss
+└── docs/
+```
+
+Add future decks in `week-02/`, `week-03/`, and so on. Each week should contain its own `index.qmd` and any week-specific assets or theme files. Add a link to the course landing page in the root `index.qmd`.
 
 ## Build locally
 
 ```sh
-quarto render index.qmd
+quarto render
 ```
 
-Open `index.html` to view the rendered presentation. Press `S` for speaker view and notes.
-
+The rendered GitHub Pages site is written to `docs/`. Within a Reveal.js presentation, press `S` for speaker view and notes.
