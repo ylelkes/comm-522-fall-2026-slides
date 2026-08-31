@@ -140,28 +140,69 @@ Keep the initial claim associational. The internal-validity question becomes nec
 
 ## The measure must represent the construct
 
-::::: {.two-column .contrast}
-::: column
-### Better construct fit
+Give us an example from communication research:
 
--   Exposure means contact with **political news**, not total platform use.
--   Knowledge uses several relevant factual items.
+1. Name the **construct**.
+2. Propose a plausible **measure**.
+3. Identify how the measure could **misrepresent** the construct.
+4. Say what evidence or redesign would improve the fit.
+
+::: {.fragment .diagnosis}
+What might the measure capture instead—or leave out?
 :::
-
-::: column
-### Construct-validity threat
-
--   Time spent on Instagram is labeled “news exposure.”
--   One obscure trivia item stands for “political knowledge.”
-:::
-:::::
 
 ::: {.fragment .key-line}
 Good measurement does not establish causation.
 :::
 
 ::: notes
-Ask whether a political-knowledge measure might instead capture education, test-taking skill, political interest, or partisan agreement. Construct validity asks whether the operationalization adequately represents the intended concept.
+Turn this into a student-generation exercise rather than presenting the problems first. Give students about one minute to think, then invite examples. Record each response in two columns on the board: **intended construct** and **what the measure might actually capture**.
+
+Begin with students’ own research interests when possible. Useful communication constructs include political knowledge, trust, engagement, incivility, exposure, persuasion, polarization, misinformation, empathy, credibility, deliberation, and tolerance.
+
+For every example, press for four parts:
+
+1. **Construct:** What is the abstract idea the researcher wants to study?
+2. **Operationalization:** What observable response, behavior, text feature, or experimental manipulation represents it?
+3. **Potential mismatch:** What part of the construct is omitted, or what other construct contaminates the measure?
+4. **Improvement:** What additional items, behavioral indicators, validation evidence, comparison measure, or redesigned manipulation would improve the representation?
+
+Use these prompts to deepen student answers:
+
+- What does the measure include that does not belong in the construct?
+- What important dimension of the construct does it leave out?
+- Could two people receive the same score for substantively different reasons?
+- Does the measure depend on reading ability, memory, social desirability, partisan agreement, platform familiarity, or another unintended capacity?
+- Does the operational definition match the way the theoretical claim uses the concept?
+- Would the measure function the same way across groups, settings, or cultures?
+
+If students need a starting point, return to the running claim about social-media news and political knowledge. Ask them to diagnose these measures without immediately supplying the answer:
+
+- “Social-media news exposure” is measured as total minutes spent on Instagram.
+- “Political knowledge” is measured with one obscure factual question.
+
+Possible issues to elicit:
+
+- Total platform time includes entertainment, social interaction, and passive scrolling; it may poorly represent actual exposure to political news.
+- One obscure item may capture guessing, specialized interest, education, memory, or test-taking skill rather than the broader construct of political knowledge.
+- A factual item whose answer is politically disputed may capture partisan agreement rather than knowledge.
+- Self-reported exposure may capture respondents’ identities or perceptions of their habits rather than the content they actually encountered.
+
+Additional examples if discussion stalls:
+
+- **Incivility measured by profanity:** misses contempt, dehumanization, ridicule, and norm violations without swear words; may also classify emphatic but non-incivil language as incivility.
+- **Engagement measured by clicks:** a click may indicate curiosity, outrage, accidental selection, or disagreement rather than meaningful attention.
+- **Trust measured by agreement:** agreement with a source may reflect shared ideology rather than perceived trustworthiness.
+- **Polarization measured by ideological distance:** may omit affective hostility and social identity while capturing policy disagreement that is not necessarily antagonistic.
+- **Persuasion measured immediately after exposure:** may capture temporary compliance or demand effects rather than durable attitude change.
+- **Deliberation manipulated by showing opposing views:** exposure alone may omit reason-giving, reciprocity, listening, and reflection that the concept of deliberation requires.
+
+After several examples, distinguish two common failure modes:
+
+- **Construct underrepresentation:** the measure captures too little of the intended concept.
+- **Construct-irrelevant variance:** scores are influenced by something outside the intended concept.
+
+Close by returning to the final line on the slide. A measure can represent a construct very well while the study still fails to establish that one construct causes another. Construct validity and internal validity answer different questions.
 :::
 
 ## Alternative causes threaten internal validity
