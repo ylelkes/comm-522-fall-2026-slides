@@ -320,6 +320,22 @@ $selection-bg: #d5aa55;
   line-height: 1.35;
 }
 
+.description-sequence {
+  margin: 0.2em auto 0;
+  text-align: center;
+  font-size: 0.72em;
+  line-height: 1.18;
+}
+
+.description-sequence p {
+  margin: 0.18em 0;
+}
+
+.description-sequence strong {
+  color: var(--rust);
+  font-size: 1.08em;
+}
+
 .explanation-template {
   margin: 1.1em auto;
   padding: 0.55em;

@@ -490,6 +490,68 @@ Timing: begin the 22-minute Hirschman segment.
 Source: Hirschman (2016), pp. 604–608.
 :::
 
+## A stylized fact is a special kind of description
+
+::: description-sequence
+**Observations**  
+Individual exposure and knowledge scores
+
+↓
+
+**Descriptive result**  
+In this sample, heavier social-media news users averaged lower knowledge scores.
+
+↓
+
+**Stylized fact**  
+Social-media news use is negatively associated with political knowledge.
+
+↓
+
+**Explanation**  
+Fragmented presentation and incidental exposure reduce sustained processing and learning.
+:::
+
+::: {.fragment .key-line}
+All stylized facts are descriptions—but not all descriptions are stylized facts.
+:::
+
+::: notes
+The boundary between description and stylized fact is gradual rather than absolute. A stylized fact remains descriptive because it claims that an empirical regularity exists; it does not yet tell us why the regularity exists. But it is a particular kind of description: simplified, abstracted, portable, and presented as something that merits explanation.
+
+**Start with observations.** Individual people have particular exposure measures and knowledge scores. These observations are the empirical materials. They are not themselves a stylized fact because no regularity has yet been extracted from them.
+
+**A descriptive result stays relatively close to a study or dataset.** For example: “In this sample, respondents who reported heavier social-media news use answered an average of 4.2 knowledge questions correctly, compared with 5.1 among other respondents.” This reports what was observed in a particular sample, with a particular measure, at a particular time. It may be important, but it does not necessarily claim a broader or especially revealing pattern.
+
+**A stylized fact abstracts from those details.** “Social-media news use is negatively associated with political knowledge” suppresses the particular sample means, platforms, questions, effect size, period, and exceptions. That simplification is the “stylizing.” The claim extracts a recognizable empirical tendency that can travel across papers, datasets, and public debates.
+
+The move also does more than shorten the sentence. It constructs and stabilizes categories—“social-media news use” and “political knowledge”—and treats them as comparable across people and possibly across studies. It characterizes one relationship as the important pattern in the evidence. It therefore says, implicitly: **This is a meaningful way to characterize the social world, and this pattern deserves explanation.**
+
+**An explanation takes the next step.** It identifies how or why the pattern depends on other things. For example: fragmented presentation and incidental exposure may reduce sustained cognitive processing, which reduces learning. That explanatory account could be correct or incorrect; the stylized fact itself remains agnostic about it.
+
+Use these contrasts:
+
+- A description may report any observation; a stylized fact identifies a regularity.
+- A description may remain tied to one dataset or case; a stylized fact abstracts from particulars so the claim can travel.
+- A description need not claim broad importance; a stylized fact selects a pattern as worthy of scholarly attention.
+- A description need not create an explanatory puzzle; a stylized fact is explicitly or implicitly “in search of explanation.”
+- A stylized fact is usually simpler than the evidence supporting it and may omit qualifications, heterogeneity, and exceptions.
+
+This does not mean that ordinary descriptions are free of concepts, interpretation, or value judgments. Hirschman’s point is not that stylized facts uniquely contain interpretation while all other descriptions transparently reproduce reality. Rather, stylized facts make the movement from observation to selected, generalized, explanation-seeking regularity especially visible.
+
+Ask students to compare these statements:
+
+1. “Forty percent of the posts in this sample mentioned immigration.”
+2. “Immigration dominates political communication on social media.”
+3. “Immigration dominates because threat-oriented content receives greater algorithmic amplification.”
+
+The first is a study-specific descriptive result. The second could function as a stylized fact if supported as a broader regularity and presented as an important characterization. The third proposes an explanation. Ask what empirical and conceptual work would be required to move responsibly from one statement to the next.
+
+Teaching shorthand: **A description says what was observed. A stylized fact extracts a simplified regularity and says, “This is the pattern that deserves explanation.” An explanation says why the pattern occurs.**
+
+Source: Hirschman (2016), especially pp. 604–609.
+:::
+
 ## Four features of a stylized fact
 
 1.  It presumes or creates an **analytical ontology**.
