@@ -207,44 +207,134 @@ Close by returning to the final line on the slide. A measure can represent a con
 
 ## Alternative causes threaten internal validity
 
-The association could reflect:
+Give us an example from communication research:
 
-::: alternative-causes
-**political interest** · **education** · **age** · **prior knowledge** · **general news use** · **content differences**
+1. State the **causal claim**.
+2. Name a plausible **alternative cause** or reverse-causal process.
+3. Explain how it could generate the observed relationship.
+4. Propose evidence or a design that would distinguish the explanations.
+
+::: {.fragment .diagnosis}
+What else could produce both X and Y—or make Y produce X?
 :::
 
 ::: {.fragment .key-line}
-Reverse causation is also possible: lower knowledge may lead people to rely more heavily on social media.
+Statistical control can strengthen an argument; it does not automatically establish causation.
 :::
 
 ::: notes
-Evidence that strengthens internal validity includes temporal order, careful assessment of plausible confounders, or random assignment to news environments that differ only in the theoretically relevant treatment. Statistical controls can strengthen an argument but do not automatically establish causation.
+Run this as a student-generation exercise parallel to the construct-validity activity. Give students about one minute to formulate an example. Record responses as: **causal claim → alternative explanation → evidence that would discriminate**.
+
+Require students to state a genuinely causal claim rather than a bare association. “Social-media news use is associated with lower political knowledge” is descriptive. “Social-media news exposure reduces political knowledge” claims that changing X would change Y and therefore raises the internal-validity question.
+
+For each example, ask students to supply four elements:
+
+1. **Causal claim:** What is proposed to cause what?
+2. **Alternative explanation:** What third variable, selection process, event, or reverse pathway could account for the same observed relationship?
+3. **Causal logic:** How would that alternative generate both X and Y, or make Y affect X?
+4. **Discriminating evidence:** What comparison, timing, measurement, randomization, natural experiment, negative control, robustness check, or additional observation would make one explanation more credible than the other?
+
+Use these prompts to deepen answers:
+
+- What causes people to receive or select into different levels of X?
+- Could the outcome already differ before exposure to X?
+- Could a third variable cause both X and Y?
+- Could Y cause X rather than X causing Y?
+- Did anything else change at the same time as X?
+- Does the treatment group differ from the comparison group in another consequential way?
+- Could attrition, noncompliance, spillover, measurement changes, or researcher expectations create the apparent effect?
+- What observation would we expect under the proposed explanation but not under the alternative?
+
+If students need a starting point, use the running claim: **Social-media news exposure reduces political knowledge.** Ask them what else could generate the association before offering possibilities.
+
+Potential alternatives include:
+
+- **Political interest:** Less-interested people may rely more on incidental social-media news and also acquire less political knowledge.
+- **Education:** Education may influence both media selection and performance on knowledge measures.
+- **Age or cohort:** Age may shape platform use and political knowledge independently.
+- **Prior knowledge:** People who initially know less may choose different news sources.
+- **General news use:** Social-media news use may be a marker for consuming less news overall.
+- **Content differences:** The relevant cause may be the amount or quality of political information received, not the platform delivering it.
+- **Reverse causation:** People with less knowledge may prefer or depend more heavily on social-media news.
+
+Additional student-ready examples:
+
+- **Incivility reduces persuasion:** Prior hostility may cause people both to perceive a message as uncivil and to resist it.
+- **Fact checks reduce misinformation belief:** Participants may infer the study’s purpose and report lower belief because of demand characteristics rather than genuine updating.
+- **Political discussion increases participation:** Politically interested people may seek more discussion and participate more even without any effect of discussion.
+- **Algorithmic exposure causes polarization:** Users’ prior ideology and engagement behavior may determine both the content recommended to them and their later attitudes.
+- **Emotional messages increase sharing:** Arousing topics may produce both emotional language and sharing, making emotion a marker rather than the operative cause.
+
+For experiments, broaden beyond confounding. Internal-validity threats can include differential attrition, noncompliance, spillover between conditions, unequal treatment delivery, history during a longitudinal study, changes in measurement, or another feature bundled with the intended manipulation.
+
+Evidence that may strengthen internal validity includes establishing temporal order, measuring pre-treatment differences, using credible comparison groups, random assignment, checking treatment fidelity and attrition, exploiting a defensible natural experiment, or testing observable implications that competing explanations do not share. None is a magic label: students should explain how the evidence addresses the particular alternative cause.
+
+Close by distinguishing internal validity from mechanism. A study can credibly establish that X caused Y without fully explaining the process connecting them. Conversely, a plausible mechanism does not establish that X actually caused Y in the study.
 :::
 
 ## External validity concerns the claim’s reach
 
-::::: {.two-column .contrast}
-::: column
-### Stronger reach
+Give us an example from communication research:
 
-The relationship recurs across:
+1. State the **claim and intended scope**.
+2. Describe the study’s **people, setting, treatment, outcome, and period**.
+3. Identify where the evidence may not travel.
+4. Propose a replication, sample, treatment, or comparison that tests the boundary.
 
--   platforms and populations;
--   political contexts and periods;
--   defensible versions of exposure and knowledge.
+::: {.fragment .diagnosis}
+What changes across contexts—and which changes could alter the result?
 :::
 
-::: column
-### Overgeneralization
-
-A ten-minute study of politically interested U.S. undergraduates becomes a claim about:
-
-> all users, platforms, countries, topics, and times
+::: {.fragment .key-line}
+External validity is about the reach of a claim, not whether one sample “looks representative.”
 :::
-:::::
 
 ::: notes
-External validity concerns people, settings, treatments, outcomes, and time periods. It does not repair a badly measured construct or eliminate alternative causes within each study.
+Run this as a student-generation exercise parallel to the preceding two. Give students about one minute to formulate a claim whose scope exceeds the exact study that produced it. Record responses as: **evidence here → claim there → reason the effect might change**.
+
+For every example, ask for four parts:
+
+1. **Intended scope:** To which people, settings, treatments, outcomes, and periods is the claim meant to apply?
+2. **Evidence actually observed:** Who was studied, where, under what treatment or exposure, with which outcome, and when?
+3. **Potential boundary:** What difference between the study and the target context could change the relationship?
+4. **Test of transport:** What strategically different sample, setting, treatment version, outcome, period, or replication would reveal whether the claim travels?
+
+Use these prompts to prevent “external validity” from becoming shorthand only for demographic representativeness:
+
+- Would the effect hold for different kinds of people?
+- Would it hold outside the study setting or institutional context?
+- Would a naturally occurring exposure produce the same effect as the experimental treatment?
+- Would another platform, message, source, or implementation count as the same treatment theoretically?
+- Would the conclusion hold for another operationalization of the outcome?
+- Could the political, technological, or historical period moderate the relationship?
+- Is the claim intended to describe an average effect, every individual, or a particular subgroup?
+- Which differences are theoretically irrelevant, and which are plausible moderators?
+
+If students need a starting point, use this design: politically interested U.S. undergraduates view a simulated social-media feed for ten minutes during an election campaign. The study finds lower knowledge after fragmented rather than sustained news exposure. Ask what would justify applying the result to:
+
+- older adults or people with lower political interest;
+- ordinary platform use outside a laboratory;
+- TikTok, Facebook, messaging apps, or future platforms;
+- countries with different media and party systems;
+- non-election periods;
+- repeated exposure over months rather than ten minutes;
+- knowledge about local, international, or nonpolitical issues.
+
+Students should not merely say “the sample is unrepresentative.” They should identify a reason the effect could differ. For example, political interest may change attention to incidental news; platform architecture may change whether exposure is fragmented; or a multiparty system may alter what counts as cross-cutting content.
+
+Additional student-ready examples:
+
+- **Fact-check corrections:** Effects observed for clearly false election claims may not travel to ambiguous health claims or identity-protective beliefs.
+- **Incivility:** Reactions to profanity from an unknown speaker may not generalize to ridicule from a copartisan leader.
+- **Source credibility:** Findings about legacy news organizations may not apply to influencers, peers, public agencies, or AI-generated sources.
+- **Deliberation:** A facilitated classroom discussion may not reproduce the incentives, identities, and audience pressures of public online debate.
+- **Visual persuasion:** Effects of one carefully selected image may not travel to repeated exposure, different genres, or culturally distinct visual conventions.
+
+Evidence for external validity comes from theoretically informative variation, not simply accumulating identical replications. Researchers can test diverse populations, settings, treatment versions, outcomes, and periods; estimate heterogeneous effects; conduct multisite studies; compare field and laboratory implementations; or specify and test boundary conditions derived from theory.
+
+Clarify what external validity does **not** repair. Replicating a poorly measured construct across many settings does not make the measure valid. Finding the same confounded association in several samples does not establish causality. Each validity question remains distinct even though weaknesses can interact.
+
+Close with the central point: no study generalizes to “everything.” A defensible claim states its target scope and gives reasons—empirical and theoretical—for expecting the relevant dependence to remain stable across the proposed range.
 :::
 
 ## Diagnose the problem
