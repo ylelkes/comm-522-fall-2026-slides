@@ -1,0 +1,5 @@
+education,experience,women_n,men_n,women_mean_earnings_usd,men_mean_earnings_usd
+No degree,Lower,45,10,40000,40000
+No degree,Higher,15,30,60000,60000
+Degree,Lower,30,15,60000,60000
+Degree,Higher,10,45,80000,80000

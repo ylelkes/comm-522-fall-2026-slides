@@ -8,6 +8,16 @@ format:
     link-external-newwindow: true
 ---
 
+## Week 2
+
+### Laws, Patterns, and Mechanisms
+
+A two-hour seminar on description, explanatory targets, covering laws, statistical explanations, mechanisms, and rival accounts.
+
+[Open slides](week-02/){.btn .btn-primary role="button"}
+
+[Slides with notes](week-02/with-notes.html) · [Instructor discussion notes](week-02/instructor-notes.html)
+
 ## Week 1
 
 ### Theory, Explananda, and Explanation

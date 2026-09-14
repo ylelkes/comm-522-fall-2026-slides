@@ -1,7 +1,11 @@
 project:
   type: default
   output-dir: docs
+  pre-render:
+    - python3 week-02/sync-notes.py
   render:
     - index.qmd
     - week-*/index.qmd
 
+    - week-02/with-notes.qmd
+    - week-02/instructor-notes.qmd
