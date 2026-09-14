@@ -3,6 +3,8 @@ project:
   output-dir: docs
   pre-render:
     - python3 week-02/sync-notes.py
+  post-render:
+    - python3 week-02/finalize-student.py
   render:
     - index.qmd
     - week-*/index.qmd
