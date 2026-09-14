@@ -25,6 +25,7 @@ format:
     preview-links: auto
     footer: "COMM 5220 • Week 2"
     code-overflow: wrap
+filters: [strip-speaker-notes.lua]
 lang: en
 ---
 
