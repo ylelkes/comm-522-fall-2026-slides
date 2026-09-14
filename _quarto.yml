@@ -8,6 +8,7 @@ project:
   render:
     - index.qmd
     - week-*/index.qmd
+    - week-01/with-notes.qmd
 
     - week-02/presenter.qmd
     - week-02/with-notes.qmd
