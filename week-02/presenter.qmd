@@ -227,8 +227,8 @@ Source: Elster, pp. 11–12. Figure reproduced from the assigned PDF.
 |------------------------------------|------------------------------------|
 | State to state | More educated participants hold more tolerant attitudes.   |
 | State to event | Her prior distrust helps explain her refusal to speak.     |
-| Event to state | Hearing an opponent’s account leaves her less distrustful. |
-| Event to event | Hearing that account prompts her to revise her judgment.   |
+| Event to state | After hearing her opponent’s account, she trusts him. |
+| Event to event | After hearing her opponent’s account, she withdraws her accusation.   |
 
 ::: key-line
 Which statement identifies a process? What remains to be shown?
@@ -237,7 +237,15 @@ Which statement identifies a process? What remains to be shown?
 ::: notes
 Timing: 2 minutes. Elapsed: 15–17 minutes.
 
-The turnout example distinguished explaining a level from explaining a difference. Now introduce a separate distinction: do our claims connect conditions, occurrences, or both? This classifies the form of the explanatory claim before we compare explanatory strategies. We will define mechanisms fully after the testing exercises. His use of fact as a state of affairs distinguishes conditions from occurrences; it is separate from Hirschman’s account of selecting empirical regularities as explanatory problems. An event can be a scientific fact, and a stylized fact can summarize recurring events. All four claims in the table are hypothetical. Let students classify the left-hand and right-hand sides before asking which is most explanatory. The state-to-state line initially describes an association; as an explanatory claim it needs more. The state-to-event line names a relevant disposition without reconstructing how it mattered in this interaction. Event-to-state explains a resulting attitude, and event-to-event makes the sequence especially explicit.
+The turnout example distinguished explaining a level from explaining a difference. Now introduce a separate distinction: do our claims connect conditions, occurrences, or both? This classifies the form of the explanatory claim before we compare explanatory strategies. We will define mechanisms fully after the testing exercises. His use of fact as a state of affairs distinguishes conditions from occurrences; it is separate from Hirschman’s account of selecting empirical regularities as explanatory problems. An event can be a scientific fact, and a stylized fact can summarize recurring events. All four claims in the table are hypothetical. Let students classify the left-hand and right-hand sides before asking which is most explanatory. The state-to-state line initially describes an association; as an explanatory claim it needs more. The state-to-event line names a relevant disposition without reconstructing how it mattered in this interaction. Event-to-state targets a resulting attitude; event-to-event targets a particular action. “After hearing” establishes temporal order in the wording; a causal explanation additionally requires evidence that hearing the account helped produce the outcome.
+
+Clarify the last two rows by holding the initial event fixed: she hears her opponent’s account. “She trusts him” describes a condition that holds afterward; “she withdraws her accusation” describes something she does on a particular occasion. These could be two outcomes of the same encounter. Either could also occur without the other: she might trust him without publicly withdrawing the accusation, or withdraw it for strategic reasons without trusting him.
+
+If students say the earlier wording sounded identical, agree. “Leaves her less distrustful” implies an attitude change, while “revise her judgment” names a mental change; they could describe the same process. A state can begin through an event, and an event can establish a state. Mental changes can be events too: the public action simply makes the contrast clearer. Do not teach state/event as private/public or lasting/instantaneous. Ask whether the claim targets a condition that holds or an occurrence or transition. This is a distinction in how the explanatory claim describes its terms, not a claim that an episode has only one possible description.
+
+Keep this separate from levels versus differences. “Why does she trust him now?” targets a state; “why does she trust him more than before?” targets a difference in that state. “Why did she withdraw her accusation?” targets an event; “why did she withdraw it while another participant did not?” targets a contrast involving events. Levels/differences concerns the target and comparison; states/events concerns conditions versus occurrences. Neither classification by itself establishes explanatory adequacy.
+
+Optional evidence prompt: what would show trust, and what would show withdrawal? A private attitude measure or subsequent willingness to rely on the opponent could bear on trust; a recording could establish withdrawal. Neither alone shows that hearing the account caused it. Ask what evidence would distinguish persuasion from pressure to appear conciliatory. Judge an explanation against the question it claims to answer: evidence of withdrawal is not automatically evidence of trust. These examples and prompts are instructor elaborations.
 
 The exercise does not imply that only the final sentence could be a useful explanation. Each requires evidence and could be elaborated. Elster privileges event-to-event accounts at the level of first principles while allowing states as shorthand and accepting practical constraints. The instructor’s point is to identify what the language leaves implicit.
 
@@ -367,7 +375,19 @@ Say: “The theory gives us a reason to consider reevaluation. But to deduce thi
 
 The conflict is between choosing to spend a substantial amount and judging the experience disappointing. Reevaluation is one possible adjustment. Maya might instead value the time with her friend, blame misleading advertising, or acknowledge a poor purchase. Those alternatives do not require liking the show more. Even the experience of dissonance depends on factors such as perceived responsibility and how consequential the expense is to her. The broad theory does not uniquely select the favorable-reevaluation pathway.
 
-Ask three questions: “Which premise supplies the necessity?” The proposed law. “Does the broad theory warrant that premise?” Not as stated. “Does that mean dissonance could not explain Maya’s actual response?” No. It could support a mechanism hypothesis, but we need evidence that this pathway operated. Distinguish a broad theory, a specific hypothesis, a law-and-conditions argument, and evidence for the account.
+Ask three questions, giving students time to distinguish logical entailment from an empirically supported explanation.
+
+“Which premise supplies the necessity?” The proposed law: everyone who freely pays a high price for a disappointing show comes to like it more. The particular conditions place Maya within that general claim: she freely paid \$150, the price was substantial for her, and she found the show disappointing. Together, those premises entail the conclusion that her evaluation improves. The conditions alone do not establish that she must respond this way. Here “necessity” means that the conclusion must follow if the premises are true; a valid deduction does not establish that its proposed law is true.
+
+“Does the broad theory warrant that premise?” Not as stated. Cognitive-dissonance theory gives us a reason to investigate pressure to reduce an inconsistency between Maya’s choice and her disappointing experience. It does not by itself establish that everyone in these circumstances improves their evaluation of the show. Regret, minimizing the expense, or finding another justification for attending could provide different responses. Pressure to resolve an inconsistency does not entail one particular resolution. The displayed universal is a deliberately stronger lecture construction, not a law established by citing the theory.
+
+“Does that mean dissonance could not explain Maya’s actual response?” No. Failure to establish that the response was necessary does not show that the process was absent. A specific hypothesis is that Maya experienced discomfort about freely spending a substantial amount on a disappointing show and reduced that discomfort by reassessing the show more favorably. This proposes a pathway that could have produced the observed outcome. We still need evidence that it actually operated.
+
+Keep four things separate. A broad theory identifies dissonance and its reduction as a possible explanatory process. A specific hypothesis proposes that Maya reduced dissonance about her spending by evaluating this show more favorably. A law-and-conditions argument claims that a general premise plus Maya’s circumstances entails her response; that requires a stronger premise than the broad theory supplies. Evidence for the account bears on whether the hypothesized process operated and whether rival accounts explain the observations better. Naming the theory is not evidence, and stating a specific hypothesis is not the same as testing it.
+
+Optional evidence discussion: ask what we would need to learn about Maya’s initial disappointment, perceived freedom of choice, the importance of the expense, subsequent discomfort, and timing and reasons for reassessment. Her own account could contribute evidence, but it would not be decisive by itself. A more favorable final rating alone does not distinguish dissonance reduction from pressure to sound positive or new enjoyable experiences during the show. Evidence about the sequence and comparisons that distinguish these alternatives would strengthen the account. Treat these as proposed tests of an invented case, not findings.
+
+Close with: “Have we shown that Maya’s response had to follow from the premises, that it could occur through dissonance reduction, or that it actually occurred through dissonance reduction?” These are different achievements. Use the expanded explanation as an answer bank within the existing three-minute slot; reserve the optional evidence discussion for follow-up or the later testing exercises.
 
 Brief comparison if useful: demand theory can yield conditional results, but a decline in market purchases does not entail that every buyer purchases less. Keep this to one sentence; Maya is the main example, so students can follow the same case through probability, testing, and mechanisms.
 
@@ -668,9 +688,8 @@ Source: Teaching example adapted from Hedström’s decomposition logic, pp. 20�
 2.  Would randomly assigning invitations answer the same question?
 3.  Even with a credible average effect, what might remain unexplained?
 
-::: key-line
-Different claims require different evidence.
-:::
+
+
 
 ::: notes
 Timing: 2 minutes. Elapsed: 43–45 minutes.
@@ -1388,9 +1407,6 @@ It cannot distinguish private belief change from public compliance.
 -   Is it enough to explain how the forum works?
 -   What would justify stopping the inquiry here?
 
-::: key-line
-State the scientific or practical question before judging adequacy.
-:::
 
 ::: notes
 Timing: 4 minutes. Elapsed: 114–118 minutes.

@@ -123,7 +123,7 @@ Timing: part of the 15-minute course-map segment. Connect concepts to construct 
 **Headline:** “Social media causes depression.”
 :::
 
-::: {.fragment}
+::: fragment
 Evaluate the claim on three grounds: **construct**, **internal**, and **external validity**.
 :::
 
@@ -298,7 +298,7 @@ Source: Abend (2008), pp. 177–181.
 ## One school, different theoretical practices
 
 | Intellectual job | Illustrative Annenberg faculty |
-|---|---|
+|------------------------------------|------------------------------------|
 | **Generalize** · Theory~1~ | Watts, González-Bailón, Tan, Lydon-Staley, Centola, Falk, Lelkes, Freelon |
 | **Explain or interpret cases** · Theories~2–3~ | Lingel, Ticona, Punathambekar, Yang, Patton, Freelon |
 | **Orient or evaluate inquiry** · Theories~5–6~ | Banet-Weiser, S. Jackson, Pickard, Gutmann |
@@ -331,7 +331,6 @@ Close with the key line: calling one group “theoretical” and another “nont
 Sources: Current Penn Annenberg faculty profiles; classification is an instructional application of Abend’s taxonomy, not the faculty members’ own self-classification.
 :::
 
-
 ## Map your interest onto Abend
 
 > I am interested in \_\_\_\_\_\_\_\_.\
@@ -355,8 +354,6 @@ Timing: 3 minutes individual writing. The goal is not to decide which meaning is
 ::: notes
 Timing: 7 minutes, approximately one minute per student. Record the remaining rows on the board rather than typing into the slide. Treat uncertainty and overlap as evidence for Abend’s argument.
 :::
-
-
 
 ## Five-minute break {.break-slide}
 
