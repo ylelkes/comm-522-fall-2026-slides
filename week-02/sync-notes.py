@@ -7,6 +7,7 @@ import re
 base = Path(__file__).resolve().parent
 source = (base / 'index.qmd').read_text()
 (base / 'with-notes.qmd').write_text(source.replace('filters: [strip-speaker-notes.lua]\n', '').replace('  revealjs:\n', '  revealjs:\n    show-notes: true\n', 1))
+(base / 'presenter.qmd').write_text(source.replace('filters: [strip-speaker-notes.lua]\n', '').replace('  revealjs:\n', '  revealjs:\n    show-notes: false\n', 1))
 parts = re.split(r'^## ', source, flags=re.M)[1:]
 entries = []
 for number, part in enumerate(parts, 2):

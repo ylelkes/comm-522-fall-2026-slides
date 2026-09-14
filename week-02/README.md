@@ -21,3 +21,5 @@ The forum case and constructed statistics are hypothetical. The Semmelweis perce
 Both versions and the source QMD are public on GitHub. Removing notes from the student HTML does not make the separately published notes private.
 
 The post-render script removes the RevealNotes plugin and Speaker View menu entry from the student deck, and creates `docs/week-02/student.html` as an explicit student link. Both student URLs contain the same note-free presentation.
+
+`presenter.html` is the plain presentation: notes stay off the main slides, but pressing **S** opens Speaker View with notes. `student.html` removes notes entirely; `with-notes.html` displays them on the main page. All three are generated from `index.qmd` by `python3 week-02/build.py`.

@@ -16,7 +16,7 @@ A two-hour seminar on description, explanatory targets, covering laws, statistic
 
 [Student slides — no speaker notes](week-02/student.html){.btn .btn-primary role="button"}
 
-[Slides with notes](week-02/with-notes.html) · [Instructor discussion notes](week-02/instructor-notes.html)
+[Plain presentation — notes in Speaker View](week-02/presenter.html) · [Slides with visible notes](week-02/with-notes.html) · [Instructor discussion notes](week-02/instructor-notes.html)
 
 ## Week 1
 

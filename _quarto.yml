@@ -9,5 +9,6 @@ project:
     - index.qmd
     - week-*/index.qmd
 
+    - week-02/presenter.qmd
     - week-02/with-notes.qmd
     - week-02/instructor-notes.qmd
