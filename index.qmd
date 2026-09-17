@@ -8,6 +8,16 @@ format:
     link-external-newwindow: true
 ---
 
+## Week 3
+
+### Concepts and Conceptualization
+
+A two-hour seminar on Gerring's criteria for a good concept, McLeod & Pan's process for building one, and both frameworks enacted together on a live paper explicating "fake news."
+
+[Student slides — no speaker notes](week-03/student.html){.btn .btn-primary role="button"}
+
+[Plain presentation — notes in Speaker View](week-03/presenter.html) · [Slides with visible notes](week-03/with-notes.html) · [Instructor discussion notes](week-03/instructor-notes.html)
+
 ## Week 2
 
 ### Laws, Patterns, and Mechanisms
