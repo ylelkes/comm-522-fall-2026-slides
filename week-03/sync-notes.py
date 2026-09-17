@@ -37,9 +37,9 @@ schedule = '\n'.join([
     segment(10, 13, 'Diagnosing mega-concepts and the seven weak everyday definitions'),
     segment(14, 24, "Gerring's six criteria, diagnosed one by one, bad example before the name"),
     segment(25, 25, 'Break'),
-    segment(26, 31, "Building a concept: Gerring's strategies and Chaffee's steps, synthesized"),
-    segment(32, 41, '"Fake news": concept explication enacted on a live, current paper'),
-    segment(42, 44, 'Synthesis, forward link to measurement, and exit discussion'),
+    segment(26, 33, "Building a concept: Gerring's strategies and Chaffee's steps, synthesized"),
+    segment(34, 43, '"Fake news": concept explication enacted on a live, current paper'),
+    segment(44, 46, 'Synthesis, forward link to measurement, and exit discussion'),
 ])
 
 intro = '''---
