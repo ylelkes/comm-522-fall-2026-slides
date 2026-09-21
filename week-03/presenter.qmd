@@ -59,14 +59,22 @@ Source: Week 2 forum example, revisited. Course framing.
 A vague concept doesn't just weaken an explanation — it can make it impossible to state.
 :::
 
+::: project-caption
+This isn't hypothetical: it's the actual state of "affective polarization" research. See Druckman & Levendusky (2019), *Public Opinion Quarterly*.
+:::
+
 ::: notes
 Land the pivot concretely using both halves of Weeks 1–2. First, the *explanandum* problem: Hirschman's stylized fact and Elster's "fact to be established" both presuppose that we already know what the fact is a fact about. If "tolerance" bundles three different things — willingness to let a disliked group speak, absence of hostile feeling, and public compliance with a norm — then "tolerance rose" isn't one descriptive claim, it's an ambiguous compression of at least three, and we can't even agree on what needs to be explained.
 
 Second, the *causal-variable* problem: Hedström's variable concepts and Gerring's causal-utility criterion (previewed, not yet named) both require a variable clean enough to serve as one side of a causal claim. "Education increases tolerance" is not testable until "tolerance" picks out one specific, measurable thing — otherwise a study confirming the claim under one operationalization and a study refuting it under another are not actually in disagreement; they were never talking about the same variable.
 
+Make the point land as a live, real methodological problem, not just a classroom hypothetical: Druckman and Levendusky (2019), "What Do We Measure When We Measure Affective Polarization?" (*Public Opinion Quarterly* 83(1): 114–122), is a direct, published version of exactly this diagnosis, in a field this course covers. The field's standard measure of "affective polarization" is the feeling-thermometer difference: how much colder people rate the opposing party than their own. Druckman and Levendusky show this single number bundles together several conceptually distinct things that can move independently — dislike of ordinary out-party *people* versus dislike of party *elites*; polarization driven by policy disagreement versus polarization that persists even holding policy views constant; and a general negativity/social-desirability bias that inflates in-group warmth ratings for reasons unrelated to the out-party at all. Two studies can both report "affective polarization increased" using the identical thermometer-difference measure while capturing substantively different underlying phenomena — the same mega-concept problem as "tolerance," now in a published, widely cited literature rather than a classroom example.
+
+Ask the class to connect this explicitly to the causal-variable problem just stated: if a researcher claims "exposure to X increases affective polarization," which of Druckman and Levendusky's several bundled components is actually the dependent variable? A finding that X increases elite-directed animus and a finding that X leaves people-directed animus unchanged are not in tension — they may both be true — but a single thermometer-difference number cannot tell them apart, and two papers using "the same" measure may not be talking about the same variable at all. This is precisely why explication is not academic housekeeping: an entire literature can accumulate contradictory-looking findings that are actually just measuring different things under one label.
+
 State the thesis for today plainly: a concept is not a free byproduct of having an idea. It has to be built, and it can be built well or badly. Today gives two complementary toolkits for building it well — Gerring's criteria for what makes a concept *good*, and McLeod & Pan's process for how you actually *construct* one — and one live example, Molina et al.'s explication of "fake news," where we watch both toolkits used for real.
 
-Source: Course framing, building on Elster pp. 15–20 and Hedström pp. 11–14 (Week 2).
+Source: Course framing, building on Elster pp. 15–20 and Hedström pp. 11–14 (Week 2). Druckman, James N., and Matthew S. Levendusky. 2019. "What Do We Measure When We Measure Affective Polarization?" *Public Opinion Quarterly* 83(1): 114–122.
 :::
 
 ## A concept is not the same thing as a word
