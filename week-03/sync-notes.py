@@ -17,30 +17,7 @@ for number, part in enumerate(parts, 2):
     if not match:
         raise ValueError(f'Missing notes: {title}')
     notes = match.group(1).strip()
-    timing = re.search(r'Timing: (\d+) minutes\. Elapsed: (\d+)–(\d+) minutes\.', notes)
-    if not timing:
-        raise ValueError(f'Missing timing: {title}')
-    entries.append((number, title, notes, tuple(map(int, timing.groups()))))
-elapsed = 0
-for number, title, notes, (duration, start, end) in entries:
-    assert start == elapsed and end == start + duration, f'Noncontiguous timing: {title}'
-    elapsed = end
-assert elapsed == 120
-
-def segment(first, last, label):
-    selected = [e for e in entries if first <= e[0] <= last]
-    slide_range = str(first) if first == last else f'{first}–{last}'
-    return f'| {selected[0][3][1]}–{selected[-1][3][2]} minutes | {label} | {slide_range} |'
-
-schedule = '\n'.join([
-    segment(2, 9, 'Concept vocabulary: types, elements, and the intension/extension tradeoff'),
-    segment(10, 13, 'Diagnosing mega-concepts and the seven weak everyday definitions'),
-    segment(14, 24, "Gerring's six criteria, diagnosed one by one, bad example before the name"),
-    segment(25, 25, 'Break'),
-    segment(26, 33, "Building a concept: Gerring's strategies and Chaffee's steps, synthesized"),
-    segment(34, 43, '"Fake news": concept explication enacted on a live, current paper'),
-    segment(44, 46, 'Synthesis, forward link to measurement, and exit discussion'),
-])
+    entries.append((number, title, notes))
 
 intro = '''---
 title: "Week 3: Instructor Notes"
@@ -60,11 +37,7 @@ lang: en
 
 ## Teaching plan
 
-The seminar lasts **120 minutes, including a five-minute break**. The title slide shares the opening segment's time. Slide numbers below include the title slide and match the presentation counter. Speaker notes supply explanations, anticipated answers, misconceptions, and transitions. The activities fit within the listed timings. The order runs from vocabulary through the criteria of a good concept, into the two readings' shared account of how a concept actually gets built, and finally into one continuous worked example (Molina et al.'s explication of "fake news") that enacts both frameworks together.
-
-| Elapsed time | Segment | Presentation slides |
-|---|---|---|
-SCHEDULE_TABLE
+Slide numbers below include the title slide and match the presentation counter. Speaker notes supply explanations, anticipated answers, misconceptions, and transitions. The order runs from vocabulary through the criteria of a good concept, into the two readings' shared account of how a concept actually gets built, and finally into one continuous worked example (Molina et al.'s explication of "fake news") that enacts both frameworks together.
 
 ### Running examples
 
@@ -90,10 +63,6 @@ The six criteria are taught in Gerring's own order (resonance, domain, consisten
 
 After the break, Gerring's Strategies of Conceptualization and McLeod & Pan's Chaffee steps are taught together, not sequentially, because they are answering the same question from two literatures — showing this convergence explicitly is more persuasive than teaching them as two unrelated frameworks. Molina et al. then enacts both frameworks at once on a single, current, live paper, which is the deck's real payoff: students should leave having watched an actual published methods paper make the same minimal/maximal choice, hit the same differentiation problem, and use the same survey-then-define logic that the readings describe in the abstract.
 
-### If discussion runs long
-
-Protect the break and the Molina et al. segment above all else — they carry the deck's actual payoff. Recoverable time, roughly two minutes each: "Whole-class: predict the tradeoff," "Diagnose: an alphabet soup of civic groups," and "Whole-class: which strategy fits tolerance?" can each be cut to a single cold-call response instead of two or three. If more time is needed, shorten "Four standards a scientific concept has to meet" and "Step 1–3 aligned" to their key-line takeaway only, skipping the full walkthrough. Do not cut either contrast case (satire, polarized content) — they are the differentiation payoff and the reason the deck uses an 8-category taxonomy rather than a binary example.
-
 ### Model distinctions carried from Week 2
 
 **Explanandum vs. variable:** a concept can serve as either; today's criteria and processes apply to both, but causal utility specifically distinguishes what a *causal* variable needs (minimal, parsimonious) from what a *descriptive* target can afford (maximal, rich) — this is a direct extension of Hedström's variable-concept discussion from Week 2, not a new idea.
@@ -113,8 +82,7 @@ Gerring page numbers refer to the assigned chapter's printed pagination (pp. 107
 ## Slide-by-slide discussion notes
 
 '''
-intro = intro.replace('SCHEDULE_TABLE', schedule)
-for number, title, notes, timing in entries:
+for number, title, notes in entries:
     intro += f'### Slide {number}: {title}\n\n{notes}\n\n'
 (base / 'instructor-notes.qmd').write_text(intro)
-print(f'Synchronized notes for {len(entries)} teaching slides; 120 minutes.')
+print(f'Synchronized notes for {len(entries)} teaching slides.')

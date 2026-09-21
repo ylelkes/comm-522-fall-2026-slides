@@ -1,6 +1,6 @@
 # Week 3 seminar
 
-`index.qmd` is the editable slide source and contains all speaker notes. The deck reuses Week 1's Reveal.js settings and theme, with a teal accent swapped in for Week 2's rust so the weeks stay visually distinct. It has 44 slides (including the title slide) and a 120-minute schedule including a five-minute break.
+`index.qmd` is the editable slide source and contains all speaker notes. The deck reuses Week 1's Reveal.js settings and theme, with a teal accent swapped in for Week 2's rust so the weeks stay visually distinct. Speaker notes are synchronized from the editable source without requiring per-slide timings.
 
 The sequence teaches concept vocabulary and Gerring's six criteria of conceptualization (with a bad example diagnosed before each criterion is named) in the first half; after the break, Gerring's Strategies of Conceptualization (minimal/maximal/cumulative) and McLeod & Pan's Chaffee-based explication steps are taught side by side as two convergent answers to "how do you actually build a concept," then both are watched together, enacted, in Molina et al.'s (2019) explication of "fake news." All interactive prompts are whole-class discussion — no pair or small-group work.
 
