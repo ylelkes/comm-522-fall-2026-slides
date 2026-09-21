@@ -320,9 +320,6 @@ Resonance: how faithful is the concept to established usage?
 :::
 
 ::: notes
-Timing: 2 minutes. Elapsed: 31–33 minutes.
-
-::: notes
 Name the criterion: *resonance* — the degree to which a term or definition conforms to established usage rather than clashing with it. A purely stipulative definition, defined "on the authority of the author" alone with no tether to how the term is actually used, has zero resonance; at the limit (nonsense words) it isn't understood at all.
 
 Contrast with the good case: "rule by the people" as democracy's core meaning has strong resonance precisely because virtually every rival scholarly definition — electoral, liberal, majoritarian, participatory, deliberative, egalitarian (we'll see this full taxonomy later) — still orbits this same core idea, even while disagreeing about what "rule by the people" cashes out to institutionally. Resonance doesn't require consensus on every detail; it requires that competing definitions are recognizably arguing about the same thing.
@@ -334,7 +331,9 @@ Social media application (instructor exercise): Ask for one surprising inclusion
 Source: Gerring, pp. 116–117.
 :::
 
-## Diagnose: A requires political parties, competitive elections, an independent judiciary.
+## Diagnose: is this democracy definition universal?
+
+A textbook defines democracy using only contemporary Western nation-state institutions: political parties, competitive elections, an independent judiciary.
 
 Is this definition *wrong*?
 
@@ -487,9 +486,6 @@ Differentiation: what is the contrast-space against which this concept defines i
 :::
 
 ::: notes
-Timing: 2 minutes. Elapsed: 47–49 minutes.
-
-::: notes
 Name the criterion: *differentiation* — a concept must be distinguishable from its neighbors, not just internally coherent. "Green" only means something because it's delimited by where "yellow" and "blue" begin (Gerring, citing Pitkin); a new term that "unsettles the semantic field" by poaching attributes from neighbors sows confusion even if it resonates on first reading.
 
 "Contestation" as a defining attribute of democracy earns strong differentiation because it draws a genuinely sharp line against the neighboring concept of autocracy — a polity either does or does not hold meaningfully contested elections, and that single question does real boundary-drawing work. Contrast with the seven civic-group terms, which fail to specify what lies *outside* each of them relative to the others.
@@ -535,11 +531,8 @@ Source: Instructor social media illustration of Gerring's causal-utility criteri
 **Too broad for that explanation:** Total time on social media combines political information with many other activities.
 
 ::: notes
-Timing: 2 minutes. Elapsed: 51–53 minutes.
-
 **Outcome:** Knowledge of those policies, assessed separately from exposure.
 
-::: notes
 Translate “causal utility” as “usefulness for the causal question.” Gerring's point is that a concept must do more than describe a recognizable category. When it enters a causal argument, its definition should help us identify what is supposed to make a difference and what difference we are trying to explain.
 
 Work through the example in three steps. First, identify the proposed cause: encountering accurate information about candidates' policy proposals. Second, identify the comparison: encountering nonpolitical content instead. Third, identify the outcome: knowledge of those policy proposals. Each term needs a definition that allows it to be distinguished and observed. The concept “social media use” alone does not specify this contrast because both activities qualify as social media use.
@@ -549,9 +542,6 @@ Make the research example concrete. Imagine randomly assigning participants to s
 Explain why the outcome must be separate. Do not define “informative exposure” as “exposure that made someone more knowledgeable” and then announce that informative exposure increases knowledge. That would build the outcome into the definition of the cause. Identify the content independently of participants' responses, then measure whether knowledge differs. A participant who learns nothing must still count as having received the assigned information.
 
 The broad category remains useful for other purposes, such as describing where people spend time. It can also serve a broad causal question about access to a platform as a whole. The issue is fit: a category that works for one question may combine distinctions that another question needs to preserve. A well-defined broad intervention can have causal utility, and a narrowly named variable can still be poorly defined.
-
-::: notes
-Timing: 5 minutes. Elapsed: 53–58 minutes.
 
 End by asking students to complete: “For my question, the relevant aspect of social media is ***; I would compare*** with ***; the outcome is*** .” Then ask which activities their narrower concept excludes and why that exclusion serves their question. Their answer should identify the proposed cause independently of its hoped-for effect.
 
@@ -931,9 +921,6 @@ Source: Molina et al. (2019), pp. 193–195 (polarized content category); p. 187
 Which category? Which indicators justify the call?
 
 ::: notes
-Timing: 2 minutes. Elapsed: 107–109 minutes.
-
-::: notes
 Live-apply prompt, whole class, no small groups — take two or three proposed classifications before converging. Push students to justify their answer using specific indicators from the last several slides, not just a gut label. Expected reasoning: this is not false news (no fabricated or unverified claims — message/linguistic indicators like fact-checking would likely pass), and it's not satire (no non-literal framing, no audience expectation of a joke). It is a strong candidate for polarized content: factually accurate at the claim level, but structurally one-sided in sourcing and omission.
 
 If a student proposes "real news," use it productively: ask whether real news's own conceptual definition (editorial independence, verification, and — implicitly — some standard of balance/fairness in sourcing) is actually satisfied here, or only partially. This is a genuinely defensible point of disagreement in the literature, and the goal is to show the class that applying even a well-explicated taxonomy to a live case still requires judgment — explication narrows disagreement, it doesn't eliminate it.
@@ -963,9 +950,6 @@ Source: Course synthesis, connecting today to Elster pp. 15–20 and Hedström p
 
 
 **Week 4:** measurement (Toshkov; Dilliplane) — this is where we go next.
-
-::: notes
-Timing: 5 minutes. Elapsed: 112–117 minutes.
 
 ::: notes
 Make the forward link an honest, structural one, not an invented transition. Both readings today explicitly bracketed one piece: Gerring names operationalization as his seventh criterion but defers full treatment to his next chapter; McLeod & Pan name "define the concept operationally" as Chaffee's fifth step but treat it comparatively briefly, promising a fuller "empirical analysis" discussion of measurement quality later in their own chapter. Today built the conceptual definition side of the term/intension/indicator/extension structure in depth; the indicator side — how you actually build a good measurement instrument, and how you'd know if it's any good — is next week's material (Toshkov; Dilliplane), already sitting in the course's Week 4 readings.
