@@ -64,6 +64,8 @@ This isn't hypothetical: it's the actual state of "affective polarization" resea
 :::
 
 ::: notes
+Timing: 3 minutes. Elapsed: 3–6 minutes.
+
 Land the pivot concretely using both halves of Weeks 1–2. First, the *explanandum* problem: Hirschman's stylized fact and Elster's "fact to be established" both presuppose that we already know what the fact is a fact about. If "tolerance" bundles three different things — willingness to let a disliked group speak, absence of hostile feeling, and public compliance with a norm — then "tolerance rose" isn't one descriptive claim, it's an ambiguous compression of at least three, and we can't even agree on what needs to be explained.
 
 Second, the *causal-variable* problem: Hedström's variable concepts and Gerring's causal-utility criterion (previewed, not yet named) both require a variable clean enough to serve as one side of a causal claim. "Education increases tolerance" is not testable until "tolerance" picks out one specific, measurable thing — otherwise a study confirming the claim under one operationalization and a study refuting it under another are not actually in disagreement; they were never talking about the same variable.
@@ -88,7 +90,9 @@ Five words. **Four concepts:** journalist, competence, writing, clarity.
 :::
 
 ::: notes
-Introduce McLeod & Pan's foundational distinction. A *linguistic term* is the smallest unit in a sentence — every word counts. A *concept* is a basic unit of meaning: a single word or a phrase that denotes some real-world referent (a person, a behavior, a quality, a relationship). Not every linguistic term is a concept — articles and prepositions carry no independent referent — and one concept can take more than one word ("exposure to political posts" is a single concept expressed in four words).
+Timing: 3 minutes. Elapsed: 6–9 minutes.
+
+Introduce McLeod & Pan's foundational distinction. A *linguistic term* is the smallest unit in a sentence — every word counts. A *concept* is a basic unit of meaning: a single word or a phrase that denotes some real-world referent (a person, a behavior, a quality, a relationship). Not every linguistic term is a concept — articles and prepositions carry no independent referent — and one concept can take more than one word ("television violence viewing" is a single concept expressed in three words).
 
 Walk the class through the example sentence live: ask them to name the concepts, not the words. If someone says "a" is a concept, ask what real-world thing it refers to; there isn't one. This distinction matters immediately for today's whole-class exercises: when we ask "what's the concept here," we are asking about the idea being pointed at, not parsing grammar.
 
@@ -109,46 +113,52 @@ Source: McLeod & Pan, pp. 14–17.
 Process concepts are a special subcategory of mega-concepts (p. 17).
 
 ::: notes
-Introduce McLeod & Pan's six types of concepts briefly, previewing that we'll use them in a moment: *singular* (a particular named person, place, or thing — e.g., "the September 9 forum"), *class* (a category of such things — e.g., "forums" in general, "journalists"), *relational* (a connection between concepts — e.g., "positively related to," "causes"), *variable* (an attribute along which things differ — e.g., "tolerance," "competence"), *process* (a way things change — e.g., "priming," "institutionalization"), and *mega-concept* (a compound tangle of several unspecified concepts at once — e.g., "democracy," "development," and, we'll see shortly, "social media").
+Timing: 3 minutes. Elapsed: 9–12 minutes.
 
-Clarify that these types overlap: the authors explicitly treat process concepts as a special subcategory of mega-concepts because of their compounded nature (p. 17). The forum and tolerance examples are course applications. “Social media” functions as a mega-concept in the underspecified claim “Social media is harmful to the political process,” rather than having that status in every use. This is a classroom adaptation of the authors’ diagnosis on pp. 19–20, not their original example.
+Present this as Gerring's version of exactly the same structure McLeod & Pan just gave us, under different names. Term = the linguistic label (a linguistic term, in McLeod & Pan's sense). Intension = the conceptual definition — the attributes doing the defining work. Indicator = the operational definition — how we'd actually go find it in the world. Extension = the set of real things that end up qualifying once the intension and indicators are fixed.
 
-Why is a relationship a concept? A concept is a unit of meaning, and a relationship has meaning just as an object or attribute does. In “Education increases tolerance,” education and tolerance are variable concepts, while “increases” expresses a relational concept: a causal connection between them. Replace “increases” with “is associated with,” and the claim changes substantially. Education and tolerance now vary together, but we are no longer claiming that education causes tolerance to rise.
+Make the mutual-adjustment point explicit and concrete: if we tighten the intension of "democracy" by adding "civil liberties" as a second required attribute alongside "contested elections," some countries that used to qualify (extension) now fall out, and we may need new indicators to detect civil liberties specifically. Change any one corner, and the concept moves as a whole — this is why Gerring insists concept formation has to be viewed holistically rather than as fixing definitions in isolation.
 
-McLeod & Pan count relationships as concepts because “greater than,” “part of,” “associated with,” and “causes” specify different meaningful connections. Relational concepts allow us to combine other concepts into hypotheses and theoretical propositions. A relational concept can span several words; we are identifying a unit of meaning rather than counting grammatical words. The education/tolerance sentence is an instructor illustration of their discussion on p. 16.
+Flag, without dwelling, that this four-part structure explains why "operationalization" (Gerring's seventh, deferred criterion; McLeod & Pan's fifth Chaffee step) keeps reappearing all class: it's not a separate later task bolted onto conceptualization, it's one of the four elements that was always part of the concept's structure from the start.
 
-Walk through the meeting example as an illustration of institutionalization: an informal practice becomes expected, routinized, and formalized. The meeting example is an instructor illustration of McLeod & Pan's definition, not an example from their text.
-
-Emphasize that a variable describes an attribute along which units differ, whereas a process concept describes a particular way change occurs. Variables can also measure change over time. The distinction is between an attribute and a process, not between a static world and a changing one.
-
-For priming, explain that encountering an idea can activate related ideas in memory. McLeod & Pan discuss faster responses to semantically related stimuli as an observable outcome predicted by the process. A process concept helps state how something happens, but naming the process alone does not demonstrate it.
-
-Return briefly to the six-types slide: process concepts are a special subcategory of mega-concepts because they combine multiple elements and relationships. To study a process, unpack those elements and specify the observable outcomes that the proposed process predicts.
-
-Source: McLeod & Pan, p. 17 (process concepts, institutionalization, priming, and their relationship to mega-concepts). Meeting example and variable/process comparison are instructor illustrations. Source: McLeod & Pan, pp. 16–17 (six types), 19–20 (logic adapted to the social media example).
+Source: Gerring, pp. 114–115.
 :::
 
-## Gerring's four elements: defining social media
+## Whole-class: name the type
 
-| Element | Meaning | Your social media definition |
-|------------------------|------------------------|------------------------|
-| **Term** | The linguistic label | “Social media” |
-| **Intension** | The defining attributes | Which features must something have to qualify? |
-| **Indicator** | What we observe to identify those attributes | What evidence would show each feature is present? |
-| **Extension** | The set of cases meeting the definition | Which platforms qualify? Which do not? |
+Using our own Week 2 vocabulary:
 
-For this exercise, classify **platforms**, rather than individual users or posts.
+1.  "Tolerance" — what type of concept?
+2.  "The September 9 forum" — what type?
+3.  "Positively related to" — what type?
+4.  "Television" — what type? (Hold that thought.)
 
 ::: notes
-Start with the definitions students wrote at the opening. Ask one student for a defining attribute and another for a case that satisfies it. Candidate attributes might concern user-created content, interaction, or visible connections among users. These are proposals to evaluate, not a settled list of requirements.
+Timing: 2 minutes. Elapsed: 12–14 minutes.
 
-Keep intension and extension separate: a list of service names is a partial illustration of the extension, not a statement of the defining attributes. The extension is the full set of cases satisfying the definition within the specified domain. An indicator is evidence for an attribute, such as observing whether users can publish material for other users to see. That differs from the attribute itself.
+Quick cold-call check, one answer per item, moving fast. Expected: (1) tolerance is a *variable* concept — an attribute along which people differ in degree. (2) The September 9 forum is a *singular* concept — one particular, named event; "forums in general" would instead be a *class* concept. (3) "Positively related to" is a *relational* concept — it connects two other concepts (e.g., education and tolerance) without itself denoting a person, place, or attribute. (4) "Television" is the trap: students will likely say *class* concept (a category of devices or content), and that's defensible, but flag that in a research claim like "television is harmful," it's functioning as an ill-specified *variable* — or worse, several different unspecified variables bundled together. Don't resolve this fully; it's the hook into the next segment.
 
-Fix the unit as a service for the classification exercise. A later study of people would require a different variable, such as their frequency of a specified activity on qualifying platforms. Do not silently switch between platforms, features, posts, and people.
+If time allows, ask for one volunteered example from a student's own project and classify it live. Keep this to one example; the exit prompt returns to personal projects at the end of class.
 
-Gerring treats the four elements as interdependent: changing defining attributes may change the cases that qualify and the evidence needed to classify them. Keep the current version on the board for revision.
+Source: Whole-class application of McLeod & Pan's typology (pp. 14–17) to Week 2 material.
+:::
 
-Source: Gerring, p. 116. Social media is an instructor application.
+## Gerring's Figure 5.1: tightening a definition shrinks its reach
+
+**Necessary-condition attributes:** more intension → less extension.
+
+Democracy = "free and fair elections" *and* "civil liberties"?
+
+Fewer countries qualify than under "free and fair elections" alone.
+
+::: key-line
+Adding requirements can only narrow — never widen — who counts, when each requirement is necessary.
+:::
+
+::: notes
+Set up the tradeoff verbally before showing the figure on the next slide. Ask the class to predict, before any diagram appears, what happens to the set of countries counted as democracies if "civil liberties" is added as a second required attribute alongside "free and fair elections." Take one or two guesses, then move to the figure to confirm the mechanism visually.
+
+Source: Gerring, pp. 121–123.
 :::
 
 ## Gerring's Figure 5.1: intension and extension
@@ -158,23 +168,35 @@ Source: Gerring, p. 116. Social media is an instructor application.
 **Adding necessary attributes narrows membership.** Requiring elections *and* civil liberties admits fewer countries, or the same number.
 
 ::: notes
-Introduce the intension/extension tradeoff using Gerring's own Figure 5.1, shown on screen. When defining attributes are treated as ***necessary conditions*** (a case must have all of them to qualify), adding attributes to the intension can only shrink or hold constant the extension — never grow it: this is the solid downward-sloping line running from low-intension/high-extension to high-intension/low-extension. Start from "democracy = free and fair elections" and ask the class to predict what happens to the set of countries counted as democracies if we add "civil liberties" as a second necessary condition. Answer: the set can only get smaller (or stay the same); some countries with contested-but-illiberal elections now fall out.
+Timing: 3 minutes. Elapsed: 14–17 minutes.
 
 Flag the flip side briefly, without spending much time: if attributes are instead treated as ***sufficient*** conditions (any one alone is enough to qualify — direct popular rule *or* indirect popular rule *or* deliberative rule, each independently sufficient), then adding attributes can only widen the extension, the opposite direction. Gerring notes this sufficient-condition case is much rarer in practice than the necessary-condition case; most social-science attributes are understood as necessary, necessary-and-sufficient, or as a matter of degree (additive/continuous), all of which behave like the necessary-condition case.
 
 Do not let this become a logic-notation exercise. The payoff is entirely practical: whenever a definition changes and someone reacts "wait, that changes who counts," this tradeoff is exactly why — and it is the mechanism behind a concept-formation failure we are about to name in Gerring's criteria.
 
-do this with social mediaHave a student read the current definition before adding a requirement. Hold the unit, domain, and all other attributes fixed. Adding a necessary attribute can only shrink or leave unchanged the set of qualifying platforms. Removing it can only enlarge or leave that set unchanged. Do not assume a strict change: that depends on whether any cases differ on the added requirement.
-
-Ask students to describe each boundary case's relevant features rather than settle the question by brand recognition. Is visibility public, restricted to a group, or only between two people? Does the definition concern the entire service or one feature? A news site with comments tests whether allowing interaction is sufficient for membership. Let alternative answers stand if they follow consistently from different explicit definitions.
-
-Record the revised intension and resulting inclusions and exclusions on the board. The goal is a defensible rule, not unanimous agreement on a label.
-
-Source: Instructor application of Gerring, pp. 122–123, Figure 5.1.
-
-Apply the figure to the class definition of social media: add public visibility as a necessary attribute, hold the other requirements fixed, and ask which platforms would no longer qualify. Removing that requirement can enlarge or leave unchanged the extension. Record the revised rule and one boundary case.
-
 Source: Gerring, pp. 121–123, Figure 5.1.
+:::
+
+## Exercise: predict the tradeoff, on our own definition
+
+Our working definition so far: *social media = a platform for publishing user-generated content to others.*
+
+Now add a second necessary condition: *...and organizes what users see via an algorithmic feed.*
+
+1.  Does the set of qualifying platforms on our board grow, shrink, or stay the same?
+2.  Name one item from our board list that would now *drop out*.
+3.  Is "algorithmic feed" being treated as necessary, or as a matter of degree?
+
+::: notes
+Fast, cold-call, no small groups. Bring back the actual board list from the opening exercise — clear examples and borderline cases the class already named for "social media" — and apply the tradeoff to it directly rather than to a fresh example. Expected answer to (1): shrink, or stay the same at best; reinforce the mechanism from the previous slide rather than re-deriving it.
+
+For (2), push the class to use their own board items. Plain email, a group text thread, or a static personal blog are likely candidates to drop out — user-generated content, but no algorithmic feed organizing what anyone sees. A borderline case like Wikipedia or a LinkedIn feed is exactly the kind of case worth debating live: does a lightly-ranked or mostly-chronological feed count as "algorithmic" enough? Let the disagreement run for a moment before moving on — the point is that the board's own borderline cases are precisely where this kind of attribute-adding is felt, not resolved by fiat.
+
+For (3), most students will say "matter of degree" once pressed — algorithmic curation ranges from simple chronological ranking to fully personalized machine-learned feeds, which is exactly the additive/continuous case Gerring says produces the same narrowing direction as a strict necessary condition, just via a shrinking *fit* rather than a sharp in/out cut.
+
+Transition: "We now have the machinery — term, intension, indicator, extension, and how tightening intension moves extension. Gerring uses this machinery to state six criteria for judging whether a concept is any good. We're going to work them out by diagnosis: I'll show you a bad example first, and you tell me what's wrong before I tell you the criterion's name."
+
+Source: Whole-class application of Gerring's Figure 5.1 logic to the running social-media exercise.
 :::
 
 ## Diagnose: "Social media is harmful to the political process."
@@ -186,7 +208,7 @@ Sounds like a claim. Is it testable?
 3.  Harmful to *what* — voters? officials? institutions?
 
 ::: notes
-Put our social media adaptation of McLeod & Pan's example sentence on the board and ask the class to diagnose it before you supply the answer. Take two or three responses per question.
+Timing: 3 minutes. Elapsed: 19–22 minutes.
 
 “Social media” could refer to time spent scrolling that displaces other activities; exposure to political information; encountering hostile or misleading posts; participation in political discussion; or politicians adapting their messages to attract engagement. Each interpretation points to a different activity, unit, comparison, and research design. These are possible meanings and hypotheses, not established effects. Ask students to select one interpretation and say what would have to vary for the claim to become testable.
 
@@ -207,7 +229,9 @@ Source: Classroom adaptation of McLeod & Pan’s meaning-analysis example, pp. 1
 | **Precision**            | Others can understand and evaluate it       |
 
 ::: notes
-Quickly name McLeod & Pan's four standards and diagnose the underspecified use of "social media" against them, closing the loop from the previous slide. It is plenty abstract — it applies across many times, places, and studies. It fails clarity of meaning outright: as the last slide showed, it doesn't tell us which of five different things it means. Operationalizability is oddly not the bottleneck here — each interpretation suggests possible observations — the bottleneck is that we haven't chosen among them. Precision, which McLeod & Pan treat as the broadest standard (can this be communicated to other scientists and to nonscientists alike?), is unreachable until clarity of meaning is fixed first.
+Timing: 2 minutes. Elapsed: 22–24 minutes.
+
+Quickly name McLeod & Pan's four standards and diagnose "television" against them, closing the loop from the previous slide. It is plenty abstract — it applies across many times, places, and studies. It fails clarity of meaning outright: as the last slide showed, it doesn't tell us which of five different things it means. Operationalizability is oddly not the bottleneck here — all five interpretations are individually measurable — the bottleneck is that we haven't chosen among them. Precision, which McLeod & Pan treat as the broadest standard (can this be communicated to other scientists and to nonscientists alike?), is unreachable until clarity of meaning is fixed first.
 
 Note the built-in tension the reading flags: abstractness and operationalizability pull against each other — the more abstract a concept, the harder it is to operationalize; the more easily operationalized, the more it risks losing abstractness (a single-item, single-context measure). Concept explication is the discipline for holding both at once, which is exactly what the rest of today builds toward.
 
@@ -220,7 +244,7 @@ Source: McLeod & Pan, pp. 18–19.
 
 | Approach | Example | Weakness |
 |------------------------|------------------------|------------------------|
-| By examples | "Social media? Discussion forums, photo-sharing apps..." |  |
+| By examples | "Social media? Discussion forums, photo-sharing apps..." | |
 | By exclusion | "Social media is not email or a static website" |  |
 | Comparing subsets | "Opinion leaders vs. everyone else" |  |
 | By procedure | "IQ is a score on this test" |  |
@@ -228,40 +252,17 @@ Source: McLeod & Pan, pp. 18–19.
 **Our definition:** Does listing familiar platforms tell us what makes a new service social media?
 
 ::: notes
-Frame the first four approaches as useful starting points that cannot, individually, finish the work of defining a research concept. They make an idea concrete by pointing to examples, exclusions, differences among groups, or measurement procedures. Their common limitation is that they may leave the underlying meaning and its applicability beyond the immediate examples unspecified. Use the explanations below as a bank of follow-ups; briefly illustrate each approach and pursue the one most evident in students' opening definitions.
+Frame all four as useful starting points that cannot, individually, finish the work of defining a research concept. Each makes an idea concrete — by pointing to examples, exclusions, group differences, or a measurement procedure — but each also leaves the underlying meaning, and its reach beyond the immediate cases, unspecified. Walk through all four using the same running social-media example so the parallel is unmistakable.
 
-**1. Defining by examples: “Social media means discussion forums and photo-sharing apps.”** This helps a listener recognize the kind of thing we are discussing. It connects an abstract label to familiar cases and gives us candidates for the extension. But what do these examples share that makes them social media? User-created content? Interaction? Public visibility? Connections among users? The list does not tell us which attributes are required, which are optional, or how to combine them into a membership rule.
+**1. By examples: "Social media means discussion forums and photo-sharing apps."** This helps a listener recognize the kind of thing under discussion, and gives candidate cases for the extension. But what do these examples actually share that makes them social media? User-created content? Interaction? Public visibility? Connections among users? The list doesn't say which attributes are required, which are optional, or how to combine them into a membership rule. Ask: "A new website lets readers publish comments beneath news articles. Does it belong on the list, and why?" If a student can only name another familiar platform, they've extended the list without stating the rule. In Gerring's terms: examples illustrate the extension without specifying the intension.
 
-Ask: “A new website lets readers publish comments beneath news articles. Does it belong on your list, and why?” If the student can only name another familiar platform, they have extended the list without stating the rule. Ask them to identify the relevant shared attribute, then test whether something they intended to exclude also has it. The limitation is not that examples are useless or that we need an exhaustive list. It is that examples alone do not determine how to classify unfamiliar cases. In Gerring's terms, examples illustrate the extension without adequately specifying the intension.
+**2. By exclusion: "Social media is not email or a static personal website."** The mirror image of the first approach, and no better off. Email is excluded because it isn't public; a static website is excluded because it isn't interactive — two different reasons, neither of which tells us what the *included* cases share. A rule built entirely from what something *isn't* can correctly exclude everything on a list of non-examples while still leaving the actual membership rule for what's left completely unstated. Ask: does excluding email and a personal blog tell us whether a subscription newsletter with an open comment section belongs?
 
-| Approach | Example | Weakness |
-|------------------------|------------------------|------------------------|
-| By examples | "Social media? Discussion forums, photo-sharing apps..." | Imprecise; misses the essence |
-| By exclusion | "Social media is not email or a static website" | Same problem, from the other side |
-| Comparing subsets | "Opinion leaders vs. everyone else" | Disguises the general variable |
-| By procedure | "IQ is a score on this test" | Reifies the measure as the concept |
+**3. Comparing subsets: "Opinion leaders are more informed and more consulted than everyone else."** Useful for noticing that members of a class differ from one another — but it presupposes, rather than states, the underlying general variable driving that difference. Applied here: calling some users "power users" and others "casual users" describes a difference in degree without ever naming which single attribute — posting frequency? follower count? engagement rate? — actually constitutes it. The comparison is real; the variable behind it is left implicit.
 
-**2. Defining by exclusion: “Social media is not email or a static website.”** Exclusions are useful because a concept needs boundaries. They can reveal that a student intends something more specific than all internet communication. However, ask what justifies each exclusion. If email is excluded because its communication is private, is public visibility a necessary attribute? What then happens to a platform whose interactions occur within private groups? If a static website is excluded because visitors cannot contribute content, would adding a comment box make it social media?
+**4. By procedure: "IQ is whatever this test measures."** For social media: "A platform counts as social media if it appears on this analytics firm's tracked list." This buys apparent precision and replicability — but risks the *reification fallacy* we'll name properly with Molina et al. later: treating the measurement procedure as though it settles what the concept itself means. If the tracked-platforms list is wrong, outdated, or contested, procedure alone gives no independent way to say so, because the procedure and the concept have been silently identified with each other.
 
-The point is not to declare email or any other case definitively inside or outside the category. It is to elicit a positive rule that explains the exclusions and can be applied consistently elsewhere. Saying what a concept is not leaves many possible meanings open. An exclusion based on an incidental feature may also stop working when that feature changes. Distinguish a rule stated negatively, which can be precise, from merely listing things that do not count. A useful negative boundary still needs a specified domain and a reason for drawing it there.
-
-**3. Defining by comparing and contrasting subsets: “Opinion leaders are more informed and more frequently consulted than other people.”** This is McLeod & Pan's example. Comparing groups draws attention to differences worth studying, but the group labels can conceal the attributes used to make the distinction. Being informed and being consulted are not the same characteristic: someone could know a great deal without anyone seeking their advice. Ask whether the proposed definition requires both, and what “more” means relative to the comparison group.
-
-For a social media application, consider: “Highly engaged users are the people who post more than other users.” This points to variation in posting, but it does not establish that posting frequency captures engagement. Does someone who reads carefully, sends private replies, or participates occasionally in lengthy discussions count as less engaged? Ask: “What underlying attribute are you trying to distinguish, and why is posting the right basis for that distinction?” The answer might justify a narrower concept, such as posting frequency, or a broader construct with multiple dimensions.
-
-Also distinguish relative group membership from the attribute itself. A person can enter the “high” group merely because the comparison group changes, even if their behavior stays the same. Relative definitions can serve a research purpose, but the reference population and rule must be explicit. The objective is to make the variable and comparison visible rather than leave them hidden inside a label such as “engaged user.”
-
-**4. Defining by procedure: “IQ is the score produced by this test.”** This tells us how to obtain a number and may make the procedure reproducible. It does not, by itself, tell us what property the number represents or why the test is an adequate representation of that property. Operational precision and conceptual adequacy are different achievements. A procedure can be useful while remaining an incomplete definition.
-
-Translate this into our example: “Social media use is the total recorded by a screen-time tool for the apps we select.” Specifying the apps, observation period, and recording rules could yield a precise operational definition. But why were those apps selected? Does the intended concept include use through a browser or another device? Does the total distinguish encountering political information, watching entertainment, messaging friends, and participating in discussion? These are questions about what the proposed measurement captures, not assumptions about how every screen-time tool works.
-
-Ask: “If two people receive the same total but one reads political posts and the other exchanges private messages, should they have the same value for the concept our study needs?” For total time spent using the selected apps, perhaps yes. For exposure to political information, that total would be insufficient. Let the research question determine which distinctions matter.
-
-Explain the risk of **reification** carefully: treating a measurement result as if it were the underlying conceptual entity itself. If we define the concept entirely by a particular instrument, we lose an independent basis for asking whether the instrument measures it well. McLeod & Pan also warn of an atheoretical tendency: collecting and comparing scores without specifying the meaning that makes those comparisons informative. The remedy is to articulate the intended property, explain why the observations represent it, and remain open to evidence that the definition or measure needs revision.
-
-**Return to students' definitions.** Ask which of these moves they used at the start of class. Choose one definition and work through four questions: What are its examples? What does it exclude? What attribute or difference supplies the membership rule? What observations would let another researcher apply that rule? Keep classification of platforms separate from measurement of people's activities on them; the latter requires additional conceptual work.
-
-Close with the connection to explication: retain the examples, boundary cases, comparisons, and procedures, but explain the conceptual reasoning that links them. The aim is a definition whose meaning can guide observations in a new setting, rather than a label that works only for the cases or instrument already in front of us.
+Ask the class: "Which of these four did we just unknowingly use on 'social media is harmful to the political process' a few slides ago?" Likely answer: by examples and by procedure — treating "social media" as self-evidently whatever a familiar handful of platforms are, without asking which dimension of use actually matters for the claim.
 
 Source: McLeod & Pan, Table 2.2 and pp. 21–26. Opinion leadership and IQ are examples from the reading; social media examples and classroom questions are instructor adaptations.
 :::
@@ -270,54 +271,26 @@ Source: McLeod & Pan, Table 2.2 and pp. 21–26. Opinion leadership and IQ are e
 
 | Approach       | Example                                         | Weakness |
 |------------------------|------------------------|------------------------|
-| By analogy     | "A frame is like a window on the world"         |          |
-| By function    | "Fear appeal = arouses emotional reaction"      |          |
-| By antecedents | "Dissonance = tension from conflicting beliefs" |          |
+| By analogy     | "A frame is like a window on the world"         |  |
+| By function    | "Fear appeal = arouses emotional reaction"      |  |
+| By antecedents | "Dissonance = tension from conflicting beliefs" |  |
 
 ::: key-line
 Concept explication is the eighth approach — it doesn't discard these seven, it disciplines them.
 :::
 
 ::: notes
-| Approach | Example | Weakness |
-|------------------------|------------------------|------------------------|
-| By analogy | "A frame is like a window on the world" | Illuminates by similarity, hides differences |
-| By function | "Fear appeal = arouses emotional reaction" | Defines a cause by its effect |
-| By antecedents | "Dissonance = tension from conflicting beliefs" | Defines an effect by its cause |
+**5. By analogy: "Social media is a public square" / "a frame is like a window on the world."** Drawing a comparison to something familiar illuminates fast — a public square suggests open, many-to-many communication, which is genuinely part of what social media is. But an analogy imports whatever the source domain happens to highlight while silently hiding what it doesn't: a public square doesn't have an algorithm deciding who hears whom, doesn't collect and sell data on everyone present, and doesn't have a private company setting the rules of entry. McLeod & Pan point to the framing literature's own "fractured paradigm" problem as a case where analogy-based definitions (a frame as a "window," a "picture frame," a "story line") never converged on a shared meaning, precisely because each analogy licensed a different, only partly overlapping set of implications.
 
-Introduce the remaining three approaches as ways of making an unfamiliar concept understandable through something else: a familiar image, a consequence, or an antecedent. All three can help us think, but each can leave the properties of the concept itself underspecified. Use these notes as a bank of explanations and follow-ups. Give one short example of each and pursue the approach most evident in the class's working definition.
+**6. By function: "Fear appeal = a message that arouses an emotional reaction."** Defining a concept by the effect it produces is useful for latent, hard-to-observe constructs — we can't directly see "fear appeal" in a message, but we can observe whether audiences react fearfully. The risk is circularity: if the *only* evidence that a message qualifies as a fear appeal is that it produced fear, the definition can't be used to predict or explain that same reaction without assuming what it's trying to establish. Applied to social media: calling a platform feature "addictive" because it's associated with heavy use defines the feature by the very outcome we might want to explain.
 
-**5. Defining by analogy: “A frame is like a window on the world.”** This is the kind of analogy discussed by McLeod & Pan. A window makes some things visible and leaves others outside the view; that familiar experience can help introduce selection and emphasis. But a conceptual frame does more than mark the edges of what is visible. The analogy does not by itself specify how a frame organizes interpretation or what observations would identify it. The familiar image can become a constraint if we assume that every property of a literal window also applies to a frame.
+**7. By antecedents: "Dissonance is the tension that comes from holding conflicting beliefs."** The mirror-image move — defining a concept by its presumed cause rather than its effect. Same risk in reverse: if dissonance is identified only by the presence of conflicting beliefs, and conflicting beliefs are identified only by the dissonance they're presumed to cause, the two claims can prop each other up without either being independently testable. Walk through the trap concretely: a researcher observes someone who freely chose an option and now expresses a more favorable opinion of it than before, and explains this by saying "they experienced dissonance from holding conflicting beliefs about their choice." Pressed further — "how do we know they held conflicting beliefs in the first place?" — the only evidence on offer is the belief change itself, which is exactly the thing dissonance was invoked to explain. The antecedent and the outcome have been defined into each other, so the "explanation" can't fail: whatever the person does afterward can always be redescribed as proof that dissonance must have been present.
 
-Apply this to: “Social media is a public square.” The analogy draws attention to people gathering, encountering others, and exchanging views. Ask: “Which part of the comparison is doing the defining work?” Is it public access, interaction, visibility to an audience, or the possibility of political discussion? A metaphor does not tell us which of these properties is necessary for something to count as social media.
+The fix runs the same way for both #6 and #7: find an indicator of the antecedent (or the function) that doesn't depend on already knowing the outcome it's meant to explain. For dissonance, that might be a self-reported measure of discomfort captured *before* the belief change is measured, or an experimentally manipulated condition (freely chosen vs. assigned) whose presence doesn't rely on the belief-change measure at all. Applied to social media: it's the identical trap to say a post "went viral because it was controversial" while defining "controversial" as nothing more than "the kind of content that goes viral" — controversy needs its own independent marker (coded disagreement in the replies, a polarized ratio of positive to negative reactions) measured separately from the virality it's supposed to explain.
 
-Then ask: “Would a private online discussion group count? What about a public website where visitors cannot interact?” These boundary cases reveal what the analogy leaves unresolved. A platform can also organize visibility through rules or ranking systems that differ from how people encounter one another in a physical square. Students should specify the relevant properties rather than assume that resemblance on one dimension establishes resemblance on all dimensions.
+State the punchline plainly: none of these seven is illegitimate — each is a real, common move, and Gerring's own "strategies" section later in class reuses some of this same logic. The problem is relying on only one, in isolation, without an integrating discipline. That discipline is McLeod & Pan's eighth approach: *concept explication* — analyzing a concept's meaning, describing its essential qualities, identifying its dimensions when it's complex, and prescribing how it connects to the empirical world. The rest of today is about what that discipline actually looks like, using Gerring's criteria for judging the result and McLeod & Pan's own six-step process for producing it.
 
-The useful move is to translate the analogy into explicit attributes and then test those attributes against cases. We can retain the analogy as an illustration after making its limits clear. McLeod & Pan's criticism is that analogy alone supplies neither enough precision nor a sufficiently clear route to observation.
-
-**6. Defining by function: “A fear appeal is a message that arouses fear.”** This defines the proposed cause through a response it produces. It can be a useful starting point when we notice a recurring effect and want to investigate what generates it. However, fear can depend on the audience and circumstances as well as the message. A message could contain a threat yet fail to frighten a particular recipient. If we classify it as a fear appeal only when someone becomes afraid, we make it difficult to test whether fear appeals produce fear: the outcome has already entered our classification of the cause.
-
-For social media, consider: “Social media is technology that connects people.” Ask whether “connects” means an observable capability, such as allowing users to contact one another, or an outcome, such as increasing their sense of belonging. The first is a candidate defining attribute. The second is a proposed effect whose occurrence needs investigation. The same sentence can hide these different meanings.
-
-Ask: “If someone uses a platform and feels more isolated, does it stop being social media?” If the answer is yes solely because the predicted benefit failed to occur, the definition protects the claim from contrary evidence. It also leaves the boundary too broad: many things outside social media can help people feel connected. Ask students to define the relevant platform properties independently, then state increased connection as a hypothesis to test.
-
-Do not imply that every functional definition is circular. Functional roles can be theoretically useful, particularly for constructs that are not directly observable. The problem arises when the effect is our only basis for identifying the cause and we then present that same effect as evidence for the causal claim. Distinguish intended purpose, available capability, and observed consequence.
-
-**7. Defining by antecedents: “Cognitive dissonance is tension resulting from conflicting cognitions.”** This approaches a concept through what is supposed to produce it. The antecedent helps locate the concept within a causal account, but it does not fully specify the resulting state. Conflicting cognitions and the experience of tension are distinguishable. Identifying one does not automatically establish the other, and tension may have other sources.
-
-Ask: “What would let us distinguish the proposed state from other kinds of discomfort, rather than infer its presence merely because we observed its presumed cause?” The research task is to clarify both the state and its relationship to its proposed antecedents. Causal history may be part of a justified definition, but the classification then depends on evidence about that history; it cannot simply be assumed.
-
-Use a social media application: “Social media fatigue is exhaustion caused by excessive social media use.” This sounds informative, but it combines a proposed state, exhaustion, with a claim about its origin. What counts as exhaustion here: feeling mentally drained, losing motivation to interact, or difficulty concentrating? What counts as excessive use, and can that be specified without first observing fatigue?
-
-Ask: “If two people spend the same amount of time on social media but only one feels exhausted, what have we learned?” We should examine differences in activity, context, and responses rather than declare that both must be fatigued because the presumed antecedent occurred. Conversely, observing exhaustion alone does not establish that social media caused it. If “excessive” means whatever amount produces exhaustion, the proposed explanation becomes circular. Specify the use pattern and the state separately, then investigate their relationship.
-
-Keep the direction of the two causal approaches explicit: defining by function identifies a concept through what it supposedly produces; defining by antecedents identifies it through what supposedly produces it. Both can contribute to theory, but neither causal association alone gives a complete account of the concept's properties.
-
-**Return to the class definition of social media.** Ask students to underline any metaphor, claimed benefit or harm, or statement about origins in their opening sentence. For each, ask: “Is this a defining attribute, an illustration, a possible cause, or a possible consequence?” Have one student rewrite a phrase so that the membership rule and any causal hypothesis can be assessed separately. A candidate revision might specify opportunities to create content and interact with other users, while reserving claims about belonging or polarization for subsequent research. These attributes remain proposals to test against the class's boundary cases, not a final instructor definition.
-
-**Concept explication brings these tools together.** McLeod & Pan's eighth approach analyzes intended meaning, describes essential qualities, identifies dimensions when needed, and specifies connections to empirical observations. Examples and exclusions help test boundaries; comparisons reveal attributes; analogies suggest connections; procedures make observation possible; antecedents and consequences help situate a concept in theory. Their usefulness depends on making those connections explicit and open to revision. Meaning analysis proposes the conceptual and observational links, and empirical analysis evaluates them.
-
-Source: McLeod & Pan, Table 2.2 and pp. 24–26. Framing, fear appeal, and cognitive dissonance draw on the reading; the public-square, connection, and social media fatigue examples are instructor illustrations, not reported findings or validated definitions.
+Source: McLeod & Pan, Table 2.2 and pp. 24–26. Framing, fear appeal, and cognitive dissonance draw on the reading; the social media examples are instructor illustrations, not reported findings or validated definitions.
 :::
 
 # What makes for a "good" concept?
@@ -327,6 +300,8 @@ Source: McLeod & Pan, Table 2.2 and pp. 24–26. Framing, fear appeal, and cogni
 What's wrong here — and how is it different from ordinary disagreement about democracy?
 
 ::: notes
+Timing: 2 minutes. Elapsed: 29–31 minutes.
+
 This is Gerring's own reductio, presented deliberately as an absurd case before the six criteria are named one by one, so the class has a shared benchmark for "obviously bad" against which every subsequent diagnosis can be measured. Ask: is this definition *false*? In one sense no — it's not that "furry, four-legged animal" misdescribes some real feature of democracies; it's that the definition has nothing to do with any established sense of the word at all. Distinguish this from a real scholarly disagreement (e.g., electoral vs. liberal definitions of democracy), where competing definitions still all resonate with *some* recognizable, shared sense of "rule by the people."
 
 Let the class try to name what's broken before revealing the label. Likely answers: "it's not what anyone means by that word," "it's just made up," "it violates common usage." All of these are gesturing at the same thing.
@@ -344,7 +319,8 @@ Source: Gerring, p. 117.
 Resonance: how faithful is the concept to established usage?
 :::
 
-**Revise social media:** Would ordinary users recognize what your definition calls “social media”?
+::: notes
+Timing: 2 minutes. Elapsed: 31–33 minutes.
 
 ::: notes
 Name the criterion: *resonance* — the degree to which a term or definition conforms to established usage rather than clashing with it. A purely stipulative definition, defined "on the authority of the author" alone with no tether to how the term is actually used, has zero resonance; at the limit (nonsense words) it isn't understood at all.
@@ -363,6 +339,8 @@ Source: Gerring, pp. 116–117.
 Is this definition *wrong*?
 
 ::: notes
+Timing: 2 minutes. Elapsed: 33–35 minutes.
+
 Present the case neutrally and let the class debate before naming the criterion. Push back on an initial "yes, it's wrong" reaction: is it wrong, or is it simply *scoped* — built for one domain (contemporary nation-states in the Western tradition) and silently presented as if it covered every domain (ancient Athens' direct assemblies, local community governance, transnational advocacy coalitions, even — Gerring's own example — "democratic" modes of dress and comportment)?
 
 Expected answer once pressed: the definition itself may be perfectly serviceable *within* its intended domain; the problem is failing to say what that domain is. A concept, like an argument, can only be evaluated once its domain of usage is understood — no social-science concept is truly universal, and pretending otherwise is the actual failure, not the narrowness itself.
@@ -385,19 +363,13 @@ Does our definition describe **modern representative states**, or democracy in o
 **Social media:** Whose usage, which platforms, and what time period does your definition cover?
 
 ::: notes
-Name the criterion: domain includes both the linguistic domain (which audiences and usages the definition addresses) and the empirical domain (which objects and settings it covers). Gerring discusses local communities, nation-states, transnational advocacy coalitions, and even modes of dress and comportment to show that attributes suitable for one setting may not apply in another.
+Timing: 2 minutes. Elapsed: 35–37 minutes.
 
-Connect to the preceding diagnosis: political parties, competitive elections, and an independent judiciary are candidate attributes of a particular conception of modern representative or liberal democracy. Ask whether every one of these must also characterize democracy in a workplace, association, or deliberative body. These examples test the scope of a definition; they do not establish that these institutions are unnecessary for democratic government at the national level.
+Name the criterion: *domain* — both the linguistic domain (which audiences must find this resonant: lay readers? policymakers? one academic subfield?) and the empirical (phenomenal) domain (which contexts the concept is meant to apply to: local communities, nation-states, transnational coalitions, or, per Gerring's own deliberately broad example, modes of dress and comportment).
 
-**Worker cooperative:** Members share control of the enterprise, with equal voting rights under the cooperative principle of democratic member control. Some cooperatives elect boards; others make particular decisions directly through member meetings. The point is not that cooperatives never hold elections. It is that their democratic character does not require political parties or a separate judiciary within the organization. They still operate within a wider legal system. Ask: “What democratic principle travels from the state to the workplace, and which institutional attributes do not?”
+The good example is Gerring's own practice, not a hypothetical: rather than offering one all-purpose definition of democracy, he explicitly considers four different empirical domains and notes that some attributes (e.g., "contestation") clearly apply to nation-states but barely at all to modes of dress. The many rival definitions of democracy in circulation are not wrong on this view — they are *partial*, each staking out a different domain, and the failure is only in presenting a partial definition as if it were unrestricted.
 
-**Citizens’ assembly selected by lottery:** Participants are selected to form a broadly representative group and deliberate on public questions. Their selection does not depend on winning competitive elections. This is an example of a democratic institution or procedure, not a self-contained democratic state. It can supplement elected institutions and may have an advisory role. Ask: “Are we defining an entire political system, or a democratic way of participating in a decision?” Keep those units distinct.
-
-**Member-run association:** Use a hypothetical small association in which every member has an equal voice and vote on the budget and rules. Members decide directly, without parties, elected representatives, or a judiciary of their own. Its democratic quality depends on the actual opportunities for participation and control, not merely on calling a meeting. Ask: “Would a definition requiring multiparty elections exclude this case for a good reason, or because it was designed for a different domain?”
-
-Draw the distinction explicitly: a definition may be appropriate for comparing national regimes while excluding institutions we reasonably call democratic in other settings. The task is to state that intended domain, not force one institutional checklist onto every use of the word. These examples are classroom extensions of Gerring's domain argument, not examples he supplies in the chapter.
-
-Return to social media: distinguish the language community whose usage students aim to capture from the empirical settings they intend to classify. A definition designed for public political discussion may exclude private messaging by design. Students should say so and explain the purpose, rather than present that boundary as an unrestricted definition for every research question.
+Practical takeaway for the class's own projects: whenever you define a concept, one sentence stating its intended domain (which population, which context, which audience) resolves most domain disputes before they start.
 
 Sources: Gerring, pp. 119–121 (domain). [ILO, Worker cooperatives](https://www.ilo.org/worker-cooperatives) and [Recommendation No. 193, cooperative principles](https://www.ilo.org/resource/other/r193-promotion-cooperatives-recommendation-2002). [OECD, Innovative Citizen Participation and New Democratic Institutions](https://www.oecd.org/en/publications/innovative-citizen-participation-and-new-democratic-institutions_339306da-en.html). Member-run association is a hypothetical teaching example.
 :::
@@ -411,7 +383,7 @@ Sources: Gerring, pp. 119–121 (domain). [ILO, Worker cooperatives](https://www
 If disliking a rival sports team's fans counts, what distinguishes affective polarization from **general out-group dislike**?
 
 ::: notes
-Begin with the partisan formulation associated with Iyengar, Sood, and Lelkes (2012): affective divisions between partisan groups, rather than simply differences in policy positions. The relevant targets and comparisons are specified. This provides a literature-grounded starting point for the exercise.
+Timing: 2 minutes. Elapsed: 37–39 minutes.
 
 Now pose a hypothetical extension: a researcher observes that people dislike a different occupational group, a rival sports team's fans, or some unfamiliar social group and calls that “affective polarization.” Ask: “Which attributes of the original concept are still present? Which have disappeared?” If the label now means any negative evaluation of any group, the political or partisan division has been dropped. If only one target group's rating is observed, the comparison underlying the claim may also be unspecified.
 
@@ -437,7 +409,7 @@ Consistency: does the concept mean the same thing throughout a work?
 **Revise social media:** Are you applying the same membership rule to every candidate platform?
 
 ::: notes
-Name the criterion: consistency. Gerring asks whether a concept retains its meaning across the contexts in which it is applied. In our affective-polarization example, the problem is a silent shift from a specified partisan divide to undifferentiated dislike of other groups.
+Timing: 2 minutes. Elapsed: 39–41 minutes.
 
 There are several defensible responses. Retain the narrower partisan definition and restrict the cases accordingly. Explicitly construct a broader concept of affective divisions across specified groups, explaining its membership requirements and relationship to the partisan version. Or use a label such as out-group dislike when that is all the evidence establishes. A broader definition must supply enough content to distinguish the phenomenon from neighboring concepts; announcing a broader scope is necessary but does not by itself make the definition useful.
 
@@ -455,6 +427,8 @@ Seven contiguous US states, defined mostly by geography.
 What, besides being next to each other, do they share?
 
 ::: notes
+Timing: 2 minutes. Elapsed: 41–43 minutes.
+
 Present "the West" as a US regional concept and ask the class what unifies it besides contiguity. Push for specifics: climate? History of settlement? Political culture? Economic base? Most answers will struggle — precisely Gerring's point. Compare, only after they've struggled, to "the South," which the class will likely find easier to defend: a genuinely longer, more correlated list of shared historical, political, and cultural attributes (a specific settlement and agricultural history, a distinct regional political culture, clear contrasts with neighboring regions).
 
 Do not yet name the criterion. Let the class sit with the asymmetry: both are geographic labels: only one earns its status as a meaningful social-science category.
@@ -472,18 +446,16 @@ Source: Gerring, pp. 124–125.
 Fecundity: how many attributes do a concept's referents actually share?
 :::
 
-**Revise social media:** What do the platforms you group together meaningfully share?
-
 ::: notes
 Name the criterion: *fecundity* (also called coherence, depth, richness — Gerring lists many synonyms because this criterion has been independently discovered under many names). A fecund concept "carves nature at the joints" — it identifies things that really are alike and separates them from things that are really different, rather than imposing an arbitrary label on a loose grab-bag.
 
-The deepest form of fecundity, per Gerring, is an *essentializing* definition — one that identifies a single core principle from which the concept's other attributes can be seen to follow (Dahl's search for the "primitive notion" behind "power"; "rule by the people" as democracy's essence, which is itself an appeal to fecundity, not just resonance). Note for the class: fecundity and resonance are related but distinct — a concept can resonate (match common usage) while still being only weakly fecund (loosely bundled, not very illuminating), and vice versa.
+Make explicit a distinction the diagnosis can blur: "the West" failing fecundity does not mean it isn't a concept. It has a term ("the West"), an intension (located west of some line), an indicator (check a state's location), and an extension (the actual states counted) — every element Gerring requires. It's a fully formed, resonant, class concept; it simply scores low on this one criterion. Contrast with the earlier "furry, four-legged animal" case, which failed at the level of *resonance* — nobody would recognize it as invoking democracy at all. "Is this a concept?" and "is this a *good* concept?" are different questions; the six criteria are all answers to the second one, not the first.
+
+The deepest form of fecundity, per Gerring, is an *essentializing* definition — one that identifies a single core principle from which the concept's other attributes can be seen to follow (Dahl's search for the "primitive notion" behind "power"; "rule by the people" as democracy's essence, which is itself an appeal to fecundity, not just resonance). Ask the class directly: "what is the essential attribute tying the members of 'the West' together, if any?" If nothing beyond location comes back, that silence is the diagnosis. Note for the class: fecundity and resonance are related but distinct — a concept can resonate (match common usage) while still being only weakly fecund (loosely bundled, not very illuminating), and vice versa.
 
 Bridge to the next criterion: Gerring explicitly calls fecundity and differentiation "flip sides of the same coin" — fecundity asks how alike a concept's members are to each other; differentiation asks how different they are from everything outside the concept. You cannot fully assess one without the other.
 
 Social media application (instructor exercise): Ask what knowing that a service is social media lets us infer about it. Sharing an internet connection alone may give a precise but uninformative class. Seek coherent shared characteristics rather than lengthening the definition for its own sake.
-
-what is the essential
 
 Source: Gerring, pp. 123–127.
 :::
@@ -495,6 +467,8 @@ Civic association. Voluntary association. Civil society organization (CSO). Citi
 Seven terms. How many genuinely different concepts?
 
 ::: notes
+Timing: 2 minutes. Elapsed: 45–47 minutes.
+
 List Gerring's own example of a "crowded semantic field" and ask the class to sort it: are these seven terms picking out seven genuinely distinct concepts, or largely re-labeling the same thing? Most will (correctly) suspect heavy overlap. Push further: what's the actual cost of this proliferation, beyond mere redundancy? The cost is that a reader can no longer tell, from the term alone, what distinguishes one from another — each new coinage should in principle sharpen a boundary, but in practice these terms mostly poach attributes from each other without clarifying any of them.
 
 Do not yet name the criterion — let students propose it. Likely candidates: "they're not different enough from each other," "there's no clear boundary between them." Both are gesturing at the right idea.
@@ -512,7 +486,8 @@ Source: Gerring, pp. 127–129.
 Differentiation: what is the contrast-space against which this concept defines itself?
 :::
 
-**Revise social media:** What separates social media from messaging, publishing, or collaborative editing?
+::: notes
+Timing: 2 minutes. Elapsed: 47–49 minutes.
 
 ::: notes
 Name the criterion: *differentiation* — a concept must be distinguishable from its neighbors, not just internally coherent. "Green" only means something because it's delimited by where "yellow" and "blue" begin (Gerring, citing Pitkin); a new term that "unsettles the semantic field" by poaching attributes from neighbors sows confusion even if it resonates on first reading.
@@ -538,7 +513,7 @@ Two people each spend 30 minutes on social media:
 Both have the same amount of **social media use**. Have they experienced the same proposed cause?
 
 ::: notes
-Start with the claim on the slide and ask what the researcher thinks produces learning. Give the two hypothetical examples: reading explanations of candidates' policies and exchanging birthday messages. Both count as social media use under a definition that includes both activities, and both occupy 30 minutes. The classification and time measurement can be perfectly consistent. The question is whether that broad concept is informative for this particular causal argument.
+Timing: 2 minutes. Elapsed: 49–51 minutes.
 
 If the proposed explanation is that people learn political facts by encountering political information, then the distinction between these activities matters. A total-time measure combines time spent encountering that information with time spent doing something else. Two identical scores therefore need not represent identical exposure to the proposed cause. We have identified a possible mismatch between the causal explanation and the concept used to express and measure it.
 
@@ -559,7 +534,8 @@ Source: Instructor social media illustration of Gerring's causal-utility criteri
 
 **Too broad for that explanation:** Total time on social media combines political information with many other activities.
 
-**Better matched:** Exposure to accurate explanations of candidates’ policies, compared with exposure to nonpolitical content.
+::: notes
+Timing: 2 minutes. Elapsed: 51–53 minutes.
 
 **Outcome:** Knowledge of those policies, assessed separately from exposure.
 
@@ -574,7 +550,8 @@ Explain why the outcome must be separate. Do not define “informative exposure�
 
 The broad category remains useful for other purposes, such as describing where people spend time. It can also serve a broad causal question about access to a platform as a whole. The issue is fit: a category that works for one question may combine distinctions that another question needs to preserve. A well-defined broad intervention can have causal utility, and a narrowly named variable can still be poorly defined.
 
-Distinguish this criterion from the previous ones if students ask. Consistency asks whether we keep the same meaning across cases. Differentiation asks whether we distinguish the concept from its neighbors. Causal utility asks whether this particular definition works in the proposed explanation and research design. The two people on the preceding slide can be classified consistently as social media users while that classification remains too broad to represent their exposure to political information.
+::: notes
+Timing: 5 minutes. Elapsed: 53–58 minutes.
 
 End by asking students to complete: “For my question, the relevant aspect of social media is ***; I would compare*** with ***; the outcome is*** .” Then ask which activities their narrower concept excludes and why that exclusion serves their question. Their answer should identify the proposed cause independently of its hoped-for effect.
 
@@ -593,6 +570,8 @@ Same underlying logic, developed independently in two different literatures.
 :::
 
 ::: notes
+Timing: 3 minutes. Elapsed: 58–61 minutes.
+
 Reorient after the break. The six criteria just covered tell you whether a finished concept is *good*. This segment covers how you actually *arrive* at one — and two readings converge on strikingly similar answers, which is itself worth pointing out explicitly as evidence that this isn't idiosyncratic to either author.
 
 Preview both lists on the board side by side so the alignment is visible from the start:
@@ -615,6 +594,8 @@ Source: Gerring, pp. 131–137; McLeod & Pan, pp. 26–28.
 | *(next: define)* | **Identify the concept** *(comes first, but same spirit: what exactly is this?)* |
 
 ::: notes
+Timing: 3 minutes. Elapsed: 61–64 minutes.
+
 Walk the table left to right, one row at a time, making the equivalence explicit rather than just implied. Gerring's *survey* step (canvass a representative sample of formal definitions and usage patterns before committing to one) is functionally identical to Chaffee's *search the literature* step (review how previous researchers have conceptualized the topic, what purposes each served, what labels have been used). Both are explicitly a caution against jumping straight to a definition.
 
 Gerring's *classify attributes* step (reduce the many overlapping usages into one parsimonious table — his own worked example, Table 5.3, sorts democracy's attributes into six families: electoral, liberal, majoritarian, participatory, deliberative, egalitarian) matches Chaffee's *examine empirical properties* step (what's the range and distribution of how this concept has actually been measured and used).
@@ -633,6 +614,8 @@ Source: Gerring, pp. 131–134; McLeod & Pan, p. 26.
 **Cumulative** — attributes ranked by centrality into an ordinal scale.
 
 ::: notes
+Timing: 2 minutes. Elapsed: 64–66 minutes.
+
 This is Gerring's Table 5.2, and it is the direct payoff of the causal-utility slide from before the break — say so explicitly. *Minimal* definitions (necessary conditions, jointly sufficient to bound the concept, aiming for crisp in/out borders) are what we already saw work well as a scope condition or independent variable; the cost is some loss of resonance, since a stripped-down definition sounds thin to anyone attuned to the concept's usual richness.
 
 *Maximal* definitions (Weber's "ideal-type": synthesizing many diffuse, real-world cases into one purest, most fully elaborated analytical construct) bundle in everything non-idiosyncratic; no actual case need fit perfectly, and cases are scored by degree of resemblance. This is exactly the tool that failed as a scope condition earlier, and exactly the tool Gerring says fits a rich dependent variable well.
@@ -653,47 +636,27 @@ Gerring, Table 5.3 (p. 135) .
 :::
 
 ::: notes
-Start with what this table is doing. Imagine collecting many scholarly definitions of democracy and highlighting every attribute they mention. Some emphasize elections, others rights, participation, deliberation, or equality. Combine near-synonyms and organize related attributes into families. The resulting table maps the meanings already associated with the word. Gerring calls this a lexical definition: an organized account of established usage within a specified linguistic domain. It is not yet the researcher’s final definition or a ready-made measurement instrument.
+Timing: 3 minutes. Elapsed: 66–69 minutes.
 
-State the domain. Gerring primarily draws on historical and contemporary Western understandings and focuses on political contexts, especially large polities such as nation-states. He is not claiming this table exhausts every use of democracy in every community or organization. The table is also an abstraction: its institutional categories could be subdivided into more specific attributes.
+Show Gerring's own lexical classification of democracy's attributes in full — this is literally what "classify attributes" (step 2 of Strategies of Conceptualization) produces before any minimal/maximal/cumulative choice gets made. Six families, each with its own principle, guiding question, and institutional markers: Electoral (contestation — free and fair multiparty elections), Liberal (limited government, civil liberties, horizontal accountability), Majoritarian (majority rule, centralization), Participatory (do ordinary citizens participate?), Deliberative (government by reason), Egalitarian (political equality). All six share one core principle: rule by the people — the resonance anchor from Criterion 1.
 
-**The common starting point: rule by the people.** All six families offer interpretations of this principle. They differ over what makes popular rule real: choosing rulers, constraining rulers, letting a majority govern, participating directly, exchanging reasons, or possessing equal political influence. Agreement on a broad principle does not settle which institutional arrangements or attributes define it. This is why “rule by the people” can resonate widely yet leave empirical boundaries unclear.
+Walk through why this table, on its own, "does not take us very far toward a final definition," in Gerring's own words: it's comprehensive but unwieldy — eighteen-plus institutional markers across six families is not something you can cleanly apply to sort real countries into democracies and non-democracies. This is exactly the tension fecundity (rich, comprehensive) creates with causal utility (needs crisp borders) — a maximal, ideal-type definition of democracy is literally what you get if you keep this entire table intact as the definition, scoring each polity by degree of resemblance across all six families rather than picking one attribute as necessary.
 
-**Electoral: Can people choose and replace their rulers through competition?** This family emphasizes contestation and competition through free and fair multiparty elections. The institutional focus includes elections, parties, competitiveness, and turnover. Explain that listing turnover as relevant does not mean every election must remove the incumbent: whether meaningful competition permits replacement is a different question from whether replacement happens on a particular occasion. Ask: “If elections are competitive, what other aspects of democracy might we still want to know about?” This opens the remaining families without treating their attributes as already included in the electoral definition.
+Ask the class: "if we were using this as a *dependent* variable — something we're trying to explain the full richness of — is keeping all six families a problem?" Generally no; this is exactly the case (Criterion 6) where a maximal definition is the right tool.
 
-**Liberal: What constrains those who govern?** This family emphasizes limited government, rights, civil liberties, transparency, and checks on power. “Horizontal accountability” refers to institutions checking other institutions, as distinct from citizens holding rulers accountable through elections. Gerring highlights the judiciary, media, interest groups, and constitutional guarantees. The defining concern is not only who wins office but what officeholders may do once there. Ask: “Does winning an election answer the separate question of what limits the winner’s authority?” Here “liberal” names a conception of democracy, not a contemporary party label.
+Unpack how a maximal definition actually gets scored, since "degree of resemblance" is easy to say and easy to leave vague. Gerring's own answer: ideal-types are "always matters of degree, and hence generally operationalized by interval scales" — so a country isn't sorted into democracy/not-democracy, it's placed somewhere along a continuous scale representing how closely it approximates the full six-family bundle. Flag honestly that this chapter tells us *that* it's scored by degree, not *how* to combine eighteen-plus institutional markers into one number — Gerring explicitly defers the mechanics of building that scale to Chapter 6 (measurement).
 
-**Majoritarian: Can the majority govern and be held responsible?** This family emphasizes majority or plurality rule, centralized authority, and vertical accountability. “Vertical accountability” concerns accountability between rulers and citizens. The idea is that voters should be able to identify who governs, authorize a program, and hold those rulers responsible. Notice the possible tension with the liberal family: additional veto points may constrain power while also making it harder for a governing majority to act. This does not make either conception meaningless. It shows why collecting democratic attributes does not automatically yield one internally consistent recipe.
+That deferral is itself the first problem worth naming. Five distinct costs of a maximal definition, beyond the causal-utility point already made:
 
-**Participatory: Do ordinary citizens take part?** This family asks about citizens’ involvement in politics, with attention to civil society, local government, direct democracy, and electoral arrangements. It directs us beyond the existence of competitive elections to opportunities and practices of participation. Ask: “Could a system offer meaningful electoral competition while ordinary citizens participate very little between elections?” Treat this as a conceptual possibility, not a claim about a named country. The electoral and participatory questions overlap but are not identical.
+1. **No stated aggregation rule.** Nothing here says how to weight or combine the six families — average them? weight electoral more heavily than deliberative? Different reasonable choices can rank the same set of countries differently, and the maximal-definition logic itself doesn't adjudicate between them.
+2. **No crisp cutoff, by design.** Because everything is a matter of degree, there's no natural line separating "democracy" from "not" — fine for a rich descriptive/dependent variable, but exactly why it fails as a scope condition or independent variable.
+3. **Attribute redundancy.** Many of the eighteen-plus markers across families tend to co-occur historically (strong electoral competition often travels with stronger civil liberties), so a naive additive score risks counting substantially the same underlying dimension more than once rather than genuinely independent information.
+4. **Researcher discretion masquerading as neutrality.** Because weighting is undetermined, two researchers can build "the same" ideal-type democracy score and rank countries differently depending on which families they emphasize — the identical mega-concept problem as the Druckman & Levendusky affective-polarization example from earlier: one label, several non-interchangeable operationalizations.
+5. **Unfalsifiability at the edges.** No case needs to fit perfectly, which is a feature for capturing richness but also means the definition alone can never rule anything out — any country can be described as "partially" resembling the ideal type.
 
-**Deliberative: Do public decisions emerge through reasoned discussion?** This family emphasizes public deliberation and institutions such as hearings, panels, media, and other deliberative bodies. Explain the difference between counting participation and examining its character. Many people can speak without considering one another’s reasons; discussion can occur without affecting decisions. Ask: “What would you need to observe to distinguish a public exchange of reasons from a meeting in which people simply announce their positions?” The answer begins to connect a conceptual attribute to indicators, but the table itself does not provide a complete coding rule.
+Transition: "Now watch what happens when we go the other direction — ranking, not bundling."
 
-**Egalitarian: Are citizens equally empowered?** This family emphasizes political equality in participation, representation, protection, and politically relevant resources. Ask: “Does formally giving everyone a vote settle whether everyone has comparable opportunities to exercise political influence?” The question identifies a distinction between formal entitlements and effective empowerment. A researcher still needs to specify which inequalities matter to the concept and how to observe them; the label “equality” alone does not finish the definition.
-
-**Why is this not already a final definition?** The problem is not simply that there are too many entries. The table does not yet tell us how they fit together for the researcher’s purpose. Must a case possess every attribute? Are some essential and others optional? Can strength on one compensate for weakness on another? Are we making an in/out classification, describing several dimensions separately, or comparing degrees of resemblance to a benchmark? These are substantive decisions, not instructions supplied by the list itself.
-
-Use a hypothetical contrast. One political system has competitive elections and many institutional checks but limited direct participation. Another has extensive participation but fewer checks on the governing majority. The table tells us which differences to notice. It does not, on its own, tell us how to combine those differences into one classification. Ask students to identify the missing decision rule rather than ask them to declare one system “more democratic.”
-
-**Minimal strategy:** Select the essential attributes that establish membership. This need not mean choosing exactly one attribute. Gerring discusses free and fair elections as a possible minimal definition within the domain of representative polities. Other attributes remain relevant subjects of study, but they are not all requirements of that particular definition. The choice needs justification and still requires operational decisions.
-
-**Maximal strategy:** Construct a coherent ideal type incorporating the relevant, non-idiosyncratic attributes as fully as possible. An ideal type is an analytical benchmark; no actual case need match it perfectly. This does not mean mechanically retaining every entry in the table or summing six columns. Gerring explicitly allows excluding attributes that undermine coherence and warns against combining blatantly contradictory elements. The tension between concentrated majority rule and dispersed constraints helps illustrate why this organizing work matters.
-
-**Cumulative strategy:** Arrange binary attributes by their centrality to the concept, producing ordered levels. The next slide shows Gerring’s proposed ordering. This is an additional argument about the relationship among attributes, not an ordering already established by the lexical table. Students can ask whether the ordering is defensible and what it leaves out.
-
-Clarify the connection to earlier criteria. Fecundity concerns meaningful coherence and what a concept tells us about its cases; it does not simply reward having more attributes. Causal utility concerns fit to the causal task; it does not always require a binary boundary. A rich outcome can be useful, but calling it a dependent variable does not automatically justify combining all six families. The researcher must explain what the outcome means and why its components belong together.
-
-**Apply the same procedure to social media.** Return to the attributes students have proposed: user-created content, interaction, public visibility, profiles, or connections among users. Organize them into a provisional inventory. This is analogous to the classification step, although the classroom brainstorm is not a substitute for reviewing established definitions. Then ask: “Which of these must be present for a platform to qualify under our definition? Which describe a common feature without being necessary? Which might conflict with including a private discussion group?” Keep the inventory separate from the membership rule students ultimately choose.
-
-Close with the distinction: the lexical table records the range of meanings a researcher must consider. A specialized definition states which attributes the researcher adopts, how they relate, and for what purpose. The next slide demonstrates one proposed way to organize that material, not the only possible answer.
-
-Source: Gerring, pp. 133–137 and Table 5.3 (p. 135, credited there to Coppedge and Gerring 2011). Questions, hypothetical comparisons, and social media applications are instructor elaborations.
-If you mean level 9, where attribute (i), civil liberty, is added, the difference is:
-- Maximal definition: Includes the full range of relevant democratic attributes. Cases can approximate that ideal in different ways.
-- Cumulative definition: Puts selected attributes in a specified order. Level 9 requires all nine attributes, (a) through (i); each lower level requires a shorter sequence.
-So level 9 is the maximum of that particular cumulative scale, but it is not necessarily a maximal definition of democracy. Gerring explicitly notes that Table 5.4 leaves out some attributes collected in Table 5.3.
-The distinction is breadth versus ordering: maximal definitions seek comprehensive coverage; cumulative definitions impose an ordered sequence of requirements.
-
+Source: Gerring, Table 5.3, p. 135, and p. 136 on ideal-types and interval scales.
 :::
 
 ## The cumulative ordinal scale: Table 5.4
@@ -705,6 +668,8 @@ Gerring, Table 5.4 (p. 138).
 :::
 
 ::: notes
+Timing: 3 minutes. Elapsed: 69–72 minutes.
+
 Show the cumulative scale in full. Read the logic of the x's directly off the table: level 1 requires only free and fair elections; level 2 requires that plus self-government (domestic); level 3 adds complete self-government; and so on up through level 9, which requires all nine attributes including civil liberty. Every polity that qualifies at level 9 also qualifies at every lower level — that's what makes it cumulative (a Guttman-scale-like structure, Gerring notes, but ranking theoretical attributes rather than empirical indicators).
 
 Make the double payoff explicit. First, notice attribute (a) is exactly the minimal definition from three slides ago — cumulative doesn't discard minimal, it starts from it and builds outward. Second, point out — as Gerring himself flags — that not all of Table 5.3's lexical attributes made it into this cumulative scale (nothing here directly represents "deliberative" or full "egalitarian" empowerment, for instance): ranking attributes by centrality is itself a judgment call, and this table reflects one defensible ranking, not the only possible one.
@@ -723,7 +688,9 @@ Source: Gerring, Table 5.4, p. 138.
 Which approach fits classifying platforms? Which fits comparing their characteristics?
 
 ::: notes
-Use the accumulated social media definition rather than introduce a new concept. Ask for one minimal membership rule and one feature a maximal definition would add. Test both against the same boundary cases used earlier.
+Timing: 2 minutes. Elapsed: 72–74 minutes.
+
+Return to the running example one more time and make the class apply the new vocabulary to it directly, cold-call, whole class. A minimal definition might be a single necessary condition: willingness to let a disliked group hold a public meeting (exactly the operationalization Week 2 actually used). A maximal, ideal-type definition would bundle in absence of hostile feeling, public and private consistency, durability over time, and generalization across multiple disliked groups — a much richer construct, but one where few real respondents would perfectly qualify.
 
 For a cumulative definition, ask whether there is a defensible ordering of binary attributes from more to less essential. A checklist or weighted sum is not automatically a cumulative definition. It is acceptable to conclude that these attributes do not form a convincing cumulative hierarchy.
 
@@ -734,36 +701,32 @@ Source: Instructor application of Gerring, pp. 135–138.
 
 ## Levels of abstraction: what counts as social media?
 
-**Abstract concept:** Social media
-
-| Proposed dimension or attribute | Concrete observations on a platform |
-|---|---|
-| **User content creation** | Can ordinary users publish their own text, images, or videos for others to access? |
-| **Interaction among users** | Can users reply to one another or hold a conversation? |
-| **Connections among users** | Can users follow accounts, add contacts, or join groups? |
+| Abstraction level | Term | Social media example |
+|---|---|---|
+| **High** | Concept (construct) | Social media |
+| **Intermediate** | Dimensions | User content creation · Interaction among users · Connections among users |
+| **Low (concrete)** | Indicators | Publishing text, images, or video for others to see · Replying to another user or holding a conversation · Following accounts, adding contacts, or joining groups |
 
 **Your turn:** Which attributes does your definition require? Would a news website with comments qualify?
 
 ::: project-caption
-Classroom application of McLeod & Pan’s levels of abstraction (pp. 29–31). Proposed attributes, not a settled definition.
+Classroom application of McLeod & Pan’s levels of abstraction (pp. 29–31), following the structure of their Figure 2.1. Proposed attributes, not a settled definition.
 :::
 
 ::: notes
-Keep the same concept and unit throughout: we are defining social media and examining platforms or websites. We have not switched to measuring individual use or political engagement. The question remains: what makes a platform count as social media under our working definition?
+Read the table's left-hand column aloud first: **ABSTRACTION LEVEL** — High, Intermediate, Low (concrete) — mapped onto **TERMS** — Concept (construct), Dimensions, Indicators. This is McLeod & Pan's Figure 2.1 structure, applied live to our own running example instead of their television-viewing case. It's the explicit vocabulary for something we've been doing all class without naming it: every time we've moved from a mega-concept to something measurable, we've been moving *down* a level of abstraction, and every time we've bundled specifics back into one label, we've moved *up* one.
 
-Explain the movement in abstraction. “Social media” is the broad concept. User content creation, interaction, and connections describe proposed aspects of what the concept means. Questions about posting, replying, following, and joining groups specify observations that could provide evidence about those aspects. The table makes the abstract definition more concrete; it does not supply a new concept in place of the one students have been developing.
+Walk the table top to bottom. High abstraction: "social media" as a single concept/construct — abstract enough to apply across many platforms, times, and studies, per the abstractness standard from earlier, but, as we diagnosed a few slides ago, too abstract to relate cleanly to most effect variables on its own. Intermediate abstraction: the three dimensions on the board — content creation, interaction, connections — still abstract (each is its own variable concept, not yet a specific observation), but narrower and closer to something we could actually code. Low, concrete abstraction: the indicators — specific, directly observable yes/no questions about a given platform.
 
-These attributes are illustrative candidates. Use the attributes in the class's actual definition if they differ. Students should decide whether an attribute is necessary, optional, or outside their intended meaning. Do not imply that all three must be present merely because they appear in the table. A list of dimensions or attributes does not by itself specify a membership rule.
+Use the "your turn" prompt to make the ladder do real work, not just get labeled. Take a news website with a comment section: it likely satisfies the *interaction* dimension (readers can reply to each other) but not *connections* (no following, no contact lists) and only weakly *content creation* (comments, not full posts). Whether it counts as "social media" then depends entirely on which dimensions the class's working definition treats as necessary versus optional — precisely the minimal/maximal/cumulative choice from two slides ago, now visible as a concrete borderline case rather than an abstract choice.
 
-Walk one row slowly. “Interaction among users” is more abstract than “a user can reply to another user's contribution.” Reply functionality is an observable feature that may indicate opportunities for interaction. But it does not establish that people actually converse. If the definition concerns the platform's capabilities, the feature may be relevant evidence. If it requires actual interaction, students must specify observations of activity as well. This illustrates why indicators need justification.
+Make the general point explicit, not just about social media: *any* concept can be placed somewhere on this same High/Intermediate/Low ladder, and explication is largely the discipline of being honest about which level you're currently operating at. "Fake news" (coming up shortly) is a High-abstraction mega-concept exactly like "social media"; its eight categories are Intermediate-level dimensions; its Table 1 indicators (fact-checked, last-name citations, editorial process) are Low-level, concrete, and directly codable — we will explicitly walk back up and down this same three-level ladder when we get there.
 
-For connections, following accounts, adding contacts, and joining groups are possible manifestations, not automatically interchangeable indicators or three mandatory requirements. Ask whether the proposed dimension requires persistent connections, public visibility, or something else. The intended meaning determines what the researcher should observe.
+Flag why dimensionalizing (moving down one level, from High to Intermediate) matters theoretically, not just practically, using McLeod & Pan's own finding: they report that news viewing and entertainment viewing — two dimensions of "television viewing," their running example — relate to political-knowledge and crime-fear outcomes in *opposite* directions, a finding invisible if "television viewing" were left undifferentiated at the High level. The same risk applies here: if "social media use" is left as one undifferentiated High-level variable, dimensions that move outcomes in opposite directions (say, following news accounts versus scrolling an algorithmic entertainment feed) could cancel each other out in the data.
 
-Apply the table to a hypothetical news website with comments. It may allow users to contribute text and reply to one another. Does that make it social media under our definition? If not, what further distinction is doing the work: whether user contributions are central to the platform, how connections are organized, or another attribute? State and defend that requirement, then apply it to every candidate platform. Do not quietly add a requirement just to exclude an inconvenient case.
+Note the vocabulary McLeod & Pan use for concepts built this way: *constructs* — concepts intentionally built with specially defined meanings (via explicit dimensions) rather than borrowed from everyday usage. Concept and construct are treated as equivalent for our purposes.
 
-McLeod & Pan describe dimensions as less abstract aspects of a concept and indicators as concrete empirical representations. Here, platform attributes can be observed as variables, such as whether a capability is present, while “social media” remains the class whose boundaries we are defining. We are not assuming that the observations must correlate, form one scale, or be added into an engagement score.
-
-Source: Instructor application of McLeod & Pan, pp. 29–31. The social media attributes and observations are classroom proposals, not a validated taxonomy or measurement instrument.
+Source: Instructor application of McLeod & Pan, pp. 29–31, Figure 2.1. The social media dimensions, indicators, and observations are classroom proposals, not a validated taxonomy or measurement instrument.
 :::
 
 ## Social media: from definition to cases
@@ -778,9 +741,13 @@ Source: Instructor application of McLeod & Pan, pp. 29–31. The social media at
 **Check:** Can another researcher apply your definition to an unfamiliar platform?
 
 ::: notes
-Return to the definition students wrote at the opening and its subsequent revisions. Keep the unit as the platform or website. Have a student state the defining attributes, another explain how they combine into a membership rule, and another identify evidence needed to classify a disputed case.
+Timing: 3 minutes. Elapsed: 79–82 minutes.
 
 Connect the readings without equating their frameworks. Gerring's definition strategies concern the selection and organization of attributes. McLeod & Pan's levels of abstraction help us articulate the concept's aspects and connect them to observations. A minimal definition is not simply one dimension, and a list of indicators is not automatically a cumulative scale.
+
+Flag the ordering and a distinction the table makes look cleaner than it strictly is. The order runs left to right for a reason: an intension has to exist before you can state a membership rule over it; the rule is worth settling before hunting for indicators, because it determines which attributes actually need one (minimal only strictly needs indicators for the necessary attributes; maximal needs them for everything); and extension comes last because it's the output — apply the indicators to real platforms, apply the rule, see who qualifies.
+
+But be honest that "specify the intension" and "state the membership rule" are not two separate elements in Gerring's own vocabulary — they're one. A fully specified intension isn't just a list of attributes; it already includes how those attributes are understood to combine (necessary, sufficient, or additive-and-continuous — the same logic from the Figure 5.1 tradeoff). The table splits this into two rows for a didactic reason, not a technical one: it's exactly the gap the seven weak everyday approaches diagnosed earlier — defining by examples, by exclusion, or by comparing subsets all hand you attributes or cases without ever stating how they combine into a rule. Separating "list the attributes" from "state how they combine" turns that common silent failure into an explicit, checkable step. Tell the class directly: Gerring has four elements, not five; this is a decomposition of one of them.
 
 Work through the same borderline platform using the stated rule. If students disagree, locate the disagreement: intended meaning, the membership rule, or evidence about the platform. Those are different problems and call for different revisions. Keep an unresolved case open if the necessary evidence is unavailable.
 
@@ -796,7 +763,9 @@ Weaponized across the political spectrum. Applied to satire, propaganda, honest 
 Is "fake news" simply "false information"?
 
 ::: notes
-Introduce Molina, Sundar, Le & Lee (2019) by first re-diagnosing "fake news" exactly the way we diagnosed "social media is harmful" at the start of class — the parallel should feel deliberate and obvious to the class by now. "Fake news" has ballooned, in real political discourse, well beyond any single stable meaning: it gets applied to deliberately fabricated stories, to satire the audience is expected to recognize as such, to honest reporting errors, to strongly one-sided-but-true partisan framing, and, increasingly, as a rhetorical weapon partisans use to dismiss any claim from an opposing side regardless of its truth value.
+Timing: 3 minutes. Elapsed: 82–85 minutes.
+
+Introduce Molina, Sundar, Le & Lee (2019) by first re-diagnosing "fake news" exactly the way we diagnosed "television is harmful" at the start of class — the parallel should feel deliberate and obvious to the class by now. "Fake news" has ballooned, in real political discourse, well beyond any single stable meaning: it gets applied to deliberately fabricated stories, to satire the audience is expected to recognize as such, to honest reporting errors, to strongly one-sided-but-true partisan framing, and, increasingly, as a rhetorical weapon partisans use to dismiss any claim from an opposing side regardless of its truth value.
 
 Ask the class directly: "if a news outlet were trying to build an automated fake-news detector, why would it be a mistake to simply operationalize 'fake news' as 'false information'?" Let a few answers surface before the next slide supplies the paper's own reasoning: false information alone doesn't distinguish a deliberate fabrication from an honest correction, doesn't distinguish propaganda from satire, and gives a machine-learning classifier no way to separate categories that call for very different responses (labeling, fact-checking, no action at all).
 
@@ -812,6 +781,8 @@ Propaganda: high facticity risk, high deceptive intent. Fabrication: low factici
 Why isn't this enough?
 
 ::: notes
+Timing: 3 minutes. Elapsed: 85–88 minutes.
+
 Present Tandoc et al.'s prior typology respectfully, as real, useful scholarship — not a straw man. Placing content on two dimensions, facticity and intent to deceive, is itself a legitimate application of the "classify attributes" step: it takes a mega-concept and identifies at least two real, distinct dimensions bundled inside it, exactly the McLeod & Pan move from two slides ago.
 
 Then present Molina et al.'s own stated objection, which is a genuine methodological point, not a dismissal: facticity is useful for fact-checking established claims, but breaks down for breaking news about emergent events where no independent verification yet exists to check against. Intent to deceive might in principle be inferred from a source's track record, but is very difficult to establish in any single case in a way precise enough to feed a machine-learning algorithm — "intent" is exactly the kind of latent, hard-to-observe construct McLeod & Pan warned resists direct operationalization.
@@ -828,6 +799,8 @@ Molina et al.'s answer: **no.** It's at least eight distinct categories, not one
 Real news · False news · Polarized content · Satire · Misreporting · Commentary · Persuasive information · Citizen journalism
 
 ::: notes
+Timing: 3 minutes. Elapsed: 88–91 minutes.
+
 Show the paper's own resolution to "identify the concept" (Chaffee's step 1): rather than trying to force "fake news" into one binary variable (true/false) or even Tandoc et al.'s two continuous dimensions, Molina et al. conclude the concept genuinely decomposes into eight qualitatively distinct categories, organized as a taxonomy rather than a single scale.
 
 Connect this explicitly to earlier material in two directions. First, to McLeod & Pan's dimensions/indicators ladder: this taxonomy is what happens when "dimensionalizing" a mega-concept produces categories rather than continuous dimensions — a legitimate variant of the same underlying move. Second, to Gerring's minimal/maximal/cumulative choice: ask the class to predict, before the next slides confirm it, whether the paper's definition of any *one* category (say, real news) is likely to be minimal, maximal, or cumulative, given that the whole point is a sharp, machine-usable classifier. (Answer, confirmed on the next slides: minimal — necessary-condition attributes, crisp borders, exactly the causal-utility logic, now applied to a classification rather than a causal-inference task.)
@@ -846,6 +819,8 @@ Lazer et al. (2018): process and **intent** matter, not just content.
 Jack (2017): disentangles propaganda, disinformation, and neighboring concepts.
 
 ::: notes
+Timing: 2 minutes. Elapsed: 91–93 minutes.
+
 Briefly show that Molina et al. do exactly what Gerring's "survey" step and Chaffee's "search the literature" step both prescribe: canvass existing conceptualizations before committing to a definition, rather than starting from scratch or from intuition alone. Southwell et al. establish that any definition of misinformation requires some grounded, agreed sense of what counts as true (echoing our own earlier point that "real news" must be defined before "fake news" can be defined by contrast). Lazer et al. insist that *process* and *intent* — not just the surface truth-value of the content — are what distinguish genuine fabrication from other categories. Jack works out the conceptual boundaries separating propaganda, disinformation, and related neighboring terms — precisely a differentiation exercise, in Gerring's sense, applied to this same semantic field.
 
 Keep this brief; the point is only to show the survey/search-the-literature step actually happening in a real paper's introduction, not to teach each cited work in depth.
@@ -866,6 +841,8 @@ This is a minimal, necessary-condition definition — the same move as "free and
 :::
 
 ::: notes
+Timing: 3 minutes. Elapsed: 93–96 minutes.
+
 Show the paper's actual "tentative conceptual definition" (Chaffee's step 4) for the anchor category, real news, and make the minimal-definition parallel to Gerring's democracy example explicit and named, not just implied. Molina et al. deliberately ground "real" not in some free-floating notion of Truth, but in *journalistic process*: verification, independence, and editorial norms and practices for ensuring accuracy. Their own justification, quoting Lazer et al.: false news typically imitates real news's *form* but lacks its editorial process and intent — so process, not surface content, is the necessary condition that does the real differentiating work.
 
 Ask the class explicitly: "is this a minimal, maximal, or cumulative definition, in Gerring's terms?" It's minimal — a small number of necessary-condition attributes (verification, independence, editorial review) chosen specifically to produce a crisp, replicable in/out judgment, exactly because the paper's purpose (feeding a machine-learning classifier) has the same causal-utility-style requirement as a study needing a clean scope condition: sharp borders matter more here than rich descriptive nuance.
@@ -885,6 +862,8 @@ Source: Molina et al. (2019), pp. 186–187.
 | **Network** | *(distinguishes categories by how content spreads)* |
 
 ::: notes
+Timing: 2 minutes. Elapsed: 96–98 minutes.
+
 Present Molina et al.'s Table 1 indicators for real news as the paper's own version of the dimensions → indicators step (McLeod & Pan) and the intension → indicator step (Gerring) happening simultaneously. The conceptual definition from the last slide (journalistic process) gets cashed out into four concrete, largely machine-detectable indicator domains: *message and linguistic* features (is it fact-checked and impartial? does it cite sources by last name, a specific, checkable stylistic marker of professional reporting, versus first-name-only informal reference?); *source and intentions* (editorial independence from the subject being covered); *structural* features (edited and proofread; recognizable journalistic style and formatting); and *network* features (how the content actually spreads, which becomes more important for distinguishing later categories than for real news itself).
 
 Make the pedagogical point explicit: this is exactly what an "indicator," in Gerring's sense, or a set of "indicators" for a "dimension," in McLeod & Pan's sense, looks like when done well for a genuinely applied, current research problem — concrete, checkable, and each one traceable back to the conceptual definition (process/verification/independence) that justifies it, rather than indicators invented in isolation from any stated concept.
@@ -903,6 +882,8 @@ Source: Molina et al. (2019), pp. 187–189, Table 1.
 | Structural         | Mimics journalistic style without its process   |
 
 ::: notes
+Timing: 3 minutes. Elapsed: 98–101 minutes.
+
 Show false news's conceptual definition as constructed directly against real news's — this is Gerring's *differentiation* criterion doing exactly the work he describes: a concept only makes sense once it's clearly bounded against its neighbor. False news isn't defined as "the opposite of true"; it's defined as content that imitates real news's *form* (so it can pass as legitimate) while lacking the process (verification, independence, correction) and carrying deliberate deceptive intent that Lazer et al. identified as the actual distinguishing feature.
 
 Walk through why "intent to deceive" reappears here despite Molina et al.'s own critique of Tandoc et al. for relying on hard-to-observe intent: the resolution is that intent is now paired with *concrete, checkable process indicators* (does a correction/retraction mechanism exist? is the source's identity verifiable? does the outlet have any editorial accountability structure?) rather than asked to do all the classifying work alone as a bare psychological construct — a genuine explication move, tightening a vague dimension by pairing it with an observable proxy.
@@ -917,6 +898,8 @@ Source: Molina et al. (2019), pp. 189–191.
 Both are, in some sense, "not real." What's the difference?
 
 ::: notes
+Timing: 3 minutes. Elapsed: 101–104 minutes.
+
 Pose this as a genuine differentiation puzzle before supplying the paper's answer — ask the class to propose the distinguishing attribute themselves first. The instinctive answer ("satire isn't literally true either") is correct but insufficient; false news also isn't literally true, so facticity alone (Tandoc et al.'s first dimension) can't separate them, which is exactly why Molina et al. argued two dimensions weren't enough.
 
 The paper's actual answer: intent and audience uptake. Satire's creators do not intend for the audience to believe the content is factually accurate, and — crucially — the audience is expected to recognize the non-literal frame (a stated genre convention, exaggeration, absurdist framing, an established satirical outlet's reputation). False news's creators specifically intend deception, and its form is deliberately built to be mistaken for straight reporting. Ask the class: what happens to this distinction when a piece of satire is stripped of its context and shared without attribution — does it become false news, or does it remain satire misinterpreted? (There's no single clean answer; use this to show real taxonomic boundaries are sometimes genuinely contested, not a flaw in the paper.)
@@ -930,6 +913,8 @@ Source: Molina et al. (2019), pp. 191–193 (satire category).
 
 
 ::: notes
+Timing: 3 minutes. Elapsed: 104–107 minutes.
+
 Present the second contrast case the same way — ask first, confirm second. Polarized or hyperpartisan content can be entirely factually accurate at the level of individual claims while still being highly one-sided: selective in which true facts it reports, framed to support one side, often emotionally charged in tone. None of that requires fabrication.
 
 The paper's distinguishing move: polarized content is differentiated from false news primarily on facticity and structural/framing grounds rather than on intent to deceive in the fabrication sense — the content may not deceive about specific facts at all, even while it misleads by omission or selective emphasis. This is a genuinely different failure mode from false news's core problem (fabricated or unverified claims presented as verified) and from satire's core problem (non-literal content presented, and understood, as non-literal).
@@ -945,7 +930,8 @@ Source: Molina et al. (2019), pp. 193–195 (polarized content category); p. 187
 
 Which category? Which indicators justify the call?
 
-**Return to social media:** Would this headline change category if it appeared on a different service?
+::: notes
+Timing: 2 minutes. Elapsed: 107–109 minutes.
 
 ::: notes
 Live-apply prompt, whole class, no small groups — take two or three proposed classifications before converging. Push students to justify their answer using specific indicators from the last several slides, not just a gut label. Expected reasoning: this is not false news (no fabricated or unverified claims — message/linguistic indicators like fact-checking would likely pass), and it's not satire (no non-literal framing, no audience expectation of a joke). It is a strong candidate for polarized content: factually accurate at the claim level, but structurally one-sided in sourcing and omission.
@@ -964,6 +950,8 @@ A stylized fact needs a defined concept. A causal claim needs a defined variable
 Today's toolkits are what make Weeks 1–2 possible, not a detour from them.
 
 ::: notes
+Timing: 3 minutes. Elapsed: 109–112 minutes.
+
 Close the loop back to the opening slide and to Weeks 1–2 explicitly. Hirschman's stylized fact and Elster's "fact to be established" both presuppose an already-explicated concept — you cannot decide whether "tolerance rose" deserves to be treated as an important empirical regularity worth explaining until you've decided what tolerance *is*. Hedström's variable concepts and Gerring's causal-utility criterion both presuppose the same thing on the causal side — a variable has to be built (minimal, ideally, for this purpose) before it can appear in a covering-law argument, a statistical decomposition, or a mechanism.
 
 Make the point precise, not just gestural: today didn't add a new explanatory strategy alongside laws, statistics, and mechanisms from Week 2. It supplied the raw material — the explananda and the variables — that any of those three strategies needs before they can even be applied. A perfectly executed statistical decomposition of a badly explicated concept is not a minor flaw; it's an answer to a question that was never clearly asked.
@@ -976,7 +964,8 @@ Source: Course synthesis, connecting today to Elster pp. 15–20 and Hedström p
 
 **Week 4:** measurement (Toshkov; Dilliplane) — this is where we go next.
 
-**Social media:** What observation would resolve one disputed case under your definition?
+::: notes
+Timing: 5 minutes. Elapsed: 112–117 minutes.
 
 ::: notes
 Make the forward link an honest, structural one, not an invented transition. Both readings today explicitly bracketed one piece: Gerring names operationalization as his seventh criterion but defers full treatment to his next chapter; McLeod & Pan name "define the concept operationally" as Chaffee's fifth step but treat it comparatively briefly, promising a fuller "empirical analysis" discussion of measurement quality later in their own chapter. Today built the conceptual definition side of the term/intension/indicator/extension structure in depth; the indicator side — how you actually build a good measurement instrument, and how you'd know if it's any good — is next week's material (Toshkov; Dilliplane), already sitting in the course's Week 4 readings.
@@ -986,4 +975,23 @@ Preview one thread that will recur: Molina et al.'s entire taxonomy exists speci
 Social media application (instructor exercise): Return to the board and select one contested service. Specify the attribute, evidence, observation period, and coding rule needed to decide membership. Then distinguish that task from measuring individual use. Flag remaining uncertainty as something to investigate, not resolve by fiat.
 
 Source: Gerring, p. 116 (operationalization deferred to ch. 7); McLeod & Pan, pp. 26–27 (data-gathering/empirical-analysis deferred); Week 4 readings (Toshkov; Dilliplane).
+:::
+
+## Exit prompt
+
+Name one concept central to your own project.
+
+1.  What type of concept is it (variable? class? process?), and what type of definition would serve it — minimal, maximal, or cumulative?
+2.  Which of Gerring's six criteria is its single biggest current risk?
+
+::: notes
+Timing: 3 minutes. Elapsed: 117–120 minutes.
+
+Whole-class, not paired — take three or four volunteered answers, moving briskly given the time remaining. For each answer, push for one follow-up: if a student proposes their concept is best served by a minimal definition, ask what attribute they'd treat as necessary; if they name a criterion at risk (most commonly differentiation, when a project's central concept sits in a crowded field, or causal utility, when a rich descriptive concept is being asked to also serve as a causal variable), ask them to name the specific neighboring concept or specific causal claim creating that risk.
+
+Close by stating the throughline of the whole session one final time: a concept is not something you have; it's something you build, against explicit criteria, through a describable process — and every claim you make next, descriptive or causal, inherits whatever quality that concept was built with.
+
+If discussion is still going when time runs out, that's an acceptable place to end the session rather than cut it off mid-sentence; there is no further material after this slide.
+
+Source: Course close, connecting Gerring's six criteria and McLeod & Pan's explication process to students' own ongoing projects.
 :::
