@@ -29,6 +29,16 @@ format:
 lang: en
 ---
 
+## On explanation...
+1. Phenomena: What we observe. This is where description begins.
+2. Explanation: Answers the why question. This is the mechanism that produces the observed pattern. 
+
+::: notes
+Someone posts something online. Let's say it is AI slop. IT's followed by negative comments. This is the phenomena. The explanation is why. The two concepts here would be AI slop and negative comments. Now let's say it's because people find AI slop disgusting. This is the explanation and it introduces a third concept. 
+
+Another example. Women are portrayed differently on streaming platforms than traditional platforms. This is the phenomena, and your first task is to show that it's true. So you have two concepts gender portray and streaming/tradiional platforms. Now you want to explain why. Is it because of the audience a demand side? Your explanation here would be a statistical explanaition-- show that the audience is different. Or it could be a supply side explanation. here again you could show that the people in charge of the streaming platforms are different.
+:::
+
 ## Last week: what counts as social media? {.section-title}
 
 Give a definition that includes **shared attributes**, not just platform names.
