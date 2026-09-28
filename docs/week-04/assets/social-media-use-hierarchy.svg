@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="465" viewBox="0 0 1400 465" role="img" aria-labelledby="title desc">
+<title id="title">Dimensions and subdimensions of social media use</title>
+<desc id="desc">Social media use branches into viewing, creating, and interacting. Each activity type branches into duration and frequency. Lines indicate conceptual organization, not causation.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#18232d;text-anchor:middle}.box{stroke:#18324a;stroke-width:2}.edge{stroke:#62717d;stroke-width:3;fill:none}.level{font-size:21px;fill:#62717d;text-anchor:start}.name{font-size:29px;font-weight:700}.question{font-size:23px}</style>
+<text class="level" x="18" y="47">Concept</text>
+<text class="level" x="18" y="178">Activity types</text>
+<text class="level" x="18" y="288">Subdimensions</text>
+<path class="edge" d="M700 80V130H240V195 M700 130V195 M700 130H1160V195"/>
+<rect class="box" x="475" y="10" width="450" height="70" rx="9" fill="#18324a"/>
+<text class="name" x="700" y="55" style="fill:white">Social media use</text>
+<path class="edge" d="M240 265V300H130V350 M240 300H350V350"/>
+<rect class="box" x="90" y="195" width="300" height="70" rx="9" fill="#2f7a63"/><text class="name" x="240" y="240" style="fill:white">Viewing</text>
+<rect class="box" x="30" y="350" width="200" height="90" rx="9" fill="#ffffff"/><text class="name" x="130" y="387">Duration</text><text class="question" x="130" y="420">How long?</text>
+<rect class="box" x="250" y="350" width="200" height="90" rx="9" fill="#ffffff"/><text class="name" x="350" y="387">Frequency</text><text class="question" x="350" y="420">How often?</text>
+<path class="edge" d="M700 265V300H590V350 M700 300H810V350"/>
+<rect class="box" x="550" y="195" width="300" height="70" rx="9" fill="#2f7a63"/><text class="name" x="700" y="240" style="fill:white">Creating</text>
+<rect class="box" x="490" y="350" width="200" height="90" rx="9" fill="#ffffff"/><text class="name" x="590" y="387">Duration</text><text class="question" x="590" y="420">How long?</text>
+<rect class="box" x="710" y="350" width="200" height="90" rx="9" fill="#ffffff"/><text class="name" x="810" y="387">Frequency</text><text class="question" x="810" y="420">How often?</text>
+<path class="edge" d="M1160 265V300H1050V350 M1160 300H1270V350"/>
+<rect class="box" x="1010" y="195" width="300" height="70" rx="9" fill="#2f7a63"/><text class="name" x="1160" y="240" style="fill:white">Interacting</text>
+<rect class="box" x="950" y="350" width="200" height="90" rx="9" fill="#ffffff"/><text class="name" x="1050" y="387">Duration</text><text class="question" x="1050" y="420">How long?</text>
+<rect class="box" x="1170" y="350" width="200" height="90" rx="9" fill="#ffffff"/><text class="name" x="1270" y="387">Frequency</text><text class="question" x="1270" y="420">How often?</text>
+</svg>

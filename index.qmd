@@ -8,6 +8,16 @@ format:
     link-external-newwindow: true
 ---
 
+## Week 4
+
+### From Concepts to Measures
+
+An integrated seminar on measurement and descriptive inference, using women's suffrage in democracy measures and social media use as recurring examples.
+
+[Student slides — no speaker notes](week-04/student.html){.btn .btn-primary role="button"}
+
+[Plain presentation — notes in Speaker View](week-04/presenter.html) · [Slides with visible notes](week-04/with-notes.html) · [Instructor discussion notes](week-04/instructor-notes.html)
+
 ## Week 3
 
 ### Concepts and Conceptualization

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="530" viewBox="0 0 1400 530" role="img" aria-labelledby="title desc">
+<title id="title">Two relationships between concepts and indicators</title><desc id="desc">Generative: meaningful contestation helps generate observable electoral outcomes. Discriminative: institutional indicators define a democracy classification under a specified rule.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="#246c70"/></marker></defs>
+<g font-family="Arial, sans-serif" fill="#193449">
+<text x="20" y="40" font-size="32" font-weight="bold">Generative interpretation · causal relationship</text>
+<rect x="20" y="75" width="410" height="140" rx="12" fill="#e6edef" stroke="#193449" stroke-width="2"/>
+<text x="225" y="130" text-anchor="middle" font-size="29" font-weight="bold"><tspan x="225">Meaningful</tspan><tspan x="225" dy="38">contestation</tspan></text>
+<path d="M450 145 H830" fill="none" stroke="#246c70" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="635" y="122" text-anchor="middle" font-size="27" fill="#246c70" font-weight="bold">helps generate</text>
+<rect x="855" y="75" width="525" height="140" rx="12" fill="#e6edef" stroke="#193449" stroke-width="2"/>
+<text x="1117" y="110" text-anchor="middle" font-size="26"><tspan x="1117" font-weight="bold">Observable electoral outcomes</tspan><tspan x="1117" dy="37">Opposition victories followed</tspan><tspan x="1117" dy="32">by transfers of power</tspan></text>
+<text x="20" y="253" font-size="24">Contestation makes turnover possible; it does not require turnover at every election.</text>
+<text x="20" y="315" font-size="32" font-weight="bold">Discriminative interpretation · defining relationship</text>
+<rect x="20" y="350" width="540" height="140" rx="12" fill="#e6edef" stroke="#193449" stroke-width="2"/>
+<text x="290" y="390" text-anchor="middle" font-size="27"><tspan x="290" font-weight="bold">Institutional indicators</tspan><tspan x="290" dy="37">Elections · participation</tspan><tspan x="290" dy="32">Civil liberties</tspan></text>
+<path d="M580 420 H960" fill="none" stroke="#246c70" stroke-width="4" stroke-dasharray="10 7" marker-end="url(#arrow)"/>
+<text x="770" y="388" text-anchor="middle" font-size="27" fill="#246c70" font-weight="bold">define</text><text x="770" y="455" text-anchor="middle" font-size="23">under a specified rule</text>
+<rect x="985" y="350" width="395" height="140" rx="12" fill="#e6edef" stroke="#193449" stroke-width="2"/>
+<text x="1182" y="410" text-anchor="middle" font-size="29" font-weight="bold"><tspan x="1182">Democracy</tspan><tspan x="1182" dy="38">classification</tspan></text>
+</g></svg>
