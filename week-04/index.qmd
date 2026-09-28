@@ -622,39 +622,6 @@ Ask: “Which row would change if the person created content on one additional d
 Source: Instructor teaching framework connecting Toshkov, pp. 112–115, with Lauderdale's indicators, pp. 41–49. All values are hypothetical.
 :::
 
-## Main concepts for today
-
-::::: columns
-::: {.column width="50%"}
-**Building a measure**
-
--   Measurement inference
--   Concept, target (estimand), estimate
--   Dimensions, subdimensions, indicators
--   Operationalization and coding
--   Operational definitions and values
--   Scope and observation window
-:::
-
-::: {.column width="50%"}
-**Interpreting a measure**
-
--   Representational and pragmatic
--   Generative and discriminative
--   Minimalist and maximalist
--   Levels of measurement
--   Aggregation and weighting
--   Theory, supervision, and unsupervised learning
-:::
-:::::
-
-::: notes
-Use this as a vocabulary map, not an oral glossary to recite before students have examples. The left column concerns building the link between a concept and observations. The right concerns what that link means and what operations we can perform once it is built. Tell students they will encounter the terms in two recurring cases: Paxton's study of women's suffrage in democracy measures and our class's design for measuring social media use.
-
-Questions about case selection, samples, and descriptive analysis belong to later sessions. Today, keep asking what an observation tells us about the concept and what assumptions connect the two. Reliability, validity, and the formal treatment of measurement error are reserved for a later session. We can still examine substantive choices about inclusion and meaning today without starting that separate taxonomy.
-
-Source: Vocabulary from Lauderdale, chs. 1–2, and Toshkov, ch. 5.
-:::
 
 ## Measurement is a form of inference
 
@@ -1232,87 +1199,41 @@ Return to current classroom design in general terms: even a carefully specified 
 Source: Lauderdale, pp. 35–40.
 :::
 
-## Workshop: a study of social media use {.section-title}
-
-**Question:** How do students' amounts and forms of social media use differ over a week?
-
-Develop a specification the class could defend:
-
-1.  Define use and its domain.
-2.  State whose use the measure describes and over what period.
-3.  Select indicators and explain their connection to the target.
-4.  Specify how observations will become a measure.
-5.  Identify one peril and explain how you would address it.
-
-::: notes
-Run this as a whole-class synthesis, maintaining the established shared board record. Start with the definition rather than the easiest available data. Ask one student for an inclusion rule, another for a borderline case, and another for the unit. Then ask the class to trace what happens to that case under the proposed indicators and scoring rule.
-
-Push students to distinguish amount from forms. The activity branches distinguish forms of use. Within each branch, duration and frequency specify different aspects of amount and regularity. There is no requirement that these become one total intensity score. A proposed output might show each person's weekly minutes alongside activity labels. Ask why these columns preserve the distinctions in the research question. Leave decisions about sampling and generalization for a later session.
-
-Add a whole-class peril check. Ask what our procedure leaves out, whether equivalent qualifying activity could be recorded differently for different students, whether attaching rewards could change the recorded behavior, and how the records might be used. Require a target-specific explanation rather than merely naming fairness or bias. A useful repair should address the diagnosed problem without pretending that all perils can be solved by the same rule.
-
-Ask two final probes. First, what would be lost if we had only public posts? Second, what interpretation would go beyond the design? Good answers identify absent viewing or private activity and reject a causal conclusion such as use causes poor sleep. The exercise requires a defensible descriptive measurement plan, not a full causal study and not an evaluation using next week's reliability and validity terminology.
-
-Source: Instructor synthesis of all three readings. Hypothetical study.
-:::
-
-## One defensible specification
-
-| Element | Proposed decision |
-|------------------------------------|------------------------------------|
-| Concept | Qualifying viewing, creating, sharing, and interaction |
-| Whose activity and when? | Each participating student's use during seven specified days |
-| Evidence | Consented episode diaries plus covered device records |
-| Measures | Elapsed minutes, days with use, activity labels |
-| Aggregation | Union of qualifying intervals; separate activity profiles |
-| Interpretation | Duration describes amount; activity labels describe forms |
-
-The values describe the specified activities and time window—not attention, benefit, or personal worth.
-
-::: notes
-Offer this as one coherent answer rather than the answer. Explain how each line follows from the preceding one. The behavioral definition determines which episodes qualify. The person-week unit determines the observation window and how records must be assigned. Diaries and records provide complementary kinds of evidence, but the plan would still need details about collection, consent, and interpretation. The measures retain both amount and forms because the question asks for both.
-
-The union of intervals is the elapsed time covered by at least one qualifying episode. Counting that union avoids counting the same person-time twice. Activity labels remain available rather than being forced into an unjustified weighted total. The resulting columns correspond to those targets: elapsed minutes and a profile of what the person did.
-
-Keep this exercise focused on measurement rather than how to recruit students or generalize to a population. Ask students to identify an alternative indicator and explain what target it changes or preserves. A good alternative could choose an ordinal frequency scale when the substantive question is about regularity rather than elapsed duration.
-
-Source: Instructor model answer applying Lauderdale and Toshkov.
-:::
 
 ## Main concepts to take into your own research
 
 ::::: columns
 ::: {.column width="50%"}
-**Measurement**
+**From concepts to observations**
 
--   Concept, target (estimand), estimate
--   Indicators, proxies, calibration
--   Operational rules and aggregation
--   Representational / pragmatic
--   Generative / discriminative
--   Nominal, ordinal, interval, ratio
+-   Preserve the definition in the coding rule
+-   Specify dimensions and subdimensions
+-   Distinguish concept, target, and estimate
+-   Justify indicators, sources, and operational rules
 :::
 
 ::: {.column width="50%"}
-**Meaning and consequences**
+**From measures to claims**
 
--   Dimensions and their categories
--   Scope and observation windows
--   Profiles versus composite scores
--   Theory, supervision, and unsupervised learning
--   Measures versus causal explanations
--   Narrowness, fairness, incentives, purpose
+-   Representational / pragmatic: what supports the measure?
+-   Generative / discriminative: produces indicators or summarizes attributes?
+-   Coding choices can change patterns and explanations
+-   Inspect narrowness, fairness, incentives, and purpose
 :::
 :::::
 
 ::: notes
-Use this as retrieval, not a final recitation. Ask students to choose one distinction and explain it with either suffrage or social media use. For example, someone might distinguish women's eligibility as an indicator from the overall democracy classification; another might distinguish person-week totals from episode observations. Ask a second student to improve any answer that substitutes a method name for a target.
+Use this as retrieval, not a final recitation. Ask students to choose one takeaway and explain it using either Paxton's suffrage case or social media use, then apply it to their own research.
 
-Three particularly useful checks are whether students can explain why ordinal codes do not automatically have equal intervals, why a discriminative summary need not be an underlying cause, and why public posting alone does not describe every form of social media use. If one remains unclear, return to the corresponding worked example rather than adding another abstract definition.
+For the first column, ask what must survive the move from definition to coding rule. Paxton's example shows what happens when a definition includes all adults but the operational rule counts only men. For social media use, distinguish activity types and their duration or frequency, specify the target, and explain what observations from diaries, device records, or other sources can establish. A convenient source does not by itself define the concept or justify the inference.
+
+For the second column, keep the two distinctions separate. A representational account explains how an attribute produces observable evidence; a pragmatic account asks whether the procedure is useful for the stated purpose. Generative concepts posit an attribute that helps produce indicators, whereas discriminative concepts summarize or classify observed attributes. Pragmatic measurement can use either. Ask students to explain the thermometer or ideology example and contrast it with a democracy classification.
+
+Return to Paxton for the link between measurement and explanation: changing who counts changes transition dates, democratic duration, and the historical pattern we seek to explain. Constructing a measure does not itself establish a causal explanation. End with four questions about the student's own proposed measure: What does it leave out? What standard makes comparisons fair? How might people respond to its use? Whose purposes does it serve?
 
 Close by locating the next step. We now have a language for specifying what we want, how we obtain observations, and how the measure supports a claim. A later session can ask how well particular measures perform through reliability, validity, and measurement error. Those topics are deliberately not taught in this deck.
 
-Source: Synthesis of Lauderdale, chs. 1–2; Toshkov, ch. 5; Paxton (2000).
+Source: Synthesis of the material covered from Lauderdale, chs. 1–2; Toshkov, ch. 5; Paxton (2000).
 :::
 
 ## Readings

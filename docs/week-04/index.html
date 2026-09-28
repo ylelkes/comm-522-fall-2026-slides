@@ -6,8 +6,8 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.18">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="COMM 5220 • Week 4">
   <title>From Concepts to Measures</title>
@@ -17,16 +17,10 @@
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: 1.5em;}
-    div.column{flex: auto;}
-    @media screen {
-    div.columns{gap: min(4vw, 1.5em);}
-    div.column{overflow-x: auto;}
-    }
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -35,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-04995deaa9f2cb21f1a5025ac11cb13b.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-5a47003f70a32186cbf621432b25969c.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -141,7 +135,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-COMM 5220 • Week 4
+COMM 5220 • Week 4 
 </div>
 </div>
 </div>
@@ -676,31 +670,6 @@ COMM 5220 • Week 4
 </table>
 <p><strong>The subdimension names what we want to describe. The indicator specifies how.</strong></p>
 </section>
-<section id="main-concepts-for-today" class="slide level2">
-<h2>Main concepts for today</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Building a measure</strong></p>
-<ul>
-<li class="fragment">Measurement inference</li>
-<li class="fragment">Concept, target (estimand), estimate</li>
-<li class="fragment">Dimensions, subdimensions, indicators</li>
-<li class="fragment">Operationalization and coding</li>
-<li class="fragment">Operational definitions and values</li>
-<li class="fragment">Scope and observation window</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Interpreting a measure</strong></p>
-<ul>
-<li class="fragment">Representational and pragmatic</li>
-<li class="fragment">Generative and discriminative</li>
-<li class="fragment">Minimalist and maximalist</li>
-<li class="fragment">Levels of measurement</li>
-<li class="fragment">Aggregation and weighting</li>
-<li class="fragment">Theory, supervision, and unsupervised learning</li>
-</ul>
-</div></div>
-</section>
 <section id="measurement-is-a-form-of-inference" class="slide level2">
 <h2>Measurement is a form of inference</h2>
 <p>Inference: Use something we can observe to make a claim about what we want to say something about.</p>
@@ -1188,82 +1157,24 @@ COMM 5220 • Week 4
 </ul>
 <p><span class="source">Lauderdale, pp.&nbsp;35–40.</span></p>
 </section>
-<section id="workshop-a-study-of-social-media-use" class="slide level2 section-title">
-<h2>Workshop: a study of social media use</h2>
-<p><strong>Question:</strong> How do students’ amounts and forms of social media use differ over a week?</p>
-<p>Develop a specification the class could defend:</p>
-<ol type="1">
-<li class="fragment">Define use and its domain.</li>
-<li class="fragment">State whose use the measure describes and over what period.</li>
-<li class="fragment">Select indicators and explain their connection to the target.</li>
-<li class="fragment">Specify how observations will become a measure.</li>
-<li class="fragment">Identify one peril and explain how you would address it.</li>
-</ol>
-</section>
-<section id="one-defensible-specification" class="slide level2">
-<h2>One defensible specification</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Proposed decision</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Concept</td>
-<td>Qualifying viewing, creating, sharing, and interaction</td>
-</tr>
-<tr class="even">
-<td>Whose activity and when?</td>
-<td>Each participating student’s use during seven specified days</td>
-</tr>
-<tr class="odd">
-<td>Evidence</td>
-<td>Consented episode diaries plus covered device records</td>
-</tr>
-<tr class="even">
-<td>Measures</td>
-<td>Elapsed minutes, days with use, activity labels</td>
-</tr>
-<tr class="odd">
-<td>Aggregation</td>
-<td>Union of qualifying intervals; separate activity profiles</td>
-</tr>
-<tr class="even">
-<td>Interpretation</td>
-<td>Duration describes amount; activity labels describe forms</td>
-</tr>
-</tbody>
-</table>
-<p>The values describe the specified activities and time window—not attention, benefit, or personal worth.</p>
-</section>
 <section id="main-concepts-to-take-into-your-own-research" class="slide level2">
 <h2>Main concepts to take into your own research</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Measurement</strong></p>
+<p><strong>From concepts to observations</strong></p>
 <ul>
-<li class="fragment">Concept, target (estimand), estimate</li>
-<li class="fragment">Indicators, proxies, calibration</li>
-<li class="fragment">Operational rules and aggregation</li>
-<li class="fragment">Representational / pragmatic</li>
-<li class="fragment">Generative / discriminative</li>
-<li class="fragment">Nominal, ordinal, interval, ratio</li>
+<li class="fragment">Preserve the definition in the coding rule</li>
+<li class="fragment">Specify dimensions and subdimensions</li>
+<li class="fragment">Distinguish concept, target, and estimate</li>
+<li class="fragment">Justify indicators, sources, and operational rules</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>Meaning and consequences</strong></p>
+<p><strong>From measures to claims</strong></p>
 <ul>
-<li class="fragment">Dimensions and their categories</li>
-<li class="fragment">Scope and observation windows</li>
-<li class="fragment">Profiles versus composite scores</li>
-<li class="fragment">Theory, supervision, and unsupervised learning</li>
-<li class="fragment">Measures versus causal explanations</li>
-<li class="fragment">Narrowness, fairness, incentives, purpose</li>
+<li class="fragment">Representational / pragmatic: what supports the measure?</li>
+<li class="fragment">Generative / discriminative: produces indicators or summarizes attributes?</li>
+<li class="fragment">Coding choices can change patterns and explanations</li>
+<li class="fragment">Inspect narrowness, fairness, incentives, and purpose</li>
 </ul>
 </div></div>
 </section>
@@ -1463,7 +1374,7 @@ COMM 5220 • Week 4
         margin: 8.0e-2,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1537,14 +1448,13 @@ COMM 5220 • Week 4
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
