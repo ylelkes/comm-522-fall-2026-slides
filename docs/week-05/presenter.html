@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="presenter_files/libs/clipboard/clipboard.min.js"></script>
+<script src="presenter_files/libs/quarto-html/tabby.min.js"></script>
+<script src="presenter_files/libs/quarto-html/popper.min.js"></script>
+<script src="presenter_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="presenter_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="presenter_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="presenter_files/libs/quarto-html/quarto-syntax-highlighting-3a01e2046221230fdceeea94b1ec5d67.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.30">
+
+  <meta name="author" content="COMM 5220 • Week 5">
+  <title>Measurement Error, Reliability, and Fairness</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="presenter_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="presenter_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="presenter_files/libs/revealjs/dist/theme/quarto-94b490fc20a66e1c7e87a118d58523ca.css">
+  <link href="presenter_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="presenter_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="presenter_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="presenter_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="presenter_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="presenter_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Measurement Error, Reliability, and Fairness</h1>
+  <p class="subtitle">How far is our measure from what we meant—and for whom?</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+COMM 5220 • Week 5 
+</div>
+</div>
+</div>
+
+</section>
+<section id="last-week-in-review" class="slide level2">
+<h2>Last week in review</h2>
+<p>Last week we followed the path from a concept to a claim:</p>
+<ul>
+<li class="fragment"><strong>Operationalization:</strong> Paxton showed how changing a definition or coding rule can change who counts and what pattern we see.</li>
+<li class="fragment"><strong>Concept → target → estimate:</strong> We distinguished the idea we care about, the quantity implied by that idea, and the number produced by a procedure.</li>
+<li class="fragment"><strong>Dimensions and indicators:</strong> Social media use can include multiple dimensions; each indicator captures only part of the concept.</li>
+</ul>
+<aside class="notes">
+<p>Use this as retrieval practice from Week 4. Ask students to connect Paxton’s changing democracy rule to the idea that operationalization can change the empirical pattern. Then ask for an example of a target and estimate from the social-media-use exercise. Briefly recall that Week 4 introduced Toshkov’s levels, representation, generative versus discriminative concepts, and the four perils. Today we develop the reliability, validity, and measurement-error tools needed to investigate those problems.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="this-week-diagnosing-measurement" class="slide level2">
+<h2>This week: diagnosing measurement</h2>
+<p>We will move from the question <strong>“What does this measure represent?”</strong> to:</p>
+<ol type="1">
+<li class="fragment"><strong>Levels of measurement:</strong> How should indicators be turned into numbers?</li>
+<li class="fragment"><strong>Four perils:</strong> What can go wrong when we quantify?</li>
+<li class="fragment"><strong>Measurement error:</strong> How does the observed value differ from the target?</li>
+<li class="fragment"><strong>Reliability and validity:</strong> Is the measure consistent, accurate, or both?</li>
+<li class="fragment"><strong>Evidence:</strong> What can repeated measures, benchmarks, hand-coding, and AI coding tell us?</li>
+</ol>
+<aside class="notes">
+<p>Use this as the roadmap for the session. Tell students that the four perils provide the motivating problems, the true-score framework gives us language for the target and error, reliability and validity separate consistency from accuracy, and the hand-coding/AI example shows how evidence works in practice. We end by returning to fairness: a measure can be reliable overall while still being inaccurate or differently interpretable for some people.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="toshkov-levels-of-measurement" class="slide level2">
+<h2>Toshkov: levels of measurement</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>What the values tell us</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Nominal</strong></td>
+<td>Different or the same</td>
+<td>News frame present/absent</td>
+</tr>
+<tr class="even">
+<td><strong>Ordinal</strong></td>
+<td>Different, plus higher or lower</td>
+<td>Agreement scale</td>
+</tr>
+<tr class="odd">
+<td><strong>Interval</strong></td>
+<td>Differences have equal meaning</td>
+<td>Temperature in °C</td>
+</tr>
+<tr class="even">
+<td><strong>Ratio</strong></td>
+<td>Ratios also have meaning; zero means none</td>
+<td>Minutes of media use</td>
+</tr>
+</tbody>
+</table>
+<div class="key-line">
+<p>The level determines which comparisons and mathematical operations are meaningful.</p>
+</div>
+<p><span class="source">Toshkov, levels of measurement.</span></p>
+<aside class="notes">
+<p>Begin with Toshkov’s levels of measurement. The categories describe what information the values preserve and therefore which comparisons are legitimate. This foundation comes before the four perils and the later discussion of reliability, validity, and error.</p>
+<p>Nominal values distinguish categories. Ordinal values also establish an order, but the distance between adjacent categories is not necessarily equal. Interval values have meaningful and equal differences, but zero is arbitrary. Ratio values add a meaningful zero, so statements such as twice as much become meaningful.</p>
+<p>Emphasize that a variable’s level depends on what its values represent, not whether researchers happen to encode them with numbers. Coding news frames as 1, 2, and 3 does not make the categories ordinal or quantitative.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="four-perils-of-quantification" class="slide level2">
+<h2>Four perils of quantification</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Peril</th>
+<th>Core concern</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Narrowness</strong></td>
+<td>The measure captures only part of what matters.</td>
+</tr>
+<tr class="even">
+<td><strong>Fairness</strong></td>
+<td>Measurement errors fall unevenly across people or groups.</td>
+</tr>
+<tr class="odd">
+<td><strong>Unintended consequences</strong></td>
+<td>People change their behavior in response to the measure.</td>
+</tr>
+<tr class="even">
+<td><strong>Malign intentions</strong></td>
+<td>Someone designs or uses the measure to manipulate or harm.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>We will examine each peril before turning to measurement error.</strong></p>
+<p><span class="source">Adapted from Lauderdale, ch.&nbsp;1.</span></p>
+<aside class="notes">
+<p>The levels slide established the basic language for describing variables. Now introduce the four perils, which the class did not reach last week. Use this slide only as a map. The next four slides treat each peril separately before the deck turns to the true-score equation, reliability, and validity.</p>
+<p>Source: Lauderdale, ch.&nbsp;1, pp.&nbsp;27–31.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="peril-1-narrowness" class="slide level2">
+<h2>Peril 1: narrowness</h2>
+<p>The number may be precise while the representation remains incomplete.</p>
+<div class="key-line">
+<p>We measure online engagement as the time logs spent on an app.</p>
+</div>
+<p>What important dimensions disappear when the concept becomes a score?</p>
+<p><span class="source">Lauderdale, ch.&nbsp;1.</span></p>
+<aside class="notes">
+<p>Narrowness comes from reducing a broad concept to a limited set of indicators. Measurement always requires selection, so some narrowness is unavoidable. The question is whether the omitted dimensions matter for the claim or decision.</p>
+<p>Use social-media minutes as the example. Two people can each record 120 minutes while having very different experiences. If the research question concerns exposure to political information, well-being, or social support, duration alone may be too narrow even when recorded perfectly.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="peril-2-fairness" class="slide level2">
+<h2>Peril 2: fairness</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<h3 id="imagine-two-job-candidates">Imagine two job candidates</h3>
+<p>Ralph and Ross are equally qualified.</p>
+<p>The screening system recognizes Ralph’s CV buzzwords better, so Ralph receives a higher score than Ross.</p>
+<p><strong>Same qualification, different observed scores.</strong></p>
+</div><div class="column" style="width:48%;">
+<h3 id="the-fairness-question">The fairness question</h3>
+<p>Do irrelevant features of the CV change how the system measures qualification?</p>
+<p><strong>Equal on the target should mean equal treatment by the measure.</strong></p>
+</div></div>
+<div class="diagnosis">
+<p>The score difference comes from the procedure, not from a difference in qualification.</p>
+</div>
+<aside class="notes">
+<p>Fairness concerns how measurement errors are distributed. Ralph and Ross are equally qualified, but the system recognizes one style of CV wording better. An irrelevant feature of the measurement process creates the difference in scores.</p>
+<p>The problem is not simply that two scores differ. Scores should differ when qualifications differ. The fairness problem is that the procedure gives unequal scores when the underlying target is equal.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="from-fairness-to-measurement-error" class="slide level2">
+<h2>From fairness to measurement error</h2>
+<p>Ralph and Ross have the same job qualification, but the CV screener gives them different scores.</p>
+<p><span class="math display">\[u = m + e\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math inline">\(u\)</span> = observed score<br>
+<span class="math inline">\(m\)</span> = true score: job qualification<br>
+<span class="math inline">\(e\)</span> = measurement error</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[m_A=m_B\]</span></p>
+<p><span class="math display">\[u_A\neq u_B\]</span></p>
+</div></div>
+<div class="diagnosis">
+<p>Fairness problems appear when the errors, <span class="math inline">\(e\)</span>, differ systematically between objects to be raited</p>
+</div>
+<aside class="notes">
+<p>Now use the CV example to introduce the true-score equation. The observed score <span class="math inline">\(u\)</span> equals the true score <span class="math inline">\(m\)</span> plus measurement error <span class="math inline">\(e\)</span>. Alex and Blair have the same value on the target because they are equally qualified, but the procedure introduces different errors and therefore produces different observed scores.</p>
+<p>This equation creates the bridge from the qualitative discussion of the four perils to the rest of the session. Reliability asks about the consistency of observed scores. Validity asks whether the scores capture the intended target. Later, fairness will concern how errors vary across people and groups.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="question-from-the-1980s-sat" class="slide level2">
+<h2>Question from the 1980s SAT</h2>
+<p><strong>RUNNER : MARATHON :: _______ : _______</strong></p>
+<p><strong>Answer Options:</strong></p>
+<ul>
+<li class="fragment"><p>(A) envoy : embassy</p></li>
+<li class="fragment"><p>(B) martyr : massacre</p></li>
+<li class="fragment"><p>(C) oarsman : regatta</p></li>
+<li class="fragment"><p>(D) referee : tournament</p></li>
+<li class="fragment"><p>(E) horse : stable</p></li>
+</ul>
+<aside class="notes">
+<p>The difficult items serve as a rough proxy for the students’ underlying verbal ability. The logic is: 1. Find Black and white students who perform equally well on the difficult items. 2. Treat that equal performance as evidence that the students have roughly equal ability. 3. Compare their performance on the easier items. 4. If one group performs worse on those items, the difference may reflect something besides ability, such as familiarity with culturally specific language. So “controlling for performance on hard items” means trying to compare students who are similar on the target before examining whether the measure treats them differently.</p>
+<p>Connect this to course evaluations. Suppose the target is an instructor’s contribution to student learning, but the observed evaluation score also reflects course difficulty, whether the course is required, class size, students’ expected grades, and reactions to the instructor’s identity or teaching style. Two equally effective instructors can therefore receive different ratings because they teach different courses or different students. That is a fairness problem when the score difference comes from the measurement context rather than from a genuine difference in teaching quality.</p>
+<p>Course evaluations also create a reliability problem. An instructor with a small class or a low response rate receives a score based on very few observations, so a handful of unusually positive or negative responses can move the average substantially. If departments use those noisy scores for promotion, assignments, or employment, instructors can receive different treatment even when their underlying teaching effectiveness is similar. This previews the distinction between systematic bias and random variation in chapter 3.</p>
+<p>Close with his balanced judgment: there is no evidence that quantification creates more unfairness than non-quantified judgment, since unfairness is everywhere in social life. Quantification provides a framework for stating what fairness means and how large problems are. Naive quantification can obscure problems. To go further, we need to be able to say precisely how a measure errs.</p>
+<p>Source: Lauderdale, pp.&nbsp;30–31.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="peril-3-unintended-consequences" class="slide level2">
+<h2>Peril 3: unintended consequences</h2>
+<p>Goodhart’s law: When a measure becomes a target, it ceases to be a good measure.</p>
+<div class="key-line">
+<p>Example: college ranking.</p>
+</div>
+<p>The measure does not merely describe behavior. It can redirect behavior toward the score.</p>
+<p><strong>Question to ask:</strong> What will people do differently once this number carries rewards or penalties?</p>
+<p><span class="source">Lauderdale, ch.&nbsp;1.</span></p>
+<aside class="notes">
+<p>Unintended consequences appear when people know the measure matters and adjust their behavior. The response may improve the measured score without improving the underlying goal.</p>
+<p>In the college-ranking example, the ranking initially serves as an indicator of institutional quality. Once the ranking becomes the target, administrators may change admissions, spending, or fundraising practices to improve the number. The institution can rise in the ranking without a corresponding improvement in education. The indicator then changes the activity it was supposed to measure.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="peril-4-malign-intentions" class="slide level2">
+<h2>Peril 4: malign intentions</h2>
+<p>Measurement choices can be designed or used to serve a harmful purpose.</p>
+<div class="key-line">
+<blockquote>
+<p><strong>Example:</strong> Redlining, changing the meaning of unemployed, removing spending from GDP</p>
+</blockquote>
+</div>
+<p>Numbers can make a preferred conclusion appear neutral or technical.</p>
+<p><strong>Question to ask:</strong> Who chose the target and indicators, and whose interests do those choices serve?</p>
+<p><span class="source">Lauderdale, ch.&nbsp;1.</span></p>
+<aside class="notes">
+<p>Malign intentions concern deliberate choices, not accidental omissions or unforeseen reactions. Someone may define the target, select indicators, or present results in a way intended to conceal harm, justify unequal treatment, or manufacture a favorable conclusion.</p>
+<p>Emphasize that the numerical result can be calculated correctly from the chosen indicators and still serve a deceptive purpose. Evaluating a measure therefore requires examining who designed it, what they included or excluded, and how they intend to use the score.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="reliability-and-validity" class="slide level2">
+<h2>Reliability and validity</h2>
+<p><strong>Reliability:</strong> repeated measurements give similar results.<br>
+<strong>Validity:</strong> the measurements capture the intended target.</p>
+<div class="dartboard-grid">
+<div class="dartboard-case">
+<div class="dartboard">
+<p><i style="--x:47%;--y:48%"></i><i style="--x:51%;--y:46%"></i><i style="--x:52%;--y:52%"></i><i style="--x:48%;--y:53%"></i><i style="--x:50%;--y:50%"></i></p>
+</div>
+<h3 id="reliable-and-valid">Reliable and valid</h3>
+<p>Consistent and on target</p>
+</div>
+<div class="dartboard-case">
+<div class="dartboard">
+<p><i style="--x:72%;--y:27%"></i><i style="--x:76%;--y:29%"></i><i style="--x:73%;--y:33%"></i><i style="--x:78%;--y:32%"></i><i style="--x:75%;--y:30%"></i></p>
+</div>
+<h3 id="reliable-not-valid">Reliable, not valid</h3>
+<p>Consistent but systematically off target</p>
+</div>
+<div class="dartboard-case">
+<div class="dartboard">
+<p><i style="--x:28%;--y:35%"></i><i style="--x:67%;--y:31%"></i><i style="--x:37%;--y:69%"></i><i style="--x:69%;--y:65%"></i><i style="--x:49%;--y:48%"></i></p>
+</div>
+<h3 id="valid-on-average-not-reliable">Valid on average, not reliable</h3>
+<p>Centered overall but inconsistent</p>
+</div>
+<div class="dartboard-case">
+<div class="dartboard">
+<p><i style="--x:62%;--y:18%"></i><i style="--x:83%;--y:37%"></i><i style="--x:57%;--y:42%"></i><i style="--x:77%;--y:61%"></i><i style="--x:69%;--y:29%"></i></p>
+</div>
+<h3 id="neither">Neither</h3>
+<p>Inconsistent and off target</p>
+</div>
+</div>
+<aside class="notes">
+<blockquote>
+<p>“The four perils identify ways quantification can go wrong. Now we need tools for evaluating a measure. Two basic questions come first: Does it produce consistent results? And does it measure what we intended? These are the questions of reliability and validity.”</p>
+</blockquote>
+<p>Introduce the two concepts with the dartboard analogy. Reliability concerns the spread of repeated measurements: do they land near one another? Validity concerns the target: do the measurements represent what we intended to measure?</p>
+<p>Start with the upper-left case. Tight clustering around the center gives both reliability and validity. The upper-right case is the key warning: repeated results can agree closely and still share the same bias. The lower-left pattern is centered only when many attempts are averaged; any single measurement is inconsistent. The final pattern has neither consistency nor accuracy.</p>
+<p>Connect this to the CV screener. A system could score the same CV consistently every time and therefore be reliable, yet still be invalid as a measure of job qualification because it rewards particular wording. Reliability alone does not establish validity.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-counts-as-error-depends-on-the-level-of-measurement" class="slide level2">
+<h2>What counts as error depends on the level of measurement</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Example</th>
+<th>Error can be…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal</td>
+<td>mode of travel; news frame present?</td>
+<td>only right or wrong: <span class="math inline">\(m \neq \mu\)</span></td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td>agree–disagree scale</td>
+<td>too low, right, or too high</td>
+</tr>
+<tr class="odd">
+<td>Interval</td>
+<td>temperature in °C</td>
+<td>a difference: <span class="math inline">\(\epsilon = m - \mu\)</span></td>
+</tr>
+<tr class="even">
+<td>Ratio</td>
+<td>GDP per capita</td>
+<td>a difference <strong>or</strong> a ratio: <span class="math inline">\(m/\mu\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="source">Lauderdale, pp.&nbsp;63–64.</span></p>
+<aside class="notes">
+<p>Introduce levels of measurement here for the first time. Error is a statement that <span class="math inline">\(m\)</span> and <span class="math inline">\(\mu\)</span> differ, and how we can state the difference depends on which mathematical operations are meaningful. For nominal categories, all we can say is whether they match. For ordinal categories we can also say the direction, and only partially compare magnitudes: on a scale A, B, C, D, if the truth is C, A is a bigger error than B, but we cannot compare that to an error between D and C.</p>
+<p>For interval measures, the difference <span class="math inline">\(m - \mu\)</span> is the familiar definition. For ratio measures, Lauderdale points out that a proportional error can be more meaningful. Work through the GDP example: the poor country’s error is smaller in dollars but five times larger in percentage terms, and probably misrepresents that country’s economy more consequentially. Neither choice is automatically right; it depends on the application.</p>
+<p>Ask a comm example: a count of minutes of daily social media use is ratio-level. Is underreporting by 20 minutes equally serious for someone who uses 30 minutes and someone who uses 300? The answer depends on the question, which is the point.</p>
+<p>Source: Lauderdale, section 3.1, pp.&nbsp;63–64.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="self-reported-height-and-weight" class="slide level2">
+<h2>Self-reported height and weight</h2>
+
+<img data-src="assets/lauderdale-figure-3-3.png" width="1300" class="r-stretch quarto-figure-center"><p class="caption">Lauderdale Figure 3.3: self-reported versus exam-measured height (left) and weight (right), NHANES 2021–23. Points cluster around the diagonal, with height reports slightly above it.</p><p><span class="source">Lauderdale, Figure 3.3, p.&nbsp;89. NHANES 2021–23, respondents aged 16+.</span></p>
+<aside class="notes">
+<p>Use this immediately after reliability and validity. The exam measurements provide a reasonable benchmark for the self-reports. Let students read the figure before giving any numbers. The diagonal is perfect agreement. Ask: does self-report capture variation in true height and weight? Yes, most points are near the line relative to the total spread. Ask: do you see a direction? Height points sit slightly above the line—people over-report.</p>
+<p>The example previews the error decomposition. The benchmark lets us look for systematic bias, person-level error, and remaining scatter. It also shows why validity is not a single yes/no property: the same measure can be adequate for one use and inadequate for another.</p>
+<p>Source: Lauderdale, section 3.7, Figure 3.3, p.&nbsp;89.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-the-benchmark-reveals" class="slide level2">
+<h2>What the benchmark reveals</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Height</th>
+<th style="text-align: right;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reliability, <span class="math inline">\(\rho(m,\mu)^2\)</span></td>
+<td style="text-align: right;">0.91</td>
+<td style="text-align: right;">0.95</td>
+</tr>
+<tr class="even">
+<td>Bias (mean error)</td>
+<td style="text-align: right;">+1.68 cm</td>
+<td style="text-align: right;">−0.67 kg</td>
+</tr>
+<tr class="odd">
+<td>Error SD</td>
+<td style="text-align: right;">3.07 cm</td>
+<td style="text-align: right;">4.83 kg</td>
+</tr>
+</tbody>
+</table>
+<p>Men over-report height more (+2.04 vs.&nbsp;+1.38 cm); women under-report weight more (−1.19 vs.&nbsp;−0.06 kg).</p>
+<p><span class="source">Lauderdale, pp.&nbsp;90–92.</span></p>
+<aside class="notes">
+<p>Read this table as an application of the concepts students have just learned. The reliability coefficients are high, but the error statistics show that high consistency does not eliminate individual error. Weight has a stronger negative correlation between error and truth: heavier people under-report more. The group differences show how measurement error can vary across people.</p>
+<p>Ask students: Which quantities describe consistency? Which describe accuracy? Which reveal a fairness concern? End with Lauderdale’s point that whether this matters depends on use. The same measure can be good enough for one purpose and inadequate for another.</p>
+<p>Source: Lauderdale, section 3.7, pp.&nbsp;90–92, Table 3.3.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-sources-of-error" class="slide level2">
+<h2>Three sources of error</h2>
+<p><span class="math display">\[m_{ir} - \mu_i = \underbrace{\delta}_{\text{common}} + \underbrace{\gamma_i}_{\text{unit-specific}} + \underbrace{\eta_{ir}}_{\text{measurement-specific}}\]</span></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Measuring height against a wall</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The tape curves at the floor, so <em>everyone</em> reads high</td>
+<td>common bias <span class="math inline">\(\delta\)</span></td>
+</tr>
+<tr class="even">
+<td><em>This person</em> (or a particular group of people) slouches or has voluminous hair</td>
+<td>unit-specific bias <span class="math inline">\(\gamma_i\)</span></td>
+</tr>
+<tr class="odd">
+<td>The pencil mark lands a little differently each time</td>
+<td>noise <span class="math inline">\(\eta_{ir}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="source">Lauderdale, pp.&nbsp;65–66.</span></p>
+<div class="key-line">
+<p><strong>Dartboard connection:</strong> Which source shifts the shots, shifts one person’s cluster, or spreads the shots out?</p>
+</div>
+<aside class="notes">
+<p>delta, gamma, eta</p>
+<p>This decomposition is the single most important idea in the chapter, so spend time on it. Units are indexed by <span class="math inline">\(i\)</span>, and repeated applications of the procedure to the same unit by <span class="math inline">\(r\)</span>. The common error is shared by all units. The unit-specific error is the procedure’s consistent mismeasurement of a particular unit. The measurement-specific error varies each time we apply the procedure.</p>
+<p>Use Lauderdale’s height example row by row. Then stress the consequence: if you measure the same person many times and average, the noise shrinks toward zero. But averaging never fixes the curved tape or the slouch, because those errors recur every time. This is why repetition and agreement can be reassuring about noise while saying nothing about bias.</p>
+<p>Now connect the equation to the dartboards. Ask students to identify the visual signature of each error source:</p>
+<ul>
+<li><strong>Common bias,</strong> <span class="math inline">\(\delta\)</span>: the whole cluster shifts away from the bullseye. This is the “reliable, not valid” pattern.</li>
+<li><strong>Unit-specific bias,</strong> <span class="math inline">\(\gamma_i\)</span>: one person’s repeated shots form a tight cluster in the wrong place. If the shift is patterned by group, it becomes a fairness concern.</li>
+<li><strong>Measurement-specific noise,</strong> <span class="math inline">\(\eta_{ir}\)</span>: shots spread out from one repetition to the next. This is the “not reliable” pattern.</li>
+</ul>
+<p>Ask: <strong>What does averaging repeated measurements remove, and what does it leave behind?</strong> Averaging reduces measurement-specific noise, but it does not remove common or unit-specific bias. Then ask students which component a sampling procedure contributes. Lauderdale notes that any measure based on sampling from a population, such as a survey estimate, has measurement-specific error.</p>
+<p>Source: Lauderdale, section 3.2, pp.&nbsp;65–66.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="worked-example-self-reported-social-media-minutes" class="slide level2">
+<h2>Worked example: self-reported social-media minutes</h2>
+<p><strong>Setup:</strong> We treat a device log as the target and ask each person to report their minutes twice.</p>
+<h3 id="step-1-compare-each-report-with-the-log">Step 1: Compare each report with the log</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Person</th>
+<th style="text-align: right;">Logged minutes</th>
+<th style="text-align: right;">Reports</th>
+<th style="text-align: right;">Report errors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">55, 45</td>
+<td style="text-align: right;">−5, −15</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">95, 85</td>
+<td style="text-align: right;">−25, −35</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">145, 155</td>
+<td style="text-align: right;">−55, −45</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-2-look-for-the-pattern">Step 2: Look for the pattern</h3>
+<ul>
+<li class="fragment"><strong>Common bias:</strong></li>
+<li class="fragment"><strong>Unit-specific bias:</strong></li>
+<li class="fragment"><strong>Noise:</strong></li>
+</ul>
+<aside class="notes">
+<p>State clearly that this is invented. Assume the logs are accurate for this illustration; whether logs are a gold standard is a question we return to shortly.</p>
+<p>Walk through the two steps on the slide. First, subtract the logged minutes from each report. Ask students to calculate one row at a time: A’s errors are −5 and −15, B’s are −25 and −35, and C’s are −55 and −45. Second, ask what pattern they see before introducing any notation. Everyone underreports, so the average error is −30: common bias. A, B, and C sit +20, 0, and −20 away from that average: unit-specific bias. The repeated reports differ by about ±5 around each person’s average: measurement-specific noise.</p>
+<p>Only after students identify the pattern, explain that mean squared error (MSE) is a single summary that averages squared errors. Lauderdale decomposes it into squared common bias, the variance of unit-specific biases, and noise variance. Do not require students to calculate 1191.7 yet; the conceptual point is that one summary can hide the different sources that the table reveals.</p>
+<p>Then ask the important question: what happens if we ask each person ten times and average? The noise term goes away, but the MSE barely changes. And notice the pattern in <span class="math inline">\(\gamma\)</span>: heavier users underreport more. The error is correlated with the target. Hold on to that; it matters for the next slide and for fairness.</p>
+<p>Source: Hypothetical example applying Lauderdale, section 3.2, pp.&nbsp;65–67.</p>
+<ul>
+<li><strong>Common bias:</strong> everyone reports too few minutes; the average error is <strong>−30</strong>.</li>
+<li><strong>Unit-specific bias:</strong> A, B, and C differ from that average by <strong>+20, 0, and −20</strong>.</li>
+<li><strong>Noise:</strong> repeated reports vary by about <strong>±5 minutes</strong> around each person’s average.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="reliability-is-not-accuracy" class="slide level2">
+<h2>Reliability is not accuracy</h2>
+<ul>
+<li class="fragment">I step on the scale 5 times, each time it tells me that I weigh between 160-165 times.</li>
+<li class="fragment">Agreement tells us the procedure is <strong>consistent</strong>.</li>
+<li class="fragment">It does not tell us whether the procedure measures the target correctly.</li>
+<li class="fragment">A stable bias can make a measure <strong>reliable but invalid</strong>.</li>
+</ul>
+<div class="key-line">
+<p>If someone consistently underreports social-media use by 30 minutes, repeated reports may be consistent while still being inaccurate.</p>
+</div>
+<p><strong>Question:</strong> What can repeated measurement remove, and what can it never fix?</p>
+<p><span class="source">Lauderdale, pp.&nbsp;67–68.</span></p>
+<aside class="notes">
+<p>Use this as the conceptual takeaway before showing any reliability coefficients. Repeated measurement can reduce random, repeat-to-repeat noise, but it cannot remove a common bias or a recurring person-specific bias. A measure can therefore be highly consistent and still miss the target in the same direction every time.</p>
+<p>The technical version is Lauderdale’s critique of classical test theory: repeated measures estimate how close one measurement comes to the procedure’s own long-run average, not necessarily how close it comes to the target. Keep the CTT equations for an optional appendix or instructor reference rather than asking students to parse them here.</p>
+<p>Source: Lauderdale, section 3.2, pp.&nbsp;67–68.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-we-assess-reliability-and-validity" class="slide level2">
+<h2>How do we assess reliability and validity?</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Basic strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reliability</strong></td>
+<td>Repeat the measurement and ask whether the results are consistent.</td>
+</tr>
+<tr class="even">
+<td><strong>Validity</strong></td>
+<td>Compare the measurement with the intended target or a reasonable benchmark.</td>
+</tr>
+</tbody>
+</table>
+<div class="key-line">
+<p>Reliability asks whether the procedure gives similar results. Validity asks whether those results represent what we meant to measure.</p>
+</div>
+<aside class="notes">
+<p>Now that students understand that reliability is not accuracy, introduce the assessment strategies. For reliability, repeat the same procedure and examine whether the results agree. For validity, compare the measure with the target directly when possible, or with a reasonable benchmark and other evidence when the target is not directly observed.</p>
+<p>Tell students that these strategies answer different questions. The next slides apply them to benchmark validation and repeated measurements.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="types-of-validity-evidence" class="slide level2">
+<h2>Types of validity evidence</h2>
+<p>Validity is a cumulative argument, not one statistic. These forms of evidence are commonly treated as parts of <strong>construct validity</strong>:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Evidence</th>
+<th>Basic question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Face</strong></td>
+<td>Does the measure look sensible on its surface?</td>
+</tr>
+<tr class="even">
+<td><strong>Content</strong></td>
+<td>Does it cover the important parts of the concept?</td>
+</tr>
+<tr class="odd">
+<td><strong>Structural</strong></td>
+<td>Do the indicators relate as the theory predicts?</td>
+</tr>
+<tr class="even">
+<td><strong>Convergent</strong></td>
+<td>Does it agree with measures of related constructs?</td>
+</tr>
+<tr class="odd">
+<td><strong>Discriminant</strong></td>
+<td>Does it remain distinct from measures of different constructs?</td>
+</tr>
+<tr class="even">
+<td><strong>Criterion</strong></td>
+<td>Does it agree with a credible external benchmark?</td>
+</tr>
+<tr class="odd">
+<td><strong>Predictive</strong></td>
+<td>Does it forecast a relevant future outcome?</td>
+</tr>
+</tbody>
+</table>
+<div class="key-line">
+<p>No single subtype proves validity. Each rules out a different way the measure could miss the target.</p>
+</div>
+<aside class="notes">
+<p>Use this as a vocabulary map before the benchmark examples. Explain that validity is an argument built from several kinds of evidence. Terminology varies across textbooks, but these are commonly organized as evidence for construct validity.</p>
+<p>Face validity is a quick plausibility check, not strong evidence by itself. Content validity asks whether the measure covers the conceptual domain. Structural validity asks whether indicators relate in the pattern the theory predicts. Convergent validity looks for agreement with related measures, while discriminant validity asks whether the measure remains distinct from measures of different constructs. Criterion validity compares with a credible external benchmark. Predictive validity asks whether the measure forecasts a relevant later outcome.</p>
+<p>Emphasize that criterion and predictive evidence often involve an external benchmark, while face, content, structural, convergent, and discriminant evidence help build the broader construct-validity argument. The next slides show what benchmark evidence looks like in practice.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="validity-evidence-examples-and-failure-points" class="slide level2">
+<h2>Validity evidence: examples and failure points</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Evidence</th>
+<th>Example</th>
+<th>What would weaken it?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Face</strong></td>
+<td>A five-item personality index appears to ask about extraversion.</td>
+<td>Items look unrelated to extraversion, or merely ask whether someone is popular.</td>
+</tr>
+<tr class="even">
+<td><strong>Content</strong></td>
+<td>A news-literacy measure covers source checking, evidence, and lateral reading.</td>
+<td>It measures only recall of media facts and omits source evaluation.</td>
+</tr>
+<tr class="odd">
+<td><strong>Structural</strong></td>
+<td>The five personality items form one expected factor.</td>
+<td>Items fail to hang together or load on several unintended factors.</td>
+</tr>
+<tr class="even">
+<td><strong>Convergent</strong></td>
+<td>Self-reported news exposure agrees with browser-log exposure.</td>
+<td>The two measures of the same construct show little relationship.</td>
+</tr>
+<tr class="odd">
+<td><strong>Discriminant</strong></td>
+<td>A news-exposure score remains distinct from an unrelated trait such as height.</td>
+<td>It correlates just as strongly with an unrelated construct as with news exposure.</td>
+</tr>
+<tr class="even">
+<td><strong>Criterion</strong></td>
+<td>A news-consumption measure agrees with an established assessment of news knowledge.</td>
+<td>Agreement disappears when compared with the external knowledge benchmark.</td>
+</tr>
+<tr class="odd">
+<td><strong>Predictive</strong></td>
+<td>A media-literacy score predicts later detection of misinformation.</td>
+<td>It does not predict the relevant future behavior or outcome.</td>
+</tr>
+</tbody>
+</table>
+<div class="key-line">
+<p>Evidence can support a measure without proving it. <strong>Criterion validity</strong> emphasizes agreement with an external benchmark; <strong>convergent validity</strong> emphasizes agreement across measures of the same construct.</p>
+</div>
+<aside class="notes">
+<p>Walk through the examples, emphasizing that each subtype addresses a different vulnerability.</p>
+<p>For face validity, a five-item personality index may look plausible because its items appear to ask about the trait. That is only a first impression. It would be weak face evidence if the items actually measured popularity, confidence, or social desirability instead.</p>
+<p>For content validity, ask whether the measure covers the concept’s full domain. A news-literacy scale made only of factual recall would omit source evaluation and evidence checking. For structural validity, ask whether the items behave as the theory predicts. A five-item index that fails to form the expected factor needs explanation.</p>
+<p>For convergent validity, compare two measures intended to capture the same construct, such as self-reported news exposure and browser logs. For criterion validity, compare the measure with an external benchmark that should be related to it. Here, news knowledge is not the same construct as news consumption; it functions as the criterion. For discriminant validity, ask whether the measure remains distinct from an unrelated construct. A high correlation with an unrelated trait can signal that the measure is capturing something else.</p>
+<p>Criterion validity uses a credible external benchmark, such as an established assessment of news knowledge for a news-consumption measure. Predictive validity asks whether the measure forecasts a relevant later outcome, such as later misinformation detection. In every case, a failure weakens the validity argument; a success supports it but does not prove the measure is valid in every use.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hand-coding-versus-ai-coding" class="slide level2">
+<h2>Hand-coding versus AI coding</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>What to check</th>
+<th>What it tells us</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Do hand coders agree?</strong></td>
+<td>Two or more trained coders classify the same items.</td>
+<td><strong>Reliability</strong> of the hand-coding procedure.</td>
+</tr>
+<tr class="even">
+<td><strong>Does the AI agree with hand coders?</strong></td>
+<td>Compare AI labels with an independently coded sample.</td>
+<td><strong>Convergent Validity</strong>.</td>
+</tr>
+<tr class="odd">
+<td><strong>Are the hand-coding rules defensible?</strong></td>
+<td>Does the codebook capture the concept we care about?</td>
+<td><strong>Content Validity/Face Validity</strong> of the coding target and operationalization.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="source">Lauderdale, pp.&nbsp;75–76.</span></p>
+<aside class="notes">
+<p>Use this to separate two questions students often conflate. First, can the coding procedure be applied consistently? That is reliability. Second, do the labels represent the concept we intended? That is validity. Agreement between an AI system and hand coders answers the first question only indirectly and depends on the hand-coded reference.</p>
+<p>Ask students what could go wrong: hand coders may disagree, the codebook may omit an important part of the concept, or the AI may reproduce a systematic pattern in the hand-coded labels. The hand-coded sample should be coded independently of any prompt or model tuning used to produce the AI labels.</p>
+<p>Source: Lauderdale, sections 3.3–3.6, pp.&nbsp;75–76, 79.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="even-with-a-gold-standard-two-cautions" class="slide level2">
+<h2>Even with a gold standard: two cautions</h2>
+<p><strong>Is the validation sample representative?</strong></p>
+<p>A measure validated on some kinds of units may err differently on others. Units absent from the benchmark are effectively unvalidated.</p>
+<p><strong>Was the benchmark used to build the measure?</strong></p>
+<p>If you chose or tuned the procedure to fit the benchmark, error there underestimates error elsewhere. Hold out a test set.</p>
+<p><span class="source">Lauderdale, pp.&nbsp;77–79.</span></p>
+<aside class="notes">
+<p>AI CODING EZAMPLES.</p>
+<p>hese two cautions are especially relevant to current communication research using supervised classifiers and LLMs. First, representativeness: if you validate a toxicity classifier on comments from one platform or in one dialect, the error rates may not carry to others. Lauderdale suggests reweighting when possible, and regressing errors or squared errors on unit characteristics to look for differences in bias or variance between groups. That last suggestion is itself a fairness diagnostic.</p>
+<p>Second, selecting on the benchmark. If you tried several prompts and kept the one that best matched the hand-coded sample, then performance on that sample is optimistic. The standard remedy is a training–test split or cross-validation. Ask students where they have seen a validation number that was computed on the same data used to choose the method.</p>
+<p>Flag that Burla et al.&nbsp;do something like this correctly: they refined the codebook using one set of transcripts and assessed agreement on ten different, randomly chosen transcripts.</p>
+<p>Source: Lauderdale, section 3.4, pp.&nbsp;77–79.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="intercoder-and-testretest-reliability-measure-consistency" class="slide level2">
+<h2>Intercoder and test–retest reliability measure consistency</h2>
+<p><strong>Test–retest:</strong> same units, two times. <strong>Intercoder:</strong> same units, two coders.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Common statistics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Binary / nominal</td>
+<td>% agreement; Cohen’s <span class="math inline">\(\kappa\)</span>; Scott’s <span class="math inline">\(\pi\)</span>; Fleiss’ <span class="math inline">\(\kappa\)</span>; Krippendorff’s <span class="math inline">\(\alpha\)</span></td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td>weighted <span class="math inline">\(\kappa\)</span>; Krippendorff’s <span class="math inline">\(\alpha\)</span> (ordinal); Spearman / Kendall; polychoric</td>
+</tr>
+<tr class="odd">
+<td>Interval / ratio</td>
+<td>Pearson’s <span class="math inline">\(r\)</span>; concordance correlation; intraclass correlation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>They tell you whether measures agree—not whether they measure what you wanted.</strong></p>
+<p><span class="source">Lauderdale, pp.&nbsp;83–86, Table 3.1.</span></p>
+<aside class="notes">
+<p>Lauderdale’s term is reliability-as-consistency. We can always compute how much two measures share variation, but without the independence assumption this tells us only that they measure the same thing, not that they measure the target. Researchers still call these reliability, usually with a qualifying adjective: intercoder, test–retest, internal-consistency.</p>
+<p>Go through the table briefly. The categorical statistics differ in how they adjust for chance agreement, which depends on base rates. Cohen’s kappa uses each coder’s own marginal distribution; Scott’s pi and Fleiss’ kappa pool the coders; Krippendorff’s alpha extends to many coders and different levels. For continuous data, statistics differ in whether they count differences in mean or scale between coders as disagreement: Pearson’s r ignores them; concordance and intraclass correlation do not.</p>
+<p>The bottom line is the takeaway for both case readings. Keep asking: what does this agreement statistic license us to conclude?</p>
+<p>Source: Lauderdale, section 3.5, pp.&nbsp;83–86, Table 3.1.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="without-a-benchmark-we-assemble-validity-evidence" class="slide level2">
+<h2>Without a benchmark, we assemble validity evidence</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Evidence</th>
+<th>Asks whether…</th>
+<th>Traditional names</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Content</strong></td>
+<td><span class="math inline">\(m\)</span> covers the full conceptual domain of <span class="math inline">\(\mu\)</span></td>
+<td>content validity</td>
+</tr>
+<tr class="even">
+<td><strong>Structure</strong></td>
+<td>the process producing <span class="math inline">\(m\)</span> matches the theorized structure of <span class="math inline">\(\mu\)</span></td>
+<td>response-process, structural, factorial</td>
+</tr>
+<tr class="odd">
+<td><strong>Relational</strong></td>
+<td><span class="math inline">\(m\)</span> relates to other quantities as <span class="math inline">\(\mu\)</span> should</td>
+<td>criterion, concurrent, predictive, convergent, discriminant, face</td>
+</tr>
+<tr class="even">
+<td><strong>Overall</strong></td>
+<td>all the evidence supports using <span class="math inline">\(m\)</span> for <span class="math inline">\(\mu\)</span></td>
+<td>construct validity</td>
+</tr>
+</tbody>
+</table>
+<p><span class="source">Lauderdale, pp.&nbsp;86–88, Table 3.2, following Messick (1989).</span></p>
+<aside class="notes">
+<p>When there is no gold or silver standard, which is usual for new concepts, Lauderdale says the question is often less whether we measured the true values than whether we have put a reasonable label on the outputs of our procedure. Researchers still call the resulting analyses validity, but they are not direct measures of fidelity to the target.</p>
+<p>Explain the organizing logic: these three categories correspond to the chapter 2 picture. Content concerns the indicators. Structure concerns how indicators are combined. Relational evidence concerns whether the measure behaves as the concept should in relation to other things. Construct validity is the integrated judgment.</p>
+<p>Mention face validity’s surprising role. It sounds the least rigorous, but Lauderdale argues it becomes very useful because expert judgment is essential to building new measures; later chapters build measurement procedures from expert judgments. We will now use this table to sort the evidence in Semetko and Valkenburg.</p>
+<p>Source: Lauderdale, section 3.6, pp.&nbsp;86–88, Table 3.2.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="content-analysis-as-measurement" class="slide level2 section-title">
+<h2>Content analysis as measurement</h2>
+<p><strong>Semetko &amp; Valkenburg (2000):</strong> five news frames in Dutch press and television</p>
+<p><strong>Burla et al.&nbsp;(2008):</strong> intercoder reliability as a tool for improving a codebook</p>
+<p>For each: What is <span class="math inline">\(\mu\)</span>? What is <span class="math inline">\(m\)</span>? What evidence connects them?</p>
+<aside class="notes">
+<p>Transition to the case readings. Tell students we are not using Semetko and Valkenburg primarily for its substantive findings about Dutch news, though we will mention them. We are using it as a worked example of the measurement process: a concept from the literature, a set of indicators, a coding procedure, reliability evidence, a structural analysis, and substantive claims. Burla et al.&nbsp;then shows a team using intercoder reliability diagnostically rather than only as a number to report.</p>
+<p>Write the three questions on the board and keep them visible.</p>
+<p>Source: Semetko &amp; Valkenburg (2000); Burla et al.&nbsp;(2008).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-are-they-asking" class="slide level2">
+<h2>What are they asking?</h2>
+<p><strong>Semetko &amp; Valkenburg’s research question:</strong></p>
+<blockquote>
+<p>Which generic news frames appear in Dutch press and television coverage, and how do those frames vary across media and outlet type?</p>
+</blockquote>
+<p><strong>The broader Iyengar question they revisit:</strong></p>
+<blockquote>
+<p>Does episodic coverage encourage audiences to assign responsibility to individuals, while thematic coverage encourages responsibility to government or society?</p>
+</blockquote>
+<p>Their data code <strong>story content</strong>, not audience interpretations. The paper therefore tests whether patterns in news framing are consistent with, or challenge, the way Iyengar links episodic/thematic presentation to responsibility.</p>
+<aside class="notes">
+<p>Pause here before introducing the codebook. Separate the paper’s descriptive question from the broader theoretical claim. Semetko and Valkenburg ask what frames occur in Dutch news and whether they differ across media and outlet types. Iyengar’s claim concerns how episodic versus thematic presentation shapes responsibility attribution by audiences. Semetko and Valkenburg do not directly measure audience effects; they measure the content that might create those effects.</p>
+<p>This distinction will matter later when we discuss validity and overclaiming: a content measure cannot by itself establish what audiences think.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-concept-what-is-a-news-frame" class="slide level2">
+<h2>The concept: what is a news frame?</h2>
+<p>Framing selects “some aspects of a perceived reality” to make them salient, promoting a “problem definition, causal interpretation, moral evaluation, and/or treatment recommendation.” (Entman 1993, quoted p.&nbsp;94)</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>How frames are found</th>
+<th>Tradeoff</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Inductive</strong></td>
+<td>read openly; let frames emerge</td>
+<td>finds many frames; labor-intensive, hard to replicate</td>
+</tr>
+<tr class="even">
+<td><strong>Deductive</strong></td>
+<td>define frames in advance; code for them</td>
+<td>replicable, scales up; misses undefined frames</td>
+</tr>
+</tbody>
+</table>
+<p>Their five deductive frames: <strong>responsibility, conflict, human interest, economic consequences, morality.</strong></p>
+<p><span class="source">Semetko &amp; Valkenburg, pp.&nbsp;93–96.</span></p>
+<aside class="notes">
+<p>The authors note there is no single definition of frame, but the definitions they review share features. Entman’s is the most used. Ask: is a frame, in this definition, a property of a story, of a journalist’s intention, or of an audience’s interpretation? The definitions they quote cover all three. Their measure will be a property of stories as coded by readers.</p>
+<p>The inductive–deductive contrast parallels last week’s discussion of theory-driven versus unsupervised measurement. The authors choose the deductive approach, arguing that the literature shows these five frames account for nearly all frames found in news. That is a strong claim about content coverage; note it and return to it when sorting validity evidence.</p>
+<p>Briefly define each frame from pp.&nbsp;95–96. Conflict: disagreement between actors. Human interest: a human face or emotional angle. Economic consequences: effects on someone’s finances. Morality: religious tenets or moral prescriptions. Responsibility: attributing cause or solution to government or individuals, drawing on Iyengar’s work on episodic and thematic coverage.</p>
+<p>Source: Semetko &amp; Valkenburg, pp.&nbsp;93–96.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-instrument" class="slide level2">
+<h2>The instrument</h2>
+<p><strong>Units:</strong> 4,123 stories, May–June 1997 (around the Amsterdam EU summit)</p>
+<ul>
+<li class="fragment">4 newspapers (2,601 stories, coded every other day) and 3 TV news programs (1,522 stories)</li>
+<li class="fragment">Framing analysis on stories about politics, Europe, crime, drugs, or immigration</li>
+</ul>
+<p><strong>Indicators:</strong> 20 yes/no questions, at least three per frame</p>
+<ul>
+<li class="fragment"><em>“Does the story reflect disagreement between parties/individuals/groups?”</em> (conflict)</li>
+<li class="fragment"><em>“Does the story contain any moral message?”</em> (morality)</li>
+</ul>
+<p><strong>Measure:</strong> mean of a frame’s items, from 0 (absent) to 1 (present)</p>
+<p><span class="source">Semetko &amp; Valkenburg, pp.&nbsp;97–101.</span></p>
+<aside class="notes">
+<p>Ask students to identify the parts in last week’s vocabulary. The unit of analysis is the story. The indicators are binary coder judgments. The aggregation rule is an unweighted average of items assigned to each frame. The resulting score ranges from 0 to 1.</p>
+<p>Point out selection decisions that shape the population being described. In the press, they coded page-one stories, stories mentioning political institutions or politicians, and stories on four topics. On television, they coded all items in the main evening news. Newspapers were coded every other day because of volume. Only 30 percent of TV stories met the criteria for the framing analysis, compared with 85 percent of press stories. These choices affect what “Dutch news” means in the results.</p>
+<p>Ask: is the frame score a measure of how much a frame is present, or the share of indicators present? For a story, a 0.67 on conflict means two of three questions were answered yes. Whether that is “more conflict framing” in a meaningful interval sense is an open question we return to.</p>
+<p>Source: Semetko &amp; Valkenburg, pp.&nbsp;97–101.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="their-indicators-and-factor-structure" class="slide level2">
+<h2>Their indicators and factor structure</h2>
+<div class="tall-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="assets/semetko-table-1.png" height="760"></p>
+<figcaption>Semetko and Valkenburg Table 1: varimax-rotated factor loadings for 20 framing items on five factors: attribution of responsibility, human interest, conflict, morality, and economic consequences.</figcaption>
+</figure>
+</div>
+</div>
+<p><span class="source">Semetko &amp; Valkenburg, Table 1, p.&nbsp;100.</span></p>
+<aside class="notes">
+<p>Give students a minute to read the items. Ask them to evaluate content: do these questions cover Entman’s definition? Notice what the morality frame includes—moral message, religious tenets, social prescriptions about behavior. Notice that the human interest frame includes a visual item that may apply mainly to television.</p>
+<p>Point to two items that load weakly on their intended factor: “Does the story suggest the problem requires urgent action?” at .43 and “Does the story refer to winners and losers?” at .29. These were dropped from the scales because they fell below a .50 threshold. Ask whether dropping them is a measurement decision or a conceptual decision. It is both: winners and losers is a common description of conflict framing in the literature, and the empirical structure has redefined the concept.</p>
+<p>Also note footnote 1: the individual responsibility item was inversely coded. We will come back to what that implies.</p>
+<p>Source: Semetko &amp; Valkenburg, Table 1, p.&nbsp;100.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-they-established-reliability-and-structure" class="slide level2">
+<h2>How they established reliability and structure</h2>
+<p><strong>Intercoder reliability:</strong> four coders; 50 newspaper and 50 TV stories; agreement <strong>92%–100%</strong> on each question.</p>
+<p><strong>Internal consistency (KR-20):</strong> responsibility .75, human interest .69, conflict .81, morality .77, economic .66.</p>
+<p><span class="source">Semetko &amp; Valkenburg, p.&nbsp;99.</span></p>
+<aside class="notes">
+<p>Go through the three kinds of evidence and classify each with Lauderdale’s vocabulary. Intercoder agreement is reliability-as-consistency across parallel applications of one procedure. The factor analysis is structural evidence: do indicators group the way the theory says? Cronbach’s alpha, computed with the KR-20 version for binary items, is another form of consistency, among items within a frame.</p>
+<p>The last line is a nice moment of methodological candor in the paper. The authors chose yes/no questions partly because binary coding yields high agreement. They acknowledge the cost: binary data carry more error relative to a richer underlying quantity and attenuate correlations, which might hide factor structure. They argue that because they found a clear structure anyway, the concern did not apply. Ask students whether that argument is complete. It addresses the factor analysis, but not whether a binary code captures the degree of framing in a story.</p>
+<p>Ask the decisive question: does any of this show that the score measures framing as the concept defines it? All three are forms of agreement. None compares the measure to an independent assessment of the target.</p>
+<p>Source: Semetko &amp; Valkenburg, p.&nbsp;99.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sorting-semetko-and-valkenburgs-validity-evidence" class="slide level2">
+<h2>Sorting Semetko and Valkenburg’s validity evidence</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Evidence</th>
+<th>In the paper</th>
+<th>What it leaves open</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Content</strong></td>
+<td>five frames are grounded in prior literature; each has 3–5 items</td>
+<td>coverage is argued, not independently tested; omitted frames remain possible</td>
+</tr>
+<tr class="even">
+<td><strong>Structure</strong></td>
+<td>five factors; same clusters; adequate alphas</td>
+<td>factors found in items designed to group</td>
+</tr>
+<tr class="odd">
+<td><strong>Relational</strong></td>
+<td>human interest higher in sensationalist outlets; responsibility higher in serious ones</td>
+<td>is this validation or the finding?</td>
+</tr>
+<tr class="even">
+<td><strong>Face</strong></td>
+<td>items read like the frame definitions</td>
+<td>no external judges reported</td>
+</tr>
+</tbody>
+</table>
+<p><span class="source">Semetko &amp; Valkenburg, pp.&nbsp;95–106; Lauderdale, Table 3.2.</span></p>
+<aside class="notes">
+<p>Fill in the table with the class rather than presenting it complete, if time allows. Content: the claim that five frames are grounded in prior literature is an argument for content coverage, not a formal content-validity study. The deductive approach cannot detect frames not defined in advance. Structure: the factor solution supports the grouping, but because items were written for each frame, finding that they cluster is expected; it rules out some failures rather than confirming the concept.</p>
+<p>The relational row is the most interesting. Sensationalist outlets using more human interest framing is the kind of known-groups pattern one could use as validity evidence. But in this paper it is also a main finding. If we use expected differences to validate the measure, we cannot also treat finding those differences as a discovery. Ask students how to break the circularity: validate on a separate sample, or against a different kind of evidence.</p>
+<p>Face validity: the items plainly resemble the definitions. Lauderdale would encourage asking independent experts to judge a sample of stories as a separate check.</p>
+<p>Source: Semetko &amp; Valkenburg, pp.&nbsp;95–106; Lauderdale, section 3.6, Table 3.2.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="does-the-measure-support-the-claim" class="slide level2">
+<h2>Does the measure support the claim?</h2>
+<p><strong>Claim:</strong> Dutch TV is episodic yet frames <em>government</em> as responsible—so Iyengar’s argument is “culture bound” (p.&nbsp;106). <span class="source">Semetko &amp; Valkenburg, pp.&nbsp;99–106; Lauderdale, pp.&nbsp;96–97.</span></p>
+<aside class="notes">
+<p>This slide applies Lauderdale’s section 3.9, which lists three ways to overclaim: treating ordinal information as interval, claiming more validity than the evidence supports, and describing the measure in terms of a broader concept than the one constructed.</p>
+<p>Domain: the authors interpret their result as disagreeing with Iyengar, who measured how audience members attributed responsibility after exposure to episodic or thematic news. Semetko and Valkenburg measure content. Their finding is compatible with episodic TV news still leading audiences to individual attributions. Ask whether the claim is about the concept their measure targets.</p>
+<p>Construction: the discussion says a high score means responsibility was attributed to government. But the scale combines items about government with an inverted item about individual responsibility. A story that attributes no responsibility to anyone gets credit on the inverted item. Ask students what a score of .25 means. It is a good example of how an aggregation rule can quietly change the meaning of a label.</p>
+<p>Level: frame scores are averages of a few binary items, treated as interval quantities in MANOVA. That may be defensible, but it is an assumption. Frame this as a discussion, not a takedown: the paper is a foundational and widely replicated instrument, which is exactly why its measurement choices are worth examining.</p>
+<p>Source: Semetko &amp; Valkenburg, pp.&nbsp;99–106; Lauderdale, section 3.9, pp.&nbsp;96–97.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="burla-et-al.-reliability-as-a-diagnostic-tool" class="slide level2">
+<h2>Burla et al.: reliability as a diagnostic tool</h2>
+<p><strong>Study:</strong> interviews with 48 low back pain patients; qualitative content analysis.</p>
+<ol type="1">
+<li class="fragment"><strong>Build the codebook:</strong> name, definition, examples, rules; deductive + inductive.</li>
+<li class="fragment"><strong>Pilot:</strong> two coders code 10 transcripts; discuss disagreements; revise. <em>“Exercising” and “relaxation” merged—yoga is both.</em></li>
+<li class="fragment"><strong>Assess:</strong> 10 <em>new</em> random transcripts; 17 of 57 major codes; overall <span class="math inline">\(\kappa\)</span> = .67.</li>
+<li class="fragment"><strong>Diagnose and revise</strong> codes using agreement patterns.</li>
+</ol>
+<p><span class="source">Burla et al.&nbsp;(2008), pp.&nbsp;114–115.</span></p>
+<aside class="notes">
+<p>Burla et al.&nbsp;write for health researchers using qualitative content analysis, where coding schemes are developed partly from the data. Their argument is that intercoder reliability can be a quality-assurance tool, especially when results will be quantified or subgroups compared.</p>
+<p>Walk through the steps. The codebook defines each code with a definition, example, and rules—this is the operationalization. The pilot uses disagreements to refine definitions. The yoga example is lovely: coders could not tell whether yoga was exercise or relaxation, because it is both. The solution was to change the concept, merging two codes. Ask: is that improving reliability, validity, or both? It improves agreement by redefining the category. That may be appropriate, but it changes what can be claimed.</p>
+<p>Highlight a strength. They assessed agreement on ten new, randomly chosen transcripts, not on those used to refine the codebook. That is Lauderdale’s warning about selecting on the benchmark, handled correctly.</p>
+<p>Explain the kappa threshold they use: Everitt’s guide calls .41–.60 moderate, above .60 satisfactory, above .80 nearly perfect. Ask students where such thresholds come from. They are conventions, not derived from what the measure will be used for.</p>
+<p>Source: Burla et al.&nbsp;(2008), pp.&nbsp;114–115.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="reading-burlas-table-2" class="slide level2">
+<h2>Reading Burla’s Table 2</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Description</th>
+<th style="text-align: right;">Agreement</th>
+<th style="text-align: right;">Of disagreements, left off by coder 1 / 2</th>
+<th>Diagnosis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>121</td>
+<td>etiology and description of illness</td>
+<td style="text-align: right;">46%</td>
+<td style="text-align: right;">48% / 52%</td>
+<td>both struggle → <strong>code too broad</strong></td>
+</tr>
+<tr class="even">
+<td>446</td>
+<td>exercise/sports/relaxation that helps</td>
+<td style="text-align: right;">71%</td>
+<td style="text-align: right;">29% / 71%</td>
+<td>one coder → <strong>coder misunderstands</strong></td>
+</tr>
+<tr class="odd">
+<td>620</td>
+<td>patients’ recommendations</td>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">0% / 100%</td>
+<td>coder 2 <strong>uses the code less often</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Agreement:</strong> both coders assigned the code. <strong>Disagreements:</strong> only one did; the split shows who left it off and sums to 100%.</p>
+<p>Low-frequency codes showed <em>higher</em> agreement: narrower definitions.</p>
+<p><span class="source">Burla et al.&nbsp;(2008), Table 2, p.&nbsp;116.</span></p>
+<aside class="notes">
+<p>The useful move here is that disagreement is itself data. The last columns record which coder failed to assign the code when the other did, as a share of that code’s disagreements, so each pair sums to 100%. Nothing is compared to a true answer here; the two coders are compared only with each other. For code 620, 80% agreement means 20% of assignments were disagreements, and in every one of them coder 2 was the one who left the code off. Watch for confusion on code 446: 71% agreement leaves 29% disagreements, and the split happens to be 29% / 71%. The match is a coincidence; the 29% in the split is not the disagreement rate. When disagreements are evenly split, as for code 121, both coders find the code hard to apply, suggesting the definition is the problem. Here, “etiology and definition” combined causes and diagnoses in one code. When disagreements are lopsided, as for code 446, one coder is likely applying the definition differently, which calls for training rather than redefinition.</p>
+<p>Connect to Lauderdale’s error decomposition. Coder-specific tendencies are like common bias for that coder. A code that is too broad produces errors that look more like noise. And a code that is consistently misunderstood by both coders in the same way would not show up here at all—that is parallel measurement with correlated errors.</p>
+<p>Ask why narrow, rarer codes might show higher agreement. The authors suggest that narrow definitions are easier to apply. Note the tension with our kappa slide: for rare codes, percentage agreement among assignments, as they report it, behaves differently from overall agreement including both-no cases.</p>
+<p>Source: Burla et al.&nbsp;(2008), Table 2, p.&nbsp;116.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-does-burlas-kappa-.67-certify" class="slide level2">
+<h2>What does Burla’s <span class="math inline">\(\kappa\)</span> = .67 certify?</h2>
+<p><strong>It supports:</strong> coders apply the codebook consistently enough to code alone.</p>
+<p><strong>It does not show:</strong> that codes capture patients’ perspectives.</p>
+<ul>
+<li class="fragment"><strong>Which codes?</strong> Only 17 of 57: substantive and frequent. Rare codes were excluded because they lower <span class="math inline">\(\kappa\)</span>.</li>
+<li class="fragment"><strong>Which method?</strong> Not suitable for grounded theory, which has no fixed coding scheme.</li>
+<li class="fragment"><strong>Lauderdale:</strong> two coders trained together are <em>parallel measurement</em>.</li>
+</ul>
+<p><span class="source">Burla et al.&nbsp;(2008), pp.&nbsp;115–117; Lauderdale, pp.&nbsp;81–83.</span></p>
+<aside class="notes">
+<p>Be balanced. The paper’s claim is modest and appropriate: high agreement justifies single coding of the remaining transcripts, instead of having two coders code everything. That is a reliability-as-consistency claim, and kappa is a reasonable tool for it.</p>
+<p>Then the limits. Selecting the codes on which to compute reliability, excluding rare codes because they would lower kappa, means the reported .67 applies to the more frequent codes. Ask whether the excluded codes still appear in the findings. If they do, their reliability is unknown. This is the same structure as Lauderdale’s concern with unrepresentative validation samples.</p>
+<p>The authors’ Table 1 says intercoder reliability is not adequate for grounded theory, because there is no predefined coding scheme and results are not quantified. Connect that to Lauderdale’s pragmatic view: when concept and procedure are being developed together, agreement on a fixed procedure is not yet the relevant question.</p>
+<p>Finally, from Lauderdale: agreement between coders who share a codebook and training can be high when the shared procedure is systematically wrong. Agreement is necessary for a usable measure, not sufficient for a valid one.</p>
+<p>Source: Burla et al.&nbsp;(2008), pp.&nbsp;115–117, Table 1; Lauderdale, section 3.5, pp.&nbsp;81–83.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="readings" class="slide level2">
+<h2>Readings</h2>
+<p><strong>Lauderdale, Benjamin E.</strong> <em>Pragmatic Social Measurement.</em> September 15, 2026 draft. Chapter 3, “Measurement Error,” pp.&nbsp;63–97; chapter 4, “Fairness in Measurement,” pp.&nbsp;99–113; chapter 1, pp.&nbsp;29–31.</p>
+<p><strong>Semetko, Holli A., and Patti M. Valkenburg.</strong> 2000. “Framing European Politics: A Content Analysis of Press and Television News.” <em>Journal of Communication</em> 50(2): 93–109.</p>
+<p><strong>Burla, Laila, Birte Knierim, Jürgen Barth, Katharina Liewald, Margreet Duetz, and Thomas Abel.</strong> 2008. “From Text to Codings: Intercoder Reliability Assessment in Qualitative Content Analysis.” <em>Nursing Research</em> 57(2): 113–117.</p>
+<p><span class="source">Page references use printed pagination. Social media, kappa, and classifier examples are classroom illustrations.</span></p>
+<aside class="notes">
+<p>Lauderdale chapter 3 is the main reading; chapter 4 supplies the fairness examples and the formal criteria; the chapter 1 pages introduce the four perils and fairness in measurement. Semetko and Valkenburg serve as an extended example of a content-analytic measurement procedure, not as a substantive reading on European politics. Burla et al.&nbsp;show reliability assessment used to diagnose and improve a codebook.</p>
+<p>Invented examples: the self-reported social media minutes, the kappa table, and the toxicity classifier. All figures and numbers attributed to the readings come from the cited pages.</p>
+<p>Source: Reading list for Week 5.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>COMM 5220 • Week 5</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="presenter_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="presenter_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="presenter_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="presenter_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="presenter_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="presenter_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="presenter_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="presenter_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="presenter_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="presenter_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="presenter_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 8.0e-2,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

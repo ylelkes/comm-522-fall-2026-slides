@@ -8,6 +8,16 @@ format:
     link-external-newwindow: true
 ---
 
+## Week 5
+
+### Measurement Error, Reliability, and Fairness
+
+Finishing Lauderdale's discussion of fairness, then measurement error, reliability, and validity, with Semetko & Valkenburg's framing study and Burla et al. on intercoder reliability as content-analysis cases.
+
+[Student slides — no speaker notes](week-05/student.html){.btn .btn-primary role="button"}
+
+[Plain presentation — notes in Speaker View](week-05/presenter.html) · [Slides with visible notes](week-05/with-notes.html) · [Instructor discussion notes](week-05/instructor-notes.html)
+
 ## Week 4
 
 ### From Concepts to Measures
