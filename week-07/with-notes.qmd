@@ -94,7 +94,7 @@ Bridge to today's case: a media-bias measure can consistently reproduce the same
 ## Validity is built from different kinds of evidence
 
 | Evidence | Question it asks |
-|--------------------|---------------------------------------------------|
+|---------------------|---------------------------------------------------|
 | **Face** | Does the measure look sensible on its surface? |
 | **Content** | Does it cover the important parts of the concept? |
 | **Structural** | Do the indicators relate as the theory predicts? |
@@ -728,7 +728,7 @@ The cells illustrate a possible typology rather than assert an established empir
 :::
 :::::
 
-::: {.key-line}
+::: key-line
 Three binary dimensions produce $2 \times 2 \times 2 = 8$ logically possible types.
 :::
 
@@ -1121,7 +1121,7 @@ Ask what the map establishes and what it does not. It establishes spatial variat
 
 The interactive follows children from similar-income families and compares adult outcomes across race and gender.
 
-::: {.key-line}
+::: key-line
 [Open the interactive in a new tab](https://www.nytimes.com/interactive/2018/03/19/upshot/race-class-white-and-black-men.html){target="_blank" rel="noopener noreferrer"}
 :::
 
@@ -1129,7 +1129,25 @@ The interactive follows children from similar-income families and compares adult
 Open the linked interactive in a separate browser tab. Ask students to identify the population, outcome, comparison groups, and descriptive claim before discussing possible explanations. Emphasize that documenting a disparity is distinct from identifying the mechanisms that produced it.
 :::
 
+## The share of A grades rose across divisions
 
+![](images/paste-7.png){fig-alt="Line chart showing the percentage of A grades awarded from 2015 to 2025 across Arts and Humanities, Social Sciences, Sciences, and SEAS"}
+
+::: notes
+Ask students to describe the common pattern and the heterogeneity. The percentage of A grades rises in every division shown, with a visible jump around 2021. Arts and Humanities remains highest throughout, while the other three divisions converge near the upper-fifties to low-sixties by 2025.
+
+Keep the claim descriptive. The figure documents changes over time and differences among divisions. It does not identify why grades rose, whether grading standards changed, or whether shifts in students, courses, or enrollment composition produced the pattern.
+:::
+
+## The rise in A grades appears across class sizes
+
+![](images/paste-8.png){fig-alt="Line chart showing the percentage of A grades awarded from 2015 to 2025 across five class-size categories"}
+
+::: notes
+The percentage of A grades rises across every class-size category. Extra-small classes remain highest, while extra-large classes remain lowest. The categories move upward together around 2021, but the gaps between them do not disappear.
+
+Ask students to formulate an indicator claim and a trend claim from the same figure. Then ask what evidence would be required to explain the 2021 increase. The graph alone cannot distinguish changes in grading practices from changes in course mix, enrollment, instruction, assessment, or student performance.
+:::
 
 ## What can the Kim et al paper claim?
 
