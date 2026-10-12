@@ -36,6 +36,85 @@ lang: en
 Timing: 2 minutes. Frame the class as a sequence from concept to measure to descriptive claim. Kim, Lelkes, and McCrain supply the running case. Gerring gives a vocabulary for kinds of descriptive arguments. Huntington-Klein gives practical tools for describing variables.
 :::
 
+## Reliability and validity
+
+**Reliability:** repeated measurements give similar results.\
+**Validity:** the measurements capture the intended target.
+
+::::::::::: dartboard-grid
+:::: dartboard-case
+::: dartboard
+<i style="--x:47%;--y:48%"></i><i style="--x:51%;--y:46%"></i><i style="--x:52%;--y:52%"></i><i style="--x:48%;--y:53%"></i><i style="--x:50%;--y:50%"></i>
+:::
+
+### Reliable and valid
+
+Consistent and on target
+::::
+
+:::: dartboard-case
+::: dartboard
+<i style="--x:72%;--y:27%"></i><i style="--x:76%;--y:29%"></i><i style="--x:73%;--y:33%"></i><i style="--x:78%;--y:32%"></i><i style="--x:75%;--y:30%"></i>
+:::
+
+### Reliable, not valid
+
+Consistent but systematically off target
+::::
+
+:::: dartboard-case
+::: dartboard
+<i style="--x:28%;--y:35%"></i><i style="--x:67%;--y:31%"></i><i style="--x:37%;--y:69%"></i><i style="--x:69%;--y:65%"></i><i style="--x:49%;--y:48%"></i>
+:::
+
+### Valid on average, not reliable
+
+Centered overall but inconsistent
+::::
+
+:::: dartboard-case
+::: dartboard
+<i style="--x:62%;--y:18%"></i><i style="--x:83%;--y:37%"></i><i style="--x:57%;--y:42%"></i><i style="--x:77%;--y:61%"></i><i style="--x:69%;--y:29%"></i>
+:::
+
+### Neither
+
+Inconsistent and off target
+::::
+:::::::::::
+
+::: notes
+Use this as retrieval practice from Week 5. Reliability concerns the spread of repeated measurements: do the shots land near one another? Validity concerns the target: do the measurements represent what we intended to measure?
+
+Start with the reliable-and-valid case, then move to the central warning: a tight cluster can be consistently wrong. Repetition can reduce random noise, but it cannot remove a stable bias. In the lower-left case, the shots are centered only across many attempts; a single measurement is not dependable.
+
+Bridge to today's case: a media-bias measure can consistently reproduce the same channel scores and still fail to capture the conception of bias that we care about.
+:::
+
+## Validity is built from different kinds of evidence
+
+| Evidence | Question it asks |
+|--------------------|---------------------------------------------------|
+| **Face** | Does the measure look sensible on its surface? |
+| **Content** | Does it cover the important parts of the concept? |
+| **Structural** | Do the indicators relate as the theory predicts? |
+| **Convergent** | Does it agree with other measures of the same or closely related constructs? |
+| **Discriminant** | Does it remain distinct from measures of different constructs? |
+| **Criterion** | Does it agree with a credible external benchmark? |
+| **Predictive** | Does it forecast a relevant later outcome? |
+
+::: key-line
+Validity is a cumulative argument. No single result proves that a measure captures its intended target.
+:::
+
+::: notes
+Use this slide as a vocabulary recap before students evaluate Kim, Lelkes, and McCrain. The labels identify different ways to test a validity argument; they are not competing definitions of validity.
+
+Face validity is a quick plausibility check. Content evidence asks whether a measure represents the domain rather than one convenient slice. Structural evidence asks whether components behave as the conceptual model says they should. Convergent and discriminant evidence place the measure in a network of related and unrelated constructs. Criterion evidence uses an external benchmark. Predictive evidence asks whether scores forecast an outcome that theory says they should forecast.
+
+Ask students to anticipate which forms the Kim study can provide. The program rankings provide face evidence; comparisons with human coding provide criterion evidence; comparison with a text-based slant measure provides convergent evidence. Content validity will remain a central concern because the measure captures who appears, not everything that might count as media bias.
+:::
+
 ## Descriptive and explanatory research
 
 |   | Descriptive research | Explanatory research |
@@ -291,23 +370,54 @@ Examples: a host invites conservative guests to challenge them; a centrist vocab
 Source: Kim, Lelkes, and McCrain (2022), pp. 1–2. The Stanford Cable TV News Analyzer identifies people and screen time. DIME supplies CF scores. The authors aggregate weighted scores by channel-day and then week, with program and time-block versions. Anchors are excluded.
 :::
 
+## The Analyzer turns sampled faces into screen-time estimates
+
+::::: analyzer-slide
+::: column
+1.  **Archive** CNN, Fox News, and MSNBC video from the Internet Archive.
+2.  **Detect** faces in sampled frames.
+3.  **Identify** public figures from face descriptors and automated labels.
+4.  **Aggregate** detections into estimated screen time, then audit matched clips.
+:::
+
+::: column
+![](assets/stanford-cable-tv-analyzer-interface.png){fig-alt="The Stanford Cable TV News Analyzer interface combines face, caption-text, and channel filters, plots matching screen time, and lets users inspect matched video clips." width="100%"}
+
+[Hong et al. (2021), Figure 13.]{.source}
+:::
+:::::
+
+::: key-line
+The Analyzer measures **who is visible**, not who is speaking or what position the person expresses.
+:::
+
+::: notes
+Explain the technical pipeline before discussing the campaign-finance linkage. The source video comes from the Internet Archive's TV News Archive. The Analyzer detects faces in sampled frames with MTCNN, computes a FaceNet descriptor for each detected face, and uses Amazon Rekognition's celebrity-recognition labels plus within-video nearest-neighbor matching to attach identities to additional faces. Screen-time estimates accumulate the time represented by sampled-frame detections. The public interface allows queries that combine face identity, caption text, channel, program, and time filters. Clicking the graph reveals matched clips, captions, bounding boxes, and timelines so researchers can audit what the query selected.
+
+Then separate the Analyzer from Kim et al.'s contribution. The Analyzer supplies identities and estimated time on screen. Kim and colleagues exclude anchors, match non-anchor identities to DIME campaign-finance scores, weight those scores by screen time, and aggregate them into channel-period measures.
+
+Ask what the screenshot makes visible about measurement error. A detected face may be a live guest, B-roll, or a still photograph. A visible person need not be the speaker. Identity coverage is limited to recognizable public figures, and automated detection or identification can fail. These are not incidental software details: they define what the visibility indicator can represent.
+
+Sources: Hong et al. (2021), Figure 13; Stanford Cable TV News Analyzer methodology and getting-started documentation; Kim, Lelkes, and McCrain (2022), pp. 1–2.
+:::
+
 ## Campaign-finance ideology scores
 
 ::::: {.two-column .contrast}
 ::: column
 ### How DIME constructs them
 
--   Donors receive similar scores when they support similar candidates.
--   Candidates receive similar scores when they attract similar donors.
--   The model places donors and recipients on one left–right dimension.
+- Donors receive similar scores when they support similar candidates.
+- Candidates receive similar scores when they attract similar donors.
+- The model places donors and recipients on one left–right dimension.
 :::
 
 ::: column
 ### How Kim uses them
 
--   Negative values indicate positions toward the Democratic or liberal side.
--   Positive values indicate positions toward the Republican or conservative side.
--   Each on-screen person receives one score, treated as fixed across the study period.
+- Negative values indicate positions toward the Democratic or liberal side.
+- Positive values indicate positions toward the Republican or conservative side.
+- Each on-screen person receives one score, treated as fixed across the study period.
 :::
 :::::
 
@@ -355,21 +465,21 @@ Use the example to reinforce that DIME scores are inferred from campaign-finance
 ::: column
 ### Included
 
--   CNN, Fox News, MSNBC
--   2010 to March 2021
--   non-anchors with at least 10 hours on screen
--   people matched to campaign-finance records
--   screen time as the weight
+- CNN, Fox News, MSNBC
+- 2010 to March 2021
+- non-anchors with at least 10 hours on screen
+- people matched to campaign-finance records
+- screen time as the weight
 :::
 
 ::: column
 ### Lost or fixed
 
--   anchors and their commentary
--   people who never donated
--   words, tone, and treatment
--   ideology change within a person
--   unmatched or rarely shown people
+- anchors and their commentary
+- people who never donated
+- words, tone, and treatment
+- ideology change within a person
+- unmatched or rarely shown people
 :::
 :::::
 
@@ -386,10 +496,6 @@ Source: Kim, Lelkes, and McCrain (2022), p. 2.
 | Guest A |     −1.0 |     120 sec |                  −120 |
 | Guest B |     +0.5 |     240 sec |                  +120 |
 | Guest C |     +1.5 |      60 sec |                   +90 |
-
-::: {.fragment .key-line}
-What denominator would produce the clearest channel score: total screen time, matched screen time, number of guests, or something else?
-:::
 
 ::: notes
 The first two guests cancel under seconds × CF even though Guest B appears twice as long. Adding Guest C shifts the sum right. Ask how the interpretation changes if the analyst divides by 420 seconds, by three guests, or does not normalize. The main article does not fully explain normalization; this likely appears in the supplement or code. critique pa
@@ -510,13 +616,13 @@ Other indicator examples include the weekly share of stories about immigration, 
 
 Ask students to identify the population, attribute, summary, and scope in the media-bias sentence. Then ask what changes if “guest visibility” is replaced with the broader term “media bias.” The latter asks the indicator to carry more conceptual freight.
 
--   **Population:** Prime-time cable news programs included in the study
+- **Population:** Prime-time cable news programs included in the study
 
--   **Attribute:** The partisan affiliation of guests receiving airtime—or, more precisely, Republican guest visibility
+- **Attribute:** The partisan affiliation of guests receiving airtime—or, more precisely, Republican guest visibility
 
--   **Summary:** 58% of total guest airtime went to Republican guests
+- **Summary:** 58% of total guest airtime went to Republican guests
 
--   **Scope:** The 2024 general-election period, during prime time, on the sampled cable-news programs
+- **Scope:** The 2024 general-election period, during prime time, on the sampled cable-news programs
 :::
 
 ## Semetko and Valkenburg
@@ -596,6 +702,44 @@ Partisan bias means a systematic advantage produced through selection, prominenc
 Walk through the important counterexamples. An editorial may openly favor a candidate while making only factually accurate claims: accurate partisan slant. A rushed breaking-news report may repeat a false claim that favors no side consistently: nonpartisan misinformation. A fabricated allegation designed to damage one candidate falls in partisan misinformation. Factually correct reporting is not automatically unbiased, and unbiased reporting is not automatically correct.
 
 The cells illustrate a possible typology rather than assert an established empirical classification. Students should challenge the thresholds: How much slant counts as systematic? How much uncertainty makes a claim misleading? Can omission be misinformation, bias, both, or neither?
+:::
+
+## A third dimension doubles four types to eight
+
+**Dimension C:** Is the source or sponsor disclosed?
+
+::::: typology-slices
+::: typology-slice
+**Source disclosed**
+
+|   | **No misinformation** | **Misinformation** |
+|------------------------|------------------------|------------------------|
+| **No partisan bias** | transparent factual report | attributable error |
+| **Partisan bias** | disclosed advocacy | attributable partisan misinformation |
+:::
+
+::: typology-slice
+**Source concealed**
+
+|   | **No misinformation** | **Misinformation** |
+|------------------------|------------------------|------------------------|
+| **No partisan bias** | anonymous factual report | anonymous misinformation |
+| **Partisan bias** | covert advocacy | covert partisan misinformation |
+:::
+:::::
+
+::: {.key-line}
+Three binary dimensions produce $2 \times 2 \times 2 = 8$ logically possible types.
+:::
+
+::: notes
+Build directly from the prior two-dimensional matrix. Keep partisan bias on the rows and misinformation on the columns. Then add a third binary question: Is the source or sponsor disclosed? Instead of drawing a perspective cube, show the cube as two slices. The left matrix contains cases with disclosed sources; the right contains cases with concealed sources.
+
+Walk through contrasts that hold the first two dimensions constant. Disclosed partisan advocacy and covert advocacy can contain the same accurate claims and favor the same side; they differ only in source transparency. Attributable partisan misinformation and covert partisan misinformation can be equally false and partisan, but the latter conceals who is behind it.
+
+The example also demonstrates the cost of adding dimensions. A two-dimensional binary typology has four cells. A three-dimensional binary typology has eight. Four dimensions would have sixteen. More dimensions can capture important distinctions, but they quickly produce many thin or empty empirical categories. Each dimension therefore needs a theoretical reason and a defensible classification rule.
+
+This is an illustrative typology, not a claim that these eight labels form an established taxonomy of media content. Ask students whether disclosure should refer to the named author, the institutional publisher, the funder, or all three.
 :::
 
 ## Associations: patterned covariation
@@ -706,15 +850,7 @@ For an indicator claim about prevalence, a proportion and uncertainty interval m
 
 ## Describing a categorical indicator
 
-Semetko and Valkenburg turn framing into five multi-item variables:
-
-| Frame | Example coding question |
-|------------------------------------|------------------------------------|
-| conflict | Does the story reflect disagreement between parties or groups? |
-| responsibility | Does the story suggest that government can alleviate the problem? |
-| human interest | Does the story provide a human face or emotional angle? |
-| economic consequences | Does it mention financial losses, gains, or costs? |
-| morality | Does it contain a moral message or religious reference? |
+![](images/paste-2.png)
 
 ::: notes
 Semetko and Valkenburg (2000) use a deductive approach. Coders answer 20 yes-or-no questions. The authors use factor analysis to assess whether the items cluster into the five expected frames, then average the retained items within each scale. This is a useful correction to treating each story as if it has one dominant frame. Frames can coexist, and each scale ranges from 0 to 1.
@@ -917,7 +1053,7 @@ P(\mu-\sigma\leq X\leq\mu+\sigma)\approx .68
 P(\mu-2\sigma\leq X\leq\mu+2\sigma)\approx .95
 $$
 
-::: {.key-line}
+::: key-line
 The **68–95–99.7 rule** applies when the population is approximately normal.
 :::
 
@@ -961,13 +1097,41 @@ Ask which summary a policymaker might choose when discussing living standards, t
 Illustrative simulated data. Each distribution was rescaled to a median of \$60,000.
 :::
 
-## What can the Kim et al measure claim?
+## Admissions advantages grow sharply at the very top
+
+![](images/paste-5.png){fig-alt="Estimated admissions advantage at some elite colleges by parental income rank, comparing students with the same test scores"}
 
 ::: notes
-Ask students to locate the inferential jump in each version. The first closely matches the data. The second requires accepting the construct interpretation. The third adds an unmeasured mechanism and broadens from visibility to overall ideology.
+Ask students to describe the pattern before interpreting it. The estimated admissions advantage is fairly stable across much of the parental-income distribution, then increases steeply among applicants from the richest families. The figure separates the estimated legacy boost from the remaining advantage associated with family income.
+
+Use the slide to reinforce descriptive scope. The graph documents an association between parental income rank and estimated admissions advantage among otherwise comparable applicants. It does not, by itself, identify every institutional mechanism producing the pattern.
 :::
 
-## Claim surgery
+## Upward mobility varies dramatically by place
+
+![](images/paste-6.png){fig-alt="Map of the United States showing the chances that a child from the bottom income fifth reaches the top fifth, by metropolitan area"}
+
+::: notes
+The map describes geographic variation in upward mobility: the probability that a child born into the bottom income fifth reaches the top fifth as an adult. Lighter areas indicate higher mobility. The labeled metropolitan areas illustrate the range, from relatively high mobility in San Jose to substantially lower mobility in Atlanta and Charlotte.
+
+Ask what the map establishes and what it does not. It establishes spatial variation under the stated measure. It does not show that living in a particular place causes the outcome without additional research design and evidence.
+:::
+
+## Explore mobility by race and class
+
+The interactive follows children from similar-income families and compares adult outcomes across race and gender.
+
+::: {.key-line}
+[Open the interactive in a new tab](https://www.nytimes.com/interactive/2018/03/19/upshot/race-class-white-and-black-men.html){target="_blank" rel="noopener noreferrer"}
+:::
+
+::: notes
+Open the linked interactive in a separate browser tab. Ask students to identify the population, outcome, comparison groups, and descriptive claim before discussing possible explanations. Emphasize that documenting a disparity is distinct from identifying the mechanisms that produced it.
+:::
+
+
+
+## What can the Kim et al paper claim?
 
 Classify each claim, then remove any causal overreach:
 
@@ -999,7 +1163,7 @@ What comparison, distribution, or visualization would reveal the pattern?
 For which units, settings, and period should it hold—and what does it not establish?
 :::
 
-::: {.key-line}
+::: key-line
 **Scope conditions specify where, when, and for whom a claim is expected to apply—and where it may not.**
 :::
 
@@ -1081,23 +1245,6 @@ Students may formulate a trend, correlation, or network association. Require bot
 Timing: about 10 minutes to draft all three, followed by partner review. Partners identify the form, underline the operationalization, circle the scope conditions, and flag unsupported causal language.
 :::
 
-## Example bank
-
-| Topic | Weak description | More informative description |
-|------------------------|------------------------|------------------------|
-| podcast guests | 38% are women | representation varies sharply by genre and host gender |
-| incivility | mean = 1.8 | most posts contain none; a small tail contains repeated attacks |
-| local news | coverage fell | decline is concentrated in weekday civic reporting after ownership changes |
-| misinformation | false posts spread more | reach is highly concentrated in a small set of accounts and communities |
-| media bias | Fox scores higher | channel gaps widen in prime time while afternoon scores move together |
-| news framing | stories use five generic frames | responsibility dominates overall, while human-interest framing is more common in sensationalist outlets |
-
-::: notes
-Discuss why the right column is stronger: it identifies distribution, heterogeneity, time, or comparison. The local-news wording mentions timing after ownership changes but does not claim ownership caused the decline. Ask how easily readers may still infer causation and how to label the figure or prose carefully.
-
-The framing example comes from Semetko and Valkenburg. Their main descriptive contribution concerns variation across outlet types and topics, rather than the mere existence of the five frames.
-:::
-
 ## What makes description good?
 
 :::::: triad
@@ -1126,10 +1273,10 @@ Close the loop: concept explication precedes operationalization; operationalizat
 
 ## Readings
 
--   Gerring, John. 2012. “Descriptive Arguments.” In *Social Science Methodology*, 2nd ed., 141–154.
--   Huntington-Klein, Nick. “Describing Variables.” Chapter 3 in *The Effect*.
--   Kim, Eunji, Yphtach Lelkes, and Joshua McCrain. 2022. “Measuring Dynamic Media Bias.” *PNAS* 119(32): e2202197119.
--   Semetko, Holli A., and Patti M. Valkenburg. 2000. “Framing European Politics.” *Journal of Communication* 50(2): 93–109.
+- Gerring, John. 2012. “Descriptive Arguments.” In *Social Science Methodology*, 2nd ed., 141–154.
+- Huntington-Klein, Nick. “Describing Variables.” Chapter 3 in *The Effect*.
+- Kim, Eunji, Yphtach Lelkes, and Joshua McCrain. 2022. “Measuring Dynamic Media Bias.” *PNAS* 119(32): e2202197119.
+- Semetko, Holli A., and Patti M. Valkenburg. 2000. “Framing European Politics.” *Journal of Communication* 50(2): 93–109.
 
 ::: notes
 All figures reproduced from the assigned readings for classroom discussion.

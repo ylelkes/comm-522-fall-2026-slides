@@ -30,7 +30,23 @@ Kim figures are identified in the slide notes. DIME Senate rankings use the 1979
 
 Timing: 2 minutes. Frame the class as a sequence from concept to measure to descriptive claim. Kim, Lelkes, and McCrain supply the running case. Gerring gives a vocabulary for kinds of descriptive arguments. Huntington-Klein gives practical tools for describing variables.
 
-### Slide 3: Descriptive and explanatory research
+### Slide 3: Reliability and validity
+
+Use this as retrieval practice from Week 5. Reliability concerns the spread of repeated measurements: do the shots land near one another? Validity concerns the target: do the measurements represent what we intended to measure?
+
+Start with the reliable-and-valid case, then move to the central warning: a tight cluster can be consistently wrong. Repetition can reduce random noise, but it cannot remove a stable bias. In the lower-left case, the shots are centered only across many attempts; a single measurement is not dependable.
+
+Bridge to today's case: a media-bias measure can consistently reproduce the same channel scores and still fail to capture the conception of bias that we care about.
+
+### Slide 4: Validity is built from different kinds of evidence
+
+Use this slide as a vocabulary recap before students evaluate Kim, Lelkes, and McCrain. The labels identify different ways to test a validity argument; they are not competing definitions of validity.
+
+Face validity is a quick plausibility check. Content evidence asks whether a measure represents the domain rather than one convenient slice. Structural evidence asks whether components behave as the conceptual model says they should. Convergent and discriminant evidence place the measure in a network of related and unrelated constructs. Criterion evidence uses an external benchmark. Predictive evidence asks whether scores forecast an outcome that theory says they should forecast.
+
+Ask students to anticipate which forms the Kim study can provide. The program rankings provide face evidence; comparisons with human coding provide criterion evidence; comparison with a text-based slant measure provides convergent evidence. Content validity will remain a central concern because the measure captures who appears, not everything that might count as media bias.
+
+### Slide 5: Descriptive and explanatory research
 
 Descriptive research constructs an empirically defensible account of a phenomenon. It can describe a sample, make an inference about a larger population, compare groups, or document change over time. It does not become explanatory merely because it uses regression or another sophisticated method.
 
@@ -40,7 +56,7 @@ The same dataset can support either kind of argument. The design, assumptions, a
 
 Connection to Week 1: description identifies the explanandum, the phenomenon that calls for explanation. A weak description gives explanatory theory an unstable target.
 
-### Slide 4: Goals of descriptive research
+### Slide 6: Goals of descriptive research
 
 Description has intellectual goals beyond reporting a mean. Good descriptive work makes a phenomenon visible, establishes its prevalence and boundaries, reveals variation that a single number would conceal, and provides the target that an explanation must account for.
 
@@ -62,7 +78,7 @@ Return to the central distinction after each example: description tells us what 
 
 A descriptive result can challenge theory. If a theory predicts stable use throughout the semester, a concentrated exam-period surge counts against it before the researcher identifies the cause.
 
-### Slide 5: Description and explanation in one study
+### Slide 7: Description and explanation in one study
 
 All four statements belong to the same hypothetical library-use study. The claims in the left column describe timing and differences across settings. The claims in the right column say that one factor produces a change in library use.
 
@@ -70,45 +86,55 @@ Ask what additional evidence each explanatory claim would require. Exam-period u
 
 The wording matters. “Visits are more frequent during extended hours” states a descriptive association. “Extended hours increase visits” makes a causal claim.
 
-### Slide 6: How would you conceptualize ideological media bias?
+### Slide 8: How would you conceptualize ideological media bias?
 
 Timing: 5 minutes. First ask students to write alone, then compare definitions in pairs. Press on whether bias means deviation from truth, imbalance between sides, ideological direction, unfair treatment, or departure from a benchmark. Do not settle the question yet.
 
-### Slide 7: Five possible concepts of media bias
+### Slide 9: Five possible concepts of media bias
 
 These dimensions can move independently. An outlet can give Republicans more airtime while criticizing them, cover climate change frequently while using an economic-cost frame, or balance two sides even when one makes less accurate claims. Ask whether students' definitions combine several dimensions.
 
 Source: Kim, Lelkes, and McCrain (2022), p. 1, drawing on Eberl, Boomgaarden, and Wagner (2017), for visibility, agenda, and tonality.
 
-### Slide 8: How is this broadcast biased?
+### Slide 10: How is this broadcast biased?
 
 Use this as an open conceptualization prompt. Ask students to identify every plausible location of bias before supplying categories: guest selection, issue selection, duration, questioning, imagery, sourcing, tone, or the benchmark against which imbalance is judged. Do not resolve the example yet; the next slide shows how one broadcast can support several readings.
 
-### Slide 9: One broadcast, several readings
+### Slide 11: One broadcast, several readings
 
 Ask: Is this liberal or conservative bias? The answer depends on the construct. The example reveals why “media bias” cannot be treated as one self-evident variable.
 
-### Slide 10: From concept to observable evidence
+### Slide 12: From concept to observable evidence
 
 Timing: 6 minutes in groups. Assign different groups visibility, tonality, agenda, framing, or accuracy. Ask each group to propose a workable design and one likely failure.
 
-### Slide 11: Operationalization exercise
+### Slide 13: Operationalization exercise
 
 Emphasize that no row is the operationalization. Each is a family of choices. Other options: audience perceptions, source balance, headline sentiment, image selection, story placement, or lexical similarity to party speech. Ask what each indicator misses.
 
-### Slide 12: Possible operationalizations
+### Slide 14: Possible operationalizations
 
 Emphasize that no row is the operationalization. Each is a family of choices. Other options: audience perceptions, source balance, headline sentiment, image selection, story placement, or lexical similarity to party speech. Ask what each indicator misses.
 
-### Slide 13: Same concept, different measures
+### Slide 15: Same concept, different measures
 
 Examples: a host invites conservative guests to challenge them; a centrist vocabulary accompanies a strongly selective agenda; audiences infer ideology from reputation rather than current content. Measures need not agree perfectly because words, visibility, and perceptions capture different parts of slant.
 
-### Slide 14: Kim, Lelkes, and McCrain's measure
+### Slide 16: Kim, Lelkes, and McCrain's measure
 
 Source: Kim, Lelkes, and McCrain (2022), pp. 1–2. The Stanford Cable TV News Analyzer identifies people and screen time. DIME supplies CF scores. The authors aggregate weighted scores by channel-day and then week, with program and time-block versions. Anchors are excluded.
 
-### Slide 15: Campaign-finance ideology scores
+### Slide 17: The Analyzer turns sampled faces into screen-time estimates
+
+Explain the technical pipeline before discussing the campaign-finance linkage. The source video comes from the Internet Archive's TV News Archive. The Analyzer detects faces in sampled frames with MTCNN, computes a FaceNet descriptor for each detected face, and uses Amazon Rekognition's celebrity-recognition labels plus within-video nearest-neighbor matching to attach identities to additional faces. Screen-time estimates accumulate the time represented by sampled-frame detections. The public interface allows queries that combine face identity, caption text, channel, program, and time filters. Clicking the graph reveals matched clips, captions, bounding boxes, and timelines so researchers can audit what the query selected.
+
+Then separate the Analyzer from Kim et al.'s contribution. The Analyzer supplies identities and estimated time on screen. Kim and colleagues exclude anchors, match non-anchor identities to DIME campaign-finance scores, weight those scores by screen time, and aggregate them into channel-period measures.
+
+Ask what the screenshot makes visible about measurement error. A detected face may be a live guest, B-roll, or a still photograph. A visible person need not be the speaker. Identity coverage is limited to recognizable public figures, and automated detection or identification can fail. These are not incidental software details: they define what the visibility indicator can represent.
+
+Sources: Hong et al. (2021), Figure 13; Stanford Cable TV News Analyzer methodology and getting-started documentation; Kim, Lelkes, and McCrain (2022), pp. 1–2.
+
+### Slide 18: Campaign-finance ideology scores
 
 CF stands for campaign finance. Bonica's Database on Ideology, Money in Politics, and Elections, or DIME, jointly scales donors and political recipients. The intuition resembles ideal-point estimation from legislative voting: patterns of shared support reveal relative ideological proximity. Among officeholders, CF scores correlate highly with DW-NOMINATE scores.
 
@@ -118,7 +144,7 @@ Discussion prompt: Consider a former Republican donor who appears on CNN to crit
 
 Sources: Bonica (2014); Kim, Lelkes, and McCrain (2022), pp. 1–2 and footnote §.
 
-### Slide 16: Senate extremes support face validity
+### Slide 19: Senate extremes support face validity
 
 The figure applies the following filter to the 1979–2024 DIME recipient file: election equals fd2024, seat equals federal:senate, and ICO status equals I. After removing missing scores, the filter returns 105 records. The slide shows the ten lowest and ten highest composite scores.
 
@@ -130,27 +156,27 @@ The DIME filter uses its incumbent-status field. It should be described as “20
 
 Source: DIME recipient data, 1979–2024. Variables used: election, seat, ico.status, name, party, and composite.score.
 
-### Slide 17: Doctors and Dime Scores
+### Slide 20: Doctors and Dime Scores
 
 Use the example to reinforce that DIME scores are inferred from campaign-finance behavior rather than direct observations of speech or policy beliefs. Ask what donation patterns among physicians might capture and what professional, strategic, or institutional factors could also affect the resulting scores. The point is to make the construct-validity question concrete before returning to Kim's aggregation procedure.
 
-### Slide 18: What enters the Kim et al measure?
+### Slide 21: What enters the Kim et al measure?
 
 The underlying video archive covers more than 280,000 hours. Of 1,225 non-anchors, 704 people, or 57%, received a matched score. Each person has one fixed CF score. Ask whether the observed population is “all cable news content,” “all guests,” or “screen time from donor-matched frequent non-anchors.”
 
 Source: Kim, Lelkes, and McCrain (2022), p. 2.
 
-### Slide 19: A worked example
+### Slide 22: A worked example
 
 The first two guests cancel under seconds × CF even though Guest B appears twice as long. Adding Guest C shifts the sum right. Ask how the interpretation changes if the analyst divides by 420 seconds, by three guests, or does not normalize. The main article does not fully explain normalization; this likely appears in the supplement or code. critique pa
 
-### Slide 20: Face validity at the program level
+### Slide 23: Face validity at the program level
 
 Ask students to inspect before interpreting. Expected: Fox programs generally lie to the right of CNN and MSNBC. Surprises: several Fox medians sit near or below zero; CNN prime-time programs appear more left-leaning than Rachel Maddow by this measure; distributions overlap widely. Treat surprises as potential findings and possible validity warnings.
 
 ask about rachel maddow, what could explain the findings/ Source: Kim, Lelkes, and McCrain (2022), Figure 1, p. 2.
 
-### Slide 21: Validation evidence
+### Slide 24: Validation evidence
 
 Human coders classified 19,582 anonymized speaker blocks as liberal, neutral, or conservative. Intercoder weighted kappa ranged from .55 to .664 across channels. The article does not state the aggregation level for r = .72 in the main text. A correlation can rise with aggregation. The .59 correlation with text scaling indicates related but non-interchangeable measures.
 
@@ -158,7 +184,7 @@ For discriminant validity, ask for a measure this should not closely track, such
 
 Source: Kim, Lelkes, and McCrain (2022), p. 2 and footnotes.
 
-### Slide 22: 
+### Slide 25: 
 
 Ask what evidence could distinguish these accounts: include host transcripts, compare all guests with matched guests, inspect segment-level contributions, or compare booking-based scores with independent human coding. how could you interrogate it?
 
@@ -173,11 +199,11 @@ Donor matching selects an unusual subset of guests.
 **Aggregation account**\
 Long appearances by a few people drive the score.
 
-### Slide 23: Descriptive arguments
+### Slide 26: Descriptive arguments
 
 Source: Gerring (2012), Chapter 6, especially Table 6.1, pp. 141–154. These classify generalizing descriptive claims. They are not a ladder from weak to strong, and one study can contain several.
 
-### Slide 24: Three forms of descriptive claim
+### Slide 27: Three forms of descriptive claim
 
 Source: Gerring (2012), Chapter 6, especially Table 6.1. Start by asking students to complete the third column in their own words before revealing it.
 
@@ -185,7 +211,7 @@ The forms identify the logical structure of the claim, not the method used to pr
 
 A single study may make several forms of claim. Kim and colleagues construct an indicator of visibility bias and describe trends and correlations. The forms should be evaluated separately because each licenses a different conclusion.
 
-### Slide 25: Indicators: one feature of a population
+### Slide 28: Indicators: one feature of a population
 
 Source: Gerring (2012), pp. 142–143. Every empirical claim uses indicators. The conceptual freight matters: infant deaths per 1,000 births sit close to observation; “human welfare” inferred from infant mortality makes a larger validity claim.
 
@@ -193,19 +219,19 @@ Other indicator examples include the weekly share of stories about immigration, 
 
 Ask students to identify the population, attribute, summary, and scope in the media-bias sentence. Then ask what changes if “guest visibility” is replaced with the broader term “media bias.” The latter asks the indicator to carry more conceptual freight.
 
--   **Population:** Prime-time cable news programs included in the study
+- **Population:** Prime-time cable news programs included in the study
 
--   **Attribute:** The partisan affiliation of guests receiving airtime—or, more precisely, Republican guest visibility
+- **Attribute:** The partisan affiliation of guests receiving airtime—or, more precisely, Republican guest visibility
 
--   **Summary:** 58% of total guest airtime went to Republican guests
+- **Summary:** 58% of total guest airtime went to Republican guests
 
--   **Scope:** The 2024 general-election period, during prime time, on the sampled cable-news programs
+- **Scope:** The 2024 general-election period, during prime time, on the sampled cable-news programs
 
-### Slide 26: Semetko and Valkenburg
+### Slide 29: Semetko and Valkenburg
 
 Use Semetko and Valkenburg as a bridge from indicators to classification. Their generic framing approach begins with theoretically specified frames and observable content items. Ask students to identify the unit being coded, the rule connecting items to frames, and the evidence needed to show that the categories are applied consistently. This prepares the simple- and matrix-typology examples that follow.
 
-### Slide 27: A simple typology: fact-check verdicts
+### Slide 30: A simple typology: fact-check verdicts
 
 A simple typology divides cases using one principle. Here, the unit is an assessable factual claim and the uniform principle is its relationship to the available evidence. The categories are nominal: unresolved is not halfway between supported and contradicted.
 
@@ -213,7 +239,7 @@ Ask what operational rules are needed. What counts as the “central” claim? W
 
 Then test the typology. Mutual exclusivity means one claim should not receive two verdicts under the same coding procedure. Exhaustiveness means every claim in the stated population needs somewhere to go. The unresolved category helps with exhaustiveness, although satire, predictions, and value judgments may need to be excluded from the population because they are not fact-checkable claims.
 
-### Slide 28: From a simple typology to a matrix
+### Slide 31: From a simple typology to a matrix
 
 A matrix typology applies more than one classification rule to the same cases and defines types from the combinations. With two binary dimensions, there are four logically possible combinations.
 
@@ -221,7 +247,7 @@ This is not yet a substantive typology because Dimensions A and B have no conten
 
 The matrix does not demonstrate that the two dimensions are empirically independent, equally important, or causally related. It simply ensures that the analyst does not collapse them into one concept.
 
-### Slide 29: Matrix typology: bias × misinformation
+### Slide 32: Matrix typology: bias × misinformation
 
 This matrix crosses two dimensions that are often casually collapsed: partisan bias and misinformation. The unit could be a story, a set of stories, or an outlet-period, but it must be specified. “Systematic” bias usually requires a collection of coverage rather than a single story.
 
@@ -231,7 +257,17 @@ Walk through the important counterexamples. An editorial may openly favor a cand
 
 The cells illustrate a possible typology rather than assert an established empirical classification. Students should challenge the thresholds: How much slant counts as systematic? How much uncertainty makes a claim misleading? Can omission be misinformation, bias, both, or neither?
 
-### Slide 30: Associations: patterned covariation
+### Slide 33: A third dimension doubles four types to eight
+
+Build directly from the prior two-dimensional matrix. Keep partisan bias on the rows and misinformation on the columns. Then add a third binary question: Is the source or sponsor disclosed? Instead of drawing a perspective cube, show the cube as two slices. The left matrix contains cases with disclosed sources; the right contains cases with concealed sources.
+
+Walk through contrasts that hold the first two dimensions constant. Disclosed partisan advocacy and covert advocacy can contain the same accurate claims and favor the same side; they differ only in source transparency. Attributable partisan misinformation and covert partisan misinformation can be equally false and partisan, but the latter conceals who is behind it.
+
+The example also demonstrates the cost of adding dimensions. A two-dimensional binary typology has four cells. A three-dimensional binary typology has eight. Four dimensions would have sixteen. More dimensions can capture important distinctions, but they quickly produce many thin or empty empirical categories. Each dimension therefore needs a theoretical reason and a defensible classification rule.
+
+This is an illustrative typology, not a claim that these eight labels form an established taxonomy of media content. Ask students whether disclosure should refer to the named author, the institutional publisher, the funder, or all three.
+
+### Slide 34: Associations: patterned covariation
 
 Source: Gerring (2012), pp. 151–153. Associations are probabilistic and multidimensional. Unlike typologies, they do not require cases to enter crisp, exhaustive categories.
 
@@ -239,7 +275,7 @@ The trend claim describes change with time. It becomes causal if the researcher 
 
 Ask students to rewrite each example as a causal claim. Then ask what additional design or evidence the causal version requires.
 
-### Slide 31: Step 1: describe the network association
+### Slide 35: Step 1: describe the network association
 
 Begin without ideological labels. The units are social-media users. An edge indicates that two users are connected on the platform. A thicker edge indicates a stronger connection—for example, more frequent interaction during the observation period. The graph displays two communities.
 
@@ -249,7 +285,7 @@ At this stage, call them Community 1 and Community 2. The network alone does not
 
 Ask students: What is observed directly? What is inferred from the layout? What descriptive statistic would allow the claim to be compared across topics or periods? The network is simulated for teaching.
 
-### Slide 32: Step 2: interpret the communities
+### Slide 36: Step 2: interpret the communities
 
 Now add information not contained in the original connection network: which political actors each user follows. That external evidence suggests that the two previously discovered communities also differ ideologically.
 
@@ -261,7 +297,7 @@ A subsequent study could ask whether members of the communities share systematic
 
 Ask what could invalidate the interpretation: strategic or hate-following, bots, recommendation systems, inactive follows, multidimensional ideology, or political actors followed for nonideological reasons. Source for the inferential logic: Barberá (2015), “Birds of the Same Feather Tweet Together,” *Political Analysis* 23(1): 76–91. The network is simulated.
 
-### Slide 33: Kim's results as descriptive associations both across time and between channels
+### Slide 37: Kim's results as descriptive associations both across time and between channels
 
 Return to Kim here because the paper's principal results are examples of descriptive association. First inspect separation: Fox pulls away from CNN and MSNBC. Then inspect co-movement: all three shift right around 2016–2017 and left after 2018. The reported cross-channel correlations are about .68 to .72.
 
@@ -271,7 +307,7 @@ The authors say channels “mirror the public mood,” but public opinion is not
 
 Source: Kim, Lelkes, and McCrain (2022), Figure 2, p. 3.
 
-### Slide 34: An association sets the stage for an explanation.
+### Slide 38: An association sets the stage for an explanation.
 
 Ask students to state the association first, without explanation: “The three channel scores move together over time.” Then introduce the two accounts to show why the association does not identify its cause.
 
@@ -279,13 +315,13 @@ Possible designs that could separate the accounts include comparing booked guest
 
 What are some possible explanaitions, how would you test this?
 
-### Slide 35: From claim form to descriptive tools
+### Slide 39: From claim form to descriptive tools
 
 This slide marks the transition from Gerring's framework to Huntington-Klein's practical tools. The claim determines what must remain visible in the data.
 
 For an indicator claim about prevalence, a proportion and uncertainty interval may matter. For a typology, cell counts and cross-case comparisons matter. For a trend, the time axis and short-term variability matter. For a correlation, the joint distribution matters. A mean alone rarely supports every form of descriptive argument.
 
-### Slide 36: Describing a categorical indicator
+### Slide 40: Describing a categorical indicator
 
 Semetko and Valkenburg (2000) use a deductive approach. Coders answer 20 yes-or-no questions. The authors use factor analysis to assess whether the items cluster into the five expected frames, then average the retained items within each scale. This is a useful correction to treating each story as if it has one dominant frame. Frames can coexist, and each scale ranges from 0 to 1.
 
@@ -295,11 +331,11 @@ Ask: Is each frame an indicator, a typology, or both? The frame scale is an indi
 
 Source: Semetko and Valkenburg (2000), pp. 93–109, especially the abstract, pp. 94–96, 100–102, and Table 3.
 
-### Slide 37: Describing a quantitative indicator
+### Slide 41: Describing a quantitative indicator
 
 Huntington-Klein emphasizes histograms and density plots for quantitative variables. A mean can conceal polarization or multiple modes. A median resists extreme weeks but may hide meaningful tails. Standard deviation has a clear interpretation only in relation to the variable and shape.
 
-### Slide 38: The mean
+### Slide 42: The mean
 
 Read the equation from left to right. The bar over x denotes the sample mean. The summation symbol means “add every observed score.” Divide that sum by n, the number of observations.
 
@@ -307,7 +343,7 @@ The mean uses every value. It acts like the balance point of the distribution an
 
 Ask whether mean zero implies that most people are centrists. It does not. The distribution could concentrate at zero, spread evenly across the scale, or split into liberal and conservative groups.
 
-### Slide 39: The median and mode
+### Slide 43: The median and mode
 
 Parentheses in the subscripts indicate positions after sorting, not raw observation numbers.
 
@@ -317,7 +353,7 @@ The mode equation says: among all possible values v, choose the value or values 
 
 Discussion prompt: All three summaries point to zero or symmetry here, but does this small group contain a widely shared centrist position? No. The modes suggest two common positions away from the center.
 
-### Slide 40: Variance and standard deviation
+### Slide 44: Variance and standard deviation
 
 Variance starts by calculating each observation's deviation from the mean. Positive and negative deviations would cancel, so we square them. Average those squared deviations to obtain the population variance. Variance is useful mathematically, but its squared units are difficult to interpret.
 
@@ -327,7 +363,7 @@ This slide treats the seven scores as the full population and divides by N = 7. 
 
 Squaring gives unusual observations extra influence. The two scores at −3 and +3 contribute 18 of the 22 total squared-distance units.
 
-### Slide 41: Population and sample formulas
+### Slide 45: Population and sample formulas
 
 Use Greek letters for population quantities and Latin letters for sample statistics. N denotes the population size and n denotes the sample size.
 
@@ -335,7 +371,7 @@ When the observed cases constitute the entire population of interest, divide the
 
 For the seven ideology scores, the population variance is 22/7 = 3.14 and population SD is 1.77. Treated as a sample, the variance is 22/6 = 3.67 and the sample SD is 1.91.
 
-### Slide 42: What does “within one or two SDs” mean?
+### Slide 46: What does “within one or two SDs” mean?
 
 For an approximately normal, bell-shaped distribution, about 68% of the population lies between one standard deviation below and one standard deviation above the mean. About 95% lies within two standard deviations, and about 99.7% lies within three.
 
@@ -345,7 +381,7 @@ Use an ideology example with mean 0 and SD 1. If ideology were approximately nor
 
 Emphasize the qualification. These percentages do not follow from the definition of standard deviation and do not hold for every distribution. A skewed, heavy-tailed, or polarized distribution may place very different percentages inside the same boundaries. In the seven-score worked example, 5 of 7 observations—or 71.4%—lie within one population SD; the sample is not a normal population.
 
-### Slide 43: The same mean can describe different politics
+### Slide 47: The same mean can describe different politics
 
 These simulated populations all have mean ideology zero. The left panel supports a story of consensus around the center. The middle panel supports a story of widespread disagreement. The right panel supports a story of polarization into opposing camps. Reporting only the mean would make all three populations sound centrist.
 
@@ -357,7 +393,7 @@ The same problem applies to outlet scores. An average near zero could mean consi
 
 Illustrative simulated data. All three series were centered to mean zero.
 
-### Slide 44: The same median can describe different inequality
+### Slide 48: The same median can describe different inequality
 
 Both simulated populations have a median household income of \$60,000. In the first, the mean is about \$63,000 because the upper tail is modest. In the second, a small group with very high incomes raises the mean to about \$88,000 while leaving the median unchanged.
 
@@ -367,15 +403,27 @@ Ask which summary a policymaker might choose when discussing living standards, t
 
 Illustrative simulated data. Each distribution was rescaled to a median of \$60,000.
 
-### Slide 45: What can the Kim et al measure claim?
+### Slide 49: Admissions advantages grow sharply at the very top
 
-Ask students to locate the inferential jump in each version. The first closely matches the data. The second requires accepting the construct interpretation. The third adds an unmeasured mechanism and broadens from visibility to overall ideology.
+Ask students to describe the pattern before interpreting it. The estimated admissions advantage is fairly stable across much of the parental-income distribution, then increases steeply among applicants from the richest families. The figure separates the estimated legacy boost from the remaining advantage associated with family income.
 
-### Slide 46: Claim surgery
+Use the slide to reinforce descriptive scope. The graph documents an association between parental income rank and estimated admissions advantage among otherwise comparable applicants. It does not, by itself, identify every institutional mechanism producing the pattern.
+
+### Slide 50: Upward mobility varies dramatically by place
+
+The map describes geographic variation in upward mobility: the probability that a child born into the bottom income fifth reaches the top fifth as an adult. Lighter areas indicate higher mobility. The labeled metropolitan areas illustrate the range, from relatively high mobility in San Jose to substantially lower mobility in Atlanta and Charlotte.
+
+Ask what the map establishes and what it does not. It establishes spatial variation under the stated measure. It does not show that living in a particular place causes the outcome without additional research design and evidence.
+
+### Slide 51: Explore mobility by race and class
+
+Open the linked interactive in a separate browser tab. Ask students to identify the population, outcome, comparison groups, and descriptive claim before discussing possible explanations. Emphasize that documenting a disparity is distinct from identifying the mechanisms that produced it.
+
+### Slide 52: What can the Kim et al paper claim?
 
 Suggested discussion: (1) trend association; (2) causal, not established by the descriptive figure; (3) indicator comparison or trend; (4) association or typology depending on whether clusters are probabilistic or imposed categories; (5) causal. Repairs: “MSNBC's measured visibility score moved left during the Trump presidency,” or “the timing is consistent with, but does not establish, a Trump effect.”
 
-### Slide 47: Build a descriptive argument
+### Slide 53: Build a descriptive argument
 
 Students should complete the next three templates using the same research topic. The exercise is not asking them to use all three forms in their paper. It asks them to see how changing the form changes the design and the conclusion.
 
@@ -385,19 +433,19 @@ Unpack scope conditions in plain language. They identify the boundaries of the c
 
 Scope conditions are not merely weaknesses. Every defensible empirical claim has boundaries. Stating them allows readers to distinguish the population actually described from cases to which the result might—or might not—generalize.
 
-### Slide 48: 1. Make an indicator claim
+### Slide 54: 1. Make an indicator claim
 
 Example: “I will make an indicator claim about guest-visibility bias among prime-time cable-news programs. I will identify on-screen guests, attach validated ideology scores, weight them by screen time, and display weekly distributions by channel. The claim applies to donor-matched non-anchor screen time on the sampled channels and period; it does not describe anchors, speech content, other outlets, or the cause of channel differences.”
 
 Require the population, unit, observable evidence, operational rule, and summary. Ask how the student would validate the indicator, following the Kim discussion.
 
-### Slide 49: 2. Make a typological claim
+### Slide 55: 2. Make a typological claim
 
 Example: “I will make a matrix typology of election stories. I will classify each story by whether it contains systematic partisan advantage and whether it contains misinformation, using an explicit content-coding and fact-checking protocol. The classification applies to assessable factual election stories in the sampled outlets and period; opinion, satire, and unresolved claims require exclusion or another rule. The types do not explain why stories were produced or how they affect audiences.”
 
 Connect to Semetko and Valkenburg: categories require definitions, observable indicators, and coding rules. Ask whether the categories are mutually exclusive, exhaustive, and generated by a uniform principle.
 
-### Slide 50: 3. Make an associational claim
+### Slide 56: 3. Make an associational claim
 
 Example using Kim: “I will make an association claim about how channel visibility scores vary together over time. I will construct weekly channel-level scores and graph their trajectories and pairwise differences. During 2010–2021 on the three sampled cable channels, the scores co-move while Fox increasingly separates from CNN and MSNBC. This does not show whether audiences, editorial choices, political events, or changes in the available guest pool produced the pattern.”
 
@@ -405,17 +453,11 @@ Students may formulate a trend, correlation, or network association. Require bot
 
 Timing: about 10 minutes to draft all three, followed by partner review. Partners identify the form, underline the operationalization, circle the scope conditions, and flag unsupported causal language.
 
-### Slide 51: Example bank
-
-Discuss why the right column is stronger: it identifies distribution, heterogeneity, time, or comparison. The local-news wording mentions timing after ownership changes but does not claim ownership caused the decline. Ask how easily readers may still infer causation and how to label the figure or prose carefully.
-
-The framing example comes from Semetko and Valkenburg. Their main descriptive contribution concerns variation across outlet types and topics, rather than the mere existence of the five frames.
-
-### Slide 52: What makes description good?
+### Slide 57: What makes description good?
 
 Close the loop: concept explication precedes operationalization; operationalization determines what the data can mean; descriptive tools determine which patterns become visible; argument wording determines whether readers receive a descriptive or causal claim.
 
-### Slide 53: Readings
+### Slide 58: Readings
 
 All figures reproduced from the assigned readings for classroom discussion.
 

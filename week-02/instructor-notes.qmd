@@ -99,9 +99,9 @@ Timing: 2 minutes. Elapsed: 0–2 minutes.
 
 Opening, including the title slide. Before providing definitions, ask: “What would we need to know to understand this claim?” Take two or three quick contributions. Keep three columns on the board, labeled in student-facing language: WHAT HAPPENED? / WHY? / HOW WOULD WE KNOW? These correspond to target, account, and evidence.
 
--   **What happened? (Target):** Specify the outcome that needs explaining. Did this person’s private attitude change, or did their public answer change? Those are different explanatory targets.
--   **Why? (Account):** Propose an explanation. An opponent’s story might have changed their beliefs; pressure might have encouraged a socially acceptable answer. Record these as hypotheses, not established processes.
--   **How would we know? (Evidence):** Identify observations that establish the outcome or distinguish accounts. Examples include privately collected responses, follow-up interviews, and comparisons of public and private answers. Ask what each observation would actually establish; no single measure automatically settles the question.
+- **What happened? (Target):** Specify the outcome that needs explaining. Did this person’s private attitude change, or did their public answer change? Those are different explanatory targets.
+- **Why? (Account):** Propose an explanation. An opponent’s story might have changed their beliefs; pressure might have encouraged a socially acceptable answer. Record these as hypotheses, not established processes.
+- **How would we know? (Evidence):** Identify observations that establish the outcome or distinguish accounts. Examples include privately collected responses, follow-up interviews, and comparisons of public and private answers. Ask what each observation would actually establish; no single measure automatically settles the question.
 
 Sort student contributions into the columns as they speak. If someone says “their survey score increased,” put it under evidence and ask: “Evidence of a changed answer, or of a changed attitude?” If someone says “they empathized with the opponent,” put it under account and ask: “What would support that explanation?” A higher survey score is initially evidence for a descriptive claim, not automatically evidence that the forum caused private attitude change.
 
@@ -149,13 +149,17 @@ Timing: 3 minutes. Elapsed: 6–9 minutes.
 
 Ask pairs to choose the single ambiguity they would resolve first, then take two answers. Expected answers include defining tolerance, establishing the denominator, comparing the same people, and specifying when and privately or publicly the response was measured. A participant who leaves before the final survey can change the observed average without anyone changing attitude.
 
+- Tolerance of whom, measured how?
+- Change relative to their earlier responses or to another group?
+- A survey response; a behavioral response?
+
 Connect to Week 1: Hirschman treats stylized facts as empirical regularities that call for explanation. They do more than condense findings: they identify a pattern as important and worth explaining. To assess one, ask what was measured, whose experiences it characterizes, which differences it leaves out, and why this characterization deserves attention.
 
 Use “Forum participants became more tolerant” to illustrate the choices involved in constructing a descriptive summary:
 
--   **Selected as important:** We foreground tolerance rather than political knowledge or trust. Choosing this pattern as the puzzle also claims that it deserves explanation; an alternative characterization might foreground persistent disagreement or unequal participation.
--   **Operationalized:** We specify how to measure tolerance—for example, willingness to let a disliked political group hold a public meeting. That measure captures a particular meaning of tolerance, not every possible meaning.
--   **Summarized:** We condense the results into a broad statement, even though some participants may have changed more than others and some may not have changed at all.
+- **Selected as important:** We foreground tolerance rather than political knowledge or trust. Choosing this pattern as the puzzle also claims that it deserves explanation; an alternative characterization might foreground persistent disagreement or unequal participation.
+- **Operationalized:** We specify how to measure tolerance—for example, willingness to let a disliked political group hold a public meeting. That measure captures a particular meaning of tolerance, not every possible meaning.
+- **Summarized:** We condense the results into a broad statement, even though some participants may have changed more than others and some may not have changed at all.
 
 These choices do not make the claim arbitrary. They help us assess what evidence supports it and how broadly it applies. A claim about one forum is not automatically a stylized fact: the term usually refers to a broader empirical regularity. This forum illustration explains the descriptive choices; it does not establish such a regularity. Elster says we must establish the fact before explaining it, while Hedström values descriptive and statistical work that identifies what needs explaining.
 
@@ -227,7 +231,7 @@ Timing: 2 minutes. Elapsed: 17–19 minutes.
 
 Develop why events are attractive to Elster. An account of occurrences directs us toward the production of the outcome, rather than only describing conditions that accompany it. “She was educated” may matter, but what experiences and judgments made education relevant in this case? A process account also seeks the actual pathway, rather than a path that merely could have produced the outcome.
 
-The displayed sequence is a candidate mechanism, not a verified account. Ask where a rival explanation could enter. She might change her public answer to please the facilitator without revising any private belief. Ask what evidence would bear on the proposed links. Keep answers provisional: students will develop explicit rival tests in the later Semmelweis and forum exercises.
+The displayed sequence is a candidate mechanism, not a verified account. **Ask where a rival explanation could enter**. She might change her public answer to please the facilitator without revising any private belief. Ask what evidence would bear on the proposed links. Keep answers provisional: students will develop explicit rival tests in the later Semmelweis and forum exercises.
 
 Elster’s preference is a philosophical and methodological commitment, not a proof that states cannot explain. His practical concessions matter: social researchers cannot always reconstruct every occurrence, and established mechanisms can be communicated through shorthand. Temporal order alone is insufficient. His own view demands that the events be causally linked, not simply narrated in order.
 
@@ -281,19 +285,7 @@ Say: “The theory gives us a reason to consider reevaluation. But to deduce thi
 
 The conflict is between choosing to spend a substantial amount and judging the experience disappointing. Reevaluation is one possible adjustment. Maya might instead value the time with her friend, blame misleading advertising, or acknowledge a poor purchase. Those alternatives do not require liking the show more. Even the experience of dissonance depends on factors such as perceived responsibility and how consequential the expense is to her. The broad theory does not uniquely select the favorable-reevaluation pathway.
 
-Ask three questions, giving students time to distinguish logical entailment from an empirically supported explanation.
-
-“Which premise supplies the necessity?” The proposed law: everyone who freely pays a high price for a disappointing show comes to like it more. The particular conditions place Maya within that general claim: she freely paid \$150, the price was substantial for her, and she found the show disappointing. Together, those premises entail the conclusion that her evaluation improves. The conditions alone do not establish that she must respond this way. Here “necessity” means that the conclusion must follow if the premises are true; a valid deduction does not establish that its proposed law is true.
-
-“Does the broad theory warrant that premise?” Not as stated. Cognitive-dissonance theory gives us a reason to investigate pressure to reduce an inconsistency between Maya’s choice and her disappointing experience. It does not by itself establish that everyone in these circumstances improves their evaluation of the show. Regret, minimizing the expense, or finding another justification for attending could provide different responses. Pressure to resolve an inconsistency does not entail one particular resolution. The displayed universal is a deliberately stronger lecture construction, not a law established by citing the theory.
-
-“Does that mean dissonance could not explain Maya’s actual response?” No. Failure to establish that the response was necessary does not show that the process was absent. A specific hypothesis is that Maya experienced discomfort about freely spending a substantial amount on a disappointing show and reduced that discomfort by reassessing the show more favorably. This proposes a pathway that could have produced the observed outcome. We still need evidence that it actually operated.
-
-Keep four things separate. A broad theory identifies dissonance and its reduction as a possible explanatory process. A specific hypothesis proposes that Maya reduced dissonance about her spending by evaluating this show more favorably. A law-and-conditions argument claims that a general premise plus Maya’s circumstances entails her response; that requires a stronger premise than the broad theory supplies. Evidence for the account bears on whether the hypothesized process operated and whether rival accounts explain the observations better. Naming the theory is not evidence, and stating a specific hypothesis is not the same as testing it.
-
-Optional evidence discussion: ask what we would need to learn about Maya’s initial disappointment, perceived freedom of choice, the importance of the expense, subsequent discomfort, and timing and reasons for reassessment. Her own account could contribute evidence, but it would not be decisive by itself. A more favorable final rating alone does not distinguish dissonance reduction from pressure to sound positive or new enjoyable experiences during the show. Evidence about the sequence and comparisons that distinguish these alternatives would strengthen the account. Treat these as proposed tests of an invented case, not findings.
-
-Close with: “Have we shown that Maya’s response had to follow from the premises, that it could occur through dissonance reduction, or that it actually occurred through dissonance reduction?” These are different achievements. Use the expanded explanation as an answer bank within the existing three-minute slot; reserve the optional evidence discussion for follow-up or the later testing exercises.
+Ask three questions: “Which premise supplies the necessity?” The proposed law. “Does the broad theory warrant that premise?” Not as stated. “Does that mean dissonance could not explain Maya’s actual response?” No. It could support a mechanism hypothesis, but we need evidence that this pathway operated. Distinguish a broad theory, a specific hypothesis, a law-and-conditions argument, and evidence for the account.
 
 Brief comparison if useful: demand theory can yield conditional results, but a decline in market purchases does not entail that every buyer purchases less. Keep this to one sentence; Maya is the main example, so students can follow the same case through probability, testing, and mechanisms.
 
@@ -562,6 +554,13 @@ Source: Hempel, paras. 8–13. Elster, pp. 16–20. Formal reconstruction suppli
 ### Slide 31: Semmelweis: evidence and revision
 
 Timing: 1 minutes. Elapsed: 57–58 minutes.
+
+| Stage | Contribution to the inquiry |
+|------------------------------------|------------------------------------|
+| Kolletschka’s illness after an autopsy wound | A clue suggesting a transmission hypothesis |
+| Mortality falls after disinfection | Support for a predicted consequence |
+| Midwives and street births have lower mortality | Additional observations the account accommodates |
+| Illness follows contact with a living patient | Reason to broaden the proposed source beyond cadavers |
 
 In one minute, ask a student which observation changed the hypothesis rather than merely supporting it. The notes below are backup for questions, not a further retelling. Hempel’s account distinguishes the origin of a conjecture from its evidential support. Kolletschka’s illness inspires an analogy; the analogy is not a deductive proof. The disinfection intervention and other patterns provide evidence bearing on the account.
 
