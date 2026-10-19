@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { --navy:#18324a; --blue:#2f6687; --rust:#b24a3c; --gold:#d5aa55; --ink:#18232d; --paper:#f7f4ee; --muted:#62717d; --line:#c8c2b7; --green:#537765; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; width:100%; height:100%; overflow:hidden; background:transparent; color:var(--ink); font-family:"Aptos","Helvetica Neue",Arial,sans-serif; }
+  #covariance-demo { display:grid; grid-template-columns:minmax(0,1fr) 370px; gap:26px; height:100%; align-items:stretch; }
+  .plot-wrap { min-width:0; height:100%; }
+  svg { display:block; width:100%; height:100%; touch-action:none; user-select:none; }
+  .frame { fill:none; stroke:var(--line); stroke-width:2; }
+  .quadrant-positive { fill:rgba(47,102,135,.055); }
+  .quadrant-negative { fill:rgba(178,74,60,.055); }
+  .axis { stroke:var(--muted); stroke-width:2.5; stroke-dasharray:9 8; }
+  .tick { stroke:var(--line); stroke-width:1.5; }
+  .axis-label,.tick-label,.mean-label { fill:var(--muted); font-size:19px; }
+  .axis-label { font-size:22px; font-weight:650; }
+  .product-area { stroke-width:2.5; }
+  .deviation-line { fill:none; stroke-width:4; stroke-dasharray:8 6; }
+  .point { stroke:#fffdfa; stroke-width:4; cursor:grab; }
+  .point:active { cursor:grabbing; }
+  .point.selected { stroke:var(--gold); stroke-width:6; }
+  .point-label { fill:var(--ink); font-size:18px; font-weight:700; pointer-events:none; }
+  .side { border-left:2px solid var(--line); padding:12px 0 4px 25px; display:flex; flex-direction:column; justify-content:center; }
+  .eyebrow { color:var(--muted); font-size:20px; margin-bottom:9px; }
+  .equation { font-size:27px; line-height:1.28; margin-bottom:20px; }
+  .equation strong { color:var(--navy); }
+  .sign { border-left:7px solid var(--blue); padding:10px 0 10px 15px; font-size:24px; line-height:1.25; margin-bottom:24px; }
+  .sign.negative { border-left-color:var(--rust); }
+  .cov-label { color:var(--muted); font-size:19px; margin-bottom:3px; }
+  .cov-value { color:var(--navy); font-weight:750; font-size:39px; line-height:1.05; }
+  .instruction { color:var(--muted); font-size:18px; line-height:1.25; margin-top:25px; }
+  @media (max-width:760px) {
+    #covariance-demo { grid-template-columns:1fr; grid-template-rows:minmax(300px,1fr) auto; gap:8px; overflow:auto; }
+    .side { border-left:0; border-top:2px solid var(--line); padding:12px 4px; }
+  }
+</style>
+</head>
+<body>
+<div id="covariance-demo">
+  <div class="plot-wrap"><svg role="img" aria-label="Interactive scatterplot showing how each point contributes to covariance"></svg></div>
+  <aside class="side" aria-live="polite">
+    <div class="eyebrow">Selected observation</div>
+    <div class="equation">
+      <strong>(X − X̄)(Y − Ȳ)</strong><br>
+      = <span id="xdev">0.0</span> × <span id="ydev">0.0</span><br>
+      = <strong id="product">0.0</strong>
+    </div>
+    <div id="sign" class="sign">Same-side deviations make a positive contribution.</div>
+    <div class="cov-label">Average of all six products</div>
+    <div class="cov-value">cov(X,Y) = <span id="covariance">0.0</span></div>
+    <div class="instruction">Drag any point across a mean line. Watch its product change sign and the covariance update.</div>
+  </aside>
+</div>
+<script>
+(() => {
+  const root = document.getElementById('covariance-demo');
+  const svg = root.querySelector('svg');
+  const xdevOut = root.querySelector('#xdev');
+  const ydevOut = root.querySelector('#ydev');
+  const productOut = root.querySelector('#product');
+  const covarianceOut = root.querySelector('#covariance');
+  const signOut = root.querySelector('#sign');
+  const NS = 'http://www.w3.org/2000/svg';
+  const W = 900, H = 560;
+  const m = {left:88,right:24,top:24,bottom:70};
+  const pw = W-m.left-m.right, ph = H-m.top-m.bottom;
+  const x = v => m.left + (v+4)/8*pw;
+  const y = v => m.top + (4-v)/8*ph;
+  const invertX = px => Math.max(-4,Math.min(4,(px-m.left)/pw*8-4));
+  const invertY = py => Math.max(-4,Math.min(4,4-(py-m.top)/ph*8));
+  const points = [
+    {x:-3.1,y:-2.5},{x:-2.0,y:-1.0},{x:-0.8,y:1.4},
+    {x:0.9,y:0.6},{x:2.0,y:2.7},{x:3.1,y:1.7}
+  ];
+  let selected = 4;
+  let dragging = false;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+
+  function el(name, attrs={}) {
+    const node = document.createElementNS(NS,name);
+    Object.entries(attrs).forEach(([k,v]) => node.setAttribute(k,v));
+    return node;
+  }
+  function textNode(content, attrs={}) {
+    const node=el('text',attrs); node.textContent=content; return node;
+  }
+  function fmt(v) { return (Math.abs(v)<.05?0:v).toFixed(1); }
+
+  function draw() {
+    svg.replaceChildren();
+    svg.appendChild(el('rect',{x:m.left,y:m.top,width:pw/2,height:ph/2,class:'quadrant-negative'}));
+    svg.appendChild(el('rect',{x:x(0),y:m.top,width:pw/2,height:ph/2,class:'quadrant-positive'}));
+    svg.appendChild(el('rect',{x:m.left,y:y(0),width:pw/2,height:ph/2,class:'quadrant-positive'}));
+    svg.appendChild(el('rect',{x:x(0),y:y(0),width:pw/2,height:ph/2,class:'quadrant-negative'}));
+    svg.appendChild(el('rect',{x:m.left,y:m.top,width:pw,height:ph,class:'frame'}));
+
+    [-4,-2,0,2,4].forEach(v => {
+      if (v!==0) {
+        svg.appendChild(el('line',{x1:x(v),x2:x(v),y1:m.top,y2:m.top+ph,class:'tick'}));
+        svg.appendChild(el('line',{x1:m.left,x2:m.left+pw,y1:y(v),y2:y(v),class:'tick'}));
+      }
+      svg.appendChild(textNode(v,{x:x(v),y:m.top+ph+31,'text-anchor':'middle',class:'tick-label'}));
+      if(v!==0) svg.appendChild(textNode(v,{x:m.left-18,y:y(v)+7,'text-anchor':'end',class:'tick-label'}));
+    });
+    svg.appendChild(el('line',{x1:x(0),x2:x(0),y1:m.top,y2:m.top+ph,class:'axis'}));
+    svg.appendChild(el('line',{x1:m.left,x2:m.left+pw,y1:y(0),y2:y(0),class:'axis'}));
+    svg.appendChild(textNode('X relative to its mean',{x:m.left+pw/2,y:H-13,'text-anchor':'middle',class:'axis-label'}));
+    svg.appendChild(textNode('Y relative to its mean',{x:24,y:m.top+ph/2,'text-anchor':'middle',transform:`rotate(-90 24 ${m.top+ph/2})`,class:'axis-label'}));
+    const p = points[selected];
+    const positive = p.x*p.y >= 0;
+    const color = positive ? '#2f6687' : '#b24a3c';
+    svg.appendChild(el('rect',{
+      x:Math.min(x(0),x(p.x)), y:Math.min(y(0),y(p.y)),
+      width:Math.abs(x(p.x)-x(0)), height:Math.abs(y(p.y)-y(0)),
+      fill:positive?'rgba(47,102,135,.20)':'rgba(178,74,60,.20)',
+      stroke:color, class:'product-area'
+    }));
+    svg.appendChild(el('path',{d:`M ${x(p.x)} ${y(p.y)} L ${x(p.x)} ${y(0)} L ${x(0)} ${y(0)} L ${x(0)} ${y(p.y)}`,stroke:color,class:'deviation-line'}));
+
+    points.forEach((d,i) => {
+      const prod=d.x*d.y;
+      const circle=el('circle',{cx:x(d.x),cy:y(d.y),r:i===selected?15:12,fill:prod>=0?'#2f6687':'#b24a3c',class:`point${i===selected?' selected':''}`,'data-index':i,'aria-label':`Observation ${i+1}: X deviation ${fmt(d.x)}, Y deviation ${fmt(d.y)}`});
+      svg.appendChild(circle);
+      svg.appendChild(textNode(String(i+1),{x:x(d.x),y:y(d.y)-21,'text-anchor':'middle',class:'point-label'}));
+    });
+    updateReadout();
+  }
+
+  function updateFromPointer(e) {
+    const box=svg.getBoundingClientRect();
+    const px=(e.clientX-box.left)*W/box.width;
+    const py=(e.clientY-box.top)*H/box.height;
+    points[selected].x=invertX(px);
+    points[selected].y=invertY(py);
+    draw();
+  }
+  function updateReadout() {
+    const p=points[selected], product=p.x*p.y;
+    const covariance=points.reduce((sum,d)=>sum+d.x*d.y,0)/points.length;
+    xdevOut.textContent=fmt(p.x); ydevOut.textContent=fmt(p.y);
+    productOut.textContent=fmt(product); covarianceOut.textContent=fmt(covariance);
+    const positive=product>=0;
+    signOut.textContent=positive?'Same-side deviations make a positive contribution.':'Opposite-side deviations make a negative contribution.';
+    signOut.className=`sign${positive?'':' negative'}`;
+  }
+  svg.addEventListener('pointerdown',e => {
+    const point=e.target.closest('.point');
+    if(!point) return;
+    selected=Number(point.dataset.index);
+    dragging=true;
+    svg.setPointerCapture(e.pointerId);
+    updateFromPointer(e);
+  });
+  svg.addEventListener('pointermove',e => { if(dragging) updateFromPointer(e); });
+  svg.addEventListener('pointerup',e => { dragging=false; if(svg.hasPointerCapture(e.pointerId)) svg.releasePointerCapture(e.pointerId); });
+  svg.addEventListener('pointercancel',() => { dragging=false; });
+  draw();
+})();
+</script>
+</body>
+</html>
