@@ -110,6 +110,251 @@ The claim determines what must remain visible in the data. A prevalence claim ma
 This ordering also prevents software from choosing the question. We do not begin with a convenient command and then invent an interpretation. We begin by naming the quantity or pattern we want to describe, then select a summary that preserves it.
 :::
 
+## Describing a categorical indicator
+
+![](images/paste-2.png)
+
+::: notes
+Semetko and Valkenburg (2000) use a deductive approach. Coders answer 20 yes-or-no questions. The authors use factor analysis to assess whether the items cluster into the five expected frames, then average the retained items within each scale. This is a useful correction to treating each story as if it has one dominant frame. Frames can coexist, and each scale ranges from 0 to 1.
+
+Their sample includes 2,601 newspaper stories and 1,522 television stories surrounding the 1997 Amsterdam meetings. Responsibility appears most often, followed by conflict, economic consequences, human interest, and morality. Outlet type and topic structure the distribution.
+
+Ask: Is each frame an indicator, a typology, or both? The frame scale is an indicator. Treating stories as belonging to one exclusive frame would create a typology and would require different coding rules.
+
+Source: Semetko and Valkenburg (2000), pp. 93–109, especially the abstract, pp. 94–96, 100–102, and Table 3.
+:::
+
+## Describing a quantitative indicator
+
+For weekly visibility scores, inspect:
+
+:::::: triad
+::: triad-item
+**Shape**
+
+Symmetric, skewed, multimodal, bounded?
+:::
+
+::: triad-item
+**Center**
+
+Mean, median, mode, or a substantive reference point?
+:::
+
+::: triad-item
+**Spread**
+
+Range, IQR, standard deviation, or quantiles?
+:::
+::::::
+
+::: {.fragment .key-line}
+Never choose a summary before looking at the distribution.
+:::
+
+::: notes
+Huntington-Klein emphasizes histograms and density plots for quantitative variables. A mean can conceal polarization or multiple modes. A median resists extreme weeks but may hide meaningful tails. Standard deviation has a clear interpretation only in relation to the variable and shape.
+:::
+
+## The mean
+
+Seven ideology scores, ordered from liberal to conservative:
+
+::: score-row
+**−3  −1  −1  0  1  1  3**
+:::
+
+$$
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
+=\frac{-3-1-1+0+1+1+3}{7}=0
+$$
+
+::: key-line
+The mean is the balance point of all observed scores.
+:::
+
+::: notes
+Read the equation from left to right. The bar over x denotes the sample mean. The summation symbol means “add every observed score.” Divide that sum by n, the number of observations.
+
+The mean uses every value. It acts like the balance point of the distribution and moves when extreme observations move. In this example the negative and positive ideology scores cancel, producing a mean of zero.
+
+Ask whether mean zero implies that most people are centrists. It does not. The distribution could concentrate at zero, spread evenly across the scale, or split into liberal and conservative groups.
+:::
+
+## The median and mode
+
+For ordered values $x_{(1)}\leq x_{(2)}\leq\cdots\leq x_{(n)}$:
+
+::::: {.two-column .contrast}
+::: column
+### Median
+
+$$
+\tilde{x}=\begin{cases}
+x_{((n+1)/2)}, & n\text{ odd}\\
+\dfrac{x_{(n/2)}+x_{(n/2+1)}}{2}, & n\text{ even}
+\end{cases}
+$$
+
+Here: $\tilde{x}=x_{(4)}=0$
+:::
+
+::: column
+### Mode
+
+$$
+\operatorname{mode}(x)=
+\underset{v}{\arg\max}\;\#\{i:x_i=v\}
+$$
+
+Here: modes = **−1 and +1**
+:::
+:::::
+
+::: notes
+Parentheses in the subscripts indicate positions after sorting, not raw observation numbers.
+
+To find the median, order the observations and locate the middle one. With an even number of observations, average the two middle values. The median depends on rank, so an extreme score can become even more extreme without changing the median.
+
+The mode equation says: among all possible values v, choose the value or values with the largest count. The arg max notation means “the value that makes this quantity largest.” This example has two modes, −1 and +1, so it is bimodal. With continuous variables, the exact mode may depend on how values are rounded or how a histogram is binned.
+
+Discussion prompt: All three summaries point to zero or symmetry here, but does this small group contain a widely shared centrist position? No. The modes suggest two common positions away from the center.
+:::
+
+## Variance and standard deviation
+
+Mean ideology = 0, so each deviation equals the original score:
+
+| Score              |  −3 |  −1 |  −1 |   0 |   1 |   1 |   3 |
+|--------------------|----:|----:|----:|----:|----:|----:|----:|
+| Distance from mean |  −3 |  −1 |  −1 |   0 |   1 |   1 |   3 |
+| Squared distance   |   9 |   1 |   1 |   0 |   1 |   1 |   9 |
+
+::::: {.two-column .contrast}
+::: column
+### Variance
+
+$$
+\sigma^2=\frac{1}{N}\sum_{i=1}^{N}(x_i-\mu)^2
+=\frac{22}{7}=3.14
+$$
+
+Average squared distance from the mean.
+:::
+
+::: column
+### Standard deviation
+
+$$
+\sigma=\sqrt{\sigma^2}=\sqrt{3.14}=1.77
+$$
+
+Typical distance from the mean, expressed in the original units.
+:::
+:::::
+
+::: notes
+Variance starts by calculating each observation's deviation from the mean. Positive and negative deviations would cancel, so we square them. Average those squared deviations to obtain the population variance. Variance is useful mathematically, but its squared units are difficult to interpret.
+
+Standard deviation takes the square root of variance. It returns to the original ideology scale. A standard deviation of 1.77 means that scores typically sit about 1.77 ideology points from the mean, though “typical distance” is an intuition rather than the exact average absolute distance.
+
+This slide treats the seven scores as the full population and divides by N = 7. If they are a sample used to estimate population variance, divide by N − 1 = 6. The sample variance would be 3.67 and the sample standard deviation would be 1.91.
+
+Squaring gives unusual observations extra influence. The two scores at −3 and +3 contribute 18 of the 22 total squared-distance units.
+:::
+
+## Population and sample formulas {.compact-formulas}
+
+::::: {.two-column .contrast}
+::: column
+### Full population
+
+$$
+\mu=\frac{1}{N}\sum_{i=1}^{N}x_i
+$$
+
+$$
+\sigma^2=\frac{1}{N}\sum_{i=1}^{N}(x_i-\mu)^2
+\qquad \sigma=\sqrt{\sigma^2}
+$$
+:::
+
+::: column
+### Sample estimating a population
+
+$$
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
+$$
+
+$$
+s^2=\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
+\qquad s=\sqrt{s^2}
+$$
+:::
+:::::
+
+::: notes
+Use Greek letters for population quantities and Latin letters for sample statistics. N denotes the population size and n denotes the sample size.
+
+When the observed cases constitute the entire population of interest, divide the squared deviations by N. When using a sample to estimate population variance, divide by n − 1. Estimating the sample mean uses one degree of freedom, and dividing by n − 1 makes sample variance unbiased under standard random-sampling assumptions.
+
+For the seven ideology scores, the population variance is 22/7 = 3.14 and population SD is 1.77. Treated as a sample, the variance is 22/6 = 3.67 and the sample SD is 1.91.
+:::
+
+## What does “within one or two SDs” mean?
+
+![](assets/normal-sd-empirical-rule.png){fig-alt="Normal distribution showing that about 68 percent of observations lie within one standard deviation of the mean, 95 percent within two, and 99.7 percent within three"}
+
+$$
+P(\mu-\sigma\leq X\leq\mu+\sigma)\approx .68
+\qquad
+P(\mu-2\sigma\leq X\leq\mu+2\sigma)\approx .95
+$$
+
+::: key-line
+The **68–95–99.7 rule** applies when the population is approximately normal.
+:::
+
+::: notes
+For an approximately normal, bell-shaped distribution, about 68% of the population lies between one standard deviation below and one standard deviation above the mean. About 95% lies within two standard deviations, and about 99.7% lies within three.
+
+The percentages are cumulative. The 95% within two SDs includes the 68% already within one SD. Therefore, about 27% lies between one and two standard deviations from the mean—roughly 13.5% on each side. About 5% lies beyond two standard deviations—roughly 2.5% in each tail.
+
+Use an ideology example with mean 0 and SD 1. If ideology were approximately normal, about 68% of people would score between −1 and +1, about 95% between −2 and +2, and about 99.7% between −3 and +3.
+
+Emphasize the qualification. These percentages do not follow from the definition of standard deviation and do not hold for every distribution. A skewed, heavy-tailed, or polarized distribution may place very different percentages inside the same boundaries. In the seven-score worked example, 5 of 7 observations—or 71.4%—lie within one population SD; the sample is not a normal population.
+:::
+
+## The same mean can describe different politics
+
+![](assets/political-beliefs-same-mean.png){fig-alt="Three simulated political ideology distributions with mean zero but different shapes and standard deviations; solid vertical lines show the mean and dotted lines show one standard deviation below and above the mean"}
+
+::: notes
+These simulated populations all have mean ideology zero. The left panel supports a story of consensus around the center. The middle panel supports a story of widespread disagreement. The right panel supports a story of polarization into opposing camps. Reporting only the mean would make all three populations sound centrist.
+
+The solid vertical line marks the shared mean of zero. The dotted vertical lines mark one standard deviation below and above the mean. The SD is printed above each panel. The wider disagreement and polarized distributions have much larger SDs than the consensus distribution.
+
+Ask students which features separate the stories. Relevant answers include variance, density near the midpoint, number of modes, distance between modes, and the relative size of each cluster. Then ask which single statistic, if any, captures polarization.
+
+The same problem applies to outlet scores. An average near zero could mean consistently moderate guests, a mixture of liberal and conservative guests, or movement between extremes over time.
+
+Illustrative simulated data. All three series were centered to mean zero.
+:::
+
+## The same median can describe different inequality
+
+![](assets/income-same-median.png){fig-alt="Two simulated household-income distributions with the same median of sixty thousand dollars but different upper tails and means"}
+
+::: notes
+Both simulated populations have a median household income of \$60,000. In the first, the mean is about \$63,000 because the upper tail is modest. In the second, a small group with very high incomes raises the mean to about \$88,000 while leaving the median unchanged.
+
+The median supports the claim that the typical household occupies the same position in both populations. The mean supports the claim that total income per household is higher in the second. The full distribution supports a third claim: the second population has much greater upper-tail inequality. None of these descriptions is false, but each answers a different question.
+
+Ask which summary a policymaker might choose when discussing living standards, the tax base, or inequality. Then ask how an advocate could produce a technically accurate but substantively misleading comparison by selecting only one statistic.
+
+Illustrative simulated data. Each distribution was rescaled to a median of \$60,000.
+:::
+
 ## Match the tool to the descriptive target
 
 | Target | Preserve | Useful displays or summaries |
@@ -244,6 +489,14 @@ Each association uses a different denominator and answers a different question.
 
 ::: notes
 Use this slide to preview estimands. None of these quantities is simply “the race gap.” Each requires a population, variables, conditioning choices, and a denominator.
+
+Before explaining the three boxes, ask: **“What is the denominator for each association?”** Give students a moment to work through all three.
+
+- For **vote rate**, the denominator is all women in the specified racial group; the numerator is those who voted Democratic.
+- For **party composition**, the denominator is everyone in the specified party coalition; the numerator is coalition members in a particular race-and-gender group.
+- For the **subgroup comparison**, there are two denominators: all white women in the specified subgroup and all women of color in that subgroup. The association compares the Democratic-vote proportion calculated within each denominator.
+
+After hearing their answers, emphasize that changing the denominator changes the conditional quantity and therefore the substantive question.
 
 The first crosstab asks how vote choice varies across racial groups among women. The second reverses the conditioning direction and asks who makes up each party coalition. The subgroup table repeats the white-women versus women-of-color comparison separately within categories such as education, income, age, region, religion, and family status. These remain descriptive comparisons. They do not hold every other characteristic constant and do not identify a causal effect of race.
 :::
@@ -453,6 +706,46 @@ The slope describes the joint pattern in substantive units.
 Source: TCD chapter 2, Figure 2.2, p. 16. The book later makes the OLS definition precise as the line minimizing the sum of squared errors.
 
 Compare this figure directly with Figure 2.1 on the preceding slide. The points have not changed. Figure 2.2 adds a single line that summarizes their linear tendency. The book reports the slope, 3.1, but does not report a numerical intercept, so the equation leaves the fitted intercept as $\widehat\alpha$.
+:::
+
+## Practice: read the equation, state the claim
+
+Each equation below predicts one variable from another. For each one: read it aloud, then state in one plain-language sentence what it claims about the world — not just "positive" or "negative," but what substantively happens as X increases.
+
+:::::: triad
+::: triad-item
+**Positive**
+
+$$\widehat{\text{Turnout}_i} = 38 + 0.6\,\text{Age}_i$$
+:::
+
+::: triad-item
+**Negative**
+
+$$\widehat{\text{TrustInGovt}_i} = 64 - 3.1\,\text{PerceivedCorruption}_i$$
+:::
+
+::: triad-item
+**Zero**
+
+$$\widehat{\text{VoteChoice}_i} = .52 + 0\,\text{ShoeSize}_i$$
+:::
+::::::
+
+::: {.fragment .key-line}
+A slope of zero does not mean "no relationship exists." It means this particular straight line predicts no change in Y as X increases.
+:::
+
+::: notes
+Give students a moment to translate each equation silently before discussing as a group.
+
+Equation 1 (positive): predicted turnout rises by 0.6 percentage points for each additional year of age, starting from a baseline of 38% among the youngest respondents in the sample. This is the same age/turnout slope introduced earlier in TCD chapter 2.
+
+Equation 2 (negative): predicted trust in government (0–100 scale) falls by 3.1 points for each one-point increase in perceived corruption (0–10 scale), starting from a baseline of 64 among respondents who perceive no corruption at all.
+
+Equation 3 (zero): the predicted probability of voting for the Democratic candidate stays at .52 regardless of shoe size. The coefficient on shoe size is exactly zero, so the fitted line is flat. The variable is deliberately absurd so students see clearly that a zero slope is an answer the model gives, not a modeling failure — shoe size simply does not linearly predict vote choice once nothing else is in the equation.
+
+Push students to name what none of the three equations can tell them on its own: nothing about causation, nothing about whether a line is the right shape for the full range of X (compare the next slide), and nothing about statistical significance, which is not introduced until chapter 6.
 :::
 
 ## The comparison behind an association
@@ -814,6 +1107,7 @@ How much does Y change, on average, for a **one-unit increase in X**?
 Source: TCD chapter 2, pp. 29–30. The formula for the slope of Y on X is cov(X,Y)/variance(X). For crime on temperature the slope is 3.1 crimes per degree. Reversing the axes gives .18 degrees per additional crime.
 :::
 
+
 ## Zero correlation can hide nonlinear relationships
 
 <iframe class="nonlinear-plots" src="assets/nonlinear-zero-correlation.html" title="Nonlinear relationships with correlations near zero">
@@ -1063,16 +1357,24 @@ It can be a mean, percentage, difference, correlation, slope, prediction, or cau
 
 ::: notes
 Source: Lundberg, Johnson, and Stewart (2021), abstract and pp. 532–535. Their framework applies beyond causal inference. Any statistical analysis becomes clearer when the target quantity is defined before choosing a model or estimator.
+
+Open with the plain-language distinction: the **estimand is what we want to know**; an **estimator is the rule we use to learn it from a sample**; an **estimate is the number the rule produces in this dataset**. For example, the Democratic vote share among white women in the 2016 electorate is an estimand. The weighted sample proportion is an estimator, and the reported percentage is the estimate.
+
+Emphasize that an estimand is a quantity, not a topic. “Race and voting” is a topic. “The percentage-point difference in Democratic presidential voting between white women and Black women in the 2016 U.S. electorate” is a target quantity.
+
+Ask students to diagnose three phrases: “the effect of media,” “the correlation in our sample,” and “the coefficient on exposure.” What information is still missing? Expected answers include the units, outcome, comparison, population, timing, and—if causal—the intervention or counterfactual contrast.
+
+Lundberg and colleagues use the question “What is your estimand?” to force these choices into the open. Their audit of 32 quantitative articles in the 2018 volume of *ASR* found that they were completely certain about both the unit-specific quantity and target population in zero articles. The point is not that the studies lacked goals; it is that readers could not recover those goals unambiguously from the reported models.
 :::
 
 ## The target should exist outside the model
 
-“The coefficient on race in Model 4” defines a result inside one statistical procedure.
+“The coefficient on temperature in Model 4” defines a result inside one statistical procedure.
 
 A stronger statement names the quantity of substantive interest:
 
 ::: {.formula .small}
-The difference in Democratic presidential vote share between white women and women of color in the target electorate
+The difference in mean daily reported crime between 40°F and 80°F days in Chicago in 2018
 :::
 
 ::: {.fragment .key-line}
@@ -1081,6 +1383,14 @@ Once the target is clear, several estimation strategies may be available.
 
 ::: notes
 Source: Lundberg et al. (2021), pp. 532–534. Their objection is not to regression itself. It is to letting a regression coefficient substitute for the substantive research target.
+
+Explain why “the coefficient on temperature in Model 4” is not a target stated outside the model. Its meaning changes if temperature is measured in Fahrenheit rather than Celsius, crime is modeled as a count, rate, or log count, the relationship is linear or curved, or the model includes different covariates and interactions. Changing any of these choices can change the quantity represented by the coefficient.
+
+By contrast, the difference in mean daily reported crime between 40°F and 80°F days in Chicago in 2018 remains the same substantive target whether analysts estimate it using raw group averages, a regression model, or a flexible prediction method. Those procedures can be compared by asking how well they serve the same target.
+
+Ask: **If two models produce different coefficients, do they necessarily disagree about the same quantity?** No. They may use different conditioning sets or scales and therefore target different quantities. This is why a table of “robustness checks” can be misleading when each specification silently changes the estimand.
+
+Teaching shorthand: the model is a tool; the estimand is the job the tool is supposed to accomplish.
 :::
 
 ## Three distinct choices
@@ -1115,6 +1425,18 @@ The procedure used to learn from the available data
 
 ::: notes
 Source: Lundberg et al. (2021), Figure 1, p. 534. The first link requires substantive argument. The second requires identification assumptions. Estimation can then be evaluated partly from the data.
+
+Walk through the chain slowly and keep the three questions distinct:
+
+1. **Theoretical estimand:** What quantity would answer the substantive or theoretical question if we could observe everything we wanted? This choice is defended by theory and substantive argument.
+2. **Empirical estimand:** What quantity involving observable distributions would equal, approximate, or illuminate that theoretical target under stated assumptions? This link is an identification argument.
+3. **Estimation strategy:** How will we learn the empirical estimand from finite, noisy data? This is where sampling variability, model fit, regularization, and computation enter.
+
+Use a simple descriptive example. The theoretical target might be the racial difference in Democratic vote share among all women voters in an election. The empirical target might be the corresponding difference in population survey-response probabilities after defining race, gender, eligibility, and vote choice. The estimation strategy might be weighted group proportions from the ANES.
+
+Then contrast a causal question. If the theoretical target asks what would happen under an intervention, the empirical association equals that target only under additional assumptions about confounding, treatment definition, interference, and missing potential outcomes.
+
+The arrows are where arguments live. A technically excellent estimator cannot repair an empirical estimand that is unrelated to the theoretical target, and credible identification cannot rescue a target that does not answer the motivating question.
 :::
 
 ## Four decisions define a target quantity
@@ -1134,6 +1456,19 @@ The dataset does not choose these features of the estimand for us.
 Adapted from Lundberg et al. (2021), pp. 535–540. The paper emphasizes a unit-specific quantity and a target population. For the associations in this course, make two additional choices explicit: the variables being related and the summary or comparison used to relate them.
 
 The target population is not automatically the observed sample. The same dataset can support estimates for different populations only with appropriate weighting and assumptions.
+
+Connect the table to Lundberg et al.'s two formal ingredients. The **unit-specific quantity** is what could be defined for each unit—for example, whether voter $i$ voted Democratic. The **target population** states which actual units are averaged—for example, all women who voted in the 2016 U.S. presidential election. The summary then specifies whether we want a mean, proportion, difference, ratio, correlation, or another aggregation.
+
+Ask students to make every noun precise:
+
+- Does “women voters” mean eligible voters, self-reported voters, validated voters, or survey respondents who report a major-party vote?
+- Does “race” use the ANES categories, self-identification, mutually exclusive categories, or a white-versus-women-of-color grouping?
+- Is the target one election, several elections separately, or an average across years?
+- Is each voter weighted equally, or are elections or subgroups weighted equally?
+
+Return to the denominator prompt from the Junn and Masuoka section. The denominator is part of the estimand, not a technical afterthought. “Democratic vote share among Black women” and “Black women's share of Democratic voters” reverse the conditioning event and target different quantities.
+
+Common misconception: the target population is not “the ANES sample.” That phrase identifies observed data. The target population is the population about which the claim is intended; sampling and weighting are parts of the argument connecting the sample to that target.
 :::
 
 ## Estimands for different questions
@@ -1156,6 +1491,14 @@ The examples move from single-variable description to association and then to ca
 The correlation coefficient is itself an estimand when the target is the population correlation between specified variables in a specified population. The sample correlation is an estimator of that target. Likewise, a sample percentage estimates a population percentage, and a fitted sample slope estimates a population slope under stated assumptions.
 
 Mention the causal estimand briefly to preserve the broader scope of Lundberg et al. A causal target introduces potential outcomes and requires stronger identification assumptions, but it does not displace descriptive or associational targets.
+
+Read the conditioning explicitly. $P(Y=1\mid X=1)$ means the proportion with $Y=1$ **among units for whom $X=1$**. The condition after the vertical bar identifies the denominator. The difference in the second row therefore compares two within-group proportions.
+
+Clarify the descriptive/causal boundary. $P(Y=1\mid X=1)-P(Y=1\mid X=0)$ is an associational estimand: it compares observed groups. $E[Y(1)-Y(0)]$ is causal: it compares two potential outcomes for the same units and then averages. The expressions can be numerically related under strong identification assumptions, but they do not mean the same thing.
+
+Use the table as a rapid classification exercise. Read a research claim and ask students which row it belongs to. Then ask what would have to be added to define the population and measurement. Good answers should never stop at a formula; every symbol needs a substantive interpretation.
+
+For correlation, stress that $\operatorname{corr}(X,Y)$ is incomplete until X, Y, and the target population are specified. The population correlation is the estimand; the sample $r$ is its estimate. A different population or time window can have a different correlation without either estimate being erroneous.
 :::
 
 ## Applying the framework to Junn and Masuoka
@@ -1176,6 +1519,16 @@ Mention the causal estimand briefly to preserve the broader scope of Lundberg et
 
 ::: notes
 This is an interpretive application of Lundberg et al.'s framework to Junn and Masuoka. The article itself does not use the theoretical/empirical estimand vocabulary. Invite students to improve the target-population statement.
+
+Treat the displayed theoretical target as a deliberately broad first draft. Ask students what must be fixed before it becomes a single estimand. They should notice that “racial variation,” “women,” “U.S. electorate,” and the election period remain underspecified.
+
+One sharper version would be: **the percentage-point difference in Democratic presidential vote choice between white women and Black women among women who voted in the 2016 U.S. presidential election.** Another legitimate estimand would compare white women with all women of color, but it pools substantively different groups. The choice is theoretical, not dictated by the data.
+
+For the empirical estimand, identify the observable ingredients: recorded ANES race and gender categories, reported presidential vote choice, election year, survey inclusion, and survey weights. Measurement and sampling assumptions connect these observables to the theoretical population.
+
+For estimation, emphasize how modest the machinery can be. A cross-tabulation or weighted difference in proportions may be exactly the right estimator for a descriptive estimand. More complicated modeling is not automatically more theoretically informative.
+
+Ask the class to repair one part of the chain: refine the theoretical target, state one identification assumption, or propose an alternative estimator of the same empirical target.
 :::
 
 ## One paper contains multiple estimands
@@ -1192,6 +1545,18 @@ This is an interpretive application of Lundberg et al.'s framework to Junn and M
 
 ::: notes
 Source: Junn and Masuoka (2020), Figures 1–2 and Table 2; framework from Lundberg et al. (2021).
+
+Walk through the denominators again:
+
+- **Figure 1:** within each racial group of women in each election, what proportion voted Democratic? Each race-by-election group supplies a denominator.
+- **Figure 2:** within Democratic voters and within Republican voters, what proportion belongs to each race-and-gender group? Party coalition is now the denominator.
+- **Table 2:** within each demographic subgroup, compare the Democratic-vote proportion among white women with the corresponding proportion among women of color. Each reported gap uses two denominators.
+
+These are not three estimates of one hidden quantity. They are three families of estimands that reorganize the same joint data. Figure 1 asks about voting behavior within groups; Figure 2 asks about coalition composition; Table 2 asks how a racial contrast varies across subgroup-defined populations.
+
+Ask: **Which exhibit would answer “Who supports the Democratic Party?” and which would answer “Who makes up the Democratic Party?”** The first is closest to Figure 1; the second is Figure 2. The wording difference signals the reversed conditional probability.
+
+Use this slide to normalize multiplicity. A paper may need several estimands because its argument contains several questions. The problem is not having multiple targets; the problem is sliding among them without saying so.
 :::
 
 ## Identification links target to observable evidence
@@ -1207,6 +1572,19 @@ Connecting them requires assumptions about:
 
 ::: notes
 Source: Lundberg et al. (2021), pp. 540–545. Descriptive and associational targets still require assumptions about observation, selection, measurement, and generalization. If the target is causal, add assumptions about treatment assignment, confounding, and interference.
+
+Separate **identification** from **estimation**. Identification asks whether the observable-data quantity is informative about the target, even with unlimited data. Estimation asks how accurately finite data recover that observable quantity. A huge sample reduces sampling error but cannot correct a mismatch between the observed and target populations or repair a badly measured variable.
+
+For the ANES application, make the assumptions concrete:
+
+- **Sampling and missingness:** respondents and reported voters must represent the target electorate after weighting; nonresponse and vote misreporting must be addressed.
+- **Measurement:** survey categories must adequately represent the racial and gender groupings invoked by the claim; vote choice must be measured comparably across years.
+- **Transport:** relationships observed in sampled respondents must generalize to the stated electorate and election period.
+- **Summary choice:** a percentage-point difference must capture the theoretically relevant pattern rather than conceal important subgroup heterogeneity.
+
+Ask students which of these assumptions can be diagnosed from observed data and which require external knowledge. Weight distributions and missingness patterns can be inspected, but the claim that measured categories represent the theoretical constructs is not settled by model fit.
+
+If discussing causal estimands, add that exchangeability/no unmeasured confounding, treatment consistency, positivity, and interference become relevant. Keep these separate from the descriptive assumptions so students do not conclude that descriptive claims are assumption-free.
 :::
 
 ## Association becomes more useful when the target is explicit
@@ -1241,6 +1619,14 @@ The statistic gains meaning from the question it was chosen to answer.
 
 ::: notes
 Synthesis of all three readings. This is the central takeaway for the course.
+
+Use the left column as a diagnosis exercise. “Race is significant” does not state the outcome, comparison, scale, population, or magnitude. “The correlation coefficient is .60” omits the variables, population, units, uncertainty, and substantive meaning. “Model 4 fits better” evaluates a procedure without naming the question it is supposed to answer.
+
+Then have students rewrite one statement using the right-column questions. A complete version might be: “Among women who voted in the 2016 U.S. presidential election, the Democratic vote share was 58 percentage points higher among women of color than among white women.” Students should be able to identify both denominators and the percentage-point comparison.
+
+Stress that explicit targets improve disagreement. Readers can dispute the population, measurement, aggregation, or identifying assumptions separately. Without a target, every disagreement collapses into a vague debate about whether the model is “right.”
+
+Final teaching line: **A statistic does not announce its own meaning. The estimand supplies that meaning.**
 :::
 
 ## Closing synthesis
@@ -1267,4 +1653,8 @@ Every statistic should serve a target quantity stated outside the model.
 
 ::: notes
 End by asking: what association did today's readings persuade you to see differently, and what exactly was its estimand?
+
+Give students one minute to write an estimand in a complete sentence. Require four elements: the unit or unit-specific quantity, the target population, the variables or conditions being compared, and the aggregation or contrast. Then ask a partner to identify the denominator directly from the sentence. If the denominator is ambiguous, the estimand needs revision.
+
+Close by connecting the readings. Junn and Masuoka show that changing the comparison can reorganize a substantive field. TCD shows that a comparison needs variation and that summaries such as covariance and $r$ have precise limits. Lundberg and colleagues show that the comparison should serve a target quantity chosen before the estimator. Together, the readings turn “What does the model say?” into the more disciplined question: **What quantity did we want to learn, for whom, and why does this evidence inform it?**
 :::

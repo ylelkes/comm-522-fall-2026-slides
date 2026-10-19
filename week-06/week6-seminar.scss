@@ -83,4 +83,7 @@ $selection-bg: #d5aa55;
 .nonlinear-plots { display:block; width:100%; height:540px; border:0; background:transparent; }
 .flow-list p { margin:.35em 0; padding:.34em .55em; border-left:7px solid var(--blue); background:rgba(255,255,255,.56); font-size:.78em; }
 .flow-list p:nth-child(even) { border-left-color:var(--rust); }
+.compact-formulas .column p { margin:.28em 0; }
+.compact-formulas .math.display { margin:.3em 0; }
+.compact-formulas .key-line { margin-top:.35em; padding:.36em .58em; font-size:.8em; }
 @media (max-width:900px) { .triad,.two-column,.quad-wrap,.estimand-chain { grid-template-columns:1fr; gap:.5em; } .two-column .column + .column { border-left:0; padding-left:0; } }

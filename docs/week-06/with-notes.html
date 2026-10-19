@@ -6,8 +6,8 @@
 <script src="with-notes_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="with-notes_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="with-notes_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="with-notes_files/libs/quarto-html/quarto-syntax-highlighting-3a01e2046221230fdceeea94b1ec5d67.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.30">
+<link href="with-notes_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="COMM 5220 • Week 6">
   <title>Association, Comparison, and the Target</title>
@@ -17,10 +17,16 @@
   <link rel="stylesheet" href="with-notes_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="with-notes_files/libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -29,211 +35,13 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="with-notes_files/libs/revealjs/dist/theme/quarto-99010b6eb668b798290e5316642c1704.css">
+  <link rel="stylesheet" href="with-notes_files/libs/revealjs/dist/theme/quarto-a51ec421b976a294869ad576a14f6adc.css">
   <link href="with-notes_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="with-notes_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="with-notes_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
   <link href="with-notes_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
   <link href="with-notes_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="with-notes_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
-
-  .callout {
-    margin-top: 1em;
-    margin-bottom: 1em;  
-    border-radius: .25rem;
-  }
-
-  .callout.callout-style-simple { 
-    padding: 0em 0.5em;
-    border-left: solid #acacac .3rem;
-    border-right: solid 1px silver;
-    border-top: solid 1px silver;
-    border-bottom: solid 1px silver;
-    display: flex;
-  }
-
-  .callout.callout-style-default {
-    border-left: solid #acacac .3rem;
-    border-right: solid 1px silver;
-    border-top: solid 1px silver;
-    border-bottom: solid 1px silver;
-  }
-
-  .callout .callout-body-container {
-    flex-grow: 1;
-  }
-
-  .callout.callout-style-simple .callout-body {
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
-  .callout.callout-style-default .callout-body {
-    font-size: 0.9rem;
-    font-weight: 400;
-  }
-
-  .callout.callout-titled.callout-style-simple .callout-body {
-    margin-top: 0.2em;
-  }
-
-  .callout:not(.callout-titled) .callout-body {
-      display: flex;
-  }
-
-  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
-    padding-left: 1.6em;
-  }
-
-  .callout.callout-titled .callout-header {
-    padding-top: 0.2em;
-    margin-bottom: -0.2em;
-  }
-
-  .callout.callout-titled .callout-title  p {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-    
-  .callout.callout-titled.callout-style-simple .callout-content  p {
-    margin-top: 0;
-  }
-
-  .callout.callout-titled.callout-style-default .callout-content  p {
-    margin-top: 0.7em;
-  }
-
-  .callout.callout-style-simple div.callout-title {
-    border-bottom: none;
-    font-size: .9rem;
-    font-weight: 600;
-    opacity: 75%;
-  }
-
-  .callout.callout-style-default  div.callout-title {
-    border-bottom: none;
-    font-weight: 600;
-    opacity: 85%;
-    font-size: 0.9rem;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-  }
-
-  .callout.callout-style-default div.callout-content {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-  }
-
-  .callout.callout-style-simple .callout-icon::before {
-    height: 1rem;
-    width: 1rem;
-    display: inline-block;
-    content: "";
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
-  }
-
-  .callout.callout-style-default .callout-icon::before {
-    height: 0.9rem;
-    width: 0.9rem;
-    display: inline-block;
-    content: "";
-    background-repeat: no-repeat;
-    background-size: 0.9rem 0.9rem;
-  }
-
-  .callout-title {
-    display: flex
-  }
-    
-  .callout-icon::before {
-    margin-top: 1rem;
-    padding-right: .5rem;
-  }
-
-  .callout.no-icon::before {
-    display: none !important;
-  }
-
-  .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
-  }
-
-  .callout.callout-titled .callout-icon::before {
-    margin-top: .5rem;
-    padding-right: .5rem;
-  }
-
-  .callout:not(.callout-titled) .callout-icon::before {
-    margin-top: 1rem;
-    padding-right: .5rem;
-  }
-
-  /* Callout Types */
-
-  div.callout-note {
-    border-left-color: #4582ec !important;
-  }
-
-  div.callout-note .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
-  }
-
-  div.callout-note.callout-style-default .callout-title {
-    background-color: #dae6fb
-  }
-
-  div.callout-important {
-    border-left-color: #d9534f !important;
-  }
-
-  div.callout-important .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
-  }
-
-  div.callout-important.callout-style-default .callout-title {
-    background-color: #f7dddc
-  }
-
-  div.callout-warning {
-    border-left-color: #f0ad4e !important;
-  }
-
-  div.callout-warning .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
-  }
-
-  div.callout-warning.callout-style-default .callout-title {
-    background-color: #fcefdc
-  }
-
-  div.callout-tip {
-    border-left-color: #02b875 !important;
-  }
-
-  div.callout-tip .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
-  }
-
-  div.callout-tip.callout-style-default .callout-title {
-    background-color: #ccf1e3
-  }
-
-  div.callout-caution {
-    border-left-color: #fd7e14 !important;
-  }
-
-  div.callout-caution .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
-  }
-
-  div.callout-caution.callout-style-default .callout-title {
-    background-color: #ffe5d0
-  }
-
-  </style>
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -333,7 +141,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-COMM 5220 • Week 6 
+COMM 5220 • Week 6
 </div>
 </div>
 </div>
@@ -417,6 +225,305 @@ COMM 5220 • Week 6
 <p>This is the Week 7 slide we did not reach. It connects Gerring’s account of descriptive arguments to Huntington-Klein’s practical tools.</p>
 <p>The claim determines what must remain visible in the data. A prevalence claim may require a count or proportion. A typology requires category definitions and cell counts. A trend requires an ordered time axis. An association requires the joint distribution of at least two variables. A mean alone cannot support every kind of descriptive argument.</p>
 <p>This ordering also prevents software from choosing the question. We do not begin with a convenient command and then invent an interpretation. We begin by naming the quantity or pattern we want to describe, then select a summary that preserves it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="describing-a-categorical-indicator" class="slide level2">
+<h2>Describing a categorical indicator</h2>
+
+<img data-src="images/paste-2.png" class="r-stretch"><aside class="notes">
+<p>Semetko and Valkenburg (2000) use a deductive approach. Coders answer 20 yes-or-no questions. The authors use factor analysis to assess whether the items cluster into the five expected frames, then average the retained items within each scale. This is a useful correction to treating each story as if it has one dominant frame. Frames can coexist, and each scale ranges from 0 to 1.</p>
+<p>Their sample includes 2,601 newspaper stories and 1,522 television stories surrounding the 1997 Amsterdam meetings. Responsibility appears most often, followed by conflict, economic consequences, human interest, and morality. Outlet type and topic structure the distribution.</p>
+<p>Ask: Is each frame an indicator, a typology, or both? The frame scale is an indicator. Treating stories as belonging to one exclusive frame would create a typology and would require different coding rules.</p>
+<p>Source: Semetko and Valkenburg (2000), pp.&nbsp;93–109, especially the abstract, pp.&nbsp;94–96, 100–102, and Table 3.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="describing-a-quantitative-indicator" class="slide level2">
+<h2>Describing a quantitative indicator</h2>
+<p>For weekly visibility scores, inspect:</p>
+<div class="triad">
+<div class="triad-item">
+<p><strong>Shape</strong></p>
+<p>Symmetric, skewed, multimodal, bounded?</p>
+</div>
+<div class="triad-item">
+<p><strong>Center</strong></p>
+<p>Mean, median, mode, or a substantive reference point?</p>
+</div>
+<div class="triad-item">
+<p><strong>Spread</strong></p>
+<p>Range, IQR, standard deviation, or quantiles?</p>
+</div>
+</div>
+<div class="fragment key-line">
+<p>Never choose a summary before looking at the distribution.</p>
+</div>
+<aside class="notes">
+<p>Huntington-Klein emphasizes histograms and density plots for quantitative variables. A mean can conceal polarization or multiple modes. A median resists extreme weeks but may hide meaningful tails. Standard deviation has a clear interpretation only in relation to the variable and shape.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-mean" class="slide level2">
+<h2>The mean</h2>
+<p>Seven ideology scores, ordered from liberal to conservative:</p>
+<div class="score-row">
+<p><strong>−3  −1  −1  0  1  1  3</strong></p>
+</div>
+<p><span class="math display">\[
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
+=\frac{-3-1-1+0+1+1+3}{7}=0
+\]</span></p>
+<div class="key-line">
+<p>The mean is the balance point of all observed scores.</p>
+</div>
+<aside class="notes">
+<p>Read the equation from left to right. The bar over x denotes the sample mean. The summation symbol means “add every observed score.” Divide that sum by n, the number of observations.</p>
+<p>The mean uses every value. It acts like the balance point of the distribution and moves when extreme observations move. In this example the negative and positive ideology scores cancel, producing a mean of zero.</p>
+<p>Ask whether mean zero implies that most people are centrists. It does not. The distribution could concentrate at zero, spread evenly across the scale, or split into liberal and conservative groups.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-median-and-mode" class="slide level2">
+<h2>The median and mode</h2>
+<p>For ordered values <span class="math inline">\(x_{(1)}\leq x_{(2)}\leq\cdots\leq x_{(n)}\)</span>:</p>
+<div class="two-column contrast">
+<div class="column">
+<h3 id="median">Median</h3>
+<p><span class="math display">\[
+\tilde{x}=\begin{cases}
+x_{((n+1)/2)}, &amp; n\text{ odd}\\
+\dfrac{x_{(n/2)}+x_{(n/2+1)}}{2}, &amp; n\text{ even}
+\end{cases}
+\]</span></p>
+<p>Here: <span class="math inline">\(\tilde{x}=x_{(4)}=0\)</span></p>
+</div><div class="column">
+<h3 id="mode">Mode</h3>
+<p><span class="math display">\[
+\operatorname{mode}(x)=
+\underset{v}{\arg\max}\;\#\{i:x_i=v\}
+\]</span></p>
+<p>Here: modes = <strong>−1 and +1</strong></p>
+</div></div>
+<aside class="notes">
+<p>Parentheses in the subscripts indicate positions after sorting, not raw observation numbers.</p>
+<p>To find the median, order the observations and locate the middle one. With an even number of observations, average the two middle values. The median depends on rank, so an extreme score can become even more extreme without changing the median.</p>
+<p>The mode equation says: among all possible values v, choose the value or values with the largest count. The arg max notation means “the value that makes this quantity largest.” This example has two modes, −1 and +1, so it is bimodal. With continuous variables, the exact mode may depend on how values are rounded or how a histogram is binned.</p>
+<p>Discussion prompt: All three summaries point to zero or symmetry here, but does this small group contain a widely shared centrist position? No.&nbsp;The modes suggest two common positions away from the center.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="variance-and-standard-deviation" class="slide level2">
+<h2>Variance and standard deviation</h2>
+<p>Mean ideology = 0, so each deviation equals the original score:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Score</th>
+<th style="text-align: right;">−3</th>
+<th style="text-align: right;">−1</th>
+<th style="text-align: right;">−1</th>
+<th style="text-align: right;">0</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Distance from mean</td>
+<td style="text-align: right;">−3</td>
+<td style="text-align: right;">−1</td>
+<td style="text-align: right;">−1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td>Squared distance</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+</tr>
+</tbody>
+</table>
+<div class="two-column contrast">
+<div class="column">
+<h3 id="variance">Variance</h3>
+<p><span class="math display">\[
+\sigma^2=\frac{1}{N}\sum_{i=1}^{N}(x_i-\mu)^2
+=\frac{22}{7}=3.14
+\]</span></p>
+<p>Average squared distance from the mean.</p>
+</div><div class="column">
+<h3 id="standard-deviation">Standard deviation</h3>
+<p><span class="math display">\[
+\sigma=\sqrt{\sigma^2}=\sqrt{3.14}=1.77
+\]</span></p>
+<p>Typical distance from the mean, expressed in the original units.</p>
+</div></div>
+<aside class="notes">
+<p>Variance starts by calculating each observation’s deviation from the mean. Positive and negative deviations would cancel, so we square them. Average those squared deviations to obtain the population variance. Variance is useful mathematically, but its squared units are difficult to interpret.</p>
+<p>Standard deviation takes the square root of variance. It returns to the original ideology scale. A standard deviation of 1.77 means that scores typically sit about 1.77 ideology points from the mean, though “typical distance” is an intuition rather than the exact average absolute distance.</p>
+<p>This slide treats the seven scores as the full population and divides by N = 7. If they are a sample used to estimate population variance, divide by N − 1 = 6. The sample variance would be 3.67 and the sample standard deviation would be 1.91.</p>
+<p>Squaring gives unusual observations extra influence. The two scores at −3 and +3 contribute 18 of the 22 total squared-distance units.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="population-and-sample-formulas" class="slide level2 compact-formulas">
+<h2>Population and sample formulas</h2>
+<div class="two-column contrast">
+<div class="column">
+<h3 id="full-population">Full population</h3>
+<p><span class="math display">\[
+\mu=\frac{1}{N}\sum_{i=1}^{N}x_i
+\]</span></p>
+<p><span class="math display">\[
+\sigma^2=\frac{1}{N}\sum_{i=1}^{N}(x_i-\mu)^2
+\qquad \sigma=\sqrt{\sigma^2}
+\]</span></p>
+</div><div class="column">
+<h3 id="sample-estimating-a-population">Sample estimating a population</h3>
+<p><span class="math display">\[
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
+\]</span></p>
+<p><span class="math display">\[
+s^2=\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
+\qquad s=\sqrt{s^2}
+\]</span></p>
+</div></div>
+<aside class="notes">
+<p>Use Greek letters for population quantities and Latin letters for sample statistics. N denotes the population size and n denotes the sample size.</p>
+<p>When the observed cases constitute the entire population of interest, divide the squared deviations by N. When using a sample to estimate population variance, divide by n − 1. Estimating the sample mean uses one degree of freedom, and dividing by n − 1 makes sample variance unbiased under standard random-sampling assumptions.</p>
+<p>For the seven ideology scores, the population variance is 22/7 = 3.14 and population SD is 1.77. Treated as a sample, the variance is 22/6 = 3.67 and the sample SD is 1.91.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-does-within-one-or-two-sds-mean" class="slide level2">
+<h2>What does “within one or two SDs” mean?</h2>
+
+<img data-src="assets/normal-sd-empirical-rule.png" alt="Normal distribution showing that about 68 percent of observations lie within one standard deviation of the mean, 95 percent within two, and 99.7 percent within three" class="r-stretch"><p><span class="math display">\[
+P(\mu-\sigma\leq X\leq\mu+\sigma)\approx .68
+\qquad
+P(\mu-2\sigma\leq X\leq\mu+2\sigma)\approx .95
+\]</span></p>
+<div class="key-line">
+<p>The <strong>68–95–99.7 rule</strong> applies when the population is approximately normal.</p>
+</div>
+<aside class="notes">
+<p>For an approximately normal, bell-shaped distribution, about 68% of the population lies between one standard deviation below and one standard deviation above the mean. About 95% lies within two standard deviations, and about 99.7% lies within three.</p>
+<p>The percentages are cumulative. The 95% within two SDs includes the 68% already within one SD. Therefore, about 27% lies between one and two standard deviations from the mean—roughly 13.5% on each side. About 5% lies beyond two standard deviations—roughly 2.5% in each tail.</p>
+<p>Use an ideology example with mean 0 and SD 1. If ideology were approximately normal, about 68% of people would score between −1 and +1, about 95% between −2 and +2, and about 99.7% between −3 and +3.</p>
+<p>Emphasize the qualification. These percentages do not follow from the definition of standard deviation and do not hold for every distribution. A skewed, heavy-tailed, or polarized distribution may place very different percentages inside the same boundaries. In the seven-score worked example, 5 of 7 observations—or 71.4%—lie within one population SD; the sample is not a normal population.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-same-mean-can-describe-different-politics" class="slide level2">
+<h2>The same mean can describe different politics</h2>
+
+<img data-src="assets/political-beliefs-same-mean.png" alt="Three simulated political ideology distributions with mean zero but different shapes and standard deviations; solid vertical lines show the mean and dotted lines show one standard deviation below and above the mean" class="r-stretch"><aside class="notes">
+<p>These simulated populations all have mean ideology zero. The left panel supports a story of consensus around the center. The middle panel supports a story of widespread disagreement. The right panel supports a story of polarization into opposing camps. Reporting only the mean would make all three populations sound centrist.</p>
+<p>The solid vertical line marks the shared mean of zero. The dotted vertical lines mark one standard deviation below and above the mean. The SD is printed above each panel. The wider disagreement and polarized distributions have much larger SDs than the consensus distribution.</p>
+<p>Ask students which features separate the stories. Relevant answers include variance, density near the midpoint, number of modes, distance between modes, and the relative size of each cluster. Then ask which single statistic, if any, captures polarization.</p>
+<p>The same problem applies to outlet scores. An average near zero could mean consistently moderate guests, a mixture of liberal and conservative guests, or movement between extremes over time.</p>
+<p>Illustrative simulated data. All three series were centered to mean zero.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-same-median-can-describe-different-inequality" class="slide level2">
+<h2>The same median can describe different inequality</h2>
+
+<img data-src="assets/income-same-median.png" alt="Two simulated household-income distributions with the same median of sixty thousand dollars but different upper tails and means" class="r-stretch"><aside class="notes">
+<p>Both simulated populations have a median household income of $60,000. In the first, the mean is about $63,000 because the upper tail is modest. In the second, a small group with very high incomes raises the mean to about $88,000 while leaving the median unchanged.</p>
+<p>The median supports the claim that the typical household occupies the same position in both populations. The mean supports the claim that total income per household is higher in the second. The full distribution supports a third claim: the second population has much greater upper-tail inequality. None of these descriptions is false, but each answers a different question.</p>
+<p>Ask which summary a policymaker might choose when discussing living standards, the tax base, or inequality. Then ask how an advocate could produce a technically accurate but substantively misleading comparison by selecting only one statistic.</p>
+<p>Illustrative simulated data. Each distribution was rescaled to a median of $60,000.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -625,6 +732,13 @@ COMM 5220 • Week 6
 </div>
 <aside class="notes">
 <p>Use this slide to preview estimands. None of these quantities is simply “the race gap.” Each requires a population, variables, conditioning choices, and a denominator.</p>
+<p>Before explaining the three boxes, ask: <strong>“What is the denominator for each association?”</strong> Give students a moment to work through all three.</p>
+<ul>
+<li>For <strong>vote rate</strong>, the denominator is all women in the specified racial group; the numerator is those who voted Democratic.</li>
+<li>For <strong>party composition</strong>, the denominator is everyone in the specified party coalition; the numerator is coalition members in a particular race-and-gender group.</li>
+<li>For the <strong>subgroup comparison</strong>, there are two denominators: all white women in the specified subgroup and all women of color in that subgroup. The association compares the Democratic-vote proportion calculated within each denominator.</li>
+</ul>
+<p>After hearing their answers, emphasize that changing the denominator changes the conditional quantity and therefore the substantive question.</p>
 <p>The first crosstab asks how vote choice varies across racial groups among women. The second reverses the conditioning direction and asks who makes up each party coalition. The subgroup table repeats the white-women versus women-of-color comparison separately within categories such as education, income, age, region, religion, and family status. These remain descriptive comparisons. They do not hold every other characteristic constant and do not identify a causal effect of race.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -966,6 +1080,44 @@ COMM 5220 • Week 6
 <aside class="notes">
 <p>Source: TCD chapter 2, Figure 2.2, p.&nbsp;16. The book later makes the OLS definition precise as the line minimizing the sum of squared errors.</p>
 <p>Compare this figure directly with Figure 2.1 on the preceding slide. The points have not changed. Figure 2.2 adds a single line that summarizes their linear tendency. The book reports the slope, 3.1, but does not report a numerical intercept, so the equation leaves the fitted intercept as <span class="math inline">\(\widehat\alpha\)</span>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="practice-read-the-equation-state-the-claim" class="slide level2">
+<h2>Practice: read the equation, state the claim</h2>
+<p>Each equation below predicts one variable from another. For each one: read it aloud, then state in one plain-language sentence what it claims about the world — not just “positive” or “negative,” but what substantively happens as X increases.</p>
+<div class="triad">
+<div class="triad-item">
+<p><strong>Positive</strong></p>
+<p><span class="math display">\[\widehat{\text{Turnout}_i} = 38 + 0.6\,\text{Age}_i\]</span></p>
+</div>
+<div class="triad-item">
+<p><strong>Negative</strong></p>
+<p><span class="math display">\[\widehat{\text{TrustInGovt}_i} = 64 - 3.1\,\text{PerceivedCorruption}_i\]</span></p>
+</div>
+<div class="triad-item">
+<p><strong>Zero</strong></p>
+<p><span class="math display">\[\widehat{\text{VoteChoice}_i} = .52 + 0\,\text{ShoeSize}_i\]</span></p>
+</div>
+</div>
+<div class="fragment key-line">
+<p>A slope of zero does not mean “no relationship exists.” It means this particular straight line predicts no change in Y as X increases.</p>
+</div>
+<aside class="notes">
+<p>Give students a moment to translate each equation silently before discussing as a group.</p>
+<p>Equation 1 (positive): predicted turnout rises by 0.6 percentage points for each additional year of age, starting from a baseline of 38% among the youngest respondents in the sample. This is the same age/turnout slope introduced earlier in TCD chapter 2.</p>
+<p>Equation 2 (negative): predicted trust in government (0–100 scale) falls by 3.1 points for each one-point increase in perceived corruption (0–10 scale), starting from a baseline of 64 among respondents who perceive no corruption at all.</p>
+<p>Equation 3 (zero): the predicted probability of voting for the Democratic candidate stays at .52 regardless of shoe size. The coefficient on shoe size is exactly zero, so the fitted line is flat. The variable is deliberately absurd so students see clearly that a zero slope is an answer the model gives, not a modeling failure — shoe size simply does not linearly predict vote choice once nothing else is in the equation.</p>
+<p>Push students to name what none of the three equations can tell them on its own: nothing about causation, nothing about whether a line is the right shape for the full range of X (compare the next slide), and nothing about statistical significance, which is not introduced until chapter 6.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1857,6 +2009,10 @@ COMM 5220 • Week 6
 <p>It can be a mean, percentage, difference, correlation, slope, prediction, or causal effect.</p>
 <aside class="notes">
 <p>Source: Lundberg, Johnson, and Stewart (2021), abstract and pp.&nbsp;532–535. Their framework applies beyond causal inference. Any statistical analysis becomes clearer when the target quantity is defined before choosing a model or estimator.</p>
+<p>Open with the plain-language distinction: the <strong>estimand is what we want to know</strong>; an <strong>estimator is the rule we use to learn it from a sample</strong>; an <strong>estimate is the number the rule produces in this dataset</strong>. For example, the Democratic vote share among white women in the 2016 electorate is an estimand. The weighted sample proportion is an estimator, and the reported percentage is the estimate.</p>
+<p>Emphasize that an estimand is a quantity, not a topic. “Race and voting” is a topic. “The percentage-point difference in Democratic presidential voting between white women and Black women in the 2016 U.S. electorate” is a target quantity.</p>
+<p>Ask students to diagnose three phrases: “the effect of media,” “the correlation in our sample,” and “the coefficient on exposure.” What information is still missing? Expected answers include the units, outcome, comparison, population, timing, and—if causal—the intervention or counterfactual contrast.</p>
+<p>Lundberg and colleagues use the question “What is your estimand?” to force these choices into the open. Their audit of 32 quantitative articles in the 2018 volume of <em>ASR</em> found that they were completely certain about both the unit-specific quantity and target population in zero articles. The point is not that the studies lacked goals; it is that readers could not recover those goals unambiguously from the reported models.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1871,16 +2027,20 @@ COMM 5220 • Week 6
 </section>
 <section id="the-target-should-exist-outside-the-model" class="slide level2">
 <h2>The target should exist outside the model</h2>
-<p>“The coefficient on race in Model 4” defines a result inside one statistical procedure.</p>
+<p>“The coefficient on temperature in Model 4” defines a result inside one statistical procedure.</p>
 <p>A stronger statement names the quantity of substantive interest:</p>
 <div class="formula small">
-<p>The difference in Democratic presidential vote share between white women and women of color in the target electorate</p>
+<p>The difference in mean daily reported crime between 40°F and 80°F days in Chicago in 2018</p>
 </div>
 <div class="fragment key-line">
 <p>Once the target is clear, several estimation strategies may be available.</p>
 </div>
 <aside class="notes">
 <p>Source: Lundberg et al.&nbsp;(2021), pp.&nbsp;532–534. Their objection is not to regression itself. It is to letting a regression coefficient substitute for the substantive research target.</p>
+<p>Explain why “the coefficient on temperature in Model 4” is not a target stated outside the model. Its meaning changes if temperature is measured in Fahrenheit rather than Celsius, crime is modeled as a count, rate, or log count, the relationship is linear or curved, or the model includes different covariates and interactions. Changing any of these choices can change the quantity represented by the coefficient.</p>
+<p>By contrast, the difference in mean daily reported crime between 40°F and 80°F days in Chicago in 2018 remains the same substantive target whether analysts estimate it using raw group averages, a regression model, or a flexible prediction method. Those procedures can be compared by asking how well they serve the same target.</p>
+<p>Ask: <strong>If two models produce different coefficients, do they necessarily disagree about the same quantity?</strong> No.&nbsp;They may use different conditioning sets or scales and therefore target different quantities. This is why a table of “robustness checks” can be misleading when each specification silently changes the estimand.</p>
+<p>Teaching shorthand: the model is a tool; the estimand is the job the tool is supposed to accomplish.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1917,6 +2077,15 @@ COMM 5220 • Week 6
 </div>
 <aside class="notes">
 <p>Source: Lundberg et al.&nbsp;(2021), Figure 1, p.&nbsp;534. The first link requires substantive argument. The second requires identification assumptions. Estimation can then be evaluated partly from the data.</p>
+<p>Walk through the chain slowly and keep the three questions distinct:</p>
+<ol type="1">
+<li><strong>Theoretical estimand:</strong> What quantity would answer the substantive or theoretical question if we could observe everything we wanted? This choice is defended by theory and substantive argument.</li>
+<li><strong>Empirical estimand:</strong> What quantity involving observable distributions would equal, approximate, or illuminate that theoretical target under stated assumptions? This link is an identification argument.</li>
+<li><strong>Estimation strategy:</strong> How will we learn the empirical estimand from finite, noisy data? This is where sampling variability, model fit, regularization, and computation enter.</li>
+</ol>
+<p>Use a simple descriptive example. The theoretical target might be the racial difference in Democratic vote share among all women voters in an election. The empirical target might be the corresponding difference in population survey-response probabilities after defining race, gender, eligibility, and vote choice. The estimation strategy might be weighted group proportions from the ANES.</p>
+<p>Then contrast a causal question. If the theoretical target asks what would happen under an intervention, the empirical association equals that target only under additional assumptions about confounding, treatment definition, interference, and missing potential outcomes.</p>
+<p>The arrows are where arguments live. A technically excellent estimator cannot repair an empirical estimand that is unrelated to the theoretical target, and credible identification cannot rescue a target that does not answer the motivating question.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1973,6 +2142,16 @@ COMM 5220 • Week 6
 <aside class="notes">
 <p>Adapted from Lundberg et al.&nbsp;(2021), pp.&nbsp;535–540. The paper emphasizes a unit-specific quantity and a target population. For the associations in this course, make two additional choices explicit: the variables being related and the summary or comparison used to relate them.</p>
 <p>The target population is not automatically the observed sample. The same dataset can support estimates for different populations only with appropriate weighting and assumptions.</p>
+<p>Connect the table to Lundberg et al.’s two formal ingredients. The <strong>unit-specific quantity</strong> is what could be defined for each unit—for example, whether voter <span class="math inline">\(i\)</span> voted Democratic. The <strong>target population</strong> states which actual units are averaged—for example, all women who voted in the 2016 U.S. presidential election. The summary then specifies whether we want a mean, proportion, difference, ratio, correlation, or another aggregation.</p>
+<p>Ask students to make every noun precise:</p>
+<ul>
+<li>Does “women voters” mean eligible voters, self-reported voters, validated voters, or survey respondents who report a major-party vote?</li>
+<li>Does “race” use the ANES categories, self-identification, mutually exclusive categories, or a white-versus-women-of-color grouping?</li>
+<li>Is the target one election, several elections separately, or an average across years?</li>
+<li>Is each voter weighted equally, or are elections or subgroups weighted equally?</li>
+</ul>
+<p>Return to the denominator prompt from the Junn and Masuoka section. The denominator is part of the estimand, not a technical afterthought. “Democratic vote share among Black women” and “Black women’s share of Democratic voters” reverse the conditioning event and target different quantities.</p>
+<p>Common misconception: the target population is not “the ANES sample.” That phrase identifies observed data. The target population is the population about which the claim is intended; sampling and weighting are parts of the argument connecting the sample to that target.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2028,6 +2207,10 @@ COMM 5220 • Week 6
 <p>The examples move from single-variable description to association and then to causation. Emphasize that each row names a different population quantity. None is simply “the result.”</p>
 <p>The correlation coefficient is itself an estimand when the target is the population correlation between specified variables in a specified population. The sample correlation is an estimator of that target. Likewise, a sample percentage estimates a population percentage, and a fitted sample slope estimates a population slope under stated assumptions.</p>
 <p>Mention the causal estimand briefly to preserve the broader scope of Lundberg et al.&nbsp;A causal target introduces potential outcomes and requires stronger identification assumptions, but it does not displace descriptive or associational targets.</p>
+<p>Read the conditioning explicitly. <span class="math inline">\(P(Y=1\mid X=1)\)</span> means the proportion with <span class="math inline">\(Y=1\)</span> <strong>among units for whom <span class="math inline">\(X=1\)</span></strong>. The condition after the vertical bar identifies the denominator. The difference in the second row therefore compares two within-group proportions.</p>
+<p>Clarify the descriptive/causal boundary. <span class="math inline">\(P(Y=1\mid X=1)-P(Y=1\mid X=0)\)</span> is an associational estimand: it compares observed groups. <span class="math inline">\(E[Y(1)-Y(0)]\)</span> is causal: it compares two potential outcomes for the same units and then averages. The expressions can be numerically related under strong identification assumptions, but they do not mean the same thing.</p>
+<p>Use the table as a rapid classification exercise. Read a research claim and ask students which row it belongs to. Then ask what would have to be added to define the population and measurement. Good answers should never stop at a formula; every symbol needs a substantive interpretation.</p>
+<p>For correlation, stress that <span class="math inline">\(\operatorname{corr}(X,Y)\)</span> is incomplete until X, Y, and the target population are specified. The population correlation is the estimand; the sample <span class="math inline">\(r\)</span> is its estimate. A different population or time window can have a different correlation without either estimate being erroneous.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2055,6 +2238,11 @@ COMM 5220 • Week 6
 </div>
 <aside class="notes">
 <p>This is an interpretive application of Lundberg et al.’s framework to Junn and Masuoka. The article itself does not use the theoretical/empirical estimand vocabulary. Invite students to improve the target-population statement.</p>
+<p>Treat the displayed theoretical target as a deliberately broad first draft. Ask students what must be fixed before it becomes a single estimand. They should notice that “racial variation,” “women,” “U.S. electorate,” and the election period remain underspecified.</p>
+<p>One sharper version would be: <strong>the percentage-point difference in Democratic presidential vote choice between white women and Black women among women who voted in the 2016 U.S. presidential election.</strong> Another legitimate estimand would compare white women with all women of color, but it pools substantively different groups. The choice is theoretical, not dictated by the data.</p>
+<p>For the empirical estimand, identify the observable ingredients: recorded ANES race and gender categories, reported presidential vote choice, election year, survey inclusion, and survey weights. Measurement and sampling assumptions connect these observables to the theoretical population.</p>
+<p>For estimation, emphasize how modest the machinery can be. A cross-tabulation or weighted difference in proportions may be exactly the right estimator for a descriptive estimand. More complicated modeling is not automatically more theoretically informative.</p>
+<p>Ask the class to repair one part of the chain: refine the theoretical target, state one identification assumption, or propose an alternative estimator of the same empirical target.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2100,6 +2288,15 @@ COMM 5220 • Week 6
 </div>
 <aside class="notes">
 <p>Source: Junn and Masuoka (2020), Figures 1–2 and Table 2; framework from Lundberg et al.&nbsp;(2021).</p>
+<p>Walk through the denominators again:</p>
+<ul>
+<li><strong>Figure 1:</strong> within each racial group of women in each election, what proportion voted Democratic? Each race-by-election group supplies a denominator.</li>
+<li><strong>Figure 2:</strong> within Democratic voters and within Republican voters, what proportion belongs to each race-and-gender group? Party coalition is now the denominator.</li>
+<li><strong>Table 2:</strong> within each demographic subgroup, compare the Democratic-vote proportion among white women with the corresponding proportion among women of color. Each reported gap uses two denominators.</li>
+</ul>
+<p>These are not three estimates of one hidden quantity. They are three families of estimands that reorganize the same joint data. Figure 1 asks about voting behavior within groups; Figure 2 asks about coalition composition; Table 2 asks how a racial contrast varies across subgroup-defined populations.</p>
+<p>Ask: <strong>Which exhibit would answer “Who supports the Democratic Party?” and which would answer “Who makes up the Democratic Party?”</strong> The first is closest to Figure 1; the second is Figure 2. The wording difference signals the reversed conditional probability.</p>
+<p>Use this slide to normalize multiplicity. A paper may need several estimands because its argument contains several questions. The problem is not having multiple targets; the problem is sliding among them without saying so.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2124,6 +2321,16 @@ COMM 5220 • Week 6
 </ul>
 <aside class="notes">
 <p>Source: Lundberg et al.&nbsp;(2021), pp.&nbsp;540–545. Descriptive and associational targets still require assumptions about observation, selection, measurement, and generalization. If the target is causal, add assumptions about treatment assignment, confounding, and interference.</p>
+<p>Separate <strong>identification</strong> from <strong>estimation</strong>. Identification asks whether the observable-data quantity is informative about the target, even with unlimited data. Estimation asks how accurately finite data recover that observable quantity. A huge sample reduces sampling error but cannot correct a mismatch between the observed and target populations or repair a badly measured variable.</p>
+<p>For the ANES application, make the assumptions concrete:</p>
+<ul>
+<li><strong>Sampling and missingness:</strong> respondents and reported voters must represent the target electorate after weighting; nonresponse and vote misreporting must be addressed.</li>
+<li><strong>Measurement:</strong> survey categories must adequately represent the racial and gender groupings invoked by the claim; vote choice must be measured comparably across years.</li>
+<li><strong>Transport:</strong> relationships observed in sampled respondents must generalize to the stated electorate and election period.</li>
+<li><strong>Summary choice:</strong> a percentage-point difference must capture the theoretically relevant pattern rather than conceal important subgroup heterogeneity.</li>
+</ul>
+<p>Ask students which of these assumptions can be diagnosed from observed data and which require external knowledge. Weight distributions and missingness patterns can be inspected, but the claim that measured categories represent the theoretical constructs is not settled by model fit.</p>
+<p>If discussing causal estimands, add that exchangeability/no unmeasured confounding, treatment consistency, positivity, and interference become relevant. Keep these separate from the descriptive assumptions so students do not conclude that descriptive claims are assumption-free.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2156,6 +2363,10 @@ COMM 5220 • Week 6
 </div>
 <aside class="notes">
 <p>Synthesis of all three readings. This is the central takeaway for the course.</p>
+<p>Use the left column as a diagnosis exercise. “Race is significant” does not state the outcome, comparison, scale, population, or magnitude. “The correlation coefficient is .60” omits the variables, population, units, uncertainty, and substantive meaning. “Model 4 fits better” evaluates a procedure without naming the question it is supposed to answer.</p>
+<p>Then have students rewrite one statement using the right-column questions. A complete version might be: “Among women who voted in the 2016 U.S. presidential election, the Democratic vote share was 58 percentage points higher among women of color than among white women.” Students should be able to identify both denominators and the percentage-point comparison.</p>
+<p>Stress that explicit targets improve disagreement. Readers can dispute the population, measurement, aggregation, or identifying assumptions separately. Without a target, every disagreement collapses into a vague debate about whether the model is “right.”</p>
+<p>Final teaching line: <strong>A statistic does not announce its own meaning. The estimand supplies that meaning.</strong></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2186,6 +2397,8 @@ COMM 5220 • Week 6
 </div>
 <aside class="notes">
 <p>End by asking: what association did today’s readings persuade you to see differently, and what exactly was its estimand?</p>
+<p>Give students one minute to write an estimand in a complete sentence. Require four elements: the unit or unit-specific quantity, the target population, the variables or conditions being compared, and the aggregation or contrast. Then ask a partner to identify the denominator directly from the sentence. If the denominator is ambiguous, the estimand needs revision.</p>
+<p>Close by connecting the readings. Junn and Masuoka show that changing the comparison can reorganize a substantive field. TCD shows that a comparison needs variation and that summaries such as covariance and <span class="math inline">\(r\)</span> have precise limits. Lundberg and colleagues show that the comparison should serve a target quantity chosen before the estimator. Together, the readings turn “What does the model say?” into the more disciplined question: <strong>What quantity did we want to learn, for whom, and why does this evidence inform it?</strong></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2390,7 +2603,7 @@ COMM 5220 • Week 6
         margin: 8.0e-2,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -2417,192 +2630,173 @@ COMM 5220 • Week 6
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
+          return false;
         }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
             }
           }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
           }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
           }
-        } else {
-          return undefined;
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
