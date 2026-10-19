@@ -18,6 +18,16 @@ Conceptualizing and operationalizing media bias, validating Kim, Lelkes, and McC
 
 [Plain presentation — notes in Speaker View](week-07/presenter.html) · [Slides with visible notes](week-07/with-notes.html) · [Instructor discussion notes](week-07/instructor-notes.html)
 
+## Week 6
+
+### Association, Comparison, and the Target
+
+Completing the transition from descriptive claims to descriptive tools, then using Junn and Masuoka, *Thinking Clearly with Data*, and Lundberg, Johnson, and Stewart to develop association, covariance, correlation, comparison sets, and estimands.
+
+[Student slides — no speaker notes](week-06/student.html){.btn .btn-primary role="button"}
+
+[Plain presentation — notes in Speaker View](week-06/presenter.html) · [Slides with visible notes](week-06/with-notes.html) · [Instructor discussion notes](week-06/instructor-notes.html)
+
 ## Week 5
 
 ### Measurement Error, Reliability, and Fairness

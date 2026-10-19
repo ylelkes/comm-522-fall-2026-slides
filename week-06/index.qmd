@@ -22,6 +22,7 @@ format:
     chalkboard: true
     preview-links: auto
     footer: "COMM 5220 • Week 6"
+filters: [strip-speaker-notes.lua]
 lang: en
 ---
 
@@ -158,6 +159,12 @@ Source: Junn and Masuoka (2020), pp. 1135–1141. The piece is a Reflection, not
 ## The familiar gender gap
 
 ![](images/paste-3.png)
+
+::: notes
+Use this figure to establish the comparison that usually organizes discussion of gender and voting: women versus men. Ask students to identify the groups being compared, the outcome being summarized, and the implicit baseline.
+
+Do not yet challenge the result. The point is that this can be a real and correctly measured descriptive difference while still directing attention away from larger variation within the category of women. The next slide changes the comparison from women versus men to racial groups among women.
+:::
 
 ## A different comparison changes the pattern
 
@@ -380,6 +387,12 @@ This quotation shows TCD's broad use of “correlation.” Translate it for the 
 |--------------------------|----------:|----------:|------:|
 | Not a major oil producer |       118 |        29 |   147 |
 | Major oil producer       |         9 |        11 |    20 |
+
+::: notes
+Source: TCD chapter 2, Table 2.1, pp. 14–15. Begin with the counts only. Ask students whether the raw table is enough to see the association and which conditional percentages would make the comparison easiest.
+
+The relevant comparison holds oil-production status as the grouping variable and calculates the proportion of autocracies within each row. The next slide performs that calculation. This staged repetition lets students choose the denominator before seeing the answer.
+:::
 
 ## Binary variables: Is oil associated with an autocracy?
 
