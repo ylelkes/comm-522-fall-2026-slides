@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="430" viewBox="0 0 1500 430" role="img" aria-labelledby="title desc">
+  <title id="title">Cluster and multistage sampling</title>
+  <desc id="desc">Cluster sampling selects whole groups. Multistage sampling first selects groups and then selects individual texts inside the selected groups.</desc>
+  <style>.card{fill:#fffdf8;stroke:#c8c2b7;stroke-width:3}.head{font:700 32px Arial,sans-serif;fill:#18324a}.sub{font:23px Arial,sans-serif;fill:#526572}.benefit{font:700 24px Arial,sans-serif;fill:#b24a3c}.cluster{fill:#f1eee7;stroke:#9aa7af;stroke-width:3}.chosen{fill:#f5dfda;stroke:#b24a3c;stroke-width:5}.dot{fill:#8898a2}.pick{fill:#b24a3c;stroke:#18324a;stroke-width:2}.arrow{stroke:#d5aa55;stroke-width:7;fill:none;marker-end:url(#arrow)}</style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#d5aa55"/></marker></defs>
+  <rect class="card" x="10" y="10" width="720" height="410" rx="18"/><rect class="card" x="770" y="10" width="720" height="410" rx="18"/>
+  <text class="head" x="45" y="60">Cluster sampling</text><text class="sub" x="45" y="94">Randomly choose groups; take every text inside</text>
+  <g transform="translate(70 125)">
+    <g class="cluster"><rect width="130" height="105" rx="24"/><circle class="dot" cx="30" cy="30" r="9"/><circle class="dot" cx="65" cy="30" r="9"/><circle class="dot" cx="100" cy="30" r="9"/><circle class="dot" cx="47" cy="70" r="9"/><circle class="dot" cx="83" cy="70" r="9"/></g>
+    <g class="chosen" transform="translate(155 0)"><rect width="130" height="105" rx="24"/><circle class="pick" cx="30" cy="30" r="10"/><circle class="pick" cx="65" cy="30" r="10"/><circle class="pick" cx="100" cy="30" r="10"/><circle class="pick" cx="47" cy="70" r="10"/><circle class="pick" cx="83" cy="70" r="10"/></g>
+    <g class="cluster" transform="translate(310 0)"><rect width="130" height="105" rx="24"/><circle class="dot" cx="30" cy="30" r="9"/><circle class="dot" cx="65" cy="30" r="9"/><circle class="dot" cx="100" cy="30" r="9"/><circle class="dot" cx="47" cy="70" r="9"/><circle class="dot" cx="83" cy="70" r="9"/></g>
+    <g class="chosen" transform="translate(465 0)"><rect width="130" height="105" rx="24"/><circle class="pick" cx="30" cy="30" r="10"/><circle class="pick" cx="65" cy="30" r="10"/><circle class="pick" cx="100" cy="30" r="10"/><circle class="pick" cx="47" cy="70" r="10"/><circle class="pick" cx="83" cy="70" r="10"/></g>
+  </g>
+  <text class="benefit" x="45" y="315">Benefit: cheaper retrieval and coding</text><text class="sub" x="45" y="353">Example: sample outlet-days, code all stories</text><text class="sub" x="45" y="386">Cost: texts within a group may be very similar</text>
+  <text class="head" x="805" y="60">Multistage sampling</text><text class="sub" x="805" y="94">Sample groups, then sample texts inside them</text>
+  <g transform="translate(815 125)">
+    <g class="chosen"><rect width="145" height="110" rx="24"/><circle class="dot" cx="32" cy="32" r="9"/><circle class="pick" cx="72" cy="32" r="11"/><circle class="dot" cx="112" cy="32" r="9"/><circle class="pick" cx="52" cy="75" r="11"/><circle class="dot" cx="94" cy="75" r="9"/></g>
+    <g class="cluster" transform="translate(175 0)"><rect width="145" height="110" rx="24"/><circle class="dot" cx="32" cy="32" r="9"/><circle class="dot" cx="72" cy="32" r="9"/><circle class="dot" cx="112" cy="32" r="9"/><circle class="dot" cx="52" cy="75" r="9"/><circle class="dot" cx="94" cy="75" r="9"/></g>
+    <path class="arrow" d="M335 55 H410"/>
+    <g transform="translate(440 5)"><circle class="pick" cx="25" cy="25" r="14"/><circle class="pick" cx="80" cy="25" r="14"/><circle class="pick" cx="135" cy="25" r="14"/><text class="sub" x="4" y="85">final texts</text></g>
+  </g>
+  <text class="benefit" x="805" y="315">Benefit: makes huge populations feasible</text><text class="sub" x="805" y="353">Example: outlets → dates → stories</text><text class="sub" x="805" y="386">Cost: retain probabilities from every stage</text>
+</svg>

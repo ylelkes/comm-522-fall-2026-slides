@@ -8,6 +8,16 @@ format:
     link-external-newwindow: true
 ---
 
+## Week 9
+
+### Sampling, Selection, and Scope
+
+Using selection bias, sampling on the dependent variable, and M-STOUT to design a text-coding sample and state exactly what its descriptive patterns can represent.
+
+[Student slides — no speaker notes](week-09/student.html){.btn .btn-primary role="button"}
+
+[Plain presentation — notes in Speaker View](week-09/presenter.html) · [Slides with visible notes](week-09/with-notes.html) · [Instructor discussion notes](week-09/instructor-notes.html)
+
 ## Week 7
 
 ### Measurement and Description

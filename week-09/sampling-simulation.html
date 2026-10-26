@@ -1,0 +1,133 @@
+<script>
+(() => {
+  const root = document.getElementById('sampling-simulation');
+  if (!root) return;
+
+  const population = root.querySelector('[data-population]');
+  const history = root.querySelector('[data-history]');
+  const sampleShare = root.querySelector('[data-sample-share]');
+  const runningMean = root.querySelector('[data-running-mean]');
+  const sizeButtons = [...root.querySelectorAll('[data-size]')];
+  const drawButton = root.querySelector('[data-draw]');
+  const runButton = root.querySelector('[data-run]');
+  const clearButton = root.querySelector('[data-clear]');
+  let sampleSize = 10;
+  let estimates = [];
+  let timer = null;
+
+  const dots = Array.from({length: 100}, (_, index) => {
+    const dot = document.createElement('span');
+    dot.className = index < 30 ? 'sim-dot gold' : 'sim-dot';
+    dot.setAttribute('aria-hidden', 'true');
+    population.appendChild(dot);
+    return dot;
+  });
+
+  function drawSample() {
+    const order = Array.from({length: 100}, (_, index) => index);
+    for (let i = order.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [order[i], order[j]] = [order[j], order[i]];
+    }
+    const chosen = new Set(order.slice(0, sampleSize));
+    dots.forEach((dot, index) => dot.classList.toggle('selected', chosen.has(index)));
+    const estimate = order.slice(0, sampleSize).filter(index => index < 30).length / sampleSize;
+    estimates.push(estimate);
+    if (estimates.length > 30) estimates.shift();
+    render(estimate);
+  }
+
+  function render(estimate) {
+    sampleShare.textContent = `${Math.round(estimate * 100)}% gold`;
+    const mean = estimates.reduce((sum, value) => sum + value, 0) / estimates.length;
+    runningMean.textContent = `${(mean * 100).toFixed(1)}%`;
+    history.replaceChildren();
+    estimates.forEach((value, index) => {
+      const mark = document.createElement('span');
+      mark.className = 'sim-estimate';
+      mark.style.left = `${Math.min(100, value / 0.6 * 100)}%`;
+      mark.style.top = `${6 + (index % 5) * 16}%`;
+      mark.title = `Sample ${index + 1}: ${Math.round(value * 100)}%`;
+      history.appendChild(mark);
+    });
+  }
+
+  function stopRun() {
+    if (timer) window.clearInterval(timer);
+    timer = null;
+    runButton.textContent = 'Run 30 samples';
+  }
+
+  function startRun() {
+    stopRun();
+    estimates = [];
+    runButton.textContent = 'Pause';
+    let draws = 0;
+    drawSample();
+    draws += 1;
+    timer = window.setInterval(() => {
+      drawSample();
+      draws += 1;
+      if (draws >= 30) stopRun();
+    }, 220);
+  }
+
+  function clearAll() {
+    stopRun();
+    estimates = [];
+    history.replaceChildren();
+    sampleShare.textContent = '—';
+    runningMean.textContent = '—';
+    dots.forEach(dot => dot.classList.remove('selected'));
+  }
+
+  root.addEventListener('pointerdown', event => event.stopPropagation());
+  root.addEventListener('click', event => event.stopPropagation());
+
+  sizeButtons.forEach(button => button.addEventListener('click', event => {
+    event.stopPropagation();
+    sampleSize = Number(button.dataset.size);
+    clearAll();
+    sizeButtons.forEach(candidate => candidate.setAttribute('aria-pressed', String(candidate === button)));
+  }));
+
+  drawButton.addEventListener('click', event => {
+    event.stopPropagation();
+    stopRun();
+    drawSample();
+  });
+
+  if (clearButton) {
+    clearButton.addEventListener('click', event => {
+      event.stopPropagation();
+      clearAll();
+    });
+  }
+
+  runButton.addEventListener('click', event => {
+    event.stopPropagation();
+    if (timer) {
+      stopRun();
+      return;
+    }
+    startRun();
+  });
+
+  // Begin with a visible draw. When Reveal is available, animate once as the
+  // instructor enters the slide; this also avoids relying on a first click.
+  drawSample();
+  if (window.Reveal && typeof window.Reveal.on === 'function') {
+    let hasAnimated = false;
+    const animateOnEntry = event => {
+      const current = event?.currentSlide || window.Reveal.getCurrentSlide();
+      if (!hasAnimated && current && current.contains(root)) {
+        hasAnimated = true;
+        window.setTimeout(startRun, 350);
+      }
+    };
+    window.Reveal.on('ready', animateOnEntry);
+    window.Reveal.on('slidechanged', animateOnEntry);
+    animateOnEntry();
+  }
+})();
+</script>

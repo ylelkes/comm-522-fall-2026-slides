@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="470" viewBox="0 0 760 470" role="img" aria-labelledby="title desc">
+  <title id="title">Müller-Lyer illusion</title>
+  <desc id="desc">Two horizontal lines of exactly equal length. Outward-facing fins surround the top line and inward-facing arrowheads surround the bottom line, making their lengths appear different.</desc>
+  <style>.main{stroke:#18324a;stroke-width:10;stroke-linecap:round}.fin{stroke:#b24a3c;stroke-width:9;stroke-linecap:round}.label{font:700 30px Arial,sans-serif;fill:#18324a}.note{font:24px Arial,sans-serif;fill:#526572}</style>
+  <text class="label" x="380" y="52" text-anchor="middle">Which horizontal line is longer?</text>
+  <g transform="translate(0 18)">
+    <line class="main" x1="210" y1="145" x2="550" y2="145"/>
+    <line class="fin" x1="210" y1="145" x2="155" y2="95"/><line class="fin" x1="210" y1="145" x2="155" y2="195"/>
+    <line class="fin" x1="550" y1="145" x2="605" y2="95"/><line class="fin" x1="550" y1="145" x2="605" y2="195"/>
+    <line class="main" x1="210" y1="300" x2="550" y2="300"/>
+    <line class="fin" x1="210" y1="300" x2="265" y2="250"/><line class="fin" x1="210" y1="300" x2="265" y2="350"/>
+    <line class="fin" x1="550" y1="300" x2="495" y2="250"/><line class="fin" x1="550" y1="300" x2="495" y2="350"/>
+  </g>
+  <text class="note" x="380" y="438" text-anchor="middle">The horizontal segments are exactly the same length.</text>
+</svg>

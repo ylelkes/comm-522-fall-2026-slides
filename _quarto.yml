@@ -8,6 +8,7 @@ project:
     - python3 week-05/sync-notes.py
     - python3 week-06/sync-notes.py
     - python3 week-07/sync-notes.py
+    - python3 week-09/sync-notes.py
   post-render:
     - python3 week-02/finalize-student.py
     - python3 week-03/finalize-student.py
@@ -15,6 +16,7 @@ project:
     - python3 week-05/finalize-student.py
     - python3 week-06/finalize-student.py
     - python3 week-07/finalize-student.py
+    - python3 week-09/finalize-student.py
   render:
     - index.qmd
     - week-*/index.qmd
@@ -43,3 +45,7 @@ project:
     - week-07/presenter.qmd
     - week-07/with-notes.qmd
     - week-07/instructor-notes.qmd
+
+    - week-09/presenter.qmd
+    - week-09/with-notes.qmd
+    - week-09/instructor-notes.qmd

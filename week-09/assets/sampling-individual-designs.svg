@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="430" viewBox="0 0 1500 430" role="img" aria-labelledby="title desc">
+  <title id="title">Three ways to sample individual texts</title>
+  <desc id="desc">Simple random sampling selects scattered texts, stratified sampling selects within every subgroup, and systematic sampling selects every kth text after a random start.</desc>
+  <style>
+    .card{fill:#fffdf8;stroke:#c8c2b7;stroke-width:3}.head{font:700 30px Arial,sans-serif;fill:#18324a}.sub{font:22px Arial,sans-serif;fill:#526572}.benefit{font:700 23px Arial,sans-serif;fill:#b24a3c}.dot{fill:#aeb7bd}.pick{fill:#b24a3c;stroke:#18324a;stroke-width:3}.line{stroke:#d5aa55;stroke-width:4}.label{font:700 20px Arial,sans-serif;fill:#2f6687}
+  </style>
+  <rect class="card" x="10" y="10" width="470" height="410" rx="18"/><rect class="card" x="515" y="10" width="470" height="410" rx="18"/><rect class="card" x="1020" y="10" width="470" height="410" rx="18"/>
+  <text class="head" x="45" y="58">Simple random</text><text class="sub" x="45" y="91">Equal known chance for every text</text>
+  <g transform="translate(62 123)">
+    <circle class="dot" cx="20" cy="20" r="11"/><circle class="pick" cx="70" cy="20" r="13"/><circle class="dot" cx="120" cy="20" r="11"/><circle class="dot" cx="170" cy="20" r="11"/><circle class="pick" cx="220" cy="20" r="13"/><circle class="dot" cx="270" cy="20" r="11"/><circle class="dot" cx="320" cy="20" r="11"/>
+    <circle class="dot" cx="20" cy="70" r="11"/><circle class="dot" cx="70" cy="70" r="11"/><circle class="dot" cx="120" cy="70" r="11"/><circle class="pick" cx="170" cy="70" r="13"/><circle class="dot" cx="220" cy="70" r="11"/><circle class="dot" cx="270" cy="70" r="11"/><circle class="pick" cx="320" cy="70" r="13"/>
+    <circle class="pick" cx="20" cy="120" r="13"/><circle class="dot" cx="70" cy="120" r="11"/><circle class="dot" cx="120" cy="120" r="11"/><circle class="dot" cx="170" cy="120" r="11"/><circle class="dot" cx="220" cy="120" r="11"/><circle class="pick" cx="270" cy="120" r="13"/><circle class="dot" cx="320" cy="120" r="11"/>
+  </g>
+  <text class="benefit" x="45" y="335">Benefit: clean overall estimate</text><text class="sub" x="45" y="370">Best with a complete frame</text>
+  <text class="head" x="550" y="58">Stratified</text><text class="sub" x="550" y="91">Random draw inside every subgroup</text>
+  <g transform="translate(562 116)">
+    <rect x="0" y="0" width="370" height="54" rx="8" fill="#dce9f0"/><text class="label" x="12" y="34">Outlet A</text><circle class="dot" cx="145" cy="27" r="10"/><circle class="pick" cx="185" cy="27" r="13"/><circle class="dot" cx="225" cy="27" r="10"/><circle class="dot" cx="265" cy="27" r="10"/><circle class="pick" cx="305" cy="27" r="13"/><circle class="dot" cx="345" cy="27" r="10"/>
+    <rect x="0" y="66" width="370" height="54" rx="8" fill="#f6e8c8"/><text class="label" x="12" y="100">Outlet B</text><circle class="pick" cx="145" cy="93" r="13"/><circle class="dot" cx="185" cy="93" r="10"/><circle class="dot" cx="225" cy="93" r="10"/><circle class="pick" cx="265" cy="93" r="13"/><circle class="dot" cx="305" cy="93" r="10"/><circle class="dot" cx="345" cy="93" r="10"/>
+    <rect x="0" y="132" width="370" height="54" rx="8" fill="#efd8d4"/><text class="label" x="12" y="166">Outlet C</text><circle class="dot" cx="145" cy="159" r="10"/><circle class="dot" cx="185" cy="159" r="10"/><circle class="pick" cx="225" cy="159" r="13"/><circle class="dot" cx="265" cy="159" r="10"/><circle class="dot" cx="305" cy="159" r="10"/><circle class="pick" cx="345" cy="159" r="13"/>
+  </g>
+  <text class="benefit" x="550" y="335">Benefit: precise comparisons</text><text class="sub" x="550" y="370">Every planned group contributes</text>
+  <text class="head" x="1055" y="58">Systematic</text><text class="sub" x="1055" y="91">Random start, then every kth text</text>
+  <g transform="translate(1060 145)">
+    <line class="line" x1="15" y1="48" x2="385" y2="48"/>
+    <circle class="dot" cx="20" cy="48" r="11"/><circle class="pick" cx="65" cy="48" r="13"/><circle class="dot" cx="110" cy="48" r="11"/><circle class="dot" cx="155" cy="48" r="11"/><circle class="dot" cx="200" cy="48" r="11"/><circle class="pick" cx="245" cy="48" r="13"/><circle class="dot" cx="290" cy="48" r="11"/><circle class="dot" cx="335" cy="48" r="11"/><circle class="dot" cx="380" cy="48" r="11"/>
+    <text class="label" x="48" y="20">start</text><path d="M70 25 L67 34" stroke="#2f6687" stroke-width="3"/><text class="label" x="128" y="105">same interval</text>
+  </g>
+  <text class="benefit" x="1055" y="335">Benefit: coverage across a list</text><text class="sub" x="1055" y="370">Fast and evenly dispersed</text>
+</svg>
