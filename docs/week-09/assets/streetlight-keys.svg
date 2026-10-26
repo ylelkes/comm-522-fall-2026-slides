@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="streetlight-title">
+  <title id="streetlight-title">A person crouches searching the ground under a streetlight, while a key lies unnoticed in the dark some distance away</title>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f1f"/>
+      <stop offset="100%" stop-color="#141b33"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="0%" r="75%">
+      <stop offset="0%" stop-color="#ffe9a8" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#ffd166" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pool" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9a8" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#ffd166" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="560" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.5">
+    <circle cx="80" cy="60" r="1.6"/>
+    <circle cx="150" cy="110" r="1.2"/>
+    <circle cx="640" cy="50" r="1.6"/>
+    <circle cx="730" cy="90" r="1.2"/>
+    <circle cx="820" cy="140" r="1.6"/>
+    <circle cx="60" cy="180" r="1.2"/>
+    <circle cx="500" cy="40" r="1.2"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="470" width="900" height="90" fill="#0c1222"/>
+
+  <!-- light cone from lamp -->
+  <polygon points="330,150 220,470 440,470" fill="url(#glow)"/>
+
+  <!-- pool of light on the ground -->
+  <ellipse cx="330" cy="470" rx="140" ry="34" fill="url(#pool)"/>
+
+  <!-- streetlight pole -->
+  <rect x="322" y="150" width="14" height="320" fill="#1d2740"/>
+  <rect x="300" y="138" width="58" height="16" rx="4" fill="#232e4c"/>
+  <circle cx="329" cy="146" r="16" fill="#fff6d8"/>
+  <circle cx="329" cy="146" r="28" fill="#ffe9a8" opacity="0.5"/>
+
+  <!-- person crouched, searching under the light -->
+  <g transform="translate(300,430)">
+    <!-- back leg -->
+    <path d="M30,66 C34,48 30,36 40,24" stroke="#060a16" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- front leg, bent -->
+    <path d="M58,66 C56,50 62,40 50,26" stroke="#060a16" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- torso bent forward -->
+    <path d="M40,24 C34,10 44,-6 62,-10" stroke="#060a16" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <!-- arm reaching down to the ground -->
+    <path d="M58,-6 C72,4 78,18 82,34" stroke="#060a16" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- head, looking down -->
+    <circle cx="68" cy="-22" r="11" fill="#060a16"/>
+  </g>
+
+  <!-- faint, unnoticed key lying in the dark, off to the right -->
+  <g transform="translate(700,478) rotate(18)" opacity="0.38">
+    <circle cx="0" cy="0" r="9" fill="none" stroke="#9aa7c8" stroke-width="3"/>
+    <rect x="8" y="-2.5" width="26" height="5" fill="#9aa7c8"/>
+    <rect x="30" y="-2.5" width="5" height="9" fill="#9aa7c8"/>
+    <rect x="22" y="2.5" width="5" height="7" fill="#9aa7c8"/>
+  </g>
+</svg>

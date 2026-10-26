@@ -29,7 +29,15 @@ lang: en
 
 ## Looking for keys under the streetlight
 
-> A person searches under a streetlight, not because the keys were lost there, but because that is where the light is.
+![](assets/streetlight-keys.svg){height="440px" fig-alt="A person crouches searching the ground under a streetlight, while a key lies unnoticed in the dark some distance away"}
+
+::: notes
+Tell the streetlight story in full before revealing why it's here. A police officer sees someone searching the ground beneath a streetlight and asks where the keys were lost. The person points to a dark area farther away. When the officer asks why they are searching here, the person answers: “Because the light is better here.”
+
+The joke describes a research-design problem. Researchers often study the setting where data are visible rather than the setting that best represents the theoretical target. Hold on this image — do not name Twitter yet. Let students sit with the metaphor before the next slide names the platform.
+:::
+
+## Where the light happened to be: Twitter's public API
 
 Twitter's public API made one platform unusually visible to researchers.
 
@@ -44,9 +52,7 @@ Source: Murtfeldt et al. (2024), preprint.
 :::
 
 ::: notes
-Tell the streetlight story in full. A police officer sees someone searching the ground beneath a streetlight and asks where the keys were lost. The person points to a dark area farther away. When the officer asks why they are searching here, the person answers: “Because the light is better here.”
-
-The joke describes a research-design problem. Researchers often study the setting where data are visible rather than the setting that best represents the theoretical target. For many years, Twitter offered unusually broad, documented, and inexpensive API access. Facebook, private messaging, offline conversations, and many non-Western platforms were much harder to observe. Twitter therefore became the illuminated patch of ground.
+For many years, Twitter offered unusually broad, documented, and inexpensive API access. Facebook, private messaging, offline conversations, and many non-Western platforms were much harder to observe. Twitter therefore became the illuminated patch of ground.
 
 Murtfeldt and colleagues searched eight bibliographic databases and three related APIs. They identified 27,453 studies using Twitter data between 2006 and 2023, published in 7,432 venues across 14 disciplines and cited more than 1.3 million times. The study is a preprint, so present the count as a bibliometric estimate rather than an exact census.
 
@@ -205,6 +211,14 @@ People want to sample posts from **Twitter/X** to represent what the public is t
 2.  **How would you do it?** What would you sample?
 3.  **What issues might come up?** What could you claim at the end?
 
+::: {.fragment .key-line}
+A real example: Tumasjan et al. (2010) counted mentions of each German party across tweets and argued the volume "mirrors the election result" closely enough to replace polls.
+:::
+
+::: source
+Source: Tumasjan, Sprenger, Sandner, and Welpe (2010), ICWSM.
+:::
+
 ::: notes
 Open with the design problem before showing any evidence. Give students two minutes in pairs on the three questions, then collect answers on the board.
 
@@ -222,6 +236,16 @@ For “What issues might come up?”, draw out as many of these as possible befo
 -   **Talk is not opinion.** What people post about is not the same as what they think or care about.
 
 Let students decide whether it is a good idea. The answer the next slide supports: it can be a good design for describing **what active posters on the platform said**, and a poor one for describing **the public**.
+
+Reveal the Tumasjan et al. (2010) example after students have proposed their own designs, not before. The authors collected over 100,000 tweets mentioning a German federal-election party or politician in the month before the 2009 election, counted mentions per party, and found the mention shares came close to the parties' vote shares. They concluded that tweet volume could "reflect the current political landscape" and "plausibly be seen as a reflection of the offline political sentiment," floating Twitter as a low-cost substitute for polling.
+
+Jungherr, Jürgens, and Schoen (2012) re-ran the same design and showed the fit was fragile rather than a robust feature of political talk. Dropping a single party from the count, the Pirate Party, which was heavily discussed on Twitter but won under 2% of the vote, changed the ranking of the other parties' predicted results. The original match depended on specific, undisclosed choices about which parties and accounts to include, not on a stable relationship between posting volume and vote share.
+
+Use the pairing to make the point concrete: Tumasjan et al. ran exactly the naive design students will propose (count mentions of each option, treat the count as a proxy for opinion), and it produced a publishable, widely covered finding that did not survive a reanalysis of who was included in the count. This is the streetlight problem with a citation attached.
+
+Sources: Andranik Tumasjan, Timm O. Sprenger, Philipp G. Sandner, and Isabell M. Welpe. 2010. "Predicting Elections with Twitter: What 140 Characters Reveal about Political Sentiment." *Proceedings of the Fourth International AAAI Conference on Weblogs and Social Media (ICWSM)*: 178–185. https://ojs.aaai.org/index.php/ICWSM/article/view/14009
+
+Andreas Jungherr, Pascal Jürgens, and Harald Schoen. 2012. "Why the Pirate Party Won the German Election of 2009 or the Trouble with Predictions: A Response to Tumasjan, Sprenger, Sandner, and Welpe." *Social Science Computer Review* 30(2): 229–234. https://doi.org/10.1177/0894439311404119
 :::
 
 ## Case 4 evidence: Who is in the corpus? {#who-is-in-a-twitter-corpus}
@@ -375,7 +399,7 @@ Show the moves without the answers. Work through the same claim rather than imme
 
 | Move | What can go wrong? | Scope consequence |
 |------------------------|------------------------|------------------------|
-| Target → frame | Database omits outlets or the query misses thematic language | Missing stories may frame the issue differently |
+| Target → frame | Search metropolitan newspapers for “eviction,” missing housing-policy stories about zoning, rents, or supply | The frame overrepresents event-centered stories, inflating episodic framing |
 | Frame → selected | Choose prominent events or top-ranked search results | Event-centered stories can inflate episodic framing |
 | Selected → coded | Paywalls, deletion, duplicates, or exclusions | The coded set may have a different frame prevalence |
 | Coded → claim | Count paragraphs but report a proportion of stories | The estimate answers a different framing question |
@@ -390,7 +414,7 @@ Walk through the table as five separate inferential moves.
 
 Keep returning to the numerical claim: the proportion of eligible stories using an episodic frame.
 
-Target to frame is a coverage problem. Suppose the target is all newspaper coverage of housing insecurity, but the database contains mostly large metropolitan outlets or the search query uses the word “eviction” while missing stories about housing policy. Stories outside the frame have no chance of selection. If the omitted stories use more thematic framing, the observed episodic percentage will be too high. A larger sample from that same frame cannot repair the omission.
+Target to frame is a coverage problem. Suppose the target is all housing-affordability coverage in metropolitan newspapers, but the search uses only the word “eviction.” It captures stories about particular tenants and eviction proceedings while missing policy stories filed under terms such as zoning, rent stabilization, affordable-housing construction, or housing supply. Because those omitted policy stories are more likely to use thematic framing, the observed episodic percentage will be too high. A larger sample from that same search frame cannot repair the omission.
 
 Frame to selected is a sampling problem. Selecting the first search results, the most-shared stories, or coverage of memorable crises can favor stories organized around concrete people and events. Those stories may be more episodic than routine policy reporting. The resulting percentage may accurately describe prominent event stories but not the full frame.
 

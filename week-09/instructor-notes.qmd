@@ -26,9 +26,15 @@ Figures from Bergstrom and West, Findley, Kikuta, and Denly, and Henrich, Heine,
 
 ### Slide 2: Looking for keys under the streetlight
 
-Tell the streetlight story in full. A police officer sees someone searching the ground beneath a streetlight and asks where the keys were lost. The person points to a dark area farther away. When the officer asks why they are searching here, the person answers: “Because the light is better here.”
+Tell the streetlight story in full before revealing why it's here. A police officer sees someone searching the ground beneath a streetlight and asks where the keys were lost. The person points to a dark area farther away. When the officer asks why they are searching here, the person answers: “Because the light is better here.”
 
-The joke describes a research-design problem. Researchers often study the setting where data are visible rather than the setting that best represents the theoretical target. For many years, Twitter offered unusually broad, documented, and inexpensive API access. Facebook, private messaging, offline conversations, and many non-Western platforms were much harder to observe. Twitter therefore became the illuminated patch of ground.
+The joke describes a research-design problem. Researchers often study the setting where data are visible rather than the setting that best represents the theoretical target. Hold on this image — do not name Twitter yet. Let students sit with the metaphor before the next slide names the platform.
+
+**Transition:** next, Where the light happened to be: Twitter's public API
+
+### Slide 3: Where the light happened to be: Twitter's public API
+
+For many years, Twitter offered unusually broad, documented, and inexpensive API access. Facebook, private messaging, offline conversations, and many non-Western platforms were much harder to observe. Twitter therefore became the illuminated patch of ground.
 
 Murtfeldt and colleagues searched eight bibliographic databases and three related APIs. They identified 27,453 studies using Twitter data between 2006 and 2023, published in 7,432 venues across 14 disciplines and cited more than 1.3 million times. The study is a preprint, so present the count as a bibliometric estimate rather than an exact census.
 
@@ -40,7 +46,7 @@ Source: Ryan Murtfeldt, Naomi Alterman, Ihsan Kahveci, and Jevin D. West. 2024. 
 
 **Transition:** next, Today's route
 
-### Slide 3: Today's route
+### Slide 4: Today's route
 
 Frame the session as four parts. Part 1 uses four real cases to show credible evidence answering a narrower question than the claim attached to it. Part 2 slows down and builds a text sample link by link, using Bergstrom and West to make selection intuitive. Part 3 gives the vocabulary for scope: generalizability, transportability, Henrich and colleagues' WEIRD critique, and Findley, Kikuta, and Denly's M-STOUT. Part 4 turns all of it into decisions for the coding project.
 
@@ -48,7 +54,7 @@ Tell students each part opens with a divider slide that repeats its question, so
 
 **Transition:** next, Four cases, one puzzle
 
-### Slide 4: Four cases, one puzzle
+### Slide 5: Four cases, one puzzle
 
 Introduce the cases before naming the framework. Tell students that each study produced informative evidence for the cases it actually observed. The problem arose when someone treated that evidence as an answer for a broader or different target.
 
@@ -56,7 +62,7 @@ Ask students to listen for what changed between the evidence and the target. Do 
 
 **Transition:** next, Case 1: Opower at scale
 
-### Slide 5: Case 1: Opower at scale
+### Slide 6: Case 1: Opower at scale
 
 Open with the puzzle: “What exactly did random assignment protect, and what did it leave exposed?” Random assignment protected the causal comparison inside each participating site. It did not make the first ten sites representative of later sites or make the initially targeted customers representative of later customers.
 
@@ -78,7 +84,7 @@ Source: Hunt Allcott. 2015. “Site Selection Bias in Program Evaluation.” *Qu
 
 **Transition:** next, Case 2: Nudges in journals and government
 
-### Slide 6: Case 2: Nudges in journals and government
+### Slide 7: Case 2: Nudges in journals and government
 
 Before explaining the gap, ask: “Why might published experiments average 8.7 points while a complete government archive averages 1.4?” Sort responses into differences in the studies themselves and differences in which studies become visible.
 
@@ -98,7 +104,7 @@ Source: Stefano DellaVigna and Elizabeth Linos. 2022. “RCTs to Scale: Comprehe
 
 **Transition:** next, Case 3: Seven days of newspaper coverage
 
-### Slide 7: Case 3: Seven days of newspaper coverage
+### Slide 8: Case 3: Seven days of newspaper coverage
 
 Keep the result hidden and ask: “Which seven-day design should work better: seven consecutive days, seven randomly selected days, or one randomly chosen Monday through Sunday from different weeks?” Ask students to justify the prediction before revealing the 100 / 95 / 85 result.
 
@@ -118,7 +124,7 @@ Source: Daniel Riffe, Charles F. Aust, and Stephen R. Lacy. 1993. “The Effecti
 
 **Transition:** next, Case 4: What is the public talking about?
 
-### Slide 8: Case 4: What is the public talking about?
+### Slide 9: Case 4: What is the public talking about?
 
 Open with the design problem before showing any evidence. Give students two minutes in pairs on the three questions, then collect answers on the board.
 
@@ -137,9 +143,19 @@ For “What issues might come up?”, draw out as many of these as possible befo
 
 Let students decide whether it is a good idea. The answer the next slide supports: it can be a good design for describing **what active posters on the platform said**, and a poor one for describing **the public**.
 
+Reveal the Tumasjan et al. (2010) example after students have proposed their own designs, not before. The authors collected over 100,000 tweets mentioning a German federal-election party or politician in the month before the 2009 election, counted mentions per party, and found the mention shares came close to the parties' vote shares. They concluded that tweet volume could "reflect the current political landscape" and "plausibly be seen as a reflection of the offline political sentiment," floating Twitter as a low-cost substitute for polling.
+
+Jungherr, Jürgens, and Schoen (2012) re-ran the same design and showed the fit was fragile rather than a robust feature of political talk. Dropping a single party from the count, the Pirate Party, which was heavily discussed on Twitter but won under 2% of the vote, changed the ranking of the other parties' predicted results. The original match depended on specific, undisclosed choices about which parties and accounts to include, not on a stable relationship between posting volume and vote share.
+
+Use the pairing to make the point concrete: Tumasjan et al. ran exactly the naive design students will propose (count mentions of each option, treat the count as a proxy for opinion), and it produced a publishable, widely covered finding that did not survive a reanalysis of who was included in the count. This is the streetlight problem with a citation attached.
+
+Sources: Andranik Tumasjan, Timm O. Sprenger, Philipp G. Sandner, and Isabell M. Welpe. 2010. "Predicting Elections with Twitter: What 140 Characters Reveal about Political Sentiment." *Proceedings of the Fourth International AAAI Conference on Weblogs and Social Media (ICWSM)*: 178–185. https://ojs.aaai.org/index.php/ICWSM/article/view/14009
+
+Andreas Jungherr, Pascal Jürgens, and Harald Schoen. 2012. "Why the Pirate Party Won the German Election of 2009 or the Trouble with Predictions: A Response to Tumasjan, Sprenger, Sandner, and Welpe." *Social Science Computer Review* 30(2): 229–234. https://doi.org/10.1177/0894439311404119
+
 **Transition:** next, Case 4 evidence: Who is in the corpus?
 
-### Slide 9: Case 4 evidence: Who is in the corpus?
+### Slide 10: Case 4 evidence: Who is in the corpus?
 
 This slide distinguishes a census of available posts from a representative sample of people. Heavy posters contribute many units, silent users contribute none, and nonusers cannot enter. A tweet-level proportion therefore weights prolific users more heavily unless the analyst changes the unit and weighting scheme.
 
@@ -159,7 +175,7 @@ Source: Adam G. Hughes, Stefan D. McCabe, William R. Hobbs, Emma Remy, Sono Shah
 
 **Transition:** next, What changed between the evidence and the claim?
 
-### Slide 10: What changed between the evidence and the claim?
+### Slide 11: What changed between the evidence and the claim?
 
 Use this as the debrief for the opening cases. Ask students to describe the right-hand shift in one sentence before introducing formal terminology.
 
@@ -169,7 +185,7 @@ Say: “The recurring problem is not necessarily that the observed evidence is w
 
 **Transition:** next, The target population comes first
 
-### Slide 11: The target population comes first
+### Slide 12: The target population comes first
 
 Make students write a population statement for their project. Push on nouns such as “media,” “news,” or “online discourse.” Those labels are too broad unless the frame truly covers them.
 
@@ -177,7 +193,7 @@ A stronger statement might be: “All English-language articles published betwee
 
 **Transition:** next, Estimands come before evidence
 
-### Slide 12: Estimands come before evidence
+### Slide 13: Estimands come before evidence
 
 Say: “Before we ask whether a sample is good, we need to know what quantity it is supposed to estimate.”
 
@@ -189,7 +205,7 @@ Ask students to complete: “The number we ultimately want to report is…” Do
 
 **Transition:** next, From a question to a coded dataset
 
-### Slide 13: From a question to a coded dataset
+### Slide 14: From a question to a coded dataset
 
 Define each link with a running project example: portrayal of campus protest in U.S. newspaper coverage during the 2026 academic year.
 
@@ -201,7 +217,7 @@ The sampling frame is the operational list from which the sample is drawn, analo
 
 **Transition:** next, Why each link can change the claim
 
-### Slide 14: Why each link can change the claim
+### Slide 15: Why each link can change the claim
 
 Say: “Suppose our research question is: What proportion of eligible news stories use an episodic frame?” Clarify the concept before discussing sampling. An episodic frame explains or depicts an issue through a particular event, person, or case—for example, a story about one family's eviction. A thematic frame places the issue in broader patterns, institutions, causes, or policy—for example, trends in rents, wages, and housing supply.
 
@@ -211,13 +227,13 @@ Show the moves without the answers. Work through the same claim rather than imme
 
 **Transition:** next, Why each link can change the claim
 
-### Slide 15: Why each link can change the claim
+### Slide 16: Why each link can change the claim
 
 Walk through the table as five separate inferential moves.
 
 Keep returning to the numerical claim: the proportion of eligible stories using an episodic frame.
 
-Target to frame is a coverage problem. Suppose the target is all newspaper coverage of housing insecurity, but the database contains mostly large metropolitan outlets or the search query uses the word “eviction” while missing stories about housing policy. Stories outside the frame have no chance of selection. If the omitted stories use more thematic framing, the observed episodic percentage will be too high. A larger sample from that same frame cannot repair the omission.
+Target to frame is a coverage problem. Suppose the target is all housing-affordability coverage in metropolitan newspapers, but the search uses only the word “eviction.” It captures stories about particular tenants and eviction proceedings while missing policy stories filed under terms such as zoning, rent stabilization, affordable-housing construction, or housing supply. Because those omitted policy stories are more likely to use thematic framing, the observed episodic percentage will be too high. A larger sample from that same search frame cannot repair the omission.
 
 Frame to selected is a sampling problem. Selecting the first search results, the most-shared stories, or coverage of memorable crises can favor stories organized around concrete people and events. Those stories may be more episodic than routine policy reporting. The resulting percentage may accurately describe prominent event stories but not the full frame.
 
@@ -231,7 +247,7 @@ Ask students to identify the weakest arrow in their current project plan. Requir
 
 **Transition:** next, Estimand: the proportion of protest stories using an episodic frame
 
-### Slide 16: Estimand: the proportion of protest stories using an episodic frame
+### Slide 17: Estimand: the proportion of protest stories using an episodic frame
 
 Begin by restating the research question and estimand. Say: “We want the proportion of all eligible newspaper stories about campus protest that use an episodic frame. The numerator is the eligible stories coded as episodic. The denominator is every eligible protest story in the target population.”
 
@@ -249,7 +265,7 @@ End with: “Retrieval is part of sampling because texts that the query cannot r
 
 **Transition:** next, The sampling unit changes what you see
 
-### Slide 17: The sampling unit changes what you see
+### Slide 18: The sampling unit changes what you see
 
 Start with Bergstrom and West's class-size example. A biology department offers 20 classes of 20 students and 4 classes of 200. Ask an administrator, who counts classes: the average class has (20 × 20 + 4 × 200) ÷ 24 = 50 students, and five classes in six are small. Now ask students. Eight hundred of the 1,200 students sit in the big classes, so the average student's class has (800 × 200 + 400 × 20) ÷ 1,200 = 140 students. A recruiting brochure saying “average class: 50” and a student government saying “the average student's class: 140” are both telling the truth. They sampled different units.
 
@@ -267,7 +283,7 @@ Connect to their projects. Sampling sentences gives long documents more chances.
 
 **Transition:** next, Selection bias
 
-### Slide 18: Selection bias
+### Slide 19: Selection bias
 
 Avoid reducing selection bias to “the sample is not random.” A sample can be nonrandom in irrelevant ways. Bias depends on whether inclusion relates to the target quantity.
 
@@ -275,7 +291,7 @@ For example, an alphabetical sample may be harmless for article tone if headline
 
 **Transition:** next, Selection bias creates associations that may not be there
 
-### Slide 19: Selection bias creates associations that may not be there
+### Slide 20: Selection bias creates associations that may not be there
 
 Explain Berkson's paradox without requiring the term collider. In the full population, attractiveness and niceness are nearly unrelated. Restricting attention to people who are sufficiently high on either trait creates a tradeoff. A second selection rule strengthens it.
 
@@ -283,7 +299,7 @@ Text example: editors publish stories that are either highly newsworthy or excep
 
 **Transition:** next, Selection into the archive can manufacture a pattern
 
-### Slide 20: Selection into the archive can manufacture a pattern
+### Slide 21: Selection into the archive can manufacture a pattern
 
 Walk through the three graphs one at a time, using the same logic as the attractiveness-and-niceness example.
 
@@ -301,7 +317,7 @@ Other examples: newspapers archive prominent stories more reliably than routine 
 
 **Transition:** next, Sampling on the dependent variable
 
-### Slide 21: Sampling on the dependent variable
+### Slide 22: Sampling on the dependent variable
 
 Sampling on the dependent variable means selecting cases based on the outcome or a close proxy for it. The resulting sample can be useful for studying what violence frames look like, but it cannot estimate how common violence framing is in all protest coverage.
 
@@ -309,7 +325,7 @@ The problem can be subtle. Students may say the query identifies “relevant” 
 
 **Transition:** next, What outcome-based sampling destroys
 
-### Slide 22: What outcome-based sampling destroys
+### Slide 23: What outcome-based sampling destroys
 
 Use a binary example. If every selected story includes a violence frame, the sample prevalence is 100 percent by construction. There is no outcome variation, so students cannot estimate whether framing differs by outlet or time.
 
@@ -317,7 +333,7 @@ Even partial outcome selection can distort associations. If highly emotional sto
 
 **Transition:** next, Familiar forms of sampling on the outcome
 
-### Slide 23: Familiar forms of sampling on the outcome
+### Slide 24: Familiar forms of sampling on the outcome
 
 Emphasize that many famous research designs begin from outcome-positive cases because those cases are visible and easy to name. The issue is not moral failure. The issue is that the selection rule limits the estimand.
 
@@ -325,7 +341,7 @@ Fact-check archives are especially relevant to text research. They describe clai
 
 **Transition:** next, Outcome-based samples can answer narrower questions
 
-### Slide 24: Outcome-based samples can answer narrower questions
+### Slide 25: Outcome-based samples can answer narrower questions
 
 Do not teach a blanket prohibition. Purposive selection can be excellent for concept development and identifying forms of a phenomenon. A set of misinformation cases can help students refine a codebook. It cannot, by itself, estimate misinformation's prevalence.
 
@@ -333,7 +349,7 @@ Case-control studies deliberately sample on outcomes, but they reconstruct compa
 
 **Transition:** next, Duplicates silently change the weights
 
-### Slide 25: Duplicates silently change the weights
+### Slide 26: Duplicates silently change the weights
 
 Do not answer the question on this slide. Give students thirty seconds to decide whether the wire story should count once or twenty-four times and require them to state the research question their choice answers.
 
@@ -343,7 +359,7 @@ Use the ambiguity to make the point that “duplicate” is not a purely technic
 
 **Transition:** next, The duplicate rule defines the estimand
 
-### Slide 26: The duplicate rule defines the estimand
+### Slide 27: The duplicate rule defines the estimand
 
 Now reveal the inferential consequence. Keeping all twenty-four publications gives the wire story twenty-four units because it was available through twenty-four outlets. That can be appropriate if the target is the coverage audiences could encounter or the set of outlet-level publication decisions.
 
@@ -355,7 +371,7 @@ Students should document the duplicate rule, similarity threshold, and which ver
 
 **Transition:** next, Time and availability shape the frame
 
-### Slide 27: Time and availability shape the frame
+### Slide 28: Time and availability shape the frame
 
 Stress that historical corpora are survivorship samples. Pages disappear, links rot, outlets change archives, and platform APIs return only permitted objects. “All posts” often means all posts still accessible through a particular interface at collection time.
 
@@ -363,7 +379,7 @@ For event-centered studies, the event may be part of the scope. Problems arise w
 
 **Transition:** next, What does this graph seem to show?
 
-### Slide 28: What does this graph seem to show?
+### Slide 29: What does this graph seem to show?
 
 Say: “Look at the right side of the graph. The average recorded age at death for rap and hip-hop musicians is roughly thirty, compared with ages in the sixties for several older genres.”
 
@@ -373,7 +389,7 @@ Then ask the crucial data question: “Who had to be included in a dataset measu
 
 **Transition:** next, Censoring: unequal opportunity to observe an outcome
 
-### Slide 29: Censoring: unequal opportunity to observe an outcome
+### Slide 30: Censoring: unequal opportunity to observe an outcome
 
 Reveal the explanation: hip-hop artists have had less calendar time to die at older ages. Blues and jazz have existed long enough for musicians from those genres to live into old age and then enter a dataset of deaths. Hip-hop emerged much later. Many hip-hop artists who will eventually die at seventy, eighty, or ninety are currently alive, so their eventual ages at death cannot yet appear. Among observed deaths, the newer genre is mechanically dominated by people who died unusually young.
 
@@ -393,7 +409,7 @@ End with: “Censoring is unequal opportunity to observe an outcome. It matters 
 
 **Transition:** next, Probability and purposive samples answer different questions
 
-### Slide 30: Probability and purposive samples answer different questions
+### Slide 31: Probability and purposive samples answer different questions
 
 Students will use both logics in the project. Purposive selection is useful for stress-testing a codebook: a handful of borderline or unusual texts reveals where the coding rules break. Probability selection is what supports the descriptive estimate, and, as we will see at the end of this part, the reliability estimate as well.
 
@@ -401,7 +417,7 @@ Preview the pilot: because the pilot sample is used both to build the codebook a
 
 **Transition:** next, Random does not mean perfectly representative
 
-### Slide 31: Random does not mean perfectly representative
+### Slide 32: Random does not mean perfectly representative
 
 Say: “This population contains one hundred texts. Thirty are gold. Imagine gold means the text contains our coded frame. Because we can see the entire population, we know the true prevalence is 30 percent.”
 
@@ -417,7 +433,7 @@ For their project, preserve the complete list of eligible text IDs, use a reprod
 
 **Transition:** next, Three ways to sample individual texts
 
-### Slide 32: Three ways to sample individual texts
+### Slide 33: Three ways to sample individual texts
 
 Say: “These three designs select individual texts. The difference is how the draw is organized.”
 
@@ -433,7 +449,7 @@ Conclude: “Choose the design from the claim. Simple random sampling prioritize
 
 **Transition:** next, Two ways to sample groups before texts
 
-### Slide 33: Two ways to sample groups before texts
+### Slide 34: Two ways to sample groups before texts
 
 Say: “Sometimes the practical unit we can sample first is a group rather than a text.”
 
@@ -449,7 +465,7 @@ For most student projects, do not use multistage sampling merely because it soun
 
 **Transition:** next, Choose the design from the inferential goal
 
-### Slide 34: Choose the design from the inferential goal
+### Slide 35: Choose the design from the inferential goal
 
 Use this as the decision slide after the diagrams. Ask students to state their primary inferential goal before naming a method.
 
@@ -459,7 +475,7 @@ The same project may combine designs. A team might stratify by outlet type and d
 
 **Transition:** next, When you cannot draw a probability sample
 
-### Slide 35: When you cannot draw a probability sample
+### Slide 36: When you cannot draw a probability sample
 
 Say: “Most of you will not have a complete list of texts and a random-number generator. That does not end the project; it changes the claim.”
 
@@ -473,7 +489,7 @@ Remind students not to stratify on the coded concept itself: that is sampling on
 
 **Transition:** next, How many texts do you need?
 
-### Slide 36: How many texts do you need?
+### Slide 37: How many texts do you need?
 
 These are simple-random-sample margins: 1.96 × √(p(1 − p)/n). The useful rule of thumb is that quadrupling the sample halves the margin. Going from 300 to 1,200 texts takes the margin near 50 percent prevalence from about ±6 to about ±3 points.
 
@@ -487,7 +503,7 @@ Avoid giving a universal minimum. A study estimating one overall proportion need
 
 **Transition:** next, The pilot sample: build the codebook, then test it
 
-### Slide 37: The pilot sample: build the codebook, then test it
+### Slide 38: The pilot sample: build the codebook, then test it
 
 Say: “Your pilot sample does two jobs: it is where you build the codebook, and it is where you show the codebook is reliable. Both jobs are sampling problems.”
 
@@ -505,13 +521,13 @@ Practical steps: draw pilot IDs with a recorded seed and flag them in the datase
 
 **Transition:** next, How far does the claim travel?
 
-### Slide 38: How far does the claim travel?
+### Slide 39: How far does the claim travel?
 
 Mark the turn. Part 2 asked how to get an accurate estimate for the population a sample was drawn from. Part 3 asks how far beyond that population the result can travel. Remind students of the four opening cases: each had credible evidence, and each was stretched to a different target. We now name what changed, starting with external validity and ending with M-STOUT.
 
 **Transition:** next, External validity
 
-### Slide 39: External validity
+### Slide 40: External validity
 
 Now name the shared problem. External validity concerns the relationship between an inference and its intended target. It is not a permanent badge attached to an experiment, a dataset, or a sampling method.
 
@@ -523,7 +539,7 @@ Source: Findley, Kikuta, and Denly (2021), pp. 365–373.
 
 **Transition:** next, Measurement and external-validity estimands
 
-### Slide 40: Measurement and external-validity estimands
+### Slide 41: Measurement and external-validity estimands
 
 Say: “There are two targets embedded in a content-analysis claim.”
 
@@ -537,7 +553,7 @@ External validity goes wrong when a study estimates the measurement quantity wit
 
 **Transition:** next, Generalizability and transportability
 
-### Slide 41: Generalizability and transportability
+### Slide 42: Generalizability and transportability
 
 Generalizability moves from sample S1 to the population P1 from which it is understood to come. Transportability moves from S1 to a different population P2. The second move requires stronger justification because S1 was not drawn from P2.
 
@@ -545,7 +561,7 @@ Coding-project example: generalizing from a random sample to the full frozen Lex
 
 **Transition:** next, Descriptive and causal external validity
 
-### Slide 42: Descriptive and causal external validity
+### Slide 43: Descriptive and causal external validity
 
 Say: “External validity is not exactly the same problem in descriptive and causal research.”
 
@@ -557,7 +573,7 @@ Use Opower to make the distinction. Random assignment supported the causal compa
 
 **Transition:** next, When sample differences change the result
 
-### Slide 43: When sample differences change the result
+### Slide 44: When sample differences change the result
 
 Define a modifier in plain language: a characteristic across which the result changes. In a descriptive study, call it a pattern modifier. In a causal study, call it an effect modifier.
 
@@ -569,7 +585,7 @@ Give content-analysis examples. National-newspaper articles cannot simply be rew
 
 **Transition:** next, Henrich: who supplied the evidence?
 
-### Slide 44: Henrich: who supplied the evidence?
+### Slide 45: Henrich: who supplied the evidence?
 
 Introduce Henrich and colleagues as a review article, not one new experiment. Their question was: who supplies the evidence used to build general theories of human psychology, and how unusual are those participants when comparative evidence exists?
 
@@ -583,7 +599,7 @@ Source: Henrich, Heine, and Norenzayan (2010), drawing on Arnett (2008).
 
 **Transition:** next, Henrich: even visual perception varied
 
-### Slide 45: Henrich: even visual perception varied
+### Slide 46: Henrich: even visual perception varied
 
 Begin with the stimulus on the left. Ask students which horizontal line appears longer. Then reveal that the center segments are exactly equal. The outward- and inward-facing fins change perceived length even though the physical line lengths do not differ.
 
@@ -599,7 +615,7 @@ Point ahead: the next slide shows that perception was not an isolated case.
 
 **Transition:** next, Other ways WEIRD samples were unusual
 
-### Slide 46: Other ways WEIRD samples were unusual
+### Slide 47: Other ways WEIRD samples were unusual
 
 Say: “The Müller-Lyer illusion was not an isolated example. Henrich and colleagues reviewed several research traditions in which findings from Western students had been treated as general features of human psychology.” Explain each task before discussing the comparison.
 
@@ -617,7 +633,7 @@ Connect this to M-STOUT only after the studies are understood. The units differe
 
 **Transition:** next, M-STOUT
 
-### Slide 47: M-STOUT
+### Slide 48: M-STOUT
 
 Walk across Findley and colleagues' Table 1. Study A is a survey experiment in Liberia on community-driven development projects, measuring self-reported trust among individuals in 2000. Study B is a cross-national regression on any aid across African countries, 2000–2020. The target is a 2020 field experiment in Guinea on direct budget support, measured with a trust game. Ask: on how many rows does each study match the target? The answer is almost none, which shows that “we have evidence on aid and trust” hides six separate transport questions.
 
@@ -627,7 +643,7 @@ For descriptive text projects, “treatment” may seem awkward. Treat it as the
 
 **Transition:** next, Mechanisms, treatments, and outcomes
 
-### Slide 48: Mechanisms, treatments, and outcomes
+### Slide 49: Mechanisms, treatments, and outcomes
 
 Tell students these three dimensions matter for understanding the literature, but they do not need to diagnose them for their current descriptive coding project.
 
@@ -639,7 +655,7 @@ Tell students these three dimensions matter for understanding the literature, bu
 
 **Transition:** next, External validity can fail even with a representative sample
 
-### Slide 49: External validity can fail even with a representative sample
+### Slide 50: External validity can fail even with a representative sample
 
 Say: “We have emphasized who and what enters the sample. But external validity can fail even when the sample perfectly represents the target population.”
 
@@ -651,7 +667,7 @@ Keep their project diagnostic focused on settings, units, and time, which comes 
 
 **Transition:** next, Project focus: settings, units, and time
 
-### Slide 50: Project focus: settings, units, and time
+### Slide 51: Project focus: settings, units, and time
 
 Tell students explicitly: “For your current coding project, apply only S, U, and T: settings, units, and time. We are not asking you to make a causal claim about mechanisms or treatments, and we are holding the coded outcome definition fixed for now.”
 
@@ -663,7 +679,7 @@ For time, connect to concept drift. Terms change meaning, issue agendas shift, p
 
 **Transition:** next, The opening cases through M-STOUT
 
-### Slide 51: The opening cases through M-STOUT
+### Slide 52: The opening cases through M-STOUT
 
 Return to all four opening cases now that students know M-STOUT. Ask for the single most important dimension in each row before discussing the final column.
 
@@ -677,7 +693,7 @@ Emphasize that “settings differ” is not yet a useful conclusion. A diagnosis
 
 **Transition:** next, Evidence that supports transport
 
-### Slide 52: Evidence that supports transport
+### Slide 53: Evidence that supports transport
 
 This is the constructive slide. Work from the strongest solution to the weakest.
 
@@ -693,7 +709,7 @@ Finally, narrowing the claim is a legitimate scientific result. If the available
 
 **Transition:** next, S-U-T stress test for the coding project
 
-### Slide 53: S-U-T stress test for the coding project
+### Slide 54: S-U-T stress test for the coding project
 
 Timing: 7 minutes in project pairs. State that this is intentionally narrower than the full M-STOUT framework. For this project, students should analyze settings, units, and time only. Require one concrete target beyond the current sample. Examples: transport from sampled outlets to all U.S. news, from one semester to another, or from news articles to social media posts.
 
@@ -701,7 +717,7 @@ Ask each pair to identify whether setting, units, or time is most likely to chan
 
 **Transition:** next, Sampling-plan template for the project
 
-### Slide 54: Sampling-plan template for the project
+### Slide 55: Sampling-plan template for the project
 
 This is the deliverable-oriented slide. Tell students their written sampling plan should allow another researcher to recreate the frame and the random draw.
 
@@ -709,7 +725,7 @@ The plan should also preserve metadata needed for weights and diagnostics: sourc
 
 **Transition:** next, Match the claim to what was sampled
 
-### Slide 55: Match the claim to what was sampled
+### Slide 56: Match the claim to what was sampled
 
 This slide consolidates the main inferential discipline. Every sample supports some claim. The task is to name it accurately and avoid borrowing a broader population label than the design supports.
 
@@ -717,7 +733,7 @@ Ask students to rewrite one overreach into a defensible sentence. Require the po
 
 **Transition:** next, A defensible descriptive claim
 
-### Slide 56: A defensible descriptive claim
+### Slide 57: A defensible descriptive claim
 
 Use this as a model of transparent wording. It names the design, frame, dates, sources, estimate, weighting, and scope limitation. Students can shorten the prose in a final paper after documenting the full design in the methods section.
 
@@ -725,13 +741,13 @@ Ask what additional evidence would be required to transport the result to all U.
 
 **Transition:** next, Before you code the full sample
 
-### Slide 57: Before you code the full sample
+### Slide 58: Before you code the full sample
 
 Close the substantive portion with decisions students can implement immediately. The Wednesday workshop can turn this checklist into a completed sampling plan and organized corpus.
 
 **Transition:** next, Exit question
 
-### Slide 58: Exit question
+### Slide 59: Exit question
 
 Collect a few answers aloud or on a shared board. Listen for specific populations rather than vague statements such as “it is not generalizable.” A strong answer distinguishes the frame the design represents from a target to which it would require transport.
 
