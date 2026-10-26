@@ -763,9 +763,9 @@ Information-rich cases support concept refinement, typology building, and diffic
 :::::
 
 ::: notes
-Students may need both during the project. Use a purposive pilot to test the codebook against borderline and difficult cases. After freezing the codebook, draw a probability sample for the descriptive analysis.
+Students will use both logics in the project. Purposive selection is useful for stress-testing a codebook: a handful of borderline or unusual texts reveals where the coding rules break. Probability selection is what supports the descriptive estimate, and, as we will see at the end of this part, the reliability estimate as well.
 
-Mixing the stages creates a problem if memorable pilot cases enter the final analysis with unknown probabilities. Keep pilot and final samples separate unless the final design explicitly incorporates them with known weights.
+Preview the pilot: because the pilot sample is used both to build the codebook and to assess intercoder reliability, it should be drawn at random from the frame. Hand-picked hard cases can supplement it for codebook development, but they should not enter the reliability calculation or the final estimate.
 :::
 
 ## Random does not mean perfectly representative
@@ -932,27 +932,35 @@ Clustering inflates the margins in the table. Twenty texts about one event share
 Avoid giving a universal minimum. A study estimating one overall proportion needs fewer observations than a study comparing six outlets across four periods. Coding quality also constrains sample size: expanding the corpus at the cost of rushed or inconsistent coding can increase total error even as sampling error falls.
 :::
 
-## Sampling the reliability subsample
+## The pilot sample: build the codebook, then test it {#sampling-the-reliability-subsample}
 
-Intercoder reliability is itself an estimate—from a sample of units.
+::: sampling-chain
+**Random pilot batch** → code, compare, revise rules → **freeze codebook** → **fresh random batch** → independent coding → **reliability**
+:::
 
--   Draw it **at random from the analysis sample**, not from pilot or hand-picked cases
--   Make sure **rare categories appear** often enough to test agreement on them; stratify if needed
--   Have every coder code it **independently**, after the codebook is frozen
--   Size depends on the **rarest category** and the minimum acceptable reliability, not a fixed percentage
+-   Draw pilot texts **at random from your frame**, so reliability describes the kind of texts you will analyze
+-   Hand-picked hard cases can help **revise** the codebook, but leave them out of the reliability calculation
+-   Compute reliability on texts **not used to revise the codebook**
+-   Make sure **rare categories** appear often enough to test agreement on them
 
 ::: {.fragment .key-line}
-Reliability estimated on easy or atypical texts does not describe reliability on the texts you analyze.
+Reliability measured on hand-picked texts, or on the texts used to tune the rules, overstates how well the codebook will work on your sample.
 :::
 
 ::: notes
-Say: “You will report a reliability coefficient for your codebook. That coefficient generalizes from the reliability subsample to the full set of coded texts, so the same sampling logic applies.”
+Say: “Your pilot sample does two jobs: it is where you build the codebook, and it is where you show the codebook is reliable. Both jobs are sampling problems.”
 
-Pilot cases are usually chosen to be difficult or information-rich. They are perfect for revising the codebook and poor for estimating reliability, because their difficulty is unrepresentative. Conversely, a reliability sample in which the rare category barely appears can produce high percent agreement while saying almost nothing about whether coders agree on that category. Krippendorff recommends sizing the reliability sample so that the least frequent relevant category appears enough times to be tested, and Lacy and Riffe (1996) give formulas tying the size to the population size, expected agreement, and the desired precision.
+Walk the sequence left to right. First, draw a random batch of texts from the frame. Coders code it, compare, discuss disagreements, and revise the rules. Repeat if needed. Once the rules stop changing, freeze the codebook. Then draw a fresh random batch from the frame, have every coder code it independently with the frozen codebook, and compute intercoder reliability on that batch.
 
-If students oversample a rare category for reliability purposes, they should say so and remember that the reliability sample is then not a probability sample of texts.
+Why random? The reliability coefficient is an estimate of how consistently the codebook works on the texts in the analysis sample. If the pilot texts are unusually easy, reliability looks too good; if they are unusually hard, it looks too bad. A random draw from the same frame makes the pilot look like the texts students will analyze.
 
-Practical steps: draw the reliability IDs with a recorded seed, keep them in the main dataset with a flag, and resolve disagreements only after the coefficient has been computed.
+Why a fresh batch? During revision, coders discuss specific texts and write rules that resolve exactly those disagreements. Agreement on those same texts afterward partly reflects that discussion, not the codebook. It is the measurement version of testing a model on its training data.
+
+Hard cases are still valuable. Students can add a few deliberately difficult texts to the first round to stress-test the rules. Those texts help write the codebook, but they stay out of the reliability calculation and the final estimate because they were not selected at random.
+
+Size: the fresh batch must contain enough instances of the least frequent category to test agreement on it. Krippendorff recommends sizing reliability samples around the rarest relevant category and the minimum acceptable reliability, and Lacy and Riffe (1996) give formulas based on population size, expected agreement, and desired precision. If a category is very rare, students can oversample texts likely to contain it for the reliability batch, but should report that they did.
+
+Practical steps: draw pilot IDs with a recorded seed and flag them in the dataset. Because the reliability batch is a random draw from the frame, those texts can join the analysis sample once disagreements are resolved; texts from the first, codebook-building round should be recoded with the final codebook before they are used.
 :::
 
 ## How far does the claim travel? {.section-title}
@@ -1369,8 +1377,8 @@ Outcome terms should not define eligibility.
 **Preserve the frame**\
 Keep IDs, metadata, and exclusion reasons.
 
-**Separate pilot from analysis**\
-Information-rich cases develop the measure; probability cases estimate the pattern.
+**Draw the pilot at random**\
+Build the codebook on one random batch; test reliability on a fresh one.
 
 **Record selection probabilities**\
 Strata and stages determine weights.

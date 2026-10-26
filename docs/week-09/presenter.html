@@ -1491,8 +1491,8 @@ COMM 5220 • Week 9
 <p>Information-rich cases support concept refinement, typology building, and difficult coding tests.</p>
 </div></div>
 <aside class="notes">
-<p>Students may need both during the project. Use a purposive pilot to test the codebook against borderline and difficult cases. After freezing the codebook, draw a probability sample for the descriptive analysis.</p>
-<p>Mixing the stages creates a problem if memorable pilot cases enter the final analysis with unknown probabilities. Keep pilot and final samples separate unless the final design explicitly incorporates them with known weights.</p>
+<p>Students will use both logics in the project. Purposive selection is useful for stress-testing a codebook: a handful of borderline or unusual texts reveals where the coding rules break. Probability selection is what supports the descriptive estimate, and, as we will see at the end of this part, the reliability estimate as well.</p>
+<p>Preview the pilot: because the pilot sample is used both to build the codebook and to assess intercoder reliability, it should be drawn at random from the frame. Hand-picked hard cases can supplement it for codebook development, but they should not enter the reliability calculation or the final estimate.</p>
 <p><strong>Transition: </strong>next, Random does not mean perfectly representative</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1746,7 +1746,7 @@ COMM 5220 • Week 9
 <p>For rare concepts, 15 positive cases is an expected count, not a guarantee. That may be enough for a rough prevalence estimate but too few for stable subgroup comparisons or reliability estimates. Options include increasing the sample, stratifying on a variable related to the concept but not defined by it, or a two-phase design: screen a large probability sample with a cheaper measure, then intensively code selected strata while retaining known probabilities. Simply searching for the outcome does not preserve prevalence.</p>
 <p>Clustering inflates the margins in the table. Twenty texts about one event share facts and frames; they behave like fewer independent observations.</p>
 <p>Avoid giving a universal minimum. A study estimating one overall proportion needs fewer observations than a study comparing six outlets across four periods. Coding quality also constrains sample size: expanding the corpus at the cost of rushed or inconsistent coding can increase total error even as sampling error falls.</p>
-<p><strong>Transition: </strong>next, Sampling the reliability subsample</p>
+<p><strong>Transition: </strong>next, The pilot sample: build the codebook, then test it</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1760,22 +1760,27 @@ COMM 5220 • Week 9
       }</style></aside>
 </section>
 <section id="sampling-the-reliability-subsample" class="slide level2">
-<h2>Sampling the reliability subsample</h2>
-<p>Intercoder reliability is itself an estimate—from a sample of units.</p>
+<h2>The pilot sample: build the codebook, then test it</h2>
+<div class="sampling-chain">
+<p><strong>Random pilot batch</strong> → code, compare, revise rules → <strong>freeze codebook</strong> → <strong>fresh random batch</strong> → independent coding → <strong>reliability</strong></p>
+</div>
 <ul>
-<li>Draw it <strong>at random from the analysis sample</strong>, not from pilot or hand-picked cases</li>
-<li>Make sure <strong>rare categories appear</strong> often enough to test agreement on them; stratify if needed</li>
-<li>Have every coder code it <strong>independently</strong>, after the codebook is frozen</li>
-<li>Size depends on the <strong>rarest category</strong> and the minimum acceptable reliability, not a fixed percentage</li>
+<li>Draw pilot texts <strong>at random from your frame</strong>, so reliability describes the kind of texts you will analyze</li>
+<li>Hand-picked hard cases can help <strong>revise</strong> the codebook, but leave them out of the reliability calculation</li>
+<li>Compute reliability on texts <strong>not used to revise the codebook</strong></li>
+<li>Make sure <strong>rare categories</strong> appear often enough to test agreement on them</li>
 </ul>
 <div class="fragment key-line">
-<p>Reliability estimated on easy or atypical texts does not describe reliability on the texts you analyze.</p>
+<p>Reliability measured on hand-picked texts, or on the texts used to tune the rules, overstates how well the codebook will work on your sample.</p>
 </div>
 <aside class="notes">
-<p>Say: “You will report a reliability coefficient for your codebook. That coefficient generalizes from the reliability subsample to the full set of coded texts, so the same sampling logic applies.”</p>
-<p>Pilot cases are usually chosen to be difficult or information-rich. They are perfect for revising the codebook and poor for estimating reliability, because their difficulty is unrepresentative. Conversely, a reliability sample in which the rare category barely appears can produce high percent agreement while saying almost nothing about whether coders agree on that category. Krippendorff recommends sizing the reliability sample so that the least frequent relevant category appears enough times to be tested, and Lacy and Riffe (1996) give formulas tying the size to the population size, expected agreement, and the desired precision.</p>
-<p>If students oversample a rare category for reliability purposes, they should say so and remember that the reliability sample is then not a probability sample of texts.</p>
-<p>Practical steps: draw the reliability IDs with a recorded seed, keep them in the main dataset with a flag, and resolve disagreements only after the coefficient has been computed.</p>
+<p>Say: “Your pilot sample does two jobs: it is where you build the codebook, and it is where you show the codebook is reliable. Both jobs are sampling problems.”</p>
+<p>Walk the sequence left to right. First, draw a random batch of texts from the frame. Coders code it, compare, discuss disagreements, and revise the rules. Repeat if needed. Once the rules stop changing, freeze the codebook. Then draw a fresh random batch from the frame, have every coder code it independently with the frozen codebook, and compute intercoder reliability on that batch.</p>
+<p>Why random? The reliability coefficient is an estimate of how consistently the codebook works on the texts in the analysis sample. If the pilot texts are unusually easy, reliability looks too good; if they are unusually hard, it looks too bad. A random draw from the same frame makes the pilot look like the texts students will analyze.</p>
+<p>Why a fresh batch? During revision, coders discuss specific texts and write rules that resolve exactly those disagreements. Agreement on those same texts afterward partly reflects that discussion, not the codebook. It is the measurement version of testing a model on its training data.</p>
+<p>Hard cases are still valuable. Students can add a few deliberately difficult texts to the first round to stress-test the rules. Those texts help write the codebook, but they stay out of the reliability calculation and the final estimate because they were not selected at random.</p>
+<p>Size: the fresh batch must contain enough instances of the least frequent category to test agreement on it. Krippendorff recommends sizing reliability samples around the rarest relevant category and the minimum acceptable reliability, and Lacy and Riffe (1996) give formulas based on population size, expected agreement, and desired precision. If a category is very rare, students can oversample texts likely to contain it for the reliability batch, but should report that they did.</p>
+<p>Practical steps: draw pilot IDs with a recorded seed and flag them in the dataset. Because the reliability batch is a random draw from the frame, those texts can join the analysis sample once disagreements are resolved; texts from the first, codebook-building round should be recoded with the final codebook before they are used.</p>
 <p><strong>Transition: </strong>next, How far does the claim travel?</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2560,8 +2565,8 @@ The claim needs a boundary.</p>
 Outcome terms should not define eligibility.</p>
 <p><strong>Preserve the frame</strong><br>
 Keep IDs, metadata, and exclusion reasons.</p>
-<p><strong>Separate pilot from analysis</strong><br>
-Information-rich cases develop the measure; probability cases estimate the pattern.</p>
+<p><strong>Draw the pilot at random</strong><br>
+Build the codebook on one random batch; test reliability on a fresh one.</p>
 <p><strong>Record selection probabilities</strong><br>
 Strata and stages determine weights.</p>
 <p><strong>Prestate scope limits</strong><br>
