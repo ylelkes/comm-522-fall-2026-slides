@@ -35,7 +35,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-80463a3937e8bb107f249b85849e50af.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-84921b6ec6aa132fb016fb32165eea56.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -416,52 +416,22 @@ COMM 5220 • Week 9
 </table>
 </section>
 <section id="why-each-link-blank" class="slide level2">
-<h2>Why each link can change the claim</h2>
+<h2>In pairs: how can each link change the estimate?</h2>
 <blockquote>
-<p><strong>The intended claim:</strong> “What proportion of eligible news stories use an <strong>episodic frame</strong>?”</p>
+<p><strong>The intended claim:</strong> “What proportion of metropolitan-newspaper stories about housing affordability use an <strong>episodic frame</strong>?”</p>
 </blockquote>
 <p>An episodic frame presents an issue through a specific event, individual, or case rather than broader causes, institutions, or trends.</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Move</th>
-<th>What can go wrong?</th>
-<th>Scope consequence</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Target → frame</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="even">
-<td>Frame → selected</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="odd">
-<td>Selected → coded</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="even">
-<td>Coded → claim</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="odd">
-<td>Claim → broader target</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
+<p>For <strong>each move</strong>, identify:</p>
+<ol type="1">
+<li>one concrete way stories could enter, disappear, or count differently;</li>
+<li>whether the estimated episodic share would rise, fall, or describe a narrower population.</li>
+</ol>
+<p><code>Target</code> → <code>frame</code> → <code>selected</code> → <code>coded</code> → <code>claim</code> → <code>broader target</code></p>
 </section>
 <section id="why-each-link-can-change-the-claim" class="slide level2">
 <h2>Why each link can change the claim</h2>
 <blockquote>
-<p><strong>Claim:</strong> the proportion of eligible stories using an episodic frame</p>
+<p><strong>Claim:</strong> the proportion of metropolitan-newspaper housing stories using an episodic frame</p>
 </blockquote>
 <table class="caption-top">
 <colgroup>
@@ -508,14 +478,19 @@ COMM 5220 • Week 9
 <p>External validity can fail even when every coded value is correct.</p>
 </div>
 </section>
-<section id="estimand-the-proportion-of-protest-stories-using-an-episodic-frame" class="slide level2">
-<h2>Estimand: the proportion of protest stories using an episodic frame</h2>
-<p><strong>RQ:</strong> Among all eligible newspaper stories about campus protest, what proportion frames the issue through a specific person or event?</p>
-<p><strong>Query A:</strong> <code>campus protest</code></p>
-<p><strong>Query B:</strong> <code>(campus OR university OR college) AND (protest* OR demonstrat* OR encampment)</code></p>
-<p><strong>Query C:</strong> Query B plus <code>(student OR activist OR arrest OR clash)</code></p>
-<div class="fragment key-line">
-<p>Retrieval defines the denominator. Query C preferentially retrieves person- and event-centered stories—the pattern we want to estimate.</p>
+<section id="which-boolean-search-changes-the-answer" class="slide level2">
+<h2>Which Boolean search changes the answer?</h2>
+<blockquote>
+<p><strong>RQ:</strong> What proportion of metropolitan-newspaper stories about housing affordability use an episodic frame?</p>
+</blockquote>
+<p><strong>Query A — exact phrase</strong><br>
+<code>"housing affordability"</code></p>
+<p><strong>Query B — broad concept search</strong><br>
+<code>(housing OR rent* OR mortgage*) AND (affordab* OR cost* OR price* OR supply OR zoning)</code></p>
+<p><strong>Query C — concrete cases</strong><br>
+<code>(evict* OR tenant* OR landlord*) AND (housing OR rent*)</code></p>
+<div class="fragment discussion-prompt">
+<p>For <strong>each query</strong>: What relevant stories could it miss? What irrelevant stories could it retrieve? Would either error change the estimated episodic share?</p>
 </div>
 </section>
 <section id="the-sampling-unit-changes-what-you-see" class="slide level2">
@@ -722,7 +697,40 @@ COMM 5220 • Week 9
 <p>Neither rule is automatically correct. Each changes the population and the weight given to syndicated content.</p>
 </div>
 </section>
-<section id="time-and-availability-shape-the-frame" class="slide level2">
+<section id="time-and-availability-blank" class="slide level2">
+<h2>Time and availability shape the frame</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decision</th>
+<th>Pattern it can create</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sample one event week</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="even">
+<td>Stop after 300 results</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="odd">
+<td>Use only currently accessible URLs</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="even">
+<td>Collect from a live platform API</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="time-and-availability-reveal" class="slide level2">
 <h2>Time and availability shape the frame</h2>
 <table class="caption-top">
 <colgroup>
@@ -911,45 +919,35 @@ COMM 5220 • Week 9
 </section>
 <section id="how-many-texts-do-you-need" class="slide level2">
 <h2>How many texts do you need?</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Texts coded</th>
-<th style="text-align: right;">95% margin of error, prevalence near 50%</th>
-<th style="text-align: right;">Prevalence near 10%</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">± 9.8 points</td>
-<td style="text-align: right;">± 5.9 points</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">300</td>
-<td style="text-align: right;">± 5.7 points</td>
-<td style="text-align: right;">± 3.4 points</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">1,000</td>
-<td style="text-align: right;">± 3.1 points</td>
-<td style="text-align: right;">± 1.9 points</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Each <strong>subgroup</strong> comparison uses only that subgroup’s <em>n</em>.</li>
-<li><strong>Rare concepts</strong>: at 5% prevalence, 300 texts yield about <strong>15 positive cases</strong>.</li>
-<li>Texts clustered in outlets, events, or duplicates carry <strong>less information</strong> than <em>n</em> suggests.</li>
-<li><strong>Coder capacity</strong> limits <em>n</em>: rushed coding adds error that more texts cannot remove.</li>
-</ul>
+<div id="sample-size-calculators" class="sample-size-calculators" aria-label="Interactive sample-size calculators">
+  <div class="sample-size-controls">
+    <label>Desired 95% margin: <strong>±<output data-margin-label="">5</output> points</strong>
+      <input type="range" min="2" max="15" step="1" value="5" data-margin="">
+    </label>
+    <label>Expected prevalence: <strong><output data-prevalence-label="">50</output>%</strong>
+      <input type="range" min="5" max="50" step="5" value="50" data-prevalence="">
+    </label>
+  </div>
+  <div class="sample-size-equations">
+    <div class="sample-size-card">
+      <h3>Population size unknown or large</h3>
+      <p class="sample-equation">\(n_0 = \dfrac{1.96^2p(1-p)}{E^2}\)</p>
+      <p class="sample-result">Code about <output data-large-n="">385</output> texts</p>
+      <p class="sample-caption">No \(N\) is required. If \(p\) is unknown, use .50 for the largest, safest sample.</p>
+    </div>
+    <div class="sample-size-card">
+      <h3>Finite frame size known</h3>
+      <label class="population-control">Frame size \(N\): <strong><output data-population-label="">1,000</output></strong>
+        <input type="range" min="100" max="5000" step="100" value="1000" data-population-size="">
+      </label>
+      <p class="sample-equation">\(n = \dfrac{N n_0}{N+n_0-1}\)</p>
+      <p class="sample-result">Code about <output data-finite-n="">278</output> texts</p>
+      <p class="sample-caption">Sampling without replacement from a complete frame reduces the required \(n\).</p>
+    </div>
+  </div>
+</div>
 <div class="fragment key-line">
-<p>A smaller probability sample can support a clearer claim than a large convenience sample.</p>
+<p>Each subgroup needs its own <span class="math inline">\(n\)</span>; clustering and coding error require more than these simple-random-sample formulas imply.</p>
 </div>
 </section>
 <section id="sampling-the-reliability-subsample" class="slide level2">
@@ -1153,6 +1151,9 @@ COMM 5220 • Week 9
 </section>
 <section id="mechanisms-treatments-and-outcomes" class="slide level2">
 <h2>Mechanisms, treatments, and outcomes</h2>
+<blockquote>
+<p><strong>Findley’s example:</strong> Does an aid program increase social trust outside the original study?</p>
+</blockquote>
 <table class="caption-top">
 <colgroup>
 <col style="width: 33%">
@@ -1162,30 +1163,33 @@ COMM 5220 • Week 9
 <thead>
 <tr class="header">
 <th>Dimension</th>
-<th>Same label, different thing</th>
-<th>Example</th>
+<th>Study A: Liberia</th>
+<th>Target inference: Guinea</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>Mechanism</strong></td>
-<td>The same association, produced by a different process</td>
-<td>Angry posts get engagement through arousal, group signaling, or algorithmic ranking</td>
+<td>Aid works through <strong>women’s empowerment</strong></td>
+<td>Aid works through <strong>youth empowerment</strong></td>
 </tr>
 <tr class="even">
 <td><strong>Treatment</strong></td>
-<td>The same label, delivered differently</td>
-<td>“Misinformation exposure”: one survey headline, repeated posts from a trusted account, or an algorithmic feed</td>
+<td>Community-driven development projects</td>
+<td>Direct budget support</td>
 </tr>
 <tr class="odd">
 <td><strong>Outcome</strong></td>
-<td>The same construct, measured differently</td>
-<td>“Sharing”: stated intention, a simulated click, or a real repost; a hostility dictionary built on news prose applied to slang</td>
+<td>Self-reported social trust</td>
+<td>Results of a social-trust game</td>
 </tr>
 </tbody>
 </table>
 <div class="fragment key-line">
-<p>A finding about one version of the process does not automatically apply to another.</p>
+<p>The <strong>outcome</strong> is the same construct measured differently. The <strong>mechanism</strong> is the causal pathway—and here the pathway changes.</p>
+</div>
+<div class="source">
+<p>Source: Findley, Kikuta, and Denly (2021), Table 1 and pp.&nbsp;372–373.</p>
 </div>
 </section>
 <section id="external-validity-can-fail-even-with-a-representative-sample" class="slide level2">
@@ -1780,6 +1784,41 @@ Name the setting, unit, and time boundaries of the claim.</p>
         window.Reveal.on('slidechanged', animateOnEntry);
         animateOnEntry();
       }
+    })();
+    </script>
+
+    <script>
+    (() => {
+      const root = document.getElementById('sample-size-calculators');
+      if (!root) return;
+
+      const margin = root.querySelector('[data-margin]');
+      const prevalence = root.querySelector('[data-prevalence]');
+      const population = root.querySelector('[data-population-size]');
+      const marginLabel = root.querySelector('[data-margin-label]');
+      const prevalenceLabel = root.querySelector('[data-prevalence-label]');
+      const populationLabel = root.querySelector('[data-population-label]');
+      const largeOutput = root.querySelector('[data-large-n]');
+      const finiteOutput = root.querySelector('[data-finite-n]');
+
+      function render() {
+        const E = Number(margin.value) / 100;
+        const p = Number(prevalence.value) / 100;
+        const N = Number(population.value);
+        const n0 = (1.96 ** 2 * p * (1 - p)) / (E ** 2);
+        const finite = (N * n0) / (N + n0 - 1);
+
+        marginLabel.textContent = margin.value;
+        prevalenceLabel.textContent = prevalence.value;
+        populationLabel.textContent = N.toLocaleString();
+        largeOutput.textContent = Math.ceil(n0).toLocaleString();
+        finiteOutput.textContent = Math.ceil(finite).toLocaleString();
+      }
+
+      root.addEventListener('pointerdown', event => event.stopPropagation());
+      root.addEventListener('click', event => event.stopPropagation());
+      root.addEventListener('input', render);
+      render();
     })();
     </script>
     <script id="quarto-html-after-body" type="application/javascript">

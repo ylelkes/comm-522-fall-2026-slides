@@ -131,3 +131,38 @@
   }
 })();
 </script>
+
+<script>
+(() => {
+  const root = document.getElementById('sample-size-calculators');
+  if (!root) return;
+
+  const margin = root.querySelector('[data-margin]');
+  const prevalence = root.querySelector('[data-prevalence]');
+  const population = root.querySelector('[data-population-size]');
+  const marginLabel = root.querySelector('[data-margin-label]');
+  const prevalenceLabel = root.querySelector('[data-prevalence-label]');
+  const populationLabel = root.querySelector('[data-population-label]');
+  const largeOutput = root.querySelector('[data-large-n]');
+  const finiteOutput = root.querySelector('[data-finite-n]');
+
+  function render() {
+    const E = Number(margin.value) / 100;
+    const p = Number(prevalence.value) / 100;
+    const N = Number(population.value);
+    const n0 = (1.96 ** 2 * p * (1 - p)) / (E ** 2);
+    const finite = (N * n0) / (N + n0 - 1);
+
+    marginLabel.textContent = margin.value;
+    prevalenceLabel.textContent = prevalence.value;
+    populationLabel.textContent = N.toLocaleString();
+    largeOutput.textContent = Math.ceil(n0).toLocaleString();
+    finiteOutput.textContent = Math.ceil(finite).toLocaleString();
+  }
+
+  root.addEventListener('pointerdown', event => event.stopPropagation());
+  root.addEventListener('click', event => event.stopPropagation());
+  root.addEventListener('input', render);
+  render();
+})();
+</script>
