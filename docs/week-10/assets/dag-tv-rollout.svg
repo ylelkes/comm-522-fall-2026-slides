@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-01T21:40:19.023306</dc:date>
+    <dc:date>2026-11-02T09:38:28.794965</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -33,32 +33,32 @@ z
    <g id="patch_2">
     <path d="M 121.404 91.113984 
 Q 150.6525 129.47292 177.867273 165.164656 
-" clip-path="url(#pda51beff32)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
     <path d="M 176.030383 155.498952 
 L 177.867273 165.164656 
 L 169.032576 160.834746 
 z
-" clip-path="url(#pda51beff32)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="patch_3">
     <path d="M 370.0581 70.379424 
 Q 412.784625 119.10564 453.29979 165.309975 
-" clip-path="url(#pda51beff32)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
     <path d="M 450.806218 155.792512 
 L 453.29979 165.309975 
 L 444.189676 161.594354 
 z
-" clip-path="url(#pda51beff32)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
     <path d="M 282.852 197.47008 
 Q 342 197.47008 397.793898 197.47008 
-" clip-path="url(#pda51beff32)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
     <path d="M 388.993898 193.07008 
 L 397.793898 197.47008 
 L 388.993898 201.87008 
 z
-" clip-path="url(#pda51beff32)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="patch_5">
     <path d="M 25.614 90.626112 
@@ -71,7 +71,7 @@ Q 11.664 11.590848 11.664 17.689248
 L 11.664 84.527712 
 Q 11.664 90.626112 25.614 90.626112 
 z
-" clip-path="url(#pda51beff32)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 287.874 69.891552 
@@ -84,7 +84,7 @@ Q 273.924 32.325408 273.924 38.423808
 L 273.924 63.793152 
 Q 273.924 69.891552 287.874 69.891552 
 z
-" clip-path="url(#pda51beff32)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 137.214 226.620432 
@@ -97,7 +97,7 @@ Q 123.264 168.319728 123.264 174.418128
 L 123.264 220.522032 
 Q 123.264 226.620432 137.214 226.620432 
 z
-" clip-path="url(#pda51beff32)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 416.214 226.620432 
@@ -110,7 +110,7 @@ Q 402.264 168.319728 402.264 174.418128
 L 402.264 220.522032 
 Q 402.264 226.620432 416.214 226.620432 
 z
-" clip-path="url(#pda51beff32)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p01ee0f31ba)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(47.0525 37.16148)">TV arrives in</text>
@@ -131,7 +131,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pda51beff32">
+  <clipPath id="p01ee0f31ba">
    <rect x="7.2" y="7.2" width="558" height="243.936"/>
   </clipPath>
  </defs>

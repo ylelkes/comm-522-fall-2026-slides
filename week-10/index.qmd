@@ -872,7 +872,7 @@ The Preuss School serves low-income students and sends **almost 100%** to higher
 Preuss students pass state tests at close to **100%**, versus a little under **80%** in San Diego City Schools.
 
 ::: {.fragment .key-line}
-Admission is by lottery. Who enters the lottery?
+Is Preuss a better school, or does it get better students?
 :::
 ::::
 ::::::
@@ -886,29 +886,50 @@ Introduce the book's worked case. Charter schools are publicly funded but run in
 
 Read the figure. Preuss students pass the math and English tests at close to 100 percent, while San Diego City Schools students pass at a little under 80 percent. The book does not print the numbers; these are read from the chart.
 
-Ask students which families enter a charter lottery. The book suggests parents who believe their child is especially talented and parents who are especially invested in education. Both talent and parental involvement raise achievement directly.
+End on the question: is Preuss a better school, or does it get better students? Let students offer answers; the next slide draws the worry as a DAG.
+:::
+
+## Preuss: a possible confounder {#preuss-dag}
+
+![](assets/dag-preuss.svg){fig-alt="Talent and parental investment cause attending Preuss and test scores; dashed arrow from Preuss to scores" width="58%"}
+
+::: {.fragment .key-line}
+If talent and parental investment drive both who attends and how students score, the raw gap mixes the school's effect with **who got in**.
+:::
+
+::: notes
+Draw the worry before discussing the lottery. Talent and parental investment could affect both whether a child attends Preuss and how that child scores on tests. The dashed arrow from Preuss to test scores is the school's effect, the thing we want to know.
+
+This is the same structure as the confounder cases students have already seen: family background in the TV case and ability and ambition in the college case. Note that it is a preview of Part 4, where Rohrer names this structure a fork.
+
+Ask: if this diagram is right, what would the raw gap between Preuss and San Diego City Schools contain? Answer: the school's effect, if any, plus the difference between the kinds of students who end up at each. The next slide asks where that difference comes from.
 :::
 
 ## Who enters the lottery? {#preuss-selection}
 
-![](assets/dag-preuss.svg){fig-alt="Talent and parental investment cause attending Preuss and test scores; dashed arrow from Preuss to scores" width="55%"}
+Preuss admits by lottery, but families **choose** whether to apply.
 
-“If all children went to the exact same school, the children who are currently at the charter schools would still be above average.”
+The book suggests who applies:
+
+- parents who believe their child is **especially talented**
+- parents who are **especially invested** in education
+
+> “If all children went to the exact same school, the children who are currently at the charter schools would still be above average.”
 
 ::: {.fragment .key-line}
 In other words: Preuss students would have scored higher than others **at any school**.
 :::
 
 ::: source
-Source: *Thinking Clearly with Data*, ch. 9, p. 162.
+Source: *Thinking Clearly with Data*, ch. 9, pp. 161–162.
 :::
 
 ::: notes
-State the problem in the language we just built. Preuss students have higher Y-zero, meaning higher test scores they would have had at any school. The raw comparison with San Diego City Schools therefore includes a positive baseline difference.
+Now explain how the confounder gets in. Preuss uses a lottery, but only among families who apply, and applying is a choice. The book suggests that disadvantaged families who enter charter lotteries include parents who believe their child is especially talented and parents who are especially invested in education. Both talent and parental involvement raise achievement directly, which is exactly the confounder on the previous slide.
 
-Read the book's sentence aloud. It is a plain-language statement of the bias term: even if all children attended the same school, the children now at Preuss would still score above average.
+Read the book's sentence aloud. It is a plain-language statement of the baseline difference: even if all children attended the same school, the children now at Preuss would still score above average.
 
-Show the diagram as a preview of Part 4: talent and parental investment cause both attendance and scores. The dashed arrow is the effect we want to estimate.
+Then set up the next slide. If the problem is who applies, the fix is to compare only applicants: children whose families all chose to apply, and who were separated by luck.
 :::
 
 ## The lottery comparison {#preuss-lottery}
@@ -1537,6 +1558,35 @@ This is the skeptic's model. It deliberately contains no arrow from maternal beh
 Ask students to find the back-door path. It runs from maternal behavior back to the mother's depressiveness, back to the mother's genetic predisposition, forward to the child's genetic predisposition, and forward to the child's depressiveness. It contains no collider, so it is open.
 
 What could block it? Rohrer suggests controlling for the mother's depressiveness, which is measurable. Genes would also block it in principle, but they are rarely measured. Turkheimer's warning: because almost every trait is somewhat heritable, correlations among biological relatives cannot be taken as evidence of social causes. That leads to designs that remove the path entirely.
+:::
+
+## Practice: a confounder and a mediator {#practice-mediator}
+
+::: two-column
+::: column
+![](assets/dag-practice-ad.svg){fig-alt="Party identification causes seeing the ad and voting; the ad changes views of the candidate, which affect voting; the ad also affects voting directly"}
+:::
+
+::: column
+We want the **total effect** of seeing a campaign ad on voting for the candidate.
+
+| Control for… | Effect identified? |
+|---|:-:|
+| Nothing | [No: back door through party ID open]{.fragment} |
+| Party ID | [**Yes**]{.fragment} |
+| Views of the candidate | [No: back door open, **and** part of the effect removed]{.fragment} |
+| Party ID and views | [No: only the **direct** effect remains]{.fragment} |
+:::
+:::
+
+::: notes
+Give pairs two minutes. Ask them to list the paths from seeing the ad to voting, then fill in the table.
+
+There are three paths. Two are causal: the ad affects the vote directly, and the ad changes views of the candidate, which then affect the vote. Views of the candidate are a mediator. One path is a back door: the ad is more likely to reach people of the candidate's party, through targeting and media habits, and party identification affects the vote.
+
+Reveal the rows. With no controls, the back door is open, so the raw comparison overstates the ad's effect. Controlling for party identification, measured before the campaign, blocks the back door and leaves both causal paths open: that identifies the total effect. Controlling for views of the candidate alone is doubly wrong: it leaves the back door open and removes the part of the effect that works by changing views. Controlling for both blocks the back door but also removes the mediated path, so what remains is only the direct effect, the part of the ad's influence that does not run through views of the candidate.
+
+Make the point that controlling for the mediator is not always a mistake; it answers a different question. If the research question is whether the ad works through changing views of the candidate or through something else, the direct effect is the target. But that is a mediation question, and Rohrer warns later today that estimating it requires its own assumptions.
 :::
 
 ## Control by design {#control-by-design}

@@ -1707,7 +1707,7 @@ COMM 5220 • Week 10
 <p>The Preuss School serves low-income students and sends <strong>almost 100%</strong> to higher education.</p>
 <p>Preuss students pass state tests at close to <strong>100%</strong>, versus a little under <strong>80%</strong> in San Diego City Schools.</p>
 <div class="fragment key-line">
-<p>Admission is by lottery. Who enters the lottery?</p>
+<p>Is Preuss a better school, or does it get better students?</p>
 </div>
 </div></div>
 <div class="source">
@@ -1716,7 +1716,30 @@ COMM 5220 • Week 10
 <aside class="notes">
 <p>Introduce the book’s worked case. Charter schools are publicly funded but run independently. Oversubscribed charters must admit by random lottery, sometimes hundreds of applicants for a couple dozen spots. The Preuss School at UC San Diego serves low-income students and has been repeatedly praised as a top transformative high school.</p>
 <p>Read the figure. Preuss students pass the math and English tests at close to 100 percent, while San Diego City Schools students pass at a little under 80 percent. The book does not print the numbers; these are read from the chart.</p>
-<p>Ask students which families enter a charter lottery. The book suggests parents who believe their child is especially talented and parents who are especially invested in education. Both talent and parental involvement raise achievement directly.</p>
+<p>End on the question: is Preuss a better school, or does it get better students? Let students offer answers; the next slide draws the worry as a DAG.</p>
+<p><strong>Transition: </strong>next, Preuss: a possible confounder</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="preuss-dag" class="slide level2">
+<h2>Preuss: a possible confounder</h2>
+
+<img data-src="assets/dag-preuss.svg" style="width:58.0%" alt="Talent and parental investment cause attending Preuss and test scores; dashed arrow from Preuss to scores" class="r-stretch"><div class="fragment key-line">
+<p>If talent and parental investment drive both who attends and how students score, the raw gap mixes the school’s effect with <strong>who got in</strong>.</p>
+</div>
+<aside class="notes">
+<p>Draw the worry before discussing the lottery. Talent and parental investment could affect both whether a child attends Preuss and how that child scores on tests. The dashed arrow from Preuss to test scores is the school’s effect, the thing we want to know.</p>
+<p>This is the same structure as the confounder cases students have already seen: family background in the TV case and ability and ambition in the college case. Note that it is a preview of Part 4, where Rohrer names this structure a fork.</p>
+<p>Ask: if this diagram is right, what would the raw gap between Preuss and San Diego City Schools contain? Answer: the school’s effect, if any, plus the difference between the kinds of students who end up at each. The next slide asks where that difference comes from.</p>
 <p><strong>Transition: </strong>next, Who enters the lottery?</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1732,18 +1755,25 @@ COMM 5220 • Week 10
 </section>
 <section id="preuss-selection" class="slide level2">
 <h2>Who enters the lottery?</h2>
-
-<img data-src="assets/dag-preuss.svg" style="width:55.0%" alt="Talent and parental investment cause attending Preuss and test scores; dashed arrow from Preuss to scores" class="r-stretch"><p>“If all children went to the exact same school, the children who are currently at the charter schools would still be above average.”</p>
+<p>Preuss admits by lottery, but families <strong>choose</strong> whether to apply.</p>
+<p>The book suggests who applies:</p>
+<ul>
+<li>parents who believe their child is <strong>especially talented</strong></li>
+<li>parents who are <strong>especially invested</strong> in education</li>
+</ul>
+<blockquote>
+<p>“If all children went to the exact same school, the children who are currently at the charter schools would still be above average.”</p>
+</blockquote>
 <div class="fragment key-line">
 <p>In other words: Preuss students would have scored higher than others <strong>at any school</strong>.</p>
 </div>
 <div class="source">
-<p>Source: <em>Thinking Clearly with Data</em>, ch.&nbsp;9, p.&nbsp;162.</p>
+<p>Source: <em>Thinking Clearly with Data</em>, ch.&nbsp;9, pp.&nbsp;161–162.</p>
 </div>
 <aside class="notes">
-<p>State the problem in the language we just built. Preuss students have higher Y-zero, meaning higher test scores they would have had at any school. The raw comparison with San Diego City Schools therefore includes a positive baseline difference.</p>
-<p>Read the book’s sentence aloud. It is a plain-language statement of the bias term: even if all children attended the same school, the children now at Preuss would still score above average.</p>
-<p>Show the diagram as a preview of Part 4: talent and parental investment cause both attendance and scores. The dashed arrow is the effect we want to estimate.</p>
+<p>Now explain how the confounder gets in. Preuss uses a lottery, but only among families who apply, and applying is a choice. The book suggests that disadvantaged families who enter charter lotteries include parents who believe their child is especially talented and parents who are especially invested in education. Both talent and parental involvement raise achievement directly, which is exactly the confounder on the previous slide.</p>
+<p>Read the book’s sentence aloud. It is a plain-language statement of the baseline difference: even if all children attended the same school, the children now at Preuss would still score above average.</p>
+<p>Then set up the next slide. If the problem is who applies, the fix is to compare only applicants: children whose families all chose to apply, and who were separated by luck.</p>
 <p><strong>Transition: </strong>next, The lottery comparison</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2618,6 +2648,62 @@ COMM 5220 • Week 10
 <p>This is the skeptic’s model. It deliberately contains no arrow from maternal behavior to the child’s depression. If this DAG is correct, the observed association is entirely produced by genetic confounding.</p>
 <p>Ask students to find the back-door path. It runs from maternal behavior back to the mother’s depressiveness, back to the mother’s genetic predisposition, forward to the child’s genetic predisposition, and forward to the child’s depressiveness. It contains no collider, so it is open.</p>
 <p>What could block it? Rohrer suggests controlling for the mother’s depressiveness, which is measurable. Genes would also block it in principle, but they are rarely measured. Turkheimer’s warning: because almost every trait is somewhat heritable, correlations among biological relatives cannot be taken as evidence of social causes. That leads to designs that remove the path entirely.</p>
+<p><strong>Transition: </strong>next, Practice: a confounder and a mediator</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="practice-mediator" class="slide level2">
+<h2>Practice: a confounder and a mediator</h2>
+<div class="two-column">
+<div class="column">
+<p><img data-src="assets/dag-practice-ad.svg" alt="Party identification causes seeing the ad and voting; the ad changes views of the candidate, which affect voting; the ad also affects voting directly"></p>
+</div><div class="column">
+<p>We want the <strong>total effect</strong> of seeing a campaign ad on voting for the candidate.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Control for…</th>
+<th style="text-align: center;">Effect identified?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nothing</td>
+<td style="text-align: center;"><span class="fragment">No: back door through party ID open</span></td>
+</tr>
+<tr class="even">
+<td>Party ID</td>
+<td style="text-align: center;"><span class="fragment"><strong>Yes</strong></span></td>
+</tr>
+<tr class="odd">
+<td>Views of the candidate</td>
+<td style="text-align: center;"><span class="fragment">No: back door open, <strong>and</strong> part of the effect removed</span></td>
+</tr>
+<tr class="even">
+<td>Party ID and views</td>
+<td style="text-align: center;"><span class="fragment">No: only the <strong>direct</strong> effect remains</span></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<aside class="notes">
+<p>Give pairs two minutes. Ask them to list the paths from seeing the ad to voting, then fill in the table.</p>
+<p>There are three paths. Two are causal: the ad affects the vote directly, and the ad changes views of the candidate, which then affect the vote. Views of the candidate are a mediator. One path is a back door: the ad is more likely to reach people of the candidate’s party, through targeting and media habits, and party identification affects the vote.</p>
+<p>Reveal the rows. With no controls, the back door is open, so the raw comparison overstates the ad’s effect. Controlling for party identification, measured before the campaign, blocks the back door and leaves both causal paths open: that identifies the total effect. Controlling for views of the candidate alone is doubly wrong: it leaves the back door open and removes the part of the effect that works by changing views. Controlling for both blocks the back door but also removes the mediated path, so what remains is only the direct effect, the part of the ad’s influence that does not run through views of the candidate.</p>
+<p>Make the point that controlling for the mediator is not always a mistake; it answers a different question. If the research question is whether the ad works through changing views of the candidate or through something else, the direct effect is the target. But that is a mediation question, and Rohrer warns later today that estimating it requires its own assumptions.</p>
 <p><strong>Transition: </strong>next, Control by design</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {

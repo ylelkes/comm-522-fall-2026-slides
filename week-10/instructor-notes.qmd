@@ -362,21 +362,31 @@ Introduce the book's worked case. Charter schools are publicly funded but run in
 
 Read the figure. Preuss students pass the math and English tests at close to 100 percent, while San Diego City Schools students pass at a little under 80 percent. The book does not print the numbers; these are read from the chart.
 
-Ask students which families enter a charter lottery. The book suggests parents who believe their child is especially talented and parents who are especially invested in education. Both talent and parental involvement raise achievement directly.
+End on the question: is Preuss a better school, or does it get better students? Let students offer answers; the next slide draws the worry as a DAG.
+
+**Transition:** next, Preuss: a possible confounder
+
+### Slide 33: Preuss: a possible confounder
+
+Draw the worry before discussing the lottery. Talent and parental investment could affect both whether a child attends Preuss and how that child scores on tests. The dashed arrow from Preuss to test scores is the school's effect, the thing we want to know.
+
+This is the same structure as the confounder cases students have already seen: family background in the TV case and ability and ambition in the college case. Note that it is a preview of Part 4, where Rohrer names this structure a fork.
+
+Ask: if this diagram is right, what would the raw gap between Preuss and San Diego City Schools contain? Answer: the school's effect, if any, plus the difference between the kinds of students who end up at each. The next slide asks where that difference comes from.
 
 **Transition:** next, Who enters the lottery?
 
-### Slide 33: Who enters the lottery?
+### Slide 34: Who enters the lottery?
 
-State the problem in the language we just built. Preuss students have higher Y-zero, meaning higher test scores they would have had at any school. The raw comparison with San Diego City Schools therefore includes a positive baseline difference.
+Now explain how the confounder gets in. Preuss uses a lottery, but only among families who apply, and applying is a choice. The book suggests that disadvantaged families who enter charter lotteries include parents who believe their child is especially talented and parents who are especially invested in education. Both talent and parental involvement raise achievement directly, which is exactly the confounder on the previous slide.
 
-Read the book's sentence aloud. It is a plain-language statement of the bias term: even if all children attended the same school, the children now at Preuss would still score above average.
+Read the book's sentence aloud. It is a plain-language statement of the baseline difference: even if all children attended the same school, the children now at Preuss would still score above average.
 
-Show the diagram as a preview of Part 4: talent and parental investment cause both attendance and scores. The dashed arrow is the effect we want to estimate.
+Then set up the next slide. If the problem is who applies, the fix is to compare only applicants: children whose families all chose to apply, and who were separated by luck.
 
 **Transition:** next, The lottery comparison
 
-### Slide 34: The lottery comparison
+### Slide 35: The lottery comparison
 
 Present the apples-to-apples comparison. The ideal question, whether the same child would score differently at Preuss, is unanswerable. The workable question is whether two groups that are identical on average differ. The lottery provides such groups: every applicant was motivated enough to apply, and luck decided who got in.
 
@@ -386,7 +396,7 @@ Add two cautions. First, the figure shows no sample sizes or standard errors, so
 
 **Transition:** next, Why randomization removes the bias
 
-### Slide 35: Why randomization removes the bias
+### Slide 36: Why randomization removes the bias
 
 Explain why randomization works in both languages. In the diagram, the lottery becomes the only cause of attendance among applicants, so the arrow from talent to attendance disappears. Talent still affects scores, but it no longer differs systematically between winners and losers.
 
@@ -396,7 +406,7 @@ The book's line: without an experiment, “social processes” decide who is tre
 
 **Transition:** next, The lottery in a potential-outcomes table
 
-### Slide 36: The lottery in a potential-outcomes table
+### Slide 37: The lottery in a potential-outcomes table
 
 Return to potential outcomes, now for the lottery. This table is invented, like the book's tables, so we can see both potential outcomes. To match the book's reading of the Preuss evidence, suppose attending Preuss has no effect: each child would score the same at Preuss or at a regular school.
 
@@ -410,7 +420,7 @@ Stress “on average.” With ten children, a different coin flip could put four
 
 **Transition:** next, Winners and losers look alike on everything else
 
-### Slide 37: Winners and losers look alike on everything else
+### Slide 38: Winners and losers look alike on everything else
 
 This is an interactive balance table with simulated data. Four hundred families apply for two hundred seats. Two thousand families in the same district do not apply. Every characteristic in the table was measured before the lottery and predicts later test scores: fifth-grade scores, parental education, family income, and absences. The last row is the score each child would get at a regular school, Y-zero, which no real study observes; we can show it because the data are simulated.
 
@@ -424,7 +434,7 @@ Finally, note what the lottery does not buy. The comparison is among applicants,
 
 **Transition:** next, Elite colleges in the same terms
 
-### Slide 38: Elite colleges in the same terms
+### Slide 39: Elite colleges in the same terms
 
 Apply the same idea to the college case from Part 1. The earnings gap between graduates of more and less selective colleges equals the effect of the college on the students who attended plus the difference in how those students would have earned anyway. Because selective colleges enroll students who are more able, ambitious, and advantaged, the second term is large and positive.
 
@@ -434,7 +444,7 @@ Ask students what assumption the design relies on: that among students admitted 
 
 **Transition:** next, Two sources of baseline differences
 
-### Slide 39: Two sources of baseline differences
+### Slide 40: Two sources of baseline differences
 
 Name the two sources of baseline differences in the book. A confounder must satisfy two conditions: it affects treatment status, and it affects the outcome over and above its effect through treatment. Talent is a confounder in the Preuss case. Health-consciousness is a confounder in the hormone case.
 
@@ -444,7 +454,7 @@ Use the book's figure as a checklist. A variable belongs in the confounders box 
 
 **Transition:** next, Reverse causality with real data: police and crime
 
-### Slide 40: Reverse causality with real data: police and crime
+### Slide 41: Reverse causality with real data: police and crime
 
 Give a real reverse-causality case. Places with more police often have more crime, because police are deployed in response to crime. A raw correlation across cities or neighborhoods can therefore suggest that police cause crime.
 
@@ -456,7 +466,7 @@ Point to the diagram. Time-indexing crime as earlier and later turns reverse cau
 
 **Transition:** next, Signing the bias
 
-### Slide 41: Signing the bias
+### Slide 42: Signing the bias
 
 Introduce the book's tool for reasoning about bias we cannot measure: signing it. If a confounder raises the chance of treatment and raises the outcome, the bias is positive. If the two signs differ, it is negative.
 
@@ -466,7 +476,7 @@ The coda, from outside the book: the ECHO trial, published in the Lancet in 2019
 
 **Transition:** next, Your turn: sign the bias
 
-### Slide 42: Your turn: sign the bias
+### Slide 43: Your turn: sign the bias
 
 Give pairs two minutes. This builds on the book's statins quiz, which asks readers to sign the bias for pre-treatment cholesterol but does not answer.
 
@@ -476,7 +486,7 @@ The follow-up question sets up Part 4. Cholesterol measured after statins begin 
 
 **Transition:** next, Two kinds of selection
 
-### Slide 43: Two kinds of selection
+### Slide 44: Two kinds of selection
 
 Put last week and this week side by side. Students will otherwise merge the two meanings of “selection bias.”
 
@@ -490,7 +500,7 @@ Take the break here.
 
 **Transition:** next, Drawing the bias: Rohrer's DAGs
 
-### Slide 44: Drawing the bias: Rohrer's DAGs
+### Slide 45: Drawing the bias: Rohrer's DAGs
 
 Transition to Rohrer. Part 3 ended with the conclusion that bias comes from baseline differences. Rohrer answers the practical question that follows: if we cannot randomize, what should we control for?
 
@@ -498,7 +508,7 @@ Her central claim is that controlling for a variable can help, do nothing, or ma
 
 **Transition:** next, Rohrer's dilemma
 
-### Slide 45: Rohrer's dilemma
+### Slide 46: Rohrer's dilemma
 
 Present Rohrer's starting point. Randomized experiments are the gold standard, but for many questions manipulation is unfeasible, unethical, or impossible. Her examples: we cannot assign couples to divorce, randomly resettle people into social classes, or randomize children to adversity. Add a communication example: we cannot assign people to years of partisan media.
 
@@ -506,7 +516,7 @@ Rohrer argues that causal inference from observational data requires assumptions
 
 **Transition:** next, Three common workarounds
 
-### Slide 46: Three common workarounds
+### Slide 47: Three common workarounds
 
 Walk through Rohrer's three coping strategies and what is wrong with each.
 
@@ -522,7 +532,7 @@ Flag that Isch and colleagues, the last reading for today, recommend association
 
 **Transition:** next, Reading a DAG
 
-### Slide 47: Reading a DAG
+### Slide 48: Reading a DAG
 
 Give the grammar. A DAG is a directed acyclic graph. Nodes are variables; arrows are direct causal effects. Rohrer's interventionist reading: a manipulation of the variable at the start of an arrow, holding everything else constant, would change the variable at the end.
 
@@ -534,7 +544,7 @@ Completeness: a DAG must include every common cause of any pair of variables in 
 
 **Transition:** next, Rohrer's running example
 
-### Slide 48: Rohrer's running example
+### Slide 49: Rohrer's running example
 
 Introduce Rohrer's running example. We want the causal effect of educational attainment on income. Education is simplified to a college degree by age 30; income is measured at age 40 to fix the time order. Graduates earn about \$1,500 per week and non-graduates about \$700.
 
@@ -544,7 +554,7 @@ The raw difference adds the two paths together. Controlling for intelligence wou
 
 **Transition:** next, Three building blocks
 
-### Slide 49: Three building blocks
+### Slide 50: Three building blocks
 
 Present the three elementary structures. Every path between two variables, however long, is built from chains, forks, and inverted forks.
 
@@ -554,7 +564,7 @@ The fourth column is the key to the rest of Part 4. Controlling for a mediator r
 
 **Transition:** next, Chain: controlling removes a real effect
 
-### Slide 50: Chain: controlling removes a real effect
+### Slide 51: Chain: controlling removes a real effect
 
 Show the chain with simulated data. X affects M, and M affects Y. Across all units, X and Y are positively related, and that relationship is entirely causal: it runs through M.
 
@@ -566,7 +576,7 @@ The simulation uses 1,200 simulated units. M takes four levels so that “holdin
 
 **Transition:** next, Fork: controlling removes bias
 
-### Slide 51: Fork: controlling removes bias
+### Slide 52: Fork: controlling removes bias
 
 Show the fork. C causes both X and Y, and X has no effect on Y in this simulation. Across all units, X and Y are clearly correlated, but the correlation is entirely produced by C.
 
@@ -576,7 +586,7 @@ Connect to the earlier cases. Family background in the TV case, talent in the Pr
 
 **Transition:** next, Collider: controlling creates bias
 
-### Slide 52: Collider: controlling creates bias
+### Slide 53: Collider: controlling creates bias
 
 Show the collider. X and Y are independent in the simulation; both cause C. Across all units there is no relationship between X and Y.
 
@@ -586,7 +596,7 @@ This is the reverse of the fork. Leaving a collider alone keeps the path blocked
 
 **Transition:** next, You have seen the collider before
 
-### Slide 53: You have seen the collider before
+### Slide 54: You have seen the collider before
 
 Connect Rohrer's collider example to last week. Suppose methodological rigor has no effect on innovativeness. Both make publication more likely. Among published studies, the low–low corner is missing because those studies were not published, and the high–high corner is rare. The remaining studies show a negative association, a trade-off that does not exist in the full population. Rohrer adds that analyzing unpublished studies separately produces the same spurious trade-off, because it also conditions on publication.
 
@@ -596,7 +606,7 @@ Make the synthesis explicit. Last week's selection into the sample is conditioni
 
 **Transition:** next, Back-door paths
 
-### Slide 54: Back-door paths
+### Slide 55: Back-door paths
 
 State the back-door criterion informally. A back-door path is any path from treatment to outcome that begins with an arrow pointing into the treatment. Those paths carry non-causal association. To identify the effect, block every back-door path by conditioning on a non-collider somewhere on it, and do not condition on anything caused by the treatment.
 
@@ -606,7 +616,7 @@ Stress the condition: “if the DAG is right.” The criterion guarantees identi
 
 **Transition:** next, Practice: what should we control for?
 
-### Slide 55: Practice: what should we control for?
+### Slide 56: Practice: what should we control for?
 
 Give pairs two minutes to list the paths. There are three. The causal path runs from education straight to income. One back-door path runs from education back to intelligence and forward to income. A second back-door path runs from education back to grades, back to intelligence, and forward to income.
 
@@ -616,7 +626,7 @@ This is Rohrer's point that choosing a node that blocks several paths at once is
 
 **Transition:** next, Practice: a skeptic's DAG
 
-### Slide 56: Practice: a skeptic's DAG
+### Slide 57: Practice: a skeptic's DAG
 
 This is the skeptic's model. It deliberately contains no arrow from maternal behavior to the child's depression. If this DAG is correct, the observed association is entirely produced by genetic confounding.
 
@@ -624,9 +634,21 @@ Ask students to find the back-door path. It runs from maternal behavior back to 
 
 What could block it? Rohrer suggests controlling for the mother's depressiveness, which is measurable. Genes would also block it in principle, but they are rarely measured. Turkheimer's warning: because almost every trait is somewhat heritable, correlations among biological relatives cannot be taken as evidence of social causes. That leads to designs that remove the path entirely.
 
+**Transition:** next, Practice: a confounder and a mediator
+
+### Slide 58: Practice: a confounder and a mediator
+
+Give pairs two minutes. Ask them to list the paths from seeing the ad to voting, then fill in the table.
+
+There are three paths. Two are causal: the ad affects the vote directly, and the ad changes views of the candidate, which then affect the vote. Views of the candidate are a mediator. One path is a back door: the ad is more likely to reach people of the candidate's party, through targeting and media habits, and party identification affects the vote.
+
+Reveal the rows. With no controls, the back door is open, so the raw comparison overstates the ad's effect. Controlling for party identification, measured before the campaign, blocks the back door and leaves both causal paths open: that identifies the total effect. Controlling for views of the candidate alone is doubly wrong: it leaves the back door open and removes the part of the effect that works by changing views. Controlling for both blocks the back door but also removes the mediated path, so what remains is only the direct effect, the part of the ad's influence that does not run through views of the candidate.
+
+Make the point that controlling for the mediator is not always a mistake; it answers a different question. If the research question is whether the ad works through changing views of the candidate or through something else, the direct effect is the target. But that is a mediation question, and Rohrer warns later today that estimating it requires its own assumptions.
+
 **Transition:** next, Control by design
 
-### Slide 57: Control by design
+### Slide 59: Control by design
 
 Present Rohrer's alternative to statistical control: change the design so the back-door path does not exist.
 
@@ -638,7 +660,7 @@ Natural experiments are “lucky accidents” that remove many back-door paths a
 
 **Transition:** next, Communication designs that cut the back door
 
-### Slide 58: Communication designs that cut the back door
+### Slide 60: Communication designs that cut the back door
 
 Show three communication studies that removed the selection problem by design.
 
@@ -652,7 +674,7 @@ If you want to add a fourth example, Lelkes, Sood, and Iyengar (2017) used state
 
 **Transition:** next, Learning to let go
 
-### Slide 59: Learning to let go
+### Slide 61: Learning to let go
 
 Introduce Rohrer's section “Learning to let go.” Some fields reward studies that use more controls than previous studies. Rohrer agrees that omitting confounders is bad, but argues that adding covariates can make things worse.
 
@@ -662,7 +684,7 @@ The next slides show where this goes wrong in practice: in data collection, incl
 
 **Transition:** next, Colliders built into data collection
 
-### Slide 60: Colliders built into data collection
+### Slide 62: Colliders built into data collection
 
 Present Rohrer's examples of collider bias produced by the sampling procedure rather than by a choice of covariates. She calls it endogenous selection bias.
 
@@ -676,7 +698,7 @@ For text data, the same logic applies to posts that survived moderation and arti
 
 **Transition:** next, Mediators: controlling away the effect
 
-### Slide 61: Mediators: controlling away the effect
+### Slide 63: Mediators: controlling away the effect
 
 Return to Rohrer's running example, now with a twist. Education raises intelligence in adulthood, and adult intelligence raises income. Rohrer also adds an unmeasured variable U that affects both adult intelligence and income.
 
@@ -686,7 +708,7 @@ The right choice for the total effect: control for childhood intelligence, which
 
 **Transition:** next, Mediation analysis in communication research
 
-### Slide 62: Mediation analysis in communication research
+### Slide 64: Mediation analysis in communication research
 
 Bring Rohrer's warning home to communication. Mediation analysis in the Baron and Kenny tradition, and Hayes's PROCESS macro, estimate direct and indirect effects by statistically controlling for the mediator. Hayes's influential 2009 paper appeared in *Communication Monographs*, and many students will have run PROCESS models.
 
@@ -696,7 +718,7 @@ Do not tell students never to study mechanisms. Tell them that mediation estimat
 
 **Transition:** next, Control or not? Today's examples
 
-### Slide 63: Control or not? Today's examples
+### Slide 65: Control or not? Today's examples
 
 Run this as a rapid-fire classification. Read each row, say the treatment and outcome out loud, and have students call out the role before revealing it.
 
@@ -714,7 +736,7 @@ Close with the key line: the same variable can play different roles depending on
 
 **Transition:** next, Control or not? More practice
 
-### Slide 64: Control or not? More practice
+### Slide 66: Control or not? More practice
 
 Run these quickly. Read each row aloud and ask students to call out the role before revealing it. For each, ask one question: does the variable come before the treatment and affect both, does it sit between treatment and outcome, or is it caused by both?
 
@@ -730,7 +752,7 @@ Looks and competence among winners: both attractive candidates and competent can
 
 **Transition:** next, Control or not? Round two
 
-### Slide 65: Control or not? Round two
+### Slide 67: Control or not? Round two
 
 Second round, same routine.
 
@@ -748,7 +770,7 @@ Close with the three questions on the slide. Students should be able to apply th
 
 **Transition:** next, What a DAG cannot do
 
-### Slide 66: What a DAG cannot do
+### Slide 68: What a DAG cannot do
 
 End Part 4 with Rohrer's limits.
 
@@ -760,13 +782,13 @@ The DAG is an assumption: Rohrer asks researchers to state their assumptions, co
 
 **Transition:** next, Back to the cases
 
-### Slide 67: Back to the cases
+### Slide 69: Back to the cases
 
 Transition to the final part. Students now have potential outcomes, the baseline-difference idea, and DAGs. Return to the opening cases and apply all three.
 
 **Transition:** next, Back to the opening cases
 
-### Slide 68: Back to the opening cases
+### Slide 70: Back to the opening cases
 
 Give pairs four minutes. Students have already seen a design-based answer for each case. Now ask them to imagine they had only a single cross-sectional survey and had to rely on statistical control, as Rohrer describes.
 
@@ -776,7 +798,7 @@ The final question matters most. Students should see that even a carefully chose
 
 **Transition:** next, The four cases, drawn
 
-### Slide 69: The four cases, drawn
+### Slide 71: The four cases, drawn
 
 Reveal the four diagrams side by side. For social media, show the reverse-direction diagram that the longitudinal evidence favored, and remind students that the question is still debated. For smoking and COVID, the structure is a collider: the pattern came from studying only hospital patients, and it disappears in data on the general population. For TV, the arrival of a broadcast signal created variation in exposure unrelated to family background. For colleges, comparing students admitted to the same schools blocked the path from ability to college choice.
 
@@ -786,7 +808,7 @@ Ask the pairs to compare their survey-only DAGs with these. Differences are usef
 
 **Transition:** next, How a causal case gets built: fever
 
-### Slide 70: How a causal case gets built: fever
+### Slide 72: How a causal case gets built: fever
 
 Close with Bergstrom and West's only constructive example: how a research program builds a causal case step by step.
 
@@ -796,7 +818,7 @@ Ask students what evidence would distinguish the two. Then show the sequence on 
 
 **Transition:** next, Fever: each design rules out a DAG
 
-### Slide 71: Fever: each design rules out a DAG
+### Slide 73: Fever: each design rules out a DAG
 
 Walk through the four steps. First, the correlation raises the hypothesis. Second, natural variation in who receives fever-reducing drugs suggests that blocking fever slows recovery, but the drugs were not randomly assigned: sicker patients may be more likely to receive them. Third, randomized trials in less severe illnesses, with consent, show that fever-reducing drugs slow recovery and increase the chance of spreading illness. Randomization closes the back door through underlying condition. Fourth, the drugs might harm patients through some side effect rather than by lowering temperature. Researchers physically cooled laboratory animals without drugs and found the same effect. That isolates the mechanism: the chain runs through body temperature.
 
@@ -804,7 +826,7 @@ Use this as the synthesis of the session. Potential outcomes define the effect w
 
 **Transition:** next, How often do papers overclaim?
 
-### Slide 72: How often do papers overclaim?
+### Slide 74: How often do papers overclaim?
 
 Bring in the Isch reading. The question is how often social scientists do what Bergstrom and West criticize journalists for doing: describing correlational findings in causal language.
 
@@ -818,7 +840,7 @@ Add one caution about measurement, consistent with Week 7. The classifier's defi
 
 **Transition:** next, Where the causal claims hide
 
-### Slide 73: Where the causal claims hide
+### Slide 75: Where the causal claims hide
 
 Present three findings about where overclaiming appears.
 
@@ -832,7 +854,7 @@ Connect to the project. Students will write introductions and discussions. That 
 
 **Transition:** next, Does the wording change what readers believe?
 
-### Slide 74: Does the wording change what readers believe?
+### Slide 76: Does the wording change what readers believe?
 
 Describe the experiment. 1,105 participants each read one of 28 real abstracts from cross-sectional studies that used causal language. They were randomly assigned to one of four versions: the original abstract; a minimal rewrite replacing causal phrases with associational ones; the original plus a short methodological note explaining that a single-time-point study can show patterns but not causes; or the original with highlighted phrases and a note framed as AI feedback.
 
@@ -844,7 +866,7 @@ Two subtleties. First, the effects are real but modest: even after the rewrite, 
 
 **Transition:** next, LLM summaries amplify the claim
 
-### Slide 75: LLM summaries amplify the claim
+### Slide 77: LLM summaries amplify the claim
 
 The final component tests large language models. Five models, GPT-4.1, GPT-5.1, GPT-5.4, DeepSeek Chat, and Claude Sonnet 4.6, each summarized 100 cross-sectional abstracts under four prompts: a basic summary, a simplified summary, a summary of practical implications, and a careful summary that asked the model to avoid overstating causal claims.
 
@@ -856,7 +878,7 @@ Make it practical. Students using LLMs to summarize readings or draft write-ups 
 
 **Transition:** next, Isch vs. Rohrer: should we avoid causal language?
 
-### Slide 76: Isch vs. Rohrer: should we avoid causal language?
+### Slide 78: Isch vs. Rohrer: should we avoid causal language?
 
 Set up a short discussion. The two readings appear to give opposite advice. Isch and colleagues treat causal wording in cross-sectional papers as overreach and test associational rewrites as a fix. Rohrer lists avoiding causal language as one of three flawed coping strategies: the underlying question is still causal, readers interpret findings causally anyway, and the hedge lets authors avoid stating the assumptions that would justify or undermine a causal reading.
 
@@ -866,7 +888,7 @@ Ask students to reconcile the two positions. A defensible synthesis: say the cau
 
 **Transition:** next, Your project: from a causal-sounding claim to a defensible one
 
-### Slide 77: Your project: from a causal-sounding claim to a defensible one
+### Slide 79: Your project: from a causal-sounding claim to a defensible one
 
 Turn to the projects. The coding projects are descriptive, but write-ups often slide into causal language. Give groups five minutes, if time allows, or assign it as homework.
 
@@ -878,7 +900,7 @@ Also remind students of Bergstrom and West's point that axis placement and gramm
 
 **Transition:** next, Exit question
 
-### Slide 78: Exit question
+### Slide 80: Exit question
 
 Collect exit responses on paper or in the course form. Each student names a correlation from their own area that is usually interpreted causally, and draws a DAG in which the correlation would arise without any causal effect.
 

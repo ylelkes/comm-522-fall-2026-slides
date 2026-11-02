@@ -213,6 +213,15 @@ single_dag("dag-tv-rollout.svg",
            [("m", "tv", "causal"), ("f", "y", "bias"), ("tv", "y", "causal")],
            box_w=0.26, size=(10, 4.4))
 
+# Practice: confounder + mediator (campaign ad)
+single_dag("dag-practice-ad.svg",
+           {"p": (0.5, 0.86, "Party ID\n(before the campaign)"),
+            "a": (0.14, 0.2, "Sees the\ncampaign ad"),
+            "f": (0.5, 0.42, "Views of the\ncandidate"),
+            "v": (0.86, 0.2, "Votes for\nthe candidate")},
+           [("p", "a", "bias"), ("p", "v", "bias"), ("a", "f", "causal"), ("f", "v", "causal"), ("a", "v", "causal")],
+           box_w=0.28, size=(10, 4.8))
+
 # Three building blocks, one figure each (DAG only)
 blocks = {
     "chain": ({"x": (0.15, 0.5, "X"), "m": (0.5, 0.5, "M"), "y": (0.85, 0.5, "Y")},
