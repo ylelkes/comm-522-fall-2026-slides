@@ -811,40 +811,40 @@ A coda for curious students: Hernán and colleagues (2008) reanalyzed the Nurses
 
 ## Averages answer a different question {#averages}
 
-The **average treatment effect** is the average of individual effects:
+We **can't** see anyone's individual effect.
+
+We **can** see the average outcome in the **treated** group and in the **control** group.
 
 ::: equation
-Average treatment effect = the average of everyone's $Y_1 - Y_0$
+Treated average − control average = average treatment effect, **if the groups are balanced**
 :::
 
-::::: two-column
-::: column
-### The FDA asks
-
-If we approve the drug, how will health change **on average**?
-
-Randomized trials can answer this.
+::: {.fragment}
+**Balanced:** the two groups don't differ on anything else that affects the outcome.
 :::
 
-::: column
-### A court asks
-
-Would **this** harm have happened **but for** this defendant's action?
-
-No method can observe this directly.
+::: {.fragment .key-line}
+Body Vibes and the flu shot failed this test. Randomization is how we guarantee it.
 :::
-:::::
+
+::: {.fragment}
+This answers the FDA's question (what happens **on average**), not a court's (would **this** person have been harmed **but for** the action).
+:::
 
 ::: source
 Source: *Thinking Clearly with Data*, ch. 3, pp. 41–42.
 :::
 
 ::: notes
-Introduce averages as the way out of the fundamental problem. We can never see individual effects, but we can sometimes learn the average effect across a population. The average treatment effect is the average of the individual differences, which equals the average of Y-one minus the average of Y-zero.
+Introduce averages as the way out of the fundamental problem. We can never see an individual effect, because each person shows us only one potential outcome. But we can see two averages: the average outcome among people who got the treatment and the average among people who did not.
 
-The book contrasts two institutions. The FDA asks an average question: if the drug is approved, how will health change on average? Randomized trials answer that by comparing groups. A court asks an individual question: would this particular harm have happened but for this person's action? That is a question about one person's counterfactual, which no method can observe. Our methods can answer a nearby question: on average, do actions of this kind tend to cause harm?
+The key condition is balance. If the treated and control groups do not differ on anything else that affects the outcome, then the control group's average tells us what the treated group's average would have been without treatment. The difference between the two averages is then the average treatment effect.
 
-The book's broader lesson: “Part of clear thinking about causal relationships involves admitting that sometimes we cannot answer certain questions with complete confidence, even when those questions are very important.”
+Tie it back to the tables. Body Vibes failed this test: the wearers had better skin to begin with, so the difference in averages was +20 points while the true effect was zero. The flu shot failed it in the other direction: the vaccinated group was full of people who get sick anyway. In both cases, the groups were not balanced on something that affects the outcome.
+
+Point ahead. Part 3 shows what happens when groups are not balanced, and how a lottery produces balance. Randomization does not make any one person's counterfactual visible; it makes the groups alike on average, so the comparison of averages works.
+
+The book contrasts two institutions. The FDA asks an average question: if the drug is approved, how will health change on average? Randomized trials answer that by comparing balanced groups. A court asks an individual question: would this particular harm have happened but for this person's action? No method can observe that. The book's broader lesson: “Part of clear thinking about causal relationships involves admitting that sometimes we cannot answer certain questions with complete confidence, even when those questions are very important.”
 :::
 
 ## Correlation = effect + selection {#selection-bias .section-title}

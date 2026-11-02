@@ -50,7 +50,7 @@ Tell students that today's session moves from intuitions to a precise vocabulary
 
 ::: roadmap
 | Part | Question |
-|------|----------|
+|---------------------------|---------------------------------------------|
 | 1 · Four claims | What would you need to know before believing this? |
 | 2 · Potential outcomes | What does “X causes Y” actually mean? |
 | 3 · How selection creates bias | Why does the difference in means differ from the effect? |
@@ -98,27 +98,33 @@ Write the three stories on the board. They become the three diagrams on the next
 
 ## Case 1: Three stories, one correlation {#social-three-stories}
 
-::: three-col
-::: {}
+:::::: three-col
+<div>
+
 Social media → depression
 
 ![](assets/dag-social-a.svg){fig-alt="Arrow from social media use to depressive symptoms"}
-:::
 
-::: {}
+</div>
+
+<div>
+
 Depression → social media
 
 ![](assets/dag-social-b.svg){fig-alt="Arrow from depressive symptoms to social media use"}
-:::
 
-::: {}
+</div>
+
+<div>
+
 A common cause produces both
 
 ![](assets/dag-social-c.svg){fig-alt="Being bullied at school causes both social media use and depressive symptoms"}
-:::
-:::
 
-::: {.fragment}
+</div>
+::::::
+
+::: fragment
 Following **594 adolescents** over two years: depressive symptoms predicted **later** social media use (among girls). Social media use did **not** predict later depression.
 :::
 
@@ -142,24 +148,24 @@ The lesson for today: a correlation is compatible with several causal structures
 
 ## Case 1: What a common cause looks like {#social-common-cause}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/dag-social-bullying.svg){fig-alt="Being bullied at school leads to withdrawing from in-person life, which increases social media use; bullying also raises depressive symptoms; dashed arrow from social media to depression"}
 :::
 
-::: column
+:::: column
 A teen who is **bullied at school**:
 
-- pulls back from in-person friends and activities, and spends **more time online**
-- is **more likely to become depressed**, whether or not they use social media
+-   pulls back from in-person friends and activities, and spends **more time online**
+-   is **more likely to become depressed**, whether or not they use social media
 
 ::: {.fragment .key-line}
 Bullied teens are overrepresented among heavy users. Heavy users look more depressed even if social media does **nothing**.
 :::
-:::
-:::
+::::
+::::::
 
-::: {.fragment}
+::: fragment
 Other candidates: **family conflict** or a parent's divorce; **school closures** during COVID, which raised screen time and distress at the same moment.
 :::
 
@@ -195,7 +201,7 @@ Do not reveal the answer yet. Ask students to sketch what would happen if smokin
 
 ## Case 2: Who ends up in the hospital {#covid-collider}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/dag-covid-collider.svg){fig-alt="Smoking and COVID both cause hospitalization, which is conditioned on"}
 
@@ -207,7 +213,7 @@ Smoking and COVID **both** put people in the hospital. Studying only patients **
 
 [Simulation: smoking has **no** effect on COVID.]{.source}
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 Among patients, a smoker is more likely to be there for some **other** reason. Smoking looks protective, with no effect at all.
@@ -233,14 +239,14 @@ The public-health stakes were real: a message that smoking protects against COVI
 
 100,000 people. **20%** smoke and **5%** have COVID, **unrelated**. Chance of hospitalization: **1%**, plus **4** points for smoking, plus **15** points for COVID.
 
-| Group | People | Chance of hospitalization | Hospitalized |
-|---|---:|---:|---:|
-| Non-smoker, no COVID | 76,000 | 1% | 760 |
-| Non-smoker, COVID | 4,000 | 16% | 640 |
-| Smoker, no COVID | 19,000 | 5% | 950 |
-| Smoker, COVID | 1,000 | 20% | 200 |
+| Group                | People | Chance of hospitalization | Hospitalized |
+|----------------------|-------:|--------------------------:|-------------:|
+| Non-smoker, no COVID | 76,000 |                        1% |          760 |
+| Non-smoker, COVID    |  4,000 |                       16% |          640 |
+| Smoker, no COVID     | 19,000 |                        5% |          950 |
+| Smoker, COVID        |  1,000 |                       20% |          200 |
 
-::: {.fragment}
+::: fragment
 Inside the hospital: **17%** of smokers have COVID (200 of 1,150) vs. **46%** of non-smokers (640 of 1,400).
 :::
 
@@ -266,7 +272,7 @@ Children who watch more television tend to score **lower** on achievement tests.
 
 Pediatric guidance has long urged parents to limit young children's screen time.
 
-::: {.fragment}
+::: fragment
 ![](assets/dag-tv.svg){fig-alt="Family background causes hours of TV and test scores; dashed arrow from TV to scores" width="55%"}
 :::
 
@@ -284,12 +290,12 @@ Ask what would have to be true for limiting TV to raise scores. The arrow from T
 
 ## Case 3: When TV arrived {#tv-rollout}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/dag-tv-rollout.svg){fig-alt="TV arriving in the local market causes preschool TV exposure; family background causes scores; TV causes scores"}
 :::
 
-::: column
+:::: column
 An **FCC licensing freeze (1948–52)** delayed TV in some markets.
 
 Children born **1948–54** got more or fewer preschool years of TV depending on **where** and **when** they were born. Tested in **1965**.
@@ -297,8 +303,8 @@ Children born **1948–54** got more or fewer preschool years of TV depending on
 ::: {.fragment .key-line}
 No evidence of harm: about **+0.02 SD** per year of preschool TV; harms larger than **0.03 SD** ruled out.
 :::
-:::
-:::
+::::
+::::::
 
 ::: source
 Source: Gentzkow and Shapiro (2008), *Quarterly Journal of Economics* 123(1): 279–323.
@@ -320,11 +326,11 @@ Draw the lesson. The raw correlation between TV and scores largely reflects who 
 
 Graduates of more **selective colleges** earn more than graduates of less selective ones.
 
-::: {.fragment}
+::: fragment
 Does that gap measure what the **college** adds?
 :::
 
-::: {.fragment}
+::: fragment
 ![](assets/dag-college.svg){fig-alt="Ability, ambition, and family resources cause both attending a selective college and later earnings; dashed arrow from college to earnings" width="55%"}
 :::
 
@@ -342,19 +348,19 @@ This case is personal for graduate students, many of whom made exactly this choi
 
 ## Case 4: Same admissions, different colleges {#college-design}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/dag-college-design.svg){fig-alt="Ability causes which colleges a student applied to and was admitted by; that admission set, which is conditioned on, causes attendance; ability also causes earnings"}
 :::
 
-::: column
+:::: column
 Compare students who **applied to and were admitted by the same colleges**, but enrolled at different ones.
 
 ::: {.fragment .key-line}
 The selective-college premium **largely disappeared**. Exception: students from **low-income families** did earn more.
 :::
-:::
-:::
+::::
+::::::
 
 ::: source
 Source: Dale and Krueger (2002), *Quarterly Journal of Economics* 117(4): 1491–1527; Dale and Krueger (2014), *Journal of Human Resources*.
@@ -410,9 +416,9 @@ The definition is counterfactual. A cause makes a difference to an outcome compa
 
 ## Two worlds {#two-worlds}
 
-You buy Goop's “Body Vibes” stickers at **$6 each**. They are “pre-programmed to an ideal frequency” and promise clearer skin.
+You buy Goop's “Body Vibes” stickers at **\$6 each**. They are “pre-programmed to an ideal frequency” and promise clearer skin.
 
-::: two-column
+::::: two-column
 ::: column
 ### World A
 
@@ -424,7 +430,7 @@ You wear the Body Vibes stickers.
 
 Identical until the moment you put them on, when a friend secretly swaps them for **10¢** stickers.
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 The effect of Body Vibes on your skin = your skin in World A − your skin in World B.
@@ -445,7 +451,7 @@ Stress the phrase “identical up until.” That clause carries the definition. 
 ## Potential outcomes {#po-notation}
 
 | Symbol | Meaning |
-|---|---|
+|------------------------------------|------------------------------------|
 | $T_i$ | Treatment for person $i$: 1 = wears Body Vibes, 0 = does not |
 | $Y_{1i}$ | Person $i$'s skin **if** they wear Body Vibes |
 | $Y_{0i}$ | Person $i$'s skin **if** they do not |
@@ -466,18 +472,18 @@ Connect to Week 6. Lundberg and colleagues wrote the causal estimand as an avera
 ## The view from nowhere: the full table {#po-full-table}
 
 ::: po-table
-| Person | Group | $Y_{1i}$ (with) | $Y_{0i}$ (without) | Effect |
-|---|---|:-:|:-:|:-:|
-| 1 | Wears | [**1**]{.obs} | [1]{.cf} | [0]{.eff} |
-| 2 | Wears | [**0**]{.obs} | [0]{.cf} | [0]{.eff} |
-| 3 | Wears | [**0**]{.obs} | [0]{.cf} | [0]{.eff} |
-| 4 | Wears | [**1**]{.obs} | [1]{.cf} | [0]{.eff} |
-| 5 | Wears | [**1**]{.obs} | [1]{.cf} | [0]{.eff} |
-| 6 | Does not | [0]{.cf} | [**0**]{.obs} | [0]{.eff} |
-| 7 | Does not | [0]{.cf} | [**0**]{.obs} | [0]{.eff} |
-| 8 | Does not | [1]{.cf} | [**1**]{.obs} | [0]{.eff} |
-| 9 | Does not | [1]{.cf} | [**1**]{.obs} | [0]{.eff} |
-| 10 | Does not | [0]{.cf} | [**0**]{.obs} | [0]{.eff} |
+| Person | Group    | $Y_{1i}$ (with) | $Y_{0i}$ (without) |  Effect   |
+|--------|----------|:---------------:|:------------------:|:---------:|
+| 1      | Wears    |  [**1**]{.obs}  |      [1]{.cf}      | [0]{.eff} |
+| 2      | Wears    |  [**0**]{.obs}  |      [0]{.cf}      | [0]{.eff} |
+| 3      | Wears    |  [**0**]{.obs}  |      [0]{.cf}      | [0]{.eff} |
+| 4      | Wears    |  [**1**]{.obs}  |      [1]{.cf}      | [0]{.eff} |
+| 5      | Wears    |  [**1**]{.obs}  |      [1]{.cf}      | [0]{.eff} |
+| 6      | Does not |    [0]{.cf}     |   [**0**]{.obs}    | [0]{.eff} |
+| 7      | Does not |    [0]{.cf}     |   [**0**]{.obs}    | [0]{.eff} |
+| 8      | Does not |    [1]{.cf}     |   [**1**]{.obs}    | [0]{.eff} |
+| 9      | Does not |    [1]{.cf}     |   [**1**]{.obs}    | [0]{.eff} |
+| 10     | Does not |    [0]{.cf}     |   [**0**]{.obs}    | [0]{.eff} |
 :::
 
 [1 = clear skin. **Bold** = what happened. Grey = what would have happened.]{.source}
@@ -499,18 +505,18 @@ Tell students to remember this table. On the next slide we hide what no research
 ## What a researcher actually sees {#po-observed-table}
 
 ::: po-table
-| Person | Group | $Y_{1i}$ (with) | $Y_{0i}$ (without) | Effect |
-|---|---|:-:|:-:|:-:|
-| 1 | Wears | [**1**]{.obs} | [?]{.unk} | [?]{.unk} |
-| 2 | Wears | [**0**]{.obs} | [?]{.unk} | [?]{.unk} |
-| 3 | Wears | [**0**]{.obs} | [?]{.unk} | [?]{.unk} |
-| 4 | Wears | [**1**]{.obs} | [?]{.unk} | [?]{.unk} |
-| 5 | Wears | [**1**]{.obs} | [?]{.unk} | [?]{.unk} |
-| 6 | Does not | [?]{.unk} | [**0**]{.obs} | [?]{.unk} |
-| 7 | Does not | [?]{.unk} | [**0**]{.obs} | [?]{.unk} |
-| 8 | Does not | [?]{.unk} | [**1**]{.obs} | [?]{.unk} |
-| 9 | Does not | [?]{.unk} | [**1**]{.obs} | [?]{.unk} |
-| 10 | Does not | [?]{.unk} | [**0**]{.obs} | [?]{.unk} |
+| Person | Group    | $Y_{1i}$ (with) | $Y_{0i}$ (without) |  Effect   |
+|--------|----------|:---------------:|:------------------:|:---------:|
+| 1      | Wears    |  [**1**]{.obs}  |     [?]{.unk}      | [?]{.unk} |
+| 2      | Wears    |  [**0**]{.obs}  |     [?]{.unk}      | [?]{.unk} |
+| 3      | Wears    |  [**0**]{.obs}  |     [?]{.unk}      | [?]{.unk} |
+| 4      | Wears    |  [**1**]{.obs}  |     [?]{.unk}      | [?]{.unk} |
+| 5      | Wears    |  [**1**]{.obs}  |     [?]{.unk}      | [?]{.unk} |
+| 6      | Does not |    [?]{.unk}    |   [**0**]{.obs}    | [?]{.unk} |
+| 7      | Does not |    [?]{.unk}    |   [**0**]{.obs}    | [?]{.unk} |
+| 8      | Does not |    [?]{.unk}    |   [**1**]{.obs}    | [?]{.unk} |
+| 9      | Does not |    [?]{.unk}    |   [**1**]{.obs}    | [?]{.unk} |
+| 10     | Does not |    [?]{.unk}    |   [**0**]{.obs}    | [?]{.unk} |
 :::
 
 ::: {.fragment .key-line}
@@ -522,7 +528,7 @@ Now hide the counterfactual cells. This is all a researcher ever observes: one p
 
 Pause here and let students look at the pattern of question marks. Ask: “Is there any way, with more data on these ten people, to fill in the question marks?” The answer is no. More measurement of person 1 cannot tell us what person 1's skin would have been without the stickers.
 
-The book adds a wry note: the fact that the absence of any effect cannot be observed is probably “key to [Goop's] business model.”
+The book adds a wry note: the fact that the absence of any effect cannot be observed is probably “key to \[Goop's\] business model.”
 :::
 
 ## The fundamental problem of causal inference {#fundamental-problem}
@@ -547,7 +553,7 @@ Reframe causal inference as a missing-data problem. Every causal method is a str
 
 ## The naive comparison {#naive-comparison}
 
-::: two-column
+::::: two-column
 ::: column
 ### Wore Body Vibes
 
@@ -563,13 +569,13 @@ Clear skin: persons 8, 9
 
 **2 of 5 = 40%**
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 Difference in means: **+20 points**. True effect: **0 for everyone**.
 :::
 
-::: {.fragment}
+::: fragment
 Where did the 20 points come from?
 :::
 
@@ -583,7 +589,7 @@ The answer: the people who happened to wear the stickers were people who would h
 
 ## Where the +20 came from {#where-plus-twenty}
 
-::: two-column
+::::: two-column
 ::: column
 ### Skin **without** stickers, among wearers
 
@@ -599,7 +605,7 @@ Persons 6–10: $Y_0$ = 0, 0, 1, 1, 0
 
 Clear skin anyway: **2 of 5**
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 The wearers would have had clearer skin **even without the stickers**. That baseline difference is the bias.
@@ -615,9 +621,10 @@ Contrast this with Week 9. Last week's selection was about who enters the sample
 
 ## Who buys Body Vibes? {#goop-simulation}
 
-People who already care for their skin (sunscreen, dermatologists, $6 to spare) may be the likeliest buyers. The stickers do **nothing** unless you change the true effect.
+People who already care for their skin (sunscreen, dermatologists, \$6 to spare) may be the likeliest buyers. The stickers do **nothing** unless you change the true effect.
 
-<div id="goop-sim-root" class="goop-sim" aria-label="Interactive simulation of selection into buying Body Vibes"></div>
+::: {#goop-sim-root .goop-sim aria-label="Interactive simulation of selection into buying Body Vibes"}
+:::
 
 ::: notes
 Use this simulation to let students see selection happen. Each dot is a person, placed by skin quality on a 0–10 scale. Red dots bought Body Vibes and blue dots did not. The vertical lines mark each group's average. The true effect of the stickers starts at zero, so any gap between the lines is pure selection.
@@ -642,7 +649,7 @@ At Thanksgiving, a relative says: **“I got the flu shot last year and still go
 Let $Y = 1$ if you **stay healthy**. People come in three types:
 
 | Type | Healthy **with** the shot ($Y_1$) | Healthy **without** it ($Y_0$) | Effect of the shot |
-|---|:-:|:-:|:-:|
+|------------------|:----------------:|:----------------:|:----------------:|
 | **Always sick** | 0 | 0 | 0 |
 | **Never sick** | 1 | 1 | 0 |
 | **Vaccine responder** | 1 | 0 | **+1** |
@@ -666,18 +673,18 @@ Ask: “Which type is the relative?” They got the shot and still got sick, so 
 ## The full flu-shot table {#flu-full}
 
 ::: po-table
-| Person | Type | Group | $Y_{1i}$ (shot) | $Y_{0i}$ (no shot) | Effect |
-|---|---|---|:-:|:-:|:-:|
-| 1 | always sick | Shot | [**0**]{.obs} | [0]{.cf} | [0]{.eff} |
-| 2 | responder | Shot | [**1**]{.obs} | [0]{.cf} | [**1**]{.eff} |
-| 3 | always sick | Shot | [**0**]{.obs} | [0]{.cf} | [0]{.eff} |
-| 4 | always sick | Shot | [**0**]{.obs} | [0]{.cf} | [0]{.eff} |
-| 5 | never sick | Shot | [**1**]{.obs} | [1]{.cf} | [0]{.eff} |
-| 6 | never sick | No shot | [1]{.cf} | [**1**]{.obs} | [0]{.eff} |
-| 7 | never sick | No shot | [1]{.cf} | [**1**]{.obs} | [0]{.eff} |
-| 8 | always sick | No shot | [0]{.cf} | [**0**]{.obs} | [0]{.eff} |
-| 9 | responder | No shot | [1]{.cf} | [**0**]{.obs} | [**1**]{.eff} |
-| 10 | never sick | No shot | [1]{.cf} | [**1**]{.obs} | [0]{.eff} |
+| Person | Type        | Group   | $Y_{1i}$ (shot) | $Y_{0i}$ (no shot) |    Effect     |
+|------------|------------|------------|:----------:|:----------:|:----------:|
+| 1      | always sick | Shot    |  [**0**]{.obs}  |      [0]{.cf}      |   [0]{.eff}   |
+| 2      | responder   | Shot    |  [**1**]{.obs}  |      [0]{.cf}      | [**1**]{.eff} |
+| 3      | always sick | Shot    |  [**0**]{.obs}  |      [0]{.cf}      |   [0]{.eff}   |
+| 4      | always sick | Shot    |  [**0**]{.obs}  |      [0]{.cf}      |   [0]{.eff}   |
+| 5      | never sick  | Shot    |  [**1**]{.obs}  |      [1]{.cf}      |   [0]{.eff}   |
+| 6      | never sick  | No shot |    [1]{.cf}     |   [**1**]{.obs}    |   [0]{.eff}   |
+| 7      | never sick  | No shot |    [1]{.cf}     |   [**1**]{.obs}    |   [0]{.eff}   |
+| 8      | always sick | No shot |    [0]{.cf}     |   [**0**]{.obs}    |   [0]{.eff}   |
+| 9      | responder   | No shot |    [1]{.cf}     |   [**0**]{.obs}    | [**1**]{.eff} |
+| 10     | never sick  | No shot |    [1]{.cf}     |   [**1**]{.obs}    |   [0]{.eff}   |
 :::
 
 [1 = stays healthy. **Bold** = what happened. Grey = what would have happened.]{.source}
@@ -698,25 +705,25 @@ Ask students to hold that number in mind. On the next slide we hide the grey cel
 
 ## What a researcher sees {#flu-observed}
 
-::: two-column
-::: column
+::::::: two-column
+:::: column
 ::: po-table
-| Person | Group | $Y_{1i}$ | $Y_{0i}$ |
-|---|---|:-:|:-:|
-| 1 | Shot | [**0**]{.obs} | [?]{.unk} |
-| 2 | Shot | [**1**]{.obs} | [?]{.unk} |
-| 3 | Shot | [**0**]{.obs} | [?]{.unk} |
-| 4 | Shot | [**0**]{.obs} | [?]{.unk} |
-| 5 | Shot | [**1**]{.obs} | [?]{.unk} |
-| 6 | No shot | [?]{.unk} | [**1**]{.obs} |
-| 7 | No shot | [?]{.unk} | [**1**]{.obs} |
-| 8 | No shot | [?]{.unk} | [**0**]{.obs} |
-| 9 | No shot | [?]{.unk} | [**0**]{.obs} |
-| 10 | No shot | [?]{.unk} | [**1**]{.obs} |
+| Person | Group   |   $Y_{1i}$    |   $Y_{0i}$    |
+|--------|---------|:-------------:|:-------------:|
+| 1      | Shot    | [**0**]{.obs} |   [?]{.unk}   |
+| 2      | Shot    | [**1**]{.obs} |   [?]{.unk}   |
+| 3      | Shot    | [**0**]{.obs} |   [?]{.unk}   |
+| 4      | Shot    | [**0**]{.obs} |   [?]{.unk}   |
+| 5      | Shot    | [**1**]{.obs} |   [?]{.unk}   |
+| 6      | No shot |   [?]{.unk}   | [**1**]{.obs} |
+| 7      | No shot |   [?]{.unk}   | [**1**]{.obs} |
+| 8      | No shot |   [?]{.unk}   | [**0**]{.obs} |
+| 9      | No shot |   [?]{.unk}   | [**0**]{.obs} |
+| 10     | No shot |   [?]{.unk}   | [**1**]{.obs} |
 :::
-:::
+::::
 
-::: column
+:::: column
 ### Got the shot
 
 Healthy: persons 2, 5 → **2 of 5 = 40%**
@@ -728,8 +735,8 @@ Healthy: persons 6, 7, 10 → **3 of 5 = 60%**
 ::: {.fragment .key-line}
 Difference in means: **−20 points**. The shot looks **harmful**. True effect: **+20 points**.
 :::
-:::
-:::
+::::
+:::::::
 
 ::: notes
 Hide the counterfactual cells. A researcher sees only the bold column for each person, and no types.
@@ -743,13 +750,13 @@ Ask: “What would have to be true about the two groups for this to happen?” L
 
 ## Why the sign flipped {#flu-why}
 
-::: two-column
+::::: two-column
 ::: column
 ### Got the shot
 
-- always sick: **3** (persons 1, 3, 4)
-- never sick: **1** (person 5)
-- responder: **1** (person 2)
+-   always sick: **3** (persons 1, 3, 4)
+-   never sick: **1** (person 5)
+-   responder: **1** (person 2)
 
 Healthy **even without the shot**: **1 of 5**
 :::
@@ -757,19 +764,19 @@ Healthy **even without the shot**: **1 of 5**
 ::: column
 ### No shot
 
-- always sick: **1** (person 8)
-- never sick: **3** (persons 6, 7, 10)
-- responder: **1** (person 9)
+-   always sick: **1** (person 8)
+-   never sick: **3** (persons 6, 7, 10)
+-   responder: **1** (person 9)
 
 Healthy **without the shot**: **3 of 5**
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 The vaccinated group was full of people who get sick anyway. Their baseline was **40 points worse**, enough to bury a +20-point benefit.
 :::
 
-::: {.fragment}
+::: fragment
 Who seeks out flu shots in real life? Older people, people with chronic illness, people who get sick often.
 :::
 
@@ -805,28 +812,24 @@ A coda for curious students: Hernán and colleagues (2008) reanalyzed the Nurses
 
 ## Averages answer a different question {#averages}
 
-The **average treatment effect** is the average of individual effects:
+We **can't** see anyone's individual effect.
+
+We **can** see the average outcome in the **treated** group and in the **control** group.
 
 ::: equation
-Average treatment effect = the average of everyone's $Y_1 - Y_0$
+Treated average − control average = average treatment effect, **if the groups are balanced**
 :::
 
-::: two-column
-::: column
-### The FDA asks
-
-If we approve the drug, how will health change **on average**?
-
-Randomized trials can answer this.
+::: {.fragment}
+**Balanced:** the two groups don't differ on anything else that affects the outcome.
 :::
 
-::: column
-### A court asks
-
-Would **this** harm have happened **but for** this defendant's action?
-
-No method can observe this directly.
+::: {.fragment .key-line}
+Body Vibes and the flu shot failed this test. Randomization is how we guarantee it.
 :::
+
+::: {.fragment}
+This answers the FDA's question (what happens **on average**), not a court's (would **this** person have been harmed **but for** the action).
 :::
 
 ::: source
@@ -834,11 +837,15 @@ Source: *Thinking Clearly with Data*, ch. 3, pp. 41–42.
 :::
 
 ::: notes
-Introduce averages as the way out of the fundamental problem. We can never see individual effects, but we can sometimes learn the average effect across a population. The average treatment effect is the average of the individual differences, which equals the average of Y-one minus the average of Y-zero.
+Introduce averages as the way out of the fundamental problem. We can never see an individual effect, because each person shows us only one potential outcome. But we can see two averages: the average outcome among people who got the treatment and the average among people who did not.
 
-The book contrasts two institutions. The FDA asks an average question: if the drug is approved, how will health change on average? Randomized trials answer that by comparing groups. A court asks an individual question: would this particular harm have happened but for this person's action? That is a question about one person's counterfactual, which no method can observe. Our methods can answer a nearby question: on average, do actions of this kind tend to cause harm?
+The key condition is balance. If the treated and control groups do not differ on anything else that affects the outcome, then the control group's average tells us what the treated group's average would have been without treatment. The difference between the two averages is then the average treatment effect.
 
-The book's broader lesson: “Part of clear thinking about causal relationships involves admitting that sometimes we cannot answer certain questions with complete confidence, even when those questions are very important.”
+Tie it back to the tables. Body Vibes failed this test: the wearers had better skin to begin with, so the difference in averages was +20 points while the true effect was zero. The flu shot failed it in the other direction: the vaccinated group was full of people who get sick anyway. In both cases, the groups were not balanced on something that affects the outcome.
+
+Point ahead. Part 3 shows what happens when groups are not balanced, and how a lottery produces balance. Randomization does not make any one person's counterfactual visible; it makes the groups alike on average, so the comparison of averages works.
+
+The book contrasts two institutions. The FDA asks an average question: if the drug is approved, how will health change on average? Randomized trials answer that by comparing balanced groups. A court asks an individual question: would this particular harm have happened but for this person's action? No method can observe that. The book's broader lesson: “Part of clear thinking about causal relationships involves admitting that sometimes we cannot answer certain questions with complete confidence, even when those questions are very important.”
 :::
 
 ## Correlation = effect + selection {#selection-bias .section-title}
@@ -855,12 +862,12 @@ Tell students that this idea explains what they already found in the opening cas
 
 ## Preuss School: the raw gap {#preuss-raw}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/tcd-fig9-1-preuss-vs-sdcs.png){fig-alt="Bar chart: percent passing math and English tests at Preuss School versus San Diego City Schools"}
 :::
 
-::: column
+:::: column
 The Preuss School serves low-income students and sends **almost 100%** to higher education.
 
 Preuss students pass state tests at close to **100%**, versus a little under **80%** in San Diego City Schools.
@@ -868,8 +875,8 @@ Preuss students pass state tests at close to **100%**, versus a little under **8
 ::: {.fragment .key-line}
 Admission is by lottery. Who enters the lottery?
 :::
-:::
-:::
+::::
+::::::
 
 ::: source
 Source: *Thinking Clearly with Data*, ch. 9, Figure 9.1.
@@ -907,25 +914,25 @@ Show the diagram as a preview of Part 4: talent and parental investment cause bo
 
 ## The lottery comparison {#preuss-lottery}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/tcd-fig9-2-preuss-lottery.png){fig-alt="Bar chart: test scores for Preuss lottery winners versus lottery losers in language, geometry, and physics"}
 :::
 
-::: column
+:::: column
 Compare **lottery winners** with **lottery losers**. Every applicant was motivated enough to apply; luck decided who got in.
 
-| Test | Winners − losers |
-|---|:-:|
-| Language | +5 |
-| Geometry | −24 |
-| Physics | +7 |
+| Test     | Winners − losers |
+|----------|:----------------:|
+| Language |        +5        |
+| Geometry |       −24        |
+| Physics  |        +7        |
 
 ::: {.fragment .key-line}
 The gap disappears.
 :::
-:::
-:::
+::::
+::::::
 
 ::: source
 Source: *Thinking Clearly with Data*, ch. 9, Figure 9.2 (data from McClure et al. 2005).
@@ -947,7 +954,7 @@ Add two cautions. First, the figure shows no sample sizes or standard errors, so
 The lottery “broke the link between talent (the confounder) and going to Preuss (the treatment).”
 :::
 
-::: {.fragment}
+::: fragment
 Randomization makes the groups' potential outcomes equal **on average**. The baseline difference becomes zero in expectation; what remains is noise.
 :::
 
@@ -969,7 +976,7 @@ Ten applicants. Suppose Preuss has **no effect**, so each child's score is the s
 
 ::: po-table
 | Applicant | Talent | Lottery | $Y_{1i}$ (Preuss) | $Y_{0i}$ (regular school) | Effect |
-|---|---|---|:-:|:-:|:-:|
+|------------|------------|------------|:----------:|:----------:|:----------:|
 | 1 | high | **Win** | [**82**]{.obs} | [82]{.cf} | [0]{.eff} |
 | 2 | low | **Win** | [**64**]{.obs} | [64]{.cf} | [0]{.eff} |
 | 3 | high | **Win** | [**79**]{.obs} | [79]{.cf} | [0]{.eff} |
@@ -1002,7 +1009,8 @@ Stress “on average.” With ten children, a different coin flip could put four
 
 ## Winners and losers look alike on everything else {#lottery-balance}
 
-<div id="lottery-balance-root" class="lot-sim" aria-label="Interactive balance table comparing lottery winners, losers, and non-applicants"></div>
+::: {#lottery-balance-root .lot-sim aria-label="Interactive balance table comparing lottery winners, losers, and non-applicants"}
+:::
 
 ::: {.fragment .key-line}
 The lottery balances **everything**, measured or not, including the score each child would have gotten anyway. Applicants still differ from non-applicants.
@@ -1026,7 +1034,7 @@ Finally, note what the lottery does not buy. The comparison is among applicants,
 Earnings gap $=$ effect of the college on its graduates $+$ how they would have done anyway
 :::
 
-::: two-column
+::::: two-column
 ::: column
 ### Raw comparison
 
@@ -1042,7 +1050,7 @@ Students who looked alike to admissions offices.
 
 The baseline difference shrinks, and so does the premium (except for low-income students).
 :::
-:::
+:::::
 
 ::: notes
 Apply the same idea to the college case from Part 1. The earnings gap between graduates of more and less selective colleges equals the effect of the college on the students who attended plus the difference in how those students would have earned anyway. Because selective colleges enroll students who are more able, ambitious, and advantaged, the second term is large and positive.
@@ -1054,7 +1062,7 @@ Ask students what assumption the design relies on: that among students admitted 
 
 ## Two sources of baseline differences {#two-sources}
 
-::: two-column
+::::: two-column
 ::: column
 ### Confounders
 
@@ -1074,7 +1082,7 @@ Civil war damages the economy.
 
 Depressed teens turn to social media.
 :::
-:::
+:::::
 
 ![](assets/tcd-fig9-3-confounders.png){fig-alt="TCD Figure 9.3: confounders affect treatment status and independently affect outcome" width="55%"}
 
@@ -1092,12 +1100,12 @@ Use the book's figure as a checklist. A variable belongs in the confounders box 
 
 ## Reverse causality with real data: police and crime {#police-crime}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/dag-police.svg){fig-alt="Earlier crime causes police deployment and later crime; police cause later crime; the 1994 attack causes guards to be posted"}
 :::
 
-::: column
+:::: column
 Cities and blocks with more police often have **more** crime, because police go where crime is.
 
 After the **1994 AMIA bombing** in Buenos Aires, every Jewish institution got 24-hour police guards.
@@ -1105,8 +1113,8 @@ After the **1994 AMIA bombing** in Buenos Aires, every Jewish institution got 24
 ::: {.fragment .key-line}
 Car thefts on protected blocks fell about **75%**, with no detectable change one or two blocks away.
 :::
-:::
-:::
+::::
+::::::
 
 ::: source
 Source: Di Tella and Schargrodsky (2004), *American Economic Review* 94(1): 115–133.
@@ -1124,12 +1132,12 @@ Point to the diagram. Time-indexing crime as earlier and later turns reverse cau
 
 ## Signing the bias {#signing-bias}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/tcd-fig9-8-contraception-hiv.png){fig-alt="TCD Figure 9.8: sexual activity as a confounder of hormonal contraception and HIV"}
 :::
 
-::: column
+:::: column
 Women using hormonal contraception were **twice as likely** to acquire HIV from infected partners.
 
 Sexual activity → choosing contraception **(+)**
@@ -1139,8 +1147,8 @@ Sexual activity → HIV risk **(+)**
 ::: {.fragment .key-line}
 (+) × (+) = positive bias. The doubling is probably an **overestimate**.
 :::
-:::
-:::
+::::
+::::::
 
 ::: source
 Source: *Thinking Clearly with Data*, ch. 9, pp. 179–181, Figure 9.8.
@@ -1160,9 +1168,9 @@ Middle-aged men who take **statins** are less likely to die of heart attacks.
 
 Statin users had **higher cholesterol before** they started taking statins.
 
-1. Draw the arrows: cholesterol → statins? cholesterol → death?
-2. What is the sign of the bias?
-3. Does the observational study **overstate** or **understate** the benefit of statins?
+1.  Draw the arrows: cholesterol → statins? cholesterol → death?
+2.  What is the sign of the bias?
+3.  Does the observational study **overstate** or **understate** the benefit of statins?
 
 ::: {.fragment .key-line}
 And if cholesterol were measured **after** treatment began?
@@ -1178,7 +1186,7 @@ The follow-up question sets up Part 4. Cholesterol measured after statins begin 
 
 ## Two kinds of selection {#two-selections}
 
-::: two-column
+::::: two-column
 ::: column
 ### Selection into the **sample** (Week 9)
 
@@ -1198,7 +1206,7 @@ Talent, ideology, health, intention.
 
 Creates **baseline differences** between the groups we compare.
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 In both cases, a process we did not control decides what we observe. Part 4 shows they have **different shapes**.
@@ -1232,10 +1240,10 @@ Her central claim is that controlling for a variable can help, do nothing, or ma
 
 Many important questions cannot be randomized:
 
-- divorce and well-being
-- social class and prosocial behavior
-- childhood adversity and adult health
-- **years of media exposure and political attitudes**
+-   divorce and well-being
+-   social class and prosocial behavior
+-   childhood adversity and adult health
+-   **years of media exposure and political attitudes**
 
 ::: {.fragment .key-line}
 “It is impossible to infer causation from correlation without background knowledge about the domain.” The question is whether that knowledge is stated openly.
@@ -1253,7 +1261,7 @@ Rohrer argues that causal inference from observational data requires assumptions
 
 ## Three common workarounds {#three-workarounds}
 
-::: triad
+:::::: triad
 ::: triad-item
 Surrogate interventions
 
@@ -1277,7 +1285,7 @@ Control for whatever is in the data set, because more control seems safer.
 
 Rohrer: “a methodological urban legend at best.”
 :::
-:::
+::::::
 
 ::: {.fragment .key-line}
 Which of these have you seen in communication papers?
@@ -1303,11 +1311,11 @@ Flag that Isch and colleagues, the last reading for today, recommend association
 
 ## Reading a DAG {#reading-a-dag}
 
-- **Nodes** are variables. **Arrows** are direct causal effects.
-- An arrow means: if we could intervene on the variable at its start, the variable at its end would change.
-- Arrows allow **any** functional form, not only linear effects.
-- **No cycles.** Feedback is handled by indexing variables by time, as in the social media case (depression at t₀ → use at t₁).
-- Include every **common cause** of any two variables already in the graph.
+-   **Nodes** are variables. **Arrows** are direct causal effects.
+-   An arrow means: if we could intervene on the variable at its start, the variable at its end would change.
+-   Arrows allow **any** functional form, not only linear effects.
+-   **No cycles.** Feedback is handled by indexing variables by time, as in the social media case (depression at t₀ → use at t₁).
+-   Include every **common cause** of any two variables already in the graph.
 
 ::: source
 Source: Rohrer (2018), pp. 28–31.
@@ -1325,29 +1333,29 @@ Completeness: a DAG must include every common cause of any pair of variables in 
 
 ## Rohrer's running example {#rohrer-running-example}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/dag-education-income.svg){fig-alt="Intelligence causes college degree and income; degree causes income"}
 :::
 
 ::: column
-People with a college degree by age 30 earn about **$1,500/week** at 40; people without one earn about **$700**.
+People with a college degree by age 30 earn about **\$1,500/week** at 40; people without one earn about **\$700**.
 
-The $800 gap combines two paths:
+The \$800 gap combines two paths:
 
-- Degree → Income (**causal**)
-- Degree ← Intelligence → Income (**back door**)
+-   Degree → Income (**causal**)
+-   Degree ← Intelligence → Income (**back door**)
 :::
-:::
+:::::
 
 ::: source
 Source: Rohrer (2018), Figure 1 and p. 28.
 :::
 
 ::: notes
-Introduce Rohrer's running example. We want the causal effect of educational attainment on income. Education is simplified to a college degree by age 30; income is measured at age 40 to fix the time order. Graduates earn about $1,500 per week and non-graduates about $700.
+Introduce Rohrer's running example. We want the causal effect of educational attainment on income. Education is simplified to a college degree by age 30; income is measured at age 40 to fix the time order. Graduates earn about \$1,500 per week and non-graduates about \$700.
 
-The $800 difference cannot be read as the effect of a degree, because intelligence affects both. The DAG shows two paths connecting education and income: the causal path straight from degree to income, and a back-door path from degree back to intelligence and forward to income.
+The \$800 difference cannot be read as the effect of a degree, because intelligence affects both. The DAG shows two paths connecting education and income: the causal path straight from degree to income, and a back-door path from degree back to intelligence and forward to income.
 
 The raw difference adds the two paths together. Controlling for intelligence would block the back-door path and leave the causal one. Tell students that the next slides explain why that works and when controlling would make things worse.
 :::
@@ -1356,7 +1364,7 @@ The raw difference adds the two paths together. Controlling for intelligence wou
 
 ::: small-table
 | Structure | Form | Open with no control? | Controlling for the middle variable… | Example |
-|---|---|:-:|---|---|
+|---------------|---------------|:-------------:|---------------|---------------|
 | **Chain** | X → M → Y | yes (causal) | blocks part of the real effect: **overcontrol** | charter → AP classes → scores |
 | **Fork** | X ← C → Y | yes (non-causal) | **removes** the bias | parental wealth → patience, SAT |
 | **Inverted fork** | X → C ← Y | **no** | **creates** bias: collider bias | rigor → publication ← innovation |
@@ -1424,7 +1432,7 @@ This is the reverse of the fork. Leaving a collider alone keeps the path blocked
 
 ## You have seen the collider before {#collider-callback}
 
-::: two-column
+::::: two-column
 ::: column
 ### Rohrer: published studies
 
@@ -1440,7 +1448,7 @@ Among published studies, rigor and innovation look like a **trade-off**, even if
 
 If editors publish stories that are newsworthy **or** well sourced, the archive shows a false trade-off.
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 Selection into the **sample** is conditioning on a collider.
@@ -1464,8 +1472,8 @@ A **back-door path** starts with an arrow **into** the treatment and ends at the
 
 To identify a causal effect:
 
-1. Block every back-door path by controlling for a **non-collider** on it.
-2. Do not control for anything **caused by** the treatment.
+1.  Block every back-door path by controlling for a **non-collider** on it.
+2.  Do not control for anything **caused by** the treatment.
 
 ::: {.fragment .key-line}
 If the DAG is right and every back door is blocked, the effect is identified, even with observational data.
@@ -1485,7 +1493,7 @@ Stress the condition: “if the DAG is right.” The criterion guarantees identi
 
 ## Practice: what should we control for? {#practice-grades}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/rohrer-fig2-grades-backdoor.png){fig-alt="Rohrer Figure 2: intelligence causes grades, educational attainment, and income; grades cause attainment; attainment causes income"}
 :::
@@ -1493,14 +1501,14 @@ Stress the condition: “if the DAG is right.” The criterion guarantees identi
 ::: column
 List every path from **Educational Attainment** to **Income**. Then decide:
 
-| Control for… | Effect identified? |
-|---|:-:|
-| Nothing | [No]{.fragment} |
-| Grades only | [No: one back door still open]{.fragment} |
-| Intelligence | [Yes]{.fragment} |
-| Intelligence and grades | [Yes: grades are unnecessary]{.fragment} |
+| Control for…            |            Effect identified?             |
+|-------------------------|:-----------------------------------------:|
+| Nothing                 |              [No]{.fragment}              |
+| Grades only             | [No: one back door still open]{.fragment} |
+| Intelligence            |             [Yes]{.fragment}              |
+| Intelligence and grades | [Yes: grades are unnecessary]{.fragment}  |
 :::
-:::
+:::::
 
 ::: source
 Source: Rohrer (2018), Figure 2, pp. 30–31.
@@ -1536,9 +1544,9 @@ What could block it? Rohrer suggests controlling for the mother's depressiveness
 
 Instead of measuring every confounder, choose a design in which the back door does not exist.
 
-- **Identical twins.** Religiosity and delinquency are negatively correlated, but **within** identical-twin pairs the association disappears.
-- **Adoption** cuts the arrow from the parent's genes to the child's.
-- **Lotteries and natural experiments.** The Preuss lottery; TV's arrival; the Buenos Aires guards.
+-   **Identical twins.** Religiosity and delinquency are negatively correlated, but **within** identical-twin pairs the association disappears.
+-   **Adoption** cuts the arrow from the parent's genes to the child's.
+-   **Lotteries and natural experiments.** The Preuss lottery; TV's arrival; the Buenos Aires guards.
 
 ::: source
 Source: Rohrer (2018), p. 34; Turkheimer and Harden (2014).
@@ -1556,8 +1564,9 @@ Natural experiments are “lucky accidents” that remove many back-door paths a
 
 ## Communication designs that cut the back door {#comm-designs}
 
-::: design-panels
-::: {}
+:::::: design-panels
+<div>
+
 Facebook deactivation
 
 **Problem:** heavy users differ from light users.
@@ -1565,9 +1574,11 @@ Facebook deactivation
 **Design:** randomly pay users to deactivate for the 4 weeks before the 2018 midterms.
 
 **Result:** less polarization and news knowledge, higher well-being; 80% said it was good for them.
-:::
 
-::: {}
+</div>
+
+<div>
+
 Randomizing the news
 
 **Problem:** editors cover what audiences already care about.
@@ -1575,9 +1586,11 @@ Randomizing the news
 **Design:** 48 outlets published stories on dates the researchers **randomly assigned**.
 
 **Result:** discussion of the topic on social media rose about **62.7%** of a day's volume (about 13,166 posts over the week).
-:::
 
-::: {}
+</div>
+
+<div>
+
 Sinclair acquisitions
 
 **Problem:** Sinclair chooses which stations to buy.
@@ -1585,8 +1598,9 @@ Sinclair acquisitions
 **Design:** difference-in-differences: 10 acquired stations vs. other programs in the same markets.
 
 **Result:** national politics coverage up **about 25%**, local down **about 10%**, slant shifted right.
-:::
-:::
+
+</div>
+::::::
 
 ::: source
 Sources: Allcott, Braghieri, Eichmeyer, and Gentzkow (2020), *AER*; King, Schneer, and White (2017), *Science*; Martin and McCrain (2019), *APSR*.
@@ -1628,7 +1642,7 @@ The next slides show where this goes wrong in practice: in data collection, incl
 
 ## Colliders built into data collection {#endogenous-selection}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/rohrer-fig5-attrition-collider.png){fig-alt="Rohrer Figure 5: health problems and stressful workplace both cause attrition"}
 :::
@@ -1636,12 +1650,12 @@ The next slides show where this goes wrong in practice: in data collection, incl
 ::: column
 Rohrer's **endogenous selection**: the sample itself conditions on a collider.
 
-- only **completed** questionnaires (grit, intelligence)
-- only panel **stayers** (attrition)
-- only **college students**
-- for texts: posts that **survived moderation**, articles that reached the **archive**
+-   only **completed** questionnaires (grit, intelligence)
+-   only panel **stayers** (attrition)
+-   only **college students**
+-   for texts: posts that **survived moderation**, articles that reached the **archive**
 :::
-:::
+:::::
 
 ::: source
 Source: Rohrer (2018), pp. 36–37, Figure 5.
@@ -1661,24 +1675,24 @@ For text data, the same logic applies to posts that survived moderation and arti
 
 ## Mediators: controlling away the effect {#mediator-fig6}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/rohrer-fig6-mediator-adult-intelligence.png){fig-alt="Rohrer Figure 6: childhood intelligence, educational attainment, adult intelligence, income, and an unmeasured variable U"}
 :::
 
-::: column
+:::: column
 Education raises **adult** intelligence, which raises income.
 
 Controlling for adult intelligence:
 
-1. blocks a real causal path (**overcontrol**), and
-2. opens a path through **U**, because adult intelligence is also a **collider**.
+1.  blocks a real causal path (**overcontrol**), and
+2.  opens a path through **U**, because adult intelligence is also a **collider**.
 
 ::: {.fragment .key-line}
 Control for childhood intelligence; leave adult intelligence alone.
 :::
-:::
-:::
+::::
+::::::
 
 ::: source
 Source: Rohrer (2018), Figure 6, pp. 37–38.
@@ -1696,7 +1710,7 @@ The right choice for the total effect: control for childhood intelligence, which
 
 Classic mediation analysis (Baron and Kenny; Hayes's PROCESS) estimates a direct effect by **controlling for the mediator**.
 
-::: {.fragment}
+::: fragment
 Rohrer: this can be biased **even in a randomized experiment**, unless the mediator is also randomized.
 :::
 
@@ -1720,7 +1734,7 @@ Do not tell students never to study mechanisms. Tell them that mediation estimat
 
 ::: small-table
 | We want the effect of… | on… | Should we control for… | Role | Control? |
-|---|---|---|---|---|
+|---------------|---------------|---------------|---------------|---------------|
 | taking statins | dying of a heart attack | cholesterol, measured **before** starting statins | [confounder]{.fragment} | [**yes**]{.fragment} |
 | taking statins | dying of a heart attack | cholesterol, measured **after** starting statins | [mediator]{.fragment} | [**no**]{.fragment} |
 | a study's rigor | its innovativeness | whether it was **published** | [collider]{.fragment} | [**no**]{.fragment} |
@@ -1751,11 +1765,12 @@ Selective college, from Case 4: the set of colleges that admitted a student refl
 
 Close with the key line: the same variable can play different roles depending on when it is measured, which is why time order belongs in every DAG.
 :::
+
 ## Control or not? More practice {#control-practice-1}
 
 ::: small-table
 | We want the effect of… | on… | Should we control for… | Role | Control? |
-|---|---|---|---|---|
+|---------------|---------------|---------------|---------------|---------------|
 | watching cable news | political knowledge | interest in politics, measured **before** | [confounder]{.fragment} | [**yes**]{.fragment} |
 | exercising | weight | calories burned | [mediator]{.fragment} | [**no**]{.fragment} |
 | parents' income | child's test scores | which school the child attends | [mediator]{.fragment} | [**no**]{.fragment} |
@@ -1781,7 +1796,7 @@ Looks and competence among winners: both attractive candidates and competent can
 
 ::: small-table
 | We want the effect of… | on… | Should we control for… | Role | Control? |
-|---|---|---|---|---|
+|---------------|---------------|---------------|---------------|---------------|
 | seeing misinformation | vaccine hesitancy | partisanship, measured **before** | [confounder]{.fragment} | [**yes**]{.fragment} |
 | a college degree | income | the job the person took after college | [mediator]{.fragment} | [**no**]{.fragment} |
 | social media use | depression | hours of sleep after using social media | [mediator]{.fragment} | [**no**]{.fragment} |
@@ -1811,7 +1826,7 @@ Close with the three questions on the slide. Students should be able to apply th
 
 ## What a DAG cannot do {#dag-limits}
 
-::: triad
+:::::: triad
 ::: triad-item
 Identification ≠ estimation
 
@@ -1829,7 +1844,7 @@ The DAG is an assumption
 
 State it openly. Check robustness across plausible DAGs. Triangulate across designs.
 :::
-:::
+::::::
 
 ::: source
 Source: Rohrer (2018), pp. 31–33, 38–40; Westfall and Yarkoni (2016).
@@ -1859,10 +1874,10 @@ Transition to the final part. Students now have potential outcomes, the baseline
 
 Suppose you had only **one survey**, with no design. In pairs, take one case: **social media**, **smoking and COVID**, **TV**, or **elite colleges**.
 
-1. Redraw the DAG, with time order.
-2. Mark every back-door path.
-3. What would you control for? What would you **not** control for?
-4. What would remain uncertain even after controls?
+1.  Redraw the DAG, with time order.
+2.  Mark every back-door path.
+3.  What would you control for? What would you **not** control for?
+4.  What would remain uncertain even after controls?
 
 ::: notes
 Give pairs four minutes. Students have already seen a design-based answer for each case. Now ask them to imagine they had only a single cross-sectional survey and had to rely on statistical control, as Rohrer describes.
@@ -1874,31 +1889,39 @@ The final question matters most. Students should see that even a carefully chose
 
 ## The four cases, drawn {#cases-drawn}
 
-::: dag-grid
-::: {}
+::::::: dag-grid
+<div>
+
 Social media: reverse causation; timing helps
 
 ![](assets/dag-social-b.svg){fig-alt="Depressive symptoms cause social media use"}
-:::
 
-::: {}
+</div>
+
+<div>
+
 Smoking & COVID: a collider; study everyone, not just patients
 
 ![](assets/dag-covid-collider.svg){fig-alt="Smoking and COVID both cause hospitalization, which is conditioned on"}
-:::
 
-::: {}
+</div>
+
+<div>
+
 TV: a fork through family background; TV's arrival cuts it
 
 ![](assets/dag-tv-rollout.svg){fig-alt="TV arrival causes exposure; family background confounds"}
-:::
 
-::: {}
+</div>
+
+<div>
+
 College: self-selection; matching on admissions blocks it
 
 ![](assets/dag-college-design.svg){fig-alt="Conditioning on the admission set blocks the path from ability to college choice"}
-:::
-:::
+
+</div>
+:::::::
 
 ::: {.fragment .key-line}
 Different structures, different fixes: break the back door, or stop conditioning.
@@ -1914,14 +1937,14 @@ Ask the pairs to compare their survey-only DAGs with these. Differences are usef
 
 ## How a causal case gets built: fever {#fever}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/bergstrom-fig12a-fever-causes-outcome.png){fig-alt="Fever causes better outcome"}
 
 ![](assets/bergstrom-fig12b-fever-common-cause.png){fig-alt="Good condition causes fever and better outcome"}
 :::
 
-::: column
+:::: column
 Patients who mount a fever are **more likely to survive** a bloodstream infection.
 
 Does fever help? Or are patients in **better condition** both more able to mount a fever and more likely to recover?
@@ -1929,8 +1952,8 @@ Does fever help? Or are patients in **better condition** both more able to mount
 ::: {.fragment .key-line}
 Correlation alone cannot tell these DAGs apart.
 :::
-:::
-:::
+::::
+::::::
 
 ::: source
 Source: Bergstrom and West (2021), ch. 4, Figures 12a–b.
@@ -1946,18 +1969,18 @@ Ask students what evidence would distinguish the two. Then show the sequence on 
 
 ## Fever: each design rules out a DAG {#fever-sequence}
 
-::: two-column
+::::: two-column
 ::: column
-1. **Correlation:** fever patients survive more.
-2. **Natural variation:** patients given fever reducers recover more slowly, but drugs were not randomly given.
-3. **Randomized trials:** blocking fever **slows recovery** and **increases transmission**.
-4. **Isolate the mechanism:** cooling lab animals **without drugs** has the same effect.
+1.  **Correlation:** fever patients survive more.
+2.  **Natural variation:** patients given fever reducers recover more slowly, but drugs were not randomly given.
+3.  **Randomized trials:** blocking fever **slows recovery** and **increases transmission**.
+4.  **Isolate the mechanism:** cooling lab animals **without drugs** has the same effect.
 :::
 
 ::: column
 ![](assets/dag-fever-trial.svg){fig-alt="Randomized antipyretic causes body temperature which causes recovery; underlying condition causes recovery but not treatment"}
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 Potential outcomes say what effect we want. The baseline difference says why the correlation misleads. The DAG says which alternative each design rules out.
@@ -1971,7 +1994,7 @@ Use this as the synthesis of the session. Potential outcomes define the effect w
 
 ## How often do papers overclaim? {#isch-prevalence}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/isch-fig2-trend-crop.png){fig-alt="Isch et al. Figure 2: annual share of cross-sectional articles with causal language, 1980–2024, overall and by discipline"}
 :::
@@ -1985,7 +2008,7 @@ Roughly **20%** until 2000; over **60%** by 2024.
 
 2024: business **84%**, economics **67%**, psychology **55%**, political science **53%**, sociology **46%**.
 :::
-:::
+:::::
 
 ::: source
 Source: Isch, Dörr, Fasching, Jennings, and Watts (2026), *Nature Human Behaviour*, Figure 2.
@@ -2005,7 +2028,7 @@ Add one caution about measurement, consistent with Week 7. The classifier's defi
 
 ## Where the causal claims hide {#isch-full-text}
 
-::: triad
+:::::: triad
 ::: triad-item
 Higher-impact journals
 
@@ -2025,7 +2048,7 @@ In the framing sections
 
 Unhedged causal claims appeared in the **introduction** (60.0%) and **discussion** (55.1%), but rarely in the **methods** (6.1%).
 :::
-:::
+::::::
 
 ::: {.fragment .key-line}
 The causal claim usually lives where authors explain why the study matters, not where they describe what they did.
@@ -2051,7 +2074,7 @@ Connect to the project. Students will write introductions and discussions. That 
 
 ![](assets/isch-edfig5-crop.png){fig-alt="Isch et al. Extended Data Figure 5: four experimental conditions: original abstract, associational rewrite, methodological note, AI feedback" width="92%"}
 
-::: two-column
+::::: two-column
 ::: column
 **N = 1,105** readers, randomly assigned. “This study provides causal evidence” (1–7):
 
@@ -2063,7 +2086,7 @@ Readers' own summaries that were causal:
 
 Original **71%** · rewrite **50%** · note **64%** · AI **59%**
 :::
-:::
+:::::
 
 ::: source
 Source: Isch et al. (2026), pp. 4–5, Extended Data Fig. 5 and Extended Data Table 1.
@@ -2083,7 +2106,7 @@ Two subtleties. First, the effects are real but modest: even after the rewrite, 
 
 ![](assets/isch-fig6a-crop.png){fig-alt="Isch et al. Figure 6a: share of summaries with unhedged causal claims by prompt and model, against the abstract baseline" width="85%"}
 
-::: two-column
+::::: two-column
 ::: column
 Five models each summarized **100** abstracts under four prompts.
 
@@ -2095,7 +2118,7 @@ A “careful” prompt brought it **below** the abstracts.
 
 GPT-4.1 rated the abstracts only **3.1/7** as causal evidence, yet **99.3%** of its own summaries of them were causal.
 :::
-:::
+:::::
 
 ::: source
 Source: Isch et al. (2026), pp. 5–7, Figure 6a; Extended Data Tables 2–3.
@@ -2113,7 +2136,7 @@ Make it practical. Students using LLMs to summarize readings or draft write-ups 
 
 ## Isch vs. Rohrer: should we avoid causal language? {#isch-rohrer}
 
-::: two-column
+::::: two-column
 ::: column
 ### Isch et al.
 
@@ -2125,7 +2148,7 @@ Cross-sectional papers should use **associational** wording, and readers benefit
 
 “Avoiding causal language” hides the causal question and the **assumptions** behind it. State the causal goal and the DAG openly.
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 Isch's own data: the explicit **design note** moved readers more than the associational rewrite. What should a cross-sectional paper say?
@@ -2143,10 +2166,10 @@ Ask students to reconcile the two positions. A defensible synthesis: say the cau
 
 Descriptive write-ups drift into causal language: “coverage **drives**…”, “outlets **respond to**…”, “framing **shapes**…”
 
-1. Write one causal-sounding claim your coded data invite.
-2. Draw its DAG. Where is the back door?
-3. Rewrite it as the descriptive or associational claim your data **can** support.
-4. Check the introduction and discussion, and anything an LLM drafted, for causal verbs.
+1.  Write one causal-sounding claim your coded data invite.
+2.  Draw its DAG. Where is the back door?
+3.  Rewrite it as the descriptive or associational claim your data **can** support.
+4.  Check the introduction and discussion, and anything an LLM drafted, for causal verbs.
 
 ::: {.fragment .key-line}
 Sinclair shows when coded text **can** carry a causal claim: when a design, not the coding, removes the selection.

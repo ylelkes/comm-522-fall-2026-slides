@@ -477,6 +477,12 @@ COMM 5220 • Week 10
 <h2>Case 2: The arithmetic inside the hospital</h2>
 <p>100,000 people. <strong>20%</strong> smoke and <strong>5%</strong> have COVID, <strong>unrelated</strong>. Chance of hospitalization: <strong>1%</strong>, plus <strong>4</strong> points for smoking, plus <strong>15</strong> points for COVID.</p>
 <table class="caption-top">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 11%">
+<col style="width: 38%">
+<col style="width: 19%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Group</th>
@@ -1171,20 +1177,20 @@ COMM 5220 • Week 10
 </section>
 <section id="averages" class="slide level2">
 <h2>Averages answer a different question</h2>
-<p>The <strong>average treatment effect</strong> is the average of individual effects:</p>
+<p>We <strong>can’t</strong> see anyone’s individual effect.</p>
+<p>We <strong>can</strong> see the average outcome in the <strong>treated</strong> group and in the <strong>control</strong> group.</p>
 <div class="equation">
-<p>Average treatment effect = the average of everyone’s <span class="math inline">\(Y_1 - Y_0\)</span></p>
+<p>Treated average − control average = average treatment effect, <strong>if the groups are balanced</strong></p>
 </div>
-<div class="two-column">
-<div class="column">
-<h3 id="the-fda-asks">The FDA asks</h3>
-<p>If we approve the drug, how will health change <strong>on average</strong>?</p>
-<p>Randomized trials can answer this.</p>
-</div><div class="column">
-<h3 id="a-court-asks">A court asks</h3>
-<p>Would <strong>this</strong> harm have happened <strong>but for</strong> this defendant’s action?</p>
-<p>No method can observe this directly.</p>
-</div></div>
+<div class="fragment">
+<p><strong>Balanced:</strong> the two groups don’t differ on anything else that affects the outcome.</p>
+</div>
+<div class="fragment key-line">
+<p>Body Vibes and the flu shot failed this test. Randomization is how we guarantee it.</p>
+</div>
+<div class="fragment">
+<p>This answers the FDA’s question (what happens <strong>on average</strong>), not a court’s (would <strong>this</strong> person have been harmed <strong>but for</strong> the action).</p>
+</div>
 <div class="source">
 <p>Source: <em>Thinking Clearly with Data</em>, ch.&nbsp;3, pp.&nbsp;41–42.</p>
 </div>

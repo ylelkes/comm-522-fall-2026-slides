@@ -228,7 +228,7 @@ Now hide the counterfactual cells. This is all a researcher ever observes: one p
 
 Pause here and let students look at the pattern of question marks. Ask: “Is there any way, with more data on these ten people, to fill in the question marks?” The answer is no. More measurement of person 1 cannot tell us what person 1's skin would have been without the stickers.
 
-The book adds a wry note: the fact that the absence of any effect cannot be observed is probably “key to [Goop's] business model.”
+The book adds a wry note: the fact that the absence of any effect cannot be observed is probably “key to \[Goop's\] business model.”
 
 **Transition:** next, The fundamental problem of causal inference
 
@@ -336,11 +336,15 @@ A coda for curious students: Hernán and colleagues (2008) reanalyzed the Nurses
 
 ### Slide 30: Averages answer a different question
 
-Introduce averages as the way out of the fundamental problem. We can never see individual effects, but we can sometimes learn the average effect across a population. The average treatment effect is the average of the individual differences, which equals the average of Y-one minus the average of Y-zero.
+Introduce averages as the way out of the fundamental problem. We can never see an individual effect, because each person shows us only one potential outcome. But we can see two averages: the average outcome among people who got the treatment and the average among people who did not.
 
-The book contrasts two institutions. The FDA asks an average question: if the drug is approved, how will health change on average? Randomized trials answer that by comparing groups. A court asks an individual question: would this particular harm have happened but for this person's action? That is a question about one person's counterfactual, which no method can observe. Our methods can answer a nearby question: on average, do actions of this kind tend to cause harm?
+The key condition is balance. If the treated and control groups do not differ on anything else that affects the outcome, then the control group's average tells us what the treated group's average would have been without treatment. The difference between the two averages is then the average treatment effect.
 
-The book's broader lesson: “Part of clear thinking about causal relationships involves admitting that sometimes we cannot answer certain questions with complete confidence, even when those questions are very important.”
+Tie it back to the tables. Body Vibes failed this test: the wearers had better skin to begin with, so the difference in averages was +20 points while the true effect was zero. The flu shot failed it in the other direction: the vaccinated group was full of people who get sick anyway. In both cases, the groups were not balanced on something that affects the outcome.
+
+Point ahead. Part 3 shows what happens when groups are not balanced, and how a lottery produces balance. Randomization does not make any one person's counterfactual visible; it makes the groups alike on average, so the comparison of averages works.
+
+The book contrasts two institutions. The FDA asks an average question: if the drug is approved, how will health change on average? Randomized trials answer that by comparing balanced groups. A court asks an individual question: would this particular harm have happened but for this person's action? No method can observe that. The book's broader lesson: “Part of clear thinking about causal relationships involves admitting that sometimes we cannot answer certain questions with complete confidence, even when those questions are very important.”
 
 **Transition:** next, Correlation = effect + selection
 
@@ -532,9 +536,9 @@ Completeness: a DAG must include every common cause of any pair of variables in 
 
 ### Slide 48: Rohrer's running example
 
-Introduce Rohrer's running example. We want the causal effect of educational attainment on income. Education is simplified to a college degree by age 30; income is measured at age 40 to fix the time order. Graduates earn about $1,500 per week and non-graduates about $700.
+Introduce Rohrer's running example. We want the causal effect of educational attainment on income. Education is simplified to a college degree by age 30; income is measured at age 40 to fix the time order. Graduates earn about \$1,500 per week and non-graduates about \$700.
 
-The $800 difference cannot be read as the effect of a degree, because intelligence affects both. The DAG shows two paths connecting education and income: the causal path straight from degree to income, and a back-door path from degree back to intelligence and forward to income.
+The \$800 difference cannot be read as the effect of a degree, because intelligence affects both. The DAG shows two paths connecting education and income: the causal path straight from degree to income, and a back-door path from degree back to intelligence and forward to income.
 
 The raw difference adds the two paths together. Controlling for intelligence would block the back-door path and leave the causal one. Tell students that the next slides explain why that works and when controlling would make things worse.
 
