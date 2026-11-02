@@ -8,6 +8,16 @@ format:
     link-external-newwindow: true
 ---
 
+## Week 10
+
+### Causality: Counterfactuals, Selection, and DAGs
+
+Four causal claims (reverse causation, a collider, a common cause, and selection into treatment), potential outcomes with Body Vibes and the flu shot, how selection creates baseline differences, Rohrer's DAGs and when to control, and Isch et al. on causal overclaiming.
+
+[Student slides — no speaker notes](week-10/student.html){.btn .btn-primary role="button"}
+
+[Plain presentation — notes in Speaker View](week-10/presenter.html) · [Slides with visible notes](week-10/with-notes.html) · [Instructor discussion notes](week-10/instructor-notes.html)
+
 ## Week 9
 
 ### Sampling, Selection, and Scope

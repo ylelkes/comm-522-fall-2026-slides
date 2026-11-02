@@ -1,0 +1,6 @@
+body { font-family: 'Aptos', 'Helvetica Neue', Arial, sans-serif; color: #18232d; background: #f7f4ee; }
+h1, h2, h3 { color: #18324a; }
+h2 { border-bottom: 3px solid #d5aa55; padding-bottom: .35rem; }
+a { color: #b24a3c; }
+main { max-width: 960px; }
+table { font-size: .95rem; }

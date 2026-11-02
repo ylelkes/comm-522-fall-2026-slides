@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="516.6pt" height="247.248pt" viewBox="0 0 516.6 247.248" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-01T20:17:37.580065</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 247.248 
+L 516.6 247.248 
+L 516.6 0 
+L 0 0 
+L 0 247.248 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 238.4631 67.507632 
+Q 182.97 118.96704 129.936308 168.14581 
+" clip-path="url(#p6e75d88343)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 139.380744 165.388523 
+L 129.936308 168.14581 
+L 133.39714 158.935889 
+z
+" clip-path="url(#p6e75d88343)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 278.1369 67.507632 
+Q 333.63 118.96704 386.663692 168.14581 
+" clip-path="url(#p6e75d88343)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 383.20286 158.935889 
+L 386.663692 168.14581 
+L 377.219256 165.388523 
+z
+" clip-path="url(#p6e75d88343)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 190.0008 188.82144 
+Q 258.3 188.82144 324.139525 188.82144 
+" clip-path="url(#p6e75d88343)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 315.339525 184.42144 
+L 324.139525 188.82144 
+L 315.339525 193.22144 
+z
+" clip-path="url(#p6e75d88343)" style="fill: #62717d; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 189.4986 67.041936 
+L 327.1014 67.041936 
+Q 339.6564 67.041936 339.6564 61.220736 
+L 339.6564 37.004544 
+Q 339.6564 31.183344 327.1014 31.183344 
+L 189.4986 31.183344 
+Q 176.9436 31.183344 176.9436 37.004544 
+L 176.9436 61.220736 
+Q 176.9436 67.041936 189.4986 67.041936 
+z
+" clip-path="url(#p6e75d88343)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 38.8386 206.750736 
+L 176.4414 206.750736 
+Q 188.9964 206.750736 188.9964 200.929536 
+L 188.9964 176.713344 
+Q 188.9964 170.892144 176.4414 170.892144 
+L 38.8386 170.892144 
+Q 26.2836 170.892144 26.2836 176.713344 
+L 26.2836 200.929536 
+Q 26.2836 206.750736 38.8386 206.750736 
+z
+" clip-path="url(#p6e75d88343)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 340.1586 206.750736 
+L 477.7614 206.750736 
+Q 490.3164 206.750736 490.3164 200.929536 
+L 490.3164 176.713344 
+Q 490.3164 170.892144 477.7614 170.892144 
+L 340.1586 170.892144 
+Q 327.6036 170.892144 327.6036 176.713344 
+L 327.6036 200.929536 
+Q 327.6036 206.750736 340.1586 206.750736 
+z
+" clip-path="url(#p6e75d88343)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18232d" x="258.3" y="54.73764" transform="rotate(-0 258.3 54.73764)">Prior conservatism</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18232d" x="107.64" y="194.44644" transform="rotate(-0 107.64 194.44644)">Watches Fox</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18232d" x="408.96" y="192.95769" transform="rotate(-0 408.96 192.95769)">Votes Republican</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6e75d88343">
+   <rect x="7.2" y="7.2" width="502.2" height="232.848"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="516.6pt" height="247.248pt" viewBox="0 0 516.6 247.248" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-01T20:29:16.251253</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 247.248 
+L 516.6 247.248 
+L 516.6 0 
+L 0 0 
+L 0 247.248 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 132.463029 86.717592 
+Q 177.948 123.624 220.828402 158.417066 
+" clip-path="url(#p8f433a3e7e)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 216.767252 149.455645 
+L 220.828402 158.417066 
+L 211.222575 156.289132 
+z
+" clip-path="url(#p8f433a3e7e)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 172.4238 58.42656 
+Q 258.3 58.42656 340.822098 58.42656 
+" clip-path="url(#p8f433a3e7e)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 332.022098 54.02656 
+L 340.822098 58.42656 
+L 332.022098 62.82656 
+z
+" clip-path="url(#p8f433a3e7e)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 293.167029 160.530408 
+Q 338.652 123.624 382.226954 88.267376 
+" clip-path="url(#p8f433a3e7e)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 372.621127 90.39531 
+L 382.226954 88.267376 
+L 378.165804 97.228797 
+z
+" clip-path="url(#p8f433a3e7e)" style="fill: #62717d; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 36.3276 86.251896 
+L 158.8644 86.251896 
+Q 171.4194 86.251896 171.4194 80.430696 
+L 171.4194 36.422424 
+Q 171.4194 30.601224 158.8644 30.601224 
+L 36.3276 30.601224 
+Q 23.7726 30.601224 23.7726 36.422424 
+L 23.7726 80.430696 
+Q 23.7726 86.251896 36.3276 86.251896 
+z
+" clip-path="url(#p8f433a3e7e)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 197.0316 216.646776 
+L 319.5684 216.646776 
+Q 332.1234 216.646776 332.1234 210.825576 
+L 332.1234 166.817304 
+Q 332.1234 160.996104 319.5684 160.996104 
+L 197.0316 160.996104 
+Q 184.4766 160.996104 184.4766 166.817304 
+L 184.4766 210.825576 
+Q 184.4766 216.646776 197.0316 216.646776 
+z
+" clip-path="url(#p8f433a3e7e)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 357.7356 86.251896 
+L 480.2724 86.251896 
+Q 492.8274 86.251896 492.8274 80.430696 
+L 492.8274 36.422424 
+Q 492.8274 30.601224 480.2724 30.601224 
+L 357.7356 30.601224 
+Q 345.1806 30.601224 345.1806 36.422424 
+L 345.1806 80.430696 
+Q 345.1806 86.251896 357.7356 86.251896 
+z
+" clip-path="url(#p8f433a3e7e)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(43.96475 54.26556)">Public concern</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(87.971 72.48381)">(t₀)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(202.90625 183.07544)">News coverage</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(248.675 202.87869)">(t₁)</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(356.4765 54.26556)">Public discussion</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(409.379 72.48381)">(t₂)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8f433a3e7e">
+   <rect x="7.2" y="7.2" width="502.2" height="232.848"/>
+  </clipPath>
+ </defs>
+</svg>

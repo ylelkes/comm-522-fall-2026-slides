@@ -1,0 +1,149 @@
+<style>
+.goop-sim { margin-top:.1em; font-size:.58em; }
+.goop-controls { display:grid; grid-template-columns:1.5fr 1fr auto; gap:1.2em; align-items:end; }
+.goop-controls label { display:block; font-weight:700; color:var(--navy); margin-bottom:.15em; }
+.goop-controls input[type=range] { width:100%; accent-color:var(--rust); }
+.goop-scale { display:flex; justify-content:space-between; color:var(--muted); font-size:.8em; }
+.goop-effect button, .goop-new { border:2px solid var(--navy); padding:.25em .6em; background:white; color:var(--navy); font:inherit; font-weight:700; cursor:pointer; }
+.goop-effect button[aria-pressed="true"] { background:var(--navy); color:white; }
+.goop-new { border-color:var(--rust); color:var(--rust); }
+.goop-plot { width:100%; height:auto; max-height:290px; display:block; margin:.25em 0 .15em; }
+.goop-plot .dot { transition:transform 450ms ease, fill 300ms ease; }
+.goop-plot .meanline { transition:transform 450ms ease; }
+.goop-readout { display:grid; grid-template-columns:1fr 1fr 2.2fr; gap:.6em; }
+.goop-readout > div { padding:.35em .55em; background:rgba(255,255,255,.65); border-top:5px solid var(--blue); }
+.goop-readout > div:nth-child(2) { border-top-color:var(--muted); }
+.goop-readout > div:nth-child(3) { border-top-color:var(--rust); }
+.goop-readout strong { font-size:1.25em; }
+.goop-readout > div { line-height:1.25; }
+.goop-readout .eq { font-size:1.05em; }
+.goop-readout .bias { color:var(--rust); font-weight:800; }
+.goop-note { margin:.35em 0 0; color:var(--muted); font-size:.95em; }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('goop-sim-root');
+  if (!root) return;
+
+  const N = 400;
+  const W = 1300, H = 365, left = 150, right = 30, top = 20, axisY = 280;
+  const rowY = { buy: 85, no: 195 };
+  const x = v => left + (Math.max(0, Math.min(10, v)) / 10) * (W - left - right);
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (tag, attrs = {}, parent) => {
+    const node = document.createElementNS(NS, tag);
+    Object.entries(attrs).forEach(([k, v]) => node.setAttribute(k, v));
+    if (parent) parent.appendChild(node);
+    return node;
+  };
+
+  root.innerHTML = `
+    <div class="goop-controls">
+      <div>
+        <label for="goop-selection">Who buys Body Vibes?</label>
+        <input id="goop-selection" type="range" min="-100" max="100" step="5" value="0" data-selection>
+        <div class="goop-scale"><span>← worse skin buys</span><span>coin flip</span><span>better skin buys →</span></div>
+      </div>
+      <div class="goop-effect">
+        <label>True effect of the stickers</label>
+        <button type="button" data-effect="0" aria-pressed="true">0</button>
+        <button type="button" data-effect="1" aria-pressed="false">+1</button>
+        <button type="button" data-effect="-1" aria-pressed="false">−1</button>
+      </div>
+      <button type="button" class="goop-new" data-new>New population</button>
+    </div>
+    <svg class="goop-plot" viewBox="0 0 ${W} ${H}" role="img" aria-label="Dot plot of skin quality for buyers and non-buyers"></svg>
+    <div class="goop-readout">
+      <div>Buyers' average skin<br><strong data-buy-mean>–</strong> <span data-buy-n></span></div>
+      <div>Non-buyers' average skin<br><strong data-no-mean>–</strong> <span data-no-n></span></div>
+      <div class="eq">Difference in means <strong data-diff>–</strong><br>= true effect <strong data-eff>0</strong> + baseline difference <span class="bias" data-bias>–</span></div>
+    </div>
+    <p class="goop-note" data-note></p>`;
+
+  const svg = root.querySelector('svg');
+  // axis
+  el('line', { x1: left, x2: W - right, y1: axisY, y2: axisY, stroke: '#62717d', 'stroke-width': 2 }, svg);
+  for (let v = 0; v <= 10; v += 2) {
+    el('line', { x1: x(v), x2: x(v), y1: axisY, y2: axisY + 8, stroke: '#62717d', 'stroke-width': 2 }, svg);
+    el('text', { x: x(v), y: axisY + 32, 'text-anchor': 'middle', 'font-size': 22, fill: '#62717d' }, svg).textContent = v;
+  }
+  el('text', { x: (left + W - right) / 2, y: H - 2, 'text-anchor': 'middle', 'font-size': 22, fill: '#18232d' }, svg).textContent = 'Skin quality (0–10)';
+  [['buy', 'Bought', '#b24a3c'], ['no', 'Did not buy', '#2f6687']].forEach(([k, label, col]) => {
+    el('text', { x: 10, y: rowY[k] + 8, 'font-size': 24, 'font-weight': 700, fill: col }, svg).textContent = label;
+    el('line', { x1: left, x2: W - right, y1: rowY[k], y2: rowY[k], stroke: '#c8c2b7', 'stroke-width': 1, 'stroke-dasharray': '4 6' }, svg);
+  });
+  const dotLayer = el('g', {}, svg);
+  const meanBuy = el('g', { class: 'meanline' }, svg);
+  el('line', { x1: 0, x2: 0, y1: rowY.buy - 52, y2: rowY.buy + 52, stroke: '#b24a3c', 'stroke-width': 5 }, meanBuy);
+  const meanNo = el('g', { class: 'meanline' }, svg);
+  el('line', { x1: 0, x2: 0, y1: rowY.no - 52, y2: rowY.no + 52, stroke: '#2f6687', 'stroke-width': 5 }, meanNo);
+
+  const sel = root.querySelector('[data-selection]');
+  const effButtons = [...root.querySelectorAll('[data-effect]')];
+  let effect = 0;
+  let people = [];
+  let dots = [];
+
+  function normal() {
+    let u = 0, v = 0;
+    while (u === 0) u = Math.random();
+    while (v === 0) v = Math.random();
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+  }
+
+  function newPopulation() {
+    people = Array.from({ length: N }, () => ({
+      y0: Math.max(0.2, Math.min(9.8, 5 + 1.7 * normal())),
+      u: Math.random(),
+      jitter: (Math.random() - 0.5) * 70,
+    }));
+    dotLayer.replaceChildren();
+    dots = people.map(() => el('circle', { class: 'dot', r: 5, cx: 0, cy: 0, 'fill-opacity': 0.6 }, dotLayer));
+    update();
+  }
+
+  const fmt = v => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(2);
+
+  function update() {
+    const k = (Number(sel.value) / 100) * 1.6; // selection strength on logit scale per skin point
+    let sb = 0, nb = 0, sn = 0, nn = 0, b0 = 0, n0 = 0;
+    people.forEach((p, i) => {
+      const prob = 1 / (1 + Math.exp(-k * (p.y0 - 5)));
+      const buys = p.u < prob;
+      const y = p.y0 + (buys ? effect : 0); // means use unclipped values; x() clips only for drawing
+      if (buys) { sb += y; nb += 1; b0 += p.y0; } else { sn += y; nn += 1; n0 += p.y0; }
+      const d = dots[i];
+      d.style.transform = `translate(${x(y)}px, ${(buys ? rowY.buy : rowY.no) + p.jitter * 0.6}px)`;
+      d.setAttribute('fill', buys ? '#b24a3c' : '#2f6687');
+    });
+    const mb = nb ? sb / nb : NaN, mn = nn ? sn / nn : NaN;
+    const bias = (nb && nn) ? b0 / nb - n0 / nn : NaN;
+    meanBuy.style.transform = `translate(${x(mb)}px, 0)`;
+    meanNo.style.transform = `translate(${x(mn)}px, 0)`;
+    root.querySelector('[data-buy-mean]').textContent = mb.toFixed(2);
+    root.querySelector('[data-no-mean]').textContent = mn.toFixed(2);
+    root.querySelector('[data-buy-n]').textContent = `(n = ${nb})`;
+    root.querySelector('[data-no-n]').textContent = `(n = ${nn})`;
+    root.querySelector('[data-diff]').textContent = fmt(mb - mn);
+    root.querySelector('[data-eff]').textContent = fmt(effect);
+    root.querySelector('[data-bias]').textContent = fmt(bias);
+    const v = Number(sel.value);
+    root.querySelector('[data-note]').textContent = v === 0
+      ? 'Buying is a coin flip, so the baseline difference is zero on average. What you see is chance; click “New population” and it bounces around 0.'
+      : (v > 0
+        ? 'People with better skin are more likely to buy, so buyers start ahead: the baseline difference is selection (plus a little chance).'
+        : 'People with worse skin are more likely to buy, so buyers start behind: the baseline difference is negative selection (plus a little chance).');
+  }
+
+  sel.addEventListener('input', update);
+  effButtons.forEach(btn => btn.addEventListener('click', () => {
+    effect = Number(btn.dataset.effect);
+    effButtons.forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+    update();
+  }));
+  root.querySelector('[data-new]').addEventListener('click', newPopulation);
+  // keep keyboard arrows on the slider from changing slides
+  sel.addEventListener('keydown', e => e.stopPropagation());
+  newPopulation();
+})();
+</script>
