@@ -196,24 +196,25 @@ COMM 5220 • Week 11
 </div>
 </section>
 <section id="sat-collider-setup" class="slide level2">
-<h2>Selection can create a relationship</h2>
-<p>Imagine an earnings survey recruits from the <strong>union of two lists</strong>:</p>
+<h2>Selection can even reverse a relationship</h2>
+<p>Researchers advertise a <strong>“College Status and Income Survey”</strong> broadly. Anyone can start, but not everyone finishes:</p>
 <ul>
-<li>a selective-college alumni directory — any income</li>
-<li>a high-income professional directory — any college</li>
+<li>selective-college graduates may be eager to mention where they went</li>
+<li>high-income respondents may be eager to report their success</li>
+<li>lower-income respondents may feel embarrassed and quit—especially without a prestigious college to report</li>
 </ul>
-<p>Everyone on either list enters the dataset. People on neither list do not.</p>
+<p>The analysis contains only people who <strong>complete the survey</strong>.</p>
 </section>
 <section id="dag-sim-collider" class="slide level2">
-<h2>Open or closed? Analyzing only the recruited sample</h2>
-<p>Click <strong>Included in dataset</strong> to analyze only recruited people. Then press Play.</p>
-<div class="dag-sim dag-sim-mount" data-scenario="satCollider" aria-label="Interactive DAG: attending a selective college, income, and inclusion in the dataset">
+<h2>Open or closed? Analyzing only completed surveys</h2>
+<p>Click <strong>Completed survey</strong> to analyze only respondents who finished. Then press Play.</p>
+<div class="dag-sim dag-sim-mount" data-scenario="satCollider" aria-label="Interactive DAG: attending a selective college and income both affect completing the survey">
 
 </div>
 </section>
 <section id="collider-why-open" class="slide level2">
 <h2>The numbers make the collider visible</h2>
-<p>Suppose the full population has 25 people in every cell, but inclusion requires <strong>selective college OR high income</strong>:</p>
+<p>Suppose 100 people in every cell begin the survey. These stylized completion rates follow the story:</p>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -225,19 +226,33 @@ COMM 5220 • Week 11
 <tbody>
 <tr class="odd">
 <td><strong>Selective college</strong></td>
-<td style="text-align: right;">25 included</td>
-<td style="text-align: right;">25 included</td>
+<td style="text-align: right;">90 complete</td>
+<td style="text-align: right;">70 complete</td>
 </tr>
 <tr class="even">
 <td><strong>Nonselective college</strong></td>
-<td style="text-align: right;">25 included</td>
-<td style="text-align: right;"><strong>0 included</strong></td>
+<td style="text-align: right;">70 complete</td>
+<td style="text-align: right;"><strong>10 complete</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Among included people, 50% of selective-college graduates have high incomes—but 100% of nonselective-college graduates do.</p>
+<p>Among completers, 56% of selective-college graduates have high incomes—but 88% of nonselective-college graduates do.</p>
 <div class="fragment key-line">
-<p>Conditioning on inclusion makes two otherwise independent variables statistically informative about each other.</p>
+<p>The selected sample falsely suggests that <strong>less-selective college predicts higher income</strong>.</p>
+</div>
+<div class="fragment key-line">
+<p>Collider bias can create, erase, or reverse an association; the direction depends on the selection process.</p>
+</div>
+</section>
+<section id="collider-famous-actors" class="slide level2">
+<h2>Fame can make beauty and talent look like substitutes</h2>
+<p><strong>Collider:</strong> Conventional screen beauty → <strong>Fame</strong> ← Acting talent</p>
+
+<img data-src="assets/collider-fame-scatter.png" style="width:92.0%" alt="Two simulated scatter plots. Beauty and talent are unrelated among all aspiring actors. Selecting only actors whose combined beauty and talent exceed a high fame threshold produces a negative relationship." class="r-stretch"><div class="fragment key-line">
+<p>The relationship changes because we selected on fame—not because beauty reduces talent.</p>
+</div>
+<div class="source">
+<p>Simulated illustration: 1,800 independent beauty/talent scores; “famous” if their sum exceeds 15.</p>
 </div>
 </section>
 <section id="sat-mediator-setup" class="slide level2">
@@ -278,7 +293,7 @@ COMM 5220 • Week 11
 </tr>
 <tr class="even">
 <td><strong>Inverted fork</strong></td>
-<td>Selective college → included in dataset ← income</td>
+<td>Selective college → completed survey ← income</td>
 <td style="text-align: center;"><strong>no</strong></td>
 <td><strong>creates</strong> bias: collider bias</td>
 </tr>
@@ -594,29 +609,6 @@ COMM 5220 • Week 11
 <p>Source: Druckman (2023), pp.&nbsp;33–35.</p>
 </div>
 </section>
-<section id="experiment-goals" class="slide level2">
-<h2>Experiments can test effects, mechanisms, or policies</h2>
-<div class="triad">
-<div class="triad-item">
-<p>Searching for facts</p>
-<p>Isolate the cause of an observed regularity. The modal social-science goal.</p>
-</div>
-<div class="triad-item">
-<p>Speaking to theorists</p>
-<p>Test a formal or game-theoretic prediction.</p>
-</div>
-<div class="triad-item">
-<p>Whispering in the ears of princes</p>
-<p>Get the <strong>precise size</strong> of an effect right, because someone will act on the number.</p>
-</div>
-</div>
-<div class="fragment key-line">
-<p>Only the third goal requires the effect <em>size</em>, not just its existence, to travel.</p>
-</div>
-<div class="source">
-<p>Source: Roth (1995), via Druckman (2023), pp.&nbsp;42–43.</p>
-</div>
-</section>
 <section id="realism" class="slide level2">
 <h2>An artificial setting can still test a theory well</h2>
 <div class="comparison">
@@ -632,11 +624,96 @@ COMM 5220 • Week 11
 <p>Do participants take it seriously and engage with it?</p>
 </div>
 </div>
+<blockquote>
+<p>“The experiment should be judged by the lessons it teaches about the theory and not by its similarity with what nature … created.”</p>
+<p>— Plott (1991, p.&nbsp;906; abridged)</p>
+</blockquote>
 <div class="fragment key-line">
-<p>For mechanism tests, experimental realism is often enough. Policy forecasts also need realistic dosage and context.</p>
+<p>For theory and mechanism tests, privilege <strong>experimental realism</strong>. Policy forecasts also need realistic dosage and context.</p>
 </div>
 <div class="source">
 <p>Source: Druckman (2023), pp.&nbsp;52–53; Mook (1983); Plott (1991).</p>
+</div>
+</section>
+<section id="immigrant-threat-realism" class="slide level2">
+<h2>Two very different ways to test immigrant threat</h2>
+<div class="comparison">
+<div class="side">
+<p><strong>Enos: actual train platforms</strong></p>
+<ul>
+<li>Spanish-speaking confederates joined commuters’ routines for two weeks</li>
+<li>Nearby train times were randomized within nine Boston-area stations</li>
+<li>Exposed commuters shifted toward more exclusionary immigration attitudes</li>
+</ul>
+</div>
+<div class="versus">
+<p>vs.</p>
+</div>
+<div class="side">
+<p><strong>Brader et al.: lab news task</strong></p>
+<ul>
+<li>Participants at computer stations read a mock news story</li>
+<li>Latino vs.&nbsp;White European cue × low- vs.&nbsp;high-skilled worker</li>
+<li>The low-skilled Latino cue produced the most anxiety and anti-immigration action</li>
+</ul>
+</div>
+</div>
+<p><strong>Ask students:</strong> Which study has more mundane realism? Which one isolates the proposed threat cue more cleanly?</p>
+<div class="fragment key-line">
+<p>The realistic treatment tests a <strong>bundle of lived exposure</strong>. The artificial treatment separates <strong>ethnicity cue × skill stereotype</strong>.</p>
+</div>
+<div class="source">
+<p>Sources: Enos (2014); Brader, Valentino, and Suhay (2008).</p>
+</div>
+</section>
+<section id="experiment-goals" class="slide level2">
+<h2>What is each experiment trying to accomplish?</h2>
+<div class="triad">
+<div class="triad-item">
+<p><strong>Experiment A</strong></p>
+<p>Randomize a parent cue on identical résumés to test whether discrimination exists.</p>
+</div>
+<div class="triad-item">
+<p><strong>Experiment B</strong></p>
+<p>Offer a $5/$5 or $8/$2 split of $10. The responder can accept—or reject and give both people $0.</p>
+</div>
+<div class="triad-item">
+<p><strong>Experiment C</strong></p>
+<p>Randomize the exact vaccination reminder a city may scale and estimate additional uptake.</p>
+</div>
+</div>
+<p><strong>Ask students:</strong> What does each experiment need to get right? Which one requires the numerical effect size to travel?</p>
+<div class="fragment key-line">
+<p><strong>A:</strong> searching for facts · <strong>B:</strong> speaking to theorists · <strong>C:</strong> whispering in the ears of princes</p>
+</div>
+<div class="source">
+<p>Source: Roth (1995), via Druckman (2023), pp.&nbsp;42–43.</p>
+</div>
+</section>
+<section id="bargaining-game" class="slide level2">
+<h2>The $10 game isolates the cost of punishing unfairness</h2>
+<p>Responders are randomly shown one proposed division of $10:</p>
+<div class="comparison">
+<div class="side">
+<p><strong>Equal offer</strong></p>
+<p>Proposer keeps <strong>$5</strong><br> Responder receives <strong>$5</strong></p>
+</div>
+<div class="versus">
+<p>or</p>
+</div>
+<div class="side">
+<p><strong>Unequal offer</strong></p>
+<p>Proposer keeps <strong>$8</strong><br> Responder receives <strong>$2</strong></p>
+</div>
+</div>
+<p>The responder then chooses:</p>
+<ul>
+<li><strong>Accept</strong> → the proposed amounts are paid</li>
+<li><strong>Reject</strong> → both people receive <strong>$0</strong></li>
+</ul>
+<p><strong>Ask students:</strong> Would you reject the unequal offer and give up your own $2? What would each theory predict?</p>
+<div class="fragment key-line">
+<p><strong>Self-interest:</strong> accept both. <strong>Fairness:</strong> reject $8/$2 more often. The artificial game isolates one real choice—<strong>take $2 or sacrifice it to punish unfairness</strong>.</p>
 </div>
 </section>
 <section id="manipulation-checks" class="slide level2">
@@ -779,10 +856,13 @@ COMM 5220 • Week 11
 <p><strong>Motherhood</strong> ⟶ ? ⟶ <strong>Wages</strong></p>
 <p>Add at least one of each:</p>
 <ul>
-<li>A pre-treatment confounder</li>
-<li>A post-treatment mediator</li>
-<li>An employer-evaluation pathway</li>
+<li>A pre-parenthood common cause</li>
+<li>A non-discriminatory mediator, such as experience or hours</li>
+<li>A discriminatory mediator, such as employer judgments</li>
 </ul>
+<div class="fragment key-line">
+<p>Employer evaluation is a <strong>mediator of wages</strong>. In the cue experiment, evaluation measures are <strong>outcomes</strong>.</p>
+</div>
 </section>
 <section id="motherhood-naive-reveal" class="slide level2">
 <h2>Productivity is the central rival explanation</h2>
@@ -1034,13 +1114,31 @@ COMM 5220 • Week 11
 </div>
 </section>
 <section id="craig-richeson-naive-draw" class="slide level2">
-<h2>What else could produce this correlation?</h2>
+<h2>What could explain the parish correlation?</h2>
 <p>Two boxes: <strong>Racial composition</strong> and <strong>White conservatism</strong>. What structures could produce Giles &amp; Hertz’s correlation?</p>
+<div class="fragment">
+<div class="comparison">
+<div class="side">
+<p><strong>Political feedback — sign unclear</strong></p>
+<p>Earlier White racial politics could affect later composition through housing policy and migration—but this does not automatically predict the positive correlation.</p>
+</div>
+<div class="versus">
+<p>or</p>
+</div>
+<div class="side">
+<p><strong>Regional confounding</strong></p>
+<p>Regional history—such as plantation agriculture and segregation—could shape both local Black population share and White racial politics.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="craig-richeson-candidates" class="slide level2">
-<h2>One correlation fits three causal stories</h2>
+<h2>One correlation does not make all three stories equally strong</h2>
 
-<img data-src="assets/dag-racial-shift-candidates.svg" style="width:96.0%" alt="Three candidate structures: reverse causation, a regional confounder, and a direct causal chain through status threat" class="r-stretch"></section>
+<img data-src="assets/dag-racial-shift-candidates.svg" style="width:96.0%" alt="Three candidate structures. First, earlier White racial politics may feed back into later racial composition, although the sign is ambiguous. Second, regional plantation and segregation history shapes both local Black population share and White conservatism. Third, higher local Black population share increases status threat, which increases White conservatism." class="r-stretch"><div class="fragment key-line">
+<p>Political feedback makes composition <strong>endogenous</strong>, but regional history is the cleaner alternative explanation for the positive correlation.</p>
+</div>
+</section>
 <section id="craig-richeson-estimand" class="slide level2">
 <h2>The experiments answer a narrower question</h2>
 <div class="comparison">
@@ -1339,7 +1437,7 @@ COMM 5220 • Week 11
 </tr>
 <tr class="even">
 <td><strong>Craig &amp; Richeson</strong></td>
-<td>Reverse causation / regional confound</td>
+<td>Ambiguous political feedback / regional confound</td>
 <td>Message exposure, then the <strong>status implication</strong> (3a/3b)</td>
 <td>Attitudes, not behavior; immigration null; limited MTurk coverage; brief stimuli</td>
 </tr>
@@ -1671,7 +1769,7 @@ COMM 5220 • Week 11
         },
         satCollider: {
           xLabel: COLLEGE_X, yLabel: COLLEGE_Y,
-          mids: [{ id: 'employed', x: 450, y: 370, label: 'Included in\ndataset', role: 'collider', good: 'closed' }],
+          mids: [{ id: 'employed', x: 450, y: 370, label: 'Completed\nsurvey', role: 'collider', good: 'closed' }],
         },
         satMediator: {
           xLabel: COLLEGE_X, yLabel: COLLEGE_Y,
@@ -1682,7 +1780,7 @@ COMM 5220 • Week 11
           mids: [
             { id: 'ses2', x: 450, y: 70, label: 'Family SES\n& ability', role: 'confounder', good: 'closed' },
             { id: 'college2', x: 450, y: 260, label: 'Professional\nnetwork', role: 'mediator', good: 'open' },
-            { id: 'employed2', x: 450, y: 420, label: 'Included in\ndataset', role: 'collider', good: 'closed' },
+            { id: 'employed2', x: 450, y: 420, label: 'Completed\nsurvey', role: 'collider', good: 'closed' },
           ],
         },
         satTwoConfounders: {

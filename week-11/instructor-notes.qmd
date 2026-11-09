@@ -16,7 +16,7 @@ lang: en
 
 ## Teaching approach
 
-The seminar runs in five parts. **Part 1** rebuilds Rohrer's DAG vocabulary through one running example—whether attending a selective college pays off—with interactive confounder, collider, and mediator paths; it adds a verbal explanation of why conditioning on a collider induces dependence and places mediation and moderation beside the DAG concepts. Advanced transfer exercises remain hidden as optional backup slides. **Part 2** moves from DAGs to experimental design: the Fundamental Problem of Causal Inference, scientific versus statistical solutions, Druckman's 2×2 typology, the assumptions behind randomization, the different jobs of assignment, sampling, and sample size, experimental types and goals, realism, treatment validity, the four validity questions, and a qualified external-validity argument based on effect heterogeneity and moderator coverage. **Part 3** is a full live deep-dive on Correll, Benard, and Paik (2007): students distinguish the population wage-gap puzzle from the randomized parental-status-cue estimand, propose the design, inspect the lab and field-audit procedures, and critique what each identifies. **Part 4** repeats the structure for Craig and Richeson (2014/2015), explicitly separating actual demographic change from randomized message exposure, calibrating the corrected Study 1 evidence, and comparing measured mediation with Studies 3a/3b's experimental manipulation of the proposed status-threat mechanism. **Part 5** synthesizes both cases and closes with a project application and exit question.
+The seminar runs in five parts. **Part 1** rebuilds Rohrer's DAG vocabulary through one running example—whether attending a selective college pays off—with interactive confounder, collider, and mediator paths; it adds a verbal and graphical explanation of collider bias, including the famous-actor selection example, and places mediation and moderation beside the DAG concepts. Advanced transfer exercises remain hidden as optional backup slides. **Part 2** moves from DAGs to experimental design: the Fundamental Problem of Causal Inference, scientific versus statistical solutions, Druckman's 2×2 typology, the assumptions behind randomization, the different jobs of assignment, sampling, and sample size, experimental settings, the priority of experimental over mundane realism for theory tests, a student exercise on fact/theory/policy goals, treatment validity, the four validity questions, and a qualified external-validity argument based on effect heterogeneity and moderator coverage. **Part 3** is a full live deep-dive on Correll, Benard, and Paik (2007): students distinguish the population wage-gap puzzle from the randomized parental-status-cue estimand, propose the design, inspect the lab and field-audit procedures, and critique what each identifies. **Part 4** repeats the structure for Craig and Richeson (2014/2015), explicitly separating actual demographic change from randomized message exposure, calibrating the corrected Study 1 evidence, and comparing measured mediation with Studies 3a/3b's experimental manipulation of the proposed status-threat mechanism. **Part 5** synthesizes both cases and closes with a project application and exit question.
 
 ## Source conventions
 
@@ -38,15 +38,15 @@ Walk through the five parts at a high level. Tell students Parts 3 and 4 will lo
 
 **Talk track**
 
-Start with a familiar correlation: people who attend more selective colleges tend to earn more. Our task is not to decide immediately that college caused the difference. Our task is to list the different causal structures that could produce the same observed relationship.
+Start with a familiar correlation: people who attend more selective colleges tend to earn more. Our task is not to decide immediately that college caused the difference. Our task is to identify the different ways the raw college–income relationship could mislead us—including selection that can weaken or even reverse it.
 
 **Ask students**
 
-What are three different reasons this correlation might appear?
+What could make this observed difference misleading? Could the sample even change its direction?
 
 **Teaching detail**
 
-Set up the single running example before showing any vocabulary at all. The correlation itself is uncontroversial and genuinely documented (this is the real empirical debate behind Dale and Krueger's work, which Week 10 already touched on); what's contested is what produces it. Tell students: rather than hopping between a new topic for every structure, we are going to answer "what's going on here?" three different ways, one at a time, with the same two boxes — attending a selective college, and income — on screen the whole time. We'll save the "why/how does it work" story for last, after we've dealt with whether the relationship is even real.
+Set up the single running example before showing any vocabulary at all. The correlation itself is uncontroversial and genuinely documented (this is the real empirical debate behind Dale and Krueger's work, which Week 10 already touched on); what's contested is what produces it and how sample selection may distort it. Keep the same two boxes—attending a selective college and income—while asking three questions. Confounding can create the opening positive association without a causal effect. Selection can induce a different association, even one in the opposite direction. Mediation asks how a genuine effect might operate. Save that "why/how does it work" story for last, after dealing with whether the observed relationship is trustworthy.
 
 ### Slide 4: Open or closed? Through family SES and ability
 
@@ -66,67 +66,87 @@ Point out the dotted gray line first, before anything else: it runs straight fro
 
 First widget pass. Uncontrolled, hit Play: the dot travels from "attends a selective college" back through Family SES & ability and on to income — open, and this is **bias**, not a real effect, because the "path" runs backward through a common cause rather than forward through a mechanism. Click the node to control for it, then Play again: the dot now stops. Controlling for a true confounder is the one case, of the three stories we'll see today, where "control for it" is unambiguously the right move. Name it: this structure is a **fork**, and the middle node is a **confounder**. Even after controlling for this, the relationship might still be fully explained away by something else — one more trap before we get to ask "why."
 
-### Slide 5: Selection can create a relationship
+### Slide 5: Selection can even reverse a relationship
 
 **Talk track**
 
-Now imagine that college and income are unrelated in the full population, but the dataset is assembled using either of two selection routes. Selection is now a common effect of college status and income. That common effect is the collider.
+Now imagine that college and income are unrelated in the full population. The survey reaches all four kinds of people, but college status and income both affect whether someone completes it. Completion is therefore a common effect of college status and income—the collider.
 
 **Ask students**
 
-If a person is not from a selective college but appears in this dataset, what must be true about the other selection route?
+Among people who completed the survey, what would you infer about a respondent's income if they did not attend a selective college?
 
 **Teaching detail**
 
-Second candidate explanation, and the one students find least intuitive. Use this as a deliberately mechanical example, not as a factual claim about how alumni surveys normally work. College status and income could be independent in the full population. But the dataset is assembled from either of two sources: one selected on college status and one selected on income. Being included is therefore a common effect of college status and income — a collider.
+Second candidate explanation, and the one students find least intuitive. Treat the response pattern as a stylized story, not a claim about how graduates actually behave. College status and income could be independent in the population. Yet either source of status can make completion more attractive, while reporting lower income may feel uncomfortable. College status and income therefore both cause survey completion.
 
-The earlier alumni-office story was ambiguous because being contacted, responding, and being observed are different events. Here the selection rule is explicit: a person enters the analytic dataset if they are on either list. The arrows into inclusion describe that rule directly.
+Be precise about the selected event. The collider is not being contacted and not merely opening the survey. The study was advertised broadly and people from all four cells can begin. The analytic sample conditions on **finishing the survey**. That is the event jointly affected by college status and income.
 
-### Slide 6: Open or closed? Analyzing only the recruited sample
+### Slide 6: Open or closed? Analyzing only completed surveys
 
 **Talk track**
 
-Before we select anyone, the two arrows meet at inclusion and the path is closed. Once we restrict the analysis to included people, knowing how someone did not enter tells us more about how they must have entered. The two causes become informative about one another.
+Before we condition on completion, the two arrows meet and the path is closed. Once we analyze only people who finished, knowing that one reason to complete was absent makes the other reason more likely. The two causes become informative about one another.
 
 **Teaching detail**
 
-Second widget pass. "Attends a selective college" and income both point *into* "Included in dataset." In the full population, hit Play: the two arrows meet and stop at inclusion. One cause tells us nothing about the other. Now click the inclusion node — meaning "analyze only recruited people" — and Play again. The path becomes statistically active because learning that one selection route was absent makes the other route more likely. The next slide shows this with counts.
+Second widget pass. "Attends a selective college" and income both point *into* "Completed survey." Before restricting the sample, hit Play: the two arrows meet and stop at completion. One cause tells us nothing about the other. Now click the completion node—meaning "analyze only people who finished"—and Play again. The path becomes statistically active because, among completers, learning that one source of pride was absent makes the other more likely. The next slide shows this with counts.
 
-Name it: inclusion is a **collider**. Restricting the analysis to selected cases can create an association that was absent in the full population.
+Name it: survey completion is a **collider**. Restricting the analysis to completers can create an association that was absent in everyone who started.
 
 ### Slide 7: The numbers make the collider visible
 
 **Talk track**
 
-The missing lower-right cell is the whole argument. Nonselective, lower-income people are absent. Inside the selected sample, a person from a nonselective college must have entered through the high-income list, so college status predicts income even though it did not in the population.
+The lower-right cell collapses from 100 starters to only 10 completers. Inside the completed sample, a person from a nonselective college is therefore unusually likely to have a high income. The selected data falsely suggest that less-selective college predicts higher income, even though college and income were unrelated among everyone who started.
 
 **Ask students**
 
-What changed between the population table and the selected sample: the causal effect, or who is observed?
+Does this table support the claim that less-selective colleges raise income? What changed: the causal effect, or who remained in the sample?
 
 **Teaching detail**
 
-Walk through the missing lower-right cell. In the full population, college selectivity and income are independent: half of each college group has high income. The selection rule deletes only nonselective, lower-income people. Inside the selected sample, learning that someone did not attend a selective college tells us they must have entered through the high-income list. College status therefore predicts income even though it did not in the population.
+Walk through the arithmetic. Among the 200 selective-college starters, 160 finish: 90 high-income and 70 lower-income, so 90/160 = 56% are high-income. Among the 200 nonselective-college starters, only 80 finish: 70 high-income and 10 lower-income, so 70/80 = 88% are high-income. The college–income relationship was zero among starters and negative among completers.
+
+Say the apparent substantive conclusion aloud: **if we looked only at completers, we would conclude that less-selective colleges are associated with higher incomes.** That conclusion is entirely produced by response selection. This collider story therefore does not explain the positive correlation on the opening slide. It demonstrates a different danger: the analytic sample can attenuate, erase, or reverse the population relationship. If a positive causal or confounded association existed before selection, this response process could make it look smaller or even flip its sign.
+
+Why? The lower-income, nonselective group has neither of the two proposed motivations to finish and also bears the embarrassment cost in the story, so it is disproportionately removed. Among the people who remain, not having the college-status reason to finish makes the income-status reason more likely. Conversely, a lower-income completer is more likely to have the selective-college reason. Neither variable causes the other; they explain the common effect together.
 
 This induced dependence is what it means for X → S ← Y to become statistically active when we condition on S. The arrows do not reverse. Also be precise with terminology: this is an opened **noncausal path** and selection bias; it is not literally a back-door path, because a back-door path must begin with an arrow into X.
 
-Use a simple diagnostic sentence: **when you know the outcome happened, its possible causes begin to explain one another.** The same logic drives Berkson's paradox among hospital patients, admissions bias among students selected on either grades or athletics, and publication bias when both rigor and novelty affect whether a study is published.
+Use a simple diagnostic sentence: **when you know the common effect happened, its possible causes begin to explain one another.** The same logic drives Berkson's paradox among hospital patients, admissions bias among students selected on either grades or athletics, and publication bias when both rigor and novelty affect whether a study is published.
 
 Do not say the arrows literally reverse. The causal arrows remain pointed into the collider. What changes is the statistical information flow: after conditioning on the common effect, observing one cause provides information about the other.
 
 We've now dealt with "is it spurious?" and "is it a trap in how the sample was built?" Suppose neither applies, and the relationship really is real. Last question: *why*?
 
-### Slide 8: If the effect is real, what carries it?
+### Slide 8: Fame can make beauty and talent look like substitutes
 
 **Talk track**
 
-Suppose the relationship survives our concerns about confounding and selection. We can now ask a different question: what carries the effect from college to income? A professional network is one possible mediator.
+Treat this as a stylized selection process, not a claim that casting decisions can really be reduced to two traits. Begin with the left panel: beauty and talent were generated independently, so the full-pool correlation is essentially zero, *r* = .04. The red points are the 239 actors whose beauty-plus-talent score crosses the dashed fame threshold. Then move to the right panel, which shows only those selected cases. Within that group, *r* = −.46. Someone who clears the threshold with less conventional screen beauty must have more acting talent, and vice versa. Selection makes the two causes look like substitutes.
+
+**Ask students**
+
+If an actor became famous despite not fitting conventional beauty standards, what would you infer about the actor's talent? Why does that inference exist only after we condition on fame?
+
+**Teaching detail**
+
+Draw attention to the collider statement above the plot: beauty and talent both point into fame. Conditioning does not make beauty cause talent or talent cause beauty. It changes the information available inside the selected group. The simulation uses a compensatory threshold: either cause can help a person enter the famous-actor sample. Once entry is known, observing less of one cause raises the expected value of the other.
+
+Connect it back to the earnings example: “completed the survey” and “became a famous actor” play the same structural role. In both cases, either of two advantages can help someone enter the selected group, so the advantages look like substitutes once entry is known. Then return to the mediator question from the previous slide: unlike a collider, professional network lies on a causal path from college to income.
+
+### Slide 9: If the effect is real, what carries it?
+
+**Talk track**
+
+Suppose the relationship survives our concerns about confounding and selection. We can now ask a different question: what carries the effect from college to income? A professional network is one possible mediator. Hold that question for one slide while we test whether the collider logic transfers to a completely different example.
 
 **Teaching detail**
 
 Third candidate explanation, and deliberately last, because it only makes sense to ask *how* something works once you've asked *whether* it's real. This is a **mediation** story: attending a selective college → professional network → income. If true, part or all of the apparent effect is real, just not direct — it works *through* the network.
 
-### Slide 9: Open or closed? Through professional network
+### Slide 10: Open or closed? Through professional network
 
 **Talk track**
 
@@ -140,7 +160,7 @@ If our goal is the total effect of college, should we control for professional n
 
 Third widget pass. Leave the network uncontrolled and hit Play: the mediator's own dot travels all the way from "attends a selective college" to income, pulsing green — if this story is true, that is the real effect, flowing through the mechanism. Now click the node to control for it, and Play again: the dot stops dead at Professional network with a red block mark. This is **overcontrol** — holding network quality fixed compares people with equally strong networks, which removes exactly the part of the effect this story says is real. Name the vocabulary once, lightly: this middle node is called a **mediator**, and the structure is a **chain**. This is also the one story, of the three, that answers *why* rather than *whether* — which is exactly why it had to come last.
 
-### Slide 10: The same three nodes can play different roles
+### Slide 11: The same three nodes can play different roles
 
 **Talk track**
 
@@ -154,7 +174,7 @@ For each row, does controlling for the middle variable remove bias, create bias,
 
 Now that students have seen all three stories concretely, generalize to the vocabulary and the general X/M/Y notation other papers will use. This table is the payoff of going through the college-and-income example three times, in the order we actually reasoned through it — is it spurious, is it a sampling trap, and only then, why — rather than introducing fork/collider/chain as three arbitrary labels up front. Every DAG we draw for the rest of the session is one of these three rows, however many times it's duplicated or nested.
 
-### Slide 11: A mediator explains how an effect travels
+### Slide 12: A mediator explains how an effect travels
 
 **Talk track**
 
@@ -166,7 +186,7 @@ Name mediation here, at the moment students first understand a chain, rather tha
 
 Distinguish the estimands. The total effect includes the mediated path plus any direct path. Conditioning on M removes the path through M, so it cannot estimate the total effect. It may be tempting to call the remaining coefficient the direct effect, but the same warning from Rohrer still applies: unless the mediator itself is randomized or all mediator–outcome confounding is blocked, that direct/indirect decomposition is not automatically causal. Correll will measure proposed mediators; Craig and Richeson will later manipulate one.
 
-### Slide 12: The effect may differ across groups
+### Slide 13: The effect may differ across groups
 
 **Talk track**
 
@@ -184,7 +204,7 @@ Use the same running example. The moderation hypothesis is that selective colleg
 
 Point out an important complication: pre-college family SES can be both a **confounder** and a **moderator**. It may predict who attends a selective college and adult income, while also changing the treatment effect. Those are separate roles. Identification still requires closing the back door through SES; moderation is then assessed by comparing the identified college effect across SES levels, often with a treatment × SES interaction.
 
-### Slide 13: A back door begins by pointing into the treatment
+### Slide 14: A back door begins by pointing into the treatment
 
 **Talk track**
 
@@ -194,11 +214,11 @@ A back-door path begins by pointing into the treatment. To identify a total effe
 
 One-slide restatement, no new content. This sets up the combined widget next, where students need the formal rule because more than one structure is in play at once and intuition alone starts to fail.
 
-### Slide 14: One DAG can contain all three structures
+### Slide 15: One DAG can contain all three structures
 
 **Talk track**
 
-This diagram combines everything we have just separated. Family SES is a confounder, professional network is a mediator, and inclusion is a collider. The correct adjustment set follows from the role each node plays, not from how strongly it predicts the outcome.
+This diagram combines everything we have just separated. Family SES is a confounder, professional network is a mediator, and survey completion is a collider. The correct adjustment set follows from the role each node plays, not from how strongly it predicts the outcome.
 
 **Ask students**
 
@@ -206,9 +226,9 @@ Choose the adjustment set before we run the animation. Which node belongs in it,
 
 **Teaching detail**
 
-This is the graded combination of all three stories from this one running example: Family SES & ability (confounder, top), Professional network (mediator, middle), Included in dataset (collider, bottom). Have students decide the full control set before clicking anything, then test it. Correct answer: control for Family SES & ability only. Controlling for Professional network blocks part of the real effect (overcontrol); restricting to cases selected through the two-list rule conditions on the collider and creates selection bias. This is a rehearsal for Parts 3 and 4: in a few minutes you will do exactly this with a real published DAG, except nobody will score it for you — you will have to argue for your own control set.
+This is the graded combination of all three stories from this one running example: Family SES & ability (confounder, top), Professional network (mediator, middle), Completed survey (collider, bottom). Have students decide the full control set before clicking anything, then test it. Correct answer: control for Family SES & ability only. Controlling for Professional network blocks part of the real effect (overcontrol); restricting the analysis to people who completed the status-and-income survey conditions on the collider and creates selection bias. This is a rehearsal for Parts 3 and 4: in a few minutes you will do exactly this with a real published DAG, except nobody will score it for you — you will have to argue for your own control set.
 
-### Slide 15: What if we prevent confounding before it starts?
+### Slide 16: What if we prevent confounding before it starts?
 
 **Talk track**
 
@@ -218,7 +238,7 @@ So far we have treated confounding as an analysis problem: find the common cause
 
 Short transition slide. Everything today, from the first college-and-income widget through the social-media capstone, has been a version of the same move: find the confounder, measure it, control for it. That move needs the confounder to be known and measurable. Twins, adoption, and lotteries — on the next slide — sidestep measurement entirely by changing the design so the back door does not exist, rather than finding and adjusting for it. Druckman's vocabulary, starting after that, gives us a precise way to talk about exactly what that kind of design buys you, and exactly what it still leaves unresolved.
 
-### Slide 16: Design can close paths before analysis
+### Slide 17: Design can close paths before analysis
 
 **Talk track**
 
@@ -228,7 +248,7 @@ Twin comparisons, adoption designs, and lotteries all try to build a credible co
 
 This is the answer to the question the previous slide just asked. Twins and adoption are the "scientific solution" to the Fundamental Problem of Causal Inference in Druckman's terms, which we name properly starting next slide. Lotteries and natural experiments are the "statistical solution." Correll and Craig & Richeson both build their own lotteries by hand, inside a lab or a survey, rather than finding one in the world — that's exactly what Parts 3 and 4 are about to show in full.
 
-### Slide 17: Experiments close paths by design
+### Slide 18: Experiments close paths by design
 
 **Talk track**
 
@@ -238,7 +258,7 @@ We now have the question for this section: what makes an intervention capable of
 
 Open Part 2. Everything in this part comes from Druckman (2023), chapters 2 and 3. The goal is a vocabulary precise enough that students can narrate Parts 3 and 4 themselves, in Druckman's terms, before we even get there.
 
-### Slide 18: We never observe both outcomes for the same unit
+### Slide 19: We never observe both outcomes for the same unit
 
 **Talk track**
 
@@ -252,7 +272,7 @@ For this student, which potential outcome is missing? What real comparison could
 
 This is Holland's Fundamental Problem of Causal Inference, and it is the same idea Week 10 built with the Body Vibes table: for each unit, one potential outcome is necessarily missing. Ask students what comparison they would actually make—this student versus someone else—and what assumption would make that substitute credible. Druckman uses this fact as the foundation for defining an experiment.
 
-### Slide 19: Two ways to construct the missing comparison
+### Slide 20: Two ways to construct the missing comparison
 
 **Talk track**
 
@@ -266,7 +286,7 @@ Why does Druckman call this the *scientific* solution rather than, say, the "ass
 
 Name which of last week's "control by design" fixes used which solution. Twin studies and adoption assume two units (or genomes) are close enough to interchangeable that comparing them stands in for comparing one unit's two worlds — the scientific solution, resting on unit homogeneity. Lotteries and randomized assignment use many units and let randomization do the balancing on average — the statistical solution. Both are legitimate; they just make different assumptions, and a DAG forces you to say which one you're relying on.
 
-### Slide 20: An intervention is what makes a study an experiment
+### Slide 21: An intervention is what makes a study an experiment
 
 **Talk track**
 
@@ -276,7 +296,7 @@ Druckman defines an experiment by the role of an intervention, not only by wheth
 
 This is deliberately more inclusive than definitions that require random assignment (e.g., Gerber and Green) or researcher control (Morton and Williams). Under this definition, a well-argued natural experiment can count as an experiment even without true randomization, as long as the researcher is using some intervention — researcher-caused or natural — to resolve the Fundamental Problem. Hold this definition loosely for now; the next slide turns it into a typology you can place any study on.
 
-### Slide 21: Four ways an intervention can create a comparison
+### Slide 22: Four ways an intervention can create a comparison
 
 **Talk track**
 
@@ -312,7 +332,7 @@ Now weigh the four cells against each other — this is the part students actual
 
 **Cell 4 (natural, scientific).** Advantages: the only cell that can study big, slow-moving, real-world phenomena that could never be ethically or practically randomized at all, such as a region-wide technology rollout over years; real stakes, real settings. Disadvantages: this is the weakest identification of the four cells — unit homogeneity is an assumption the researcher must argue for, not something guaranteed by design or luck, and it's the one most vulnerable to a confounder hiding in whatever determined the "natural" variation (here, whichever factor decided which district got broadband first). Usually convincing only when triangulated with other designs, not on its own — which is the same lesson Rohrer gave us for DAGs generally: state the assumption, and don't rely on just one design to carry the whole claim.
 
-### Slide 22: Randomization solves one problem, not every problem
+### Slide 23: Randomization solves one problem, not every problem
 
 **Talk track**
 
@@ -334,7 +354,7 @@ Define all three precisely, then use the next three DAGs to show exactly how eac
 
 The key line is the one worth dwelling on: students' first instinct is that "we randomized, so we're fine." Randomization buys independence. It buys nothing at all about the other two — those have to be argued for, the same way a DAG's assumptions have to be argued for.
 
-### Slide 23: Independence: when compliance reintroduces a confound
+### Slide 24: Independence: when compliance reintroduces a confound
 
 **Talk track**
 
@@ -352,7 +372,7 @@ This is the single most common way independence quietly breaks in a real randomi
 
 Fixes: report intent-to-treat as the headline estimate; if the compliance-only effect matters, use an instrumental-variables / local-average-treatment-effect approach that uses assignment to instrument for actual compliance, rather than comparing compliers to non-compliers directly; measure and report the compliance rate itself, since a low compliance rate changes how much an ITT null result tells you.
 
-### Slide 24: SUTVA: when units interfere with each other
+### Slide 25: SUTVA: when units interfere with each other
 
 **Talk track**
 
@@ -370,7 +390,7 @@ This is also why field experiments on socially connected populations (classrooms
 
 Fixes: randomize at the cluster level instead of the individual level (whole friend groups, whole schools) so contamination happens within an arm rather than across arms; measure and model exposure to treated peers directly; standardize delivery of the treatment so there's only one version of it.
 
-### Slide 25: Exclusion restriction: when assignment leaks another way
+### Slide 26: Exclusion restriction: when assignment leaks another way
 
 **Talk track**
 
@@ -388,7 +408,7 @@ This is the sharpest of the three to teach because it is the one most students h
 
 Fixes: blinding, where feasible (hard here, since people obviously know whether their own account is deactivated); an attention/placebo-matched control condition so both arms feel equally "watched"; measuring actual treatment receipt/compliance so you can separate intent-to-treat from the compliance-only effect; asking directly, post-study, whether participants guessed the hypothesis, and checking whether that guess predicts the outcome.
 
-### Slide 26: Assignment, sampling, and sample size solve different problems
+### Slide 27: Assignment, sampling, and sample size solve different problems
 
 **Talk track**
 
@@ -404,7 +424,7 @@ This distinction is essential before moving into validity. Random assignment doe
 
 Use Correll as the preview: undergraduates can be randomly assigned applicant profiles, yielding a strong causal comparison inside the study, while the sample still leaves a generalization question about real hiring managers. Study 2 changes the setting and decision-makers rather than retroactively improving Study 1's random assignment.
 
-### Slide 27: Lab, survey, and field describe where treatment happens
+### Slide 28: Lab, survey, and field describe where treatment happens
 
 **Talk track**
 
@@ -414,45 +434,126 @@ Lab, survey, and field experiments are labels for where and how the intervention
 
 Place both upcoming cases on this axis before we get to them in detail, so students have the vocabulary ready. Note that a single paper can use more than one type — Correll's two studies deliberately trade lab control for field realism, which is itself a design choice we'll come back to.
 
-### Slide 28: Experiments can test effects, mechanisms, or policies
-
-**Talk track**
-
-An experiment can establish that an effect exists, test the mechanism producing it, or estimate what a real policy will do. The goal determines how much realism, precision, and contextual similarity the design needs.
-
-**Ask students**
-
-Are the two papers today trying mainly to establish an effect, identify a mechanism, or forecast a policy effect?
-
-**Teaching detail**
-
-Ask: which goal are Correll and Craig & Richeson each pursuing? Both are squarely "searching for facts" — they want to know whether status-based discrimination and status threat exist and operate through the mechanisms claimed, not to hand a policymaker a precise coefficient. This matters later, when we discuss what their modest effect sizes do and don't tell us.
-
 ### Slide 29: An artificial setting can still test a theory well
 
 **Talk track**
 
-An experiment can look unlike ordinary life and still isolate the theoretical variable cleanly. Surface realism matters less for a mechanism test than whether participants engage with the task and whether the treatment moves the construct the theory names.
+An experiment can look unlike ordinary life and still isolate the theoretical variable cleanly. Druckman's priority is experimental realism: participants must take the situation seriously enough for the theorized psychological or behavioral process to occur. Surface resemblance to daily life is secondary unless the setting itself is part of the theory or the goal is to forecast a real policy effect.
 
 **Ask students**
 
-Can you think of an artificial experiment that still isolates the theoretical mechanism better than a realistic one?
+Which matters more for a theory test: a study that looks like real life, or one that makes participants genuinely experience the mechanism? Can you think of a case where those come apart?
 
 **Teaching detail**
 
-Druckman's claim, following Mook and Plott: experiments are built to isolate a cause by stripping away real-world noise, so demanding that they "look like real life" is often a category error, except specifically for policy-simulation experiments.
+Druckman's claim, following Mook and Plott, is not that surface realism is worthless. It is that researchers should privilege the kind of realism that makes the causal process operate. An experiment needs participants to understand the situation, care about the incentives or stakes, and respond in a way generated by the construct named in the theory. That is experimental realism. A study can reproduce the furniture, language, and setting of ordinary life and still fail if participants are bored, confused, unconvinced, or reacting to the wrong feature.
+
+Give students the hierarchy explicitly:
+
+1. **First, activate the mechanism.** If a theory is about threat, participants must experience threat; if it is about strategic incentives, they must understand and respond to those incentives; if it is about status judgments, the status cue must become salient.
+2. **Second, isolate the mechanism.** Extra realistic detail can bundle the treatment with partisanship, familiarity, prior attitudes, social desirability, or other causes. Removing those details can improve the causal test.
+3. **Third, ask what must generalize.** For a theory test, the existence and direction of the mechanism may be the target. For a policy forecast, the treatment's dosage, delivery, population, and context also need to resemble the eventual intervention because the numerical effect size must travel.
 
 Spell out *why*, not just the conclusion. An experiment's whole job is to take one variable, hold everything else constant, and see what moves. Real life never does you that favor — in the real world, the cause you care about always arrives bundled with a dozen other things. So an experiment that strips all of that away and leaves a stylized, artificial-looking setup isn't failing at realism; it's doing exactly the one thing an experiment is for. Plott's line, which is worth putting on the screen: "[The] experiment should be judged by the lessons it teaches about the theory and not by its similarity with what nature might have happened to have created" (Plott 1991: 906). Mundane realism is a claim about the *surface* of the study; what actually licenses a causal inference is whether the manipulation captures the *theoretical construct* — which is a claim about its *depth*. Those can come apart completely, in either direction: a study can look exactly like real life and still manipulate the wrong thing, or look nothing like real life and manipulate exactly the right thing.
 
 Worked example, and genuinely the most persuasive one in the literature for students who are skeptical: Lupia and McCubbins (1998) wanted to test whether people with little information can still make good decisions by using cues about a source's knowledge and whether that source's interests align with their own — a theory about political persuasion and low-information reasoning. Instead of anything that looks like politics, their experiment has participants try to predict the outcome of a coin toss, after hearing from a source who is either knowledgeable-and-biased or unbiased-but-ignorant about how the coin is weighted. There are no candidates, no issues, no campaign ads, nothing a skeptic would call mundane realism at all. But the coin-toss game isolates exactly the theoretical ingredients the theory is about — source expertise and source interest-alignment — with a precision no real political survey item could match, because in a real survey those two things are always tangled up with partisanship, media diet, and a dozen other correlated variables. Ask students: does this experiment tell us anything about politics? Druckman's answer is yes, more cleanly than a "realistic" study would, because it isolates the mechanism the theory claims is doing the work.
 
+Add three shorter comparisons:
+
+- **An ultimatum-style bargaining game.** A responder sees either an equal $5/$5 split or an unequal $8/$2 split of $10. Accepting pays the proposed amounts; rejecting gives both people $0. This does not look like a wage negotiation or treaty, but it isolates whether people will sacrifice their own $2 to punish an unequal offer.
+- **Correll's résumé experiment.** Undergraduates are not hiring managers, and no actual job is filled. Still, the elaborate cover story and consequential-looking application materials are designed to make participants engage in the evaluative task. The causal leverage comes from equal qualifications plus a randomized parent cue, not from duplicating every feature of an actual hiring office.
+- **Craig and Richeson's press release.** People do not usually encounter demographic change as one clean paragraph in an isolated survey. The treatment has low mundane realism, but it is useful if the message makes majority-status loss salient and changes perceived threat. The manipulation check addresses experimental realism; it does not make the stimulus look more like a year of partisan media exposure.
+
+Now give the reverse thought experiment. Imagine a field study using a perfectly authentic campaign mailer in a real election, but almost nobody reads it. Mundane realism is extremely high; experimental realism is low because the treatment never becomes a meaningful experience for participants. Or imagine a realistic hiring simulation in which participants know their choices have no consequence and click randomly. Looking real is not sufficient.
+
 Second, shorter anchor, from Mutz (2021: 220), worth reading aloud: "It is not necessary that people in the real world frequently encounter [the] treatment or experience... What is most important about a treatment is that it systematically and substantially changes the independent variable in the intended direction." A treatment doesn't need to be common, or familiar, or something anyone would actually encounter outside a lab — it needs to move the construct, cleanly and substantially, in the direction the theory predicts.
 
-Name the one real exception explicitly, so students don't overgeneralize: Roth's "whispering in the ears of princes" goal from Part 2. If you're trying to tell a policymaker how big an effect to expect from an actual policy, the dosage, framing, and context of your treatment *do* need to resemble the real intervention, because you're no longer just testing whether a mechanism exists — you're trying to forecast a real-world number. Mundane realism becomes load-bearing exactly when the goal shifts from theory-testing to policy simulation, and not before.
+Name the important qualification explicitly, so students don't overgeneralize: Roth's "whispering in the ears of princes" goal on the next slide. If you're trying to tell a policymaker how big an effect to expect from an actual policy, the dosage, framing, delivery channel, compliance, and context of your treatment *do* need to resemble the real intervention, because you're no longer just testing whether a mechanism exists — you're trying to forecast a real-world number. Mundane realism becomes more consequential when the goal shifts from theory-testing to policy simulation. It can also matter whenever the theory itself says context moderates the mechanism.
 
-Preview the contrast we are about to see in Parts 3 and 4: Correll builds an elaborate, deceptive cover story (a real $135–180K marketing job, full debriefing) that happens to have fairly high mundane realism too — but that's a bonus, not the reason it works. Craig and Richeson use a brief, plain press-release vignette with essentially no mundane realism at all — nothing like how people actually encounter demographic-change news, repeated and politically coded, over months. Both are defensible by Druckman's standard as long as each manipulation is engaging enough that participants take it seriously (experimental realism) and each one moves the actual construct the theory is about (status-threat perception, parental-status salience) — which is precisely what their manipulation checks exist to verify, two slides from now.
+Close with the sentence students should retain: **the experiment does not need to reproduce the world; it needs to reproduce the causal process the theory claims operates in the world.** Then preview the contrast we are about to see in Parts 3 and 4: Correll builds an elaborate, deceptive cover story around a $135,000–$180,000 marketing job, whereas Craig and Richeson use a brief press-release vignette. Both are defensible by Druckman's standard only if participants engage and the manipulation moves the intended construct. The next slide shows why the experiment's goal determines how much additional real-world resemblance we should demand.
 
-### Slide 30: Did the treatment move the intended construct?
+### Slide 30: Two very different ways to test immigrant threat
+
+**Talk track**
+
+These studies ask related questions about reactions to immigration, but they make opposite design choices. Enos brings the intervention into ordinary life. Brader and colleagues bring people to computer stations and build an artificial message so they can vary its ingredients separately. Do not ask which study is simply “better.” Ask what each design lets us learn.
+
+Start with Enos. Researchers recruited commuters at suburban Boston rail stations for a pre-treatment survey. Within each of nine stations, nearby train times were paired; one time was randomly assigned to treatment and the other to control. For ten working days, the same pair of native Spanish-speaking confederates waited with the treated commuters and boarded the train. The commuters did not know this was the intervention. Compared with control commuters, exposed commuters moved toward more exclusionary immigration attitudes. The shift was stronger after three days than after ten, which Enos interprets cautiously as possible evidence that the initial reaction weakened as the people became familiar.
+
+Why does this have high mundane realism? The platform, commute, people, repetition, and interruption of a familiar routine are real. The experience resembles a small local demographic change rather than a paragraph describing one. The treatment also has experimental realism if commuters actually noticed the new riders and experienced the salience or threat posited by the theory.
+
+But realism comes with a tradeoff. What exactly changed? The treatment bundled the presence of unfamiliar people, Spanish speech, perceived Latino identity, novelty, repeated exposure, and the possibility of interaction. Random assignment identifies the causal effect of that package, but it does not by itself tell us which ingredient produced the effect. Enos can rule out some alternatives with outcome patterns and confederate reports, but the mechanism is less isolated than the treatment effect.
+
+Now contrast Brader, Valentino, and Suhay's second experiment, the more laboratory-like version. They recruited local adults, paid them to complete a “public opinion survey” at computer stations, and told them a computer would randomly select a recent newspaper article. The article was actually constructed by the researchers. It always described immigration as increasing and harmful, while independently varying two details: whether the pictured and named immigrant was Latino or White European and whether the workers were described as low- or high-skilled. The low-skilled Latino condition produced the most anxiety and made participants more likely to authorize an anti-immigration message to Congress.
+
+This treatment has low mundane realism. Participants do encounter immigration news outside the study, but ordinary news does not hold every sentence constant while independently swapping a photograph, name, and skill description. That artificiality is the design's strength. It isolates an interaction between an ethnicity cue and a skill stereotype. Neither “Latino” nor “low-skilled” alone explains the result: the stereotype-consistent combination is what raised anxiety. The clean factorial design therefore says more about which cue activates threat than Enos's bundled field treatment can.
+
+**Ask students**
+
+If the theory says that the mere local presence of an outgroup produces threat, which study is closer to the theoretical treatment? If the theory instead says that political communication activates a racialized skill stereotype, which study is closer? This is the key: experimental realism is relative to a theory, not a permanent property of a study.
+
+Then ask them to design the missing third study. How could we keep Enos's real setting but isolate the ingredients? Students might propose separately randomizing language, group identity, number of newcomers, repetition, or whether interaction occurs. Immediately raise the ethical and practical limits: people cannot be reduced to interchangeable threat cues, deception in public settings requires care, and a factorial field experiment may be infeasible. The point is to see why triangulation across realistic and artificial studies is useful.
+
+Close with the comparison: Enos gives stronger evidence that a brief package of real-world exposure can move attitudes in that setting. Brader et al. give cleaner evidence about how an ethnicity cue interacts with a skill stereotype to activate anxiety. Neither alone tells us the full effect of sustained immigration or demographic change. Together they show why mundane and experimental realism are distinct dimensions rather than rival grades.
+
+### Slide 31: What is each experiment trying to accomplish?
+
+**Talk track**
+
+Do not reveal the labels immediately. Ask students to classify the three examples and explain what each design needs to get right. Then reveal Roth's labels. The goal determines how much realism, precision, and contextual similarity the design needs.
+
+**Ask students**
+
+Which experiment can use the most artificial setting without undermining its purpose? Which one needs the treatment, population, and delivery context to resemble real implementation?
+
+**Teaching detail**
+
+Use the examples to distinguish three jobs:
+
+- **Experiment A — searching for facts.** Correll is trying to establish whether an otherwise identical applicant is evaluated differently when a parent cue is present. The treatment must make parenthood salient and the comparison must isolate that cue. The laboratory estimate does not have to equal the exact size of discrimination in every real labor market for the experiment to establish that the mechanism exists.
+- **Experiment B — speaking to theorists.** A bargaining game strips away real institutions to test whether behavior follows a formal prediction. The abstract incentives and strategic choices must be understood and taken seriously. Adding realistic details could make the test worse if those details introduce motives outside the model.
+- **Experiment C — whispering in the ears of princes.** A city wants to know how many additional vaccinations an actual reminder will produce. Now the exact wording, delivery channel, baseline uptake, population, compliance, and implementation conditions matter because officials will multiply the estimated effect by a real population and budget around the number.
+
+Ask students to compare A and C. Both can be internally valid randomized experiments, but the external-validity demand is different. For A, a credible sign and mechanism may be enough to revise theory. For C, getting the magnitude wrong can produce a bad policy decision even if the sign is correct.
+
+Return to today's papers. Correll is primarily searching for facts about status-based discrimination and also probing a mechanism through competence and commitment. Craig and Richeson are searching for a message effect and testing status threat as a mechanism. Neither paper is estimating the impact of a fully specified government policy, so Druckman's argument permits more artificial treatments than Experiment C would.
+
+End with a quick transfer question: “Suppose a governor asks whether repeated demographic-change advertising will shift votes over a six-month campaign. Is the brief Craig and Richeson vignette enough?” The answer is no for a policy-size forecast: the vignette can support the mechanism claim, but dosage, repetition, partisan sponsorship, competing messages, and behavior would all need new evidence.
+
+### Slide 32: The $10 game isolates the cost of punishing unfairness
+
+**Talk track**
+
+Here is the game rather than just its label. The experimenter pairs two anonymous participants and gives one the proposer role and one the responder role. To make the causal contrast especially clean, imagine that the experimenter controls the proposal and randomly assigns responders to see either a $5/$5 split or an $8/$2 split. The responder then makes one consequential choice. Accept, and both people receive the displayed amounts. Reject, and both receive zero.
+
+Historical note for the instructor: Güth, Schmittberger, and Schwarze (1982) introduced the ultimatum game to the experimental literature. The fixed $5/$5 versus $8/$2 randomization on this slide is a simplified teaching variant designed to make the treatment and causal comparison explicit; do not attribute that exact implementation to the original paper.
+
+Pause on the unequal condition. Accepting gives the responder $2. Rejecting gives the responder nothing, so rejection costs the responder $2. The benefit is not material; it is the opportunity to punish a division perceived as unfair and deny the proposer $8. That is the theoretical conflict the sparse game is built to isolate.
+
+**Ask students**
+
+First ask for a show of hands: who would accept $8/$2, and who would reject it? Then ask each side to state the motive behind its decision. Do not describe rejection as irrational without naming the model. Rejection conflicts with a model of narrow monetary self-interest, but it may be perfectly consistent with preferences that include fairness, reciprocity, anger, or punishment.
+
+**Teaching detail**
+
+Map the design explicitly:
+
+- **Treatment:** equal $5/$5 offer versus unequal $8/$2 offer, randomly assigned.
+- **Outcome:** whether the responder rejects.
+- **Strict-self-interest prediction:** accept either offer because $2 and $5 are both greater than $0. The treatment should not increase rejection.
+- **Fairness or costly-punishment prediction:** the unequal offer should be rejected more often because some people are willing to sacrifice $2 to punish the proposer.
+
+Now connect it to realism. Mundane realism is low. Real wage negotiations, legislative bargains, and international agreements involve history, identity, repeated interaction, reputation, legal rules, uncertainty, and much larger stakes. The $10 game deliberately removes all of that.
+
+Experimental realism still requires several things. Participants must understand the payoffs, believe the money is real, believe rejection really gives both parties zero, and experience the unequal split as meaningful enough for the fairness-versus-money tradeoff to operate. If they treat the task as pretend or click randomly, its clean appearance does not save it.
+
+Explain why a theorist may prefer the artificial version. In a real salary negotiation, rejecting an offer could reflect outside options, expected future raises, dislike of the employer, reputation, legal protections, or incomplete information. The stripped-down game holds those motives out of the comparison. If rejection rises when only the split changes, the result is cleaner evidence that inequality itself activates costly punishment.
+
+Then state the limit. This experiment can show that the mechanism exists and test its directional prediction. It does not tell a union negotiator exactly how often workers will reject an actual contract or tell a diplomat whether a treaty will fail. Those policy forecasts require realistic stakes, institutions, populations, repeated interaction, and context. That difference is why the game is an example of Roth's “speaking to theorists,” not “whispering in the ears of princes.”
+
+Close by asking: “What detail could we add without changing the theory, and what detail might introduce a new motive?” Naming the proposer, allowing future interaction, or describing the money as wages might improve surface realism while also introducing identity, reputation, entitlement, or labor-market norms. More realistic is not automatically a cleaner test.
+
+### Slide 33: Did the treatment move the intended construct?
 
 **Talk track**
 
@@ -466,7 +567,7 @@ What evidence would show that participants understood a treatment but did not ex
 
 A manipulation check is not optional bookkeeping—it is evidence about what the treatment changed. Keep this generic here so the Craig and Richeson result is not revealed before the case. Also distinguish comprehension and attention checks from construct checks: someone can read the article correctly without experiencing the theorized status threat. A manipulation check can itself prime participants if administered before the outcome, so timing matters.
 
-### Slide 31: Every experiment must answer four validity questions
+### Slide 34: Every experiment must answer four validity questions
 
 **Talk track**
 
@@ -480,7 +581,7 @@ Which validity question is strongest in a randomized convenience sample, and whi
 
 Four types: statistical conclusion (is the inference from the data to a relationship sound?), internal (is the relationship causal within the study?), construct (does the manipulation/measure capture the intended concept?), and external (does the finding generalize?). We'll anchor each of the first three against Correll and Craig & Richeson in Parts 3–4. The next two slides handle external validity on its own, since it gets the most space in Druckman's chapter 3.
 
-### Slide 32: External validity depends on where effects differ
+### Slide 35: External validity depends on where effects differ
 
 **Talk track**
 
@@ -490,7 +591,7 @@ A sample is not externally valid or invalid in the abstract. The important quest
 
 Do not re-teach M-STOUT or Henrich et al. here — name them, confirm students remember the acronym and its point, and move straight to what Druckman adds. The sharper claim is coming on the next slide: whether a nonrepresentative sample threatens generalizability is not a fact about the sample's demographics; it's a fact about whether the treatment effect varies by some moderator the sample lacks variance on.
 
-### Slide 33: Generalization requires coverage of relevant moderators
+### Slide 36: Generalization requires coverage of relevant moderators
 
 **Talk track**
 
@@ -506,7 +607,7 @@ Apply it live to both upcoming cases. Correll's lab sample is undergraduates, no
 
 Craig and Richeson's Studies 3a/3b use heavily male, young MTurk samples. Gender and age are plausible moderators, and the samples provide little coverage for women. Even if both groups are present, merely having some variance is insufficient: conditional effects must be estimated with adequate precision and combined using the target population's composition. When overlap is poor, new data are preferable to heroic extrapolation.
 
-### Slide 34: Two papers use randomization in different ways
+### Slide 37: Two papers use randomization in different ways
 
 **Talk track**
 
@@ -516,7 +617,7 @@ We now have enough vocabulary to read the two papers as design arguments. For ea
 
 Set expectations for Parts 3 and 4 explicitly: you will be asked to draw, to propose a design, and to criticize a design before seeing the published answer, every single time. Two papers, same throughline, same five moves.
 
-### Slide 35: Correll, Benard & Paik — the motherhood penalty
+### Slide 38: Correll, Benard & Paik — the motherhood penalty
 
 **Talk track**
 
@@ -526,7 +627,7 @@ Our first case is the motherhood penalty. The paper asks whether mothers are eva
 
 Open Part 3. Correll, Benard, and Paik (2007), "Getting a Job: Is There a Motherhood Penalty?," American Journal of Sociology.
 
-### Slide 36: Parenthood and wages are associated, but why?
+### Slide 39: Parenthood and wages are associated, but why?
 
 **Talk track**
 
@@ -540,7 +641,7 @@ What evidence would make you interpret the wage gap as discrimination rather tha
 
 Set the real-world stakes before any design talk. Ask: what would it take to believe this gap reflects discrimination rather than mothers simply being, on average, less productive at work (shorter tenure, interrupted histories, choice of "mother-friendly" jobs)? That ambiguity is exactly the puzzle the paper is built to resolve.
 
-### Slide 37: The experiment tests a narrower causal effect
+### Slide 40: The experiment tests a narrower causal effect
 
 **Talk track**
 
@@ -552,23 +653,27 @@ Make the estimand change explicit. The real-world wage gap motivates the study, 
 
 This is a narrower claim, but it is exactly the piece the survey literature could not isolate. It establishes that unequal treatment can generate part of the motherhood penalty; it does not estimate how much of the population wage gap is due to discrimination versus employment interruptions, occupational sorting, preferences, childcare constraints, or other mechanisms.
 
-### Slide 38: What could produce the motherhood penalty?
+### Slide 41: What could produce the motherhood penalty?
 
 **Talk track**
 
-Before seeing the authors’ design, build the causal story. Think separately about common causes of parenthood and wages, consequences of parenthood that may mediate the wage effect, and employer reactions to a motherhood signal.
+Before seeing the authors’ design, build the causal story. Think separately about common causes of parenthood and wages, non-discriminatory consequences of parenthood that may mediate the wage effect, and discriminatory employer reactions that may also mediate the broader wage effect.
 
 **Ask students**
 
-Give me one confounder, one mediator, and one employer-evaluation pathway.
+Give me one pre-parenthood common cause, one non-discriminatory mediator, and one discriminatory mediator.
 
 **Teaching detail**
 
 Two boxes only: **Motherhood** and **Wages**. What belongs between them, and what kind of node is it?
 
-Do not reveal the DAG image yet. Ask students for at least three kinds of paths rather than forcing every human-capital variable into one role: (1) pre-existing preferences, constraints, ability, and career orientation can affect both parenthood and earnings — confounding; (2) motherhood can change tenure, hours, work interruptions, or occupational sorting — mediation; and (3) a motherhood signal can change employer evaluation — discrimination, also a mediator of the broader wage effect. The point is precisely that "human capital" is not one clean control variable. Its role depends on when and how it is measured.
+Do not reveal the DAG image yet. Ask students for three kinds of paths rather than implying that employer evaluation is a separate causal category: (1) pre-existing preferences, constraints, ability, and career orientation can affect both parenthood and earnings—confounding; (2) motherhood can change tenure, hours, work interruptions, or occupational sorting—non-discriminatory mediation; and (3) a motherhood signal can change competence, commitment, and hireability judgments—discriminatory mediation of the broader wage effect.
 
-### Slide 39: Productivity is the central rival explanation
+Pause on the change in estimand. In the population question, employer judgments sit between motherhood and eventual hiring or wages, so they are mediators. In the experiment, the treatment is the randomized motherhood cue and the researchers directly measure judgments, hireability, recommended salary, and related decisions. Relative to that narrower experimental treatment, those evaluation measures are outcomes. Within the experimental sequence, competence and commitment can in turn be analyzed as proposed mediators of downstream recommendations such as hireability or salary. A variable's role is defined relative to a specific treatment and outcome; it is not an intrinsic label attached forever.
+
+The point is precisely that neither “human capital” nor “employer evaluation” is one clean control variable. Its role depends on timing and on the causal effect being estimated.
+
+### Slide 42: Productivity is the central rival explanation
 
 **Talk track**
 
@@ -580,7 +685,7 @@ Reveal the finished DAG and compare to what the class built. Be explicit that th
 
 Some variables commonly entered as controls — continuous work history, tenure, uninterrupted employment — are consequences of motherhood and therefore mediators. Controlling for them removes part of the total effect. Survey data struggle because pre-existing differences and post-parenthood mechanisms are bundled under the same loose label. Correll's experiment sidesteps that ambiguity by holding the entire documented record fixed and randomizing only the cue.
 
-### Slide 40: Motherhood may change the standard used to judge competence
+### Slide 43: Motherhood may change the standard used to judge competence
 
 **Talk track**
 
@@ -590,7 +695,7 @@ Status characteristics theory predicts more than a negative stereotype. Once mot
 
 This is the competing "discrimination explanation." Status characteristics theory says motherhood functions as a status characteristic in work settings: once salient, it shifts performance expectations and, crucially, the evidentiary bar required to be judged competent, not just the average expectation. This is distinct from simple stereotyping — it's specifically about task-relevant performance expectations and double standards.
 
-### Slide 41: Equal résumés separate two explanations
+### Slide 44: Equal résumés separate two explanations
 
 **Talk track**
 
@@ -604,7 +709,7 @@ If two résumés contain equally strong productivity information, what different
 
 Statistical discrimination (left) predicts the gap vanishes once information about individual productivity is complete and equal — a rational employer using group averages only because better information isn't available. Status-based discrimination (right) predicts a direct, independent effect of the label on evaluation, even when productivity is held completely equal. Ask students which DAG the study needs to hold productivity "equal" (conditioned, shown in gold) to distinguish — the answer is both, simultaneously, which is exactly what an experiment can do that a survey cannot.
 
-### Slide 42: How would you isolate discrimination?
+### Slide 45: How would you isolate discrimination?
 
 **Talk track**
 
@@ -618,7 +723,7 @@ What exactly would you hold fixed, and what single cue would you vary?
 
 Give pairs two to three minutes before revealing Study 1's actual design on the next slide. Push toward: hold everything about a candidate's actual qualifications and performance history completely fixed, and vary only whether they are labeled a parent. If students get there, congratulate them — they've just independently derived the lab study's logic.
 
-### Slide 43: Study 1: what varied within and between participants?
+### Slide 46: Study 1: what varied within and between participants?
 
 **Talk track**
 
@@ -634,7 +739,7 @@ Explain the mixed design carefully. Each participant evaluated a parent and a no
 
 This matters for the estimand. The cleanest within-participant causal contrast is parent versus nonparent within a given applicant gender/race condition. Comparing the size of that contrast across male and female applicant conditions tests whether parenthood operates differently by applicant gender—the motherhood-penalty interaction.
 
-### Slide 44: Study 1: what did participants actually do?
+### Slide 47: Study 1: what did participants actually do?
 
 **Talk track**
 
@@ -646,7 +751,7 @@ Make the procedure concrete. Participants believed they were providing real inpu
 
 The participant sample is a deliberate vulnerability, not a hidden detail. The authors cite evidence that student and manager evaluations often track similarly, but Study 2 exists partly because that defense is not enough on its own.
 
-### Slide 45: The experiment identifies a cue effect, not the total wage penalty
+### Slide 48: The experiment identifies a cue effect, not the total wage penalty
 
 **Talk track**
 
@@ -658,7 +763,7 @@ This is the payoff of the earlier estimand slide. The randomized treatment is th
 
 Add one nuance to the statistical-versus-status discrimination contrast. Equal résumés rule out actual differences in the applicants' documented past qualifications. An evaluator could still interpret the parent cue as information about future availability. The double-standard outcomes and competence/commitment pattern are evidence for status theory, but the label "status-based" is a theoretical interpretation layered onto the experimentally identified cue effect.
 
-### Slide 46: What could this design still get wrong?
+### Slide 49: What could this design still get wrong?
 
 **Talk track**
 
@@ -672,7 +777,7 @@ Which objection threatens internal validity, and which objection instead concern
 
 Let students generate objections: undergraduates aren't real hiring managers; one job type, one high salary band; deception; a single résumé pair per condition. Note which the authors address themselves — they cite Cleveland and Berman (1987) and Olian and Schwab (1988) on student/manager judgment comparability, and the companion field audit study is explicitly designed to answer the "is this just a lab artifact" objection. Which objections survive that defense, and which don't yet have an answer?
 
-### Slide 47: Study 1: the mother cue changed beliefs, standards, and decisions
+### Slide 50: Study 1: the mother cue changed beliefs, standards, and decisions
 
 **Talk track**
 
@@ -686,7 +791,7 @@ Which row is the clearest evidence of a double standard rather than simply a neg
 
 Walk through the four outcomes as a causal sequence rather than asking students to search the published table. The cue changes beliefs about competence, changes the evidentiary standard, and changes consequential recommendations. The required-exam-percentile row is the double standard made concrete: mothers needed a higher score to be judged hirable despite identical actual résumés. Fathers were never penalized, and on several measures were advantaged relative to childless men (higher commitment percentile, more allowed late days, and a higher starting salary). Keep the full published Table 1 available in the reading or notes for students who want every outcome and standard deviation.
 
-### Slide 48: Measured mediation suggests a mechanism but does not identify it
+### Slide 51: Measured mediation suggests a mechanism but does not identify it
 
 **Talk track**
 
@@ -700,7 +805,7 @@ What unmeasured variable could affect both competence ratings and hiring recomme
 
 Apply the mediation-vs-moderation warning from Part 2 directly. Because competence and commitment are measured rather than randomized, this mediation analysis cannot rule out an unmeasured variable that affects both the mediator and the downstream outcomes. It's suggestive and substantively important — the residual, un-mediated 54–69% is itself a real finding the authors flag honestly — but it is not the same strength of causal claim as what we'll see Craig and Richeson attempt in Part 4.
 
-### Slide 49: The lab result leaves a real-world question
+### Slide 52: The lab result leaves a real-world question
 
 **Talk track**
 
@@ -714,7 +819,7 @@ What does the field audit add that the lab cannot, and what does it give up?
 
 Ask before revealing. The expected answer, in Druckman's terms, is external validity: the lab closes the back door perfectly, but it leaves open whether real institutions, with real stakes and real decision-makers, behave the same way. Study 2 is a field audit study: matched fictitious résumés sent to real employers, with callback as the outcome — the same logic, transplanted into the field.
 
-### Slide 50: An audit moves the same comparison into real hiring
+### Slide 53: An audit moves the same comparison into real hiring
 
 **Talk track**
 
@@ -726,7 +831,7 @@ Job openings were randomly assigned to receive either a female pair or a male pa
 
 It also gives something up. The researchers observe only callback, so they cannot tell whether a real employer inferred lower competence, lower commitment, scheduling difficulty, expected leave, or something else. This is triangulation: Study 1 has stronger measurement of mechanism; Study 2 has stronger realism and consequence.
 
-### Slide 51: Real employers called back mothers less often
+### Slide 54: Real employers called back mothers less often
 
 **Talk track**
 
@@ -740,7 +845,7 @@ Can callback behavior establish why employers discriminated?
 
 There were 56 callbacks in total. Mothers received 10 callbacks from 320 applications; childless women received 21 from 320. No detectable father bonus appeared in the field, unlike the lab. The audit study cannot say *why* employers discriminate — there is no rating data from real employers — but it establishes that the lab-demonstrated bias translates into a real, consequential labor-market outcome. Note that the low callback count makes subgroup estimates less precise even though the mother/nonmother contrast is statistically significant.
 
-### Slide 52: The field study gains realism but loses the mechanism
+### Slide 55: The field study gains realism but loses the mechanism
 
 **Talk track**
 
@@ -750,7 +855,7 @@ The field study improves realism and changes the decision-maker, but the tradeof
 
 Ask first, then compare against what the paper itself flags: why employers in the field discriminate is untested (no mechanism data there); the lab's residual 54–69% unmediated effect is unexplained; generalizability beyond one high-status marketing job is untested; and the paper surfaces, but doesn't resolve, an unexplained race-based salary penalty with no corresponding competence/commitment gap — a different discriminatory process the design wasn't built to unpack.
 
-### Slide 53: Randomization severs the productivity path
+### Slide 56: Randomization severs the productivity path
 
 **Talk track**
 
@@ -764,7 +869,7 @@ Point to the path that random assignment breaks. What remains outside the experi
 
 Give pairs a minute, then cold-call one to present. The randomization cuts the arrow from actual productivity into the assigned parental-status signal — the back door that made the observational comparison uninterpretable is now structurally closed, not just statistically adjusted for. Actual motherhood was not randomized; the applicant-profile cue was.
 
-### Slide 54: Correll shows what a well-chosen manipulation can isolate
+### Slide 57: Correll shows what a well-chosen manipulation can isolate
 
 **Talk track**
 
@@ -774,7 +879,7 @@ Correll randomizes an upstream cue and then measures the proposed psychological 
 
 Short bridge. Remind students of the mediation warning from Part 2—Correll's mediation analysis measured competence and commitment rather than manipulating them. The next case shows what it looks like to take that warning seriously and experimentally manipulate the proposed mechanism. Avoid saying the researchers literally assigned each participant a value of experienced threat; they randomized a message designed to raise or assuage it.
 
-### Slide 55: Craig & Richeson — majority-minority status threat
+### Slide 58: Craig & Richeson — majority-minority status threat
 
 **Talk track**
 
@@ -784,7 +889,7 @@ The second case asks how White Americans respond politically to information that
 
 Open Part 4. Craig and Richeson (2014, Psychological Science), "On the Precipice of a 'Majority-Minority' America," with the 2015 corrigendum.
 
-### Slide 56: Demographic change correlates with conservatism, but why?
+### Slide 59: Demographic change correlates with conservatism, but why?
 
 **Talk track**
 
@@ -798,31 +903,63 @@ What are two explanations for the geographic correlation other than status threa
 
 This correlational finding motivates the whole paper. It's consistent with a racial-threat story, but it's also consistent with several other structures, which is exactly what the next slide gets students to generate themselves.
 
-### Slide 57: What else could produce this correlation?
+### Slide 60: What could explain the parish correlation?
 
 **Talk track**
 
-Before accepting the threat explanation, generate alternatives. Conservatism may affect how people notice or interpret demographic change, and regional history or economic conditions may affect both demographic patterns and politics.
+Before accepting the threat explanation, generate alternatives, but do not present them as equally strong. Political feedback says earlier White politics may help produce later population patterns, although its direction is ambiguous. Regional confounding says a third variable helps produce both the population pattern and White politics.
 
 **Ask students**
 
-Which arrow could run in the opposite direction? What regional variable could confound the relationship?
+How might earlier racial politics influence later migration? Would exclusion and White flight move Black population share in the same direction? What historical feature could shape both current Black population share and White Republican alignment?
 
 **Teaching detail**
 
-Build whichever structures students propose, live. Push toward at least three: reverse causation (already-conservative Whites selectively notice or overreport the demographic shift); a regional confounder (places with faster demographic change may also differ in local economic conditions, urbanicity, or partisan history); and a genuine causal arrow running through perceived status threat. Ask: which structure does Giles and Hertz's correlational data fit, and why can't correlational data alone tell us which one is right?
+Start by being precise about the variables in the Giles and Hertz correlation. Racial composition is an observed parish population share, not a respondent's perception or report. Therefore political feedback cannot simply mean “conservatives notice demographic change more.” It requires an actual process through which earlier White racial politics affects later migration or residence patterns.
 
-### Slide 58: One correlation fits three causal stories
+**Political feedback, step by step:**
+
+1. A parish begins with more racially conservative White politics or leadership.
+2. Housing enforcement, zoning, public investment, school policy, and the broader political climate can influence who moves in, who leaves, and who remains.
+3. Exclusionary policy could reduce Black in-migration or encourage Black out-migration, lowering Black population share. White flight could instead shrink the White denominator and raise Black population share.
+4. Earlier politics can therefore make later composition endogenous, but the sign is not determined without a more specific mechanism.
+
+The arrow is therefore earlier White racial politics → later racial composition, but this is not a self-sufficient explanation for the observed positive correlation. A researcher would need to specify and document a mechanism—such as White flight—that moves the variables in the observed direction. Present this as a possible feedback problem, not as an equally clean rival theory.
+
+**Regional confounding, step by step:**
+
+1. Louisiana parishes differ in historical plantation agriculture, slavery, segregation, economic development, rurality, and migration patterns.
+2. Those historical processes help determine where Black communities are concentrated today.
+3. The same processes can also shape racial polarization, party realignment, economic interests, and White Republican registration.
+4. Local Black population share and White conservatism can therefore move together even if neither directly causes the other.
+
+Use plantation and segregation history as the clearest illustrative confounder because it temporally precedes both contemporary population composition and contemporary registration. Economy or urbanicity can also be proposed, but students must explain both arrows rather than merely name a variable.
+
+Finish by contrasting the structures carefully. Political feedback points the arrow from earlier politics toward later composition but does not determine its sign. Confounding adds a prior common cause and is the cleaner rival explanation for the positive parish correlation. The authors' theory proposes local composition → status threat → White conservatism. Cross-sectional parish data cannot establish which process generated the association.
+
+### Slide 61: One correlation does not make all three stories equally strong
 
 **Talk track**
 
-All three diagrams can generate the same observed correlation. The experiment targets the third story by assigning exposure to demographic-shift information while holding actual location and racial composition fixed.
+Read the diagrams from left to right. The first adds a possible feedback arrow from earlier politics to later composition, but its sign is ambiguous. The second adds a common cause that can generate the positive association. The third is the authors' threat mechanism. The correlation alone cannot separate them, but that does not make the stories equally well specified.
+
+**Ask students**
+
+Which rival story does random assignment eliminate for the message-exposure effect? Does that mean the experiment identifies the effect of actually changing a parish's racial composition?
 
 **Teaching detail**
 
-Compare the class's proposals to these three. All three are consistent with a raw correlation between local racial composition and White conservatism. Only an experiment that manipulates exposure to the demographic information directly — holding region, actual local composition, and prior ideology fixed — can adjudicate between them.
+Walk through each panel explicitly.
 
-### Slide 59: The experiments answer a narrower question
+- **Political feedback:** earlier White racial politics may help shape later composition through policy and residential sorting. Exclusion may lower Black share, whereas White flight may raise it, so the arrow alone does not predict the observed sign.
+- **Regional confounding:** plantation and segregation history is upstream of both current Black population share and current White conservatism. The open fork creates an association without requiring a causal effect of composition.
+- **Causal threat story:** higher local Black population share raises perceived group-status threat, which shifts White politics in a conservative direction.
+
+Then explain exactly what the experiments do and do not solve. Randomly assigning a demographic-shift message makes message exposure independent of prior ideology, residential sorting, and regional history in expectation. Those variables cannot explain why one experimental group received the message and the other did not. That identifies the causal effect of **message exposure** under the study conditions.
+
+But the experiment does not manipulate a parish's actual racial composition. It therefore does not prove that the third panel explains the original Louisiana correlation, rule out long-run political feedback, or estimate what decades of demographic change do to voting. It tests a narrower implication of the threat theory: making a projected status shift salient can move attitudes. The next slide makes that estimand change explicit.
+
+### Slide 62: The experiments answer a narrower question
 
 **Talk track**
 
@@ -836,7 +973,7 @@ What is the treatment here: demographic change itself, or exposure to a message 
 
 Make the estimand switch as explicit as it was in Correll. The parish-level correlation motivates the theory, but the experiments manipulate information about demographic change. Their internally valid claim concerns the short-term attitudinal effect of that exposure under the specific survey conditions. They do not identify the effect of a community's actual demographic composition, repeated partisan media coverage, or years of social change on real voting behavior.
 
-### Slide 60: Status threat could connect the message to conservatism
+### Slide 63: Status threat could connect the message to conservatism
 
 **Talk track**
 
@@ -846,7 +983,7 @@ The proposed chain is that a message about losing numerical majority status crea
 
 The motivated-cognition literature mostly tested mortality salience and terrorism threat. The theoretical contribution here is extending the same logic to a specifically social, zero-sum status threat — the perception that a rising minority share mechanically lowers the in-group's own relative standing — with no proximate physical danger and a multi-decade time horizon.
 
-### Slide 61: What control isolates the majority-status implication?
+### Slide 64: What control isolates the majority-status implication?
 
 **Talk track**
 
@@ -860,7 +997,7 @@ What should the control condition contain, and what should it deliberately omit?
 
 Let pairs propose a control before revealing. The actual Study 1 control: a survey form asking whether respondents had heard that Hispanics and Blacks were roughly equal in number nationally — racial-composition news, but without the majority-status framing. This holds "exposure to racial-composition news in general" constant while varying whether the shift implies a change in who is the numerical majority.
 
-### Slide 62: An old Pew split becomes an experiment
+### Slide 65: An old Pew split becomes an experiment
 
 **Talk track**
 
@@ -870,7 +1007,7 @@ Study 1 repurposes an existing randomized split in a Pew survey. White independe
 
 Place this in Druckman's typology: cell 1, researcher-caused and statistical-solution, but opportunistic rather than purpose-built—the randomization already existed in Pew's survey design, and the authors found a use for it years later. The control holds exposure to racial-composition news roughly constant while removing the change-in-majority-status implication. Explain the restriction to political independents: the outcome is party leaning, so committed partisans have less room to move and are less informative about a short-term shift.
 
-### Slide 63: The corrigendum weakens Study 1
+### Slide 66: The corrigendum weakens Study 1
 
 **Talk track**
 
@@ -884,7 +1021,7 @@ After the correction, what language is justified: strong evidence, suggestive ev
 
 Use this as a methods lesson and calibrate the evidence at the same time. This kind of weighting error is a real pitfall with complex survey weights, and a public corrigendum—rather than silence—is the correction system working. But transparency does not restore the original result: the corrected national estimate is inconclusive, general ideology did not move, and the larger West estimate is based on 49 respondents and also falls short of the conventional threshold. The paper's argument must therefore rest on convergence with Studies 2–3, not a decisive Study 1.
 
-### Slide 64: What does Study 1 still leave unresolved?
+### Slide 67: What does Study 1 still leave unresolved?
 
 **Talk track**
 
@@ -898,7 +1035,7 @@ What part of the causal chain has not been measured or manipulated yet?
 
 Push toward: Study 1 has a measured outcome (party lean, ideology) but no mediator at all — no test of *why* the shift would move conservatism; it's a single secondary dataset; and it measures self-reported party lean, not any behavior. All three motivate Study 2's design, which we see next.
 
-### Slide 65: Study 2 builds the experiment the theory needed
+### Slide 68: Study 2 builds the experiment the theory needed
 
 **Talk track**
 
@@ -908,7 +1045,7 @@ Study 2 is purpose-built. It compares a racial-shift press release with a geogra
 
 This is the design information missing from the earlier version. The control matches the broad form of a press release about social change but removes racial content. The focal policy outcomes include three race-related items and two race-neutral items, allowing the authors to ask whether the response is targeted or ideologically broader. The reliability of the two short subscales is modest, which belongs in the later critique.
 
-### Slide 66: Study 2: policy attitudes shifted, but not every item did
+### Slide 69: Study 2: policy attitudes shifted, but not every item did
 
 **Talk track**
 
@@ -924,7 +1061,7 @@ Four candidate mediators were measured, but only group-status threat tracked the
 
 This is evidence consistent with mediation, not a causal decomposition. The next slide explains why: randomizing the upstream article does not randomize the relationship between measured threat and policy attitudes.
 
-### Slide 67: Measuring threat cannot prove that it carries the effect
+### Slide 70: Measuring threat cannot prove that it carries the effect
 
 **Talk track**
 
@@ -938,7 +1075,7 @@ What design would be stronger than measuring threat after the message?
 
 Direct callback, now cashed out against a real case. Study 2 cannot, on its own, rule out some unmeasured variable affecting both perceived status threat and policy attitudes. Ask students what would actually fix this before revealing Studies 3a/3b — the right answer is to manipulate the mediator directly, not just measure it.
 
-### Slide 68: How would you change threat while holding information constant?
+### Slide 71: How would you change threat while holding information constant?
 
 **Talk track**
 
@@ -952,7 +1089,7 @@ How could you reduce status threat without removing the demographic forecast?
 
 Give pairs a few minutes before revealing. The actual design: an identical racial-shift article, plus one added paragraph stating that Whites' relative societal status (income, wealth) is expected to remain stable despite the demographic shift. If students propose something structurally similar—holding the fact constant while varying its status implication—they have derived the paper's methodological high point themselves.
 
-### Slide 69: Reassurance changes the status implication
+### Slide 72: Reassurance changes the status implication
 
 **Talk track**
 
@@ -962,7 +1099,7 @@ The status-threat and assuaged-threat conditions contain the same demographic fo
 
 The samples were heavily male (89% in 3a and 84% in 3b) and relatively young, a limitation to return to explicitly. The three-condition design holds the demographic information constant between status-threat and assuaged-threat while varying its implication for hierarchy. Manipulation checks show the status-threat condition raised perceived threat relative to both other conditions, while control and assuaged-threat did not differ. This supports the intended treatment contrast without claiming threat itself was perfectly assigned.
 
-### Slide 70: The assuaging paragraph usually eliminates the shift
+### Slide 73: The assuaging paragraph usually eliminates the shift
 
 **Talk track**
 
@@ -976,7 +1113,7 @@ Which comparison is the cleanest test of the proposed mechanism?
 
 This is the pattern supporting the mechanism: the same demographic information produces different outcomes when its status implication changes. Keep the strength of evidence calibrated. Study 3a supports the full elimination pattern for policy and ideology. Study 3b cleanly replicates ideology and distinguishes status-threat from assuaged-threat, but the policy contrast between status-threat and control is only marginal.
 
-### Slide 71: The reassurance condition weakens one link in the chain
+### Slide 74: The reassurance condition weakens one link in the chain
 
 **Talk track**
 
@@ -990,7 +1127,7 @@ What must be true about the reassurance paragraph for this to identify the threa
 
 Draw this live alongside the image. The assuaged-threat condition is designed to weaken the arrow from information to threat while leaving the demographic information constant. This is stronger evidence for the proposed mechanism than measured mediation alone, but it still depends on the construct-validity claim that the added reassurance changes status threat without introducing some other consequential message.
 
-### Slide 72: The mechanism evidence is stronger, but not definitive
+### Slide 75: The mechanism evidence is stronger, but not definitive
 
 **Talk track**
 
@@ -1004,7 +1141,7 @@ Which limitation concerns internal validity, which concerns construct validity, 
 
 Ask first, then reveal. Immigration attitudes specifically did not move significantly, which sits awkwardly with a clean race-status story given immigration is arguably the policy most proximate to the manipulation. The MTurk samples provide poor coverage of women. The stimuli are brief compared with repeated political-media exposure, all outcomes are self-reports, and divergent patterns for Black and Latino respondents sit outside the focal White-sample theory. The assuaging paragraph also bundles status reassurance with explicit information about continued income and wealth hierarchy, so its exclusion restriction is arguable rather than automatic.
 
-### Slide 73: What did each manipulation actually identify?
+### Slide 76: What did each manipulation actually identify?
 
 **Talk track**
 
@@ -1018,7 +1155,7 @@ What did Correll randomize? What did Craig and Richeson randomize? Which paper h
 
 Pairs discuss for a minute before Part 5. Correll randomized the parental-status cue, closing the back door from actual qualifications into the assigned cue. Craig and Richeson randomized the upstream message, then added a treatment designed to manipulate the proposed mediator while holding demographic information fixed. That is stronger evidence about mechanism than Correll's measured competence/commitment mediation, without pretending experienced threat itself was assigned perfectly.
 
-### Slide 74: Both papers narrow broad puzzles to manipulable causes
+### Slide 77: Both papers narrow broad puzzles to manipulable causes
 
 **Talk track**
 
@@ -1028,7 +1165,7 @@ Both papers begin with a broad observational puzzle and end with a narrower caus
 
 Make the parallel explicit. Both papers start from an observational correlation but then narrow the estimand to something they can actually manipulate: an applicant cue or a demographic-shift message. Craig and Richeson go one step further by experimentally varying the message's status implication, directly addressing the measured-mediation warning without literally assigning the mediator.
 
-### Slide 75: Different settings can use the same experimental logic
+### Slide 78: Different settings can use the same experimental logic
 
 **Talk track**
 
@@ -1038,7 +1175,7 @@ The studies occur in labs, surveys, and the field, but they share the same basic
 
 Revisit the typology from Part 2 with both papers now fully in view. Almost everything we discussed today lives in cell 1 — researcher-caused, statistical solution — which is itself a finding about where most published communication and social-psychology experiments sit relative to Druckman's full typology.
 
-### Slide 76: Use your DAG to choose the manipulation
+### Slide 79: Use your DAG to choose the manipulation
 
 **Talk track**
 
@@ -1052,7 +1189,7 @@ What is one open back door in your project, and what intervention would sever it
 
 Connect to the ongoing coding projects. Most will not be able to run a true experiment, but the exercise of asking "what is the smallest intervention that would close this specific back door" is valuable even as a thought experiment — it clarifies exactly what the observational analysis cannot establish on its own.
 
-### Slide 77: What would your experiment identify?
+### Slide 80: What would your experiment identify?
 
 **Talk track**
 

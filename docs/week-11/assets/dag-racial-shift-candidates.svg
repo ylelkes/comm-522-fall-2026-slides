@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="834.66pt" height="289.688pt" viewBox="0 0 834.66 289.688" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="834.66pt" height="308.496pt" viewBox="0 0 834.66 308.496" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-08T14:13:32.438486</dc:date>
+    <dc:date>2026-11-09T09:46:49.029631</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,236 +21,237 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 289.688 
-L 834.66 289.688 
+   <path d="M 0 308.496 
+L 834.66 308.496 
 L 834.66 0 
 L 0 0 
-L 0 289.688 
+L 0 308.496 
 z
 " style="fill: none"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 99.841129 78.4688 
-Q 127.826471 78.4688 152.45771 78.4688 
-" clip-path="url(#p8542c7b763)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
-    <path d="M 143.65771 74.0688 
-L 152.45771 78.4688 
-L 143.65771 82.8688 
+    <path d="M 99.841129 97.2768 
+Q 127.826471 97.2768 152.45771 97.2768 
+" clip-path="url(#pc2343b5b8a)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 143.65771 92.8768 
+L 152.45771 97.2768 
+L 143.65771 101.6768 
 z
-" clip-path="url(#p8542c7b763)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#pc2343b5b8a)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 17px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18324a" x="127.826471" y="23.775" transform="rotate(-0 127.826471 23.775)">Reverse causation</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18324a" transform="translate(59.721471 23.032)">Political feedback</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18324a" transform="translate(62.526471 42.568)">(sign ambiguous)</text>
    </g>
    <g id="patch_3">
-    <path d="M 17.573876 108.944168 
-L 93.3273 108.944168 
-Q 99.358624 108.944168 99.358624 102.568568 
-L 99.358624 54.369032 
-Q 99.358624 47.993432 93.3273 47.993432 
-L 17.573876 47.993432 
-Q 11.542553 47.993432 11.542553 54.369032 
-L 11.542553 102.568568 
-Q 11.542553 108.944168 17.573876 108.944168 
+    <path d="M 17.573876 127.752168 
+L 93.3273 127.752168 
+Q 99.358624 127.752168 99.358624 121.376568 
+L 99.358624 73.177032 
+Q 99.358624 66.801432 93.3273 66.801432 
+L 17.573876 66.801432 
+Q 11.542553 66.801432 11.542553 73.177032 
+L 11.542553 121.376568 
+Q 11.542553 127.752168 17.573876 127.752168 
 z
-" clip-path="url(#p8542c7b763)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#pc2343b5b8a)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
-    <path d="M 162.325641 108.944168 
-L 238.079065 108.944168 
-Q 244.110388 108.944168 244.110388 102.568568 
-L 244.110388 54.369032 
-Q 244.110388 47.993432 238.079065 47.993432 
-L 162.325641 47.993432 
-Q 156.294318 47.993432 156.294318 54.369032 
-L 156.294318 102.568568 
-Q 156.294318 108.944168 162.325641 108.944168 
+    <path d="M 162.325641 127.752168 
+L 238.079065 127.752168 
+Q 244.110388 127.752168 244.110388 121.376568 
+L 244.110388 73.177032 
+Q 244.110388 66.801432 238.079065 66.801432 
+L 162.325641 66.801432 
+Q 156.294318 66.801432 156.294318 73.177032 
+L 156.294318 121.376568 
+Q 156.294318 127.752168 162.325641 127.752168 
 z
-" clip-path="url(#p8542c7b763)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#pc2343b5b8a)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="text_2">
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(30.310354 73.097159)">Already</text>
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(13.089651 92.916612)">conservative</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(16.048244 93.635925)">Earlier White</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(14.491838 109.458769)">racial politics</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(170.066415 74.656925)">Notices /</text>
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(160.198056 91.580675)">reports shift</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(165.593915 93.635925)">Later racial</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(161.561259 109.458769)">composition</text>
    </g>
   </g>
   <g id="axes_2">
    <g id="patch_5">
-    <path d="M 399.069008 107.541536 
-Q 381.142059 148.6004 364.557215 186.585382 
-" clip-path="url(#p633b60ce56)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
-    <path d="M 372.110835 180.281191 
-L 364.557215 186.585382 
-L 364.046034 176.759971 
+    <path d="M 399.069008 126.349536 
+Q 378.775924 172.82766 359.824946 216.231902 
+" clip-path="url(#p508a66ebcc)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 367.378566 209.927711 
+L 359.824946 216.231902 
+L 359.313765 206.406491 
 z
-" clip-path="url(#p633b60ce56)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p508a66ebcc)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="patch_6">
-    <path d="M 435.590992 107.541536 
-Q 458.25021 159.43892 479.567323 208.262422 
-" clip-path="url(#p633b60ce56)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
-    <path d="M 480.078504 198.437011 
-L 479.567323 208.262422 
-L 472.013703 201.958231 
+    <path d="M 435.590992 126.349536 
+Q 455.884076 172.82766 474.835054 216.231902 
+" clip-path="url(#p508a66ebcc)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 475.346235 206.406491 
+L 474.835054 216.231902 
+L 467.281434 209.927711 
 z
-" clip-path="url(#p633b60ce56)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p508a66ebcc)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="patch_7">
-    <path d="M 384.5196 231.4832 
-Q 417.33 231.4832 447.680725 231.4832 
-" clip-path="url(#p633b60ce56)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
-    <path d="M 438.880725 227.0832 
-L 447.680725 231.4832 
-L 438.880725 235.8832 
+    <path d="M 386.932129 250.2912 
+Q 417.33 250.2912 445.268196 250.2912 
+" clip-path="url(#p508a66ebcc)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 436.468196 245.8912 
+L 445.268196 250.2912 
+L 436.468196 254.6912 
 z
-" clip-path="url(#p633b60ce56)" style="fill: #62717d; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+" clip-path="url(#p508a66ebcc)" style="fill: #62717d; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
    </g>
    <g id="text_4">
-    <text style="font-weight: 700; font-size: 17px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18324a" x="417.33" y="23.775" transform="rotate(-0 417.33 23.775)">Regional confounder</text>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18324a" x="417.33" y="43.017" transform="rotate(-0 417.33 43.017)">Regional confounder</text>
    </g>
    <g id="patch_8">
-    <path d="M 384.278347 107.031488 
-L 450.381653 107.031488 
-Q 456.412976 107.031488 456.412976 100.655888 
-L 456.412976 30.779312 
-Q 456.412976 24.403712 450.381653 24.403712 
-L 384.278347 24.403712 
-Q 378.247024 24.403712 378.247024 30.779312 
-L 378.247024 100.655888 
-Q 378.247024 107.031488 384.278347 107.031488 
+    <path d="M 381.865818 125.839488 
+L 452.794182 125.839488 
+Q 458.825506 125.839488 458.825506 119.463888 
+L 458.825506 49.587312 
+Q 458.825506 43.211712 452.794182 43.211712 
+L 381.865818 43.211712 
+Q 375.834494 43.211712 375.834494 49.587312 
+L 375.834494 119.463888 
+Q 375.834494 125.839488 381.865818 125.839488 
 z
-" clip-path="url(#p633b60ce56)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p508a66ebcc)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
-    <path d="M 311.902465 272.797088 
-L 378.005771 272.797088 
-Q 384.037094 272.797088 384.037094 266.421488 
-L 384.037094 196.544912 
-Q 384.037094 190.169312 378.005771 190.169312 
-L 311.902465 190.169312 
-Q 305.871141 190.169312 305.871141 196.544912 
-L 305.871141 266.421488 
-Q 305.871141 272.797088 311.902465 272.797088 
+    <path d="M 309.489935 280.766568 
+L 380.4183 280.766568 
+Q 386.449624 280.766568 386.449624 274.390968 
+L 386.449624 226.191432 
+Q 386.449624 219.815832 380.4183 219.815832 
+L 309.489935 219.815832 
+Q 303.458612 219.815832 303.458612 226.191432 
+L 303.458612 274.390968 
+Q 303.458612 280.766568 309.489935 280.766568 
 z
-" clip-path="url(#p633b60ce56)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p508a66ebcc)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_10">
-    <path d="M 456.654229 251.120048 
-L 522.757535 251.120048 
-Q 528.788859 251.120048 528.788859 244.744448 
-L 528.788859 218.221952 
-Q 528.788859 211.846352 522.757535 211.846352 
-L 456.654229 211.846352 
-Q 450.622906 211.846352 450.622906 218.221952 
-L 450.622906 244.744448 
-Q 450.622906 251.120048 456.654229 251.120048 
+    <path d="M 454.2417 280.766568 
+L 525.170065 280.766568 
+Q 531.201388 280.766568 531.201388 274.390968 
+L 531.201388 226.191432 
+Q 531.201388 219.815832 525.170065 219.815832 
+L 454.2417 219.815832 
+Q 448.210376 219.815832 448.210376 226.191432 
+L 448.210376 274.390968 
+Q 448.210376 280.766568 454.2417 280.766568 
 z
-" clip-path="url(#p633b60ce56)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p508a66ebcc)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="text_5">
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(393.719063 51.15635)">Region</text>
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(382.874531 69.646897)">(economy,</text>
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(382.605 87.995647)">urbanicity)</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(382.295 73.193662)">Plantation &amp;</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(383.261875 87.8081)">segregation</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(397.83 103.723553)">history</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(324.402946 218.407887)">Racial</text>
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(303.552946 235.360934)">composition</text>
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(320.226383 253.61945)">change</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(311.126696 246.910387)">Local Black</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(329.061618 262.812637)">share</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18232d" x="489.705882" y="236.8457" transform="rotate(-0 489.705882 236.8457)">Conservatism</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(473.092289 246.910387)">White</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(450.939476 262.812637)">conservatism</text>
    </g>
   </g>
   <g id="axes_3">
    <g id="patch_11">
-    <path d="M 651.1041 154.976 
-Q 667.026794 154.976 679.595386 154.976 
-" clip-path="url(#pda31c15494)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
-    <path d="M 670.795386 150.576 
-L 679.595386 154.976 
-L 670.795386 159.376 
+    <path d="M 657.135424 173.784 
+Q 667.026794 173.784 673.564063 173.784 
+" clip-path="url(#p32d4f029c4)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 664.764063 169.384 
+L 673.564063 173.784 
+L 664.764063 178.184 
 z
-" clip-path="url(#pda31c15494)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p32d4f029c4)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="patch_12">
-    <path d="M 730.717571 154.976 
-Q 746.640265 154.976 759.208857 154.976 
-" clip-path="url(#pda31c15494)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
-    <path d="M 750.408857 150.576 
-L 759.208857 154.976 
-L 750.408857 159.376 
+    <path d="M 736.748894 173.784 
+Q 746.640265 173.784 753.177533 173.784 
+" clip-path="url(#p32d4f029c4)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 744.377533 169.384 
+L 753.177533 173.784 
+L 744.377533 178.184 
 z
-" clip-path="url(#pda31c15494)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#p32d4f029c4)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18324a" x="706.833529" y="23.992" transform="rotate(-0 706.833529 23.992)">Direct causal chain</text>
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18324a" x="706.833529" y="43.7765" transform="rotate(-0 706.833529 43.7765)">Causal threat story</text>
    </g>
    <g id="patch_13">
-    <path d="M 609.849847 185.451368 
-L 644.590271 185.451368 
-Q 650.621594 185.451368 650.621594 179.075768 
-L 650.621594 130.876232 
-Q 650.621594 124.500632 644.590271 124.500632 
-L 609.849847 124.500632 
-Q 603.818524 124.500632 603.818524 130.876232 
-L 603.818524 179.075768 
-Q 603.818524 185.451368 609.849847 185.451368 
+    <path d="M 603.818524 204.259368 
+L 650.621594 204.259368 
+Q 656.652918 204.259368 656.652918 197.883768 
+L 656.652918 149.684232 
+Q 656.652918 143.308632 650.621594 143.308632 
+L 603.818524 143.308632 
+Q 597.7872 143.308632 597.7872 149.684232 
+L 597.7872 197.883768 
+Q 597.7872 204.259368 603.818524 204.259368 
 z
-" clip-path="url(#pda31c15494)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p32d4f029c4)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_14">
-    <path d="M 689.463318 185.451368 
-L 724.203741 185.451368 
-Q 730.235065 185.451368 730.235065 179.075768 
-L 730.235065 130.876232 
-Q 730.235065 124.500632 724.203741 124.500632 
-L 689.463318 124.500632 
-Q 683.431994 124.500632 683.431994 130.876232 
-L 683.431994 179.075768 
-Q 683.431994 185.451368 689.463318 185.451368 
+    <path d="M 683.431994 204.259368 
+L 730.235065 204.259368 
+Q 736.266388 204.259368 736.266388 197.883768 
+L 736.266388 149.684232 
+Q 736.266388 143.308632 730.235065 143.308632 
+L 683.431994 143.308632 
+Q 677.400671 143.308632 677.400671 149.684232 
+L 677.400671 197.883768 
+Q 677.400671 204.259368 683.431994 204.259368 
 z
-" clip-path="url(#pda31c15494)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p32d4f029c4)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_15">
-    <path d="M 769.076788 185.451368 
-L 803.817212 185.451368 
-Q 809.848535 185.451368 809.848535 179.075768 
-L 809.848535 130.876232 
-Q 809.848535 124.500632 803.817212 124.500632 
-L 769.076788 124.500632 
-Q 763.045465 124.500632 763.045465 130.876232 
-L 763.045465 179.075768 
-Q 763.045465 185.451368 769.076788 185.451368 
+    <path d="M 763.045465 204.259368 
+L 809.848535 204.259368 
+Q 815.879859 204.259368 815.879859 197.883768 
+L 815.879859 149.684232 
+Q 815.879859 143.308632 809.848535 143.308632 
+L 763.045465 143.308632 
+Q 757.014141 143.308632 757.014141 149.684232 
+L 757.014141 197.883768 
+Q 757.014141 204.259368 763.045465 204.259368 
 z
-" clip-path="url(#pda31c15494)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p32d4f029c4)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="text_9">
-    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(592.093184 151.390906)">Racial-shift</text>
-    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(615.684278 168.516406)">info</text>
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(602.50002 171.313406)">Local Black</text>
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(615.606309 182.934281)">share</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(686.736967 151.41825)">Status</text>
-    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(688.808529 168.460625)">threat</text>
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(693.196576 171.369812)">Status</text>
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(694.602279 182.934281)">threat</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(761.554344 151.41825)">Conser-</text>
-    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(765.957781 168.460625)">vatism</text>
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(774.306297 171.313406)">White</text>
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(758.117703 182.934281)">conservatism</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p8542c7b763">
-   <rect x="7.2" y="27.464" width="241.252941" height="255.024"/>
+  <clipPath id="pc2343b5b8a">
+   <rect x="7.2" y="46.272" width="241.252941" height="255.024"/>
   </clipPath>
-  <clipPath id="p633b60ce56">
-   <rect x="296.703529" y="27.464" width="241.252941" height="255.024"/>
+  <clipPath id="p508a66ebcc">
+   <rect x="296.703529" y="46.272" width="241.252941" height="255.024"/>
   </clipPath>
-  <clipPath id="pda31c15494">
-   <rect x="586.207059" y="27.464" width="241.252941" height="255.024"/>
+  <clipPath id="p32d4f029c4">
+   <rect x="586.207059" y="46.272" width="241.252941" height="255.024"/>
   </clipPath>
  </defs>
 </svg>
