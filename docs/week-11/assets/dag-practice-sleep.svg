@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="600.3pt" height="269.424pt" viewBox="0 0 600.3 269.424" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-08T14:13:32.507355</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 269.424 
+L 600.3 269.424 
+L 600.3 0 
+L 0 0 
+L 0 269.424 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 261.818619 76.439016 
+Q 197.6175 128.3364 136.024828 178.125229 
+" clip-path="url(#paaa4ca82e7)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 145.634547 176.014943 
+L 136.024828 178.125229 
+L 140.10243 169.171282 
+z
+" clip-path="url(#paaa4ca82e7)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 338.481381 76.439016 
+Q 409.386548 133.75566 477.683268 188.963749 
+" clip-path="url(#paaa4ca82e7)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 473.605666 180.009802 
+L 477.683268 188.963749 
+L 468.07355 186.853463 
+z
+" clip-path="url(#paaa4ca82e7)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 179.4546 211.2192 
+Q 197.6175 211.2192 212.426298 211.2192 
+" clip-path="url(#paaa4ca82e7)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 203.626298 206.8192 
+L 212.426298 211.2192 
+L 203.626298 215.6192 
+z
+" clip-path="url(#paaa4ca82e7)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 384.5196 211.2192 
+Q 402.6825 211.2192 417.491298 211.2192 
+" clip-path="url(#paaa4ca82e7)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 408.691298 206.8192 
+L 417.491298 211.2192 
+L 408.691298 215.6192 
+z
+" clip-path="url(#paaa4ca82e7)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 231.5997 75.928968 
+L 368.7003 75.928968 
+Q 383.3478 75.928968 383.3478 69.553368 
+L 383.3478 21.353832 
+Q 383.3478 14.978232 368.7003 14.978232 
+L 231.5997 14.978232 
+Q 216.9522 14.978232 216.9522 21.353832 
+L 216.9522 69.553368 
+Q 216.9522 75.928968 231.5997 75.928968 
+z
+" clip-path="url(#paaa4ca82e7)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 26.5347 241.694568 
+L 163.6353 241.694568 
+Q 178.2828 241.694568 178.2828 235.318968 
+L 178.2828 187.119432 
+Q 178.2828 180.743832 163.6353 180.743832 
+L 26.5347 180.743832 
+Q 11.8872 180.743832 11.8872 187.119432 
+L 11.8872 235.318968 
+Q 11.8872 241.694568 26.5347 241.694568 
+z
+" clip-path="url(#paaa4ca82e7)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 231.5997 241.694568 
+L 368.7003 241.694568 
+Q 383.3478 241.694568 383.3478 235.318968 
+L 383.3478 187.119432 
+Q 383.3478 180.743832 368.7003 180.743832 
+L 231.5997 180.743832 
+Q 216.9522 180.743832 216.9522 187.119432 
+L 216.9522 235.318968 
+Q 216.9522 241.694568 231.5997 241.694568 
+z
+" clip-path="url(#paaa4ca82e7)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 436.6647 230.856048 
+L 573.7653 230.856048 
+Q 588.4128 230.856048 588.4128 224.480448 
+L 588.4128 197.957952 
+Q 588.4128 191.582352 573.7653 191.582352 
+L 436.6647 191.582352 
+Q 422.0172 191.582352 422.0172 197.957952 
+L 422.0172 224.480448 
+Q 422.0172 230.856048 436.6647 230.856048 
+z
+" clip-path="url(#paaa4ca82e7)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(279.0375 41.641725)">Stress</text>
+    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(257.504297 58.632272)">(before term)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(66.337734 207.378028)">Hours of</text>
+    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(77.167031 224.271309)">sleep</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(281.541797 207.407325)">Class</text>
+    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(262.5 225.667012)">attendance</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18232d" x="505.215" y="216.5817" transform="rotate(-0 505.215 216.5817)">GPA</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="paaa4ca82e7">
+   <rect x="7.2" y="7.2" width="585.9" height="255.024"/>
+  </clipPath>
+ </defs>
+</svg>

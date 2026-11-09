@@ -1,0 +1,553 @@
+<style>
+.dag-sim { margin-top:.1em; font-size:.58em; }
+.dag-sim-plot { width:100%; height:auto; max-height:300px; display:block; margin:.2em 0; }
+.dag-sim-plot .node { cursor:pointer; }
+.dag-sim-plot .node rect { transition:fill 200ms ease, stroke 200ms ease; }
+.dag-sim-plot .node.controlled rect { fill:#f4dfae; stroke:var(--rust); stroke-width:3.5; }
+.dag-sim-plot .node:not(.controllable) { cursor:default; }
+.dag-sim-plot .edge { transition:stroke 250ms ease, opacity 250ms ease; }
+.dag-sim-plot .dot { filter:drop-shadow(0 0 2px rgba(0,0,0,.35)); }
+.dag-sim-plot .block-mark { stroke:#b24a3c; stroke-width:5; stroke-linecap:round; opacity:0; transition:opacity 200ms ease; }
+.dag-sim-plot .block-mark.show { opacity:1; }
+.dag-sim-bottom { display:grid; grid-template-columns:2.4fr 1fr; gap:.8em; align-items:start; }
+.dag-sim-paths { font-size:.92em; line-height:1.35; }
+.dag-sim-paths .path-row { display:flex; gap:.5em; align-items:baseline; padding:.15em 0; }
+.dag-sim-paths .dot-key { width:.8em; height:.8em; border-radius:50%; display:inline-block; flex:none; background:var(--muted); }
+.dag-sim-paths .dot-key.good { background:#4c8a5e; }
+.dag-sim-paths .dot-key.bad { background:var(--rust); }
+.dag-sim-paths .dot-key.question { background:transparent; border:2px dashed var(--muted); width:.7em; height:.7em; }
+.dag-sim-verdict { padding:.4em .6em; font-weight:800; border-left:6px solid var(--muted); background:rgba(255,255,255,.7); min-height:1.6em; }
+.dag-sim-verdict.good { border-left-color:#4c8a5e; color:#2f5c3c; }
+.dag-sim-verdict.bad { border-left-color:var(--rust); color:#7a2e23; }
+.dag-sim-actions { display:flex; gap:.5em; align-items:center; margin-top:.35em; flex-wrap:wrap; }
+.dag-sim-actions button { border:2px solid var(--rust); padding:.28em .65em; background:white; color:var(--rust); font:inherit; font-weight:700; cursor:pointer; }
+.dag-sim-actions button[data-play] { border-color:#2f6687; color:#2f6687; }
+.dag-sim-actions button:disabled { opacity:.45; cursor:default; }
+.dag-sim-tally { color:var(--muted); font-weight:700; }
+.dag-sim-hint { color:var(--muted); font-size:.92em; margin-top:.2em; }
+</style>
+<script>
+(() => {
+  const NS = 'http://www.w3.org/2000/svg';
+  const elNS = (tag, attrs = {}, parent, text) => {
+    const node = document.createElementNS(NS, tag);
+    Object.entries(attrs).forEach(([k, v]) => node.setAttribute(k, v));
+    if (text !== undefined) node.textContent = text;
+    if (parent) parent.appendChild(node);
+    return node;
+  };
+  const elH = (tag, attrs = {}, parent, text) => {
+    const node = document.createElement(tag);
+    Object.entries(attrs).forEach(([k, v]) => node.setAttribute(k, v));
+    if (text !== undefined) node.textContent = text;
+    if (parent) parent.appendChild(node);
+    return node;
+  };
+
+  const X = { x: 130, y: 260 };
+  const Y = { x: 770, y: 260 };
+
+  // One running example throughout: attending a selective college, and income.
+  // role: 'mediator' | 'confounder' | 'collider'
+  // good: the controlled-state ('open'/'closed') that is CORRECT for identification
+  const COLLEGE_X = 'Attends a\nselective college', COLLEGE_Y = 'Income';
+  const SCENARIOS = {
+    satConfounder: {
+      xLabel: COLLEGE_X, yLabel: COLLEGE_Y,
+      mids: [{ id: 'ses', x: 450, y: 90, label: 'Family SES\n& ability', role: 'confounder', good: 'closed' }],
+    },
+    satCollider: {
+      xLabel: COLLEGE_X, yLabel: COLLEGE_Y,
+      mids: [{ id: 'employed', x: 450, y: 370, label: 'Included in\ndataset', role: 'collider', good: 'closed' }],
+    },
+    satMediator: {
+      xLabel: COLLEGE_X, yLabel: COLLEGE_Y,
+      mids: [{ id: 'college', x: 450, y: 260, label: 'Professional\nnetwork', role: 'mediator', good: 'open' }],
+    },
+    satFull: {
+      xLabel: COLLEGE_X, yLabel: COLLEGE_Y,
+      mids: [
+        { id: 'ses2', x: 450, y: 70, label: 'Family SES\n& ability', role: 'confounder', good: 'closed' },
+        { id: 'college2', x: 450, y: 260, label: 'Professional\nnetwork', role: 'mediator', good: 'open' },
+        { id: 'employed2', x: 450, y: 420, label: 'Included in\ndataset', role: 'collider', good: 'closed' },
+      ],
+    },
+    satTwoConfounders: {
+      xLabel: COLLEGE_X, yLabel: COLLEGE_Y,
+      mids: [
+        { id: 'ses3', x: 310, y: 80, label: 'Family\nSES', role: 'confounder', good: 'closed' },
+        { id: 'parented', x: 590, y: 80, label: "Parents'\neducation", role: 'confounder', good: 'closed' },
+      ],
+    },
+    // Capstone: social media and depression. Two mediators, two confounders
+    // that are themselves correlated with each other (but each still has its
+    // own independent arrow into X and Y, so both still need controlling),
+    // and a collider.
+    socialMedia: {
+      xLabel: 'Social\nmedia use', yLabel: 'Depression',
+      mids: [
+        { id: 'lonely', x: 260, y: 55, label: 'Baseline\nloneliness', role: 'confounder', good: 'closed' },
+        { id: 'conflict', x: 640, y: 55, label: 'Family\nconflict', role: 'confounder', good: 'closed' },
+        { id: 'sleep', x: 260, y: 175, label: 'Sleep\nquality', role: 'mediator', good: 'open' },
+        { id: 'inperson', x: 640, y: 175, label: 'In-person\nsocial time', role: 'mediator', good: 'open' },
+        { id: 'restrict', x: 450, y: 420, label: 'Parent restricts\nphone use', role: 'collider', good: 'closed' },
+      ],
+      correlate: ['lonely', 'conflict'],
+    },
+  };
+
+  // Bespoke scenario: a confounder (Family SES) that sits upstream of a second
+  // node (private tutoring), producing two nested back-door paths. Same
+  // running example (attending a selective college -> income), structurally identical to
+  // Rohrer's Figure 2 (intelligence/grades/attainment/income).
+  const GRADES = {
+    xLabel: COLLEGE_X, yLabel: COLLEGE_Y,
+    x: { x: 130, y: 330 }, y: { x: 770, y: 330 },
+    grades: { x: 330, y: 190, label: 'Private\ntutoring' },
+    intel: { x: 560, y: 60, label: 'Family SES' },
+  };
+
+  function wrapLines(label) { return label.split('\n'); }
+
+  // Is the ROLE-SPECIFIC good/bad judgment satisfied?
+  function statusOf(mid, controlled) {
+    const isControlled = controlled.has(mid.id);
+    const ok = (mid.good === 'closed') === isControlled;
+    let label;
+    if (mid.role === 'confounder') label = isControlled ? 'back door blocked' : 'back door OPEN (bias)';
+    else if (mid.role === 'collider') label = isControlled ? 'collider OPENED (bias)' : 'collider stays closed';
+    else label = isControlled ? 'blocked (overcontrol)' : 'real effect flows through';
+    return { ok, label };
+  }
+
+  // Is association/effect literally flowing all the way through, right now?
+  function isPathOpen(mid, controlled) {
+    const isControlled = controlled.has(mid.id);
+    return mid.role === 'collider' ? isControlled : !isControlled;
+  }
+
+  function pt(x, y) { return { x, y }; }
+
+  // Geometry: entry/exit points on X, Y, and mid boxes for each role's pattern.
+  function geometry(mid) {
+    if (mid.role === 'confounder') {
+      return {
+        seg1: [pt(X.x + 45, X.y - 32), pt(mid.x - 70, mid.y + 24)], // X -> mid (reverse of drawn arrow)
+        seg2: [pt(mid.x + 70, mid.y + 24), pt(Y.x - 45, Y.y - 32)], // mid -> Y
+        drawn: [
+          [pt(mid.x - 60, mid.y + 20), pt(X.x + 40, X.y - 34)], // mid -> X (arrow)
+          [pt(mid.x + 60, mid.y + 20), pt(Y.x - 40, Y.y - 34)], // mid -> Y (arrow)
+        ],
+        virtual: null,
+      };
+    }
+    if (mid.role === 'collider') {
+      const dy = mid.y > X.y ? -14 : 14;
+      return {
+        seg1: [pt(X.x + 95, X.y + dy), pt(mid.x - 100, mid.y)], // X -> mid
+        seg2: [pt(mid.x + 100, mid.y), pt(Y.x - 95, Y.y + dy)], // mid -> Y (virtual only)
+        drawn: [
+          [pt(X.x + 95, X.y + dy), pt(mid.x - 100, mid.y)], // X -> mid (arrow)
+          [pt(Y.x - 95, Y.y + dy), pt(mid.x + 100, mid.y)], // Y -> mid (arrow)
+        ],
+        virtual: [pt(mid.x + 100, mid.y), pt(Y.x - 95, Y.y + dy)],
+      };
+    }
+    // mediator
+    return {
+      seg1: [pt(X.x + 95, X.y), pt(mid.x - 100, mid.y)],
+      seg2: [pt(mid.x + 100, mid.y), pt(Y.x - 95, Y.y)],
+      drawn: [
+        [pt(X.x + 95, X.y), pt(mid.x - 100, mid.y)], // X -> mid (arrow)
+        [pt(mid.x + 100, mid.y), pt(Y.x - 95, Y.y)], // mid -> Y (arrow)
+      ],
+      virtual: null,
+    };
+  }
+
+  function edgePath(a, b) { return `M ${a.x} ${a.y} L ${b.x} ${b.y}`; }
+
+  function animateAlong(dotLayer, points, segCount, perSegMs, color) {
+    return new Promise((resolve) => {
+      const dot = elNS('circle', { r: 10, fill: color || '#2f6687' }, dotLayer);
+      let seg = 0;
+      function startSeg() {
+        if (seg >= segCount) { resolve(dot); return; }
+        const a = points[seg], b = points[seg + 1];
+        const start = performance.now();
+        function step(now) {
+          const t = Math.min(1, (now - start) / perSegMs);
+          dot.setAttribute('cx', a.x + (b.x - a.x) * t);
+          dot.setAttribute('cy', a.y + (b.y - a.y) * t);
+          if (t < 1) requestAnimationFrame(step);
+          else { seg += 1; startSeg(); }
+        }
+        requestAnimationFrame(step);
+      }
+      startSeg();
+    });
+  }
+
+  function showBlockAt(dotLayer, p) {
+    elNS('line', { x1: p.x - 14, y1: p.y - 24, x2: p.x - 14, y2: p.y + 24, class: 'block-mark show' }, dotLayer);
+  }
+
+  function mountGrades(root) {
+    let controlled = new Set();
+    let checked = false;
+    let playToken = 0;
+
+    root.innerHTML = `
+      <svg class="dag-sim-plot" viewBox="0 0 900 460" role="img" aria-label="Rohrer Figure 2: a nested confounder"></svg>
+      <div class="dag-sim-bottom">
+        <div class="dag-sim-paths" data-paths></div>
+        <div>
+          <div class="dag-sim-verdict" data-verdict>Click nodes, then play or check.</div>
+          <div class="dag-sim-actions">
+            <button type="button" data-play>▶ Play</button>
+            <button type="button" data-check>Check my answer</button>
+            <button type="button" data-reset>Reset</button>
+          </div>
+          <div class="dag-sim-tally" data-tally></div>
+        </div>
+      </div>
+      <p class="dag-sim-hint">Family SES sits upstream of tutoring — controlling for either one blocks the long back door, but only SES blocks both.</p>`;
+
+    const svg = root.querySelector('svg');
+    const pathsBox = root.querySelector('[data-paths]');
+    const verdictBox = root.querySelector('[data-verdict]');
+    const tallyBox = root.querySelector('[data-tally]');
+    const playBtn = root.querySelector('[data-play]');
+
+    const X = GRADES.x, Y = GRADES.y, G = GRADES.grades, I = GRADES.intel;
+
+    function drawBox(parent, n, controllable) {
+      const w = 190, h = 46 + (wrapLines(n.label).length - 1) * 24;
+      const g = elNS('g', { class: 'node' + (controllable ? ' controllable' : '') + (controlled.has(n.id) ? ' controlled' : '') }, parent);
+      elNS('rect', { x: n.x - w / 2, y: n.y - h / 2, width: w, height: h, rx: 10, fill: 'white', stroke: '#18324a', 'stroke-width': 2.5 }, g);
+      wrapLines(n.label).forEach((line, i, arr) => {
+        elNS('text', { x: n.x, y: n.y - (arr.length - 1) * 11 + i * 22 + 7, 'text-anchor': 'middle', 'font-size': 20, 'font-weight': 700, fill: '#18232d' }, g, line);
+      });
+      if (controllable) {
+        g.addEventListener('click', () => {
+          if (controlled.has(n.id)) controlled.delete(n.id); else controlled.add(n.id);
+          checked = false;
+          render();
+        });
+      }
+    }
+
+    function okA() { return controlled.has('intel'); } // pathA blocked <=> ok
+    function okB() { return controlled.has('grades') || controlled.has('intel'); }
+
+    // Box-aware edge endpoints, so arrows always reach the box edge regardless
+    // of how many lines a label wraps to (a fixed box width, a height that
+    // grows with the label).
+    const nodeX = { x: X.x, y: X.y, label: GRADES.xLabel };
+    const nodeY = { x: Y.x, y: Y.y, label: GRADES.yLabel };
+    const nodeG = { x: G.x, y: G.y, label: G.label };
+    const nodeI = { x: I.x, y: I.y, label: I.label };
+    function halfH(n) { return 23 + 12 * (n.label.split('\n').length - 1); }
+    function clipToward(from, to, margin) {
+      const dx = to.x - from.x, dy = to.y - from.y;
+      const tx = dx ? (95 + margin) / Math.abs(dx) : Infinity;
+      const ty = dy ? (halfH(from) + margin) / Math.abs(dy) : Infinity;
+      const t = Math.min(tx, ty, 1);
+      return pt(from.x + dx * t, from.y + dy * t);
+    }
+    function edgeEnds(from, to, margin = 14) { return [clipToward(from, to, margin), clipToward(to, from, margin)]; }
+
+    function render() {
+      svg.innerHTML = '';
+      pathsBox.innerHTML = '';
+      const defs = elNS('defs', {}, svg);
+      [['arrow-g', '#8d8478'], ['arrow-g-good', '#4c8a5e'], ['arrow-g-bad', '#b24a3c']].forEach(([id, color]) => {
+        const marker = elNS('marker', { id, viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+        elNS('path', { d: 'M 0 0 L 10 5 L 0 10 z', fill: color }, marker);
+      });
+
+      const [qa, qb] = edgeEnds(nodeX, nodeY);
+      elNS('path', { d: edgePath(qa, qb), stroke: '#62717d', 'stroke-width': 3, 'stroke-dasharray': '2 7', 'stroke-linecap': 'round', fill: 'none' }, svg);
+      elNS('text', { x: (X.x + Y.x) / 2, y: X.y - 14, 'text-anchor': 'middle', 'font-size': 15, 'font-style': 'italic', fill: '#62717d' }, svg, 'the relationship we want to identify');
+
+      const colorB = checked ? (okB() ? '#4c8a5e' : '#b24a3c') : '#8d8478';
+      const markB = checked ? (okB() ? 'arrow-g-good' : 'arrow-g-bad') : 'arrow-g';
+      const [gx1, gx2] = edgeEnds(nodeG, nodeX);
+      elNS('path', { d: edgePath(gx1, gx2), stroke: colorB, 'stroke-width': 3.5, fill: 'none', 'marker-end': `url(#${markB})` }, svg);
+      const [ig1, ig2] = edgeEnds(nodeI, nodeG);
+      elNS('path', { d: edgePath(ig1, ig2), stroke: colorB, 'stroke-width': 3.5, fill: 'none', 'marker-end': `url(#${markB})` }, svg);
+
+      const bothOk = checked ? (okA() && okB() ? '#4c8a5e' : '#b24a3c') : '#8d8478';
+      const bothMark = checked ? (okA() && okB() ? 'arrow-g-good' : 'arrow-g-bad') : 'arrow-g';
+      const [iy1, iy2] = edgeEnds(nodeI, nodeY);
+      elNS('path', { d: edgePath(iy1, iy2), stroke: bothOk, 'stroke-width': 3.5, fill: 'none', 'marker-end': `url(#${bothMark})` }, svg);
+
+      const colorA = checked ? (okA() ? '#4c8a5e' : '#b24a3c') : '#8d8478';
+      const markA = checked ? (okA() ? 'arrow-g-good' : 'arrow-g-bad') : 'arrow-g';
+      const [ix1, ix2] = edgeEnds(nodeI, nodeX);
+      elNS('path', { d: edgePath(ix1, ix2), stroke: colorA, 'stroke-width': 3.5, fill: 'none', 'marker-end': `url(#${markA})` }, svg);
+
+      drawBox(svg, { id: 'x', x: X.x, y: X.y, label: GRADES.xLabel }, false);
+      drawBox(svg, { id: 'y', x: Y.x, y: Y.y, label: GRADES.yLabel }, false);
+      drawBox(svg, { id: 'grades', x: G.x, y: G.y, label: G.label }, true);
+      drawBox(svg, { id: 'intel', x: I.x, y: I.y, label: I.label }, true);
+
+      root._dotLayer = elNS('g', {}, svg);
+
+      const questionRow = elH('div', { class: 'path-row' }, pathsBox);
+      elH('span', { class: 'dot-key question' }, questionRow);
+      elH('span', {}, questionRow, `${GRADES.xLabel.replace('\n', ' ')} → ${GRADES.yLabel.replace('\n', ' ')}: the question — every path below either carries this or doesn't`);
+
+      [['Back door via Family SES (direct)', okA()], ['Back door via tutoring → Family SES', okB()]].forEach(([label, ok]) => {
+        const row = elH('div', { class: 'path-row' }, pathsBox);
+        elH('span', { class: 'dot-key' + (checked ? (ok ? ' good' : ' bad') : '') }, row);
+        elH('span', {}, row, `${label}: ${ok ? 'blocked' : 'OPEN (bias)'}`);
+      });
+
+      const nOk = (okA() ? 1 : 0) + (okB() ? 1 : 0);
+      tallyBox.textContent = `${nOk} of 2 back door(s) correctly blocked`;
+
+      if (!checked) {
+        verdictBox.className = 'dag-sim-verdict';
+        verdictBox.textContent = 'Click nodes, then play or check.';
+      } else if (okA() && okB()) {
+        verdictBox.className = 'dag-sim-verdict good';
+        verdictBox.textContent = 'Identified: both back doors are blocked.';
+      } else {
+        verdictBox.className = 'dag-sim-verdict bad';
+        verdictBox.textContent = !okA() ? 'Not identified — the direct back door through Family SES is still open.' : 'Not identified — the longer back door through tutoring is still open.';
+      }
+    }
+
+    async function play() {
+      playToken += 1;
+      const token = playToken;
+      playBtn.disabled = true;
+      const jobs = [];
+      const [qa, qb] = edgeEnds(nodeX, nodeY);
+      jobs.push(animateAlong(root._dotLayer, [qa, qb], 1, 1100, '#62717d').then((d) => {
+        d.setAttribute('r', 11); d.setAttribute('fill', '#62717d'); setTimeout(() => d.remove(), 450);
+      }));
+      const [xToI, iFromX] = edgeEnds(nodeX, nodeI);
+      const [iToY, yFromI] = edgeEnds(nodeI, nodeY);
+      const ptsA = [xToI, iFromX, yFromI];
+      jobs.push((async () => {
+        const segs = okA() ? 2 : 1;
+        const dot = await animateAlong(root._dotLayer, ptsA, segs, 600);
+        if (token !== playToken) return;
+        if (okA()) { dot.setAttribute('r', 14); dot.setAttribute('fill', '#4c8a5e'); }
+        else showBlockAt(root._dotLayer, ptsA[1]);
+        setTimeout(() => dot.remove(), 450);
+      })());
+      const [xToG, gFromX] = edgeEnds(nodeX, nodeG);
+      const [, iFromG] = edgeEnds(nodeG, nodeI);
+      const ptsB = [xToG, gFromX, iFromG, yFromI];
+      jobs.push((async () => {
+        let segs = 3;
+        if (controlled.has('grades')) segs = 1;
+        else if (controlled.has('intel')) segs = 2;
+        const dot = await animateAlong(root._dotLayer, ptsB, segs, 550);
+        if (token !== playToken) return;
+        if (segs === 3) { dot.setAttribute('r', 14); dot.setAttribute('fill', '#4c8a5e'); }
+        else showBlockAt(root._dotLayer, ptsB[segs]);
+        setTimeout(() => dot.remove(), 450);
+      })());
+      await Promise.all(jobs);
+      if (token === playToken) playBtn.disabled = false;
+    }
+
+    playBtn.addEventListener('click', play);
+    root.querySelector('[data-check]').addEventListener('click', () => { checked = true; render(); });
+    root.querySelector('[data-reset]').addEventListener('click', () => { controlled = new Set(); checked = false; playToken += 1; render(); });
+    render();
+  }
+
+  function mount(root) {
+    if (root.dataset.scenario === 'satNested') { mountGrades(root); return; }
+    const scenario = SCENARIOS[root.dataset.scenario];
+    if (!scenario) return;
+    let controlled = new Set();
+    let checked = false;
+    let playToken = 0;
+    const uid = Math.random().toString(36).slice(2, 8);
+
+    root.innerHTML = `
+      <svg class="dag-sim-plot" viewBox="0 0 900 460" role="img" aria-label="Interactive DAG: click a node to control for it"></svg>
+      <div class="dag-sim-bottom">
+        <div class="dag-sim-paths" data-paths></div>
+        <div>
+          <div class="dag-sim-verdict" data-verdict>Click nodes, then play or check.</div>
+          <div class="dag-sim-actions">
+            <button type="button" data-play>▶ Play</button>
+            <button type="button" data-check>Check my answer</button>
+            <button type="button" data-reset>Reset</button>
+          </div>
+          <div class="dag-sim-tally" data-tally></div>
+        </div>
+      </div>`;
+
+    const svg = root.querySelector('svg');
+    const pathsBox = root.querySelector('[data-paths]');
+    const verdictBox = root.querySelector('[data-verdict]');
+    const tallyBox = root.querySelector('[data-tally]');
+    const playBtn = root.querySelector('[data-play]');
+
+    function drawNodeBox(parent, n, { controllable }) {
+      const w = 190, h = 46 + (wrapLines(n.label).length - 1) * 24;
+      const g = elNS('g', { class: 'node' + (controllable ? ' controllable' : '') + (controlled.has(n.id) ? ' controlled' : '') }, parent);
+      elNS('rect', { x: n.x - w / 2, y: n.y - h / 2, width: w, height: h, rx: 10, fill: 'white', stroke: '#18324a', 'stroke-width': 2.5 }, g);
+      wrapLines(n.label).forEach((line, i, arr) => {
+        elNS('text', { x: n.x, y: n.y - (arr.length - 1) * 11 + i * 22 + 7, 'text-anchor': 'middle', 'font-size': 20, 'font-weight': 700, fill: '#18232d' }, g, line);
+      });
+      if (controllable) {
+        g.addEventListener('click', () => {
+          if (controlled.has(n.id)) controlled.delete(n.id); else controlled.add(n.id);
+          checked = false;
+          render();
+        });
+      }
+      return g;
+    }
+
+    function render() {
+      svg.innerHTML = '';
+      pathsBox.innerHTML = '';
+      const xNode = { id: 'x', x: X.x, y: X.y, label: scenario.xLabel };
+      const yNode = { id: 'y', x: Y.x, y: Y.y, label: scenario.yLabel };
+
+      const defs = elNS('defs', {}, svg);
+      [[`arrow-${uid}`, '#8d8478']].forEach(([id, color]) => {
+        const marker = elNS('marker', { id, viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+        elNS('path', { d: 'M 0 0 L 10 5 L 0 10 z', fill: color }, marker);
+      });
+
+      // The question itself: is X related to Y at all? Always drawn, always
+      // dotted (we don't yet know if this is causal, confounded, mediated,
+      // or collider-induced), and always animated by Play.
+      elNS('path', { d: edgePath(pt(X.x + 95, X.y), pt(Y.x - 95, Y.y)), stroke: '#62717d', 'stroke-width': 3, 'stroke-dasharray': '2 7', 'stroke-linecap': 'round', fill: 'none' }, svg);
+      elNS('text', { x: (X.x + Y.x) / 2, y: X.y - 14, 'text-anchor': 'middle', 'font-size': 15, 'font-style': 'italic', fill: '#62717d' }, svg, 'the relationship we want to identify');
+
+      scenario.mids.forEach((mid) => {
+        const geo = geometry(mid);
+        geo.drawn.forEach(([a, b]) => {
+          elNS('path', { d: edgePath(a, b), class: 'edge', stroke: '#8d8478', 'stroke-width': 3.5, fill: 'none', 'marker-end': `url(#arrow-${uid})` }, svg);
+        });
+        if (geo.virtual && isPathOpen(mid, controlled)) {
+          const [a, b] = geo.virtual;
+          elNS('path', { d: edgePath(a, b), class: 'edge', stroke: '#b24a3c', 'stroke-width': 3.5, 'stroke-dasharray': '7 6', fill: 'none', opacity: .85 }, svg);
+        }
+      });
+
+      if (scenario.correlate) {
+        const [idA, idB] = scenario.correlate;
+        const a = scenario.mids.find((m) => m.id === idA);
+        const b = scenario.mids.find((m) => m.id === idB);
+        if (a && b) {
+          const midx = (a.x + b.x) / 2, bow = Math.min(a.y, b.y) - 38;
+          elNS('path', { d: `M ${a.x} ${a.y - 30} Q ${midx} ${bow} ${b.x} ${b.y - 30}`, stroke: '#8d8478', 'stroke-width': 2.5, 'stroke-dasharray': '5 5', fill: 'none' }, svg);
+          elNS('text', { x: midx, y: bow - 8, 'text-anchor': 'middle', 'font-size': 16, 'font-style': 'italic', fill: '#62717d' }, svg, 'correlated');
+        }
+      }
+
+      drawNodeBox(svg, xNode, { controllable: false });
+      drawNodeBox(svg, yNode, { controllable: false });
+      scenario.mids.forEach((mid) => drawNodeBox(svg, mid, { controllable: true }));
+
+      const dotLayer = elNS('g', { class: 'dag-sim-dots' }, svg);
+      root._dotLayer = dotLayer;
+
+      const questionRow = elH('div', { class: 'path-row' }, pathsBox);
+      elH('span', { class: 'dot-key question' }, questionRow);
+      elH('span', {}, questionRow, `${scenario.xLabel.replace('\n', ' ')} → ${scenario.yLabel.replace('\n', ' ')}: the question — every path below either carries this or doesn't`);
+
+      scenario.mids.forEach((mid) => {
+        const { ok, label } = statusOf(mid, controlled);
+        const row = elH('div', { class: 'path-row' }, pathsBox);
+        elH('span', { class: 'dot-key' + (checked ? (ok ? ' good' : ' bad') : '') }, row);
+        elH('span', {}, row, `${mid.label.replace('\n', ' ')}: ${label}`);
+      });
+
+      const nOk = scenario.mids.filter((m) => statusOf(m, controlled).ok).length;
+      tallyBox.textContent = `${nOk} of ${scenario.mids.length} path(s) correctly handled`;
+
+      if (!checked) {
+        verdictBox.className = 'dag-sim-verdict';
+        verdictBox.textContent = 'Click nodes, then play or check.';
+      } else {
+        const bad = scenario.mids.filter((m) => !statusOf(m, controlled).ok);
+        if (bad.length === 0) {
+          verdictBox.className = 'dag-sim-verdict good';
+          verdictBox.textContent = 'Identified: the total effect of X on Y is correctly estimated.';
+        } else {
+          verdictBox.className = 'dag-sim-verdict bad';
+          const first = statusOf(bad[0], controlled).label;
+          verdictBox.textContent = `Not identified — ${bad.length} problem(s). ${bad[0].label.replace('\n', ' ')}: ${first}.`;
+        }
+      }
+    }
+
+    function animateDot(a, b, duration) {
+      return new Promise((resolve) => {
+        const dot = elNS('circle', { r: 10, fill: '#2f6687' }, root._dotLayer);
+        const start = performance.now();
+        function step(now) {
+          const t = Math.min(1, (now - start) / duration);
+          dot.setAttribute('cx', a.x + (b.x - a.x) * t);
+          dot.setAttribute('cy', a.y + (b.y - a.y) * t);
+          if (t < 1) requestAnimationFrame(step);
+          else resolve(dot);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+
+    function showBlock(p) {
+      elNS('line', { x1: p.x - 14, y1: p.y - 24, x2: p.x - 14, y2: p.y + 24, class: 'block-mark show' }, root._dotLayer);
+    }
+
+    async function playOne(mid, token) {
+      const geo = geometry(mid);
+      const open = isPathOpen(mid, controlled);
+      const dot = await animateDot(geo.seg1[0], geo.seg1[1], 650);
+      if (token !== playToken) return;
+      if (!open) {
+        showBlock(geo.seg1[1]);
+        setTimeout(() => dot.remove(), 500);
+        return;
+      }
+      await animateDot(geo.seg2[0], geo.seg2[1], 650).then((d2) => {
+        dot.remove();
+        if (token !== playToken) return;
+        d2.setAttribute('r', 14);
+        d2.setAttribute('fill', '#4c8a5e');
+        setTimeout(() => d2.remove(), 450);
+      });
+    }
+
+    async function play() {
+      playToken += 1;
+      const token = playToken;
+      playBtn.disabled = true;
+      const jobs = [];
+      // The question itself always completes the trip — it's what we're asking,
+      // not something that can be blocked. Its own dot is deliberately plain
+      // and muted so it doesn't get confused with a verdict.
+      jobs.push(animateDot(pt(X.x + 95, X.y), pt(Y.x - 95, Y.y), 1100).then((d) => {
+        d.setAttribute('r', 11);
+        d.setAttribute('fill', '#62717d');
+        setTimeout(() => d.remove(), 450);
+      }));
+      scenario.mids.forEach((mid) => jobs.push(playOne(mid, token)));
+      await Promise.all(jobs);
+      if (token === playToken) playBtn.disabled = false;
+    }
+
+    playBtn.addEventListener('click', play);
+    root.querySelector('[data-check]').addEventListener('click', () => { checked = true; render(); });
+    root.querySelector('[data-reset]').addEventListener('click', () => { controlled = new Set(); checked = false; playToken += 1; render(); });
+    render();
+  }
+
+  document.querySelectorAll('.dag-sim-mount').forEach(mount);
+})();
+</script>

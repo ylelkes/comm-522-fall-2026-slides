@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="280.512pt" viewBox="0 0 628.2 280.512" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-08T14:13:32.629760</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 280.512 
+L 628.2 280.512 
+L 628.2 0 
+L 0 0 
+L 0 280.512 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 93.132 79.449408 
+Q 93.132 93.6864 93.132 104.56929 
+" clip-path="url(#p35cf3430d1)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 97.532 95.76929 
+L 93.132 104.56929 
+L 88.732 95.76929 
+z
+" clip-path="url(#p35cf3430d1)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 93.132 172.588608 
+Q 93.132 186.8256 93.132 197.70849 
+" clip-path="url(#p35cf3430d1)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 97.532 188.90849 
+L 93.132 197.70849 
+L 88.732 188.90849 
+z
+" clip-path="url(#p35cf3430d1)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 535.068 79.449408 
+Q 535.068 140.256 535.068 198.602917 
+" clip-path="url(#p35cf3430d1)" style="fill: none; stroke: #c8c2b7; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 539.468 189.802917 
+L 535.068 198.602917 
+L 530.668 189.802917 
+z
+" clip-path="url(#p35cf3430d1)" style="fill: #c8c2b7; stroke: #c8c2b7; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 187.6572 160.17744 
+Q 314.1 186.8256 437.260794 212.782068 
+" clip-path="url(#p35cf3430d1)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 429.557329 206.661887 
+L 437.260794 212.782068 
+L 427.74257 215.272732 
+z
+" clip-path="url(#p35cf3430d1)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 15.1794 78.917184 
+L 171.0846 78.917184 
+Q 186.4296 78.917184 186.4296 72.264384 
+L 186.4296 21.969216 
+Q 186.4296 15.316416 171.0846 15.316416 
+L 15.1794 15.316416 
+Q -0.1656 15.316416 -0.1656 21.969216 
+L -0.1656 72.264384 
+Q -0.1656 78.917184 15.1794 78.917184 
+z
+" clip-path="url(#p35cf3430d1)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 15.1794 172.056384 
+L 171.0846 172.056384 
+Q 186.4296 172.056384 186.4296 165.403584 
+L 186.4296 115.108416 
+Q 186.4296 108.455616 171.0846 108.455616 
+L 15.1794 108.455616 
+Q -0.1656 108.455616 -0.1656 115.108416 
+L -0.1656 165.403584 
+Q -0.1656 172.056384 15.1794 172.056384 
+z
+" clip-path="url(#p35cf3430d1)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 15.1794 265.195584 
+L 171.0846 265.195584 
+Q 186.4296 265.195584 186.4296 258.542784 
+L 186.4296 208.247616 
+Q 186.4296 201.594816 171.0846 201.594816 
+L 15.1794 201.594816 
+Q -0.1656 201.594816 -0.1656 208.247616 
+L -0.1656 258.542784 
+Q -0.1656 265.195584 15.1794 265.195584 
+z
+" clip-path="url(#p35cf3430d1)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 457.1154 78.917184 
+L 613.0206 78.917184 
+Q 628.3656 78.917184 628.3656 72.264384 
+L 628.3656 21.969216 
+Q 628.3656 15.316416 613.0206 15.316416 
+L 457.1154 15.316416 
+Q 441.7704 15.316416 441.7704 21.969216 
+L 441.7704 72.264384 
+Q 441.7704 78.917184 457.1154 78.917184 
+z
+" clip-path="url(#p35cf3430d1)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 457.1154 265.195584 
+L 613.0206 265.195584 
+Q 628.3656 265.195584 628.3656 258.542784 
+L 628.3656 208.247616 
+Q 628.3656 201.594816 613.0206 201.594816 
+L 457.1154 201.594816 
+Q 441.7704 201.594816 441.7704 208.247616 
+L 441.7704 258.542784 
+Q 441.7704 265.195584 457.1154 265.195584 
+z
+" clip-path="url(#p35cf3430d1)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(56.571219 42.08905)">A assigned:</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(60.720906 60.601425)">deactivate</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(67.988875 136.615125)">A's own</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(81.981219 152.445625)">use</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(83.150438 229.754325)">A's</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(58.642781 245.577169)">depression</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(498.248 42.08905)">B assigned:</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(475.421438 60.601425)">continue as normal</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(524.827219 229.754325)">B's</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(500.578781 245.577169)">depression</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p35cf3430d1">
+   <rect x="7.2" y="7.2" width="613.8" height="266.112"/>
+  </clipPath>
+ </defs>
+</svg>

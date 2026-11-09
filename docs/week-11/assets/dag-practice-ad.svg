@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="572.4pt" height="280.512pt" viewBox="0 0 572.4 280.512" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-02T09:38:28.823505</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 280.512 
+L 572.4 280.512 
+L 572.4 0 
+L 0 0 
+L 0 280.512 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 249.219818 76.788288 
+Q 185.76 132.27264 124.825248 185.549269 
+" clip-path="url(#pe7f24c48b0)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 134.346296 183.06942 
+L 124.825248 185.549269 
+L 128.553998 176.444522 
+z
+" clip-path="url(#pe7f24c48b0)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 323.180182 76.788288 
+Q 386.64 132.27264 447.574752 185.549269 
+" clip-path="url(#pe7f24c48b0)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 443.846002 176.444522 
+L 447.574752 185.549269 
+L 438.053704 183.06942 
+z
+" clip-path="url(#pe7f24c48b0)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 171.252 195.045504 
+Q 185.76 190.81728 197.047867 187.527534 
+" clip-path="url(#pe7f24c48b0)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 187.368233 185.76552 
+L 197.047867 187.527534 
+L 189.830475 194.214033 
+z
+" clip-path="url(#pe7f24c48b0)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 372.132 186.589056 
+Q 386.64 190.81728 397.927867 194.107026 
+" clip-path="url(#pe7f24c48b0)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 390.710475 187.420527 
+L 397.927867 194.107026 
+L 388.248233 195.86904 
+z
+" clip-path="url(#pe7f24c48b0)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 171.252 220.0896 
+Q 286.2 220.0896 397.793898 220.0896 
+" clip-path="url(#pe7f24c48b0)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 388.993898 215.6896 
+L 397.793898 220.0896 
+L 388.993898 224.4896 
+z
+" clip-path="url(#pe7f24c48b0)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 215.334 76.256064 
+L 357.066 76.256064 
+Q 371.016 76.256064 371.016 69.603264 
+L 371.016 19.308096 
+Q 371.016 12.655296 357.066 12.655296 
+L 215.334 12.655296 
+Q 201.384 12.655296 201.384 19.308096 
+L 201.384 69.603264 
+Q 201.384 76.256064 215.334 76.256064 
+z
+" clip-path="url(#pe7f24c48b0)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 14.454 251.889984 
+L 156.186 251.889984 
+Q 170.136 251.889984 170.136 245.237184 
+L 170.136 194.942016 
+Q 170.136 188.289216 156.186 188.289216 
+L 14.454 188.289216 
+Q 0.504 188.289216 0.504 194.942016 
+L 0.504 245.237184 
+Q 0.504 251.889984 14.454 251.889984 
+z
+" clip-path="url(#pe7f24c48b0)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 215.334 193.345344 
+L 357.066 193.345344 
+Q 371.016 193.345344 371.016 186.692544 
+L 371.016 136.397376 
+Q 371.016 129.744576 357.066 129.744576 
+L 215.334 129.744576 
+Q 201.384 129.744576 201.384 136.397376 
+L 201.384 186.692544 
+Q 201.384 193.345344 215.334 193.345344 
+z
+" clip-path="url(#pe7f24c48b0)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 416.214 251.889984 
+L 557.946 251.889984 
+Q 571.896 251.889984 571.896 245.237184 
+L 571.896 194.942016 
+Q 571.896 188.289216 557.946 188.289216 
+L 416.214 188.289216 
+Q 402.264 188.289216 402.264 194.942016 
+L 402.264 245.237184 
+Q 402.264 251.889984 416.214 251.889984 
+z
+" clip-path="url(#pe7f24c48b0)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(257.6075 38.72593)">Party ID</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(208.255 58.41668)">(before the campaign)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(54.05625 216.0236)">Sees the</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(38.78375 233.9156)">campaign ad</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(242.64875 157.44771)">Views of the</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(250.78375 176.95596)">candidate</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(455.37625 215.99235)">Votes for</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(438.17625 235.5006)">the candidate</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe7f24c48b0">
+   <rect x="7.2" y="7.2" width="558" height="266.112"/>
+  </clipPath>
+ </defs>
+</svg>
