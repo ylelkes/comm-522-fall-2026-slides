@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="750.96pt" height="277.408pt" viewBox="0 0 750.96 277.408" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-13T17:09:41.879448</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 277.408 
+L 750.96 277.408 
+L 750.96 0 
+L 0 0 
+L 0 277.408 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 155.825446 92.500624 
+Q 124.38 142.1416 94.729424 188.949126 
+" clip-path="url(#p167ed86dad)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 103.155536 183.869693 
+L 94.729424 188.949126 
+L 95.721546 179.160576 
+z
+" clip-path="url(#p167ed86dad)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 193.374554 92.500624 
+Q 224.82 142.1416 254.470576 188.949126 
+" clip-path="url(#p167ed86dad)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 253.478454 179.160576 
+L 254.470576 188.949126 
+L 246.044464 183.869693 
+z
+" clip-path="url(#p167ed86dad)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 139.1112 221.4208 
+Q 174.6 221.4208 207.629125 221.4208 
+" clip-path="url(#p167ed86dad)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 198.829125 217.0208 
+L 207.629125 221.4208 
+L 198.829125 225.8208 
+z
+" clip-path="url(#p167ed86dad)" style="fill: #62717d; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18324a" x="174.6" y="22.8" transform="rotate(-0 174.6 22.8)">Naive: winners vs. losers</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 118.6884 92.012752 
+L 230.5116 92.012752 
+Q 238.8816 92.012752 238.8816 85.914352 
+L 238.8816 39.810448 
+Q 238.8816 33.712048 230.5116 33.712048 
+L 118.6884 33.712048 
+Q 110.3184 33.712048 110.3184 39.810448 
+L 110.3184 85.914352 
+Q 110.3184 92.012752 118.6884 92.012752 
+z
+" clip-path="url(#p167ed86dad)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 18.2484 250.571152 
+L 130.0716 250.571152 
+Q 138.4416 250.571152 138.4416 244.472752 
+L 138.4416 198.368848 
+Q 138.4416 192.270448 130.0716 192.270448 
+L 18.2484 192.270448 
+Q 9.8784 192.270448 9.8784 198.368848 
+L 9.8784 244.472752 
+Q 9.8784 250.571152 18.2484 250.571152 
+z
+" clip-path="url(#p167ed86dad)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 219.1284 250.571152 
+L 330.9516 250.571152 
+Q 339.3216 250.571152 339.3216 244.472752 
+L 339.3216 198.368848 
+Q 339.3216 192.270448 330.9516 192.270448 
+L 219.1284 192.270448 
+Q 210.7584 192.270448 210.7584 198.368848 
+L 210.7584 244.472752 
+Q 210.7584 250.571152 219.1284 250.571152 
+z
+" clip-path="url(#p167ed86dad)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(124.940469 57.918869)">Talent, proposal</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(125.467656 74.974369)">quality, network</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(39.16 216.407269)">Wins early-</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(36.436563 233.224331)">career grant</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(259.094219 217.779925)">Later</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(251.570313 233.574331)">funding</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_8">
+    <path d="M 558.2808 60.42304 
+Q 542.88 60.42304 530.833302 60.42304 
+" clip-path="url(#p55008d3d15)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 539.633302 64.82304 
+L 530.833302 60.42304 
+L 539.633302 56.02304 
+z
+" clip-path="url(#p55008d3d15)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 464.920835 90.061264 
+Q 469.224 143.36128 473.25725 193.318072 
+" clip-path="url(#p55008d3d15)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 476.934818 184.192531 
+L 473.25725 193.318072 
+L 468.163359 184.900693 
+z
+" clip-path="url(#p55008d3d15)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 632.803341 90.061264 
+Q 650.016 143.36128 666.197904 193.469503 
+" clip-path="url(#p55008d3d15)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 667.68064 183.743173 
+L 666.197904 193.469503 
+L 659.306482 186.447516 
+z
+" clip-path="url(#p55008d3d15)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 540.8712 226.29952 
+Q 576.36 226.29952 608.494698 226.29952 
+" clip-path="url(#p55008d3d15)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 599.694698 221.89952 
+L 608.494698 226.29952 
+L 599.694698 230.69952 
+z
+" clip-path="url(#p55008d3d15)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18324a" x="576.36" y="22.8" transform="rotate(-0 576.36 22.8)">Design: compare at (almost) the same rank</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 567.3204 89.573392 
+L 679.1436 89.573392 
+Q 687.5136 89.573392 687.5136 83.474992 
+L 687.5136 37.371088 
+Q 687.5136 31.272688 679.1436 31.272688 
+L 567.3204 31.272688 
+Q 558.9504 31.272688 558.9504 37.371088 
+L 558.9504 83.474992 
+Q 558.9504 89.573392 567.3204 89.573392 
+z
+" clip-path="url(#p55008d3d15)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 406.6164 89.573392 
+L 518.4396 89.573392 
+Q 526.8096 89.573392 526.8096 83.474992 
+L 526.8096 37.371088 
+Q 526.8096 31.272688 518.4396 31.272688 
+L 406.6164 31.272688 
+Q 398.2464 31.272688 398.2464 37.371088 
+L 398.2464 83.474992 
+Q 398.2464 89.573392 406.6164 89.573392 
+z
+" clip-path="url(#p55008d3d15)" style="fill: #f4dfae; stroke: #b24a3c; stroke-width: 3.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 420.0084 255.449872 
+L 531.8316 255.449872 
+Q 540.2016 255.449872 540.2016 249.351472 
+L 540.2016 203.247568 
+Q 540.2016 197.149168 531.8316 197.149168 
+L 420.0084 197.149168 
+Q 411.6384 197.149168 411.6384 203.247568 
+L 411.6384 249.351472 
+Q 411.6384 255.449872 420.0084 255.449872 
+z
+" clip-path="url(#p55008d3d15)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 620.8884 255.449872 
+L 732.7116 255.449872 
+Q 741.0816 255.449872 741.0816 249.351472 
+L 741.0816 203.247568 
+Q 741.0816 197.149168 732.7116 197.149168 
+L 620.8884 197.149168 
+Q 612.5184 197.149168 612.5184 203.247568 
+L 612.5184 249.351472 
+Q 612.5184 255.449872 620.8884 255.449872 
+z
+" clip-path="url(#p55008d3d15)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(573.572469 55.479509)">Talent, proposal</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(574.099656 72.535009)">quality, network</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(418.960656 56.782165)">Rank near the</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(433.352219 73.907665)">threshold</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(440.92 221.285989)">Wins early-</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(438.196562 238.103051)">career grant</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(660.854219 222.658645)">Later</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(653.330312 238.453051)">funding</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p167ed86dad">
+   <rect x="7.2" y="26.272" width="334.8" height="243.936"/>
+  </clipPath>
+  <clipPath id="p55008d3d15">
+   <rect x="408.96" y="26.272" width="334.8" height="243.936"/>
+  </clipPath>
+ </defs>
+</svg>

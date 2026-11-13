@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="213.984pt" viewBox="0 0 460.8 213.984" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-13T17:09:41.271726</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 213.984 
+L 460.8 213.984 
+L 460.8 0 
+L 0 0 
+L 0 213.984 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 86.539015 131.141664 
+Q 145.584 95.01696 201.767889 60.642722 
+" clip-path="url(#p2cd9b8e0d8)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 191.965058 61.482076 
+L 201.767889 60.642722 
+L 196.557674 68.988599 
+z
+" clip-path="url(#p2cd9b8e0d8)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 256.171015 58.892256 
+Q 315.216 95.01696 371.399889 129.391198 
+" clip-path="url(#p2cd9b8e0d8)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 366.189674 121.045321 
+L 371.399889 129.391198 
+L 361.597058 128.551844 
+z
+" clip-path="url(#p2cd9b8e0d8)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 120.5856 146.9088 
+Q 230.4 146.9088 336.860298 146.9088 
+" clip-path="url(#p2cd9b8e0d8)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 328.060298 142.5088 
+L 336.860298 146.9088 
+L 328.060298 151.3088 
+z
+" clip-path="url(#p2cd9b8e0d8)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 13.0032 162.276768 
+L 108.5328 162.276768 
+Q 119.6928 162.276768 119.6928 157.287168 
+L 119.6928 136.530432 
+Q 119.6928 131.540832 108.5328 131.540832 
+L 13.0032 131.540832 
+Q 1.8432 131.540832 1.8432 136.530432 
+L 1.8432 157.287168 
+Q 1.8432 162.276768 13.0032 162.276768 
+z
+" clip-path="url(#p2cd9b8e0d8)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 182.6352 58.493088 
+L 278.1648 58.493088 
+Q 289.3248 58.493088 289.3248 53.503488 
+L 289.3248 32.746752 
+Q 289.3248 27.757152 278.1648 27.757152 
+L 182.6352 27.757152 
+Q 171.4752 27.757152 171.4752 32.746752 
+L 171.4752 53.503488 
+Q 171.4752 58.493088 182.6352 58.493088 
+z
+" clip-path="url(#p2cd9b8e0d8)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 352.2672 162.276768 
+L 447.7968 162.276768 
+Q 458.9568 162.276768 458.9568 157.287168 
+L 458.9568 136.530432 
+Q 458.9568 131.540832 447.7968 131.540832 
+L 352.2672 131.540832 
+Q 341.1072 131.540832 341.1072 136.530432 
+L 341.1072 157.287168 
+Q 341.1072 162.276768 352.2672 162.276768 
+z
+" clip-path="url(#p2cd9b8e0d8)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18232d" x="60.768" y="152.5338" transform="rotate(-0 60.768 152.5338)">Treatment X</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18232d" x="230.4" y="48.75012" transform="rotate(-0 230.4 48.75012)">Mediator M</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18232d" x="400.032" y="152.6288" transform="rotate(-0 400.032 152.6288)">Outcome Y</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2cd9b8e0d8">
+   <rect x="7.2" y="7.2" width="446.4" height="199.584"/>
+  </clipPath>
+ </defs>
+</svg>

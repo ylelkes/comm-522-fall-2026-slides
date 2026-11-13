@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="834.66pt" height="308.496pt" viewBox="0 0 834.66 308.496" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-09T09:46:49.029631</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 308.496 
+L 834.66 308.496 
+L 834.66 0 
+L 0 0 
+L 0 308.496 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 99.841129 97.2768 
+Q 127.826471 97.2768 152.45771 97.2768 
+" clip-path="url(#pc2343b5b8a)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 143.65771 92.8768 
+L 152.45771 97.2768 
+L 143.65771 101.6768 
+z
+" clip-path="url(#pc2343b5b8a)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18324a" transform="translate(59.721471 23.032)">Political feedback</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18324a" transform="translate(62.526471 42.568)">(sign ambiguous)</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 17.573876 127.752168 
+L 93.3273 127.752168 
+Q 99.358624 127.752168 99.358624 121.376568 
+L 99.358624 73.177032 
+Q 99.358624 66.801432 93.3273 66.801432 
+L 17.573876 66.801432 
+Q 11.542553 66.801432 11.542553 73.177032 
+L 11.542553 121.376568 
+Q 11.542553 127.752168 17.573876 127.752168 
+z
+" clip-path="url(#pc2343b5b8a)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 162.325641 127.752168 
+L 238.079065 127.752168 
+Q 244.110388 127.752168 244.110388 121.376568 
+L 244.110388 73.177032 
+Q 244.110388 66.801432 238.079065 66.801432 
+L 162.325641 66.801432 
+Q 156.294318 66.801432 156.294318 73.177032 
+L 156.294318 121.376568 
+Q 156.294318 127.752168 162.325641 127.752168 
+z
+" clip-path="url(#pc2343b5b8a)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(16.048244 93.635925)">Earlier White</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(14.491838 109.458769)">racial politics</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(165.593915 93.635925)">Later racial</text>
+    <text style="font-size: 14px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(161.561259 109.458769)">composition</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 399.069008 126.349536 
+Q 378.775924 172.82766 359.824946 216.231902 
+" clip-path="url(#p508a66ebcc)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 367.378566 209.927711 
+L 359.824946 216.231902 
+L 359.313765 206.406491 
+z
+" clip-path="url(#p508a66ebcc)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 435.590992 126.349536 
+Q 455.884076 172.82766 474.835054 216.231902 
+" clip-path="url(#p508a66ebcc)" style="fill: none; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 475.346235 206.406491 
+L 474.835054 216.231902 
+L 467.281434 209.927711 
+z
+" clip-path="url(#p508a66ebcc)" style="fill: #b24a3c; stroke: #b24a3c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 386.932129 250.2912 
+Q 417.33 250.2912 445.268196 250.2912 
+" clip-path="url(#p508a66ebcc)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 436.468196 245.8912 
+L 445.268196 250.2912 
+L 436.468196 254.6912 
+z
+" clip-path="url(#p508a66ebcc)" style="fill: #62717d; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18324a" x="417.33" y="43.017" transform="rotate(-0 417.33 43.017)">Regional confounder</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 381.865818 125.839488 
+L 452.794182 125.839488 
+Q 458.825506 125.839488 458.825506 119.463888 
+L 458.825506 49.587312 
+Q 458.825506 43.211712 452.794182 43.211712 
+L 381.865818 43.211712 
+Q 375.834494 43.211712 375.834494 49.587312 
+L 375.834494 119.463888 
+Q 375.834494 125.839488 381.865818 125.839488 
+z
+" clip-path="url(#p508a66ebcc)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 309.489935 280.766568 
+L 380.4183 280.766568 
+Q 386.449624 280.766568 386.449624 274.390968 
+L 386.449624 226.191432 
+Q 386.449624 219.815832 380.4183 219.815832 
+L 309.489935 219.815832 
+Q 303.458612 219.815832 303.458612 226.191432 
+L 303.458612 274.390968 
+Q 303.458612 280.766568 309.489935 280.766568 
+z
+" clip-path="url(#p508a66ebcc)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 454.2417 280.766568 
+L 525.170065 280.766568 
+Q 531.201388 280.766568 531.201388 274.390968 
+L 531.201388 226.191432 
+Q 531.201388 219.815832 525.170065 219.815832 
+L 454.2417 219.815832 
+Q 448.210376 219.815832 448.210376 226.191432 
+L 448.210376 274.390968 
+Q 448.210376 280.766568 454.2417 280.766568 
+z
+" clip-path="url(#p508a66ebcc)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(382.295 73.193662)">Plantation &amp;</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(383.261875 87.8081)">segregation</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(397.83 103.723553)">history</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(311.126696 246.910387)">Local Black</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(329.061618 262.812637)">share</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(473.092289 246.910387)">White</text>
+    <text style="font-size: 13px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(450.939476 262.812637)">conservatism</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_11">
+    <path d="M 657.135424 173.784 
+Q 667.026794 173.784 673.564063 173.784 
+" clip-path="url(#p32d4f029c4)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 664.764063 169.384 
+L 673.564063 173.784 
+L 664.764063 178.184 
+z
+" clip-path="url(#p32d4f029c4)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 736.748894 173.784 
+Q 746.640265 173.784 753.177533 173.784 
+" clip-path="url(#p32d4f029c4)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 744.377533 169.384 
+L 753.177533 173.784 
+L 744.377533 178.184 
+z
+" clip-path="url(#p32d4f029c4)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #18324a" x="706.833529" y="43.7765" transform="rotate(-0 706.833529 43.7765)">Causal threat story</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 603.818524 204.259368 
+L 650.621594 204.259368 
+Q 656.652918 204.259368 656.652918 197.883768 
+L 656.652918 149.684232 
+Q 656.652918 143.308632 650.621594 143.308632 
+L 603.818524 143.308632 
+Q 597.7872 143.308632 597.7872 149.684232 
+L 597.7872 197.883768 
+Q 597.7872 204.259368 603.818524 204.259368 
+z
+" clip-path="url(#p32d4f029c4)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 683.431994 204.259368 
+L 730.235065 204.259368 
+Q 736.266388 204.259368 736.266388 197.883768 
+L 736.266388 149.684232 
+Q 736.266388 143.308632 730.235065 143.308632 
+L 683.431994 143.308632 
+Q 677.400671 143.308632 677.400671 149.684232 
+L 677.400671 197.883768 
+Q 677.400671 204.259368 683.431994 204.259368 
+z
+" clip-path="url(#p32d4f029c4)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 763.045465 204.259368 
+L 809.848535 204.259368 
+Q 815.879859 204.259368 815.879859 197.883768 
+L 815.879859 149.684232 
+Q 815.879859 143.308632 809.848535 143.308632 
+L 763.045465 143.308632 
+Q 757.014141 143.308632 757.014141 149.684232 
+L 757.014141 197.883768 
+Q 757.014141 204.259368 763.045465 204.259368 
+z
+" clip-path="url(#p32d4f029c4)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(602.50002 171.313406)">Local Black</text>
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(615.606309 182.934281)">share</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(693.196576 171.369812)">Status</text>
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(694.602279 182.934281)">threat</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(774.306297 171.313406)">White</text>
+    <text style="font-size: 9.5px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(758.117703 182.934281)">conservatism</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc2343b5b8a">
+   <rect x="7.2" y="46.272" width="241.252941" height="255.024"/>
+  </clipPath>
+  <clipPath id="p508a66ebcc">
+   <rect x="296.703529" y="46.272" width="241.252941" height="255.024"/>
+  </clipPath>
+  <clipPath id="p32d4f029c4">
+   <rect x="586.207059" y="46.272" width="241.252941" height="255.024"/>
+  </clipPath>
+ </defs>
+</svg>

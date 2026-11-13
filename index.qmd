@@ -8,6 +8,26 @@ format:
     link-external-newwindow: true
 ---
 
+## Week 12
+
+### Mechanisms, Moderators, and Natural Experiments
+
+Finishing Craig and Richeson's mechanism manipulation, mediation with Mutz and Rao's latte study, moderation with Petty, Cacioppo, and Goldman, a natural-experiment toolbox from Dunning and Grosz et al., and deep dives on Bol et al.'s funding threshold and Balcells and Torrats-Espinosa's attacks during survey fieldwork.
+
+[Student slides — no speaker notes](week-12/student.html){.btn .btn-primary role="button"}
+
+[Plain presentation — notes in Speaker View](week-12/presenter.html) · [Slides with visible notes](week-12/with-notes.html) · [Instructor discussion notes](week-12/instructor-notes.html)
+
+## Week 11
+
+### Experiments, from DAGs to Design
+
+Closing the back door by design: DAG practice, Druckman on what makes something an experiment and how to evaluate it, and full cases on Correll, Benard, and Paik's motherhood penalty and Craig and Richeson's majority-minority status threat.
+
+[Student slides — no speaker notes](week-11/student.html){.btn .btn-primary role="button"}
+
+[Plain presentation — notes in Speaker View](week-11/presenter.html) · [Slides with visible notes](week-11/with-notes.html) · [Instructor discussion notes](week-11/instructor-notes.html)
+
 ## Week 10
 
 ### Causality: Counterfactuals, Selection, and DAGs
