@@ -946,6 +946,22 @@ Give Dunning's definition through the hallmarks of a true experiment. A natural 
 His joke, that natural experiments are “neither natural nor experiments,” makes two points. The interventions are usually human, such as lotteries, laws, and borders, not natural. And they are not experiments, because no researcher assigned anything. Everything rests on the claim that assignment was as good as random, and that claim has to be supported with evidence about how assignment happened and whether groups look balanced.
 :::
 
+## Snow's map: two companies, one neighborhood {#snow-map}
+
+![](assets/snow-map2-water-companies.jpg){fig-alt="John Snow's 1855 map of south London water supply: areas served by the Southwark and Vauxhall Company, the Lambeth Company, and a large central area where both companies' pipes are intermingled" width="70%"}
+
+Blue (faded to green): **Southwark & Vauxhall** · Red: **Lambeth** · Purple (center): **both companies' pipes intermingled**
+
+::: source
+Source: John Snow (1855), *On the Mode of Communication of Cholera*, 2nd ed., Map 2. Wellcome Collection, CC BY 4.0.
+:::
+
+::: notes
+Show Snow's second map before the logic. It covers the districts south of the Thames. Snow's legend: blue for the Southwark and Vauxhall Company, red for the Lambeth Company, and purple for the area in which the pipes of both companies are intermingled. On this scan the blue has faded to green.
+
+Point to the large purple area in the center, around Kennington, Walworth, and Southwark. There, the two companies' pipes ran down the same streets, and neighboring houses could get water from different companies. Ask: what does that mixing let Snow compare? Houses on the same street, with similar residents, similar air, and similar poverty, that differ mainly in which company pumped their water. That is the as-if random assignment, and the next slide draws it.
+:::
+
 ## The first natural experiment: John Snow and cholera {#snow}
 
 ::: two-column

@@ -424,7 +424,13 @@ Give Dunning's definition through the hallmarks of a true experiment. A natural 
 
 His joke, that natural experiments are “neither natural nor experiments,” makes two points. The interventions are usually human, such as lotteries, laws, and borders, not natural. And they are not experiments, because no researcher assigned anything. Everything rests on the claim that assignment was as good as random, and that claim has to be supported with evidence about how assignment happened and whether groups look balanced.
 
-### Slide 39: The first natural experiment: John Snow and cholera
+### Slide 39: Snow's map: two companies, one neighborhood
+
+Show Snow's second map before the logic. It covers the districts south of the Thames. Snow's legend: blue for the Southwark and Vauxhall Company, red for the Lambeth Company, and purple for the area in which the pipes of both companies are intermingled. On this scan the blue has faded to green.
+
+Point to the large purple area in the center, around Kennington, Walworth, and Southwark. There, the two companies' pipes ran down the same streets, and neighboring houses could get water from different companies. Ask: what does that mixing let Snow compare? Houses on the same street, with similar residents, similar air, and similar poverty, that differ mainly in which company pumped their water. That is the as-if random assignment, and the next slide draws it.
+
+### Slide 40: The first natural experiment: John Snow and cholera
 
 Tell Snow's story as the template. In 1853–54, two water companies supplied London households. Lambeth had moved its intake upstream of the city's sewage in 1852; Southwark and Vauxhall still drew water downstream. Comparing neighborhoods would be confounded, because poor, crowded neighborhoods might have both dirtier water and more cholera for other reasons, including the then-popular “bad air” theory.
 
@@ -432,13 +438,13 @@ Snow's insight was that the two companies' pipes were intermixed house by house,
 
 The result: 315 deaths per 10,000 houses supplied by Southwark and Vauxhall, versus 37 for Lambeth and 56 for the rest of London.
 
-### Slide 40: The natural-experiment toolbox
+### Slide 41: The natural-experiment toolbox
 
 Lay out the toolbox before going through each design. The first two are what Dunning and Grosz call standard natural experiments: treatment is assigned by a real lottery or by an as-if random process. Regression discontinuity uses a rule that assigns treatment above a cutoff. Instrumental variables use something random that pushes people toward treatment without determining it. The last row, comparisons before and after an unexpected event, including difference-in-differences, is not in Grosz's article, but students saw it in Week 10 (the arrival of TV), and Balcells and Torrats-Espinosa use a version of it.
 
 For each design, the next slides show the naive comparison, what the design solves, and what it has to assume.
 
-### Slide 41: 1. Lotteries
+### Slide 42: 1. Lotteries
 
 Lotteries are the cleanest natural experiments, because the assignment really is random. Grosz and colleagues' Box 1 uses Lindqvist and colleagues' Swedish lottery study. Wealth and well-being are confounded by education, ability, and conscientiousness. Among lottery players, though, prizes are random within groups of players who bought the same number of tickets, so comparing winners with matched non-winners cuts the arrow from those traits to wealth.
 
@@ -446,7 +452,7 @@ The Vietnam draft is Dunning's running lottery example. Draft eligibility was se
 
 The assumption to state: the lottery was actually random, and the comparison is made within the groups the lottery randomized over. Dunning notes that the 1970 draft lottery was poorly mixed, a reminder to check even real lotteries.
 
-### Slide 42: 2. As-if random events
+### Slide 43: 2. As-if random events
 
 As-if random designs have no actual lottery, so the argument for randomness is harder. In Galiani and Schargrodsky's Argentine study, squatters had occupied land in 1981. A 1984 law expropriated it and gave titles, but some original owners challenged the expropriation in court, which delayed titles for their plots. Whether an owner sued was unrelated to the squatters on the plot, and the titled and untitled groups were similar on measured characteristics. Titled families invested more in their houses, had smaller households, and educated their children more, but got no more credit, contradicting a famous argument that titles unlock loans. Dunning gives no numbers for these effects.
 
@@ -454,7 +460,7 @@ Grosz and colleagues' psychology examples include sibling sex, used by Dudek and
 
 The key assumption: whatever assigned the treatment did not select on traits that affect the outcome. The standard check is balance on characteristics measured before treatment.
 
-### Slide 43: 3. Regression discontinuity
+### Slide 44: 3. Regression discontinuity
 
 Regression discontinuity uses a rule: treatment goes to everyone above a cutoff on some score. The naive comparison of everyone treated with everyone untreated is confounded, because the score reflects ability, which also affects outcomes. But people with scores just above the cutoff and just below it are nearly identical in ability; only the rule separates them. So the design compares outcomes right at the cutoff, effectively conditioning on the score.
 
@@ -462,7 +468,7 @@ Grosz and colleagues' Box 3 uses the original RD study, Thistlethwaite and Campb
 
 Two assumptions to name now; we will test them on Bol and colleagues. Potential outcomes change smoothly through the cutoff, and people cannot precisely manipulate which side they land on. And the estimate is local: it applies to people near the cutoff.
 
-### Slide 44: 4. Instrumental variables
+### Slide 45: 4. Instrumental variables
 
 Instrumental variables are for treatments people partly choose. Something random pushes some people toward treatment, but does not fully determine it. Grosz and colleagues' Box 2 uses Green and Winik's study of drug defendants in Washington, D.C., who were randomly assigned to one of nine judicial calendars. Calendars differed in harshness: across the harshest and most lenient, 65 versus 23 percent were incarcerated, with average sentences of 11.9 versus 5.1 months. Comparing later recidivism across calendars, scaled by these differences in punishment, estimates the effect of incarceration for defendants whose sentence depended on the calendar.
 
@@ -470,7 +476,7 @@ The draft lottery works the same way for military service: the lottery changed w
 
 Assumptions: the instrument is random (independence); it actually moves the treatment (relevance, checkable in the first stage); it affects the outcome only through the treatment (exclusion, not checkable, only argued); and it does not push anyone away from treatment (monotonicity). The estimate applies to compliers, people whose treatment the instrument changed.
 
-### Slide 45: 5. Before and after an event
+### Slide 46: 5. Before and after an event
 
 The last design uses timing. Comparing places that got a treatment with places that did not is confounded by stable differences between places. Comparing changes over time removes stable differences: if treated and untreated places were on parallel paths before, any divergence after the treatment can be attributed to it. Students saw this in Week 10 with the staggered arrival of TV (Gentzkow and Shapiro). DellaVigna and Kaplan's study of Fox News entering local cable systems uses the same logic.
 
@@ -478,7 +484,7 @@ A related design compares people surveyed just before and just after an unexpect
 
 Assumptions: without the event, outcomes would have followed parallel paths (or, for before/after within a survey, people interviewed later would have answered like people interviewed earlier), and nothing else changed at the same moment. This design is not in Grosz and colleagues' article; flag it as an addition.
 
-### Slide 46: What each design assumes, and how to check
+### Slide 47: What each design assumes, and how to check
 
 Pull the assumptions together. No natural experiment is assumption-free. Each replaces the ordinary observational assumption, that we measured every confounder, with a different assumption that is often easier to defend and to probe.
 
@@ -486,7 +492,7 @@ Some assumptions are testable in part. Balance on pre-treatment characteristics,
 
 This table is the checklist for the two cases in Part 5.
 
-### Slide 47: Not every “natural experiment” is one
+### Slide 48: Not every “natural experiment” is one
 
 Use Dunning's contrast cases to sharpen the definition. In Campbell and Ross's classic analysis, Connecticut's governor began a crackdown on speeding in late 1955 after a year of unusually high traffic deaths, and deaths fell afterward. But the crackdown was a response to the bad year, so some decline was expected regardless: regression to the mean. Treatment timing depended on the outcome. Dunning describes this as a law; Campbell and Ross describe it as an enforcement crackdown.
 
@@ -494,7 +500,7 @@ Gilligan and Sergenti's study of UN peacekeeping matched countries with and with
 
 The diagnostic question for any proposed natural experiment: who or what decided who was treated, and could that decision have been influenced by the outcome or its causes?
 
-### Slide 48: Judging a natural experiment
+### Slide 49: Judging a natural experiment
 
 Present Dunning's three evaluative dimensions. A strong natural experiment has a convincing as-if random story, an analysis close to a simple comparison of means rather than an elaborate model, and an answer that bears on the substantive question.
 
@@ -502,17 +508,17 @@ These can trade off. Dunning's lottery example: lottery winnings are as random a
 
 Students will use these three dimensions to judge Bol and colleagues and Balcells and Torrats-Espinosa.
 
-### Slide 49: Psychology rarely uses them
+### Slide 50: Psychology rarely uses them
 
 Close Part 4 with Grosz and colleagues' motivation. They reviewed 108 recent articles in leading psychology journals and 108 in leading economics journals. None of the psychology articles used a natural experiment; 36 of the economics articles did. Their argument is that psychology relies on lab experiments and on observational studies with statistical controls, and misses many settings in which nature or policy has already randomized something psychologically important.
 
 Ask communication students where communication falls. Communication research uses some natural experiments, such as TV's arrival, broadband rollout, and newspaper closures, but far fewer than economics.
 
-### Slide 50: Two natural experiments up close
+### Slide 51: Two natural experiments up close
 
 Transition to the two cases. Bol and colleagues use a regression discontinuity around a grant-funding threshold. Balcells and Torrats-Espinosa compare survey respondents interviewed just before and just after terrorist attacks. For each, ask the same four questions: what is the naive comparison, what does the design solve, what does it assume, and how well does it check those assumptions?
 
-### Slide 51: Bol et al.: does winning a grant make you win more grants?
+### Slide 52: Bol et al.: does winning a grant make you win more grants?
 
 Introduce the theory. Robert Merton named the Matthew effect: recognition flows to those already recognized. In science funding, early winners go on to win more. The question is whether that happens because winners are better scientists or because winning itself, through status, money, or confidence, produces later success.
 
@@ -520,19 +526,19 @@ The naive comparison of grant winners and losers cannot separate these, because 
 
 The design: reviewers score and rank applicants, and a budget sets the funding threshold. Applicants just above and just below the threshold had nearly identical evaluations, but only those above got the grant. Show the design DAG: conditioning on rank near the threshold cuts the confounding.
 
-### Slide 52: Near-winners and near-losers looked the same before
+### Slide 53: Near-winners and near-losers looked the same before
 
 Show the balance check first. Bol and colleagues plot scientific productivity, publications, citations, and h-index, by rank relative to the threshold. Before the competition, there is no jump at the threshold: near-winners and near-losers were equally productive scientists. That supports the RD assumption that the threshold separates otherwise similar people.
 
 The same figure shows no jump after the competition either. That matters for the mechanism: if winners went on to get more grants, it was not because they suddenly produced more or better science.
 
-### Slide 53: ...but their careers diverged
+### Slide 54: ...but their careers diverged
 
 Read Figure 1. The horizontal axis is rank relative to the funding threshold; the vertical line is the threshold. Left panel: about 10 percent of applicants just below the threshold later won a mid-career Vidi grant, versus 26 percent just above it, about two and a half times as many. Right panel: 40 percent of near-losers applied for a Vidi, versus 59 percent of near-winners.
 
 Point out what makes this an RD plot: the outcome is roughly flat on each side and jumps at the threshold. The jump, not the overall upward slope, is the causal effect of winning the early grant for applicants near the threshold.
 
-### Slide 54: The gap kept growing
+### Slide 55: The gap kept growing
 
 Show the accumulation. Beyond the Veni grant itself, near-winners received about 40,000 euros more in later funding after four years and about 180,000 euros more after eight years, more than twice as much as near-losers. The authors note that this 180,000 euros is about 40 percent of the funding difference between the best and worst applicants in the competition.
 
@@ -540,7 +546,7 @@ Careers diverged too: 28 percent of near-winners were full professors by 2018, 1
 
 The interpretation: a nearly arbitrary early difference, a rank or two around a budget line, produced lasting inequality in funding and status.
 
-### Slide 55: Why? Participation and status
+### Slide 56: Why? Participation and status
 
 Turn to mechanisms. The abstract emphasizes participation: losing discouraged applicants from trying again. Figure 1's right panel shows the participation gap, 40 versus 59 percent.
 
@@ -548,7 +554,7 @@ But participation is not the whole story. Dividing the win rates by the applicat
 
 Note the connection to Part 2: these are mediators of the effect of winning, and they are measured, not manipulated. The RD identifies the total effect of the early grant cleanly; the decomposition into participation and status is weaker evidence.
 
-### Slide 56: What the funding RD assumes
+### Slide 57: What the funding RD assumes
 
 Run the assumptions checklist on Bol and colleagues. The balance figure supports the claim that near-winners and near-losers were similar. The main manipulation worry is not applicants sorting themselves, since they cannot choose their rank, but committees deciding borderline cases in ways related to future success. The paper addresses this only indirectly. A standard density test would say little here, because every rank is filled by construction.
 
@@ -556,7 +562,7 @@ The authors report checks that near-losers did not leave academia or the country
 
 On Dunning's dimensions: high plausibility of as-if random near the threshold, simple and transparent analysis, and strong substantive relevance for science policy.
 
-### Slide 57: Balcells & Torrats-Espinosa: do terrorist attacks change elections?
+### Slide 58: Balcells & Torrats-Espinosa: do terrorist attacks change elections?
 
 Introduce the question. Do terrorist attacks change democratic participation, and do they punish or reward the incumbent? Naive comparisons, across places or years with and without attacks, are confounded: attacks happen where and when conflict is intense and politics are polarized, which also affects voting.
 
@@ -564,7 +570,7 @@ The design uses timing. Spain's public-opinion institute, the CIS, surveys peopl
 
 The design DAG shows the remaining threat: if people interviewed later in the fieldwork period are different, for example harder to reach, then interview timing is not as-if random.
 
-### Slide 58: The design: eight attacks during survey fieldwork
+### Slide 59: The design: eight attacks during survey fieldwork
 
 Walk through the details. The authors matched CIS fieldwork calendars against ETA attacks and kept the overlaps: eight attacks across seven surveys, five of them nationally representative. Treatment is being interviewed after the attack. Because interview times are not recorded, respondents interviewed on the day of the attack are dropped. The comparison uses windows of one, three, and five days on either side.
 
@@ -572,19 +578,19 @@ The model is a linear probability model with province-by-survey fixed effects, s
 
 Outcomes: whether the respondent would vote if a general election were held tomorrow, and whether they would vote for the incumbent party.
 
-### Slide 59: People said they would vote, but not for anyone in particular
+### Slide 60: People said they would vote, but not for anyone in particular
 
 Present the main results. People interviewed after an attack were more likely to say they would vote: 2.8 percentage points within one day with controls, 4.4 without, and about 2 points at three and five days. All six estimates are positive and significant. Before attacks, about 89 percent already said they would vote, so 2.8 points cuts would-be abstention from about 11 to about 8 percent.
 
 There is no change in whom people would vote for: estimates of incumbent support range from minus 0.8 to plus 1.0 points across all six specifications, and vote switching does not change either. The authors interpret this as a rally in democratic participation, not a punishment or reward for the government.
 
-### Slide 60: Who was activated?
+### Slide 61: Who was activated?
 
 Show the heterogeneity, and connect it to Part 3: these subgroup differences are moderation. The effect is largest among people who did not vote in the previous election, 13.7 points, and among residents of the Basque Country, 11 points. Attacks on civilians or politicians raised turnout intention by 4.2 points, attacks on police or military by 1.2, though that difference is significant only at p < .10.
 
 Add the caveats from the summary. The Basque estimate comes mostly from one attack in a regional survey with only 41 post-attack respondents in the one-day window. Among people who voted last time, about 80 percent of the sample, the effect is close to zero: the whole effect is among prior abstainers. And the subgroups are not randomized, so these are differences in effects across kinds of people, not effects of being Basque.
 
-### Slide 61: What the timing design assumes
+### Slide 62: What the timing design assumes
 
 Run the checklist. The central assumption is that whether someone was interviewed before or after the attack is unrelated to their likelihood of voting. The balance table mostly supports that, joint p = .18, but post-attack respondents were 2 points less likely to report having abstained in the last election, and in the one-day window the gap is larger. Fewer abstainers reached after attacks would inflate the raw estimate.
 
@@ -592,13 +598,13 @@ There is a subtle bad-control problem. The authors control for recalled prior vo
 
 Other checks: contact attempts and refusals were similar before and after (described in prose only); leave-one-attack-out estimates all stay positive; and the Oster sensitivity test says unobservable selection would have to be 1.5 to 5.9 times as strong as observable selection to erase the effect. The paper runs no placebo-date test; the reading summary reports a quick placebo with no sign of a rising pre-trend.
 
-### Slide 62: Two designs compared
+### Slide 63: Two designs compared
 
 Put the two cases side by side using the vocabulary of the day. Both cut an obvious confounder by exploiting how treatment happened to be assigned. Both rest on an assumption that can be partly checked, balance at the threshold or before and after the attack, and partly only argued. Both estimate something narrower than the broad question: the effect of an early grant for applicants near the threshold, and the effect of an attack on stated vote intention within days.
 
 Ask students to score each on Dunning's three dimensions. Bol and colleagues likely score high on all three. Balcells and Torrats-Espinosa score high on plausibility within surveys, but stated intention a few days later is a long way from actual turnout at the next election, which matters for substantive relevance.
 
-### Slide 63: Exit question
+### Slide 64: Exit question
 
 Collect exit responses. Good answers name a specific source of variation, such as a policy cutoff, the timing of a platform change or outage, a newspaper closure, or a random assignment of journalists to beats, and state the key assumption that would have to hold. Read several at the start of next week.
 
