@@ -47,7 +47,7 @@ That makes a natural bridge to the rest of the day. Craig and Richeson set up a 
 
 ::: roadmap
 | Part | Question |
-|------|----------|
+|---------------------------|---------------------------------------------|
 | 1 · Craig & Richeson | How do you manipulate a mechanism, not just measure it? |
 | 2 · Mediation, again | Why do liberals drink lattes, and what can a survey say about *why*? |
 | 3 · Moderation, again | When does a strong argument beat a famous source? |
@@ -107,14 +107,15 @@ This correlational finding motivates the whole paper. It's consistent with a rac
 
 ## What could explain the parish correlation? {#craig-richeson-naive-draw}
 
-Two boxes: **Racial composition** and **White conservatism**. What structures could produce Giles & Hertz's correlation?
+**Racial composition** ⟷ **White conservatism**. Set aside status threat. What else could produce this correlation?
 
-::: {.fragment}
-::: comparison
+**Your turn (pairs, 3 min):** come up with at least two rival explanations.
+
+:::::: comparison
 ::: side
-**Political feedback — sign unclear**
+**A confound**
 
-Earlier White racial politics could affect later composition through housing policy and migration—but this does not automatically predict the positive correlation.
+Name a variable that comes *before* both. Then explain **both** arrows: how it raises Black population share *and* how it raises White Republican registration.
 :::
 
 ::: versus
@@ -122,21 +123,43 @@ or
 :::
 
 ::: side
-**Regional confounding**
+**A different causal path**
 
-Regional history—such as plantation agriculture and segregation—could shape both local Black population share and White racial politics.
+Could the arrow run the other way? Could people be sorting into parishes? Could the link run through something other than threat?
 :::
-:::
+::::::
+
+::: {.fragment .key-line}
+Naming a variable isn't enough. If you can't draw both arrows, it isn't a confound.
 :::
 
 ::: notes
 **Talk track**
 
-Before accepting the threat explanation, generate alternatives, but do not present them as equally strong. Political feedback says earlier White politics may help produce later population patterns, although its direction is ambiguous. Regional confounding says a third variable helps produce both the population pattern and White politics.
+Before accepting the threat explanation, have students generate alternatives themselves. Give pairs about three minutes, then collect answers on the board, sorting each one into "common cause" or "other causal path." Do not reveal the next slide until the board has several candidates. Then point out that the explanations aren't equally strong.
 
 **Ask students**
 
-How might earlier racial politics influence later migration? Would exclusion and White flight move Black population share in the same direction? What historical feature could shape both current Black population share and White Republican alignment?
+For each proposed confound: How does it raise Black population share? How does it raise White Republican registration? Does it come before both in time? For each reverse or sorting story: Does it predict a *positive* correlation, or could it just as easily predict a negative one?
+
+**Answer bank: what students are likely to propose, and how to push**
+
+*Common causes (confounds):*
+
+-   **Plantation agriculture / slavery / segregation history.** This is the cleanest one. It concentrated Black populations in particular parishes, and it built entrenched racial hierarchies and polarized White politics in those same places. It also clearly precedes both variables.
+-   **Rurality / urbanicity.** Push on the sign. In Louisiana many heavily Black parishes are rural (the Delta and the river parishes), and rural Whites lean Republican. But New Orleans is both heavily Black and Democratic. Students have to commit to a direction.
+-   **Local economic structure.** Agricultural or low-wage economies, income, and White education levels can shape both who lives in a parish and White partisanship.
+-   **Religion.** Evangelical Protestant density versus Catholic south Louisiana tracks both settlement history and White partisanship.
+-   **Age structure / out-migration.** Young and more liberal residents leaving declining rural parishes could change both composition and the political profile of the Whites who stay.
+
+*Other causal paths:*
+
+-   **Political feedback / reverse causation.** Earlier racially conservative politics shapes later composition through housing policy, zoning, schools, and climate. The sign is ambiguous (see below).
+-   **Selective White sorting.** Racially liberal Whites leave, or avoid moving into, heavily Black parishes. That changes *which* Whites are measured, not how any given White person responds. It's composition, not persuasion.
+-   **Party-image sorting rather than threat.** Where Black voters make up a large share of the local Democratic coalition, the local Democratic Party becomes identified with Black interests, and Whites register Republican for policy or coalition reasons. This is a different mechanism from psychological status threat, even though it runs in the same direction.
+-   **Realignment timing.** Southern White Democrats switched to the Republican Party unevenly. If the switch came first or faster in Black Belt parishes for historical reasons, the cross-section picks up timing differences.
+
+If students only name a variable ("income," "education"), make them draw both arrows and give the sign before it goes on the board.
 
 **Teaching detail**
 
@@ -144,19 +167,19 @@ Start by being precise about the variables in the Giles and Hertz correlation. R
 
 **Political feedback, step by step:**
 
-1. A parish begins with more racially conservative White politics or leadership.
-2. Housing enforcement, zoning, public investment, school policy, and the broader political climate can influence who moves in, who leaves, and who remains.
-3. Exclusionary policy could reduce Black in-migration or encourage Black out-migration, lowering Black population share. White flight could instead shrink the White denominator and raise Black population share.
-4. Earlier politics can therefore make later composition endogenous, but the sign is not determined without a more specific mechanism.
+1.  A parish begins with more racially conservative White politics or leadership.
+2.  Housing enforcement, zoning, public investment, school policy, and the broader political climate can influence who moves in, who leaves, and who remains.
+3.  Exclusionary policy could reduce Black in-migration or encourage Black out-migration, lowering Black population share. White flight could instead shrink the White denominator and raise Black population share.
+4.  Earlier politics can therefore make later composition endogenous, but the sign is not determined without a more specific mechanism.
 
 The arrow is therefore earlier White racial politics → later racial composition, but this is not a self-sufficient explanation for the observed positive correlation. A researcher would need to specify and document a mechanism—such as White flight—that moves the variables in the observed direction. Present this as a possible feedback problem, not as an equally clean rival theory.
 
 **Regional confounding, step by step:**
 
-1. Louisiana parishes differ in historical plantation agriculture, slavery, segregation, economic development, rurality, and migration patterns.
-2. Those historical processes help determine where Black communities are concentrated today.
-3. The same processes can also shape racial polarization, party realignment, economic interests, and White Republican registration.
-4. Local Black population share and White conservatism can therefore move together even if neither directly causes the other.
+1.  Louisiana parishes differ in historical plantation agriculture, slavery, segregation, economic development, rurality, and migration patterns.
+2.  Those historical processes help determine where Black communities are concentrated today.
+3.  The same processes can also shape racial polarization, party realignment, economic interests, and White Republican registration.
+4.  Local Black population share and White conservatism can therefore move together even if neither directly causes the other.
 
 Use plantation and segregation history as the clearest illustrative confounder because it temporally precedes both contemporary population composition and contemporary registration. Economy or urbanicity can also be proposed, but students must explain both arrows rather than merely name a variable.
 
@@ -184,73 +207,145 @@ Which rival story does random assignment eliminate for the message-exposure effe
 
 Walk through each panel explicitly.
 
-- **Political feedback:** earlier White racial politics may help shape later composition through policy and residential sorting. Exclusion may lower Black share, whereas White flight may raise it, so the arrow alone does not predict the observed sign.
-- **Regional confounding:** plantation and segregation history is upstream of both current Black population share and current White conservatism. The open fork creates an association without requiring a causal effect of composition.
-- **Causal threat story:** higher local Black population share raises perceived group-status threat, which shifts White politics in a conservative direction.
+-   **Political feedback:** earlier White racial politics may help shape later composition through policy and residential sorting. Exclusion may lower Black share, whereas White flight may raise it, so the arrow alone does not predict the observed sign.
+-   **Regional confounding:** plantation and segregation history is upstream of both current Black population share and current White conservatism. The open fork creates an association without requiring a causal effect of composition.
+-   **Causal threat story:** higher local Black population share raises perceived group-status threat, which shifts White politics in a conservative direction.
 
 Then explain exactly what the experiments do and do not solve. Randomly assigning a demographic-shift message makes message exposure independent of prior ideology, residential sorting, and regional history in expectation. Those variables cannot explain why one experimental group received the message and the other did not. That identifies the causal effect of **message exposure** under the study conditions.
 
 But the experiment does not manipulate a parish's actual racial composition. It therefore does not prove that the third panel explains the original Louisiana correlation, rule out long-run political feedback, or estimate what decades of demographic change do to voting. It tests a narrower implication of the threat theory: making a projected status shift salient can move attitudes. The next slide makes that estimand change explicit.
 :::
 
+## Same theory, different question: fill in the table {#craig-richeson-estimand-blank}
+
+Craig & Richeson can't randomize who lives where. Instead, they **randomly assign White Americans to read that Whites are losing majority status**, then measure their politics. How does that change what we learn?
+
+|                    | Giles & Hertz (parishes) | Craig & Richeson (experiments) |
+|-----------------|-------------------------|-------------------------------|
+| **Unit**           |                          |                                |
+| **What varies**    |                          |                                |
+| **Who assigns it** |                          |                                |
+| **Outcome**        |                          |                                |
+| **Time horizon**   |                          |                                |
+| **Estimand**       |                          |                                |
+
+::: notes
+**Talk track**
+
+Have students fill in the table before showing the answers. They can work in the same pairs as the confound activity, or you can fill it in together on the board one row at a time. Two to three minutes is enough.
+
+**Ask students**
+
+Go row by row. What is the unit of analysis in each study? What actually varies, and is it the same thing? Who or what decides each unit's value on that variable? What is measured as the outcome? Over what time span does the "treatment" operate? Then put it together: in one sentence, what effect does each study estimate?
+
+**Teaching detail**
+
+Students usually get Unit and Outcome right away. Push hardest on **What varies** (lived local composition vs. a message about a national trend) and **Who assigns it** (this is what links back to the confounds they just listed). If they write the same estimand in both columns, ask whether a one-paragraph press release is the same treatment as living in a parish for decades.
+:::
+
 ## The experiments answer a narrower question {#craig-richeson-estimand}
 
-::: comparison
-::: side
-**Observational puzzle**
+Craig & Richeson can't randomize who lives where. Instead, they **randomly assign White Americans to read that Whites are losing majority status**, then measure their politics.
 
-What is the effect of actually living through demographic change on political behavior?
-:::
-
-::: versus
-≠
-:::
-
-::: side
-**Experimental question**
-
-What is the short-term effect of making the projected shift **salient** to White respondents?
-:::
-:::
+|   | Giles & Hertz (parishes) | Craig & Richeson (experiments) |
+|-----------------|-------------------------|-------------------------------|
+| **Unit** | Louisiana parishes | Individual White respondents |
+| **What varies** | Actual *local* Black population share | A news-style message about the *national* (or California) shift |
+| **Who assigns it** | History, migration, politics | The researcher, at random |
+| **Outcome** | Republican registration | Self-reported party lean, ideology, policy views |
+| **Time horizon** | Decades | Minutes |
+| **Estimand** | Effect of *living with* demographic change on White politics | Short-term effect of making the shift **salient** on White attitudes |
 
 ::: {.fragment .key-line}
-The studies randomize exposure to a message—not racial composition, long-term media exposure, or voting behavior.
+Random assignment rules out every confound you just proposed, but only for the effect of the *message*. Whether threat explains the parish correlation is still an open question.
 :::
 
 ::: notes
 **Talk track**
 
-Keep the estimand narrow. These studies identify the short-term attitudinal effect of seeing a particular message. They do not identify the effect of living through decades of demographic change or repeated partisan coverage on voting behavior.
+Here is the segue from the puzzle to the design. Giles and Hertz give us a correlation we can't untangle, because nobody assigns racial composition at random: history, migration, and politics do. Craig and Richeson change the question to one they *can* answer. They take the middle link of the threat story, the perception that one's group is losing status, and trigger it with information. If the threat theory is right, simply telling White Americans about the shift should push them right, even though nothing about their actual community has changed.
+
+Walk down the table row by row. Every row changes, not just the treatment. The unit goes from places to people. The treatment goes from local, lived composition to a brief message about a national or state trend. The assignment mechanism goes from history to a coin flip. The outcome goes from registration behavior to survey answers. The time horizon goes from decades to minutes. So the estimand goes from "what does living with demographic change do to White politics?" to "what does hearing about the projected shift do to White attitudes right now?"
 
 **Ask students**
+
+Go back to the confounds on the board. Which of them can explain a difference between the treatment and control groups in this experiment? (None. Plantation history, rurality, and sorting are balanced across conditions in expectation.) Then ask: what has the experiment given up to get that? (Local composition, real behavior, and long-run exposure.)
 
 What is the treatment here: demographic change itself, or exposure to a message about it?
 
 **Teaching detail**
 
+Frame this as a test of an *implication* of the threat theory, not as a test of the parish correlation itself. If status threat drives the observational pattern, then making status loss salient should produce a conservative shift. Finding that shift supports the mechanism's plausibility. It does not show that the mechanism produced the Louisiana pattern, and a null would not rule threat out there either, since a one-paragraph message is a weak stand-in for decades of lived change.
+
+Note the shift in scale as well: Giles and Hertz is about *local* Black population share, while the experiments describe *national* (or California) change in which Latino and Asian American growth drives most of the projection. Threat from a neighbor and threat from a national trend are not obviously the same psychological process.
+
 Make the estimand switch as explicit as it was in Correll last week. The parish-level correlation motivates the theory, but the experiments manipulate information about demographic change. Their internally valid claim concerns the short-term attitudinal effect of that exposure under the specific survey conditions. They do not identify the effect of a community's actual demographic composition, repeated partisan media coverage, or years of social change on real voting behavior.
 :::
 
-## Status threat could connect the message to conservatism {#motivated-cognition}
+## What is the theory, and what else could carry the effect? {#motivated-cognition}
 
-Threat and uncertainty → conservatism (Jost et al. 2003), mostly studied with **physical/mortality** threats (post-9/11, terrorism).
-
-::: {.fragment .key-line}
-Craig & Richeson's extension: a slow, abstract, **decades-out social status** threat.
+::: mstout-row
+Majority-minority message → **group-status threat** → conservatism
 :::
 
+**The theory:** Whites read the shift as zero-sum: "as minorities gain status, Whites lose it." Threat pushes people toward conservatism (Jost et al. 2003).
+
+**Your turn:** What *else* could the message trigger that would also push people right?
+
+::::::: fragment
+:::::: triad
+::: triad-item
+**System threat**
+
+"The American way of life is threatened." Diffuse worry about society, not about one's own group.
+:::
+
+::: triad-item
+**System justification**
+
+"People usually get what they deserve." Defending the status quo as fair.
+:::
+
+::: triad-item
+**Uncertainty**
+
+Feeling unsure about where American society is headed.
+:::
+::::::
+:::::::
+
 ::: source
-Source: Jost, Glaser, Kruglanski, and Sulloway (2003); Bonanno and Jost (2006).
+Source: Jost, Glaser, Kruglanski, and Sulloway (2003); Craig and Richeson (2014), Study 2.
 :::
 
 ::: notes
 **Talk track**
 
-The proposed chain is that a message about losing numerical majority status creates group-status threat, which then shifts political attitudes in a conservative direction. The mechanism is social and symbolic rather than an immediate physical threat.
+First pin down the theory. The message is supposed to work through one specific mediator: **group-status threat**, measured as agreement that "increases in racial minorities' status will reduce White Americans' status." It is relative and zero-sum. It isn't dislike of minorities or discomfort with diversity. The second link comes from motivated social cognition (Jost et al. 2003): threat and uncertainty make conservatism more appealing because it promises stability and defends existing hierarchy.
+
+Then ask the question before the reveal. If the message moves people right, how do we know *status threat* is the reason? The same message could plausibly set off several other processes that the same literature says lead to conservatism.
+
+**Ask students**
+
+Give pairs a minute to propose alternative mediators. For each one, ask them to state both links: why would the majority-minority message raise it, and why would it push people right?
+
+Students may also propose things outside the paper. Accept and sort them:
+
+-   **Generic anxiety or negative mood:** any unsettling news might make people more conservative.
+-   **Prejudice or out-group animus:** the message activates dislike of minorities rather than concern for relative status.
+-   **Partisan cueing:** "majority-minority" news is coded as good for Democrats, so Whites react as partisans.
+-   **Economic or job competition:** concern about material resources rather than status.
+-   **Demand effects:** respondents guess what the study is about.
 
 **Teaching detail**
 
-The motivated-cognition literature mostly tested mortality salience and terrorism threat. The theoretical contribution here is extending the same logic to a specifically social, zero-sum status threat — the perception that a rising minority share mechanically lowers the in-group's own relative standing — with no proximate physical danger and a multi-decade time horizon.
+Reveal the three alternatives Craig and Richeson actually measured in Study 2. All three come from the threat–conservatism literature, so they are the most serious theoretical rivals:
+
+-   **System threat** (Jost et al. 2007): a sense that the broader social system, not specifically one's racial group, is in danger.
+-   **System justification** (Kay & Jost 2003): the motivation to see the current system as fair and legitimate.
+-   **Uncertainty:** not knowing where society is headed, which is the core of the original Jost et al. account.
+
+Preview what's coming: Study 2 measures all four. Only group-status threat differed by condition and mediated the effect. The theoretical contribution is extending the threat–conservatism logic, mostly tested with physical and mortality threats like terrorism, to a slow, abstract, decades-out *social status* threat. Flag now that measuring a mediator is weaker than manipulating it. That is the point of Studies 3a and 3b.
 :::
 
 ## What control isolates the majority-status implication? {#craig-richeson-design-1}
@@ -276,7 +371,7 @@ Let pairs propose a control before revealing. The actual Study 1 control: a surv
 Pew's *News Interest Index* randomly assigned White political independents (*n* = 369) to two survey forms:
 
 | Racial-shift condition | Racial-composition control |
-|---|---|
+|------------------------------------|------------------------------------|
 | “Have you heard California is now majority-minority?” | “Have you heard Hispanics and Blacks are now similar in number nationally?” |
 
 **Outcomes:** Republican versus Democratic party lean and general political ideology.
@@ -303,10 +398,10 @@ Place this in Druckman's typology: cell 1, researcher-caused and statistical-sol
 
 A 2015 corrigendum corrected a **probability-weighting error** in Studies 1 and 2 — frequency weights were mishandled as probability weights in the statistical software.
 
-::: {.fragment}
-- National party lean: *p* = .081
-- General ideology: no effect
-- West subsample: *n* = 49, *p* = .063
+::: fragment
+-   National party lean: *p* = .081
+-   General ideology: no effect
+-   West subsample: *n* = 49, *p* = .063
 :::
 
 ::: {.fragment .key-line}
@@ -351,11 +446,11 @@ The flagship Study 1 result shrank from conventionally significant to inconclusi
 
 Before Study 2: what does Study 1 *not* establish yet?
 
-::: {.fragment}
-- The corrected party-lean evidence is inconclusive, and ideology did not move.
-- No mechanism was measured.
-- Outcomes were self-reported attitudes, not behavior.
-- One opportunistic dataset cannot establish robustness across treatments and samples.
+::: fragment
+-   The corrected party-lean evidence is inconclusive, and ideology did not move.
+-   No mechanism was measured.
+-   Outcomes were self-reported attitudes, not behavior.
+-   One opportunistic dataset cannot establish robustness across treatments and samples.
 :::
 
 ::: notes
@@ -377,7 +472,7 @@ Push toward: Study 1 has a measured outcome (party lean, ideology) but no mediat
 National probability-based online sample: *N* = 620 overall; **415 White respondents** in the focal analysis.
 
 | Racial-shift treatment | Societal-change control |
-|---|---|
+|------------------------------------|------------------------------------|
 | Census press release: racial minorities projected to become a majority by 2042 | Press release about increasing geographic mobility |
 
 **Outcomes:** conservative endorsement of race-related and race-neutral policies.
@@ -398,7 +493,7 @@ This is the design information missing from the earlier version. The control mat
 
 ::: small-table
 | Outcome index | Corrected result |
-|---|---|
+|------------------------------------|------------------------------------|
 | Overall conservative policy endorsement | Shifted conservative (*p* = .011) |
 | Race-neutral policies | Shifted conservative (*p* = .025) |
 | Race-related policies | Borderline (*p* = .052) |
@@ -473,18 +568,36 @@ How could you reduce status threat without removing the demographic forecast?
 Give pairs a few minutes before revealing. The actual design: an identical racial-shift article, plus one added paragraph stating that Whites' relative societal status (income, wealth) is expected to remain stable despite the demographic shift. If students propose something structurally similar—holding the fact constant while varying its status implication—they have derived the paper's methodological high point themselves.
 :::
 
+## The reassurance condition targets one link in the chain {#craig-richeson-full-dag}
+
+![](assets/dag-racial-shift-full.svg){.nostretch fig-alt="Random assignment causes both the racial-shift information and the added status-will-stay-stable paragraph. Racial-shift information causes status threat, which causes conservatism; the reassurance paragraph cuts the arrow into status threat" width="95%"}
+
+::: notes
+**Talk track**
+
+This is the answer to the previous slide's question, shown as a design before we see the specific conditions or any results. Random assignment decides both whether people get the racial-shift information and whether they also get the reassurance paragraph. The reassurance is intended to weaken the link from demographic information to status threat. If threat is the mechanism, cutting that link should remove the conservative shift; the next two slides show the conditions and whether it did. That is stronger than simply measuring threat, although the interpretation still depends on reassurance changing only the construct the theory names.
+
+**Ask students**
+
+What must be true about the reassurance paragraph for this to identify the threat mechanism?
+
+**Teaching detail**
+
+Draw this live alongside the image. The assuaged-threat condition is designed to weaken the arrow from information to threat while leaving the demographic information constant. This is stronger evidence for the proposed mechanism than measured mediation alone, but it still depends on the construct-validity claim that the added reassurance changes status threat without introducing some other consequential message.
+:::
+
 ## Reassurance changes the status implication {#craig-richeson-3ab-design}
 
 White U.S. MTurk participants: Study 3a *n* = 180; Study 3b *n* = 198.
 
 | Control | Status-threat | Assuaged-threat |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | Geographic-mobility article | Racial-shift article | **Same racial-shift article** + Whites' relative status will remain stable |
 
-**3a outcomes:** ideology plus race-related and race-neutral policies  
+**3a outcomes:** ideology plus race-related and race-neutral policies\
 **3b outcomes:** ideology plus race-neutral policies only
 
-::: {.fragment}
+::: fragment
 **Manipulation check:** perceived threat was higher in status-threat than in both other conditions; control and assuaged-threat did not differ.
 :::
 
@@ -510,7 +623,7 @@ The samples were heavily male (89% in 3a and 84% in 3b) and relatively young, a 
 
 ::: small-table
 | Result | Study 3a | Study 3b |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | Status-threat vs. control | More conservative policies and ideology | More conservative ideology; policy contrast marginal (*p* = .066) |
 | Status-threat vs. assuaged | More conservative policies and ideology | More conservative policies and ideology |
 | Control vs. assuaged | No detectable difference | No detectable difference |
@@ -538,35 +651,17 @@ Which comparison is the cleanest test of the proposed mechanism?
 This is the pattern supporting the mechanism: the same demographic information produces different outcomes when its status implication changes. Keep the strength of evidence calibrated. Study 3a supports the full elimination pattern for policy and ideology. Study 3b cleanly replicates ideology and distinguishes status-threat from assuaged-threat, but the policy contrast between status-threat and control is only marginal.
 :::
 
-## The reassurance condition weakens one link in the chain {#craig-richeson-full-dag}
-
-![](assets/dag-racial-shift-full.svg){fig-alt="Random assignment causes racial-shift information, which causes status threat, which causes conservatism; the assuaged-threat paragraph cuts the arrow from information to threat" width="92%"}
-
-::: notes
-**Talk track**
-
-In the diagram, reassurance is intended to weaken the link from demographic information to status threat. That is stronger than simply measuring threat, although the interpretation still depends on reassurance changing only the construct the theory names.
-
-**Ask students**
-
-What must be true about the reassurance paragraph for this to identify the threat mechanism?
-
-**Teaching detail**
-
-Draw this live alongside the image. The assuaged-threat condition is designed to weaken the arrow from information to threat while leaving the demographic information constant. This is stronger evidence for the proposed mechanism than measured mediation alone, but it still depends on the construct-validity claim that the added reassurance changes status threat without introducing some other consequential message.
-:::
-
 ## The mechanism evidence is stronger, but not definitive {#craig-richeson-critique-2}
 
 The mechanism experiment strengthens the claim, but it still leaves open:
 
-::: {.fragment}
-- Brief self-reported attitude changes are not voting or durable ideological realignment.
-- Most corrected effects are small to modest, not wholesale partisan conversion.
-- Studies 3a/3b are heavily male, young MTurk samples.
-- Immigration and citizenship attitudes did not reliably move in Study 2.
-- The reassurance paragraph may change more than status threat alone.
-- Repeated, partisan real-world coverage may operate differently from one press release.
+::: fragment
+-   Brief self-reported attitude changes are not voting or durable ideological realignment.
+-   Most corrected effects are small to modest, not wholesale partisan conversion.
+-   Studies 3a/3b are heavily male, young MTurk samples.
+-   Immigration and citizenship attitudes did not reliably move in Study 2.
+-   The reassurance paragraph may change more than status threat alone.
+-   Repeated, partisan real-world coverage may operate differently from one press release.
 :::
 
 ::: notes
@@ -615,9 +710,9 @@ Transition from Craig and Richeson. Their Studies 3a and 3b manipulated the prop
 
 ![](assets/dag-med-vs-mod.svg){fig-alt="Treatment X causes mediator M, which causes outcome Y; X also causes Y directly" width="52%"}
 
-- **Total effect:** every causal path from X to Y
-- **Indirect effect:** the part that runs through M
-- **Direct effect:** the part that does not
+-   **Total effect:** every causal path from X to Y
+-   **Indirect effect:** the part that runs through M
+-   **Direct effect:** the part that does not
 
 ::: {.fragment .key-line}
 Craig & Richeson **manipulated** M. Most studies only **measure** it.
@@ -631,23 +726,23 @@ Then name the two ways to get evidence about M. Craig and Richeson manipulated t
 
 ## Do liberals really drink more lattes? {#latte-puzzle}
 
-::: two-column
+:::::: two-column
 ::: column
 ![](assets/mutz-figure3-coffee-preferences-by-ideology.png){fig-alt="Mutz and Rao Figure 3: coffee drink preferences by ideology"}
 :::
 
-::: column
+:::: column
 A national probability sample, **2014** (GfK). Coffee drinkers only: **N = 1,059**.
 
 "Which drink would you order at a coffee shop?"
 
-Prefer a latte: liberals **16%**, moderates **~11%**, conservatives **9%**.
+Prefer a latte: liberals **16%**, moderates **\~11%**, conservatives **9%**.
 
 ::: {.fragment .key-line}
 The stereotype is real. **Why** does it hold?
 :::
-:::
-:::
+::::
+::::::
 
 ::: source
 Source: Mutz and Rao (2018), *PS: Political Science & Politics* 51(4), Figure 3.
@@ -681,13 +776,23 @@ Look closely at the arrows. In panels B and C, income and gender point into both
 
 ## Which are confounders and which are mediators? {#latte-roles}
 
-![](assets/dag-mutz-four.svg){fig-alt="Four DAGs: gender and income as confounders pointing into both ideology and latte drinking; coffee-shop availability and low nationalism as possible mediators on a path from ideology to lattes"}
+::::: r-stack
+::: {.fragment .fade-out fragment-index="1"}
+**Your turn:** For **gender**, **income**, **coffee-shop availability**, and **nationalism**, sketch the arrows. Which way does each one run between ideology and latte drinking? Is it a confounder or a mediator?
+:::
 
-::: {.fragment .key-line}
+::: {.fragment fragment-index="1"}
+![](assets/dag-mutz-four.svg){.nostretch width="100%" fig-alt="Four DAGs: gender and income as confounders pointing into both ideology and latte drinking; coffee-shop availability and low nationalism as possible mediators on a path from ideology to lattes"}
+:::
+:::::
+
+::: {.fragment .key-line fragment-index="2"}
 Same regression, different meaning. Controlling for a **confounder** removes bias. Controlling for a **mediator** removes part of the effect.
 :::
 
 ::: notes
+Pause here. Give pairs a minute or two to sketch a diagram for each of the four variables and label it confounder or mediator before you click. The first click swaps the prompt for the diagrams; the second click shows the punchline.
+
 Classify each candidate.
 
 Gender: being female plausibly affects both ideology and drink preference, and nothing about ideology changes gender. A confounder.
@@ -705,7 +810,7 @@ The punchline: the regression is the same whether the added variable is a confou
 
 ::: small-table
 | Model | Variable added | Ideology coefficient (SE) | N |
-|---|---|:-:|:-:|
+|------------------|------------------|:----------------:|:----------------:|
 | Baseline | none | **0.08 (0.03)** \* | 1,059 |
 | A | Starbucks in ZIP code: 0.09 (0.03) \* | **0.08 (0.03)** \* | 1,059 |
 | B | Income: 0.05 (0.01) \*\*\* | **0.08** \* | 1,059 |
@@ -715,7 +820,7 @@ The punchline: the regression is the same whether the added variable is a confou
 :::
 
 ::: {.fragment .key-line}
-Only nationalism absorbs the ideology gap. Authors: nationalism “most parsimoniously explain[s] this relationship.”
+Only nationalism absorbs the ideology gap. Authors: nationalism “most parsimoniously explain\[s\] this relationship.”
 :::
 
 ::: source
@@ -746,7 +851,7 @@ Each story implies a different causal claim, and the survey cannot distinguish t
 
 ## What the latte study can and cannot show {#latte-limits}
 
-::: two-column
+::::: two-column
 ::: column
 ### Shows
 
@@ -766,7 +871,7 @@ That drinks are avoided because they “**sound foreign**” (never measured).
 
 That the drop from 0.08 to 0.01 is significant (not tested; N also falls to 896).
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 How would you test the “sounds foreign” mechanism the way Craig & Richeson tested status threat?
@@ -794,9 +899,9 @@ Transition to moderation. Mediation asked how an effect travels. Moderation asks
 
 ![](assets/dag-petty-moderation.svg){fig-alt="Argument quality causes attitude toward exam policy; personal involvement points to the arrow, changing the size of the effect" width="62%"}
 
-- A moderator is **not** on the path from X to Y.
-- Standard DAGs do not draw moderation. Here the arrow points **at the arrow**.
-- In a regression: an **interaction**, X × Z.
+-   A moderator is **not** on the path from X to Y.
+-   Standard DAGs do not draw moderation. Here the arrow points **at the arrow**.
+-   In a regression: an **interaction**, X × Z.
 
 ::: notes
 Show the convention. A mediator sits between X and Y. A moderator sits off the path and changes the strength of the arrow, which standard DAGs cannot draw, because a DAG says only whether an effect exists, not how big it is. The picture here, an arrow pointing at another arrow, is a teaching convention, not formal DAG notation.
@@ -810,7 +915,7 @@ In data, moderation appears as an interaction: the effect of X on Y differs acro
 
 ::: small-table
 | Factor | Levels |
-|---|---|
+|------------------------------------|------------------------------------|
 | **Personal involvement** | exams would start **next year** (affects you) vs. in **ten years** (doesn't) |
 | **Argument quality** | 8 strong arguments (data, statistics) vs. 8 weak ones (quotations, opinion, anecdotes) |
 | **Source expertise** | Carnegie Commission on Higher Education vs. a local **high-school class** |
@@ -830,11 +935,59 @@ Three factors were crossed. Involvement: students were told the policy might sta
 The dependent variable combined semantic-differential ratings of comprehensive exams with an agreement item, standardized. Because all three factors were randomized, the study can estimate how the effect of argument quality and the effect of source expertise depend on involvement.
 :::
 
+## What did they predict? {#petty-hypotheses}
+
+Two routes to persuasion. **Personal involvement** decides which one people take.
+
+::::: two-column
+::: column
+### Central route
+
+People **think about the arguments**.
+
+**H1:** Under **high** involvement, argument quality should matter **more**.
+:::
+
+::: column
+### Peripheral route
+
+People **use a cue**: "an expert said so."
+
+**H2:** Under **low** involvement, source expertise should matter **more**.
+:::
+:::::
+
+::: {.fragment .key-line}
+Two interactions with **opposite** signs: involvement × argument quality and involvement × expertise. Sketch what each plot should look like before we see the data.
+:::
+
+::: source
+Source: Petty, Cacioppo, and Goldman (1981), pp. 847–849.
+:::
+
+::: notes
+**Talk track**
+
+State the hypotheses before showing any results. The authors' own wording (p. 849): "under conditions of high personal involvement, persuasion would be affected more by the quality of the message arguments employed but that under low-involvement conditions, persuasion would be tied more strongly to the expertise of the source."
+
+The theory has two routes. On the central route, attitudes change because people carefully weigh the arguments. On the peripheral route, attitudes change because of a simple cue, such as an expert source, without much thought about the issue. Personal involvement is the proposed moderator. When the policy affects you, you are motivated to think, so the arguments should matter. When it doesn't, you take the shortcut, so the source should matter.
+
+**Ask students**
+
+Before clicking to the results: draw two plots with involvement on the x-axis. In the first, draw one line for strong arguments and one for weak arguments. In the second, draw one line for the expert and one for the high-school class. Where should the lines be far apart, and where should they be close together?
+
+Also ask: why vary argument *quality* rather than the *number* of arguments? (Because a listener can notice "lots of arguments" without thinking about any of them. Quality can only be detected by actually processing the content. This was the authors' critique of Chaiken 1980.)
+
+**Teaching detail**
+
+Emphasize that this is a moderation hypothesis with two parts that point in opposite directions. Involvement should *strengthen* the effect of argument quality and *weaken* the effect of source expertise. Two opposite interactions sharing one moderator are much harder to explain away than a single interaction, for example by saying "involved people are just more persuadable." Note also what the theory does *not* predict: no main effect of involvement on agreement. Involvement changes *what* persuades, not *how much*.
+:::
+
 ## Results: involvement flips what persuades {#petty-results}
 
 ![](assets/petty-interactions.svg){fig-alt="Two interaction plots: strong versus weak arguments diverge under high involvement; expert versus non-expert sources diverge under low involvement" width="92%"}
 
-Involvement × argument quality: *F*(1, 137) = **6.05**, *p* < .02. Involvement × expertise: *F*(1, 137) = **3.92**, *p* < .05.
+Involvement × argument quality: *F*(1, 137) = **6.05**, *p* \< .02. Involvement × expertise: *F*(1, 137) = **3.92**, *p* \< .05.
 
 ::: source
 Source: Petty, Cacioppo, and Goldman (1981), Figure 1 and Table 1; points are Table 1 means averaged over the third factor.
@@ -850,7 +1003,7 @@ The plotted points are the paper's Table 1 cell means averaged over the third fa
 
 ## Reading the interaction {#petty-reading}
 
-::: two-column
+::::: two-column
 ::: column
 ### High involvement
 
@@ -866,7 +1019,7 @@ People **use a shortcut**.
 
 The source's credentials matter; argument quality matters less.
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 No single “effect of argument quality.” Its size depends on involvement. That is moderation.
@@ -883,8 +1036,8 @@ Add the cautions from the summary. The paper's significance statements about sim
 ## Mediator or moderator? {#med-vs-mod-table}
 
 ::: small-table
-| | Mediator | Moderator |
-|---|---|---|
+|   | Mediator | Moderator |
+|------------------------|------------------------|------------------------|
 | Question | **How** does X affect Y? | **When / for whom** does X affect Y? |
 | Position | on the path X → M → Y | off the path; changes the X → Y arrow |
 | Timing | after X | before X (or fixed) |
@@ -913,7 +1066,7 @@ Then frame Part 4. Craig, Correll, and Petty all randomized. Many of the treatme
 
 ## What makes it a natural experiment? {#ne-definition}
 
-::: triad
+:::::: triad
 ::: triad-item
 Treatment vs. comparison
 
@@ -931,7 +1084,7 @@ Not controlled by the researcher
 
 A lottery, a rule, nature, or history did the assigning.
 :::
-:::
+::::::
 
 ::: {.fragment .key-line}
 Dunning: natural experiments are “neither natural nor experiments.” The **as-if random** claim has to be argued, not assumed.
@@ -965,7 +1118,7 @@ Point to the large purple area in the center, around Kennington, Walworth, and S
 
 ## The first natural experiment: John Snow and cholera {#snow}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/dag-snow.svg){fig-alt="Naive DAG: poverty causes both dirty water supplier and cholera death. Design DAG: landlord's choice years earlier causes the water supplier; the arrow from poverty to supplier is cut"}
 :::
@@ -975,7 +1128,7 @@ Point to the large purple area in the center, around Kennington, Walworth, and S
 
 Deaths per 10,000 houses: **315** (Southwark & Vauxhall) vs. **37** (Lambeth).
 :::
-:::
+:::::
 
 ::: source
 Source: Dunning (2012), ch. 1, Table 1.1, pp. 12–15.
@@ -987,16 +1140,20 @@ Tell Snow's story as the template. In 1853–54, two water companies supplied Lo
 Snow's insight was that the two companies' pipes were intermixed house by house, and landlords had chosen suppliers years earlier, before anyone knew about the risk. So neighboring houses with similar residents got different water for reasons unrelated to their residents. The design DAG cuts the arrow from poverty to water supplier.
 
 The result: 315 deaths per 10,000 houses supplied by Southwark and Vauxhall, versus 37 for Lambeth and 56 for the rest of London.
+
+Be precise about what those numbers cover. The 315 vs. 37 comparison pools *all* houses each company supplied (40,046 and 26,107), including houses in the single-company districts on the map, not just the purple intermixed area. The intermixed districts are what justify treating the supplier as as-if random. A stricter version of the design would restrict the comparison to them.
+
+**Ask students:** What would you gain and lose by keeping only the purple area? (Gain: a cleaner comparison, since neighbors share poverty, air, and neighborhood. Lose: sample size, and possibly generalizability to the rest of south London.)
 :::
 
 ## The natural-experiment toolbox {#toolbox}
 
 ::: small-table
 | Design | What creates the variation | Example |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | **Lottery** | an actual random draw, run by someone else | Swedish lottery prizes; Vietnam draft |
 | **As-if random event** | nature, history, or administration | Snow's water companies; Argentine land titles |
-| **Regression discontinuity** | a cutoff on a score | merit certificates; grant funding thresholds |
+| **Regression discontinuity** | a cutoff on a score | merit certificates; class-size caps; grant thresholds |
 | **Instrumental variables** | a random push toward treatment | judge assignment; draft lottery → service |
 | **Before / after an event** | timing of an unexpected shock | attacks during survey fieldwork; TV's arrival |
 :::
@@ -1011,47 +1168,178 @@ For each design, the next slides show the naive comparison, what the design solv
 
 ![](assets/dag-lottery.svg){fig-alt="Naive DAG: education and ability cause wealth and well-being. Design DAG: lottery prize causes wealth; the arrow from ability to wealth is cut"}
 
-Swedish lottery players: winners vs. players with the **same number of tickets**. Vietnam draft: eligible white men earned **$358 less** in 1984 (about 2%).
+::: {.fragment .key-line}
+Among people who bought the **same number of tickets**, who wins is pure chance. Compare winners with those matched non-winners.
+:::
 
 ::: source
-Sources: Grosz et al. (2024), Box 1 (Lindqvist et al. 2020); Dunning (2012), pp. 8–9 (Angrist 1990).
+Source: Grosz et al. (2024), Box 1 (Lindqvist et al. 2020).
 :::
 
 ::: notes
-Lotteries are the cleanest natural experiments, because the assignment really is random. Grosz and colleagues' Box 1 uses Lindqvist and colleagues' Swedish lottery study. Wealth and well-being are confounded by education, ability, and conscientiousness. Among lottery players, though, prizes are random within groups of players who bought the same number of tickets, so comparing winners with matched non-winners cuts the arrow from those traits to wealth.
+Lotteries are the cleanest natural experiments, because the assignment really is random. Grosz and colleagues' Box 1 uses Lindqvist and colleagues' Swedish lottery study. Wealth and well-being are confounded by education, ability, and conscientiousness. Among lottery players, though, prizes are random within groups of players who bought the same number of tickets, so comparing large-prize winners with matched non-winners cuts the arrow from those traits to wealth.
 
-The Vietnam draft is Dunning's running lottery example. Draft eligibility was set by a lottery over birth dates. Among white men in the 1971 lottery, those made eligible earned $15,814 in 1984, versus $16,172 for those not eligible: about $358, or 2 percent, less.
+The assumption to state: the lottery was actually random, and the comparison is made within the groups the lottery randomized over. Players who buy more tickets are more likely to win and may differ in other ways, which is why the comparison is within ticket groups. The next slide shows what two lotteries found.
+:::
 
-The assumption to state: the lottery was actually random, and the comparison is made within the groups the lottery randomized over. Dunning notes that the 1970 draft lottery was poorly mixed, a reminder to check even real lotteries.
+## Lottery results {#lottery-results}
+
+::::: two-column
+::: column
+### Swedish lottery winners
+
+**3,362** players surveyed **5–22 years** after winning.
+
+An extra **\$100,000** (after tax) raised life satisfaction by **0.037 SD**, with **no fading** over time.
+
+Effects on **happiness** and **mental health** were much smaller.
+:::
+
+::: column
+### Vietnam draft lottery
+
+Draft eligibility set by lottery over **birth dates**.
+
+White men made eligible in the 1971 lottery earned **\$15,814** in 1984, vs. **\$16,172** for those not eligible: **\$358 (about 2%) less**.
+:::
+:::::
+
+::: {.fragment .key-line}
+Random assignment makes the comparison simple: a difference in means.
+:::
+
+::: source
+Sources: Lindqvist, Östling, and Cesarini (2020), *Review of Economic Studies* 87: 2703–2726; Dunning (2012), pp. 8–9 (Angrist 1990).
+:::
+
+::: notes
+Report the results. Lindqvist, Östling, and Cesarini surveyed 3,362 Swedish lottery players 5 to 22 years after a lottery event, following a preregistered analysis plan; the prize pool totaled about 277 million dollars. An after-tax prize of 100,000 dollars raised overall life satisfaction by 0.037 standard deviations, and the effect showed no sign of fading with years since the win. Effects on happiness and mental health were significantly smaller. The authors conclude that wealth changes how people evaluate their lives more than how they feel day to day, and that much of the effect runs through financial satisfaction.
+
+The Vietnam draft lottery is Dunning's running example. In 1970 to 1972, draft eligibility was set by lottery numbers assigned to birth dates. Angrist compared men by eligibility. Among white men in the 1971 lottery, those made eligible earned 15,814 dollars in 1984, versus 16,172 for those not eligible: about 358 dollars, or 2 percent, less. That is the effect of being made eligible; the effect of actually serving is larger, and estimating it uses the lottery as an instrument (coming up).
+
+Dunning notes that the 1970 lottery was poorly mixed, with later birth dates drawn disproportionately early, a reminder to check even real lotteries.
 :::
 
 ## 2. As-if random events {#as-if-random}
 
-Assignment happened through a process unrelated to people's traits.
+No lottery. Something else assigned treatment in a way **unrelated to people's traits**.
 
-- **Argentine land titles:** a 1984 law expropriated land for squatters; some owners **sued**, delaying titles for some plots. Titled families invested more in housing and children's schooling, with **no** gain in credit.
-- **Sibling sex:** whether your sibling is a brother or a sister is set at conception (85,887 people, 9 countries).
-- **Earthquakes, seating charts, school-entry dates.**
+-   **Argentine land titles:** squatters got titles under a 1984 law, but some original owners **sued**, delaying titles for their plots. Titled families invested more in housing and children's schooling, with **no** gain in credit.
+-   **The sex of a child or sibling:** set at conception.
+-   **An earthquake in the middle of a survey.**
 
 ::: {.fragment .key-line}
 The burden: show assignment was unrelated to anything that affects the outcome. Check **balance**.
 :::
 
 ::: source
-Sources: Dunning (2012), pp. 9–12 (Galiani and Schargrodsky); Grosz et al. (2024), p. 9 (Dudek et al. 2022).
+Sources: Dunning (2012), pp. 9–12 (Galiani and Schargrodsky); Grosz et al. (2024), pp. 6, 9.
 :::
 
 ::: notes
-As-if random designs have no actual lottery, so the argument for randomness is harder. In Galiani and Schargrodsky's Argentine study, squatters had occupied land in 1981. A 1984 law expropriated it and gave titles, but some original owners challenged the expropriation in court, which delayed titles for their plots. Whether an owner sued was unrelated to the squatters on the plot, and the titled and untitled groups were similar on measured characteristics. Titled families invested more in their houses, had smaller households, and educated their children more, but got no more credit, contradicting a famous argument that titles unlock loans. Dunning gives no numbers for these effects.
+As-if random designs have no actual lottery, so the argument for randomness is harder. In Galiani and Schargrodsky's Argentine study, squatters had occupied land in 1981. A 1984 law expropriated it and gave titles, but some original owners challenged the expropriation in court, delaying titles for their plots. Whether an owner sued was unrelated to the squatters on the plot, and the titled and untitled groups were similar on measured characteristics. Titled families invested more in their houses, had smaller households, and educated their children more, but got no more credit, contradicting a famous argument that titles unlock loans. Dunning gives no numbers for these effects.
 
-Grosz and colleagues' psychology examples include sibling sex, used by Dudek and colleagues to ask whether having a brother or a sister shapes personality in 85,887 people from 12 samples in 9 countries.
+The next three slides work through two other kinds of as-if random assignment in detail: the sex of a child or sibling, and an earthquake that struck during a survey.
+:::
 
-The key assumption: whatever assigned the treatment did not select on traits that affect the outcome. The standard check is balance on characteristics measured before treatment.
+## Boy or girl? Daughters and legislators {#daughters}
+
+::::: two-column
+::: column
+![](assets/dag-daughters.svg){fig-alt="Chance at conception determines the number of daughters given the number of children, which affects votes on women's issues; legislators' own views affect votes; a possible stopping rule could link views to number of daughters"}
+:::
+
+::: column
+**Question:** does raising daughters change how legislators vote?
+
+**Design:** compare members of Congress with the **same number of children** but different numbers of **daughters**.
+
+**Result:** each daughter raised scores on women's issues (NOW, AAUW) by about **a quarter** of the gap between male and female legislators, especially on **reproductive rights**.
+:::
+:::::
+
+::: {.fragment .key-line}
+Threat: a stopping rule (“keep trying for a son”). Check: a first-born daughter does **not** predict family size.
+:::
+
+::: source
+Source: Washington (2008), *American Economic Review* 98(1): 311–332.
+:::
+
+::: notes
+Walk through Washington's design. Do children shape their parents' politics? Comparing legislators with and without daughters is confounded by everything that predicts family size and composition. But conditional on the total number of children, the number of daughters is set by chance at conception. Washington compares members of the U.S. House with the same number of children and different numbers of daughters, using interest-group scores on women's issues from the National Organization for Women and the American Association of University Women, plus roll-call votes.
+
+Result: conditional on total children, each additional daughter raises a legislator's score by about one quarter of the difference associated with the legislator's own gender, and the effect is strongest on reproductive rights.
+
+The key threat is a stopping rule. If some legislators keep having children until they have a son, then among families of a given size, the number of daughters would be related to the parents' preferences, which might also predict their votes. Washington checks this: for the 227 members whose first child's sex she could identify, a first-born daughter predicts the gender mix of the family but not the total number of children. That is a balance-style check on the assumption.
+
+Mention the follow-up: Sood and Costa's replication extends the analysis to later Congresses and finds the effect weaker in later sessions, a reminder that natural-experiment estimates are tied to a time and place.
+:::
+
+## Sibling sex and personality {#sibling-sex}
+
+**Question:** does having a younger **sister** rather than a younger **brother** shape your personality?
+
+**Design:** the sex of your **next-younger sibling** is set at conception, **after** you were born. **85,887** people, **12** samples, **9** countries.
+
+**Checks:**
+
+-   **Balance:** people with a younger sister vs. brother looked alike on traits fixed **before** that sibling's birth (e.g., number of older siblings).
+-   **Robustness:** **3** samples dropped over concerns about sex-selective abortion.
+
+::: {.fragment .key-line}
+Result: **no meaningful effect** on risk tolerance, trust, patience, locus of control, or the Big Five. A well-powered, informative null.
+:::
+
+::: source
+Sources: Grosz et al. (2024), p. 9; Dudek, Brenøe, Feld, and Rohrer (2022), *Psychological Science* 33(9): 1574–1587.
+:::
+
+::: notes
+Present Grosz and colleagues' most detailed example of as-if randomization. Dudek and colleagues asked whether growing up with a next-younger sister rather than a next-younger brother changes one's own personality. The sex of a future sibling is essentially random at conception, and because that sibling is born after the focal person, it cannot be caused by the focal person's own traits.
+
+Threats: sex differences in survival, and sex-selective abortion, could make the sibling's sex less than random. The authors ran two checks. First, balance: people with a younger sister and a younger brother should look alike on variables fixed before the sibling's birth, such as the number of older siblings, and they did. Second, robustness: they excluded three samples with concerns about sex-selective abortion or other imbalances.
+
+Result, from the paper rather than Grosz and colleagues: no meaningful causal effect of the next-younger sibling's sex on risk tolerance, trust, patience, locus of control, or the Big Five, across 85,887 people from 12 samples in 9 countries. With that much power, the null is informative.
+
+Note the narrow estimand that Grosz and colleagues flag: the design identifies the effect of the next-younger sibling's sex, not of older siblings or of siblings in general.
+:::
+
+## An earthquake in the middle of a survey {#earthquake}
+
+::::: two-column
+::: column
+![](assets/dag-earthquake.svg){fig-alt="Answering before or after March 11, 2011 determines whether a respondent experienced the quake, which affects life satisfaction; a possible threat is that early and late respondents differ"}
+:::
+
+::: column
+A Japanese consumer survey was in the field on **March 11, 2011**, when the Great East Japan Earthquake struck.
+
+About **half** the respondents answered **before**, half **after**.
+
+**Result:** people who answered after the quake reported **lower life satisfaction**.
+:::
+:::::
+
+::: {.fragment .key-line}
+Threat: people who answer a survey late may differ from early responders. Check: compare them on traits the quake couldn't change.
+:::
+
+::: source
+Sources: Grosz et al. (2024), pp. 6, 11; Oishi, Kohlbacher, and Choi (2018), *Social Psychological and Personality Science* 9: 364–371.
+:::
+
+::: notes
+Present Oishi and colleagues' earthquake study, which Grosz and colleagues cite twice: as a standard natural experiment and as a time threshold. No one can assign an earthquake. But an online survey about consumer attitudes, which also included a life-satisfaction measure and a brief Big Five inventory, happened to be in the field on March 11, 2011, when the Great East Japan Earthquake struck. Roughly half the respondents had answered before and half after. Comparing them, with regression-discontinuity analyses around the date, estimates the short-run effect of the disaster.
+
+Result: respondents who answered after the earthquake reported lower life satisfaction, as the authors predicted from earlier work on adaptation to disasters. Fragments of the paper available online suggest an effect of about d = 0.21; check the article before quoting the size.
+
+The threat is the same one students will meet in Balcells and Torrats-Espinosa: people who answer a survey late may differ from early responders. The check is to compare early and late respondents on characteristics the earthquake could not have changed. This design is sometimes called an unexpected event during survey design.
 :::
 
 ## 3. Regression discontinuity {#rd}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/dag-rd.svg){fig-alt="Naive DAG: ability causes both getting the program and the outcome. Design DAG: score near the cutoff is conditioned on; the score determines the program"}
 :::
@@ -1059,7 +1347,7 @@ The key assumption: whatever assigned the treatment did not select on traits tha
 ::: column
 ![](assets/grosz-fig4-rdd-simulated-plot.png){fig-alt="Grosz et al. Figure 4: simulated regression discontinuity plot with a jump at the cutoff"}
 :::
-:::
+:::::
 
 People just above and just below a cutoff are nearly identical, except one got the treatment.
 
@@ -1075,22 +1363,167 @@ Grosz and colleagues' Box 3 uses the original RD study, Thistlethwaite and Campb
 Two assumptions to name now; we will test them on Bol and colleagues. Potential outcomes change smoothly through the cutoff, and people cannot precisely manipulate which side they land on. And the estimate is local: it applies to people near the cutoff.
 :::
 
+## The first RD: Thistlethwaite & Campbell (1960) {#thistlethwaite}
+
+::::: two-column
+::: column
+![](assets/grosz-box3-dag-crop.png){fig-alt="Grosz et al. Box 3 DAG: test score determines being above the threshold, which determines the certificate of merit; test score and confounders affect academic achievement"}
+:::
+
+::: column
+**Treatment:** a National Merit **Certificate of Merit** (public recognition).
+
+**Assignment:** awarded if your qualifying-test score met your state's cutoff.
+
+**Comparison:** students **at** the cutoff vs. **one score interval below**. 1957 near-winners: **5,126** certificates, **2,848** commendations.
+:::
+:::::
+
+::: {.fragment .key-line}
+An earlier **matching** study said recognition raised intellectual attitudes. The RD **confirmed** more outside scholarships, **contradicted** the attitude effect, and was equivocal on career plans.
+:::
+
+::: source
+Sources: Grosz et al. (2024), Box 3 and p. 11; Thistlethwaite and Campbell (1960), *Journal of Educational Psychology*.
+:::
+
+::: notes
+Present the original RD study, published in a psychology journal. The question: does public recognition, a Certificate of Merit from the National Merit program, change students' later achievement and attitudes? Comparing recognized and unrecognized students is confounded by intelligence, personality, and social support, all of which affect both the test score and later outcomes.
+
+The certificate went to students whose qualifying-test score met their state's cutoff. Thistlethwaite and Campbell compared students just at the cutoff with students one score interval below, who were probably very similar except for the certificate. The data came from near-winners in the 1957 National Merit program: 5,126 certificate recipients and 2,848 recipients of letters of commendation.
+
+The result, from the original paper rather than Grosz and colleagues: an earlier study using matching had suggested that recognition raised intellectual attitudes, plans for MD or PhD study, and success winning other scholarships. The RD analysis confirmed the effect on winning scholarships from other donors, contradicted the effect on attitudes, and was equivocal on career plans. A design-based analysis overturned part of what statistical matching had found.
+
+Note that Grosz and colleagues' Box 3 presents a modernized version of the design; the 1960 analysis was largely graphical, with coarse score intervals.
+:::
+
+## Regression discontinuity by formula: Maimonides' rule {#maimonides}
+
+:::::: two-column
+::: column
+![](assets/maimonides-rule.svg){fig-alt="Predicted class size by grade enrollment under Maimonides' rule: size rises to 40, then drops to 20.5 when the 41st student enrolls, repeating at each multiple of 40"}
+:::
+
+:::: column
+Israeli schools cap classes at **40**. Enroll a **41st** student and the grade splits into two classes of about **20**.
+
+Schools with 40 vs. 41 students are nearly identical, but their class sizes differ by almost half.
+
+::: {.fragment .key-line}
+Smaller classes raised **5th-grade** reading and math and **4th-grade** reading; no effect in **3rd** grade.
+:::
+::::
+::::::
+
+::: source
+Source: Angrist and Lavy (1999), *Quarterly Journal of Economics* 114(2): 533–575.
+:::
+
+::: notes
+Add a classic regression discontinuity outside the readings. Israeli public schools follow a rule attributed to the twelfth-century scholar Maimonides: no more than 40 students per class. Predicted class size rises with enrollment up to 40, then drops when the 41st student enrolls, because the grade splits into two classes averaging 20.5. The pattern repeats at 80, 120, and so on, producing the sawtooth in the figure.
+
+The naive comparison of small and large classes is confounded: small classes are more common in small, rural, or disadvantaged schools, and in classes formed for weaker students. But schools with 40 and 41 students in a grade are nearly identical, while their predicted class sizes differ by almost half. The cutoff, not the school's traits, drives the difference.
+
+This is a fuzzy RD: schools do not follow the rule exactly, so the rule shifts class size without fully determining it, and the analysis uses the rule as an instrument, combining the logic of this slide and the next one. Angrist and Lavy found that smaller classes raised fifth graders' reading and math scores and fourth graders' reading scores, with no detectable effect for third graders.
+:::
+
 ## 4. Instrumental variables {#iv}
 
 ![](assets/dag-iv.svg){fig-alt="Naive DAG: unmeasured confounders cause treatment and outcome. Design DAG: a random instrument Z causes treatment X; U still causes X and Y, but the analysis uses only the variation in X that Z produces"}
 
-Defendants randomly assigned to harsher vs. more lenient **judicial calendars**: incarcerated **65%** vs. **23%**. Compare their later outcomes, scaled by that difference.
+Why someone gets more prison time (X) has two kinds of causes:
+
+::: fragment
+-   **Their record, personality, home life (U).** These also affect re-offending. *Confounded.*
+-   **Which judge they happened to draw (Z).** This is random. *Clean.*
+:::
+
+::: {.fragment .key-line}
+IV throws away the first kind and keeps **only the part of X that Z causes**. Effect of X = (how much Z moves Y) ÷ (how much Z moves X).
+:::
 
 ::: source
 Sources: Grosz et al. (2024), Figure 3 and Box 2 (Green and Winik 2010); Dunning (2012).
 :::
 
 ::: notes
+**Talk track**
+
+Start with the problem. We want the effect of incarceration on re-offending. But people who get longer sentences differ from people who get shorter ones: worse records, different home environments, different personalities. Those same things affect re-offending. Comparing them directly is confounded, and we can't measure everything in U.
+
+The IV idea: split the variation in X into two parts. One part comes from U, the defendant's own characteristics. That part is contaminated. The other part comes from Z, the luck of the draw: which judges you were assigned. Because Z is random, that part of X is unrelated to U. IV uses only that clean part.
+
+How it works in two steps:
+
+1.  **First stage:** how much does Z change X? Being assigned to a harsh calendar instead of a lenient one raises the chance of prison from 23% to 65%, a 42-point difference.
+2.  **Reduced form:** how much does Z change Y? Compare re-arrest rates between the harsh and lenient calendars. Because Z is random, this difference is causal, but it is the effect of the *calendar*, not of prison.
+3.  **Divide:** if Z changes Y only by changing X, then the effect of X is the reduced form divided by the first stage.
+
+A hypothetical to make the arithmetic concrete (not the paper's numbers): if re-arrest were 4.2 points higher on the harsh calendar, and the harsh calendar raises the incarceration rate by 42 points, then incarceration raises re-arrest by 4.2 / 0.42 = 10 points for the people whose sentence depended on the calendar.
+
+**Ask students**
+
+Why can't we just compare people who went to prison with people who didn't? Why does it matter that we divide by the first stage instead of just reporting the calendar difference?
+
+**Teaching detail**
+
 Instrumental variables are for treatments people partly choose. Something random pushes some people toward treatment, but does not fully determine it. Grosz and colleagues' Box 2 uses Green and Winik's study of drug defendants in Washington, D.C., who were randomly assigned to one of nine judicial calendars. Calendars differed in harshness: across the harshest and most lenient, 65 versus 23 percent were incarcerated, with average sentences of 11.9 versus 5.1 months. Comparing later recidivism across calendars, scaled by these differences in punishment, estimates the effect of incarceration for defendants whose sentence depended on the calendar.
 
 The draft lottery works the same way for military service: the lottery changed who served, so it can estimate the effect of service, not only of eligibility.
 
 Assumptions: the instrument is random (independence); it actually moves the treatment (relevance, checkable in the first stage); it affects the outcome only through the treatment (exclusion, not checkable, only argued); and it does not push anyone away from treatment (monotonicity). The estimate applies to compliers, people whose treatment the instrument changed.
+:::
+
+## What is a harsh or lenient judicial calendar? {#iv-calendars}
+
+**Washington, D.C., 2002–2003:** 1,003 drug defendants. Each case was assigned as-if randomly to one of **nine calendars**.
+
+A **calendar** is a courtroom docket run by a particular set of judges. Judges differ in how punitive they are with similar cases.
+
+::: small-table
+|                         | Most lenient calendar | Most harsh calendar |
+|-------------------------|-----------------------|---------------------|
+| Share sent to prison    | 23%                   | 65%                 |
+| Average prison sentence | 5.1 months            | 11.9 months         |
+:::
+
+::: fragment
+**Result:** no detectable effect of prison or probation time on re-arrest.
+:::
+
+::: {.fragment .key-line}
+**Exclusion:** the calendar may affect re-arrest only through prison time. But judges also set probation, fines, and conditions. Does that hold?
+:::
+
+::: source
+Sources: Green and Winik (2010); Grosz et al. (2024), Box 2.
+:::
+
+::: notes
+**Talk track**
+
+Make the term concrete. In the D.C. Superior Court, a "calendar" is a courtroom docket: a stream of cases handled by a particular judge or set of judges. Defendants don't choose their calendar, and the court assigns cases to calendars without regard to the defendant's characteristics. So the calendar works like a coin flip.
+
+"Harsh" and "lenient" describe the judges, not the defendants. Because the cases are comparable across calendars, any difference in sentencing reflects the judges' punitiveness. On the most lenient calendar, 23% of defendants went to prison, with an average sentence of 5.1 months. On the harshest, 65% went to prison, averaging 11.9 months. Same kinds of defendants, very different punishment, purely because of the draw. That is the first stage.
+
+Green and Winik then compared later re-arrest across calendars. They found no detectable effect of randomly assigned differences in prison or probation time on re-arrest.
+
+**Ask students**
+
+What would have to be true for the calendar to be a valid instrument? Walk through the four assumptions with this case:
+
+-   **Random assignment:** were cases really assigned without regard to the defendant? Check balance on prior record and charge.
+-   **Relevance:** does the calendar actually move prison time? Yes, 23% vs. 65%.
+-   **Exclusion:** does the calendar affect re-arrest *only* through prison time? Judges also set probation, fines, and treatment conditions. If those matter, the instrument is picking up more than prison.
+-   **Monotonicity:** is a harsh calendar harsher for *everyone*? If one judge is tough on first offenders but lenient on repeat offenders, this fails.
+
+**Teaching detail**
+
+The estimate applies to compliers: defendants whose sentence depended on which calendar they drew. It says nothing about defendants every judge would have sent to prison, or none would.
+
+The literature disagrees. Bhuller, Dahl, Løken, and Mogstad (2020, *JPE*) argue that the D.C. sample is small and the instrument weak, which can bias IV estimates. Using a similar random-judge design in Norway, they found that incarceration *reduced* recidivism. This is a good example of why the first stage needs to be strong and why exclusion has to be argued, not assumed.
+
+Data and code: isps.yale.edu/research/data/d028.
 :::
 
 ## 5. Before and after an event {#before-after}
@@ -1111,10 +1544,10 @@ Assumptions: without the event, outcomes would have followed parallel paths (or,
 
 ::: small-table
 | Design | Key assumption | How to probe it |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | Lottery | assignment really random (within strata) | verify the mechanism; balance on pre-treatment traits |
 | As-if random | assigner didn't select on outcome-relevant traits | balance tables; knowledge of how assignment happened |
-| Regression discontinuity | no precise sorting around the cutoff; outcomes smooth through it | density test; balance **at** the cutoff; placebo cutoffs |
+| Regression discontinuity | no precise sorting around the cutoff; outcomes smooth through it | density test (bunching just past the cutoff); balance **at** the cutoff; placebo cutoffs |
 | Instrumental variables | instrument affects Y **only** through X; it moves X | first-stage strength (testable); exclusion (argue) |
 | Before / after | no other change at the same time; similar paths before | pre-trends; placebo dates; who was reached when |
 :::
@@ -1133,49 +1566,91 @@ This table is the checklist for the two cases in Part 5.
 
 ## Not every “natural experiment” is one {#not-ne}
 
-::: two-column
-::: column
-### Connecticut speeding crackdown, 1955
-
-Deaths fell after a crackdown, but the crackdown followed a record **bad** year. Regression to the mean, not as-if random.
-:::
-
-::: column
-### UN peacekeeping
-
-Missions compared with matched cases on **measured** variables. Matching is not as-if random: unmeasured differences remain.
-:::
-:::
+Dunning's contrast case: a **speeding crackdown in Connecticut**. After a deadly year, the governor cracked down on speeding. Deaths fell.
 
 ::: {.fragment .key-line}
-Ask: who or what decided treatment, and could it have responded to the outcome?
+Who or what decided the treatment, and could it have responded to the outcome or its causes?
 :::
 
 ::: source
-Source: Dunning (2012), pp. 19–21; Campbell and Ross (1968).
+Source: Dunning (2012), pp. 19–20.
 :::
 
 ::: notes
-Use Dunning's contrast cases to sharpen the definition. In Campbell and Ross's classic analysis, Connecticut's governor began a crackdown on speeding in late 1955 after a year of unusually high traffic deaths, and deaths fell afterward. But the crackdown was a response to the bad year, so some decline was expected regardless: regression to the mean. Treatment timing depended on the outcome. Dunning describes this as a law; Campbell and Ross describe it as an enforcement crackdown.
+Introduce the contrast case Dunning uses to show what is not a natural experiment. The treatment was assigned by a person responding to circumstances, not by chance. Ask the diagnostic question before showing the evidence.
+:::
 
-Gilligan and Sergenti's study of UN peacekeeping matched countries with and without missions on measured characteristics. That is useful, but it is matching, not a natural experiment: nothing about how missions were assigned guarantees balance on unmeasured traits.
+## Connecticut, 1955: the study and the claim {#ct-claim}
 
-The diagnostic question for any proposed natural experiment: who or what decided who was treated, and could that decision have been influenced by the outcome or its causes?
+::::: two-column
+::: column
+![](assets/ct-two-point.svg){fig-alt="Connecticut traffic deaths fell from 325 in 1955 to 280 in 1956"}
+:::
+
+::: column
+After a record **325** traffic deaths in 1955, Governor Ribicoff ordered a crackdown on speeding (Dec. 1955): license suspensions for speeders.
+
+In 1956, deaths fell to **280**.
+
+The governor's conclusion: the crackdown saved about **40 lives**.
+:::
+:::::
+
+::: {.fragment .key-line}
+What else could produce this drop?
+:::
+
+::: source
+Sources: Campbell and Ross (1968), *Law & Society Review* 3(1): 33–53; data from the fastR2 R package, Traffic dataset.
+:::
+
+::: notes
+Present the claim as it was made. In 1955 Connecticut recorded an unusually high number of traffic deaths, about 325 in these data. In late December 1955, Governor Abraham Ribicoff began an exceptionally strict crackdown on speeding, including license suspensions for convicted speeders. In 1956 deaths fell to about 280, and the governor credited the crackdown with saving lives.
+
+Campbell and Ross's paper became the classic analysis of why this two-point comparison is weak evidence. Ask students what else could produce the drop before showing the full series.
+
+Note that Dunning describes this as a law; Campbell and Ross describe it as an enforcement crackdown. The governor's own figures (324 and 284 deaths, 40 lives) differ slightly from the published dataset plotted here (325 and 280).
+:::
+
+## Connecticut: the explanation and the problem {#ct-problem}
+
+::::: two-column
+::: column
+![](assets/ct-series.svg){fig-alt="Connecticut traffic deaths 1951 to 1959, with 1955 an unusually high year followed by a decline"}
+:::
+
+::: column
+![](assets/ct-states.svg){fig-alt="Traffic deaths per 100,000 in Connecticut, New York, Massachusetts, and Rhode Island, 1951 to 1959; several states spiked in 1955"}
+:::
+:::::
+
+**The problem:** the crackdown happened **because** 1955 was a bad year. After an unusually bad year, the next is usually better anyway: **regression to the mean**. Neighbors also spiked in 1955 and fell in 1956.
+
+::: source
+Sources: Campbell and Ross (1968); data from the fastR2 R package, Traffic dataset (deaths and deaths per 100,000, 1951–1959).
+:::
+
+::: notes
+Show the full series. Connecticut's deaths bounce around from year to year; 1955 is the high point. The crackdown was triggered by that high point, so treatment timing depended on the outcome. After an unusually high year, the next year is likely to be lower even with no intervention, because part of what made 1955 high was chance. That is regression to the mean, and it alone predicts a drop in 1956.
+
+The right panel adds neighboring states that had no crackdown. Rhode Island and Massachusetts also spiked in 1955 and fell in 1956, which points to common causes such as weather or driving conditions rather than Connecticut's policy. Campbell and Ross concluded that the evidence for the crackdown's effect was weak, though Connecticut did continue to decline relative to its neighbors in later years.
+
+The general lesson: when a treatment is triggered by an extreme value of the outcome, a before/after comparison is not as-if random. In DAG terms, the earlier outcome causes the treatment, which is reverse causation from Week 10.
 :::
 
 ## Judging a natural experiment {#dunning-cube}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/dunning-fig1-2-evaluative-cube.png){fig-alt="Dunning Figure 1.2: a cube with three dimensions: plausibility of as-if random, credibility of models, substantive relevance"}
 :::
 
 ::: column
-1. **Plausibility of as-if random:** how convincing is the assignment story?
-2. **Credibility of the models:** does the analysis rest on simple comparisons or heavy modeling?
-3. **Substantive relevance:** does the answer speak to the question we care about?
+1.  **Plausibility of as-if random:** how convincing is the assignment story?
+2.  **Credibility of the models:** does the analysis rest on simple comparisons or heavy modeling?
+3.  **Substantive relevance:** does the answer speak to the question we care about?
 :::
-:::
+:::::
 
 ::: {.fragment .key-line}
 Lotteries score high on (1) but often low on (3): lottery winnings are not earned income.
@@ -1190,25 +1665,19 @@ Present Dunning's three evaluative dimensions. A strong natural experiment has a
 
 These can trade off. Dunning's lottery example: lottery winnings are as random as it gets, but players are not representative of voters, and a windfall is not the same thing as earned income, so the result may not answer a question about how income shapes political attitudes. Regression discontinuity answers a question about people near the cutoff, which may or may not be the population of interest.
 
+**Natural experiments are everywhere, but that doesn't make the question interesting.** Dunning's third dimension is his answer to critics like Deaton (2009), who argued that "the causes that Nature deigns to assign at random" are often substantively trivial and that the payoff is "a focus that is too narrow and too local." Once you start looking, as-if random variation is everywhere: birthdays, weather, alphabetical order, lotteries, sports scores, the day of the week a survey was answered. The risk is that the available variation picks the question, rather than the question picking the design. That is the drunk looking for his keys under the streetlight because that's where the light is. Examples to give:
+
+-   **Rain on election day.** Weather is as-if random, and rain does lower turnout (Gomez, Hansford, and Krause 2007, "The Republicans Should Pray for Rain"). That's clean, but how much does "rain lowers turnout a little" tell us about why people vote? Rain has also been used as an instrument for so many different things (crop yields, economic growth, conflict, protest, turnout) that every one of those uses is a possible exclusion violation for the others. Mellon catalogued about 194 such channels in "Rain, Rain, Go Away."
+-   **Ballot order.** Candidates are often listed alphabetically or by lottery, so being listed first is as-if random. Being first gives a small boost in low-information races. That's useful for election administrators, but narrow.
+-   **Local sports wins before an election.** Healy, Malhotra, and Mo (2010) found that home college-football wins just before an election raised incumbent vote share. That's clever and as-if random, but later reanalysis (Fowler and Montagnes 2015) suggested the result may be a false positive. Clean designs on curiosity questions still need replication.
+-   **Lotteries** (already on the slide). The assignment is perfectly random, but a windfall isn't earned income, and lottery players aren't voters in general.
+-   **Month of birth and relative age.** Children born just after a school or sports-league cutoff are the oldest in their cohort. That's a clean RD, and it shows up in hockey rosters, school grades, and ADHD diagnoses. It's a real effect but a narrow one: the effect of being a few months older than your classmates, not the effect of maturity or ability in general.
+
+Contrast these with designs where the variation and the question line up: the draft lottery for the effect of military service, Snow's water companies for whether cholera is waterborne, or Bol and colleagues' grant cutoff for the Matthew effect in science. There, the natural experiment answers a question people already cared about.
+
+**Ask students:** Think of a question in your own research. Is there a natural experiment that answers *that* question? Or can you only find natural experiments that answer a nearby, easier question? Which would you rather publish?
+
 Students will use these three dimensions to judge Bol and colleagues and Balcells and Torrats-Espinosa.
-:::
-
-## Psychology rarely uses them {#grosz-table}
-
-![](assets/grosz-table1-econ-vs-psych-review.png){fig-alt="Grosz et al. Table 1: review of 108 psychology and 108 economics articles; 0 psychology vs. 36 economics articles used natural experiments" width="72%"}
-
-::: {.fragment .key-line}
-**0 of 108** psychology articles vs. **36 of 108** economics articles used a natural experiment.
-:::
-
-::: source
-Source: Grosz et al. (2024), Table 1, p. 6.
-:::
-
-::: notes
-Close Part 4 with Grosz and colleagues' motivation. They reviewed 108 recent articles in leading psychology journals and 108 in leading economics journals. None of the psychology articles used a natural experiment; 36 of the economics articles did. Their argument is that psychology relies on lab experiments and on observational studies with statistical controls, and misses many settings in which nature or policy has already randomized something psychologically important.
-
-Ask communication students where communication falls. Communication research uses some natural experiments, such as TV's arrival, broadband rollout, and newspaper closures, but far fewer than economics.
 :::
 
 ## Two natural experiments up close {#cases .section-title}
@@ -1227,7 +1696,7 @@ The **Matthew effect**: “to everyone who has, more will be given.” Do early 
 
 Since 2000, the Dutch Veni/Vidi/Vici program concentrated **€2.4 billion** in **3,660** applicants.
 
-::: {.fragment}
+::: fragment
 ![](assets/dag-bol.svg){fig-alt="Naive DAG: talent and proposal quality cause both winning an early-career grant and later funding. Design DAG: rank near the threshold is conditioned on and determines winning"}
 :::
 
@@ -1279,7 +1748,7 @@ Point out what makes this an RD plot: the outcome is roughly flat on each side a
 
 ## The gap kept growing {#bol-cumulative}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/bol-figure3-cumulative-funding.png){fig-alt="Bol et al. Figure 3: cumulative additional funding for near-winners versus near-losers over eight years"}
 :::
@@ -1287,7 +1756,7 @@ Point out what makes this an RD plot: the outcome is roughly flat on each side a
 ::: column
 ![](assets/bol-figure4-full-professor.png){fig-alt="Bol et al. Figure 4: share who became full professors, 19 percent versus 28 percent"}
 :::
-:::
+:::::
 
 Extra funding: about **€40,000** after 4 years, about **€180,000** after 8 (beyond the Veni itself). Full professor by 2018: **19%** vs. **28%**.
 
@@ -1303,12 +1772,27 @@ Careers diverged too: 28 percent of near-winners were full professors by 2018, 1
 The interpretation: a nearly arbitrary early difference, a rank or two around a budget line, produced lasting inequality in funding and status.
 :::
 
-## Why? Participation and status {#bol-mechanism}
+## Why did this happen? {#bol-why}
+
+::: notes
+Leave the slide blank and let students generate mechanisms. A rank or two around a budget line produced lasting gaps in funding and promotion. Why would winning one early grant lead to winning more later?
+
+Push for specific mechanisms, each with its own arrow:
+
+-   **Participation / discouragement:** near-losers stop applying.
+-   **Status signal:** reviewers treat a past grant as evidence of quality.
+-   **Resources:** the grant money itself buys staff, data, and publications that make later proposals stronger.
+-   **Confidence or motivation:** winning makes people more ambitious.
+
+Then ask: which of these could you check with the data the authors have? The next slide shows the two they examined.
+:::
+
+## Two mechanisms: participation and status {#bol-mechanism}
 
 ![](assets/dag-bol-mechanism.svg){fig-alt="Winning an early-career grant leads to applying for a mid-career grant and to a status signal, both of which lead to winning a mid-career grant" width="62%"}
 
-- Near-losers **applied less** (40% vs. 59%).
-- Among those who applied, near-winners still won more (about **44%** vs. **25%**).
+-   Near-losers **applied less** (40% vs. 59%).
+-   Among those who applied, near-winners still won more (about **44%** vs. **25%**).
 
 ::: {.fragment .key-line}
 Discouragement explains part of the gap. A status signal may explain the rest.
@@ -1330,7 +1814,7 @@ Note the connection to Part 2: these are mediators of the effect of winning, and
 
 ::: small-table
 | Assumption | Why it might fail | Evidence |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | Similar just above and below | committees might push favored applicants over the line | no jump in prior publications, citations, h-index |
 | No sorting around the threshold | applicants can't choose their rank; committee can decide borderline cases | addressed indirectly; no density test reported |
 | Losers didn't leave science | near-losers might exit, lowering their later funding mechanically | checked in the supplement (not in our PDF) |
@@ -1365,10 +1849,10 @@ The design DAG shows the remaining threat: if people interviewed later in the fi
 
 ## The design: eight attacks during survey fieldwork {#balcells-design}
 
-- **8** ETA attacks (1989–1997) during **7** CIS surveys
-- Compare respondents **within the same survey and province**, interviewed before vs. after
-- Windows of **±1, ±3, ±5 days**; respondents interviewed on the attack day dropped
-- Outcomes: would you vote “tomorrow”? would you vote for the **incumbent**?
+-   **8** ETA attacks (1989–1997) during **7** CIS surveys
+-   Compare respondents **within the same survey and province**, interviewed before vs. after
+-   Windows of **±1, ±3, ±5 days**; respondents interviewed on the attack day dropped
+-   Outcomes: would you vote “tomorrow”? would you vote for the **incumbent**?
 
 ::: {.fragment .key-line}
 N = 3,810 (±1 day), 9,135 (±3), 11,848 (±5).
@@ -1388,7 +1872,7 @@ Outcomes: whether the respondent would vote if a general election were held tomo
 
 ## People said they would vote, but not for anyone in particular {#balcells-results}
 
-::: two-column
+::::: two-column
 ::: column
 ![](assets/balcells-figure1-turnout-intention-main-effect.png){fig-alt="Balcells and Torrats-Espinosa Figure 1: effect of attacks on turnout intention at 1, 3, and 5 days, with and without controls"}
 
@@ -1400,7 +1884,7 @@ Turnout intention: **+2.8 pts** (±1 day, controls); +4.4 without.
 
 Incumbent support: between **−0.8 and +1.0 pts**, never significant.
 :::
-:::
+:::::
 
 ::: source
 Source: Balcells and Torrats-Espinosa (2018), Figures 1 and 3.
@@ -1423,7 +1907,7 @@ Source: Balcells and Torrats-Espinosa (2018), Figure 2; SI Table S6.
 :::
 
 ::: notes
-Show the heterogeneity, and connect it to Part 3: these subgroup differences are moderation. The effect is largest among people who did not vote in the previous election, 13.7 points, and among residents of the Basque Country, 11 points. Attacks on civilians or politicians raised turnout intention by 4.2 points, attacks on police or military by 1.2, though that difference is significant only at p < .10.
+Show the heterogeneity, and connect it to Part 3: these subgroup differences are moderation. The effect is largest among people who did not vote in the previous election, 13.7 points, and among residents of the Basque Country, 11 points. Attacks on civilians or politicians raised turnout intention by 4.2 points, attacks on police or military by 1.2, though that difference is significant only at p \< .10.
 
 Add the caveats from the summary. The Basque estimate comes mostly from one attack in a regional survey with only 41 post-attack respondents in the one-day window. Among people who voted last time, about 80 percent of the sample, the effect is close to zero: the whole effect is among prior abstainers. And the subgroups are not randomized, so these are differences in effects across kinds of people, not effects of being Basque.
 :::
@@ -1432,7 +1916,7 @@ Add the caveats from the summary. The Basque estimate comes mostly from one atta
 
 ::: small-table
 | Assumption | Why it might fail | Evidence |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | Interview timing as-if random | harder-to-reach people interviewed later | balance table: joint test *p* = .18, but post-attack respondents **2 pts** less likely to be prior abstainers |
 | No differential nonresponse | attacks change who agrees to answer | contact attempts and refusals similar (reported in prose only) |
 | Controls are pre-treatment | “prior vote” is **recalled after** the attack | the 4.4 → 2.8 drop comes from this control |
@@ -1454,8 +1938,8 @@ Other checks: contact attempts and refusals were similar before and after (descr
 ## Two designs compared {#cases-compared}
 
 ::: small-table
-| | Bol et al. | Balcells & Torrats-Espinosa |
-|---|---|---|
+|   | Bol et al. | Balcells & Torrats-Espinosa |
+|------------------------|------------------------|------------------------|
 | Design | regression discontinuity | before vs. after an unexpected event |
 | What assigns treatment | a rank relative to a budget line | the attack date relative to the interview date |
 | Naive confounder cut | talent, proposal quality | conflict intensity, region, politics |

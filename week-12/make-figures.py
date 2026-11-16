@@ -244,3 +244,112 @@ pair("dag-balcells.svg",
        "r": (0.5, 0.08, "Hard to reach?\n(interviewed late)")},
       [("s", "a", "causal"), ("c", "a", "cut"), ("c", "v", "bias"), ("a", "v", "causal"), ("r", "a", "dashed"), ("r", "v", "dashed")],
       "Design: same survey, same province, before vs. after", {"unobserved": ("r",)}))
+
+# ===================================================================== Maimonides' rule (Angrist & Lavy 1999)
+E = np.arange(1, 201)
+W = E / (np.floor((E - 1) / 40) + 1)
+fig, ax = plt.subplots(figsize=(10, 4.2))
+ax.set_facecolor("none")
+for sp in ("top", "right"):
+    ax.spines[sp].set_visible(False)
+ax.plot(E, W, color=BLUE, lw=3)
+for c in (40, 80, 120, 160):
+    ax.axvline(c + 0.5, color=LINE, lw=1.2, ls="--")
+ax.annotate("41st student:\ntwo classes of 20.5", xy=(41, 20.5), xytext=(52, 6),
+            fontsize=13, color=RUST, arrowprops=dict(arrowstyle="->", color=RUST, lw=1.8))
+ax.set_xlabel("Grade enrollment at the school", fontsize=14)
+ax.set_ylabel("Predicted class size", fontsize=14)
+ax.set_ylim(0, 44)
+ax.set_xticks([0, 40, 80, 120, 160, 200])
+save(fig, "maimonides-rule.svg")
+
+# ===================================================================== Not every natural experiment: Connecticut crackdown
+# Data: fastR2::Traffic (Campbell & Ross 1968): CT deaths and deaths per 100,000 for CT, NY, MA, RI, 1951-59
+yrs = np.arange(1951, 1960)
+ct_deaths = [265, 230, 275, 240, 325, 280, 273, 248, 245]
+rates = {"Connecticut": [13.0, 10.8, 12.8, 10.8, 14.0, 12.1, 11.9, 10.1, 10.0],
+         "New York": [13.9, 13.8, 14.4, 13.0, 13.5, 13.4, 13.3, 13.0, 12.9],
+         "Massachusetts": [10.2, 10.0, 11.0, 10.5, 11.8, 11.0, 10.2, 11.8, 11.0],
+         "Rhode Island": [8.0, 8.5, 8.5, 7.5, 10.0, 8.2, 9.4, 8.6, 9.0]}
+
+def style(ax):
+    ax.set_facecolor("none")
+    for sp in ("top", "right"):
+        ax.spines[sp].set_visible(False)
+
+fig, ax = plt.subplots(figsize=(5.2, 4.4)); style(ax)
+ax.plot([1955, 1956], [325, 280], "-o", color=RUST, lw=4, ms=12)
+for x, y in [(1955, 325), (1956, 280)]:
+    ax.text(x, y + 7, f"{y}", ha="center", fontsize=16, color=RUST, fontweight="bold")
+ax.set_xticks([1955, 1956]); ax.set_xlim(1954.6, 1956.4); ax.set_ylim(200, 350)
+ax.set_ylabel("Traffic deaths in Connecticut", fontsize=14)
+ax.set_title("Before vs. after the crackdown", fontsize=15, color=NAVY, loc="left")
+save(fig, "ct-two-point.svg")
+
+fig, ax = plt.subplots(figsize=(8.5, 4.4)); style(ax)
+ax.plot(yrs, ct_deaths, "-o", color=RUST, lw=3.5, ms=9)
+ax.axvline(1955.5, color=MUTED, ls="--", lw=1.5)
+ax.text(1955.55, 335, "crackdown\n(Dec. 1955)", fontsize=12, color=MUTED, va="top")
+ax.annotate("1955: a record\nbad year", xy=(1955, 325), xytext=(1952.3, 320), fontsize=13, color=INK,
+            arrowprops=dict(arrowstyle="->", color=INK, lw=1.5))
+ax.set_ylim(200, 345); ax.set_xticks(yrs)
+ax.set_ylabel("Traffic deaths in Connecticut", fontsize=14)
+ax.set_title("The full series: 1956 looks like a return to normal", fontsize=15, color=NAVY, loc="left")
+save(fig, "ct-series.svg")
+
+fig, ax = plt.subplots(figsize=(8.5, 4.4)); style(ax)
+cols = {"Connecticut": RUST, "New York": BLUE, "Massachusetts": GOLD, "Rhode Island": MUTED}
+for k, v in rates.items():
+    ax.plot(yrs, v, "-o", color=cols[k], lw=3.5 if k == "Connecticut" else 2.2, ms=7 if k == "Connecticut" else 5)
+    ax.text(1959.15, v[-1], k, color=cols[k], fontsize=13, va="center", fontweight="bold" if k == "Connecticut" else "normal")
+ax.axvline(1955.5, color=MUTED, ls="--", lw=1.5)
+ax.set_xticks(yrs); ax.set_xlim(1950.6, 1960.6)
+ax.set_ylabel("Deaths per 100,000", fontsize=14)
+ax.set_title("Neighboring states also spiked in 1955", fontsize=15, color=NAVY, loc="left")
+save(fig, "ct-states.svg")
+
+# ===================================================================== UN peacekeeping: matching on measured variables
+pair("dag-un.svg",
+     ({"u": (0.5, 0.86, "Conflict severity\n(partly unmeasured)"), "m": (0.2, 0.2, "UN mission\nsent"), "p": (0.8, 0.2, "Lasting\npeace")},
+      [("u", "m", "bias"), ("u", "p", "bias"), ("m", "p", "dashed")], "Naive: missions vs. no missions", {}),
+     ({"o": (0.22, 0.86, "Measured: war length,\nethnic divisions"), "u": (0.78, 0.86, "Unmeasured: elite\ndeals, outside powers"),
+       "m": (0.2, 0.18, "UN mission\nsent"), "p": (0.8, 0.18, "Lasting\npeace")},
+      [("o", "m", "cut"), ("o", "p", "faint"), ("u", "m", "bias"), ("u", "p", "bias"), ("m", "p", "dashed")],
+      "Matching closes only the measured back door", {"conditioned": ("o",), "unobserved": ("u",)}))
+
+# ===================================================================== As-if random: daughters, earthquake
+single_dag("dag-daughters.svg",
+           {"n": (0.14, 0.82, "Chance at\nconception"), "d": (0.14, 0.2, "# of daughters\n(given # children)"),
+            "v": (0.86, 0.2, "Votes on\nwomen's issues"), "p": (0.62, 0.82, "Legislator's own\nviews, party"),
+            "s": (0.38, 0.52, "Stopping rule?\n(try for a son)")},
+           [("n", "d", "causal"), ("d", "v", "causal"), ("p", "v", "bias"), ("p", "s", "dashed"), ("s", "d", "dashed")],
+           box_w=0.28, size=(10, 4.6), unobserved=("s",))
+
+single_dag("dag-earthquake.svg",
+           {"t": (0.14, 0.82, "Answered before vs.\nafter March 11, 2011"), "q": (0.14, 0.2, "Experienced\nthe quake"),
+            "y": (0.86, 0.2, "Life\nsatisfaction"), "w": (0.6, 0.82, "Who answers early\nvs. late?")},
+           [("t", "q", "causal"), ("q", "y", "causal"), ("w", "t", "dashed"), ("w", "y", "dashed")],
+           box_w=0.27, size=(10, 4.4), unobserved=("w",))
+
+# Week 12 version of the Craig & Richeson Study 3 DAG: random assignment
+# feeds both the racial-shift information and the reassurance paragraph.
+single_dag(
+    "dag-racial-shift-full.svg",
+    {
+        "rand": (0.1, 0.5, "Random\nassignment"),
+        "info": (0.38, 0.84, "Racial-shift\ninformation"),
+        "assuage": (0.38, 0.2, "+ “status will\nstay stable”\nparagraph"),
+        "threat": (0.66, 0.5, "Status\nthreat"),
+        "con": (0.9, 0.5, "Conservatism"),
+    },
+    [
+        ("rand", "info", "causal"),
+        ("rand", "assuage", "causal"),
+        ("info", "threat", "causal"),
+        ("threat", "con", "causal"),
+        ("assuage", "threat", "cut"),
+    ],
+    box_w=0.16,
+    fs=14,
+    size=(13, 5.6),
+)

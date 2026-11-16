@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="572.4pt" height="258.336pt" viewBox="0 0 572.4 258.336" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T21:41:07.382016</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 258.336 
+L 572.4 258.336 
+L 572.4 0 
+L 0 0 
+L 0 258.336 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 85.32 80.746704 
+Q 85.32 126.72864 85.32 169.356474 
+" clip-path="url(#p927af60ed8)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 89.72 160.556474 
+L 85.32 169.356474 
+L 80.92 160.556474 
+z
+" clip-path="url(#p927af60ed8)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 168.462 202.3488 
+Q 286.2 202.3488 400.583898 202.3488 
+" clip-path="url(#p927af60ed8)" style="fill: none; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 391.783898 197.9488 
+L 400.583898 202.3488 
+L 391.783898 206.7488 
+z
+" clip-path="url(#p927af60ed8)" style="fill: #2f6687; stroke: #2f6687; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 258.858 51.10848 
+Q 213.66 51.10848 170.921675 51.10848 
+" clip-path="url(#p927af60ed8)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 179.721675 55.50848 
+L 170.921675 51.10848 
+L 179.721675 46.70848 
+z
+" clip-path="url(#p927af60ed8)" style="fill: #62717d; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 370.431 80.746704 
+Q 414.54 126.72864 456.946273 170.935549 
+" clip-path="url(#p927af60ed8)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 454.029678 161.539088 
+L 456.946273 170.935549 
+L 447.679148 167.630949 
+z
+" clip-path="url(#p927af60ed8)" style="fill: #62717d; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #62717d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 17.244 80.258832 
+L 153.396 80.258832 
+Q 167.346 80.258832 167.346 74.160432 
+L 167.346 28.056528 
+Q 167.346 21.958128 153.396 21.958128 
+L 17.244 21.958128 
+Q 3.294 21.958128 3.294 28.056528 
+L 3.294 74.160432 
+Q 3.294 80.258832 17.244 80.258832 
+z
+" clip-path="url(#p927af60ed8)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 17.244 231.499152 
+L 153.396 231.499152 
+Q 167.346 231.499152 167.346 225.400752 
+L 167.346 179.296848 
+Q 167.346 173.198448 153.396 173.198448 
+L 17.244 173.198448 
+Q 3.294 173.198448 3.294 179.296848 
+L 3.294 225.400752 
+Q 3.294 231.499152 17.244 231.499152 
+z
+" clip-path="url(#p927af60ed8)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 419.004 231.499152 
+L 555.156 231.499152 
+Q 569.106 231.499152 569.106 225.400752 
+L 569.106 179.296848 
+Q 569.106 173.198448 555.156 173.198448 
+L 419.004 173.198448 
+Q 405.054 173.198448 405.054 179.296848 
+L 405.054 225.400752 
+Q 405.054 231.499152 419.004 231.499152 
+z
+" clip-path="url(#p927af60ed8)" style="fill: #ffffff; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 273.924 80.258832 
+L 410.076 80.258832 
+Q 424.026 80.258832 424.026 74.160432 
+L 424.026 28.056528 
+Q 424.026 21.958128 410.076 21.958128 
+L 273.924 21.958128 
+Q 259.974 21.958128 259.974 28.056528 
+L 259.974 74.160432 
+Q 259.974 80.258832 273.924 80.258832 
+z
+" clip-path="url(#p927af60ed8)" style="fill: #f7f4ee; stroke-dasharray: 8,6; stroke-dashoffset: 0; stroke: #18324a; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(12.28125 47.01123)">Answered before vs.</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(11.06875 65.50323)">after March 11, 2011</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(40.72875 196.69905)">Experienced</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(49.89625 216.27105)">the quake</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(474.1925 198.25155)">Life</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(446.19125 217.82355)">satisfaction</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(274.305 45.37873)">Who answers early</text>
+    <text style="font-size: 16px; font-family: 'Aptos', 'Helvetica Neue', 'Arial', 'DejaVu Sans'; fill: #18232d" transform="translate(312.21625 66.65448)">vs. late?</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p927af60ed8">
+   <rect x="7.2" y="7.2" width="558" height="243.936"/>
+  </clipPath>
+ </defs>
+</svg>
