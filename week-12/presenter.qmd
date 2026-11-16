@@ -1503,17 +1503,13 @@ This is a fuzzy RD: schools do not follow the rule exactly, so the rule shifts c
 
 > An **instrument (Z)** is something that (1) nudges people toward treatment, (2) is itself random or as-if random, and (3) affects the outcome **only** by changing the treatment.
 
-![](assets/dag-iv.svg){fig-alt="Naive DAG: unmeasured confounders U (record, home life, risk of school failure) cause both juvenile incarceration X and adult incarceration Y, with the X to Y arrow dashed and unresolved. Design DAG: a random judge incarceration propensity Z causes juvenile incarceration X; U still causes X and Y, but the analysis uses only the variation in juvenile incarceration that the judge produces, and the X to Y arrow from juvenile incarceration to adult incarceration is now solid"}
+![](assets/dag-iv.svg){.nostretch fig-alt="Naive DAG: unmeasured confounders U (record, home life, risk of school failure) cause both juvenile incarceration X and adult incarceration Y, with the X to Y arrow dashed and unresolved. Design DAG: a random judge incarceration propensity Z causes juvenile incarceration X; U still causes X and Y, but the analysis uses only the variation in juvenile incarceration that the judge produces, and the X to Y arrow from juvenile incarceration to adult incarceration is now solid" width="55%"}
 
 Why a juvenile offender gets incarcerated (X) has two kinds of causes:
 
 ::: fragment
 -   **Their record, home life, risk of school failure (U).** These also affect adult outcomes. *Confounded.*
 -   **Which judge they happened to draw (Z).** This is as-if random. *Clean.*
-:::
-
-::: {.fragment .key-line}
-IV throws away the first kind and keeps **only the part of X that Z causes**. Effect of X = (how much Z moves Y) ÷ (how much Z moves X).
 :::
 
 ::: source
@@ -1535,6 +1531,8 @@ How it works in two steps:
 2.  **Reduced form:** how much does Z change Y? Compare adult incarceration rates between juveniles who happened to draw high-propensity versus low-propensity judges. Because Z is as-if random, this difference is causal, but it is the effect of the *judge draw*, not of incarceration itself.
 3.  **Divide:** if Z changes Y only by changing X, then the effect of X is the reduced form divided by the first stage.
 
+The next slide walks through that arithmetic with Aizer and Doyle's actual numbers and states the result plainly, before the slide after that asks whether the design producing it is trustworthy.
+
 **Why this is a different design from a lottery, not just a smaller version of one.** In a lottery design (design 1), the random event more or less *is* the treatment: winning the lottery is the extra wealth; being served by one water company is the water exposure. The randomized groups can be compared directly, because there's nothing standing between the randomization and the treatment. Here, the randomly assigned judge only *pushes* on the treatment; a lenient judge still incarcerates some juveniles, a strict judge still releases some. The judge and the treatment are two different variables, linked only probabilistically. That's exactly why step 3 exists: comparing judges directly, with no division, would give the effect of the *judge*, not of *incarceration*. Dividing by the first stage is what recovers the treatment's own effect. A pure lottery design never needs this step, because there's nothing to divide by — the random assignment and the treatment it's standing in for are the same thing.
 
 **Ask students**
@@ -1548,6 +1546,30 @@ Instrumental variables are for treatments people (or the system) partly, not ful
 The draft lottery works the same way for military service: the lottery changed who served, so it can estimate the effect of service, not only of eligibility.
 
 Assumptions: the instrument is random (independence); it actually moves the treatment (relevance, checkable in the first stage); it affects the outcome only through the treatment (exclusion, not checkable, only argued); and it does not push anyone away from treatment (monotonicity). The estimate applies to compliers: juveniles whose incarceration status depended on which judge they drew.
+:::
+
+## The arithmetic, and the actual result {#iv-result}
+
+::: {.key-line}
+Effect of X = (how much Z moves Y) ÷ (how much Z moves X)
+:::
+
+::: {.fragment .key-line}
+**Result:** juveniles on the margin of incarceration are about **13 points** less likely to complete high school, and about **22–26 points** more likely to be incarcerated as adults, than otherwise-similar juveniles whose judge draw didn't push them into custody.
+:::
+
+::: source
+Source: Aizer and Doyle (2015), *QJE*.
+:::
+
+::: notes
+**Talk track**
+
+This is Aizer and Doyle's actual 2SLS point estimate, not a hypothetical: divide the reduced-form effect of judge assignment on adult incarceration by the first-stage effect of judge assignment on juvenile incarceration, and what's left is the effect of incarceration itself, for the compliers whose judge draw changed their status. Pause on the size of these numbers — 13 points off high school completion and 22–26 points onto adult incarceration are large effects for a single juvenile-court decision.
+
+**Teaching detail**
+
+Broken down by crime type, the adult recidivism effect is concentrated in violent crime (about 15 points), property crime (about 14 points), and drug offenses (about 10 points), with a smaller, imprecise effect for homicide. The next slide asks whether the design that produced this number is trustworthy — starting with whether judge assignment really was as good as random.
 :::
 
 ## Are judge propensities really as good as random? {#iv-calendars}
@@ -1584,11 +1606,9 @@ What would it mean, substantively, if juveniles drawing strict judges were dispr
 
 **Teaching detail**
 
-The mean judge-level incarceration rate on initial cases is 0.09; the overall rate of ever being incarcerated as a juvenile is 0.23. The first-stage coefficient of 1.06 (t-statistics around 11) is both strong and precisely estimated — this is what makes the downstream 2SLS estimates below credible rather than noisy.
+The mean judge-level incarceration rate on initial cases is 0.09; the overall rate of ever being incarcerated as a juvenile is 0.23. The first-stage coefficient of 1.06 (t-statistics around 11) is both strong and precisely estimated — this is what makes the 2SLS estimates from two slides ago credible rather than noisy.
 
-To be clear about which study found what: Aizer and Doyle *do* find a significant, large effect of incarceration on both outcomes (below). That is a different result from Green and Winik's (2010) D.C. judicial-calendar design — a different study, a different population (adult drug defendants, not juveniles), and a much smaller sample (1,003 defendants) — which found no detectable effect of prison or probation time on re-arrest. Don't let the contrast in sample size and precision between the two designs blur into a contrast in findings within Aizer and Doyle's own results.
-
-The 2SLS results: juveniles on the margin of incarceration — the compliers whose judge draw changed their incarceration status — are about 11–13 percentage points less likely to complete high school, and 22–26 percentage points more likely to be incarcerated as adults by age 25, than they would have been without juvenile incarceration. Broken down by crime type, the adult recidivism effect is concentrated in violent crime (about 15 points), property crime (about 14 points), and drug offenses (about 10 points), with a smaller, imprecise effect for homicide.
+To be clear about which study found what: Aizer and Doyle *do* find a significant, large effect of incarceration on both outcomes, already shown two slides back. That is a different result from Green and Winik's (2010) D.C. judicial-calendar design — a different study, a different population (adult drug defendants, not juveniles), and a much smaller sample (1,003 defendants) — which found no detectable effect of prison or probation time on re-arrest. Don't let the contrast in sample size and precision between the two designs blur into a contrast in findings within Aizer and Doyle's own results.
 
 **Exclusion, pushed on directly:** judges set more than the incarcerate/don't-incarcerate decision — probation terms, program referrals, fines. If a judge's leniency on incarceration is correlated with being systematically more lenient on everything else too, the instrument could be picking up more than incarceration itself. Aizer and Doyle argue this is unlikely to explain their results given the size and consistency of the effects across outcomes, but it is the right place to push a paper, including this one.
 

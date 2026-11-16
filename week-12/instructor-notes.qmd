@@ -652,6 +652,8 @@ How it works in two steps:
 2.  **Reduced form:** how much does Z change Y? Compare adult incarceration rates between juveniles who happened to draw high-propensity versus low-propensity judges. Because Z is as-if random, this difference is causal, but it is the effect of the *judge draw*, not of incarceration itself.
 3.  **Divide:** if Z changes Y only by changing X, then the effect of X is the reduced form divided by the first stage.
 
+The next slide walks through that arithmetic with Aizer and Doyle's actual numbers and states the result plainly, before the slide after that asks whether the design producing it is trustworthy.
+
 **Why this is a different design from a lottery, not just a smaller version of one.** In a lottery design (design 1), the random event more or less *is* the treatment: winning the lottery is the extra wealth; being served by one water company is the water exposure. The randomized groups can be compared directly, because there's nothing standing between the randomization and the treatment. Here, the randomly assigned judge only *pushes* on the treatment; a lenient judge still incarcerates some juveniles, a strict judge still releases some. The judge and the treatment are two different variables, linked only probabilistically. That's exactly why step 3 exists: comparing judges directly, with no division, would give the effect of the *judge*, not of *incarceration*. Dividing by the first stage is what recovers the treatment's own effect. A pure lottery design never needs this step, because there's nothing to divide by — the random assignment and the treatment it's standing in for are the same thing.
 
 **Ask students**
@@ -666,7 +668,17 @@ The draft lottery works the same way for military service: the lottery changed w
 
 Assumptions: the instrument is random (independence); it actually moves the treatment (relevance, checkable in the first stage); it affects the outcome only through the treatment (exclusion, not checkable, only argued); and it does not push anyone away from treatment (monotonicity). The estimate applies to compliers: juveniles whose incarceration status depended on which judge they drew.
 
-### Slide 56: Are judge propensities really as good as random?
+### Slide 56: The arithmetic, and the actual result
+
+**Talk track**
+
+This is Aizer and Doyle's actual 2SLS point estimate, not a hypothetical: divide the reduced-form effect of judge assignment on adult incarceration by the first-stage effect of judge assignment on juvenile incarceration, and what's left is the effect of incarceration itself, for the compliers whose judge draw changed their status. Pause on the size of these numbers — 13 points off high school completion and 22–26 points onto adult incarceration are large effects for a single juvenile-court decision.
+
+**Teaching detail**
+
+Broken down by crime type, the adult recidivism effect is concentrated in violent crime (about 15 points), property crime (about 14 points), and drug offenses (about 10 points), with a smaller, imprecise effect for homicide. The next slide asks whether the design that produced this number is trustworthy — starting with whether judge assignment really was as good as random.
+
+### Slide 57: Are judge propensities really as good as random?
 
 **Talk track**
 
@@ -678,17 +690,15 @@ What would it mean, substantively, if juveniles drawing strict judges were dispr
 
 **Teaching detail**
 
-The mean judge-level incarceration rate on initial cases is 0.09; the overall rate of ever being incarcerated as a juvenile is 0.23. The first-stage coefficient of 1.06 (t-statistics around 11) is both strong and precisely estimated — this is what makes the downstream 2SLS estimates below credible rather than noisy.
+The mean judge-level incarceration rate on initial cases is 0.09; the overall rate of ever being incarcerated as a juvenile is 0.23. The first-stage coefficient of 1.06 (t-statistics around 11) is both strong and precisely estimated — this is what makes the 2SLS estimates from two slides ago credible rather than noisy.
 
-To be clear about which study found what: Aizer and Doyle *do* find a significant, large effect of incarceration on both outcomes (below). That is a different result from Green and Winik's (2010) D.C. judicial-calendar design — a different study, a different population (adult drug defendants, not juveniles), and a much smaller sample (1,003 defendants) — which found no detectable effect of prison or probation time on re-arrest. Don't let the contrast in sample size and precision between the two designs blur into a contrast in findings within Aizer and Doyle's own results.
-
-The 2SLS results: juveniles on the margin of incarceration — the compliers whose judge draw changed their incarceration status — are about 11–13 percentage points less likely to complete high school, and 22–26 percentage points more likely to be incarcerated as adults by age 25, than they would have been without juvenile incarceration. Broken down by crime type, the adult recidivism effect is concentrated in violent crime (about 15 points), property crime (about 14 points), and drug offenses (about 10 points), with a smaller, imprecise effect for homicide.
+To be clear about which study found what: Aizer and Doyle *do* find a significant, large effect of incarceration on both outcomes, already shown two slides back. That is a different result from Green and Winik's (2010) D.C. judicial-calendar design — a different study, a different population (adult drug defendants, not juveniles), and a much smaller sample (1,003 defendants) — which found no detectable effect of prison or probation time on re-arrest. Don't let the contrast in sample size and precision between the two designs blur into a contrast in findings within Aizer and Doyle's own results.
 
 **Exclusion, pushed on directly:** judges set more than the incarcerate/don't-incarcerate decision — probation terms, program referrals, fines. If a judge's leniency on incarceration is correlated with being systematically more lenient on everything else too, the instrument could be picking up more than incarceration itself. Aizer and Doyle argue this is unlikely to explain their results given the size and consistency of the effects across outcomes, but it is the right place to push a paper, including this one.
 
 **Contrast, not just contradiction:** Bhuller, Dahl, Løken, and Mogstad (2020, *JPE*) use a similar random-judge design for *adult* offenders in Norway and find that incarceration *reduces* recidivism — the opposite sign from Aizer and Doyle's juveniles. Rather than treating this as one study being "wrong," use it to ask what's different: different ages (juveniles pulled out of school during a formative period vs. adults), different systems (Chicago vs. Norway), and different mechanisms (human-capital disruption for kids who are supposed to be in school, versus whatever Norway's prisons do differently for adults). Aizer and Doyle's own framing is that juvenile incarceration's costs run through interrupted human-capital accumulation, not through a failure of deterrence — which is exactly why the high-school-completion result matters as much as the recidivism result.
 
-### Slide 57: What each design assumes, and how to check
+### Slide 58: What each design assumes, and how to check
 
 Pull the assumptions together. No natural experiment is assumption-free. Each replaces the ordinary observational assumption, that we measured every confounder, with a different assumption that is often easier to defend and to probe.
 
@@ -696,11 +706,11 @@ Some assumptions are testable in part. Balance on pre-treatment characteristics,
 
 This table is the checklist for the two cases in Part 5.
 
-### Slide 58: Not every “natural experiment” is one
+### Slide 59: Not every “natural experiment” is one
 
 Introduce the contrast case Dunning uses to show what is not a natural experiment. The treatment was assigned by a person responding to circumstances, not by chance. Ask the diagnostic question before showing the evidence.
 
-### Slide 59: Connecticut, 1955: the study and the claim
+### Slide 60: Connecticut, 1955: the study and the claim
 
 Present the claim as it was made. In 1955 Connecticut recorded an unusually high number of traffic deaths, about 325 in these data. In late December 1955, Governor Abraham Ribicoff began an exceptionally strict crackdown on speeding, including license suspensions for convicted speeders. In 1956 deaths fell to about 280, and the governor credited the crackdown with saving lives.
 
@@ -708,7 +718,7 @@ Campbell and Ross's paper became the classic analysis of why this two-point comp
 
 Note that Dunning describes this as a law; Campbell and Ross describe it as an enforcement crackdown. The governor's own figures (324 and 284 deaths, 40 lives) differ slightly from the published dataset plotted here (325 and 280).
 
-### Slide 60: Connecticut: the explanation and the problem
+### Slide 61: Connecticut: the explanation and the problem
 
 Show the full series. Connecticut's deaths bounce around from year to year; 1955 is the high point. The crackdown was triggered by that high point, so treatment timing depended on the outcome. After an unusually high year, the next year is likely to be lower even with no intervention, because part of what made 1955 high was chance. That is regression to the mean, and it alone predicts a drop in 1956.
 
@@ -716,7 +726,7 @@ The right panel adds neighboring states that had no crackdown. Rhode Island and 
 
 The general lesson: when a treatment is triggered by an extreme value of the outcome, a before/after comparison is not as-if random. In DAG terms, the earlier outcome causes the treatment, which is reverse causation from Week 10.
 
-### Slide 61: Judging a natural experiment
+### Slide 62: Judging a natural experiment
 
 Present Dunning's three evaluative dimensions. A strong natural experiment has a convincing as-if random story, an analysis close to a simple comparison of means rather than an elaborate model, and an answer that bears on the substantive question.
 
@@ -736,11 +746,11 @@ Contrast these with designs where the variation and the question line up: the dr
 
 Students will use these three dimensions to judge Bol and colleagues and Balcells and Torrats-Espinosa.
 
-### Slide 62: Two natural experiments up close
+### Slide 63: Two natural experiments up close
 
 Transition to the two cases. Bol and colleagues use a regression discontinuity around a grant-funding threshold. Balcells and Torrats-Espinosa compare survey respondents interviewed just before and just after terrorist attacks. For each, ask the same four questions: what is the naive comparison, what does the design solve, what does it assume, and how well does it check those assumptions?
 
-### Slide 63: Bol et al.: does winning a grant make you win more grants?
+### Slide 64: Bol et al.: does winning a grant make you win more grants?
 
 Introduce the theory. Robert Merton named the Matthew effect: recognition flows to those already recognized. In science funding, early winners go on to win more. The question is whether that happens because winners are better scientists or because winning itself, through status, money, or confidence, produces later success.
 
@@ -748,19 +758,19 @@ The naive comparison of grant winners and losers cannot separate these, because 
 
 The design: reviewers score and rank applicants, and a budget sets the funding threshold. Applicants just above and just below the threshold had nearly identical evaluations, but only those above got the grant. Show the design DAG: conditioning on rank near the threshold cuts the confounding.
 
-### Slide 64: Near-winners and near-losers looked the same before
+### Slide 65: Near-winners and near-losers looked the same before
 
 Show the balance check first. Bol and colleagues plot scientific productivity, publications, citations, and h-index, by rank relative to the threshold. Before the competition, there is no jump at the threshold: near-winners and near-losers were equally productive scientists. That supports the RD assumption that the threshold separates otherwise similar people.
 
 The same figure shows no jump after the competition either. That matters for the mechanism: if winners went on to get more grants, it was not because they suddenly produced more or better science.
 
-### Slide 65: ...but their careers diverged
+### Slide 66: ...but their careers diverged
 
 Read Figure 1. The horizontal axis is rank relative to the funding threshold; the vertical line is the threshold. Left panel: about 10 percent of applicants just below the threshold later won a mid-career Vidi grant, versus 26 percent just above it, about two and a half times as many. Right panel: 40 percent of near-losers applied for a Vidi, versus 59 percent of near-winners.
 
 Point out what makes this an RD plot: the outcome is roughly flat on each side and jumps at the threshold. The jump, not the overall upward slope, is the causal effect of winning the early grant for applicants near the threshold.
 
-### Slide 66: The gap kept growing
+### Slide 67: The gap kept growing
 
 Show the accumulation. Beyond the Veni grant itself, near-winners received about 40,000 euros more in later funding after four years and about 180,000 euros more after eight years, more than twice as much as near-losers. The authors note that this 180,000 euros is about 40 percent of the funding difference between the best and worst applicants in the competition.
 
@@ -768,7 +778,7 @@ Careers diverged too: 28 percent of near-winners were full professors by 2018, 1
 
 The interpretation: a nearly arbitrary early difference, a rank or two around a budget line, produced lasting inequality in funding and status.
 
-### Slide 67: Why did this happen?
+### Slide 68: Why did this happen?
 
 Leave the slide blank and let students generate mechanisms. A rank or two around a budget line produced lasting gaps in funding and promotion. Why would winning one early grant lead to winning more later?
 
@@ -781,7 +791,7 @@ Push for specific mechanisms, each with its own arrow:
 
 Then ask: which of these could you check with the data the authors have? The next slide shows the two they examined.
 
-### Slide 68: Two mechanisms: participation and status
+### Slide 69: Two mechanisms: participation and status
 
 Turn to mechanisms. The abstract emphasizes participation: losing discouraged applicants from trying again. Figure 1's right panel shows the participation gap, 40 versus 59 percent.
 
@@ -789,7 +799,7 @@ But participation is not the whole story. Dividing the win rates by the applicat
 
 Note the connection to Part 2: these are mediators of the effect of winning, and they are measured, not manipulated. The RD identifies the total effect of the early grant cleanly; the decomposition into participation and status is weaker evidence.
 
-### Slide 69: What the funding RD assumes
+### Slide 70: What the funding RD assumes
 
 Run the assumptions checklist on Bol and colleagues. The balance figure supports the claim that near-winners and near-losers were similar. The main manipulation worry is not applicants sorting themselves, since they cannot choose their rank, but committees deciding borderline cases in ways related to future success. The paper addresses this only indirectly. A standard density test would say little here, because every rank is filled by construction.
 
@@ -797,7 +807,7 @@ The authors report checks that near-losers did not leave academia or the country
 
 On Dunning's dimensions: high plausibility of as-if random near the threshold, simple and transparent analysis, and strong substantive relevance for science policy.
 
-### Slide 70: Balcells & Torrats-Espinosa: do terrorist attacks change elections?
+### Slide 71: Balcells & Torrats-Espinosa: do terrorist attacks change elections?
 
 Introduce the question. Do terrorist attacks change democratic participation, and do they punish or reward the incumbent? Naive comparisons, across places or years with and without attacks, are confounded: attacks happen where and when conflict is intense and politics are polarized, which also affects voting.
 
@@ -805,7 +815,7 @@ The design uses timing. Spain's public-opinion institute, the CIS, surveys peopl
 
 The design DAG shows the remaining threat: if people interviewed later in the fieldwork period are different, for example harder to reach, then interview timing is not as-if random.
 
-### Slide 71: The design: eight attacks during survey fieldwork
+### Slide 72: The design: eight attacks during survey fieldwork
 
 Walk through the details. The authors matched CIS fieldwork calendars against ETA attacks and kept the overlaps: eight attacks across seven surveys, five of them nationally representative. Treatment is being interviewed after the attack. Because interview times are not recorded, respondents interviewed on the day of the attack are dropped. The comparison uses windows of one, three, and five days on either side.
 
@@ -813,19 +823,19 @@ The model is a linear probability model with province-by-survey fixed effects, s
 
 Outcomes: whether the respondent would vote if a general election were held tomorrow, and whether they would vote for the incumbent party.
 
-### Slide 72: People said they would vote, but not for anyone in particular
+### Slide 73: People said they would vote, but not for anyone in particular
 
 Present the main results. People interviewed after an attack were more likely to say they would vote: 2.8 percentage points within one day with controls, 4.4 without, and about 2 points at three and five days. All six estimates are positive and significant. Before attacks, about 89 percent already said they would vote, so 2.8 points cuts would-be abstention from about 11 to about 8 percent.
 
 There is no change in whom people would vote for: estimates of incumbent support range from minus 0.8 to plus 1.0 points across all six specifications, and vote switching does not change either. The authors interpret this as a rally in democratic participation, not a punishment or reward for the government.
 
-### Slide 73: Who was activated?
+### Slide 74: Who was activated?
 
 Show the heterogeneity, and connect it to Part 3: these subgroup differences are moderation. The effect is largest among people who did not vote in the previous election, 13.7 points, and among residents of the Basque Country, 11 points. Attacks on civilians or politicians raised turnout intention by 4.2 points, attacks on police or military by 1.2, though that difference is significant only at p \< .10.
 
 Add the caveats from the summary. The Basque estimate comes mostly from one attack in a regional survey with only 41 post-attack respondents in the one-day window. Among people who voted last time, about 80 percent of the sample, the effect is close to zero: the whole effect is among prior abstainers. And the subgroups are not randomized, so these are differences in effects across kinds of people, not effects of being Basque.
 
-### Slide 74: What the timing design assumes
+### Slide 75: What the timing design assumes
 
 Run the checklist. The central assumption is that whether someone was interviewed before or after the attack is unrelated to their likelihood of voting. The balance table mostly supports that, joint p = .18, but post-attack respondents were 2 points less likely to report having abstained in the last election, and in the one-day window the gap is larger. Fewer abstainers reached after attacks would inflate the raw estimate.
 
@@ -833,13 +843,13 @@ There is a subtle bad-control problem. The authors control for recalled prior vo
 
 Other checks: contact attempts and refusals were similar before and after (described in prose only); leave-one-attack-out estimates all stay positive; and the Oster sensitivity test says unobservable selection would have to be 1.5 to 5.9 times as strong as observable selection to erase the effect. The paper runs no placebo-date test; the reading summary reports a quick placebo with no sign of a rising pre-trend.
 
-### Slide 75: Two designs compared
+### Slide 76: Two designs compared
 
 Put the two cases side by side using the vocabulary of the day. Both cut an obvious confounder by exploiting how treatment happened to be assigned. Both rest on an assumption that can be partly checked, balance at the threshold or before and after the attack, and partly only argued. Both estimate something narrower than the broad question: the effect of an early grant for applicants near the threshold, and the effect of an attack on stated vote intention within days.
 
 Ask students to score each on Dunning's three dimensions. Bol and colleagues likely score high on all three. Balcells and Torrats-Espinosa score high on plausibility within surveys, but stated intention a few days later is a long way from actual turnout at the next election, which matters for substantive relevance.
 
-### Slide 76: Exit question
+### Slide 77: Exit question
 
 Collect exit responses. Good answers name a specific source of variation, such as a policy cutoff, the timing of a platform change or outage, a newspaper closure, or a random assignment of journalists to beats, and state the key assumption that would have to hold. Read several at the start of next week.
 

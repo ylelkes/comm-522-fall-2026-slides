@@ -1369,19 +1369,28 @@ COMM 5220 • Week 12
 <blockquote>
 <p>An <strong>instrument (Z)</strong> is something that (1) nudges people toward treatment, (2) is itself random or as-if random, and (3) affects the outcome <strong>only</strong> by changing the treatment.</p>
 </blockquote>
-
-<img data-src="assets/dag-iv.svg" alt="Naive DAG: unmeasured confounders U (record, home life, risk of school failure) cause both juvenile incarceration X and adult incarceration Y, with the X to Y arrow dashed and unresolved. Design DAG: a random judge incarceration propensity Z causes juvenile incarceration X; U still causes X and Y, but the analysis uses only the variation in juvenile incarceration that the judge produces, and the X to Y arrow from juvenile incarceration to adult incarceration is now solid" class="r-stretch"><p>Why a juvenile offender gets incarcerated (X) has two kinds of causes:</p>
+<p><img data-src="assets/dag-iv.svg" class="" style="width:55.0%" alt="Naive DAG: unmeasured confounders U (record, home life, risk of school failure) cause both juvenile incarceration X and adult incarceration Y, with the X to Y arrow dashed and unresolved. Design DAG: a random judge incarceration propensity Z causes juvenile incarceration X; U still causes X and Y, but the analysis uses only the variation in juvenile incarceration that the judge produces, and the X to Y arrow from juvenile incarceration to adult incarceration is now solid"></p>
+<p>Why a juvenile offender gets incarcerated (X) has two kinds of causes:</p>
 <div class="fragment">
 <ul>
 <li><strong>Their record, home life, risk of school failure (U).</strong> These also affect adult outcomes. <em>Confounded.</em></li>
 <li><strong>Which judge they happened to draw (Z).</strong> This is as-if random. <em>Clean.</em></li>
 </ul>
 </div>
-<div class="fragment key-line">
-<p>IV throws away the first kind and keeps <strong>only the part of X that Z causes</strong>. Effect of X = (how much Z moves Y) ÷ (how much Z moves X).</p>
-</div>
 <div class="source">
 <p>Sources: Aizer and Doyle (2015), <em>QJE</em>; Grosz et al.&nbsp;(2024); Dunning (2012).</p>
+</div>
+</section>
+<section id="iv-result" class="slide level2">
+<h2>The arithmetic, and the actual result</h2>
+<div class="key-line">
+<p>Effect of X = (how much Z moves Y) ÷ (how much Z moves X)</p>
+</div>
+<div class="fragment key-line">
+<p><strong>Result:</strong> juveniles on the margin of incarceration are about <strong>13 points</strong> less likely to complete high school, and about <strong>22–26 points</strong> more likely to be incarcerated as adults, than otherwise-similar juveniles whose judge draw didn’t push them into custody.</p>
+</div>
+<div class="source">
+<p>Source: Aizer and Doyle (2015), <em>QJE</em>.</p>
 </div>
 </section>
 <section id="iv-calendars" class="slide level2">
