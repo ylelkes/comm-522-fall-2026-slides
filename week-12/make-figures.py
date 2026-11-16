@@ -104,9 +104,16 @@ def multi_dag(name, panels, size_per=(4.6, 4.4)):
 import numpy as np
 
 # ===================================================================== Mediation recap
-single_dag("dag-med-vs-mod.svg",
-           {"x": (0.12, 0.3, "Treatment X"), "m": (0.5, 0.82, "Mediator M"), "y": (0.88, 0.3, "Outcome Y")},
-           [("x", "m", "causal"), ("m", "y", "causal"), ("x", "y", "causal")], box_w=0.24, size=(8, 3.6))
+# Total / indirect / direct decomposition, including what controlling for M does
+MED_NODES = {"x": (0.12, 0.3, "Treatment X"), "m": (0.5, 0.82, "Mediator M"), "y": (0.88, 0.3, "Outcome Y")}
+multi_dag("dag-mediation-decomposition.svg", [
+    (MED_NODES, [("x", "m", "causal"), ("m", "y", "causal"), ("x", "y", "causal")],
+     "Total effect", {"box_w": 0.24, "fs": 14}),
+    (MED_NODES, [("x", "m", "causal"), ("m", "y", "causal"), ("x", "y", "faint")],
+     "Indirect effect (through M)", {"box_w": 0.24, "fs": 14}),
+    (MED_NODES, [("x", "m", "cut"), ("m", "y", "cut"), ("x", "y", "causal")],
+     "Direct effect (M controlled for)", {"box_w": 0.24, "fs": 14, "conditioned": ("m",)}),
+], size_per=(4.3, 4.0))
 
 # ===================================================================== Mutz & Rao: four candidate roles
 LIB, LAT = "Liberal\nideology", "Latte\ndrinking"
@@ -204,21 +211,12 @@ pair("dag-rd.svg",
 
 # IV
 pair("dag-iv.svg",
-     ({"u": (0.5, 0.85, "Unmeasured\nconfounders U"), "x": (0.2, 0.2, "Treatment X"), "y": (0.8, 0.2, "Outcome Y")},
-      [("u", "x", "bias"), ("u", "y", "bias"), ("x", "y", "dashed")], "Naive: X vs. Y", {"box_w": 0.3}),
-     ({"u": (0.65, 0.85, "Unmeasured\nconfounders U"), "z": (0.15, 0.85, "Instrument Z\n(random)"),
-       "x": (0.2, 0.18, "Treatment X"), "y": (0.8, 0.18, "Outcome Y")},
+     ({"u": (0.5, 0.85, "Record, home life,\nrisk of school failure (U)"), "x": (0.2, 0.2, "Incarcerated as\njuvenile (X)"), "y": (0.8, 0.2, "Adult\nincarceration (Y)")},
+      [("u", "x", "bias"), ("u", "y", "bias"), ("x", "y", "dashed")], "Naive: juvenile incarceration vs. adult outcomes", {"box_w": 0.34, "fs": 14}),
+     ({"u": (0.65, 0.85, "Record, home life,\nrisk of school failure (U)"), "z": (0.15, 0.85, "Judge's incarceration\npropensity (Z, random)"),
+       "x": (0.2, 0.18, "Incarcerated as\njuvenile (X)"), "y": (0.8, 0.18, "Adult\nincarceration (Y)")},
       [("z", "x", "causal"), ("u", "x", "bias"), ("u", "y", "bias"), ("x", "y", "causal")],
-      "Design: use only the part of X that Z moves", {"box_w": 0.28}))
-
-# DiD (staggered rollout, from Weeks 10-11)
-pair("dag-did.svg",
-     ({"u": (0.5, 0.85, "Place traits\n(wealth, politics)"), "x": (0.2, 0.2, "Gets TV /\npolicy"), "y": (0.8, 0.2, "Outcome")},
-      [("u", "x", "bias"), ("u", "y", "bias"), ("x", "y", "dashed")], "Naive: places with vs. without", {"box_w": 0.3}),
-     ({"u": (0.65, 0.86, "Stable place traits\n(differenced away)"), "t": (0.15, 0.86, "Timing of\narrival"),
-       "x": (0.2, 0.18, "Gets TV /\npolicy"), "y": (0.8, 0.18, "Change in\noutcome")},
-      [("t", "x", "causal"), ("u", "x", "faint"), ("u", "y", "cut"), ("x", "y", "causal")],
-      "Design: compare changes, not levels", {"box_w": 0.3}))
+      "Design: use only the incarceration Z moves", {"box_w": 0.3, "fs": 13}))
 
 # ===================================================================== Bol et al.
 pair("dag-bol.svg",

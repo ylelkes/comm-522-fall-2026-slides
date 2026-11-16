@@ -12,7 +12,7 @@ format:
     transition: fade
     background-transition: fade
     center: false
-    width: 1600
+    width: 1600§§§§§§§§§
     height: 900
     margin: 0.08
     navigation-mode: linear
@@ -39,6 +39,7 @@ Today: finish that case, revisit mediation and moderation, then ask what to do w
 ::: notes
 Open by reconnecting to Week 11. Students saw that randomization closes the back door from confounders into the treatment, and they worked through Correll, Benard, and Paik's motherhood-penalty experiment. The second case, Craig and Richeson, was not finished. It is worth finishing because it does something Correll did not: it manipulates the proposed mechanism, status threat, rather than only measuring it.
 
+what was the mechanism there, how did they test it?
 That makes a natural bridge to the rest of the day. Craig and Richeson set up a careful return to mediation (how an effect travels) and moderation (when or for whom it holds), with one new example of each. Then the session turns to the central methodological question for the second half: what can we do when the treatment we care about cannot be randomized at all? That is the job of natural experiments.
 :::
 
@@ -108,7 +109,6 @@ This correlational finding motivates the whole paper. It's consistent with a rac
 
 **Racial composition** ⟷ **White conservatism**. Set aside status threat. What else could produce this correlation?
 
-**Your turn (pairs, 3 min):** come up with at least two rival explanations.
 
 :::::: comparison
 ::: side
@@ -128,9 +128,6 @@ Could the arrow run the other way? Could people be sorting into parishes? Could 
 :::
 ::::::
 
-::: {.fragment .key-line}
-Naming a variable isn't enough. If you can't draw both arrows, it isn't a confound.
-:::
 
 ::: notes
 **Talk track**
@@ -279,6 +276,8 @@ Frame this as a test of an *implication* of the threat theory, not as a test of 
 Note the shift in scale as well: Giles and Hertz is about *local* Black population share, while the experiments describe *national* (or California) change in which Latino and Asian American growth drives most of the projection. Threat from a neighbor and threat from a national trend are not obviously the same psychological process.
 
 Make the estimand switch as explicit as it was in Correll last week. The parish-level correlation motivates the theory, but the experiments manipulate information about demographic change. Their internally valid claim concerns the short-term attitudinal effect of that exposure under the specific survey conditions. They do not identify the effect of a community's actual demographic composition, repeated partisan media coverage, or years of social change on real voting behavior.
+
+can we still learn something
 :::
 
 ## What is the theory, and what else could carry the effect? {#motivated-cognition}
@@ -289,7 +288,7 @@ Majority-minority message → **group-status threat** → conservatism
 
 **The theory:** Whites read the shift as zero-sum: "as minorities gain status, Whites lose it." Threat pushes people toward conservatism (Jost et al. 2003).
 
-**Your turn:** What *else* could the message trigger that would also push people right?
+-What *else* could the message trigger that would also push people right?
 
 ::::::: fragment
 :::::: triad
@@ -486,6 +485,48 @@ Study 2 is purpose-built. It compares a racial-shift press release with a geogra
 **Teaching detail**
 
 This is the design information missing from the earlier version. The control matches the broad form of a press release about social change but removes racial content. The focal policy outcomes include three race-related items and two race-neutral items, allowing the authors to ask whether the response is targeted or ideologically broader. The reliability of the two short subscales is modest, which belongs in the later critique.
+:::
+
+## What participants actually read {#craig-richeson-stimuli}
+
+::::: two-column
+::: column
+**Racial-shift article**
+
+> **In a Generation, Racial Minorities May Be the U.S. Majority**
+>
+> New U.S. Census Bureau data suggest that America will become a "majority-minority" nation much faster than once predicted. The nation's racial minority population is steadily rising... Demographers calculate that by 2042, Americans who identify themselves as Hispanic, Black, Asian, American Indian, Native Hawaiian, or Pacific Islander will together outnumber non-Hispanic Whites.
+:::
+
+::: column
+**Geographic-mobility control article**
+
+> **U.S. Census Bureau Reports Residents Now Move at a Higher Rate**
+>
+> New U.S. Census Bureau data suggest that the rate of geographical mobility, or the number of individuals who have moved within the past year, is increasing. The national mover rate increased from 11.9 percent in 2008... to 12.5 percent in 2009.
+:::
+:::::
+
+::: {.fragment .key-line}
+Same source (Census data), same form (a short wire-style article), same closing hedge about trends. Only the content differs.
+:::
+
+::: source
+Source: Craig and Richeson, Study 2 experimental stimuli, OSF Supplemental Material (osf.io/dzv6r).
+:::
+
+::: notes
+**Talk track**
+
+Show students the actual words, not just the labels "racial-shift" and "control." Both articles are built to the same template: a Census Bureau statistic, a few sentences of supporting detail, and the same closing hedge sentence almost verbatim — "The latest figures are predicated on current and historical trends, which can be thrown awry by several variables, including prospective overhauls of public policy." That shared boilerplate is doing real design work: it holds constant the *genre* (a wire-service-style Census news brief) and the *epistemic hedge* at the end, so the only thing that differs between conditions is the substantive content — racial composition versus geographic mobility.
+
+**Full text, for reference if a student asks to see the whole thing**
+
+*Racial-shift article (complete):* "In a Generation, Racial Minorities May Be the U.S. Majority. New U.S. Census Bureau data suggest that America will become a 'majority-minority' nation much faster than once predicted. The nation's racial minority population is steadily rising, advancing an unmistakable trend that could make minorities the new American majority by midcentury. The data show a declining number of White adults and growing under-18 populations of Hispanics, Asians, and other minorities. Demographers calculate that by 2042, Americans who identify themselves as Hispanic, Black, Asian, American Indian, Native Hawaiian, or Pacific Islander will together outnumber non-Hispanic Whites. The main reasons for the accelerating change are rapid immigration growth and significantly higher birthrates among racial and ethnic minorities. As White baby boomers age past their childbearing years, younger Hispanic parents are having children – and driving U.S. population growth. For example, there are now roughly 9 births for every 1 death among Hispanics, compared to a roughly one-to-one ratio for Whites. The latest figures are predicated on current and historical trends, which can be thrown awry by several variables, including prospective overhauls of public policy."
+
+*Control article (complete):* "U.S. Census Bureau Reports Residents Now Move at a Higher Rate. New U.S. Census Bureau data suggest that the rate of geographical mobility, or the number of individuals who have moved within the past year, is increasing. The national mover rate increased from 11.9 percent in 2008 (the lowest rate since the U.S. Census Bureau began tracking the data) to 12.5 percent in 2009. According to the new data, 37.1 million people changed residences in the U.S. within the past year. 84.5 percent of all movers stayed within the same state. Renters were more than five times more likely to move than homeowners. The estimates also reveal that many of the nation's fastest-growing cities are suburbs. Specifically, principal cities within metropolitan areas experienced a net loss of 2.1 million movers, while the suburbs had a net gain of 2.4 million movers. For those who moved to a different county or state, the reasons for moving varied considerably by the length of their move. The latest figures are predicated on current and historical trends, which can be thrown awry by several variables, including prospective overhauls of public policy."
+
+**Bridge to Study 3**, if teaching that slide in the same sitting: Study 3's status-threat and assuaged-threat articles use a longer, bylined ("By: S. Roberts") version of the same racial-shift content, with the assuaged-threat version adding one extra paragraph at the end: "Despite the shift in the demographic make-up, the relative societal status of different racial groups is likely to remain steady... White Americans are expected to continue to have higher average incomes and wealth compared to members of other racial groups." That one paragraph is the entire manipulation of the mediator in Study 3 — everything else about the article is held character-for-character identical to the status-threat condition.
 :::
 
 ## Study 2: policy attitudes shifted, but not every item did {#craig-richeson-study2}
@@ -707,20 +748,16 @@ Transition from Craig and Richeson. Their Studies 3a and 3b manipulated the prop
 
 ## Mediation: how does the effect travel? {#mediation-recap}
 
-![](assets/dag-med-vs-mod.svg){fig-alt="Treatment X causes mediator M, which causes outcome Y; X also causes Y directly" width="52%"}
-
--   **Total effect:** every causal path from X to Y
--   **Indirect effect:** the part that runs through M
--   **Direct effect:** the part that does not
+![Total effect, indirect effect, and what's left once you control for the mediator.](assets/dag-mediation-decomposition.svg){fig-alt="Three panels: total effect shows X causing Y both directly and through M; indirect effect shows only the X-M-Y path highlighted with the direct path faint; direct effect shows M conditioned on (gold), with both its arrows cut, leaving only the direct X to Y arrow" width="92%"}
 
 ::: {.fragment .key-line}
 Craig & Richeson **manipulated** M. Most studies only **measure** it.
 :::
 
 ::: notes
-Restate the three quantities. The total effect is everything X does to Y. The indirect effect is the part that runs through the mediator. The direct effect is whatever remains.
+Walk the three panels left to right instead of reciting the bullet definitions. Panel 1, **total effect**: every causal path from X to Y, direct arrow and through-M arrow both live. Panel 2, **indirect effect**: the through-M path is what's highlighted; the direct arrow is grayed out because the indirect effect is specifically the part that runs through the mediator. Panel 3, **direct effect**: this is what conditioning on M actually does to the picture — M is drawn conditioned (gold box, Part 1's convention), and both of its arrows are cut with a red X, because holding M fixed blocks the one path that carried the indirect effect. What's left, the lone surviving arrow, is the direct effect. This is the same "control for a mediator" move from Part 1, just drawn as a before/after instead of described in prose: controlling for M doesn't estimate the total effect, it deliberately removes the indirect part and leaves only the direct arrow standing.
 
-Then name the two ways to get evidence about M. Craig and Richeson manipulated the mechanism: the assuaging paragraph lowered status threat while holding the demographic message constant, and the conservative shift largely disappeared. The common alternative is to measure M and add it to a regression, hoping that the shrinkage of X's coefficient reveals the indirect effect. Rohrer warned in Week 10 that this works only if nothing else affects both M and Y. The latte paper shows what that approach looks like in practice.
+Then name the two ways to get evidence about M, and place Craig and Richeson's own two studies on the panels: Study 2 only measured status threat and put it in a regression, which is the move panel 3 depicts — and Rohrer's Week 10 warning applies directly, that this only isolates the indirect effect cleanly if nothing else affects both M and Y. Studies 3a/3b instead manipulated the mechanism directly — the assuaging paragraph lowered status threat while holding the demographic message constant, and the conservative shift largely disappeared — which is a strictly stronger way to demonstrate the indirect-effect panel than regression adjustment ever can be, because it isolates M's causal role by design rather than by assumption. The latte paper, next, shows what the weaker, regression-only version of panel 3 looks like in practice.
 :::
 
 ## Do liberals really drink more lattes? {#latte-puzzle}
@@ -848,6 +885,7 @@ Show three structures that all fit the regression result. If ideology lowers nat
 Each story implies a different causal claim, and the survey cannot distinguish them, because everything is measured at the same time and nothing is manipulated. This is Rohrer's warning from Week 10 in a concrete case.
 :::
 
+
 ## What the latte study can and cannot show {#latte-limits}
 
 ::::: two-column
@@ -908,33 +946,9 @@ Show the convention. A mediator sits between X and Y. A moderator sits off the p
 In data, moderation appears as an interaction: the effect of X on Y differs across levels of Z, estimated with an X × Z term. The cleanest evidence comes when both X and Z are randomized, as in the next study.
 :::
 
-## Petty, Cacioppo & Goldman: the design {#petty-design}
+## The Elaboration. Likelihood Model {#petty-hypotheses}
 
-**145** University of Missouri undergraduates heard a taped message: seniors should have to pass a **comprehensive exam** to graduate.
-
-::: small-table
-| Factor | Levels |
-|------------------------------------|------------------------------------|
-| **Personal involvement** | exams would start **next year** (affects you) vs. in **ten years** (doesn't) |
-| **Argument quality** | 8 strong arguments (data, statistics) vs. 8 weak ones (quotations, opinion, anecdotes) |
-| **Source expertise** | Carnegie Commission on Higher Education vs. a local **high-school class** |
-:::
-
-Outcome: agreement with the exam policy (standardized index). A **2 × 2 × 2** experiment, every factor randomized.
-
-::: source
-Source: Petty, Cacioppo, and Goldman (1981), *JPSP* 41(5), pp. 849–850.
-:::
-
-::: notes
-Walk through the design. Students listened to a tape described as a candidate for a campus radio broadcast. The message argued that seniors should have to pass a comprehensive exam in their major before graduating, a position students strongly disliked.
-
-Three factors were crossed. Involvement: students were told the policy might start at their own university next year, which would affect them, or not for ten years, which would not. Argument quality: eight strong arguments based on statistics and evidence, or eight weak arguments based on quotations, personal opinion, and anecdotes; both sets were pretested. Source expertise: the tape was attributed to a report by the Carnegie Commission on Higher Education, chaired by a Princeton professor, or to a report by a local high-school class.
-
-The dependent variable combined semantic-differential ratings of comprehensive exams with an agreement item, standardized. Because all three factors were randomized, the study can estimate how the effect of argument quality and the effect of source expertise depend on involvement.
-:::
-
-## What did they predict? {#petty-hypotheses}
+People rely on different information when responding to messages based on how motivated they are to process the information. 
 
 Two routes to persuasion. **Personal involvement** decides which one people take.
 
@@ -981,6 +995,33 @@ Also ask: why vary argument *quality* rather than the *number* of arguments? (Be
 
 Emphasize that this is a moderation hypothesis with two parts that point in opposite directions. Involvement should *strengthen* the effect of argument quality and *weaken* the effect of source expertise. Two opposite interactions sharing one moderator are much harder to explain away than a single interaction, for example by saying "involved people are just more persuadable." Note also what the theory does *not* predict: no main effect of involvement on agreement. Involvement changes *what* persuades, not *how much*.
 :::
+
+## Petty, Cacioppo & Goldman: the design {#petty-design}
+
+**145** University of Missouri undergraduates heard a taped message: seniors should have to pass a **comprehensive exam** to graduate.
+
+::: small-table
+| Factor | Levels |
+|------------------------------------|------------------------------------|
+| **Personal involvement** | exams would start **next year** (affects you) vs. in **ten years** (doesn't) |
+| **Argument quality** | 8 strong arguments (data, statistics) vs. 8 weak ones (quotations, opinion, anecdotes) |
+| **Source expertise** | Carnegie Commission on Higher Education vs. a local **high-school class** |
+:::
+
+Outcome: agreement with the exam policy (standardized index). A **2 × 2 × 2** experiment, every factor randomized.
+
+::: source
+Source: Petty, Cacioppo, and Goldman (1981), *JPSP* 41(5), pp. 849–850.
+:::
+
+::: notes
+Walk through the design. Students listened to a tape described as a candidate for a campus radio broadcast. The message argued that seniors should have to pass a comprehensive exam in their major before graduating, a position students strongly disliked.
+
+Three factors were crossed. Involvement: students were told the policy might start at their own university next year, which would affect them, or not for ten years, which would not. Argument quality: eight strong arguments based on statistics and evidence, or eight weak arguments based on quotations, personal opinion, and anecdotes; both sets were pretested. Source expertise: the tape was attributed to a report by the Carnegie Commission on Higher Education, chaired by a Princeton professor, or to a report by a local high-school class.
+
+The dependent variable combined semantic-differential ratings of comprehensive exams with an agreement item, standardized. Because all three factors were randomized, the study can estimate how the effect of argument quality and the effect of source expertise depend on involvement.
+:::
+
 
 ## Results: involvement flips what persuades {#petty-results}
 
@@ -1154,11 +1195,12 @@ Be precise about what those numbers cover. The 315 vs. 37 comparison pools *all*
 | **As-if random event** | nature, history, or administration | Snow's water companies; Argentine land titles |
 | **Regression discontinuity** | a cutoff on a score | merit certificates; class-size caps; grant thresholds |
 | **Instrumental variables** | a random push toward treatment | judge assignment; draft lottery → service |
-| **Before / after an event** | timing of an unexpected shock | attacks during survey fieldwork; TV's arrival |
 :::
 
 ::: notes
-Lay out the toolbox before going through each design. The first two are what Dunning and Grosz call standard natural experiments: treatment is assigned by a real lottery or by an as-if random process. Regression discontinuity uses a rule that assigns treatment above a cutoff. Instrumental variables use something random that pushes people toward treatment without determining it. The last row, comparisons before and after an unexpected event, including difference-in-differences, is not in Grosz's article, but students saw it in Week 10 (the arrival of TV), and Balcells and Torrats-Espinosa use a version of it.
+Lay out the toolbox before going through each design. The first two are what Dunning and Grosz call standard natural experiments: treatment is assigned by a real lottery or by an as-if random process. Regression discontinuity uses a rule that assigns treatment above a cutoff. Instrumental variables use something random that pushes people toward treatment without determining it.
+
+A fifth design, comparing before and after an unexpected event (including difference-in-differences), is not in Grosz's article; students already saw the logic in Week 10 (TV's staggered arrival), and Balcells and Torrats-Espinosa's before/after-an-attack design gets its own full treatment in Part 5, so it isn't repeated here as a separate toolbox entry.
 
 For each design, the next slides show the naive comparison, what the design solves, and what it has to assume.
 :::
@@ -1428,13 +1470,15 @@ This is a fuzzy RD: schools do not follow the rule exactly, so the rule shifts c
 
 ## 4. Instrumental variables {#iv}
 
-![](assets/dag-iv.svg){fig-alt="Naive DAG: unmeasured confounders cause treatment and outcome. Design DAG: a random instrument Z causes treatment X; U still causes X and Y, but the analysis uses only the variation in X that Z produces"}
+> An **instrument (Z)** is something that (1) nudges people toward treatment, (2) is itself random or as-if random, and (3) affects the outcome **only** by changing the treatment.
 
-Why someone gets more prison time (X) has two kinds of causes:
+![](assets/dag-iv.svg){fig-alt="Naive DAG: unmeasured confounders U (record, home life, risk of school failure) cause both juvenile incarceration X and adult incarceration Y, with the X to Y arrow dashed and unresolved. Design DAG: a random judge incarceration propensity Z causes juvenile incarceration X; U still causes X and Y, but the analysis uses only the variation in juvenile incarceration that the judge produces, and the X to Y arrow from juvenile incarceration to adult incarceration is now solid"}
+
+Why a juvenile offender gets incarcerated (X) has two kinds of causes:
 
 ::: fragment
--   **Their record, personality, home life (U).** These also affect re-offending. *Confounded.*
--   **Which judge they happened to draw (Z).** This is random. *Clean.*
+-   **Their record, home life, risk of school failure (U).** These also affect adult outcomes. *Confounded.*
+-   **Which judge they happened to draw (Z).** This is as-if random. *Clean.*
 :::
 
 ::: {.fragment .key-line}
@@ -1442,101 +1486,80 @@ IV throws away the first kind and keeps **only the part of X that Z causes**. Ef
 :::
 
 ::: source
-Sources: Grosz et al. (2024), Figure 3 and Box 2 (Green and Winik 2010); Dunning (2012).
+Sources: Aizer and Doyle (2015), *QJE*; Grosz et al. (2024); Dunning (2012).
 :::
 
 ::: notes
 **Talk track**
 
-Start with the problem. We want the effect of incarceration on re-offending. But people who get longer sentences differ from people who get shorter ones: worse records, different home environments, different personalities. Those same things affect re-offending. Comparing them directly is confounded, and we can't measure everything in U.
+Open with the general idea before the case, since "instrument" is new vocabulary: an instrument is a variable that pushes people toward a treatment without being the treatment itself, that is random or as-if random, and that reaches the outcome *only* through the treatment it pushes on. Point at the blockquote definition and at the DAG side by side — Z (the judge's incarceration propensity) has exactly one arrow leaving it, into X (juvenile incarceration), and no arrow of its own into Y (adult incarceration). That single-arrow-in-only-through-X picture *is* the exclusion restriction, drawn rather than stated.
 
-The IV idea: split the variation in X into two parts. One part comes from U, the defendant's own characteristics. That part is contaminated. The other part comes from Z, the luck of the draw: which judges you were assigned. Because Z is random, that part of X is unrelated to U. IV uses only that clean part.
+Then the problem. We want the effect of juvenile incarceration on adult outcomes. But juveniles who get incarcerated differ from those who don't: worse records, different home environments, higher baseline risk of dropping out. Those same things plausibly affect adult crime directly. Comparing incarcerated and non-incarcerated juveniles head-on is confounded, and we can't measure everything in U.
+
+The IV idea: split the variation in X into two parts. One part comes from U, the juvenile's own characteristics and circumstances. That part is contaminated. The other part comes from Z, the luck of the draw: which judge heard the case. Because Z is as-if random, that part of X is unrelated to U. IV uses only that clean part.
 
 How it works in two steps:
 
-1.  **First stage:** how much does Z change X? Being assigned to a harsh calendar instead of a lenient one raises the chance of prison from 23% to 65%, a 42-point difference.
-2.  **Reduced form:** how much does Z change Y? Compare re-arrest rates between the harsh and lenient calendars. Because Z is random, this difference is causal, but it is the effect of the *calendar*, not of prison.
+1.  **First stage:** how much does Z change X? Aizer and Doyle's first-stage coefficient is 1.06 (statistically indistinguishable from 1): a juvenile assigned to a judge who is 10% more likely to incarcerate other juveniles is about 10% more likely to be incarcerated himself. A two-standard-deviation increase in a judge's incarceration rate raises the juvenile's own incarceration probability by 8.5 percentage points — about 37% of the sample mean.
+2.  **Reduced form:** how much does Z change Y? Compare adult incarceration rates between juveniles who happened to draw high-propensity versus low-propensity judges. Because Z is as-if random, this difference is causal, but it is the effect of the *judge draw*, not of incarceration itself.
 3.  **Divide:** if Z changes Y only by changing X, then the effect of X is the reduced form divided by the first stage.
 
-A hypothetical to make the arithmetic concrete (not the paper's numbers): if re-arrest were 4.2 points higher on the harsh calendar, and the harsh calendar raises the incarceration rate by 42 points, then incarceration raises re-arrest by 4.2 / 0.42 = 10 points for the people whose sentence depended on the calendar.
+**Why this is a different design from a lottery, not just a smaller version of one.** In a lottery design (design 1), the random event more or less *is* the treatment: winning the lottery is the extra wealth; being served by one water company is the water exposure. The randomized groups can be compared directly, because there's nothing standing between the randomization and the treatment. Here, the randomly assigned judge only *pushes* on the treatment; a lenient judge still incarcerates some juveniles, a strict judge still releases some. The judge and the treatment are two different variables, linked only probabilistically. That's exactly why step 3 exists: comparing judges directly, with no division, would give the effect of the *judge*, not of *incarceration*. Dividing by the first stage is what recovers the treatment's own effect. A pure lottery design never needs this step, because there's nothing to divide by — the random assignment and the treatment it's standing in for are the same thing.
 
 **Ask students**
 
-Why can't we just compare people who went to prison with people who didn't? Why does it matter that we divide by the first stage instead of just reporting the calendar difference?
+Why can't we just compare juveniles who were incarcerated with those who weren't? Why does it matter that we divide by the first stage instead of just reporting the judge-to-judge difference?
 
 **Teaching detail**
 
-Instrumental variables are for treatments people partly choose. Something random pushes some people toward treatment, but does not fully determine it. Grosz and colleagues' Box 2 uses Green and Winik's study of drug defendants in Washington, D.C., who were randomly assigned to one of nine judicial calendars. Calendars differed in harshness: across the harshest and most lenient, 65 versus 23 percent were incarcerated, with average sentences of 11.9 versus 5.1 months. Comparing later recidivism across calendars, scaled by these differences in punishment, estimates the effect of incarceration for defendants whose sentence depended on the calendar.
+Instrumental variables are for treatments people (or the system) partly, not fully, assign by chance. Aizer and Doyle (2015, *QJE*) study juveniles in Chicago whose cases were assigned, within a courtroom calendar, based on the sequence in which cases happened to arrive and which judge was sitting — effectively random, and confirmed by court administrators. Each judge's historical incarceration rate on juveniles' initial cases becomes the instrument Z.
 
 The draft lottery works the same way for military service: the lottery changed who served, so it can estimate the effect of service, not only of eligibility.
 
-Assumptions: the instrument is random (independence); it actually moves the treatment (relevance, checkable in the first stage); it affects the outcome only through the treatment (exclusion, not checkable, only argued); and it does not push anyone away from treatment (monotonicity). The estimate applies to compliers, people whose treatment the instrument changed.
+Assumptions: the instrument is random (independence); it actually moves the treatment (relevance, checkable in the first stage); it affects the outcome only through the treatment (exclusion, not checkable, only argued); and it does not push anyone away from treatment (monotonicity). The estimate applies to compliers: juveniles whose incarceration status depended on which judge they drew.
 :::
 
-## What is a harsh or lenient judicial calendar? {#iv-calendars}
+## Are judge propensities really as good as random? {#iv-calendars}
 
-**Washington, D.C., 2002–2003:** 1,003 drug defendants. Each case was assigned as-if randomly to one of **nine calendars**.
+**Chicago, 1990–2006:** more than 35,000 juvenile offenders. Each case assigned, within a courtroom calendar, by the sequence cases happened to arrive — effectively random.
 
-A **calendar** is a courtroom docket run by a particular set of judges. Judges differ in how punitive they are with similar cases.
+Split juveniles into those drawing an **above-median** vs. **below-median** incarceration-propensity judge. If assignment is really as-if random, the two groups should look alike on everything determined *before* the judge was assigned.
 
 ::: small-table
-|                         | Most lenient calendar | Most harsh calendar |
-|-------------------------|-----------------------|---------------------|
-| Share sent to prison    | 23%                   | 65%                 |
-| Average prison sentence | 5.1 months            | 11.9 months         |
-:::
-
-::: fragment
-**Result:** no detectable effect of prison or probation time on re-arrest.
+| Characteristic (measured before assignment) | High-propensity judge | Low-propensity judge |
+|-----------------------------------|------------------------|------------------------|
+| Gender | *statistically indistinguishable* | *statistically indistinguishable* |
+| Race | *statistically indistinguishable* | *statistically indistinguishable* |
+| Age at offense | *statistically indistinguishable* | *statistically indistinguishable* |
+| Special-education status | *statistically indistinguishable* | *statistically indistinguishable* |
 :::
 
 ::: {.fragment .key-line}
-**Exclusion:** the calendar may affect re-arrest only through prison time. But judges also set probation, fines, and conditions. Does that hold?
+Balance on every pre-determined characteristic is the direct empirical test of "as-if random" — not an assumption taken on faith.
 :::
 
 ::: source
-Sources: Green and Winik (2010); Grosz et al. (2024), Box 2.
+Sources: Aizer and Doyle (2015), *QJE*, Table 1 and Section 5.1.
 :::
 
 ::: notes
 **Talk track**
 
-Make the term concrete. In the D.C. Superior Court, a "calendar" is a courtroom docket: a stream of cases handled by a particular judge or set of judges. Defendants don't choose their calendar, and the court assigns cases to calendars without regard to the defendant's characteristics. So the calendar works like a coin flip.
-
-"Harsh" and "lenient" describe the judges, not the defendants. Because the cases are comparable across calendars, any difference in sentencing reflects the judges' punitiveness. On the most lenient calendar, 23% of defendants went to prison, with an average sentence of 5.1 months. On the harshest, 65% went to prison, averaging 11.9 months. Same kinds of defendants, very different punishment, purely because of the draw. That is the first stage.
-
-Green and Winik then compared later re-arrest across calendars. They found no detectable effect of randomly assigned differences in prison or probation time on re-arrest.
+This is the test every "as-if random" design owes you, and the one most natural-experiment papers only gesture at. Aizer and Doyle can't test whether juveniles with unobservably low risk are assigned to lenient judges — U is unobserved by construction — but they *can* test whether juveniles differ on everything observable that was determined before the judge was assigned: gender, race, age at offense, special-education status. They find these are statistically indistinguishable across judges with high versus low incarceration propensities. That is the balance test; it's necessary, not sufficient, but it's exactly the kind of check a DAG forces you to go looking for.
 
 **Ask students**
 
-What would have to be true for the calendar to be a valid instrument? Walk through the four assumptions with this case:
-
--   **Random assignment:** were cases really assigned without regard to the defendant? Check balance on prior record and charge.
--   **Relevance:** does the calendar actually move prison time? Yes, 23% vs. 65%.
--   **Exclusion:** does the calendar affect re-arrest *only* through prison time? Judges also set probation, fines, and treatment conditions. If those matter, the instrument is picking up more than prison.
--   **Monotonicity:** is a harsh calendar harsher for *everyone*? If one judge is tough on first offenders but lenient on repeat offenders, this fails.
+What would it mean, substantively, if juveniles drawing strict judges were disproportionately older, or more likely to have a prior record? (It would mean the "random" assignment wasn't random — cases were being sorted to judges in a way correlated with risk, reopening the back door the instrument was supposed to close.)
 
 **Teaching detail**
 
-The estimate applies to compliers: defendants whose sentence depended on which calendar they drew. It says nothing about defendants every judge would have sent to prison, or none would.
+The mean judge-level incarceration rate on initial cases is 0.09; the overall rate of ever being incarcerated as a juvenile is 0.23. The first-stage coefficient of 1.06 (t-statistics around 11) is both strong and precisely estimated — unlike Green and Winik's (2010) D.C. judicial-calendar design, which used a much smaller sample (1,003 drug defendants) and found no detectable first-stage-scaled effect on re-arrest.
 
-The literature disagrees. Bhuller, Dahl, Løken, and Mogstad (2020, *JPE*) argue that the D.C. sample is small and the instrument weak, which can bias IV estimates. Using a similar random-judge design in Norway, they found that incarceration *reduced* recidivism. This is a good example of why the first stage needs to be strong and why exclusion has to be argued, not assumed.
+The 2SLS results: juveniles on the margin of incarceration — the compliers whose judge draw changed their incarceration status — are about 11–13 percentage points less likely to complete high school, and 22–26 percentage points more likely to be incarcerated as adults by age 25, than they would have been without juvenile incarceration. Broken down by crime type, the adult recidivism effect is concentrated in violent crime (about 15 points), property crime (about 14 points), and drug offenses (about 10 points), with a smaller, imprecise effect for homicide.
 
-Data and code: isps.yale.edu/research/data/d028.
-:::
+**Exclusion, pushed on directly:** judges set more than the incarcerate/don't-incarcerate decision — probation terms, program referrals, fines. If a judge's leniency on incarceration is correlated with being systematically more lenient on everything else too, the instrument could be picking up more than incarceration itself. Aizer and Doyle argue this is unlikely to explain their results given the size and consistency of the effects across outcomes, but it is the right place to push a paper, including this one.
 
-## 5. Before and after an event {#before-after}
-
-![](assets/dag-did.svg){fig-alt="Naive DAG: place traits cause both getting a policy and the outcome. Design DAG: timing of arrival causes treatment; stable place traits are differenced away"}
-
-Compare **changes**, not levels: TV's staggered arrival (Week 10), Fox News entering local cable systems, or respondents interviewed just **before vs. after** an unexpected attack.
-
-::: notes
-The last design uses timing. Comparing places that got a treatment with places that did not is confounded by stable differences between places. Comparing changes over time removes stable differences: if treated and untreated places were on parallel paths before, any divergence after the treatment can be attributed to it. Students saw this in Week 10 with the staggered arrival of TV (Gentzkow and Shapiro). DellaVigna and Kaplan's study of Fox News entering local cable systems uses the same logic.
-
-A related design compares people surveyed just before and just after an unexpected event, within the same survey. That is Balcells and Torrats-Espinosa's design, coming up in Part 5.
-
-Assumptions: without the event, outcomes would have followed parallel paths (or, for before/after within a survey, people interviewed later would have answered like people interviewed earlier), and nothing else changed at the same moment. This design is not in Grosz and colleagues' article; flag it as an addition.
+**Contrast, not just contradiction:** Bhuller, Dahl, Løken, and Mogstad (2020, *JPE*) use a similar random-judge design for *adult* offenders in Norway and find that incarceration *reduces* recidivism — the opposite sign from Aizer and Doyle's juveniles. Rather than treating this as one study being "wrong," use it to ask what's different: different ages (juveniles pulled out of school during a formative period vs. adults), different systems (Chicago vs. Norway), and different mechanisms (human-capital disruption for kids who are supposed to be in school, versus whatever Norway's prisons do differently for adults). Aizer and Doyle's own framing is that juvenile incarceration's costs run through interrupted human-capital accumulation, not through a failure of deterrence — which is exactly why the high-school-completion result matters as much as the recidivism result.
 :::
 
 ## What each design assumes, and how to check {#assumptions-table}
