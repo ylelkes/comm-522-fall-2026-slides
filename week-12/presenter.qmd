@@ -660,6 +660,36 @@ The status-threat and assuaged-threat conditions contain the same demographic fo
 The samples were heavily male (89% in 3a and 84% in 3b) and relatively young, a limitation to return to explicitly. The three-condition design holds the demographic information constant between status-threat and assuaged-threat while varying its implication for hierarchy. Manipulation checks show the status-threat condition raised perceived threat relative to both other conditions, while control and assuaged-threat did not differ. This supports the intended treatment contrast without claiming threat itself was perfectly assigned.
 :::
 
+## What participants actually read in Study 3 {#craig-richeson-stimuli-study3}
+
+The status-threat and assuaged-threat articles are **identical** through the demographic forecast. The assuaged-threat version adds one paragraph at the end.
+
+> ...The Census Bureau projects that ethnic and racial minorities will constitute a majority of the nation's children under 18 by 2023 and of working-age Americans by 2039. Indeed, about 49.6 percent of babies born in 2011 were White, compared to about 50.4 percent who were racial minorities.
+>
+> **[Assuaged-threat condition adds:]** Despite the shift in the demographic make-up, the relative societal status of different racial groups is likely to remain steady. Largely due to continuing differences in educational attainment, White Americans are likely to remain the majority in powerful corporate and political positions. White Americans are expected to continue to have higher average incomes and wealth compared to members of other racial groups. Overall, despite the numerical shift, racial groups' relative positions in society are likely to remain the same as they are now.
+
+::: {.fragment .key-line}
+Every word above the bracket is held character-for-character identical across both conditions. Only the added paragraph varies.
+:::
+
+::: source
+Source: Craig and Richeson, Study 3 experimental stimuli, OSF Supplemental Material (osf.io/dzv6r).
+:::
+
+::: notes
+**Talk track**
+
+Point at exactly where the two conditions diverge. The status-threat and assuaged-threat articles in Study 3 are a longer, bylined ("By: S. Roberts") version of the same racial-shift content from Study 2 — same demographic statistics, same Census framing, same quote from demographer Campbell Gibson ("What's happening now in terms of increasing diversity is unprecedented"). The assuaged-threat version then appends exactly one additional paragraph, reproduced above, asserting that Whites' relative status (corporate and political power, income, wealth) will remain unchanged despite the numerical shift.
+
+This is the cleanest possible illustration of manipulating a mediator rather than measuring it: the "treatment" and the "assuaged-treatment" conditions are the same stimulus, word for word, up to one paragraph. If status threat is really what's doing the causal work, adding this paragraph — and only this paragraph — should eliminate the downstream conservative shift. That is exactly the result Table 3 shows two slides ago.
+
+**Full text of the added paragraph (complete):** "Despite the shift in the demographic make-up, the relative societal status of different racial groups is likely to remain steady. Largely due to continuing differences in educational attainment, White Americans are likely to remain the majority in powerful corporate and political positions. White Americans are expected to continue to have higher average incomes and wealth compared to members of other racial groups. Overall, despite the numerical shift, racial groups' relative positions in society are likely to remain the same as they are now."
+
+**Ask students**
+
+If you were a reviewer, what's the strongest objection to calling this a "pure" manipulation of status threat alone? (The paragraph bundles several distinct claims — political power, corporate power, income, wealth — so a skeptic could argue it manipulates general reassurance about the future broadly, not status threat specifically. This is the construct-validity concern flagged on the design slide two slides back, now made concrete.)
+:::
+
 ## The assuaging paragraph usually eliminates the shift {#craig-richeson-table3}
 
 ::: small-table

@@ -1045,7 +1045,21 @@ Study 2 is purpose-built. It compares a racial-shift press release with a geogra
 
 This is the design information missing from the earlier version. The control matches the broad form of a press release about social change but removes racial content. The focal policy outcomes include three race-related items and two race-neutral items, allowing the authors to ask whether the response is targeted or ideologically broader. The reliability of the two short subscales is modest, which belongs in the later critique.
 
-### Slide 69: Study 2: policy attitudes shifted, but not every item did
+### Slide 69: What participants actually read
+
+**Talk track**
+
+Show students the actual words, not just the labels "racial-shift" and "control." Both articles are built to the same template: a Census Bureau statistic, a few sentences of supporting detail, and the same closing hedge sentence almost verbatim — "The latest figures are predicated on current and historical trends, which can be thrown awry by several variables, including prospective overhauls of public policy." That shared boilerplate is doing real design work: it holds constant the *genre* (a wire-service-style Census news brief) and the *epistemic hedge* at the end, so the only thing that differs between conditions is the substantive content — racial composition versus geographic mobility.
+
+**Full text, for reference if a student asks to see the whole thing**
+
+*Racial-shift article (complete):* "In a Generation, Racial Minorities May Be the U.S. Majority. New U.S. Census Bureau data suggest that America will become a 'majority-minority' nation much faster than once predicted. The nation's racial minority population is steadily rising, advancing an unmistakable trend that could make minorities the new American majority by midcentury. The data show a declining number of White adults and growing under-18 populations of Hispanics, Asians, and other minorities. Demographers calculate that by 2042, Americans who identify themselves as Hispanic, Black, Asian, American Indian, Native Hawaiian, or Pacific Islander will together outnumber non-Hispanic Whites. The main reasons for the accelerating change are rapid immigration growth and significantly higher birthrates among racial and ethnic minorities. As White baby boomers age past their childbearing years, younger Hispanic parents are having children – and driving U.S. population growth. For example, there are now roughly 9 births for every 1 death among Hispanics, compared to a roughly one-to-one ratio for Whites. The latest figures are predicated on current and historical trends, which can be thrown awry by several variables, including prospective overhauls of public policy."
+
+*Control article (complete):* "U.S. Census Bureau Reports Residents Now Move at a Higher Rate. New U.S. Census Bureau data suggest that the rate of geographical mobility, or the number of individuals who have moved within the past year, is increasing. The national mover rate increased from 11.9 percent in 2008 (the lowest rate since the U.S. Census Bureau began tracking the data) to 12.5 percent in 2009. According to the new data, 37.1 million people changed residences in the U.S. within the past year. 84.5 percent of all movers stayed within the same state. Renters were more than five times more likely to move than homeowners. The estimates also reveal that many of the nation's fastest-growing cities are suburbs. Specifically, principal cities within metropolitan areas experienced a net loss of 2.1 million movers, while the suburbs had a net gain of 2.4 million movers. For those who moved to a different county or state, the reasons for moving varied considerably by the length of their move. The latest figures are predicated on current and historical trends, which can be thrown awry by several variables, including prospective overhauls of public policy."
+
+**Bridge to Studies 3a/3b**: those studies use a longer, bylined ("By: S. Roberts") version of the same racial-shift content, with the assuaged-threat version adding one extra paragraph at the end: "Despite the shift in the demographic make-up, the relative societal status of different racial groups is likely to remain steady... White Americans are expected to continue to have higher average incomes and wealth compared to members of other racial groups." That one paragraph is the entire manipulation of the mediator in Studies 3a/3b — everything else about the article is held character-for-character identical to the status-threat condition.
+
+### Slide 70: Study 2: policy attitudes shifted, but not every item did
 
 **Talk track**
 
@@ -1061,7 +1075,7 @@ Four candidate mediators were measured, but only group-status threat tracked the
 
 This is evidence consistent with mediation, not a causal decomposition. The next slide explains why: randomizing the upstream article does not randomize the relationship between measured threat and policy attitudes.
 
-### Slide 70: Measuring threat cannot prove that it carries the effect
+### Slide 71: Measuring threat cannot prove that it carries the effect
 
 **Talk track**
 
@@ -1075,7 +1089,7 @@ What design would be stronger than measuring threat after the message?
 
 Direct callback, now cashed out against a real case. Study 2 cannot, on its own, rule out some unmeasured variable affecting both perceived status threat and policy attitudes. Ask students what would actually fix this before revealing Studies 3a/3b — the right answer is to manipulate the mediator directly, not just measure it.
 
-### Slide 71: How would you change threat while holding information constant?
+### Slide 72: How would you change threat while holding information constant?
 
 **Talk track**
 
@@ -1089,7 +1103,7 @@ How could you reduce status threat without removing the demographic forecast?
 
 Give pairs a few minutes before revealing. The actual design: an identical racial-shift article, plus one added paragraph stating that Whites' relative societal status (income, wealth) is expected to remain stable despite the demographic shift. If students propose something structurally similar—holding the fact constant while varying its status implication—they have derived the paper's methodological high point themselves.
 
-### Slide 72: Reassurance changes the status implication
+### Slide 73: Reassurance changes the status implication
 
 **Talk track**
 
@@ -1099,7 +1113,7 @@ The status-threat and assuaged-threat conditions contain the same demographic fo
 
 The samples were heavily male (89% in 3a and 84% in 3b) and relatively young, a limitation to return to explicitly. The three-condition design holds the demographic information constant between status-threat and assuaged-threat while varying its implication for hierarchy. Manipulation checks show the status-threat condition raised perceived threat relative to both other conditions, while control and assuaged-threat did not differ. This supports the intended treatment contrast without claiming threat itself was perfectly assigned.
 
-### Slide 73: The assuaging paragraph usually eliminates the shift
+### Slide 74: The assuaging paragraph usually eliminates the shift
 
 **Talk track**
 
@@ -1113,7 +1127,7 @@ Which comparison is the cleanest test of the proposed mechanism?
 
 This is the pattern supporting the mechanism: the same demographic information produces different outcomes when its status implication changes. Keep the strength of evidence calibrated. Study 3a supports the full elimination pattern for policy and ideology. Study 3b cleanly replicates ideology and distinguishes status-threat from assuaged-threat, but the policy contrast between status-threat and control is only marginal.
 
-### Slide 74: The reassurance condition weakens one link in the chain
+### Slide 75: The reassurance condition weakens one link in the chain
 
 **Talk track**
 
@@ -1127,7 +1141,7 @@ What must be true about the reassurance paragraph for this to identify the threa
 
 Draw this live alongside the image. The assuaged-threat condition is designed to weaken the arrow from information to threat while leaving the demographic information constant. This is stronger evidence for the proposed mechanism than measured mediation alone, but it still depends on the construct-validity claim that the added reassurance changes status threat without introducing some other consequential message.
 
-### Slide 75: The mechanism evidence is stronger, but not definitive
+### Slide 76: The mechanism evidence is stronger, but not definitive
 
 **Talk track**
 
@@ -1141,7 +1155,7 @@ Which limitation concerns internal validity, which concerns construct validity, 
 
 Ask first, then reveal. Immigration attitudes specifically did not move significantly, which sits awkwardly with a clean race-status story given immigration is arguably the policy most proximate to the manipulation. The MTurk samples provide poor coverage of women. The stimuli are brief compared with repeated political-media exposure, all outcomes are self-reports, and divergent patterns for Black and Latino respondents sit outside the focal White-sample theory. The assuaging paragraph also bundles status reassurance with explicit information about continued income and wealth hierarchy, so its exclusion restriction is arguable rather than automatic.
 
-### Slide 76: What did each manipulation actually identify?
+### Slide 77: What did each manipulation actually identify?
 
 **Talk track**
 
@@ -1155,7 +1169,7 @@ What did Correll randomize? What did Craig and Richeson randomize? Which paper h
 
 Pairs discuss for a minute before Part 5. Correll randomized the parental-status cue, closing the back door from actual qualifications into the assigned cue. Craig and Richeson randomized the upstream message, then added a treatment designed to manipulate the proposed mediator while holding demographic information fixed. That is stronger evidence about mechanism than Correll's measured competence/commitment mediation, without pretending experienced threat itself was assigned perfectly.
 
-### Slide 77: Both papers narrow broad puzzles to manipulable causes
+### Slide 78: Both papers narrow broad puzzles to manipulable causes
 
 **Talk track**
 
@@ -1165,7 +1179,7 @@ Both papers begin with a broad observational puzzle and end with a narrower caus
 
 Make the parallel explicit. Both papers start from an observational correlation but then narrow the estimand to something they can actually manipulate: an applicant cue or a demographic-shift message. Craig and Richeson go one step further by experimentally varying the message's status implication, directly addressing the measured-mediation warning without literally assigning the mediator.
 
-### Slide 78: Different settings can use the same experimental logic
+### Slide 79: Different settings can use the same experimental logic
 
 **Talk track**
 
@@ -1175,7 +1189,7 @@ The studies occur in labs, surveys, and the field, but they share the same basic
 
 Revisit the typology from Part 2 with both papers now fully in view. Almost everything we discussed today lives in cell 1 — researcher-caused, statistical solution — which is itself a finding about where most published communication and social-psychology experiments sit relative to Druckman's full typology.
 
-### Slide 79: Use your DAG to choose the manipulation
+### Slide 80: Use your DAG to choose the manipulation
 
 **Talk track**
 
@@ -1189,7 +1203,7 @@ What is one open back door in your project, and what intervention would sever it
 
 Connect to the ongoing coding projects. Most will not be able to run a true experiment, but the exercise of asking "what is the smallest intervention that would close this specific back door" is valuable even as a thought experiment — it clarifies exactly what the observational analysis cannot establish on its own.
 
-### Slide 80: What would your experiment identify?
+### Slide 81: What would your experiment identify?
 
 **Talk track**
 

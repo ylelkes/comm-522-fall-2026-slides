@@ -348,7 +348,21 @@ The status-threat and assuaged-threat conditions contain the same demographic fo
 
 The samples were heavily male (89% in 3a and 84% in 3b) and relatively young, a limitation to return to explicitly. The three-condition design holds the demographic information constant between status-threat and assuaged-threat while varying its implication for hierarchy. Manipulation checks show the status-threat condition raised perceived threat relative to both other conditions, while control and assuaged-threat did not differ. This supports the intended treatment contrast without claiming threat itself was perfectly assigned.
 
-### Slide 22: The assuaging paragraph usually eliminates the shift
+### Slide 22: What participants actually read in Study 3
+
+**Talk track**
+
+Point at exactly where the two conditions diverge. The status-threat and assuaged-threat articles in Study 3 are a longer, bylined ("By: S. Roberts") version of the same racial-shift content from Study 2 — same demographic statistics, same Census framing, same quote from demographer Campbell Gibson ("What's happening now in terms of increasing diversity is unprecedented"). The assuaged-threat version then appends exactly one additional paragraph, reproduced above, asserting that Whites' relative status (corporate and political power, income, wealth) will remain unchanged despite the numerical shift.
+
+This is the cleanest possible illustration of manipulating a mediator rather than measuring it: the "treatment" and the "assuaged-treatment" conditions are the same stimulus, word for word, up to one paragraph. If status threat is really what's doing the causal work, adding this paragraph — and only this paragraph — should eliminate the downstream conservative shift. That is exactly the result Table 3 shows two slides ago.
+
+**Full text of the added paragraph (complete):** "Despite the shift in the demographic make-up, the relative societal status of different racial groups is likely to remain steady. Largely due to continuing differences in educational attainment, White Americans are likely to remain the majority in powerful corporate and political positions. White Americans are expected to continue to have higher average incomes and wealth compared to members of other racial groups. Overall, despite the numerical shift, racial groups' relative positions in society are likely to remain the same as they are now."
+
+**Ask students**
+
+If you were a reviewer, what's the strongest objection to calling this a "pure" manipulation of status threat alone? (The paragraph bundles several distinct claims — political power, corporate power, income, wealth — so a skeptic could argue it manipulates general reassurance about the future broadly, not status threat specifically. This is the construct-validity concern flagged on the design slide two slides back, now made concrete.)
+
+### Slide 23: The assuaging paragraph usually eliminates the shift
 
 **Talk track**
 
@@ -362,7 +376,7 @@ Which comparison is the cleanest test of the proposed mechanism?
 
 This is the pattern supporting the mechanism: the same demographic information produces different outcomes when its status implication changes. Keep the strength of evidence calibrated. Study 3a supports the full elimination pattern for policy and ideology. Study 3b cleanly replicates ideology and distinguishes status-threat from assuaged-threat, but the policy contrast between status-threat and control is only marginal.
 
-### Slide 23: The mechanism evidence is stronger, but not definitive
+### Slide 24: The mechanism evidence is stronger, but not definitive
 
 **Talk track**
 
@@ -376,7 +390,7 @@ Which limitation concerns internal validity, which concerns construct validity, 
 
 Ask first, then reveal. Immigration attitudes specifically did not move significantly, which sits awkwardly with a clean race-status story given immigration is arguably the policy most proximate to the manipulation. The MTurk samples provide poor coverage of women. The stimuli are brief compared with repeated political-media exposure, all outcomes are self-reports, and divergent patterns for Black and Latino respondents sit outside the focal White-sample theory. The assuaging paragraph also bundles status reassurance with explicit information about continued income and wealth hierarchy, so its exclusion restriction is arguable rather than automatic.
 
-### Slide 24: What did each manipulation actually identify?
+### Slide 25: What did each manipulation actually identify?
 
 **Talk track**
 
@@ -390,17 +404,17 @@ What did Correll randomize? What did Craig and Richeson randomize? Which paper h
 
 Pairs discuss for a minute before we turn to mediation. Correll randomized the parental-status cue, closing the back door from actual qualifications into the assigned cue. Craig and Richeson randomized the upstream message, then added a treatment designed to manipulate the proposed mediator while holding demographic information fixed. That is stronger evidence about mechanism than Correll's measured competence/commitment mediation, without pretending experienced threat itself was assigned perfectly.
 
-### Slide 25: Mediation and moderation ask different questions
+### Slide 26: Mediation and moderation ask different questions
 
 Transition from Craig and Richeson. Their Studies 3a and 3b manipulated the proposed mediator, status threat, while holding the demographic information fixed. That is the strongest kind of mediation evidence. Most mediation claims in the literature rest on something weaker: measuring a candidate mechanism and watching what happens when it is added to a regression. Mutz and Rao's latte paper is a clear, short example of that weaker approach, so it is a good place to ask what measured mediation can and cannot show.
 
-### Slide 26: Mediation: how does the effect travel?
+### Slide 27: Mediation: how does the effect travel?
 
 Walk the three panels left to right instead of reciting the bullet definitions. Panel 1, **total effect**: every causal path from X to Y, direct arrow and through-M arrow both live. Panel 2, **indirect effect**: the through-M path is what's highlighted; the direct arrow is grayed out because the indirect effect is specifically the part that runs through the mediator. Panel 3, **direct effect**: this is what conditioning on M actually does to the picture — M is drawn conditioned (gold box, Part 1's convention), and both of its arrows are cut with a red X, because holding M fixed blocks the one path that carried the indirect effect. What's left, the lone surviving arrow, is the direct effect. This is the same "control for a mediator" move from Part 1, just drawn as a before/after instead of described in prose: controlling for M doesn't estimate the total effect, it deliberately removes the indirect part and leaves only the direct arrow standing.
 
 Then name the two ways to get evidence about M, and place Craig and Richeson's own two studies on the panels: Study 2 only measured status threat and put it in a regression, which is the move panel 3 depicts — and Rohrer's Week 10 warning applies directly, that this only isolates the indirect effect cleanly if nothing else affects both M and Y. Studies 3a/3b instead manipulated the mechanism directly — the assuaging paragraph lowered status threat while holding the demographic message constant, and the conservative shift largely disappeared — which is a strictly stronger way to demonstrate the indirect-effect panel than regression adjustment ever can be, because it isolates M's causal role by design rather than by assumption. The latte paper, next, shows what the weaker, regression-only version of panel 3 looks like in practice.
 
-### Slide 27: Do liberals really drink more lattes?
+### Slide 28: Do liberals really drink more lattes?
 
 Introduce the puzzle. The phrase “latte liberal” is a political insult, used since at least the 2004 campaign. Mutz and Rao first check whether the stereotype holds. They used a national probability-based online panel fielded by GfK in 2014. Of more than 1,500 respondents, about 72 percent drink coffee, which gives 1,059 cases. Respondents chose the drink they would order at a coffee shop, and the outcome is coded 1 for a latte.
 
@@ -408,13 +422,13 @@ The difference is real but small in absolute terms: 16 percent of liberals, abou
 
 Ask students for explanations before showing the authors' list. Typical answers: liberals live in cities with more coffee shops, liberals are richer, women are more liberal and like milk drinks, and liberals like things that seem foreign or European.
 
-### Slide 28: Four candidate explanations
+### Slide 29: Four candidate explanations
 
 Show the authors' Figure 1. They test four third variables: the availability of coffee shops near the respondent, income, gender, and nationalism. The figure's title calls each one an explanation for a spurious relationship, which is confounder language.
 
 Look closely at the arrows. In panels B and C, income and gender point into both ideology and latte drinking, a clean confounder. In panels A and D, the arrow between ideology and the third variable has heads at both ends. The authors leave the direction open. That ambiguity matters, because if ideology causes the third variable, it is a mediator, not a confounder. Ask students to sort the four before the next slide.
 
-### Slide 29: Which are confounders and which are mediators?
+### Slide 30: Which are confounders and which are mediators?
 
 Pause here. Give pairs a minute or two to sketch a diagram for each of the four variables and label it confounder or mediator before you click. The first click swaps the prompt for the diagrams; the second click shows the punchline.
 
@@ -430,7 +444,7 @@ Nationalism: if liberal ideology lowers national-superiority attitudes, and thos
 
 The punchline: the regression is the same whether the added variable is a confounder or a mediator. Its interpretation is not.
 
-### Slide 30: What happens to the ideology coefficient?
+### Slide 31: What happens to the ideology coefficient?
 
 Walk through Table 1. Ideology's probit coefficient is 0.08 in the baseline model. Adding coffee-shop availability (the number of Starbucks in the respondent's ZIP code), income, or gender leaves it at 0.08: each of those variables predicts latte preference, but none explains the ideology gap. Adding nationalism, a three-item national-superiority scale (alpha = .77), drops the ideology coefficient to 0.01, no longer significant, and nationalism itself is a strong negative predictor. The model with all four looks the same.
 
@@ -438,13 +452,13 @@ The authors' conclusion: “nationalistic attitudes toward the superiority of on
 
 One printed standard error for model B (0.06) is probably a typo for 0.03, since the coefficient is still starred. Leave it off the slide.
 
-### Slide 31: Nationalism explains the gap. What kind of variable is it?
+### Slide 32: Nationalism explains the gap. What kind of variable is it?
 
 Show three structures that all fit the regression result. If ideology lowers nationalism, which lowers latte drinking, nationalism is a mediator, and the 0.08-to-0.01 drop measures an indirect effect. If nationalism comes first, shaping both ideology and taste, it is a confounder, and the drop shows the ideology–latte link was never causal. If ideology and nationalism are two measures of one underlying cosmopolitan worldview, adding one simply soaks up the other.
 
 Each story implies a different causal claim, and the survey cannot distinguish them, because everything is measured at the same time and nothing is manipulated. This is Rohrer's warning from Week 10 in a concrete case.
 
-### Slide 32: What the latte study can and cannot show
+### Slide 33: What the latte study can and cannot show
 
 Separate what the paper establishes from what it claims. It establishes a real gap, rules out three obvious explanations as accounting for it, and shows that nationalism is strongly associated with both ideology and drink choice.
 
@@ -452,17 +466,17 @@ It does not show that nationalism mediates an effect of ideology, for the reason
 
 Close with a design prompt. Students should propose manipulating the mechanism: randomly vary whether the same drink is presented with an Italian name or an English one (for example, “latte” versus “milky coffee”) and test whether conservatives' preferences shift. That is Craig and Richeson's move applied to coffee.
 
-### Slide 33: Moderation: when does an effect hold?
+### Slide 34: Moderation: when does an effect hold?
 
 Transition to moderation. Mediation asked how an effect travels. Moderation asks whether the size or direction of an effect depends on a third variable. In Week 11 the running example was whether a selective college helps lower-SES students more than higher-SES students. Today's example is a classic persuasion experiment in which the moderator was itself randomized.
 
-### Slide 34: Moderation in a DAG
+### Slide 35: Moderation in a DAG
 
 Show the convention. A mediator sits between X and Y. A moderator sits off the path and changes the strength of the arrow, which standard DAGs cannot draw, because a DAG says only whether an effect exists, not how big it is. The picture here, an arrow pointing at another arrow, is a teaching convention, not formal DAG notation.
 
 In data, moderation appears as an interaction: the effect of X on Y differs across levels of Z, estimated with an X × Z term. The cleanest evidence comes when both X and Z are randomized, as in the next study.
 
-### Slide 35: The Elaboration. Likelihood Model
+### Slide 36: The Elaboration. Likelihood Model
 
 **Talk track**
 
@@ -480,7 +494,7 @@ Also ask: why vary argument *quality* rather than the *number* of arguments? (Be
 
 Emphasize that this is a moderation hypothesis with two parts that point in opposite directions. Involvement should *strengthen* the effect of argument quality and *weaken* the effect of source expertise. Two opposite interactions sharing one moderator are much harder to explain away than a single interaction, for example by saying "involved people are just more persuadable." Note also what the theory does *not* predict: no main effect of involvement on agreement. Involvement changes *what* persuades, not *how much*.
 
-### Slide 36: Petty, Cacioppo & Goldman: the design
+### Slide 37: Petty, Cacioppo & Goldman: the design
 
 Walk through the design. Students listened to a tape described as a candidate for a campus radio broadcast. The message argued that seniors should have to pass a comprehensive exam in their major before graduating, a position students strongly disliked.
 
@@ -488,7 +502,7 @@ Three factors were crossed. Involvement: students were told the policy might sta
 
 The dependent variable combined semantic-differential ratings of comprehensive exams with an agreement item, standardized. Because all three factors were randomized, the study can estimate how the effect of argument quality and the effect of source expertise depend on involvement.
 
-### Slide 37: Results: involvement flips what persuades
+### Slide 38: Results: involvement flips what persuades
 
 Read the two panels. Left: when the policy affected students, strong arguments produced far more agreement than weak ones, and weak arguments backfired. When it did not affect them, the gap between strong and weak arguments was much smaller. Right: when the policy did not affect students, the expert source persuaded much more than the high-school class. When it did affect them, the source barely mattered.
 
@@ -496,7 +510,7 @@ Both two-way interactions are significant. Both main effects of argument quality
 
 The plotted points are the paper's Table 1 cell means averaged over the third factor. The original Figure 1 shows the same pattern without printed values.
 
-### Slide 38: Reading the interaction
+### Slide 39: Reading the interaction
 
 Interpret the pattern in the authors' terms, which became the Elaboration Likelihood Model. When an issue is personally relevant, people scrutinize the content, so argument quality drives attitudes. When it is not, people rely on cues such as source credentials.
 
@@ -504,31 +518,31 @@ Methodologically, the lesson is that asking for “the” effect of argument qua
 
 Add the cautions from the summary. The paper's significance statements about simple effects rest on post-hoc tests with about 18 participants per cell; the expertise manipulation check moved ratings of the speaker's qualifications by only 1.1 points while argument quality moved them by 2.7; and one printed involvement-check statistic is impossible as printed, probably a misprint.
 
-### Slide 39: Mediator or moderator?
+### Slide 40: Mediator or moderator?
 
 Summarize the contrast. A mediator is caused by the treatment and carries part of its effect. A moderator is set before the treatment, or is a fixed trait, and changes the size of the effect. They call for different analyses: decomposing the effect versus estimating an interaction.
 
 Quick check: ask students for one variable in their own project that could be a mediator and one that could be a moderator. For a coded-news project, a mediator might be audience emotion; a moderator might be the outlet's partisanship.
 
-### Slide 40: When you can't randomize
+### Slide 41: When you can't randomize
 
 Take the break here if you have not already.
 
 Then frame Part 4. Craig, Correll, and Petty all randomized. Many of the treatments we care most about cannot be randomized: wealth, military service, prison, a grant, a terrorist attack. Natural experiments are situations in which something outside the researcher's control assigned the treatment in a way that is random or as good as random. Dunning's chapter and Grosz and colleagues' article give the vocabulary and the toolbox.
 
-### Slide 41: What makes it a natural experiment?
+### Slide 42: What makes it a natural experiment?
 
 Give Dunning's definition through the hallmarks of a true experiment. A natural experiment shares two of them: a comparison of treatment and control groups, and random or as-if random assignment. It lacks the third: the researcher does not control the manipulation.
 
 His joke, that natural experiments are “neither natural nor experiments,” makes two points. The interventions are usually human, such as lotteries, laws, and borders, not natural. And they are not experiments, because no researcher assigned anything. Everything rests on the claim that assignment was as good as random, and that claim has to be supported with evidence about how assignment happened and whether groups look balanced.
 
-### Slide 42: Snow's map: two companies, one neighborhood
+### Slide 43: Snow's map: two companies, one neighborhood
 
 Show Snow's second map before the logic. It covers the districts south of the Thames. Snow's legend: blue for the Southwark and Vauxhall Company, red for the Lambeth Company, and purple for the area in which the pipes of both companies are intermingled. On this scan the blue has faded to green.
 
 Point to the large purple area in the center, around Kennington, Walworth, and Southwark. There, the two companies' pipes ran down the same streets, and neighboring houses could get water from different companies. Ask: what does that mixing let Snow compare? Houses on the same street, with similar residents, similar air, and similar poverty, that differ mainly in which company pumped their water. That is the as-if random assignment, and the next slide draws it.
 
-### Slide 43: The first natural experiment: John Snow and cholera
+### Slide 44: The first natural experiment: John Snow and cholera
 
 Tell Snow's story as the template. In 1853–54, two water companies supplied London households. Lambeth had moved its intake upstream of the city's sewage in 1852; Southwark and Vauxhall still drew water downstream. Comparing neighborhoods would be confounded, because poor, crowded neighborhoods might have both dirtier water and more cholera for other reasons, including the then-popular “bad air” theory.
 
@@ -540,7 +554,7 @@ Be precise about what those numbers cover. The 315 vs. 37 comparison pools *all*
 
 **Ask students:** What would you gain and lose by keeping only the purple area? (Gain: a cleaner comparison, since neighbors share poverty, air, and neighborhood. Lose: sample size, and possibly generalizability to the rest of south London.)
 
-### Slide 44: The natural-experiment toolbox
+### Slide 45: The natural-experiment toolbox
 
 Lay out the toolbox before going through each design. The first two are what Dunning and Grosz call standard natural experiments: treatment is assigned by a real lottery or by an as-if random process. Regression discontinuity uses a rule that assigns treatment above a cutoff. Instrumental variables use something random that pushes people toward treatment without determining it.
 
@@ -548,13 +562,13 @@ A fifth design, comparing before and after an unexpected event (including differ
 
 For each design, the next slides show the naive comparison, what the design solves, and what it has to assume.
 
-### Slide 45: 1. Lotteries
+### Slide 46: 1. Lotteries
 
 Lotteries are the cleanest natural experiments, because the assignment really is random. Grosz and colleagues' Box 1 uses Lindqvist and colleagues' Swedish lottery study. Wealth and well-being are confounded by education, ability, and conscientiousness. Among lottery players, though, prizes are random within groups of players who bought the same number of tickets, so comparing large-prize winners with matched non-winners cuts the arrow from those traits to wealth.
 
 The assumption to state: the lottery was actually random, and the comparison is made within the groups the lottery randomized over. Players who buy more tickets are more likely to win and may differ in other ways, which is why the comparison is within ticket groups. The next slide shows what two lotteries found.
 
-### Slide 46: Lottery results
+### Slide 47: Lottery results
 
 Report the results. Lindqvist, Östling, and Cesarini surveyed 3,362 Swedish lottery players 5 to 22 years after a lottery event, following a preregistered analysis plan; the prize pool totaled about 277 million dollars. An after-tax prize of 100,000 dollars raised overall life satisfaction by 0.037 standard deviations, and the effect showed no sign of fading with years since the win. Effects on happiness and mental health were significantly smaller. The authors conclude that wealth changes how people evaluate their lives more than how they feel day to day, and that much of the effect runs through financial satisfaction.
 
@@ -562,13 +576,13 @@ The Vietnam draft lottery is Dunning's running example. In 1970 to 1972, draft e
 
 Dunning notes that the 1970 lottery was poorly mixed, with later birth dates drawn disproportionately early, a reminder to check even real lotteries.
 
-### Slide 47: 2. As-if random events
+### Slide 48: 2. As-if random events
 
 As-if random designs have no actual lottery, so the argument for randomness is harder. In Galiani and Schargrodsky's Argentine study, squatters had occupied land in 1981. A 1984 law expropriated it and gave titles, but some original owners challenged the expropriation in court, delaying titles for their plots. Whether an owner sued was unrelated to the squatters on the plot, and the titled and untitled groups were similar on measured characteristics. Titled families invested more in their houses, had smaller households, and educated their children more, but got no more credit, contradicting a famous argument that titles unlock loans. Dunning gives no numbers for these effects.
 
 The next three slides work through two other kinds of as-if random assignment in detail: the sex of a child or sibling, and an earthquake that struck during a survey.
 
-### Slide 48: Boy or girl? Daughters and legislators
+### Slide 49: Boy or girl? Daughters and legislators
 
 Walk through Washington's design. Do children shape their parents' politics? Comparing legislators with and without daughters is confounded by everything that predicts family size and composition. But conditional on the total number of children, the number of daughters is set by chance at conception. Washington compares members of the U.S. House with the same number of children and different numbers of daughters, using interest-group scores on women's issues from the National Organization for Women and the American Association of University Women, plus roll-call votes.
 
@@ -578,7 +592,7 @@ The key threat is a stopping rule. If some legislators keep having children unti
 
 Mention the follow-up: Sood and Costa's replication extends the analysis to later Congresses and finds the effect weaker in later sessions, a reminder that natural-experiment estimates are tied to a time and place.
 
-### Slide 49: Sibling sex and personality
+### Slide 50: Sibling sex and personality
 
 Present Grosz and colleagues' most detailed example of as-if randomization. Dudek and colleagues asked whether growing up with a next-younger sister rather than a next-younger brother changes one's own personality. The sex of a future sibling is essentially random at conception, and because that sibling is born after the focal person, it cannot be caused by the focal person's own traits.
 
@@ -588,7 +602,7 @@ Result, from the paper rather than Grosz and colleagues: no meaningful causal ef
 
 Note the narrow estimand that Grosz and colleagues flag: the design identifies the effect of the next-younger sibling's sex, not of older siblings or of siblings in general.
 
-### Slide 50: An earthquake in the middle of a survey
+### Slide 51: An earthquake in the middle of a survey
 
 Present Oishi and colleagues' earthquake study, which Grosz and colleagues cite twice: as a standard natural experiment and as a time threshold. No one can assign an earthquake. But an online survey about consumer attitudes, which also included a life-satisfaction measure and a brief Big Five inventory, happened to be in the field on March 11, 2011, when the Great East Japan Earthquake struck. Roughly half the respondents had answered before and half after. Comparing them, with regression-discontinuity analyses around the date, estimates the short-run effect of the disaster.
 
@@ -596,7 +610,7 @@ Result: respondents who answered after the earthquake reported lower life satisf
 
 The threat is the same one students will meet in Balcells and Torrats-Espinosa: people who answer a survey late may differ from early responders. The check is to compare early and late respondents on characteristics the earthquake could not have changed. This design is sometimes called an unexpected event during survey design.
 
-### Slide 51: 3. Regression discontinuity
+### Slide 52: 3. Regression discontinuity
 
 Regression discontinuity uses a rule: treatment goes to everyone above a cutoff on some score. The naive comparison of everyone treated with everyone untreated is confounded, because the score reflects ability, which also affects outcomes. But people with scores just above the cutoff and just below it are nearly identical in ability; only the rule separates them. So the design compares outcomes right at the cutoff, effectively conditioning on the score.
 
@@ -604,7 +618,7 @@ Grosz and colleagues' Box 3 uses the original RD study, Thistlethwaite and Campb
 
 Two assumptions to name now; we will test them on Bol and colleagues. Potential outcomes change smoothly through the cutoff, and people cannot precisely manipulate which side they land on. And the estimate is local: it applies to people near the cutoff.
 
-### Slide 52: The first RD: Thistlethwaite & Campbell (1960)
+### Slide 53: The first RD: Thistlethwaite & Campbell (1960)
 
 Present the original RD study, published in a psychology journal. The question: does public recognition, a Certificate of Merit from the National Merit program, change students' later achievement and attitudes? Comparing recognized and unrecognized students is confounded by intelligence, personality, and social support, all of which affect both the test score and later outcomes.
 
@@ -614,7 +628,7 @@ The result, from the original paper rather than Grosz and colleagues: an earlier
 
 Note that Grosz and colleagues' Box 3 presents a modernized version of the design; the 1960 analysis was largely graphical, with coarse score intervals.
 
-### Slide 53: Regression discontinuity by formula: Maimonides' rule
+### Slide 54: Regression discontinuity by formula: Maimonides' rule
 
 Add a classic regression discontinuity outside the readings. Israeli public schools follow a rule attributed to the twelfth-century scholar Maimonides: no more than 40 students per class. Predicted class size rises with enrollment up to 40, then drops when the 41st student enrolls, because the grade splits into two classes averaging 20.5. The pattern repeats at 80, 120, and so on, producing the sawtooth in the figure.
 
@@ -622,7 +636,7 @@ The naive comparison of small and large classes is confounded: small classes are
 
 This is a fuzzy RD: schools do not follow the rule exactly, so the rule shifts class size without fully determining it, and the analysis uses the rule as an instrument, combining the logic of this slide and the next one. Angrist and Lavy found that smaller classes raised fifth graders' reading and math scores and fourth graders' reading scores, with no detectable effect for third graders.
 
-### Slide 54: 4. Instrumental variables
+### Slide 55: 4. Instrumental variables
 
 **Talk track**
 
@@ -652,7 +666,7 @@ The draft lottery works the same way for military service: the lottery changed w
 
 Assumptions: the instrument is random (independence); it actually moves the treatment (relevance, checkable in the first stage); it affects the outcome only through the treatment (exclusion, not checkable, only argued); and it does not push anyone away from treatment (monotonicity). The estimate applies to compliers: juveniles whose incarceration status depended on which judge they drew.
 
-### Slide 55: Are judge propensities really as good as random?
+### Slide 56: Are judge propensities really as good as random?
 
 **Talk track**
 
@@ -672,7 +686,7 @@ The 2SLS results: juveniles on the margin of incarceration — the compliers who
 
 **Contrast, not just contradiction:** Bhuller, Dahl, Løken, and Mogstad (2020, *JPE*) use a similar random-judge design for *adult* offenders in Norway and find that incarceration *reduces* recidivism — the opposite sign from Aizer and Doyle's juveniles. Rather than treating this as one study being "wrong," use it to ask what's different: different ages (juveniles pulled out of school during a formative period vs. adults), different systems (Chicago vs. Norway), and different mechanisms (human-capital disruption for kids who are supposed to be in school, versus whatever Norway's prisons do differently for adults). Aizer and Doyle's own framing is that juvenile incarceration's costs run through interrupted human-capital accumulation, not through a failure of deterrence — which is exactly why the high-school-completion result matters as much as the recidivism result.
 
-### Slide 56: What each design assumes, and how to check
+### Slide 57: What each design assumes, and how to check
 
 Pull the assumptions together. No natural experiment is assumption-free. Each replaces the ordinary observational assumption, that we measured every confounder, with a different assumption that is often easier to defend and to probe.
 
@@ -680,11 +694,11 @@ Some assumptions are testable in part. Balance on pre-treatment characteristics,
 
 This table is the checklist for the two cases in Part 5.
 
-### Slide 57: Not every “natural experiment” is one
+### Slide 58: Not every “natural experiment” is one
 
 Introduce the contrast case Dunning uses to show what is not a natural experiment. The treatment was assigned by a person responding to circumstances, not by chance. Ask the diagnostic question before showing the evidence.
 
-### Slide 58: Connecticut, 1955: the study and the claim
+### Slide 59: Connecticut, 1955: the study and the claim
 
 Present the claim as it was made. In 1955 Connecticut recorded an unusually high number of traffic deaths, about 325 in these data. In late December 1955, Governor Abraham Ribicoff began an exceptionally strict crackdown on speeding, including license suspensions for convicted speeders. In 1956 deaths fell to about 280, and the governor credited the crackdown with saving lives.
 
@@ -692,7 +706,7 @@ Campbell and Ross's paper became the classic analysis of why this two-point comp
 
 Note that Dunning describes this as a law; Campbell and Ross describe it as an enforcement crackdown. The governor's own figures (324 and 284 deaths, 40 lives) differ slightly from the published dataset plotted here (325 and 280).
 
-### Slide 59: Connecticut: the explanation and the problem
+### Slide 60: Connecticut: the explanation and the problem
 
 Show the full series. Connecticut's deaths bounce around from year to year; 1955 is the high point. The crackdown was triggered by that high point, so treatment timing depended on the outcome. After an unusually high year, the next year is likely to be lower even with no intervention, because part of what made 1955 high was chance. That is regression to the mean, and it alone predicts a drop in 1956.
 
@@ -700,7 +714,7 @@ The right panel adds neighboring states that had no crackdown. Rhode Island and 
 
 The general lesson: when a treatment is triggered by an extreme value of the outcome, a before/after comparison is not as-if random. In DAG terms, the earlier outcome causes the treatment, which is reverse causation from Week 10.
 
-### Slide 60: Judging a natural experiment
+### Slide 61: Judging a natural experiment
 
 Present Dunning's three evaluative dimensions. A strong natural experiment has a convincing as-if random story, an analysis close to a simple comparison of means rather than an elaborate model, and an answer that bears on the substantive question.
 
@@ -720,11 +734,11 @@ Contrast these with designs where the variation and the question line up: the dr
 
 Students will use these three dimensions to judge Bol and colleagues and Balcells and Torrats-Espinosa.
 
-### Slide 61: Two natural experiments up close
+### Slide 62: Two natural experiments up close
 
 Transition to the two cases. Bol and colleagues use a regression discontinuity around a grant-funding threshold. Balcells and Torrats-Espinosa compare survey respondents interviewed just before and just after terrorist attacks. For each, ask the same four questions: what is the naive comparison, what does the design solve, what does it assume, and how well does it check those assumptions?
 
-### Slide 62: Bol et al.: does winning a grant make you win more grants?
+### Slide 63: Bol et al.: does winning a grant make you win more grants?
 
 Introduce the theory. Robert Merton named the Matthew effect: recognition flows to those already recognized. In science funding, early winners go on to win more. The question is whether that happens because winners are better scientists or because winning itself, through status, money, or confidence, produces later success.
 
@@ -732,19 +746,19 @@ The naive comparison of grant winners and losers cannot separate these, because 
 
 The design: reviewers score and rank applicants, and a budget sets the funding threshold. Applicants just above and just below the threshold had nearly identical evaluations, but only those above got the grant. Show the design DAG: conditioning on rank near the threshold cuts the confounding.
 
-### Slide 63: Near-winners and near-losers looked the same before
+### Slide 64: Near-winners and near-losers looked the same before
 
 Show the balance check first. Bol and colleagues plot scientific productivity, publications, citations, and h-index, by rank relative to the threshold. Before the competition, there is no jump at the threshold: near-winners and near-losers were equally productive scientists. That supports the RD assumption that the threshold separates otherwise similar people.
 
 The same figure shows no jump after the competition either. That matters for the mechanism: if winners went on to get more grants, it was not because they suddenly produced more or better science.
 
-### Slide 64: ...but their careers diverged
+### Slide 65: ...but their careers diverged
 
 Read Figure 1. The horizontal axis is rank relative to the funding threshold; the vertical line is the threshold. Left panel: about 10 percent of applicants just below the threshold later won a mid-career Vidi grant, versus 26 percent just above it, about two and a half times as many. Right panel: 40 percent of near-losers applied for a Vidi, versus 59 percent of near-winners.
 
 Point out what makes this an RD plot: the outcome is roughly flat on each side and jumps at the threshold. The jump, not the overall upward slope, is the causal effect of winning the early grant for applicants near the threshold.
 
-### Slide 65: The gap kept growing
+### Slide 66: The gap kept growing
 
 Show the accumulation. Beyond the Veni grant itself, near-winners received about 40,000 euros more in later funding after four years and about 180,000 euros more after eight years, more than twice as much as near-losers. The authors note that this 180,000 euros is about 40 percent of the funding difference between the best and worst applicants in the competition.
 
@@ -752,7 +766,7 @@ Careers diverged too: 28 percent of near-winners were full professors by 2018, 1
 
 The interpretation: a nearly arbitrary early difference, a rank or two around a budget line, produced lasting inequality in funding and status.
 
-### Slide 66: Why did this happen?
+### Slide 67: Why did this happen?
 
 Leave the slide blank and let students generate mechanisms. A rank or two around a budget line produced lasting gaps in funding and promotion. Why would winning one early grant lead to winning more later?
 
@@ -765,7 +779,7 @@ Push for specific mechanisms, each with its own arrow:
 
 Then ask: which of these could you check with the data the authors have? The next slide shows the two they examined.
 
-### Slide 67: Two mechanisms: participation and status
+### Slide 68: Two mechanisms: participation and status
 
 Turn to mechanisms. The abstract emphasizes participation: losing discouraged applicants from trying again. Figure 1's right panel shows the participation gap, 40 versus 59 percent.
 
@@ -773,7 +787,7 @@ But participation is not the whole story. Dividing the win rates by the applicat
 
 Note the connection to Part 2: these are mediators of the effect of winning, and they are measured, not manipulated. The RD identifies the total effect of the early grant cleanly; the decomposition into participation and status is weaker evidence.
 
-### Slide 68: What the funding RD assumes
+### Slide 69: What the funding RD assumes
 
 Run the assumptions checklist on Bol and colleagues. The balance figure supports the claim that near-winners and near-losers were similar. The main manipulation worry is not applicants sorting themselves, since they cannot choose their rank, but committees deciding borderline cases in ways related to future success. The paper addresses this only indirectly. A standard density test would say little here, because every rank is filled by construction.
 
@@ -781,7 +795,7 @@ The authors report checks that near-losers did not leave academia or the country
 
 On Dunning's dimensions: high plausibility of as-if random near the threshold, simple and transparent analysis, and strong substantive relevance for science policy.
 
-### Slide 69: Balcells & Torrats-Espinosa: do terrorist attacks change elections?
+### Slide 70: Balcells & Torrats-Espinosa: do terrorist attacks change elections?
 
 Introduce the question. Do terrorist attacks change democratic participation, and do they punish or reward the incumbent? Naive comparisons, across places or years with and without attacks, are confounded: attacks happen where and when conflict is intense and politics are polarized, which also affects voting.
 
@@ -789,7 +803,7 @@ The design uses timing. Spain's public-opinion institute, the CIS, surveys peopl
 
 The design DAG shows the remaining threat: if people interviewed later in the fieldwork period are different, for example harder to reach, then interview timing is not as-if random.
 
-### Slide 70: The design: eight attacks during survey fieldwork
+### Slide 71: The design: eight attacks during survey fieldwork
 
 Walk through the details. The authors matched CIS fieldwork calendars against ETA attacks and kept the overlaps: eight attacks across seven surveys, five of them nationally representative. Treatment is being interviewed after the attack. Because interview times are not recorded, respondents interviewed on the day of the attack are dropped. The comparison uses windows of one, three, and five days on either side.
 
@@ -797,19 +811,19 @@ The model is a linear probability model with province-by-survey fixed effects, s
 
 Outcomes: whether the respondent would vote if a general election were held tomorrow, and whether they would vote for the incumbent party.
 
-### Slide 71: People said they would vote, but not for anyone in particular
+### Slide 72: People said they would vote, but not for anyone in particular
 
 Present the main results. People interviewed after an attack were more likely to say they would vote: 2.8 percentage points within one day with controls, 4.4 without, and about 2 points at three and five days. All six estimates are positive and significant. Before attacks, about 89 percent already said they would vote, so 2.8 points cuts would-be abstention from about 11 to about 8 percent.
 
 There is no change in whom people would vote for: estimates of incumbent support range from minus 0.8 to plus 1.0 points across all six specifications, and vote switching does not change either. The authors interpret this as a rally in democratic participation, not a punishment or reward for the government.
 
-### Slide 72: Who was activated?
+### Slide 73: Who was activated?
 
 Show the heterogeneity, and connect it to Part 3: these subgroup differences are moderation. The effect is largest among people who did not vote in the previous election, 13.7 points, and among residents of the Basque Country, 11 points. Attacks on civilians or politicians raised turnout intention by 4.2 points, attacks on police or military by 1.2, though that difference is significant only at p \< .10.
 
 Add the caveats from the summary. The Basque estimate comes mostly from one attack in a regional survey with only 41 post-attack respondents in the one-day window. Among people who voted last time, about 80 percent of the sample, the effect is close to zero: the whole effect is among prior abstainers. And the subgroups are not randomized, so these are differences in effects across kinds of people, not effects of being Basque.
 
-### Slide 73: What the timing design assumes
+### Slide 74: What the timing design assumes
 
 Run the checklist. The central assumption is that whether someone was interviewed before or after the attack is unrelated to their likelihood of voting. The balance table mostly supports that, joint p = .18, but post-attack respondents were 2 points less likely to report having abstained in the last election, and in the one-day window the gap is larger. Fewer abstainers reached after attacks would inflate the raw estimate.
 
@@ -817,13 +831,13 @@ There is a subtle bad-control problem. The authors control for recalled prior vo
 
 Other checks: contact attempts and refusals were similar before and after (described in prose only); leave-one-attack-out estimates all stay positive; and the Oster sensitivity test says unobservable selection would have to be 1.5 to 5.9 times as strong as observable selection to erase the effect. The paper runs no placebo-date test; the reading summary reports a quick placebo with no sign of a rising pre-trend.
 
-### Slide 74: Two designs compared
+### Slide 75: Two designs compared
 
 Put the two cases side by side using the vocabulary of the day. Both cut an obvious confounder by exploiting how treatment happened to be assigned. Both rest on an assumption that can be partly checked, balance at the threshold or before and after the attack, and partly only argued. Both estimate something narrower than the broad question: the effect of an early grant for applicants near the threshold, and the effect of an attack on stated vote intention within days.
 
 Ask students to score each on Dunning's three dimensions. Bol and colleagues likely score high on all three. Balcells and Torrats-Espinosa score high on plausibility within surveys, but stated intention a few days later is a long way from actual turnout at the next election, which matters for substantive relevance.
 
-### Slide 75: Exit question
+### Slide 76: Exit question
 
 Collect exit responses. Good answers name a specific source of variation, such as a policy cutoff, the timing of a platform change or outage, a newspaper closure, or a random assignment of journalists to beats, and state the key assumption that would have to hold. Read several at the start of next week.
 

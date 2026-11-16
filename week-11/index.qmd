@@ -2162,6 +2162,48 @@ Study 2 is purpose-built. It compares a racial-shift press release with a geogra
 This is the design information missing from the earlier version. The control matches the broad form of a press release about social change but removes racial content. The focal policy outcomes include three race-related items and two race-neutral items, allowing the authors to ask whether the response is targeted or ideologically broader. The reliability of the two short subscales is modest, which belongs in the later critique.
 :::
 
+## What participants actually read {#craig-richeson-stimuli}
+
+::::: two-column
+::: column
+**Racial-shift article**
+
+> **In a Generation, Racial Minorities May Be the U.S. Majority**
+>
+> New U.S. Census Bureau data suggest that America will become a "majority-minority" nation much faster than once predicted. The nation's racial minority population is steadily rising... Demographers calculate that by 2042, Americans who identify themselves as Hispanic, Black, Asian, American Indian, Native Hawaiian, or Pacific Islander will together outnumber non-Hispanic Whites.
+:::
+
+::: column
+**Geographic-mobility control article**
+
+> **U.S. Census Bureau Reports Residents Now Move at a Higher Rate**
+>
+> New U.S. Census Bureau data suggest that the rate of geographical mobility, or the number of individuals who have moved within the past year, is increasing. The national mover rate increased from 11.9 percent in 2008... to 12.5 percent in 2009.
+:::
+:::::
+
+::: {.fragment .key-line}
+Same source (Census data), same form (a short wire-style article), same closing hedge about trends. Only the content differs.
+:::
+
+::: source
+Source: Craig and Richeson, Study 2 experimental stimuli, OSF Supplemental Material (osf.io/dzv6r).
+:::
+
+::: notes
+**Talk track**
+
+Show students the actual words, not just the labels "racial-shift" and "control." Both articles are built to the same template: a Census Bureau statistic, a few sentences of supporting detail, and the same closing hedge sentence almost verbatim — "The latest figures are predicated on current and historical trends, which can be thrown awry by several variables, including prospective overhauls of public policy." That shared boilerplate is doing real design work: it holds constant the *genre* (a wire-service-style Census news brief) and the *epistemic hedge* at the end, so the only thing that differs between conditions is the substantive content — racial composition versus geographic mobility.
+
+**Full text, for reference if a student asks to see the whole thing**
+
+*Racial-shift article (complete):* "In a Generation, Racial Minorities May Be the U.S. Majority. New U.S. Census Bureau data suggest that America will become a 'majority-minority' nation much faster than once predicted. The nation's racial minority population is steadily rising, advancing an unmistakable trend that could make minorities the new American majority by midcentury. The data show a declining number of White adults and growing under-18 populations of Hispanics, Asians, and other minorities. Demographers calculate that by 2042, Americans who identify themselves as Hispanic, Black, Asian, American Indian, Native Hawaiian, or Pacific Islander will together outnumber non-Hispanic Whites. The main reasons for the accelerating change are rapid immigration growth and significantly higher birthrates among racial and ethnic minorities. As White baby boomers age past their childbearing years, younger Hispanic parents are having children – and driving U.S. population growth. For example, there are now roughly 9 births for every 1 death among Hispanics, compared to a roughly one-to-one ratio for Whites. The latest figures are predicated on current and historical trends, which can be thrown awry by several variables, including prospective overhauls of public policy."
+
+*Control article (complete):* "U.S. Census Bureau Reports Residents Now Move at a Higher Rate. New U.S. Census Bureau data suggest that the rate of geographical mobility, or the number of individuals who have moved within the past year, is increasing. The national mover rate increased from 11.9 percent in 2008 (the lowest rate since the U.S. Census Bureau began tracking the data) to 12.5 percent in 2009. According to the new data, 37.1 million people changed residences in the U.S. within the past year. 84.5 percent of all movers stayed within the same state. Renters were more than five times more likely to move than homeowners. The estimates also reveal that many of the nation's fastest-growing cities are suburbs. Specifically, principal cities within metropolitan areas experienced a net loss of 2.1 million movers, while the suburbs had a net gain of 2.4 million movers. For those who moved to a different county or state, the reasons for moving varied considerably by the length of their move. The latest figures are predicated on current and historical trends, which can be thrown awry by several variables, including prospective overhauls of public policy."
+
+**Bridge to Studies 3a/3b**: those studies use a longer, bylined ("By: S. Roberts") version of the same racial-shift content, with the assuaged-threat version adding one extra paragraph at the end: "Despite the shift in the demographic make-up, the relative societal status of different racial groups is likely to remain steady... White Americans are expected to continue to have higher average incomes and wealth compared to members of other racial groups." That one paragraph is the entire manipulation of the mediator in Studies 3a/3b — everything else about the article is held character-for-character identical to the status-threat condition.
+:::
+
 ## Study 2: policy attitudes shifted, but not every item did {#craig-richeson-study2}
 
 ::: small-table
